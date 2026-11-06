@@ -10,7 +10,7 @@ genon-ai Slack 채널 [`REDACTED_CHANNEL`](https://genon-ai.slack.com/archives/R
 | --- | --- |
 | 저장소가 비어 있는 멘션·DM | `onAppMention` / `onDirectMessage`가 empty-store 컨텍스트를 넣고, 모델이 `ingest-channel-history` → `upsert-restaurant` |
 | 사용자가 “히스토리 수집” 요청 | 동일 파이프라인 (`mode: auto` / `reset`) |
-| 스케줄 `history-catchup` (UTC 6시간마다) | `ingest-channel-history` 캐치업·백필 이어가기 후 upsert |
+| 스케줄 `history-catchup` (매일 11:30 Asia/Seoul = 02:30 UTC) | `ingest-channel-history` 캐치업·백필 → upsert → `export-restaurants` |
 
 `ingest-channel-history`는 Slack `conversations.history`를 페이지 단위로 읽고, 커서·newest watermark를 `ctx.host.kv` (`restaurant:history:<channelId>`)에 저장합니다.
 
@@ -85,4 +85,4 @@ npx @grok/agent-sdk eval --dir . --tag smoke
 
 ## 배포
 
-요청 시에만 `npx @grok/agent-sdk deploy --dir .`를 실행하세요. 첫 deploy의 alias 토큰은 안전한 곳에 보관하세요. 배포 후 스케줄 `history-catchup`이 UTC 기준으로 6시간마다 돕니다.
+요청 시에만 `npx @grok/agent-sdk deploy --dir .`를 실행하세요. 첫 deploy의 alias 토큰은 안전한 곳에 보관하세요. 배포 후 스케줄 `history-catchup`이 매일 **11:30 Asia/Seoul**에 돕니다.
