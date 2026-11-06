@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "30 2 * * *" # 11:30 Asia/Seoul
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Run the agent even when there are no new Slack messages"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -20,16 +25,41 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - name: Check for new Slack messages
+        id: precheck
+        env:
+          SLACK_TOKEN: ${{ secrets.LUNCH_SPOTS_SLACK_USER_TOKEN }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          last=$(jq -r '.lastMessageTs // ""' web/data/restaurants.json)
+          resp=$(curl -fsS -H "Authorization: Bearer $SLACK_TOKEN" \
+            "https://slack.com/api/conversations.history?channel=REDACTED_CHANNEL&limit=50")
+          if [ "$(echo "$resp" | jq -r '.ok')" != "true" ]; then
+            echo "::error::Slack conversations.history failed: $(echo "$resp" | jq -r '.error')"
+            exit 1
+          fi
+          latest=$(echo "$resp" | jq -r '[.messages[] | select(.subtype == null) | .ts] | max // ""')
+          echo "last=$last latest=$latest"
+          if [ "$FORCE" = "true" ] || [ -z "$last" ] || [[ "$latest" > "$last" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No new messages since $last; skipping collection."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-node@v7
+        if: steps.precheck.outputs.run == 'true'
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: lunch-spots/package-lock.json
 
       - run: npm ci
+        if: steps.precheck.outputs.run == 'true'
         working-directory: lunch-spots
 
       - name: Collect channel history and export catalog
+        if: steps.precheck.outputs.run == 'true'
         working-directory: lunch-spots
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
@@ -41,6 +71,7 @@ jobs:
             --message "$(cat ci/collect-prompt.md)"
 
       - name: Check exported catalog
+        if: steps.precheck.outputs.run == 'true'
         id: diff
         run: |
           file=web/data/restaurants.json
@@ -50,7 +81,7 @@ jobs:
             echo "::error::Export has no restaurants; keeping the committed catalog."
             exit 1
           fi
-          normalize='.restaurants | map(del(.addedAt, .updatedAt)) | sort_by(.slug)'
+          normalize='{lastMessageTs, restaurants: (.restaurants | map(del(.addedAt, .updatedAt)) | sort_by(.slug))}'
           if diff <(git show "HEAD:$file" | jq -S "$normalize") <(jq -S "$normalize" "$file") > /dev/null; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             git checkout -- "$file"

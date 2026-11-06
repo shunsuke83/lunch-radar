@@ -23,6 +23,8 @@ export type RestaurantCatalog = {
   updatedAt: string;
   source: string;
   channelId: string;
+  /** Newest Slack message ts already processed by the collector. */
+  lastMessageTs?: string;
   restaurants: Restaurant[];
 };
 

@@ -5,7 +5,9 @@ import path from "node:path";
 import * as z from "zod/v4";
 import {
   INDEX_KEY,
+  historyStateKey,
   restaurantKey,
+  type HistoryState,
   type Restaurant,
 } from "../lib/restaurants.js";
 
@@ -40,10 +42,16 @@ export default defineTool({
         b.mentionCount - a.mentionCount || a.name.localeCompare(b.name, "ko"),
     );
 
+    const channelId = input.channelId?.trim() || DEFAULT_CHANNEL;
+    const history = (await ctx.host.kv.get(
+      historyStateKey(channelId),
+    )) as HistoryState | null;
+
     const catalog = {
       updatedAt: new Date().toISOString(),
       source: "slack-export",
-      channelId: input.channelId?.trim() || DEFAULT_CHANNEL,
+      channelId,
+      lastMessageTs: history?.newestTs,
       restaurants,
     };
 

@@ -225,6 +225,7 @@ export default defineTool({
         // Exclusive lower bound would skip the watermark; inclusive + filter below.
         args.oldest = prior.newestTs;
         args.inclusive = true;
+        if (pageCursor) args.cursor = pageCursor;
       } else if (pageCursor) {
         args.cursor = pageCursor;
       }
