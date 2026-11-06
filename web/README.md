@@ -23,7 +23,7 @@ npm run build:pages                                   # web/out/ 생성
 NEXT_PUBLIC_BASE_PATH=/lunch-radar npm run build:pages  # 하위 경로 배포용 (bash)
 ```
 
-맛집 데이터는 빌드 시점에 `data/restaurants.json`에서 읽어 HTML에 포함되고, 검색·필터는 브라우저에서 처리합니다. 배포는 루트의 `.github/workflows/deploy-pages.yml`이 자동으로 합니다 ([루트 README](../README.md#github-pages-배포) 참고).
+맛집 데이터는 빌드 시점에 `data/restaurants.json`에서 읽어 HTML에 포함되고, 검색·필터는 브라우저에서 처리합니다. 각 가게의 `category`는 한식·중식·일식·양식·아시안·분식·샐러드 중 하나이고 세부 종류는 `subcategory`에 있습니다. `menu[{name, price}]` / `hours{open, close, breakStart?, breakEnd?}` / `walkMeters`로 "도보 5분 이내(≈400m)", "지금 영업 중(Asia/Seoul, 브라우저 시계 기준)", "만원 이하(메뉴 최저가)" 칩과 거리·가격 정렬을 합니다. 휴무일 정보는 없어서 영업 중 표시는 시간만 봅니다. 이 필드는 `lunch-spots`가 notes에서 뽑아 넣으며, 기존 카탈로그는 `lunch-spots`에서 `npm run catalog:structure`로 다시 계산할 수 있습니다. 배포는 루트의 `.github/workflows/deploy-pages.yml`이 자동으로 합니다 ([루트 README](../README.md#github-pages-배포) 참고).
 
 ## API (로컬/서버 모드 전용, Pages에서는 동작하지 않음)
 

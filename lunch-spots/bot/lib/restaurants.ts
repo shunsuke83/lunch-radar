@@ -5,13 +5,45 @@ export type RestaurantSource = {
   author?: string;
 };
 
+export const CATEGORY_GROUPS = [
+  "한식",
+  "중식",
+  "일식",
+  "양식",
+  "아시안",
+  "분식",
+  "샐러드",
+] as const;
+
+export type CategoryGroup = (typeof CATEGORY_GROUPS)[number];
+
+export type MenuItem = {
+  name: string;
+  /** Won per person. */
+  price?: number;
+};
+
+/** "HH:MM" local (Asia/Seoul) times; close may be "24:00" or past midnight. */
+export type OpeningHours = {
+  open: string;
+  close: string;
+  breakStart?: string;
+  breakEnd?: string;
+};
+
 export type Restaurant = {
   slug: string;
   name: string;
   area?: string;
+  /** One of CATEGORY_GROUPS. */
   category?: string;
+  /** Free-form detail, e.g. "돈까스·경양식". */
+  subcategory?: string;
   priceRange?: string;
   notes?: string;
+  walkMeters?: number;
+  hours?: OpeningHours;
+  menu?: MenuItem[];
   tags: string[];
   source?: RestaurantSource;
   addedAt: string;
@@ -113,7 +145,9 @@ export function matchesQuery(
 ): boolean {
   if (category) {
     const c = category.trim().toLowerCase();
-    if ((restaurant.category ?? "").toLowerCase() !== c) return false;
+    const group = (restaurant.category ?? "").toLowerCase();
+    const detail = (restaurant.subcategory ?? "").toLowerCase();
+    if (group !== c && !detail.includes(c)) return false;
   }
   if (area) {
     const a = area.trim().toLowerCase();
@@ -129,9 +163,11 @@ export function matchesQuery(
       restaurant.name,
       restaurant.area,
       restaurant.category,
+      restaurant.subcategory,
       restaurant.priceRange,
       restaurant.notes,
       ...restaurant.tags,
+      ...(restaurant.menu ?? []).map((m) => m.name),
     ]
       .filter(Boolean)
       .join(" ")

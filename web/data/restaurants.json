@@ -7,7 +7,7 @@
       "slug": "국미당-양재역",
       "name": "국미당 양재역",
       "area": "양재",
-      "category": "떡볶이·김말이",
+      "category": "분식",
       "priceRange": "6,000~8,500원",
       "notes": "야채김말이 6,000 / 불고기김말이 8,500 · 11:00-20:30 · 도보 약 196m",
       "tags": [
@@ -16,13 +16,29 @@
       ],
       "addedAt": "2026-11-06T04:19:04.829Z",
       "updatedAt": "2026-11-06T04:21:13.636Z",
-      "mentionCount": 4
+      "mentionCount": 4,
+      "subcategory": "떡볶이·김말이",
+      "menu": [
+        {
+          "name": "야채김말이",
+          "price": 6000
+        },
+        {
+          "name": "불고기김말이",
+          "price": 8500
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "20:30"
+      },
+      "walkMeters": 196
     },
     {
       "slug": "도화",
       "name": "도화",
       "area": "양재",
-      "category": "중식·유산슬덮밥",
+      "category": "중식",
       "priceRange": "12,000원",
       "notes": "삼선간짜장 12,000 / 해물짬뽕 12,000 · 11:00-23:00 · 도보 약 382m",
       "tags": [
@@ -30,13 +46,29 @@
       ],
       "addedAt": "2026-11-06T04:19:36.760Z",
       "updatedAt": "2026-11-06T04:21:03.394Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "중식·유산슬덮밥",
+      "menu": [
+        {
+          "name": "삼선간짜장",
+          "price": 12000
+        },
+        {
+          "name": "해물짬뽕",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "walkMeters": 382
     },
     {
       "slug": "마차이짬뽕-양재역점",
       "name": "마차이짬뽕 양재역점",
       "area": "양재",
-      "category": "짬뽕·중식",
+      "category": "중식",
       "priceRange": "10,000원",
       "notes": "마차이짬뽕 10,000 / 마차이 중화비빔밥 10,000 · 11:00-21:00 · 도보 약 177m",
       "tags": [
@@ -45,13 +77,29 @@
       ],
       "addedAt": "2026-11-06T04:19:33.525Z",
       "updatedAt": "2026-11-06T04:21:02.574Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "짬뽕·중식",
+      "menu": [
+        {
+          "name": "마차이짬뽕",
+          "price": 10000
+        },
+        {
+          "name": "마차이 중화비빔밥",
+          "price": 10000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 177
     },
     {
       "slug": "명정루-양재",
       "name": "명정루 양재",
       "area": "양재",
-      "category": "중식·탕수육",
+      "category": "중식",
       "priceRange": "10,000~13,000원",
       "notes": "짬뽕 10,000 / 차돌짬뽕 13,000 · 11:00-21:30 · 도보 약 298m",
       "tags": [
@@ -60,13 +108,29 @@
       ],
       "addedAt": "2026-11-06T04:19:05.876Z",
       "updatedAt": "2026-11-06T04:21:01.044Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "중식·탕수육",
+      "menu": [
+        {
+          "name": "짬뽕",
+          "price": 10000
+        },
+        {
+          "name": "차돌짬뽕",
+          "price": 13000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:30"
+      },
+      "walkMeters": 298
     },
     {
       "slug": "미소야-양재점",
       "name": "미소야 양재점",
       "area": "양재",
-      "category": "일식·덮밥",
+      "category": "일식",
       "priceRange": "7,500~14,000원",
       "notes": "히레카츠정식 14,000 / 사누끼우동 7,500 · 11:30-22:00 · 도보 약 288m",
       "tags": [
@@ -75,13 +139,29 @@
       ],
       "addedAt": "2026-11-06T04:19:36.103Z",
       "updatedAt": "2026-11-06T04:21:02.959Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "일식·덮밥",
+      "menu": [
+        {
+          "name": "히레카츠정식",
+          "price": 14000
+        },
+        {
+          "name": "사누끼우동",
+          "price": 7500
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "22:00"
+      },
+      "walkMeters": 288
     },
     {
       "slug": "미트앤샐러드",
       "name": "미트앤샐러드",
       "area": "양재",
-      "category": "샐러드·스테이크",
+      "category": "샐러드",
       "priceRange": "14,900원",
       "notes": "수비드 부채살 스테이크 샐러드 14,900 / 양갈비 스테이크 샐러드 14,900 · 11:00-21:00 · 도보 약 203m",
       "tags": [
@@ -90,13 +170,29 @@
       ],
       "addedAt": "2026-11-06T04:19:07.326Z",
       "updatedAt": "2026-11-06T04:21:01.428Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "샐러드·스테이크",
+      "menu": [
+        {
+          "name": "수비드 부채살 스테이크 샐러드",
+          "price": 14900
+        },
+        {
+          "name": "양갈비 스테이크 샐러드",
+          "price": 14900
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 203
     },
     {
       "slug": "샌드워커-양재역",
       "name": "샌드워커 양재역",
       "area": "양재",
-      "category": "샌드위치·브런치",
+      "category": "양식",
       "priceRange": "8,500~8,800원",
       "notes": "잠봉햄 샌드위치 8,500 / 백잠봉 샌드위치 8,800 · 도보 약 260m",
       "tags": [
@@ -105,13 +201,25 @@
       ],
       "addedAt": "2026-11-06T04:18:53.232Z",
       "updatedAt": "2026-11-06T04:21:16.266Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "샌드위치·브런치",
+      "menu": [
+        {
+          "name": "잠봉햄 샌드위치",
+          "price": 8500
+        },
+        {
+          "name": "백잠봉 샌드위치",
+          "price": 8800
+        }
+      ],
+      "walkMeters": 260
     },
     {
       "slug": "양산도-양재점",
       "name": "양산도 양재점",
       "area": "양재",
-      "category": "장어덮밥·초밥",
+      "category": "일식",
       "priceRange": "7,000~12,000원",
       "notes": "연어사시미 12,000 / 장새고 만두 7,000 · 11:00-21:00 · 도보 약 306m",
       "tags": [
@@ -120,13 +228,29 @@
       ],
       "addedAt": "2026-11-06T04:19:38.680Z",
       "updatedAt": "2026-11-06T04:21:03.708Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "장어덮밥·초밥",
+      "menu": [
+        {
+          "name": "연어사시미",
+          "price": 12000
+        },
+        {
+          "name": "장새고 만두",
+          "price": 7000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 306
     },
     {
       "slug": "작은공간-양재역",
       "name": "작은공간 양재역",
       "area": "양재",
-      "category": "즉석떡볶이",
+      "category": "분식",
       "priceRange": "1인 8,500~9,000원",
       "notes": "즉석떡볶이 2인 17,000 (1인 8,500) / 즉석짜장떡볶이 2인 18,000 (1인 9,000) · 11:00-20:50 · 도보 약 240m",
       "tags": [
@@ -134,13 +258,29 @@
       ],
       "addedAt": "2026-11-06T04:19:30.864Z",
       "updatedAt": "2026-11-06T04:21:01.802Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "즉석떡볶이",
+      "menu": [
+        {
+          "name": "즉석떡볶이 1인(2인 주문)",
+          "price": 8500
+        },
+        {
+          "name": "즉석짜장떡볶이 1인(2인 주문)",
+          "price": 9000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "20:50"
+      },
+      "walkMeters": 240
     },
     {
       "slug": "피끄니크",
       "name": "피끄니크",
       "area": "양재",
-      "category": "샐러드·브런치",
+      "category": "샐러드",
       "priceRange": "9,800~12,900원",
       "notes": "수비드닭고기시저샐러드 9,800 / 이탈리안파스타샐러드 12,900 · 10:00-21:00 · 도보 약 214m",
       "tags": [
@@ -149,13 +289,29 @@
       ],
       "addedAt": "2026-11-06T04:19:31.533Z",
       "updatedAt": "2026-11-06T04:21:02.180Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "샐러드·브런치",
+      "menu": [
+        {
+          "name": "수비드닭고기시저샐러드",
+          "price": 9800
+        },
+        {
+          "name": "이탈리안파스타샐러드",
+          "price": 12900
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "walkMeters": 214
     },
     {
       "slug": "피넘타이-양재",
       "name": "피넘타이 양재",
       "area": "양재",
-      "category": "태국음식",
+      "category": "아시안",
       "priceRange": "9,900~12,000원",
       "notes": "꾸아이띠아오(치킨) 9,900 / 꾸아이띠아오(소고기) 12,000 · 11:00-21:00 · 도보 약 381m",
       "tags": [
@@ -163,13 +319,29 @@
       ],
       "addedAt": "2026-11-06T04:19:03.603Z",
       "updatedAt": "2026-11-06T04:21:00.491Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "태국음식",
+      "menu": [
+        {
+          "name": "꾸아이띠아오(치킨)",
+          "price": 9900
+        },
+        {
+          "name": "꾸아이띠아오(소고기)",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 381
     },
     {
       "slug": "호앙비엣-양재역점",
       "name": "호앙비엣 양재역점",
       "area": "양재",
-      "category": "베트남 쌀국수",
+      "category": "아시안",
       "priceRange": "9,000~11,000원",
       "notes": "소고기 쌀국수 11,000 / 시그니처 에그 반미 9,000 · 11:00-22:00 · 도보 약 259m",
       "tags": [
@@ -178,13 +350,29 @@
       ],
       "addedAt": "2026-11-06T04:18:56.952Z",
       "updatedAt": "2026-11-06T04:21:00.489Z",
-      "mentionCount": 3
+      "mentionCount": 3,
+      "subcategory": "베트남 쌀국수",
+      "menu": [
+        {
+          "name": "소고기 쌀국수",
+          "price": 11000
+        },
+        {
+          "name": "시그니처 에그 반미",
+          "price": 9000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 259
     },
     {
       "slug": "강남쌀국수-양재점",
       "name": "강남쌀국수 양재점",
       "area": "양재",
-      "category": "쌀국수",
+      "category": "아시안",
       "priceRange": "8,500원",
       "notes": "강남쌀국수 8,500 / 얼큰강남쌀국수 8,500 · 10:00-20:30 · 도보 약 192m",
       "tags": [
@@ -192,13 +380,29 @@
       ],
       "addedAt": "2026-11-06T04:20:17.273Z",
       "updatedAt": "2026-11-06T04:21:14.483Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "쌀국수",
+      "menu": [
+        {
+          "name": "강남쌀국수",
+          "price": 8500
+        },
+        {
+          "name": "얼큰강남쌀국수",
+          "price": 8500
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "20:30"
+      },
+      "walkMeters": 192
     },
     {
       "slug": "고양이부엌-양재",
       "name": "고양이부엌 양재",
       "area": "양재",
-      "category": "즉석떡볶이",
+      "category": "분식",
       "priceRange": "1인 5,830~7,250원",
       "notes": "즉석떡볶이 2인 14,500 (1인 7,250) / 3인 17,500 (1인 5,830) · 11:00-21:30 · 도보 약 370m",
       "tags": [
@@ -206,13 +410,29 @@
       ],
       "addedAt": "2026-11-06T04:20:18.727Z",
       "updatedAt": "2026-11-06T04:21:15.009Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "즉석떡볶이",
+      "menu": [
+        {
+          "name": "즉석떡볶이 1인(2인 주문)",
+          "price": 7250
+        },
+        {
+          "name": "즉석떡볶이 1인(3인 주문)",
+          "price": 5830
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:30"
+      },
+      "walkMeters": 370
     },
     {
       "slug": "꼬김빱-서초구청점",
       "name": "꼬김빱 서초구청점",
       "area": "양재",
-      "category": "김밥·분식",
+      "category": "분식",
       "priceRange": "6,000~6,900원",
       "notes": "꼬마김밥 모둠세트 6,000 / 크래미유부초밥 6,900 · 08:30-20:30 · 도보 약 420m",
       "tags": [
@@ -221,13 +441,29 @@
       ],
       "addedAt": "2026-11-06T04:19:39.364Z",
       "updatedAt": "2026-11-06T04:21:04.145Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "김밥·분식",
+      "menu": [
+        {
+          "name": "꼬마김밥 모둠세트",
+          "price": 6000
+        },
+        {
+          "name": "크래미유부초밥",
+          "price": 6900
+        }
+      ],
+      "hours": {
+        "open": "08:30",
+        "close": "20:30"
+      },
+      "walkMeters": 420
     },
     {
       "slug": "누룩목-양재본점",
       "name": "누룩목 양재본점",
       "area": "양재",
-      "category": "고깃집·점심특선",
+      "category": "한식",
       "priceRange": "9,000~12,000원",
       "notes": "평일 점심특선 제육 보리밥정식 12,000 / 수제 물비빔냉면 9,000 · 11:30-22:00 · 도보 약 394m",
       "tags": [
@@ -236,13 +472,29 @@
       ],
       "addedAt": "2026-11-06T04:20:14.924Z",
       "updatedAt": "2026-11-06T04:21:06.145Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "고깃집·점심특선",
+      "menu": [
+        {
+          "name": "평일 점심특선 제육 보리밥정식",
+          "price": 12000
+        },
+        {
+          "name": "수제 물비빔냉면",
+          "price": 9000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "22:00"
+      },
+      "walkMeters": 394
     },
     {
       "slug": "돈까스하우스",
       "name": "돈까스하우스",
       "area": "양재",
-      "category": "돈까스·경양식",
+      "category": "양식",
       "priceRange": "11,000~12,000원",
       "notes": "하우스 돈까스 11,000 / 하우스 매운 돈까스 12,000 · 11:00-21:00 · 도보 약 204m",
       "tags": [
@@ -251,13 +503,29 @@
       ],
       "addedAt": "2026-11-06T04:20:22.048Z",
       "updatedAt": "2026-11-06T04:21:17.238Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "돈까스·경양식",
+      "menu": [
+        {
+          "name": "하우스 돈까스",
+          "price": 11000
+        },
+        {
+          "name": "하우스 매운 돈까스",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 204
     },
     {
       "slug": "말죽거리-해장국",
       "name": "말죽거리 해장국",
       "area": "서울 서초구 남부순환로356길 33 103호(양재동)",
-      "category": "해장국",
+      "category": "한식",
       "priceRange": "10,000원",
       "notes": "양선지해장국 10,000 · 11:00-22:00 · 도보 약 341m",
       "tags": [
@@ -265,13 +533,25 @@
       ],
       "addedAt": "2026-11-06T04:20:16.660Z",
       "updatedAt": "2026-11-06T04:21:13.696Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "해장국",
+      "menu": [
+        {
+          "name": "양선지해장국",
+          "price": 10000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 341
     },
     {
       "slug": "서초청국장",
       "name": "서초청국장",
       "area": "양재",
-      "category": "청국장·콩국수",
+      "category": "한식",
       "priceRange": "10,000~12,000원",
       "notes": "청국장 10,000 / 콩국수 12,000 · 10:30-21:00 · 도보 약 475m",
       "tags": [
@@ -280,13 +560,29 @@
       ],
       "addedAt": "2026-11-06T04:19:34.807Z",
       "updatedAt": "2026-11-06T04:20:54.704Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "청국장·콩국수",
+      "menu": [
+        {
+          "name": "청국장",
+          "price": 10000
+        },
+        {
+          "name": "콩국수",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "10:30",
+        "close": "21:00"
+      },
+      "walkMeters": 475
     },
     {
       "slug": "석문어-양재점",
       "name": "석문어 양재점",
       "area": "양재",
-      "category": "문어·칼국수",
+      "category": "한식",
       "priceRange": "11,000~13,000원",
       "notes": "소고기미나리칼국수(점심특선) 11,000 / 소고기미나리칼국수 13,000 · 11:00-23:00 · 도보 약 330m",
       "tags": [
@@ -295,13 +591,29 @@
       ],
       "addedAt": "2026-11-06T04:20:20.715Z",
       "updatedAt": "2026-11-06T04:21:15.840Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "문어·칼국수",
+      "menu": [
+        {
+          "name": "소고기미나리칼국수(점심특선)",
+          "price": 11000
+        },
+        {
+          "name": "소고기미나리칼국수",
+          "price": 13000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "walkMeters": 330
     },
     {
       "slug": "손수동-양재",
       "name": "손수동 양재",
       "area": "양재",
-      "category": "우동·튀김",
+      "category": "일식",
       "priceRange": "10,000~12,000원",
       "notes": "기본우동 10,000 / 유부우동 12,000 · 11:00-21:00 · 도보 약 301m",
       "tags": [
@@ -310,13 +622,29 @@
       ],
       "addedAt": "2026-11-06T04:20:30.072Z",
       "updatedAt": "2026-11-06T04:21:17.584Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "우동·튀김",
+      "menu": [
+        {
+          "name": "기본우동",
+          "price": 10000
+        },
+        {
+          "name": "유부우동",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 301
     },
     {
       "slug": "쇼쿠지-양재점",
       "name": "쇼쿠지 양재점",
       "area": "양재",
-      "category": "텐동·사케동",
+      "category": "일식",
       "priceRange": "13,000~15,000원",
       "notes": "텐동 15,000 / 명란 우삼겹 덮밥 13,000 · 11:30-21:00 · 도보 약 383m",
       "tags": [
@@ -325,13 +653,29 @@
       ],
       "addedAt": "2026-11-06T04:19:40.684Z",
       "updatedAt": "2026-11-06T04:21:04.520Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "텐동·사케동",
+      "menu": [
+        {
+          "name": "텐동",
+          "price": 15000
+        },
+        {
+          "name": "명란 우삼겹 덮밥",
+          "price": 13000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "21:00"
+      },
+      "walkMeters": 383
     },
     {
       "slug": "수정골한상",
       "name": "수정골한상",
       "area": "양재",
-      "category": "제육볶음·백반",
+      "category": "한식",
       "priceRange": "10,000원",
       "notes": "김치찌개 10,000 / 제육볶음 10,000 · 11:00-21:00 · 도보 약 191m",
       "tags": [
@@ -340,13 +684,29 @@
       ],
       "addedAt": "2026-11-06T04:20:15.395Z",
       "updatedAt": "2026-11-06T04:21:13.639Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "제육볶음·백반",
+      "menu": [
+        {
+          "name": "김치찌개",
+          "price": 10000
+        },
+        {
+          "name": "제육볶음",
+          "price": 10000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 191
     },
     {
       "slug": "스시썸",
       "name": "스시썸",
       "area": "양재",
-      "category": "스시·덮밥",
+      "category": "일식",
       "priceRange": "11,500~13,900원",
       "notes": "런치초밥 11,500 / 사케동(연어덮밥) 13,900 · 11:00-22:00 · 도보 약 142m",
       "tags": [
@@ -355,13 +715,29 @@
       ],
       "addedAt": "2026-11-06T04:19:30.118Z",
       "updatedAt": "2026-11-06T04:20:52.685Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "스시·덮밥",
+      "menu": [
+        {
+          "name": "런치초밥",
+          "price": 11500
+        },
+        {
+          "name": "사케동(연어덮밥)",
+          "price": 13900
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 142
     },
     {
       "slug": "얌얌",
       "name": "얌얌",
       "area": "양재",
-      "category": "김밥·분식",
+      "category": "분식",
       "priceRange": "5,500~6,000원",
       "notes": "돈까스김밥 5,500 / 꼬마김밥 5줄 6,000 · 08:00-21:00 · 도보 약 294m",
       "tags": [
@@ -370,13 +746,29 @@
       ],
       "addedAt": "2026-11-06T04:20:16.051Z",
       "updatedAt": "2026-11-06T04:21:13.672Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "김밥·분식",
+      "menu": [
+        {
+          "name": "돈까스김밥",
+          "price": 5500
+        },
+        {
+          "name": "꼬마김밥 5줄",
+          "price": 6000
+        }
+      ],
+      "hours": {
+        "open": "08:00",
+        "close": "21:00"
+      },
+      "walkMeters": 294
     },
     {
       "slug": "양재동김밥-도시미점",
       "name": "양재동김밥 도시미점",
       "area": "양재",
-      "category": "김밥·분식",
+      "category": "분식",
       "priceRange": "5,000~6,000원",
       "notes": "쫄면 6,000 / 국물떡볶이 5,000 · 08:00-20:00 · 도보 약 289m",
       "tags": [
@@ -385,13 +777,29 @@
       ],
       "addedAt": "2026-11-06T04:20:20.060Z",
       "updatedAt": "2026-11-06T04:21:15.376Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "김밥·분식",
+      "menu": [
+        {
+          "name": "쫄면",
+          "price": 6000
+        },
+        {
+          "name": "국물떡볶이",
+          "price": 5000
+        }
+      ],
+      "hours": {
+        "open": "08:00",
+        "close": "20:00"
+      },
+      "walkMeters": 289
     },
     {
       "slug": "오향절면",
       "name": "오향절면",
       "area": "양재",
-      "category": "칼국수·보쌈",
+      "category": "한식",
       "priceRange": "12,000~15,000원",
       "notes": "칼국수정식(점심특선) 12,000 / 칼국수보쌈정식(점심특선) 15,000 · 11:00-22:00 · 도보 약 145m",
       "tags": [
@@ -400,13 +808,29 @@
       ],
       "addedAt": "2026-11-06T04:19:32.233Z",
       "updatedAt": "2026-11-06T04:20:53.660Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "칼국수·보쌈",
+      "menu": [
+        {
+          "name": "칼국수정식(점심특선)",
+          "price": 12000
+        },
+        {
+          "name": "칼국수보쌈정식(점심특선)",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 145
     },
     {
       "slug": "우사기",
       "name": "우사기",
       "area": "양재",
-      "category": "국수전골·회덮밥",
+      "category": "한식",
       "priceRange": "12,000~13,000원",
       "notes": "국수전골 13,000 / 에비까스동 12,000 · 11:00-20:30 · 도보 약 178m",
       "tags": [
@@ -415,13 +839,29 @@
       ],
       "addedAt": "2026-11-06T04:20:17.899Z",
       "updatedAt": "2026-11-06T04:21:14.668Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "국수전골·회덮밥",
+      "menu": [
+        {
+          "name": "국수전골",
+          "price": 13000
+        },
+        {
+          "name": "에비까스동",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "20:30"
+      },
+      "walkMeters": 178
     },
     {
       "slug": "유라노스-강남-양재역",
       "name": "유라노스 강남 양재역",
       "area": "양재",
-      "category": "파스타·샐러드",
+      "category": "양식",
       "priceRange": "13,000원",
       "notes": "부라타 치즈 샐러드 13,000 / 갈릭 쉬림프 샐러드 13,000 · 11:30-21:30 · 도보 약 201m",
       "tags": [
@@ -430,23 +870,45 @@
       ],
       "addedAt": "2026-11-06T04:19:41.399Z",
       "updatedAt": "2026-11-06T04:21:04.922Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "파스타·샐러드",
+      "menu": [
+        {
+          "name": "부라타 치즈 샐러드",
+          "price": 13000
+        },
+        {
+          "name": "갈릭 쉬림프 샐러드",
+          "price": 13000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "21:30"
+      },
+      "walkMeters": 201
     },
     {
       "slug": "인덕원국수집",
       "name": "인덕원국수집",
-      "category": "국수",
+      "category": "한식",
       "notes": "수제비",
       "tags": [],
       "addedAt": "2026-11-06T04:18:50.984Z",
       "updatedAt": "2026-11-06T04:18:51.608Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "국수",
+      "menu": [
+        {
+          "name": "수제비"
+        }
+      ]
     },
     {
       "slug": "제레미버거-양재역",
       "name": "제레미버거 양재역",
       "area": "양재",
-      "category": "수제버거",
+      "category": "양식",
       "priceRange": "10,900~12,500원",
       "notes": "제레미버거 10,900 / 벨기에프라이 12,500 · 11:30-20:30 · 도보 약 244m",
       "tags": [
@@ -454,13 +916,29 @@
       ],
       "addedAt": "2026-11-06T04:20:14.917Z",
       "updatedAt": "2026-11-06T04:21:05.354Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "수제버거",
+      "menu": [
+        {
+          "name": "제레미버거",
+          "price": 10900
+        },
+        {
+          "name": "벨기에프라이",
+          "price": 12500
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "20:30"
+      },
+      "walkMeters": 244
     },
     {
       "slug": "진스시-양재역",
       "name": "진스시 양재역",
       "area": "양재",
-      "category": "초밥",
+      "category": "일식",
       "priceRange": "15,000원",
       "notes": "광어초밥 15,000 / 도로초밥 15,000 · 11:30-22:00 · 도보 약 433m",
       "tags": [
@@ -468,13 +946,29 @@
       ],
       "addedAt": "2026-11-06T04:19:35.458Z",
       "updatedAt": "2026-11-06T04:20:55.055Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "초밥",
+      "menu": [
+        {
+          "name": "광어초밥",
+          "price": 15000
+        },
+        {
+          "name": "도로초밥",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "22:00"
+      },
+      "walkMeters": 433
     },
     {
       "slug": "채석강-양재",
       "name": "채석강 양재",
       "area": "양재",
-      "category": "바지락칼국수",
+      "category": "한식",
       "priceRange": "11,000~14,000원",
       "notes": "칼국수 11,000 / 치즈조개전 14,000 · 10:00-22:00 · 도보 약 385m",
       "tags": [
@@ -482,13 +976,29 @@
       ],
       "addedAt": "2026-11-06T04:19:09.205Z",
       "updatedAt": "2026-11-06T04:20:52.301Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "바지락칼국수",
+      "menu": [
+        {
+          "name": "칼국수",
+          "price": 11000
+        },
+        {
+          "name": "치즈조개전",
+          "price": 14000
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "walkMeters": 385
     },
     {
       "slug": "카츠공방-양재점",
       "name": "카츠공방 양재점",
       "area": "양재",
-      "category": "돈까스",
+      "category": "일식",
       "priceRange": "10,000~12,000원",
       "notes": "로스카츠 12,000 / 직화소고기우동 10,000 · 11:00-21:00 · 도보 약 494m",
       "tags": [
@@ -496,13 +1006,29 @@
       ],
       "addedAt": "2026-11-06T04:18:58.061Z",
       "updatedAt": "2026-11-06T04:20:50.766Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "돈까스",
+      "menu": [
+        {
+          "name": "로스카츠",
+          "price": 12000
+        },
+        {
+          "name": "직화소고기우동",
+          "price": 10000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 494
     },
     {
       "slug": "팔향-양재점",
       "name": "팔향 양재점",
       "area": "양재",
-      "category": "딤섬·중식",
+      "category": "중식",
       "priceRange": "10,000~12,000원",
       "notes": "샤오롱바오 10,000 / 팔향짜장면 12,000 · 11:30-22:00 · 도보 약 279m",
       "tags": [
@@ -511,13 +1037,29 @@
       ],
       "addedAt": "2026-11-06T04:19:34.202Z",
       "updatedAt": "2026-11-06T04:20:54.396Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "딤섬·중식",
+      "menu": [
+        {
+          "name": "샤오롱바오",
+          "price": 10000
+        },
+        {
+          "name": "팔향짜장면",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "22:00"
+      },
+      "walkMeters": 279
     },
     {
       "slug": "하쿠라멘-양재역",
       "name": "하쿠라멘 양재역",
       "area": "양재",
-      "category": "라멘",
+      "category": "일식",
       "priceRange": "6,900~9,000원",
       "notes": "돈코츠라멘 9,000 / 우동 6,900 · 10:30-22:00 · 도보 약 218m",
       "tags": [
@@ -525,13 +1067,29 @@
       ],
       "addedAt": "2026-11-06T04:20:14.923Z",
       "updatedAt": "2026-11-06T04:21:05.726Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "라멘",
+      "menu": [
+        {
+          "name": "돈코츠라멘",
+          "price": 9000
+        },
+        {
+          "name": "우동",
+          "price": 6900
+        }
+      ],
+      "hours": {
+        "open": "10:30",
+        "close": "22:00"
+      },
+      "walkMeters": 218
     },
     {
       "slug": "화차이",
       "name": "화차이",
       "area": "양재",
-      "category": "짬뽕·해물덮밥",
+      "category": "중식",
       "priceRange": "8,000~9,000원",
       "notes": "유니짜장면 8,000 / 간짜장면 9,000 · 11:00-20:50 · 도보 약 313m",
       "tags": [
@@ -540,13 +1098,29 @@
       ],
       "addedAt": "2026-11-06T04:20:29.286Z",
       "updatedAt": "2026-11-06T04:21:17.886Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "짬뽕·해물덮밥",
+      "menu": [
+        {
+          "name": "유니짜장면",
+          "price": 8000
+        },
+        {
+          "name": "간짜장면",
+          "price": 9000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "20:50"
+      },
+      "walkMeters": 313
     },
     {
       "slug": "히노카츠",
       "name": "히노카츠",
       "area": "양재",
-      "category": "돈카츠",
+      "category": "일식",
       "priceRange": "13,000~15,000원",
       "notes": "로스카츠 정식 13,000 / 아나고카츠 정식 15,000 · 11:00-21:00 (15:00-17:00 브레이크) · 도보 약 203m",
       "tags": [
@@ -554,13 +1128,31 @@
       ],
       "addedAt": "2026-11-06T04:18:54.213Z",
       "updatedAt": "2026-11-06T04:21:16.623Z",
-      "mentionCount": 2
+      "mentionCount": 2,
+      "subcategory": "돈카츠",
+      "menu": [
+        {
+          "name": "로스카츠 정식",
+          "price": 13000
+        },
+        {
+          "name": "아나고카츠 정식",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMeters": 203
     },
     {
       "slug": "강창구찹쌀진순대-양재역점",
       "name": "강창구찹쌀진순대 양재역점",
       "area": "양재",
-      "category": "순대·순대국",
+      "category": "한식",
       "priceRange": "11,000~12,000원",
       "notes": "진순대국 11,000 / 얼큰순대국 12,000 · 도보 약 280m",
       "tags": [
@@ -569,13 +1161,25 @@
       ],
       "addedAt": "2026-11-06T04:19:29.610Z",
       "updatedAt": "2026-11-06T04:19:29.610Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "순대·순대국",
+      "menu": [
+        {
+          "name": "진순대국",
+          "price": 11000
+        },
+        {
+          "name": "얼큰순대국",
+          "price": 12000
+        }
+      ],
+      "walkMeters": 280
     },
     {
       "slug": "강촌원조쭈꾸미-양재역",
       "name": "강촌원조쭈꾸미 양재역",
       "area": "양재",
-      "category": "쭈꾸미·덮밥",
+      "category": "한식",
       "priceRange": "12,000원",
       "notes": "점심 오징어덮밥철판 12,000 / 점심 제육덮밥철판 12,000 · 11:00-23:00 · 도보 약 215m",
       "tags": [
@@ -584,13 +1188,29 @@
       ],
       "addedAt": "2026-11-06T04:20:35.673Z",
       "updatedAt": "2026-11-06T04:20:35.673Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "쭈꾸미·덮밥",
+      "menu": [
+        {
+          "name": "점심 오징어덮밥철판",
+          "price": 12000
+        },
+        {
+          "name": "점심 제육덮밥철판",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "walkMeters": 215
     },
     {
       "slug": "금강수림",
       "name": "금강수림",
       "area": "양재",
-      "category": "육개장·집밥",
+      "category": "한식",
       "priceRange": "12,000~13,000원",
       "notes": "육개장 12,000 / 육칼(육개장+칼국수) 13,000 · 11:00-22:00 · 도보 약 38m",
       "tags": [
@@ -599,13 +1219,29 @@
       ],
       "addedAt": "2026-11-06T04:19:39.998Z",
       "updatedAt": "2026-11-06T04:19:39.998Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "육개장·집밥",
+      "menu": [
+        {
+          "name": "육개장",
+          "price": 12000
+        },
+        {
+          "name": "육칼(육개장+칼국수)",
+          "price": 13000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 38
     },
     {
       "slug": "다돈식당",
       "name": "다돈식당",
       "area": "양재",
-      "category": "돈까스",
+      "category": "일식",
       "priceRange": "10,000~12,500원",
       "notes": "로스까스 10,000 / 코돈부르치즈돈까스 12,500 · 11:00-21:20 · 도보 약 464m",
       "tags": [
@@ -613,13 +1249,29 @@
       ],
       "addedAt": "2026-11-06T04:20:23.974Z",
       "updatedAt": "2026-11-06T04:20:23.974Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "돈까스",
+      "menu": [
+        {
+          "name": "로스까스",
+          "price": 10000
+        },
+        {
+          "name": "코돈부르치즈돈까스",
+          "price": 12500
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:20"
+      },
+      "walkMeters": 464
     },
     {
       "slug": "돈스라",
       "name": "돈스라",
       "area": "양재",
-      "category": "돈까스·경양식",
+      "category": "양식",
       "priceRange": "11,500~12,500원",
       "notes": "에그후라이돈까스 11,500 / 매운에그후라이돈까스 12,500 · 10:00-20:00 · 도보 약 258m",
       "tags": [
@@ -628,7 +1280,23 @@
       ],
       "addedAt": "2026-11-06T04:19:10.469Z",
       "updatedAt": "2026-11-06T04:19:10.469Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "돈까스·경양식",
+      "menu": [
+        {
+          "name": "에그후라이돈까스",
+          "price": 11500
+        },
+        {
+          "name": "매운에그후라이돈까스",
+          "price": 12500
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "20:00"
+      },
+      "walkMeters": 258
     },
     {
       "slug": "레코드196",
@@ -643,7 +1311,7 @@
       "slug": "린참치",
       "name": "린참치",
       "area": "양재",
-      "category": "참치회·점심메뉴",
+      "category": "일식",
       "priceRange": "13,000원",
       "notes": "대구탕(점심메뉴) 13,000 / 알탕(점심메뉴) 13,000 · 11:00-22:00 · 도보 약 407m",
       "tags": [
@@ -652,13 +1320,29 @@
       ],
       "addedAt": "2026-11-06T04:19:32.866Z",
       "updatedAt": "2026-11-06T04:19:32.866Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "참치회·점심메뉴",
+      "menu": [
+        {
+          "name": "대구탕(점심메뉴)",
+          "price": 13000
+        },
+        {
+          "name": "알탕(점심메뉴)",
+          "price": 13000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 407
     },
     {
       "slug": "마라홀릭-마라탕-양재역점",
       "name": "마라홀릭 마라탕 양재역점",
       "area": "양재",
-      "category": "마라탕",
+      "category": "중식",
       "priceRange": "9,900~10,900원",
       "notes": "꿔바로우 9,900 / 칠리새우 10,900 · 11:00-21:00 · 도보 약 208m",
       "tags": [
@@ -666,13 +1350,29 @@
       ],
       "addedAt": "2026-11-06T04:19:37.946Z",
       "updatedAt": "2026-11-06T04:19:37.946Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "마라탕",
+      "menu": [
+        {
+          "name": "꿔바로우",
+          "price": 9900
+        },
+        {
+          "name": "칠리새우",
+          "price": 10900
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 208
     },
     {
       "slug": "마포갈비",
       "name": "마포갈비",
       "area": "양재",
-      "category": "돼지갈비·냉면",
+      "category": "한식",
       "priceRange": "8,000~9,000원",
       "notes": "냉면 8,000 / 목등심 9,000 · 10:00-24:00 · 도보 약 258m",
       "tags": [
@@ -681,13 +1381,29 @@
       ],
       "addedAt": "2026-11-06T04:20:38.238Z",
       "updatedAt": "2026-11-06T04:20:38.238Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "돼지갈비·냉면",
+      "menu": [
+        {
+          "name": "냉면",
+          "price": 8000
+        },
+        {
+          "name": "목등심",
+          "price": 9000
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "24:00"
+      },
+      "walkMeters": 258
     },
     {
       "slug": "맛나돈얼큰돼지찌개-양재역점",
       "name": "맛나돈얼큰돼지찌개 양재역점",
       "area": "양재",
-      "category": "찌개·냉면",
+      "category": "한식",
       "priceRange": "7,500~8,000원",
       "notes": "살얼음동동 물냉면 7,500 / 미나리비빔냉면 8,000 · 11:00-22:00 · 도보 약 397m",
       "tags": [
@@ -696,7 +1412,23 @@
       ],
       "addedAt": "2026-11-06T04:19:00.979Z",
       "updatedAt": "2026-11-06T04:19:00.979Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "찌개·냉면",
+      "menu": [
+        {
+          "name": "살얼음동동 물냉면",
+          "price": 7500
+        },
+        {
+          "name": "미나리비빔냉면",
+          "price": 8000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 397
     },
     {
       "slug": "미다재",
@@ -707,13 +1439,19 @@
       "tags": [],
       "addedAt": "2026-11-06T04:18:50.983Z",
       "updatedAt": "2026-11-06T04:21:18.136Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "menu": [
+        {
+          "name": "시레기밥",
+          "price": 15000
+        }
+      ]
     },
     {
       "slug": "미면정-양재칼국수-샤브샤브",
       "name": "미면정 양재칼국수 샤브샤브",
       "area": "양재",
-      "category": "칼국수·샤브샤브",
+      "category": "한식",
       "priceRange": "6,000~13,000원",
       "notes": "콩국수(보쌈+열무보리밥) 13,000 / 배추만두 4알 6,000 · 11:00-21:00 · 도보 약 473m",
       "tags": [
@@ -722,7 +1460,23 @@
       ],
       "addedAt": "2026-11-06T04:20:22.792Z",
       "updatedAt": "2026-11-06T04:20:22.792Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "칼국수·샤브샤브",
+      "menu": [
+        {
+          "name": "콩국수(보쌈+열무보리밥)",
+          "price": 13000
+        },
+        {
+          "name": "배추만두 4알",
+          "price": 6000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 473
     },
     {
       "slug": "부대옥",
@@ -736,7 +1490,7 @@
       "slug": "브라운돈까스-뱅뱅사거리점",
       "name": "브라운돈까스 뱅뱅사거리점",
       "area": "양재",
-      "category": "돈까스·경양식",
+      "category": "양식",
       "priceRange": "9,500~10,500원",
       "notes": "브라운돈까스 10,500 / 매콤 비빔모밀 9,500 · 11:00-20:30 · 도보 약 460m",
       "tags": [
@@ -745,13 +1499,29 @@
       ],
       "addedAt": "2026-11-06T04:20:33.495Z",
       "updatedAt": "2026-11-06T04:20:33.495Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "돈까스·경양식",
+      "menu": [
+        {
+          "name": "브라운돈까스",
+          "price": 10500
+        },
+        {
+          "name": "매콤 비빔모밀",
+          "price": 9500
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "20:30"
+      },
+      "walkMeters": 460
     },
     {
       "slug": "소노야-양재역점",
       "name": "소노야 양재역점",
       "area": "양재",
-      "category": "우동·덮밥",
+      "category": "일식",
       "priceRange": "9,000~10,000원",
       "notes": "돈코츠라멘 10,000 / 냉모밀·비빔모밀 9,000 · 07:30-22:00 · 도보 약 108m",
       "tags": [
@@ -760,13 +1530,29 @@
       ],
       "addedAt": "2026-11-06T04:20:36.341Z",
       "updatedAt": "2026-11-06T04:20:36.341Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "우동·덮밥",
+      "menu": [
+        {
+          "name": "돈코츠라멘",
+          "price": 10000
+        },
+        {
+          "name": "냉모밀·비빔모밀",
+          "price": 9000
+        }
+      ],
+      "hours": {
+        "open": "07:30",
+        "close": "22:00"
+      },
+      "walkMeters": 108
     },
     {
       "slug": "스파게티스토리",
       "name": "스파게티스토리",
       "area": "양재",
-      "category": "파스타",
+      "category": "양식",
       "priceRange": "7,000~8,000원",
       "notes": "미트소스 스파게티 7,000 / 크림양송이 스파게티 8,000 · 10:30-20:00 · 도보 약 211m",
       "tags": [
@@ -774,7 +1560,23 @@
       ],
       "addedAt": "2026-11-06T04:19:02.222Z",
       "updatedAt": "2026-11-06T04:19:02.222Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "파스타",
+      "menu": [
+        {
+          "name": "미트소스 스파게티",
+          "price": 7000
+        },
+        {
+          "name": "크림양송이 스파게티",
+          "price": 8000
+        }
+      ],
+      "hours": {
+        "open": "10:30",
+        "close": "20:00"
+      },
+      "walkMeters": 211
     },
     {
       "slug": "식감이야기-양재역점",
@@ -789,7 +1591,7 @@
       "slug": "신향원양꼬치마라탕-양재역",
       "name": "신향원양꼬치마라탕 양재역",
       "area": "양재",
-      "category": "마라탕·중식",
+      "category": "중식",
       "priceRange": "11,000~15,000원",
       "notes": "차돌짬뽕 11,000 / 꿔보러우 15,000 · 11:00-23:00 · 도보 약 259m",
       "tags": [
@@ -798,23 +1600,40 @@
       ],
       "addedAt": "2026-11-06T04:20:27.975Z",
       "updatedAt": "2026-11-06T04:20:27.975Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "마라탕·중식",
+      "menu": [
+        {
+          "name": "차돌짬뽕",
+          "price": 11000
+        },
+        {
+          "name": "꿔보러우",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "walkMeters": 259
     },
     {
       "slug": "양재순대",
       "name": "양재순대",
       "area": "양재",
-      "category": "순대",
+      "category": "한식",
       "tags": [],
       "addedAt": "2026-11-06T04:19:08.108Z",
       "updatedAt": "2026-11-06T04:19:08.108Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "순대"
     },
     {
       "slug": "양재옥",
       "name": "양재옥",
       "area": "양재",
-      "category": "보쌈·돼지곰탕",
+      "category": "한식",
       "priceRange": "12,000원",
       "notes": "얼큰돼지곰탕 12,000 / 고기국수 12,000 · 11:00-22:00 · 도보 약 244m",
       "tags": [
@@ -823,13 +1642,29 @@
       ],
       "addedAt": "2026-11-06T04:20:30.662Z",
       "updatedAt": "2026-11-06T04:20:30.662Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "보쌈·돼지곰탕",
+      "menu": [
+        {
+          "name": "얼큰돼지곰탕",
+          "price": 12000
+        },
+        {
+          "name": "고기국수",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 244
     },
     {
       "slug": "영동소금구이-양재점",
       "name": "영동소금구이 양재점",
       "area": "양재",
-      "category": "차돌박이·찌개",
+      "category": "한식",
       "priceRange": "7,000~9,000원",
       "notes": "차돌된장찌개 7,000 / 키조개관자+묵은지 9,000 · 10:00-22:50 · 도보 약 423m",
       "tags": [
@@ -838,13 +1673,29 @@
       ],
       "addedAt": "2026-11-06T04:18:59.462Z",
       "updatedAt": "2026-11-06T04:18:59.462Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "차돌박이·찌개",
+      "menu": [
+        {
+          "name": "차돌된장찌개",
+          "price": 7000
+        },
+        {
+          "name": "키조개관자+묵은지",
+          "price": 9000
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "22:50"
+      },
+      "walkMeters": 423
     },
     {
       "slug": "예당",
       "name": "예당",
       "area": "양재",
-      "category": "만두국·손만두전골",
+      "category": "한식",
       "priceRange": "10,000~15,000원",
       "notes": "찐만두 10,000 / 감자전 15,000 · 11:00-22:00 · 도보 약 467m",
       "tags": [
@@ -853,13 +1704,29 @@
       ],
       "addedAt": "2026-11-06T04:20:36.920Z",
       "updatedAt": "2026-11-06T04:20:36.920Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "만두국·손만두전골",
+      "menu": [
+        {
+          "name": "찐만두",
+          "price": 10000
+        },
+        {
+          "name": "감자전",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 467
     },
     {
       "slug": "오대산산채전문점",
       "name": "오대산산채전문점",
       "area": "양재",
-      "category": "산채정식·나물",
+      "category": "한식",
       "priceRange": "14,000~15,000원",
       "notes": "돌솥 곤드레밥 14,000 / 두부구이 15,000 · 11:30-22:00 · 도보 약 438m",
       "tags": [
@@ -868,13 +1735,29 @@
       ],
       "addedAt": "2026-11-06T04:20:24.601Z",
       "updatedAt": "2026-11-06T04:20:24.601Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "산채정식·나물",
+      "menu": [
+        {
+          "name": "돌솥 곤드레밥",
+          "price": 14000
+        },
+        {
+          "name": "두부구이",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "22:00"
+      },
+      "walkMeters": 438
     },
     {
       "slug": "오부찌-양재점",
       "name": "오부찌 양재점",
       "area": "양재",
-      "category": "부대찌개",
+      "category": "한식",
       "priceRange": "11,000~13,000원",
       "notes": "스팸부대찌개 13,000 / 기본부대찌개 11,000 · 11:00-21:00 · 도보 약 351m",
       "tags": [
@@ -882,13 +1765,29 @@
       ],
       "addedAt": "2026-11-06T04:20:34.954Z",
       "updatedAt": "2026-11-06T04:20:34.954Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "부대찌개",
+      "menu": [
+        {
+          "name": "스팸부대찌개",
+          "price": 13000
+        },
+        {
+          "name": "기본부대찌개",
+          "price": 11000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 351
     },
     {
       "slug": "옥된장-양재점",
       "name": "옥된장 양재점",
       "area": "양재",
-      "category": "순두부전골·한식",
+      "category": "한식",
       "priceRange": "9,900~13,000원",
       "notes": "스지순두부전골(점심특선) 13,000 / 자영업자혜택 9,900 · 11:00-22:00 · 도보 약 340m",
       "tags": [
@@ -897,13 +1796,29 @@
       ],
       "addedAt": "2026-11-06T04:20:37.608Z",
       "updatedAt": "2026-11-06T04:20:37.608Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "순두부전골·한식",
+      "menu": [
+        {
+          "name": "스지순두부전골(점심특선)",
+          "price": 13000
+        },
+        {
+          "name": "자영업자혜택",
+          "price": 9900
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 340
     },
     {
       "slug": "원할매이모네닭한마리",
       "name": "원할매이모네닭한마리",
       "area": "양재",
-      "category": "닭칼국수·닭곰탕",
+      "category": "한식",
       "priceRange": "8,000~9,000원",
       "notes": "닭칼국수 9,000 / 닭곰탕 8,000 · 10:00-21:00 · 도보 약 407m",
       "tags": [
@@ -912,13 +1827,29 @@
       ],
       "addedAt": "2026-11-06T04:20:32.045Z",
       "updatedAt": "2026-11-06T04:20:32.045Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "닭칼국수·닭곰탕",
+      "menu": [
+        {
+          "name": "닭칼국수",
+          "price": 9000
+        },
+        {
+          "name": "닭곰탕",
+          "price": 8000
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "walkMeters": 407
     },
     {
       "slug": "이올로화덕피자",
       "name": "이올로화덕피자",
       "area": "양재",
-      "category": "화덕피자",
+      "category": "양식",
       "priceRange": "12,000~15,000원",
       "notes": "마리나라 피자 15,000 / 오리엔탈샐러드 12,000 · 11:00-21:30 · 도보 약 217m",
       "tags": [
@@ -926,13 +1857,29 @@
       ],
       "addedAt": "2026-11-06T04:20:19.368Z",
       "updatedAt": "2026-11-06T04:20:19.368Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "화덕피자",
+      "menu": [
+        {
+          "name": "마리나라 피자",
+          "price": 15000
+        },
+        {
+          "name": "오리엔탈샐러드",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:30"
+      },
+      "walkMeters": 217
     },
     {
       "slug": "자연사랑-생태찌개",
       "name": "자연사랑 생태찌개",
       "area": "양재",
-      "category": "생태찌개",
+      "category": "한식",
       "priceRange": "10,000~11,000원",
       "notes": "생태찌개 10,000 / 생태지리 11,000 · 10:00-22:00 · 도보 약 426m",
       "tags": [
@@ -941,13 +1888,29 @@
       ],
       "addedAt": "2026-11-06T04:20:32.637Z",
       "updatedAt": "2026-11-06T04:20:32.637Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "생태찌개",
+      "menu": [
+        {
+          "name": "생태찌개",
+          "price": 10000
+        },
+        {
+          "name": "생태지리",
+          "price": 11000
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "walkMeters": 426
     },
     {
       "slug": "전주옛날집",
       "name": "전주옛날집",
       "area": "양재",
-      "category": "한정식·비빔밥",
+      "category": "한식",
       "priceRange": "10,000~13,000원",
       "notes": "전주비빔밥 10,000 / 코다리정식 13,000 · 11:20-21:30 · 도보 약 383m",
       "tags": [
@@ -956,13 +1919,29 @@
       ],
       "addedAt": "2026-11-06T04:19:37.303Z",
       "updatedAt": "2026-11-06T04:19:37.303Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "한정식·비빔밥",
+      "menu": [
+        {
+          "name": "전주비빔밥",
+          "price": 10000
+        },
+        {
+          "name": "코다리정식",
+          "price": 13000
+        }
+      ],
+      "hours": {
+        "open": "11:20",
+        "close": "21:30"
+      },
+      "walkMeters": 383
     },
     {
       "slug": "지세포세꼬시",
       "name": "지세포세꼬시",
       "area": "양재",
-      "category": "횟집·회덮밥",
+      "category": "한식",
       "priceRange": "14,000~15,000원",
       "notes": "갈치구이정식 14,000 / 해초활어덮밥 15,000 · 11:30-22:00 · 도보 약 29m",
       "tags": [
@@ -971,13 +1950,29 @@
       ],
       "addedAt": "2026-11-06T04:20:31.308Z",
       "updatedAt": "2026-11-06T04:20:31.308Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "횟집·회덮밥",
+      "menu": [
+        {
+          "name": "갈치구이정식",
+          "price": 14000
+        },
+        {
+          "name": "해초활어덮밥",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "22:00"
+      },
+      "walkMeters": 29
     },
     {
       "slug": "찌개집1979-양재역점",
       "name": "찌개집1979 양재역점",
       "area": "양재",
-      "category": "김치찌개",
+      "category": "한식",
       "priceRange": "7,000~10,000원",
       "notes": "점심특선 통돼지 김치찌개 10,000 / 된장술밥(후식) 7,000 · 24시간 · 도보 약 39m",
       "tags": [
@@ -986,13 +1981,29 @@
       ],
       "addedAt": "2026-11-06T04:20:21.412Z",
       "updatedAt": "2026-11-06T04:20:21.412Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "김치찌개",
+      "menu": [
+        {
+          "name": "점심특선 통돼지 김치찌개",
+          "price": 10000
+        },
+        {
+          "name": "된장술밥(후식)",
+          "price": 7000
+        }
+      ],
+      "hours": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "walkMeters": 39
     },
     {
       "slug": "쿠니라멘",
       "name": "쿠니라멘",
       "area": "양재",
-      "category": "라멘",
+      "category": "일식",
       "priceRange": "9,000원",
       "notes": "쿠니라멘 9,000 / 핫쿠니라멘 9,000 · 11:00-21:00 · 도보 약 116m",
       "tags": [
@@ -1000,13 +2011,29 @@
       ],
       "addedAt": "2026-11-06T04:20:23.394Z",
       "updatedAt": "2026-11-06T04:20:23.394Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "라멘",
+      "menu": [
+        {
+          "name": "쿠니라멘",
+          "price": 9000
+        },
+        {
+          "name": "핫쿠니라멘",
+          "price": 9000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 116
     },
     {
       "slug": "크라이치즈버거-양재역점",
       "name": "크라이치즈버거 양재역점",
       "area": "양재",
-      "category": "수제버거",
+      "category": "양식",
       "priceRange": "8,900~10,900원",
       "notes": "치즈버거세트 8,900 / 더블치즈버거세트 10,900 · 10:30-21:00 · 도보 약 354m",
       "tags": [
@@ -1014,13 +2041,29 @@
       ],
       "addedAt": "2026-11-06T04:19:11.683Z",
       "updatedAt": "2026-11-06T04:19:11.683Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "수제버거",
+      "menu": [
+        {
+          "name": "치즈버거세트",
+          "price": 8900
+        },
+        {
+          "name": "더블치즈버거세트",
+          "price": 10900
+        }
+      ],
+      "hours": {
+        "open": "10:30",
+        "close": "21:00"
+      },
+      "walkMeters": 354
     },
     {
       "slug": "태국식당356-양재역",
       "name": "태국식당356 양재역",
       "area": "양재",
-      "category": "태국음식",
+      "category": "아시안",
       "priceRange": "12,000~15,000원",
       "notes": "팟타이꿍 12,000 / 똠얌꿍 15,000 · 11:30-22:00 · 도보 약 189m",
       "tags": [
@@ -1028,13 +2071,29 @@
       ],
       "addedAt": "2026-11-06T04:20:28.647Z",
       "updatedAt": "2026-11-06T04:20:28.647Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "태국음식",
+      "menu": [
+        {
+          "name": "팟타이꿍",
+          "price": 12000
+        },
+        {
+          "name": "똠얌꿍",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "22:00"
+      },
+      "walkMeters": 189
     },
     {
       "slug": "후토루-양재점",
       "name": "후토루 양재점",
       "area": "양재",
-      "category": "김밥·후토마키",
+      "category": "분식",
       "priceRange": "8,900~14,900원",
       "notes": "고등어스테이크 프누키 14,900 / 고단백 매콤 비빔면 8,900 · 11:00-21:00 · 도보 약 169m",
       "tags": [
@@ -1043,7 +2102,23 @@
       ],
       "addedAt": "2026-11-06T04:20:27.256Z",
       "updatedAt": "2026-11-06T04:20:27.256Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "subcategory": "김밥·후토마키",
+      "menu": [
+        {
+          "name": "고등어스테이크 프누키",
+          "price": 14900
+        },
+        {
+          "name": "고단백 매콤 비빔면",
+          "price": 8900
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 169
     }
   ]
 }

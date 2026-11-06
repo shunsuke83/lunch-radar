@@ -7,6 +7,7 @@ import {
   restaurantKey,
   type Restaurant,
 } from "../lib/restaurants.js";
+import { presentRestaurants, type PresentedRestaurant } from "../lib/slack-people.js";
 
 function pickRandom<T>(items: T[], count: number): T[] {
   const copy = [...items];
@@ -57,7 +58,7 @@ export default defineTool({
     if (matches.length === 0) {
       return {
         empty: true,
-        picks: [] as Restaurant[],
+        picks: [] as PresentedRestaurant[],
         message: "저장된 맛집이 없습니다. 채널에서 추천을 모아 주세요.",
       };
     }
@@ -68,7 +69,7 @@ export default defineTool({
 
     return {
       empty: false,
-      picks,
+      picks: await presentRestaurants(ctx.host, picks),
       considered: matches.length,
     };
   },

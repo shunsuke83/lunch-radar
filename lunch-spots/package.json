@@ -5,6 +5,7 @@
   "description": "agent project: lunch-spots",
   "scripts": {
     "check": "tsc --noEmit",
+    "catalog:structure": "tsx scripts/structure-catalog.ts",
     "dev": "agent-sdk dev"
   },
   "dependencies": {

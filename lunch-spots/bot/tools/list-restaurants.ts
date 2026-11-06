@@ -7,6 +7,7 @@ import {
   restaurantKey,
   type Restaurant,
 } from "../lib/restaurants.js";
+import { presentRestaurants } from "../lib/slack-people.js";
 
 export default defineTool({
   description: prompt`
@@ -53,7 +54,7 @@ export default defineTool({
 
     return {
       total: restaurants.length,
-      restaurants: restaurants.slice(0, limit),
+      restaurants: await presentRestaurants(ctx.host, restaurants.slice(0, limit)),
     };
   },
 });

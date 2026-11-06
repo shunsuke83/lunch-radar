@@ -83,9 +83,10 @@ export async function POST(request: NextRequest) {
     );
 
     // data/restaurants.json is published publicly; drop Slack identifiers.
-    const incomingRestaurants = body.restaurants.map(
-      ({ source: _source, ...rest }) => rest,
-    );
+    const incomingRestaurants = body.restaurants.map((r) => ({
+      ...r,
+      source: undefined,
+    }));
 
     let restaurants: Restaurant[];
     if (body.replace) {

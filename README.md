@@ -4,7 +4,7 @@
 
 | 폴더 | 역할 | 실행에 필요한 것 |
 | --- | --- | --- |
-| [`web/`](web/) | 맛집 목록 브라우저 앱 (Next.js, 검색·종류·지역·태그 필터) | Node.js만 있으면 됨 (샘플 데이터 포함) |
+| [`web/`](web/) | 맛집 목록 브라우저 앱 (Next.js, 검색·7개 대분류·도보 5분/영업 중/만원 이하 칩·거리/가격 정렬) | Node.js만 있으면 됨 (샘플 데이터 포함) |
 | [`lunch-spots/`](lunch-spots/) | Slack Agent SDK 봇 (히스토리 + 실시간 수집, 추천) | Node.js 22.13+, Agent SDK 로그인, Slack 토큰 |
 
 처음이라면 **웹 앱만 먼저 실행**해 보세요. Slack 없이도 `web/data/restaurants.json` 샘플 데이터로 UI를 확인할 수 있습니다.

@@ -4,6 +4,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import * as z from "zod/v4";
 import { lunchChannelId } from "../lib/config.js";
+import { structureRestaurant } from "../lib/structure.js";
 import {
   INDEX_KEY,
   historyStateKey,
@@ -65,9 +66,11 @@ export default defineTool({
       updatedAt: new Date().toISOString(),
       source: "slack-export",
       lastMessageTs: complete ? history?.newestTs : undefined,
-      restaurants: restaurants.map(
-        ({ source: _source, countedMessages: _counted, ...rest }) => rest,
-      ),
+      restaurants: restaurants.map((r) => {
+        const { source: _source, countedMessages: _counted, ...rest } =
+          structureRestaurant(r);
+        return rest;
+      }),
     };
 
     let writtenPath: string | null = null;

@@ -32,8 +32,8 @@ Slack은 최신 글부터 페이지를 주므로, 페이지 한도나 Slack 오�
 
 ## 도구
 
-- `upsert-restaurant` — 맛집 저장/갱신. `mentionCount`는 출처 메시지(`sourceChannelId` + `sourceMessageTs`)당 한 번만 증가하므로 재시도·`reset` 재수집에도 부풀지 않습니다. 이미 센 메시지 목록(`countedMessages`)을 가게 레코드 안에 두어 중복 판정과 카운트 증가가 한 번의 쓰기로 끝나므로, 중간에 실패해도 같은 입력으로 다시 호출하면 됩니다 (공개 export에서는 제외).
-- `list-restaurants` — 검색·필터
+- `upsert-restaurant` — 맛집 저장/갱신. `mentionCount`는 출처 메시지(`sourceChannelId` + `sourceMessageTs`)당 한 번만 증가하므로 재시도·`reset` 재수집에도 부풀지 않습니다. `category`는 7개 대분류(한식·중식·일식·양식·아시안·분식·샐러드)로 정규화되고 세부 종류는 `subcategory`에 남습니다. `notes`(`메뉴 가격 / 메뉴 가격 · HH:MM-HH:MM · 도보 약 Nm`)에서 `menu` / `hours` / `walkMeters`를 뽑습니다 (`bot/lib/structure.ts`). 이미 센 메시지 목록(`countedMessages`)을 가게 레코드 안에 두어 중복 판정과 카운트 증가가 한 번의 쓰기로 끝나므로, 중간에 실패해도 같은 입력으로 다시 호출하면 됩니다 (공개 export에서는 제외).
+- `list-restaurants` — 검색·필터. 결과에 원글 링크(`sourceLink`, 메시지 ts로 만든 `https://<workspace>.slack.com/archives/<채널>/p<ts에서 점 제거>`)와 추천한 사람 이름(`recommendedBy`, `users.info` 결과를 kv에 7일 캐시)을 붙입니다. 이 둘은 봇 답변에만 쓰고 공개 카탈로그에는 넣지 않습니다.
 - `pick-lunch` — “오늘 뭐 먹지?”
 - `ingest-channel-history` — 채널 히스토리 증거 수집
 - `seed-from-catalog` — 기존 `web/data/restaurants.json`을 불러와 `lastMessageTs` 이후만 이어서 수집 (Actions 증분 수집용)
