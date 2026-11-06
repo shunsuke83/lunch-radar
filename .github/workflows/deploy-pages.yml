@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "web/**"
+      - "scripts/check-sensitive.mjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -31,6 +32,10 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: web/package-lock.json
+
+      - name: Block Slack ids and secrets
+        working-directory: .
+        run: node scripts/check-sensitive.mjs
 
       - id: pages
         uses: actions/configure-pages@v6

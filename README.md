@@ -38,6 +38,7 @@ brew install node@22
 ```bash
 git clone https://github.com/shunsuke83/lunch-radar.git
 cd lunch-radar
+git config core.hooksPath .githooks   # 커밋 전 민감정보 검사 (아래 "민감정보 검사")
 ```
 
 ## 3. 웹 앱 실행
@@ -149,6 +150,39 @@ npx @grok/agent-sdk dev
 - **GitHub Pages는 누구나 볼 수 있는 공개 사이트입니다** (비공개 저장소여도 Enterprise 플랜이 아니면 공개). 사내 Slack에서 수집한 데이터를 올려도 되는지 먼저 확인하세요.
 - Pages에는 서버가 없으므로 `POST /api/restaurants` import는 동작하지 않습니다. 데이터 갱신은 `web/data/restaurants.json` 커밋으로만 합니다.
 - Slack에서 멘션·DM으로 대화하는 봇 기능은 계속 실행되는 서버가 필요해 Actions로 대체되지 않습니다. 필요하면 로컬이나 `npx @grok/agent-sdk deploy`로 띄웁니다. 수집만은 `collect-lunch.yml`이 대신합니다.
+
+## 민감정보 검사
+
+저장소와 Pages가 모두 공개라서, Slack 식별자가 한 번이라도 커밋되면 이력 재작성이 필요합니다. `node scripts/check-sensitive.mjs`가 추적 파일 전체에서 다음을 찾으면 실패합니다.
+
+- Slack 사용자·채널·팀 ID(`U0…`, `C0…`, `T0…` 형태), Slack 토큰(`xoxb-…`, `xoxp-…`, `xapp-…`), Slack 메시지 링크, Google API 키
+- `.env.example`이 아닌 `.env*` 파일
+- `web/data/restaurants.json`의 최상위 `channelId`와 가게별 `source` / `countedMessages` / `author` / `messageTs` / `permalink` / `channelId` 필드
+
+| 시점 | 동작 |
+| --- | --- |
+| 커밋 전 (`.githooks/pre-commit`, 클론마다 `git config core.hooksPath .githooks` 1회) | 스테이징된 내용 검사, 위반 시 커밋 거부 |
+| CI (`ci.yml`의 `sensitive-data`, push·PR) | 위반 시 실패 |
+| Pages 배포 (`deploy-pages.yml`) | 위반 시 빌드 전에 중단, 사이트는 이전 버전 유지 |
+| 자동 수집 커밋 (`collect-lunch.yml`) | 위반 시 커밋·푸시하지 않음 |
+
+GitHub 웹의 "Add files via upload"는 로컬 훅을 거치지 않습니다. 이 경우 CI가 실패로 알리고 배포는 막히지만 커밋 자체는 이미 들어간 상태이므로, 데이터 파일은 로컬에서 커밋하세요.
+
+손으로 넣는 가게는 `source` 대신 다음 형식을 씁니다.
+
+```json
+{
+  "slug": "음식점명",
+  "name": "음식점명",
+  "address": "실제 주소",
+  "category": "한식",
+  "tags": [],
+  "mentionCount": 0,
+  "addedAt": "2026-11-06T00:00:00.000Z",
+  "updatedAt": "2026-11-06T00:00:00.000Z",
+  "curated": { "by": "등록자", "url": "https://example.com/reference" }
+}
+```
 
 ## 문제 해결
 
