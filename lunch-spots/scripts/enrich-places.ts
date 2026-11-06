@@ -121,6 +121,8 @@ async function findGoogleRating(r: Restaurant, near: GeoPoint, strict: boolean) 
 
 const catalog = JSON.parse(await readFile(file, "utf8")) as Catalog;
 const stats = { located: 0, notFound: [] as string[], rated: 0, unrated: [] as string[], kept: 0 };
+/** After the first Google failure, skip Google but still save the Kakao results. */
+let googleError: string | undefined;
 
 if (!KAKAO_KEY && !GOOGLE_KEY) {
   console.log("KAKAO_REST_API_KEY and GOOGLE_PLACES_API_KEY are both unset; nothing to do.");
@@ -154,8 +156,15 @@ for (const r of catalog.restaurants) {
     !r.ratingCheckedAt ||
     Date.now() - Date.parse(r.ratingCheckedAt) > RATING_TTL_DAYS * 24 * 60 * 60 * 1000;
   const near = r.location ?? office;
-  if (GOOGLE_KEY && near && (force || stale)) {
-    const hit = await findGoogleRating(r, near, Boolean(r.location));
+  if (GOOGLE_KEY && !googleError && near && (force || stale)) {
+    let hit: GooglePlace | undefined;
+    try {
+      hit = await findGoogleRating(r, near, Boolean(r.location));
+    } catch (err) {
+      googleError = err instanceof Error ? err.message : String(err);
+      if (r.rating) stats.kept++;
+      continue;
+    }
     r.ratingCheckedAt = new Date().toISOString();
     if (hit && typeof hit.rating === "number") {
       const rating: PlaceRating = {
@@ -188,4 +197,8 @@ if (stats.unrated.length) console.log(`google no rating: ${stats.unrated.join(",
 if (!dryRun) {
   await writeFile(file, `${JSON.stringify(catalog, null, 2)}\n`, "utf8");
   console.log(`wrote ${file}`);
+}
+if (googleError) {
+  console.error(`google stopped: ${googleError}`);
+  process.exit(1);
 }
