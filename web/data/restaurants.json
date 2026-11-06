@@ -3268,6 +3268,38 @@
         "url": "https://maps.google.com/?cid=340298955999172005&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:29.999Z"
       }
+    },
+    {
+      "slug": "이가원항아리수제비-도곡점",
+      "name": "이가원항아리수제비 도곡점",
+      "category": "한식",
+      "subcategory": "수제비",
+      "tags": [
+        "수제비"
+      ],
+      "addedAt": "2026-08-28T02:25:00.000Z",
+      "updatedAt": "2026-11-06T06:56:36.469Z",
+      "mentionCount": 1
+    },
+    {
+      "slug": "유월의-보리-양재점",
+      "name": "유월의 보리 양재점",
+      "category": "한식",
+      "subcategory": "솥밥",
+      "priceRange": "14,000원",
+      "notes": "솥밥 정식 14,000",
+      "tags": [
+        "솥밥"
+      ],
+      "addedAt": "2026-08-28T02:25:00.000Z",
+      "updatedAt": "2026-11-06T06:56:36.469Z",
+      "mentionCount": 1,
+      "menu": [
+        {
+          "name": "솥밥 정식",
+          "price": 14000
+        }
+      ]
     }
   ],
   "office": {
