@@ -37,7 +37,10 @@ function distanceM(a: GeoPoint, b: GeoPoint): number {
 async function kakao<T>(endpoint: string, params: Record<string, string>): Promise<T> {
   const url = `https://dapi.kakao.com/v2/local/search/${endpoint}.json?${new URLSearchParams(params)}`;
   const res = await fetch(url, { headers: { Authorization: `KakaoAK ${KAKAO_KEY}` } });
-  if (!res.ok) throw new Error(`Kakao ${endpoint} HTTP ${res.status}`);
+  if (!res.ok) {
+    const body = (await res.text()).slice(0, 300);
+    throw new Error(`Kakao ${endpoint} HTTP ${res.status}: ${body}`);
+  }
   return (await res.json()) as T;
 }
 
