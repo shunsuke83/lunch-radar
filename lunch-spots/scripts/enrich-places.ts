@@ -14,6 +14,13 @@ const OFFICE_NAME = process.env.LUNCH_OFFICE_NAME ?? "플래그원";
 const OFFICE_ADDRESS = process.env.LUNCH_OFFICE_ADDRESS ?? "서울 강남구 남부순환로 2621";
 const SEARCH_RADIUS_M = 2000;
 const RATING_TTL_DAYS = 7;
+/**
+ * Origin of the "도보 약 Nm" figures in the channel's daily picks, fitted from
+ * 63 of them: they are straight-line meters from here (RMS error ≈18m). The
+ * office geocode is ~170m off, so rows without a Slack figure use this point
+ * to stay comparable.
+ */
+const WALK_ORIGIN: GeoPoint = { lat: 37.48487, lng: 127.03472 };
 /** A Google result farther than this from the Kakao point is another branch. */
 const SAME_PLACE_M = 300;
 
@@ -65,6 +72,12 @@ async function geocodeOffice(): Promise<Office> {
   const doc = data.documents[0];
   if (!doc) throw new Error(`Kakao could not geocode ${OFFICE_ADDRESS}`);
   return { name: OFFICE_NAME, address: OFFICE_ADDRESS, lat: Number(doc.y), lng: Number(doc.x) };
+}
+
+async function geocode(address: string): Promise<GeoPoint | undefined> {
+  const data = await kakao<{ documents: { x: string; y: string }[] }>("address", { query: address });
+  const doc = data.documents[0];
+  return doc ? { lat: Number(doc.y), lng: Number(doc.x) } : undefined;
 }
 
 async function findKakaoPlace(r: Restaurant, office: Office): Promise<KakaoPlace | undefined> {
@@ -212,7 +225,14 @@ async function collectNaverLinks(): Promise<NaverLink[]> {
 }
 
 const catalog = JSON.parse(await readFile(file, "utf8")) as Catalog;
-const stats = { located: 0, notFound: [] as string[], rated: 0, unrated: [] as string[], kept: 0 };
+const stats = {
+  located: 0,
+  notFound: [] as string[],
+  rated: 0,
+  unrated: [] as string[],
+  kept: 0,
+  walkComputed: 0,
+};
 /** After the first Google failure, skip Google but still save the Kakao results. */
 let googleError: string | undefined;
 
@@ -248,7 +268,13 @@ for (const r of catalog.restaurants) {
       };
       stats.located++;
     } else {
-      stats.notFound.push(r.name);
+      const point = r.address ? await geocode(r.address) : undefined;
+      if (point) {
+        r.location = point;
+        stats.located++;
+      } else {
+        stats.notFound.push(r.name);
+      }
     }
   }
 
@@ -262,6 +288,12 @@ for (const r of catalog.restaurants) {
       // Retry Google now that the branch is pinned.
       if (!r.rating) delete r.ratingCheckedAt;
     }
+  }
+
+  if (r.location && (r.walkMeters === undefined || r.walkFromMap)) {
+    r.walkMeters = Math.round(distanceM(WALK_ORIGIN, r.location));
+    r.walkFromMap = true;
+    stats.walkComputed++;
   }
 
   // Misses are timestamped too, so an unmatched place is retried weekly, not daily
@@ -302,6 +334,7 @@ console.log(
   [
     office ? `office: ${office.name} (${office.lat.toFixed(5)}, ${office.lng.toFixed(5)})` : "office: -",
     KAKAO_KEY ? `kakao located ${stats.located}, not found ${stats.notFound.length}` : "kakao: skipped (no key)",
+    `walk distance from coordinates: ${stats.walkComputed}`,
     GOOGLE_KEY ? `google rated ${stats.rated}, no rating ${stats.unrated.length}, kept ${stats.kept}` : "google: skipped (no key)",
   ].join("\n"),
 );

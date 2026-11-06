@@ -111,7 +111,7 @@ npx @grok/agent-sdk dev
 
 1. **사전 확인 (모델 호출 없음)**: Slack에서 최신 메시지 시각만 조회해 `web/data/restaurants.json`의 `lastMessageTs`와 비교합니다. 새 메시지가 없으면 여기서 끝납니다.
 2. **증분 수집**: `agent-sdk run`으로 봇을 한 번 실행합니다. `seed-from-catalog`가 기존 카탈로그를 불러오고, `ingest-channel-history`는 `lastMessageTs` 이후 메시지만 가져와 모델이 새 맛집만 반영합니다. 카탈로그에 `lastMessageTs`가 없으면 전체 히스토리로 다시 만듭니다.
-3. **지도·평점 보강** (키가 있을 때만, 새 메시지가 없어도 실행): `npm run catalog:enrich`가 카카오 Local API로 회사 위치와 가게 좌표·카카오맵 링크를 찾고, Google Places API로 별점·리뷰 수를 붙입니다. 채널에 공유된 네이버지도 장소 링크(`naver.me`, `map.naver.com/.../place/<id>`)는 가게 이름과 맞춰 `naver` 필드(장소 페이지)로 저장하고, 카카오가 못 찾은 가게는 그 좌표를 씁니다. 평점은 7일마다 다시 조회합니다. 이 단계가 실패해도 수집 결과 커밋은 계속합니다.
+3. **지도·평점 보강** (키가 있을 때만, 새 메시지가 없어도 실행): `npm run catalog:enrich`가 카카오 Local API로 회사 위치와 가게 좌표·카카오맵 링크를 찾고, Google Places API로 별점·리뷰 수를 붙입니다. 채널에 공유된 네이버지도 장소 링크(`naver.me`, `map.naver.com/.../place/<id>`)는 가게 이름과 맞춰 `naver` 필드(장소 페이지)로 저장하고, 카카오가 못 찾은 가게는 그 좌표를 씁니다. 도보 거리는 모두 같은 기준점(채널 추천 글의 "도보 약 Nm"을 역산한 점, 직선거리)으로 맞춥니다. notes에 거리가 없는 가게는 좌표로 계산하고 `walkFromMap: true`로 표시합니다. 평점은 7일마다 다시 조회합니다. 이 단계가 실패해도 수집 결과 커밋은 계속합니다.
 4. **커밋·배포**: 타임스탬프 외에 바뀐 내용이 있을 때만 커밋하고 Pages 배포를 호출합니다. export 결과가 0곳이면 실패 처리하고 기존 데이터를 유지합니다.
 
 지시문은 [`lunch-spots/ci/collect-prompt.md`](lunch-spots/ci/collect-prompt.md)입니다. 수동 실행 시 `force`를 켜면 새 메시지가 없어도 봇을 실행합니다. 처음부터 다시 만들려면 JSON에서 `lastMessageTs`를 지우고 실행합니다.

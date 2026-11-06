@@ -7,6 +7,7 @@ import { lunchChannelId } from "../lib/config.js";
 import { structureRestaurant } from "../lib/structure.js";
 import {
   INDEX_KEY,
+  asCurated,
   historyStateKey,
   isHistoryComplete,
   restaurantKey,
@@ -60,13 +61,27 @@ export default defineTool({
     // history still has gaps would make the next run skip those messages.
     const complete = isHistoryComplete(history);
 
+    const outPath = path.resolve(process.cwd(), "..", "web", "data", "restaurants.json");
+    // The office point comes from the enrich script and curated rows were added
+    // by hand; neither is in the store, so both carry over from the file.
+    const existing = await readFile(outPath, "utf8")
+      .then((text) => JSON.parse(text) as { office?: unknown; restaurants?: Restaurant[] })
+      .catch(() => ({ office: undefined, restaurants: [] as Restaurant[] }));
+    const stored = new Set(restaurants.map((r) => r.slug));
+    const carried = (existing.restaurants ?? [])
+      .map(asCurated)
+      .filter((r): r is Restaurant => r !== null && !stored.has(r.slug));
+    const rows = [...restaurants.map((r) => asCurated(r) ?? r), ...carried].sort(
+      (a, b) => b.mentionCount - a.mentionCount || a.name.localeCompare(b.name, "ko"),
+    );
+
     // The web catalog is published on public GitHub Pages: no Slack user,
     // channel, or message identifiers leave the store.
     const catalog = {
       updatedAt: new Date().toISOString(),
       source: "slack-export",
       lastMessageTs: complete ? history?.newestTs : undefined,
-      restaurants: restaurants.map((r) => {
+      restaurants: rows.map((r) => {
         const { source: _source, countedMessages: _counted, ...rest } =
           structureRestaurant(r);
         return rest;
@@ -80,17 +95,7 @@ export default defineTool({
         "History is incomplete (backfill or catch-up has hasMore). Keep calling ingest-channel-history with mode auto until hasMore is false, then export again.";
     } else if (input.writeFile !== false) {
       try {
-        const outPath = path.resolve(
-          process.cwd(),
-          "..",
-          "web",
-          "data",
-          "restaurants.json",
-        );
-        // The office point comes from the enrich script, not the store.
-        const office = await readFile(outPath, "utf8")
-          .then((text) => (JSON.parse(text) as { office?: unknown }).office)
-          .catch(() => undefined);
+        const office = existing.office;
         await mkdir(path.dirname(outPath), { recursive: true });
         await writeFile(
           outPath,
@@ -106,7 +111,8 @@ export default defineTool({
     return {
       ok: writeError === null,
       complete,
-      count: restaurants.length,
+      count: rows.length,
+      curatedKept: carried.length,
       writtenPath,
       writeError,
       catalog,

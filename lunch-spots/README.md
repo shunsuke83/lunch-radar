@@ -37,7 +37,7 @@ Slack은 최신 글부터 페이지를 주므로, 페이지 한도나 Slack 오�
 - `pick-lunch` — “오늘 뭐 먹지?”
 - `ingest-channel-history` — 채널 히스토리 증거 수집
 - `seed-from-catalog` — 기존 `web/data/restaurants.json`을 불러와 `lastMessageTs` 이후만 이어서 수집 (Actions 증분 수집용)
-- `export-restaurants` — 웹 앱 `web/data/restaurants.json`으로 내보내기. 공개 사이트용이라 Slack 사용자·채널·메시지 ID는 빼고 씁니다.
+- `export-restaurants` — 웹 앱 `web/data/restaurants.json`으로 내보내기. 공개 사이트용이라 Slack 사용자·채널·메시지 ID는 빼고 씁니다. 손으로 넣은 가게(`curated: {by, url}`, 예전 파일의 `source.channelId: "claude-curated"`도 인정)는 봇 저장소에 없어도 기존 파일에서 그대로 이어받습니다. 직접 추가할 때는 `source` 대신 `curated`와 `address`(지도 좌표용)를 넣으세요.
 
 ## 로컬 실행
 

@@ -40,6 +40,15 @@ export type MapPlace = {
   address?: string;
 };
 
+/**
+ * Added by hand or web research, not from a Slack message. The collector never
+ * sees these in Slack, so export keeps them from the existing catalog file.
+ */
+export type CuratedInfo = {
+  by: string;
+  url?: string;
+};
+
 /** Naver Map place from a naver.me / place link someone shared in the channel. */
 export type NaverPlace = {
   placeId: string;
@@ -66,11 +75,16 @@ export type Restaurant = {
   priceRange?: string;
   notes?: string;
   walkMeters?: number;
+  /** walkMeters was computed from location (WALK_ORIGIN), not read from notes. */
+  walkFromMap?: boolean;
   hours?: OpeningHours;
   menu?: MenuItem[];
+  /** Street address; the enrich script geocodes it when the name search misses. */
+  address?: string;
   location?: GeoPoint;
   place?: MapPlace;
   naver?: NaverPlace;
+  curated?: CuratedInfo;
   rating?: PlaceRating;
   /** Last Google lookup, hit or miss. */
   ratingCheckedAt?: string;
@@ -155,6 +169,21 @@ export function mentionId(channelId: string, messageTs: string): string {
 /** True when history has no gaps: backfill finished and no catch-up pending. */
 export function isHistoryComplete(state: HistoryState | null | undefined): boolean {
   return Boolean(state?.newestTs && state.backfillComplete && !state.catchup);
+}
+
+const SLACK_CHANNEL_ID = /^[CDG][A-Z0-9]{6,}$/;
+
+/**
+ * Hand-added rows carry `curated`; older files marked them with a non-Slack
+ * `source.channelId` (e.g. "claude-curated"). Returns the row in the current
+ * shape, or null for a Slack-collected row.
+ */
+export function asCurated(r: Restaurant): Restaurant | null {
+  if (r.curated) return r;
+  const src = r.source;
+  if (!src || SLACK_CHANNEL_ID.test(src.channelId)) return null;
+  const { source: _source, ...rest } = r;
+  return { ...rest, curated: { by: src.author ?? src.channelId, url: src.permalink } };
 }
 
 export function mergeTags(a: string[] = [], b: string[] = []): string[] {

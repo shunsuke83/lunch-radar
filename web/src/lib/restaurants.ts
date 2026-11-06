@@ -10,9 +10,19 @@ export function dataPath(): string {
   return DATA_PATH;
 }
 
+/** The page embeds the catalog; Slack ids must not reach it even if the file has them. */
 export async function loadCatalog(): Promise<RestaurantCatalog> {
   const raw = await readFile(DATA_PATH, "utf8");
-  return JSON.parse(raw) as RestaurantCatalog;
+  const { channelId: _channel, ...catalog } = JSON.parse(raw) as RestaurantCatalog;
+  return {
+    ...catalog,
+    restaurants: catalog.restaurants.map((r) => {
+      const { source: _source, countedMessages: _counted, ...rest } = r as typeof r & {
+        countedMessages?: unknown;
+      };
+      return rest;
+    }),
+  };
 }
 
 export async function saveCatalog(catalog: RestaurantCatalog): Promise<void> {

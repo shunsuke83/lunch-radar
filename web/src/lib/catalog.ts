@@ -37,6 +37,11 @@ export type MapPlace = {
   address?: string;
 };
 
+export type CuratedInfo = {
+  by: string;
+  url?: string;
+};
+
 export type NaverPlace = {
   placeId: string;
   url: string;
@@ -63,11 +68,14 @@ export type Restaurant = {
   priceRange?: string;
   notes?: string;
   walkMeters?: number;
+  walkFromMap?: boolean;
   hours?: OpeningHours;
   menu?: MenuItem[];
+  address?: string;
   location?: GeoPoint;
   place?: MapPlace;
   naver?: NaverPlace;
+  curated?: CuratedInfo;
   rating?: PlaceRating;
   ratingCheckedAt?: string;
   tags: string[];
