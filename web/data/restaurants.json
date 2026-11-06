@@ -96,6 +96,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=14411114309729853590&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:09.947Z"
+      },
+      "naver": {
+        "placeId": "1698302178",
+        "url": "https://map.naver.com/p/entry/place/1698302178"
       }
     },
     {
@@ -828,6 +832,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=1170362784230957620&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:15.363Z"
+      },
+      "naver": {
+        "placeId": "1614448879",
+        "url": "https://map.naver.com/p/entry/place/1614448879"
       }
     },
     {
@@ -2005,6 +2013,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=17416311286922798575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:21.697Z"
+      },
+      "naver": {
+        "placeId": "1012489746",
+        "url": "https://map.naver.com/p/entry/place/1012489746"
       }
     },
     {
@@ -2433,6 +2445,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=5855657689333498182&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:25.578Z"
+      },
+      "naver": {
+        "placeId": "1788599337",
+        "url": "https://map.naver.com/p/entry/place/1788599337"
       }
     },
     {
@@ -2493,6 +2509,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=13946258886215488486&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:26.666Z"
+      },
+      "naver": {
+        "placeId": "1751873950",
+        "url": "https://map.naver.com/p/entry/place/1751873950"
       }
     },
     {
