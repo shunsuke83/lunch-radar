@@ -3,6 +3,7 @@ import { defineTool } from "@grok/agent-sdk/tools";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import * as z from "zod/v4";
+import { lunchChannelId } from "../lib/config.js";
 import {
   INDEX_KEY,
   historyStateKey,
@@ -10,8 +11,6 @@ import {
   type HistoryState,
   type Restaurant,
 } from "../lib/restaurants.js";
-
-const DEFAULT_CHANNEL = "REDACTED_CHANNEL";
 
 export default defineTool({
   description: prompt`
@@ -44,10 +43,10 @@ export default defineTool({
         b.mentionCount - a.mentionCount || a.name.localeCompare(b.name, "ko"),
     );
 
-    const channelId = input.channelId?.trim() || DEFAULT_CHANNEL;
-    const history = (await ctx.host.kv.get(
-      historyStateKey(channelId),
-    )) as HistoryState | null;
+    const channelId = input.channelId?.trim() || lunchChannelId();
+    const history = channelId
+      ? ((await ctx.host.kv.get(historyStateKey(channelId))) as HistoryState | null)
+      : null;
 
     // The web catalog is published on public GitHub Pages: no Slack user,
     // channel, or message identifiers leave the store.

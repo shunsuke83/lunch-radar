@@ -3,6 +3,7 @@ import { defineTool } from "@grok/agent-sdk/tools";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import * as z from "zod/v4";
+import { lunchChannelId, MISSING_CHANNEL_MESSAGE } from "../lib/config.js";
 import {
   INDEX_KEY,
   historyStateKey,
@@ -11,10 +12,7 @@ import {
   type Restaurant,
 } from "../lib/restaurants.js";
 
-const DEFAULT_CHANNEL = "REDACTED_CHANNEL";
-
 type Catalog = {
-  channelId?: string;
   lastMessageTs?: string;
   restaurants?: Restaurant[];
 };
@@ -42,6 +40,11 @@ export default defineTool({
       };
     }
 
+    const channelId = lunchChannelId();
+    if (!channelId) {
+      return { ok: false, seeded: false, error: MISSING_CHANNEL_MESSAGE };
+    }
+
     const lastMessageTs = catalog.lastMessageTs?.trim();
     const restaurants = catalog.restaurants ?? [];
     if (!lastMessageTs || restaurants.length === 0) {
@@ -60,7 +63,6 @@ export default defineTool({
     }
     await ctx.host.kv.put(INDEX_KEY, index);
 
-    const channelId = catalog.channelId || DEFAULT_CHANNEL;
     const now = new Date().toISOString();
     const state: HistoryState = {
       channelId,

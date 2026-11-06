@@ -1,12 +1,11 @@
 import { prompt } from "@grok/agent-sdk";
 import { defineTool } from "@grok/agent-sdk/tools";
 import * as z from "zod/v4";
+import { lunchChannelId, MISSING_CHANNEL_MESSAGE } from "../lib/config.js";
 import {
   historyStateKey,
   type HistoryState,
 } from "../lib/restaurants.js";
-
-const TARGET_CHANNEL = "REDACTED_CHANNEL";
 
 type SlackMessage = {
   ts?: string;
@@ -116,7 +115,7 @@ function minTs(a?: string, b?: string): string | undefined {
 
 export default defineTool({
   description: prompt`
-    Fetch top-level messages from the lunch Slack channel (default REDACTED_CHANNEL)
+    Fetch top-level messages from the lunch Slack channel (configured default)
     as evidence for restaurant upserts. Supports pagination via a kv cursor and
     catch-up of messages newer than the last watermark.
     Modes: auto (default), backfill, catchup, reset.
@@ -128,7 +127,7 @@ export default defineTool({
     channelId: z
       .string()
       .optional()
-      .describe(`Slack channel id. Defaults to ${TARGET_CHANNEL}`),
+      .describe("Slack channel id. Omit to use the configured lunch channel."),
     limit: z
       .number()
       .int()
@@ -151,7 +150,10 @@ export default defineTool({
       ),
   }),
   async execute(input, ctx) {
-    const channelId = input.channelId?.trim() || TARGET_CHANNEL;
+    const channelId = input.channelId?.trim() || lunchChannelId();
+    if (!channelId) {
+      return emptyResult("", MISSING_CHANNEL_MESSAGE, null);
+    }
     const limit = input.limit ?? 100;
     const pages = input.pages ?? 3;
     const modeIn = input.mode ?? "auto";

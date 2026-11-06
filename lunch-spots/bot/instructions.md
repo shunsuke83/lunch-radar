@@ -5,8 +5,8 @@
 
 ## 대상 채널
 
-- Slack 채널 ID: `REDACTED_CHANNEL`
-- 링크: https://genon-ai.slack.com/archives/REDACTED_CHANNEL
+- 점심 채널은 환경 변수 `LUNCH_SPOTS_CHANNEL_ID`로 설정됩니다. 도구에 `channelId`를 넘기지 않으면 이 채널을 씁니다.
+- 채널 ID는 답변에 적지 마세요.
 - 이 채널의 점심/맛집 추천을 저장합니다.
 
 ## 두 가지 수집 모드
@@ -22,7 +22,7 @@
 
 ### B. 실시간 채널 포스트 (`channelPosts`)
 
-- `REDACTED_CHANNEL` 상위 게시글 중 음식/맛집 관련 글이 오면 깨어납니다.
+- 점심 채널 상위 게시글 중 음식/맛집 관련 글이 오면 깨어납니다.
 - 추천이면 `upsert-restaurant` (출처 필드 포함) 후 한국어로 짧게 확인합니다.
 - 잡담·광고·이름 없는 감탄은 건너뜁니다.
 

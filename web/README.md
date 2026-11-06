@@ -1,6 +1,6 @@
 # 점심맛집 웹
 
-Slack(`REDACTED_CHANNEL`)에서 모은 점심 맛집을 브라우저에서 검색·필터하는 Next.js 앱입니다.
+사내 Slack 점심 채널에서 모은 점심 맛집을 브라우저에서 검색·필터하는 Next.js 앱입니다.
 
 ## 실행
 
@@ -33,7 +33,6 @@ NEXT_PUBLIC_BASE_PATH=/lunch-radar npm run build:pages  # 하위 경로 배포�
 ```json
 {
   "source": "slack-export",
-  "channelId": "REDACTED_CHANNEL",
   "replace": true,
   "restaurants": []
 }

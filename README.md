@@ -1,6 +1,6 @@
 # 점심맛집 (lunch-radar)
 
-Slack 채널 [`REDACTED_CHANNEL`](https://genon-ai.slack.com/archives/REDACTED_CHANNEL)의 점심 맛집을 수집하고, 웹에서 필터해 보는 프로젝트입니다.
+사내 Slack 점심 채널의 맛집 추천을 수집하고, 웹에서 필터해 보는 프로젝트입니다. 대상 채널은 환경 변수 `LUNCH_SPOTS_CHANNEL_ID`로 지정하며 저장소에는 넣지 않습니다.
 
 | 폴더 | 역할 | 실행에 필요한 것 |
 | --- | --- | --- |
@@ -86,7 +86,7 @@ npx @grok/agent-sdk validate --dir .
 npx @grok/agent-sdk dev
 ```
 
-Slack 연결 시 토큰은 `lunch-spots/.env.local`에 저장됩니다 (형식은 [`lunch-spots/.env.example`](lunch-spots/.env.example) 참고). `.env*` 파일은 `.gitignore`에 포함되어 있으니 **토큰을 커밋하지 마세요.**
+`lunch-spots/.env.local`에 대상 채널 `LUNCH_SPOTS_CHANNEL_ID=C…`를 넣어야 수집 도구와 채널 감시가 동작합니다. Slack 연결 시 토큰도 같은 파일에 저장됩니다 (형식은 [`lunch-spots/.env.example`](lunch-spots/.env.example) 참고). `.env*` 파일은 `.gitignore`에 포함되어 있으니 **토큰을 커밋하지 마세요.**
 
 ## 5. 봇 → 웹 데이터 흐름
 
@@ -121,6 +121,9 @@ Slack 연결 시 토큰은 `lunch-spots/.env.local`에 저장됩니다 (형식�
 | --- | --- |
 | `CURSOR_API_KEY` | Cursor API 키 (모델 호출용, 대시보드에서 발급) |
 | `LUNCH_SPOTS_SLACK_USER_TOKEN` | Slack User OAuth Token `xoxp-...` (`channels:history`, `groups:history`) |
+| `LUNCH_SPOTS_CHANNEL_ID` | 수집할 Slack 채널 ID (Slack 채널 정보 하단의 `C…` 값). Secret이라 로그에서도 가려집니다. |
+
+수집 단계 로그에는 모델의 최종 답변만 남깁니다(도구 호출 인자에 Slack 사용자 ID가 들어 있기 때문).
 
 전체 재구성은 약 4~5분, 모델 입력 수십만 토큰이 들지만, 새 메시지가 없는 날은 모델을 호출하지 않고 새 메시지가 있는 날도 그 메시지만 처리합니다. 사용자 토큰은 그 사용자가 볼 수 있는 모든 채널을 읽을 수 있으므로 저장소 쓰기 권한자 범위를 관리하세요.
 

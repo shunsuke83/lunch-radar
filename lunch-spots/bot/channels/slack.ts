@@ -3,12 +3,13 @@ import {
   slackChannel,
 } from "@grok/agent-sdk/channels/slack";
 import type { HostContext } from "@grok/agent-sdk";
+import { lunchChannelId } from "../lib/config.js";
 import { isRestaurantStoreEmpty } from "../lib/restaurants.js";
 
-const LUNCH_CHANNEL = "REDACTED_CHANNEL";
+const LUNCH_CHANNEL = lunchChannelId();
 
 const EMPTY_STORE_CONTEXT =
-  "Restaurant store is empty. Before answering list/pick requests, call ingest-channel-history on REDACTED_CHANNEL (mode auto or reset), then upsert-restaurant for each place found. Summarize how many were saved. Do not invent places.";
+  "Restaurant store is empty. Before answering list/pick requests, call ingest-channel-history (mode auto or reset; it defaults to the lunch channel), then upsert-restaurant for each place found. Summarize how many were saved. Do not invent places.";
 
 const FOOD_CONTEXT =
   "This is a watched lunch-channel post. If it recommends a restaurant, call upsert-restaurant with sourceChannelId/sourceMessageTs/sourceAuthor. Reply briefly in Korean (one short ack). Skip unrelated chatter.";
@@ -67,15 +68,19 @@ export default slackChannel({
     },
     {
       title: "히스토리 수집",
-      message: "REDACTED_CHANNEL 채널 히스토리에서 맛집 데이터 수집해줘",
+      message: "점심 채널 히스토리에서 맛집 데이터 수집해줘",
     },
   ],
-  engagement: {
-    channelPosts: {
-      allow: [LUNCH_CHANNEL],
-      posts: "top-level",
-    },
-  },
+  ...(LUNCH_CHANNEL
+    ? {
+        engagement: {
+          channelPosts: {
+            allow: [LUNCH_CHANNEL],
+            posts: "top-level" as const,
+          },
+        },
+      }
+    : {}),
   onAppMention: async (ctx, message) => {
     const auth = defaultSlackAuth(message, ctx);
     if (auth === null) {
@@ -93,7 +98,7 @@ export default slackChannel({
     return context.length > 0 ? { auth, context } : { auth };
   },
   onChannelPost: async (ctx, message) => {
-    if (message.channelId !== LUNCH_CHANNEL) {
+    if (!LUNCH_CHANNEL || message.channelId !== LUNCH_CHANNEL) {
       return null;
     }
     if (!looksLikeFoodTalk(message.markdown)) {

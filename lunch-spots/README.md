@@ -1,6 +1,6 @@
 # lunch-spots
 
-genon-ai Slack 채널 [`REDACTED_CHANNEL`](https://genon-ai.slack.com/archives/REDACTED_CHANNEL)의 점심 맛집 멘션을 **히스토리 + 실시간**으로 모아 두고, Slack에서 추천·검색하는 Agent SDK 봇입니다.
+사내 Slack 점심 채널(`.env.local`의 `LUNCH_SPOTS_CHANNEL_ID`)의 점심 맛집 멘션을 **히스토리 + 실시간**으로 모아 두고, Slack에서 추천·검색하는 Agent SDK 봇입니다.
 
 ## 수집 흐름 (둘 다)
 
@@ -22,7 +22,7 @@ genon-ai Slack 채널 [`REDACTED_CHANNEL`](https://genon-ai.slack.com/archives/R
 
 ### 2) 실시간 채널 포스트
 
-`bot/channels/slack.ts`의 `engagement.channelPosts`가 `REDACTED_CHANNEL` 상위 글을 감시합니다.
+`bot/channels/slack.ts`의 `engagement.channelPosts`가 `LUNCH_SPOTS_CHANNEL_ID` 채널의 상위 글을 감시합니다 (값이 없으면 감시하지 않음).
 
 - 음식/맛집 관련 글로 보이면 👀 리액션 후 짧은 한국어 ack
 - 추천이면 `upsert-restaurant`로 저장 (출처 ts/author 포함)
@@ -67,7 +67,7 @@ npx @grok/agent-sdk slack create --dir . --name "점심맛집" --channel-posts
 ```
 
 2. `.env.local`에 `LUNCH_SPOTS_SLACK_BOT_TOKEN` / `LUNCH_SPOTS_SLACK_APP_TOKEN`이 기록되는지 확인합니다. **토큰 값을 채팅에 붙여 넣지 마세요.**
-3. 봇을 `REDACTED_CHANNEL` 채널에 **초대**합니다 (`channels:history`로 히스토리 읽기 + channelPosts 수신).
+3. 봇을 점심 채널에 **초대**합니다 (`channels:history`로 히스토리 읽기 + channelPosts 수신).
 4. 채널에서 `@점심맛집 히스토리 수집`으로 시드한 뒤, 이후 맛집 글은 멘션 없이도 쌓입니다.
 
 ### 봇을 채널에 초대하지 않고 히스토리만 수집하기 (사용자 토큰)
