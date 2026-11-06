@@ -2023,7 +2023,9 @@
         "placeId": "1012489746",
         "url": "https://map.naver.com/p/entry/place/1012489746"
       },
-      "address": "서울 서초구 남부순환로356길 33 2층 201호"
+      "address": "서울 서초구 남부순환로356길 33 2층 201호",
+      "walkMeters": 341,
+      "walkFromMap": true
     },
     {
       "slug": "린참치",
@@ -2456,7 +2458,9 @@
         "placeId": "1788599337",
         "url": "https://map.naver.com/p/entry/place/1788599337"
       },
-      "address": "서울 서초구 남부순환로350길 19-26 도담빌딩 2층"
+      "address": "서울 서초구 남부순환로350길 19-26 도담빌딩 2층",
+      "walkMeters": 202,
+      "walkFromMap": true
     },
     {
       "slug": "신향원양꼬치마라탕-양재역",
@@ -2520,7 +2524,9 @@
       "naver": {
         "placeId": "1751873950",
         "url": "https://map.naver.com/p/entry/place/1751873950"
-      }
+      },
+      "walkMeters": 266,
+      "walkFromMap": true
     },
     {
       "slug": "양재옥",
@@ -3339,7 +3345,9 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=4029114487450602982&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:57:21.094Z"
-      }
+      },
+      "walkMeters": 542,
+      "walkFromMap": true
     },
     {
       "slug": "미몽-양재역점",
@@ -3370,6 +3378,25 @@
       "hours": {
         "open": "11:30",
         "close": "23:00"
+      },
+      "location": {
+        "lat": 37.4835495619062,
+        "lng": 127.037467419986
+      },
+      "place": {
+        "kakaoId": "1210437091",
+        "kakaoUrl": "https://place.map.kakao.com/1210437091",
+        "address": "서울 서초구 강남대로34길 27-4"
+      },
+      "walkMeters": 283,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:24.531Z",
+      "rating": {
+        "score": 3.6,
+        "count": 27,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=524405568271111562&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:24.532Z"
       }
     },
     {
@@ -3404,6 +3431,20 @@
       "hours": {
         "open": "11:00",
         "close": "14:00"
+      },
+      "location": {
+        "lat": 37.4836427122966,
+        "lng": 127.036358299282
+      },
+      "walkMeters": 199,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:25.536Z",
+      "rating": {
+        "score": 3.7,
+        "count": 154,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7007181789264704543&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:25.536Z"
       }
     },
     {
@@ -3437,7 +3478,26 @@
           "name": "항정살 마스카포네 리조또",
           "price": 24900
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4845317075537,
+        "lng": 127.03732092425881
+      },
+      "place": {
+        "kakaoId": "18373278",
+        "kakaoUrl": "https://place.map.kakao.com/18373278",
+        "address": "서울 서초구 남부순환로 2620"
+      },
+      "walkMeters": 233,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:25.943Z",
+      "rating": {
+        "score": 4.1,
+        "count": 1183,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=16285640578794301278&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:25.943Z"
+      }
     },
     {
       "slug": "두부1번지",
@@ -3475,7 +3535,19 @@
           "name": "닭개장",
           "price": 10000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4826116360008,
+        "lng": 127.040137509184
+      },
+      "place": {
+        "kakaoId": "540306071",
+        "kakaoUrl": "https://place.map.kakao.com/540306071",
+        "address": "서울 서초구 강남대로30길 55"
+      },
+      "walkMeters": 540,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:26.322Z"
     },
     {
       "slug": "양재-오제섞어-양재본점",
@@ -3509,7 +3581,26 @@
           "name": "오제새(오징어+제육+새우)",
           "price": 18900
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4810605349624,
+        "lng": 127.041483236757
+      },
+      "place": {
+        "kakaoId": "661927676",
+        "kakaoUrl": "https://place.map.kakao.com/661927676",
+        "address": "서울 서초구 바우뫼로41길 8"
+      },
+      "walkMeters": 732,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:26.743Z",
+      "rating": {
+        "score": 4,
+        "count": 304,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=1360224840523035753&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:26.743Z"
+      }
     },
     {
       "slug": "산들해-양재점",
@@ -3547,7 +3638,26 @@
           "name": "한우 소불고기",
           "price": 29000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.482766426325604,
+        "lng": 127.03504972839153
+      },
+      "place": {
+        "kakaoId": "9063870",
+        "kakaoUrl": "https://place.map.kakao.com/9063870",
+        "address": "서울 서초구 강남대로 213"
+      },
+      "walkMeters": 236,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:27.090Z",
+      "rating": {
+        "score": 3.8,
+        "count": 1187,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=14821200188270790874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:27.090Z"
+      }
     },
     {
       "slug": "디오디아",
@@ -3577,7 +3687,26 @@
           "name": "주말 런치",
           "price": 109000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.48235358031832,
+        "lng": 127.03566459833955
+      },
+      "place": {
+        "kakaoId": "7850610",
+        "kakaoUrl": "https://place.map.kakao.com/7850610",
+        "address": "서울 서초구 강남대로 213"
+      },
+      "walkMeters": 292,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:27.431Z",
+      "rating": {
+        "score": 4,
+        "count": 1428,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=18279512968195817102&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:27.431Z"
+      }
     },
     {
       "slug": "설마중",
@@ -3611,7 +3740,26 @@
           "name": "한우불고기 특선 도시락",
           "price": 35000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.485093811895865,
+        "lng": 127.04043846497899
+      },
+      "place": {
+        "kakaoId": "26410902",
+        "kakaoUrl": "https://place.map.kakao.com/26410902",
+        "address": "서울 서초구 남부순환로 2648"
+      },
+      "walkMeters": 505,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:27.784Z",
+      "rating": {
+        "score": 4.1,
+        "count": 1068,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=723116124623618111&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:27.784Z"
+      }
     },
     {
       "slug": "싸다김밥-양재역점",
@@ -3653,6 +3801,25 @@
       "hours": {
         "open": "00:00",
         "close": "24:00"
+      },
+      "location": {
+        "lat": 37.483090509009045,
+        "lng": 127.03598265880652
+      },
+      "place": {
+        "kakaoId": "1862124437",
+        "kakaoUrl": "https://place.map.kakao.com/1862124437",
+        "address": "서울 서초구 강남대로 212"
+      },
+      "walkMeters": 227,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:28.154Z",
+      "rating": {
+        "score": 3,
+        "count": 2,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4701039974747997846&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:28.154Z"
       }
     },
     {
@@ -3681,7 +3848,26 @@
         {
           "name": "메뉴·가격 미확인"
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4856770168622,
+        "lng": 127.036914449103
+      },
+      "place": {
+        "kakaoId": "1331035449",
+        "kakaoUrl": "https://place.map.kakao.com/1331035449",
+        "address": "서울 강남구 남부순환로359길 8"
+      },
+      "walkMeters": 213,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:28.538Z",
+      "rating": {
+        "score": 5,
+        "count": 4,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=5767964849281157538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:28.538Z"
+      }
     },
     {
       "slug": "서울김밥-양재역점",
@@ -3719,7 +3905,26 @@
           "name": "참치김밥",
           "price": 5500
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.48400351433854,
+        "lng": 127.03503899973343
+      },
+      "place": {
+        "kakaoId": "1970703529",
+        "kakaoUrl": "https://place.map.kakao.com/1970703529",
+        "address": "서울 서초구 강남대로 224"
+      },
+      "walkMeters": 100,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:28.894Z",
+      "rating": {
+        "score": 3.9,
+        "count": 38,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3530266668122922473&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:28.894Z"
+      }
     },
     {
       "slug": "버거킹-양재점",
@@ -3756,7 +3961,26 @@
           "name": "통새우와퍼주니어세트",
           "price": 7800
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.48403714904699,
+        "lng": 127.0340214254793
+      },
+      "place": {
+        "kakaoId": "7900896",
+        "kakaoUrl": "https://place.map.kakao.com/7900896",
+        "address": "서울 서초구 서초동 1376-21"
+      },
+      "walkMeters": 111,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:29.280Z",
+      "rating": {
+        "score": 3.9,
+        "count": 893,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=17998334946403559211&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:29.280Z"
+      }
     },
     {
       "slug": "깐부치킨-양재역점-점심뷔페",
@@ -3784,6 +4008,20 @@
       "hours": {
         "open": "11:00",
         "close": "14:00"
+      },
+      "location": {
+        "lat": 37.4851359560245,
+        "lng": 127.033293431719
+      },
+      "walkMeters": 129,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:31.002Z",
+      "rating": {
+        "score": 3.7,
+        "count": 368,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7676089975587368515&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:31.002Z"
       }
     },
     {
@@ -3826,6 +4064,25 @@
       "hours": {
         "open": "00:00",
         "close": "24:00"
+      },
+      "location": {
+        "lat": 37.4787896863926,
+        "lng": 127.03975106892
+      },
+      "place": {
+        "kakaoId": "17363119",
+        "kakaoUrl": "https://place.map.kakao.com/17363119",
+        "address": "서울 서초구 바우뫼로35길 4"
+      },
+      "walkMeters": 809,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:31.373Z",
+      "rating": {
+        "score": 4,
+        "count": 1701,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=8944245470913569731&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:31.373Z"
       }
     },
     {
@@ -3860,7 +4117,26 @@
           "name": "치킨 꼬르동 시저샐러드",
           "price": 16000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.48699874957846,
+        "lng": 127.03406912719488
+      },
+      "place": {
+        "kakaoId": "237005010",
+        "kakaoUrl": "https://place.map.kakao.com/237005010",
+        "address": "서울 강남구 강남대로48길 11"
+      },
+      "walkMeters": 244,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:31.719Z",
+      "rating": {
+        "score": 4.5,
+        "count": 566,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=466623626968031325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:31.719Z"
+      }
     },
     {
       "slug": "춘업-순댓국",
@@ -3899,7 +4175,26 @@
           "name": "특순댓국",
           "price": 12000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4792753634806,
+        "lng": 127.042252177425
+      },
+      "place": {
+        "kakaoId": "10898803",
+        "kakaoUrl": "https://place.map.kakao.com/10898803",
+        "address": "서울 서초구 양재천로29길 3"
+      },
+      "walkMeters": 910,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:32.074Z",
+      "rating": {
+        "score": 4.2,
+        "count": 141,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=8714875439532359986&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:32.074Z"
+      }
     },
     {
       "slug": "고려향",
@@ -3937,7 +4232,26 @@
           "name": "삼선짬뽕",
           "price": 11000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4787827120623,
+        "lng": 127.039050107904
+      },
+      "place": {
+        "kakaoId": "704188840",
+        "kakaoUrl": "https://place.map.kakao.com/704188840",
+        "address": "서울 서초구 강남대로 156-1"
+      },
+      "walkMeters": 777,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:32.434Z",
+      "rating": {
+        "score": 4,
+        "count": 2,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7778891458362160399&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:32.434Z"
+      }
     },
     {
       "slug": "백소정-도곡매봉점",
@@ -3976,7 +4290,26 @@
           "name": "키소카레",
           "price": 8900
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.48414439058794,
+        "lng": 127.04476610864586
+      },
+      "place": {
+        "kakaoId": "1136397501",
+        "kakaoUrl": "https://place.map.kakao.com/1136397501",
+        "address": "서울 강남구 논현로28길 35"
+      },
+      "walkMeters": 890,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:32.797Z",
+      "rating": {
+        "score": 3.8,
+        "count": 19,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=12289608945885366978&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:32.797Z"
+      }
     },
     {
       "slug": "전주-콩뿌리-콩나물국밥-도곡점",
@@ -4019,6 +4352,25 @@
       "hours": {
         "open": "00:00",
         "close": "24:00"
+      },
+      "location": {
+        "lat": 37.48435331836641,
+        "lng": 127.04504550638279
+      },
+      "place": {
+        "kakaoId": "17467651",
+        "kakaoUrl": "https://place.map.kakao.com/17467651",
+        "address": "서울 강남구 논현로28길 41"
+      },
+      "walkMeters": 913,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:33.187Z",
+      "rating": {
+        "score": 4.2,
+        "count": 503,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=18292110285458415031&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:33.187Z"
       }
     },
     {
@@ -4058,7 +4410,26 @@
           "name": "백세설렁탕",
           "price": 14000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.483898304876966,
+        "lng": 127.04505653973965
+      },
+      "place": {
+        "kakaoId": "11616612",
+        "kakaoUrl": "https://place.map.kakao.com/11616612",
+        "address": "서울 강남구 논현로28길 36"
+      },
+      "walkMeters": 918,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:33.523Z",
+      "rating": {
+        "score": 4.1,
+        "count": 19,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=13647753350475464348&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:33.523Z"
+      }
     },
     {
       "slug": "포-브라더스-도곡점",
@@ -4093,7 +4464,26 @@
           "name": "푸팟퐁커리",
           "price": 36000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4839991131454,
+        "lng": 127.045330218763
+      },
+      "place": {
+        "kakaoId": "17662981",
+        "kakaoUrl": "https://place.map.kakao.com/17662981",
+        "address": "서울 강남구 논현로28길 40"
+      },
+      "walkMeters": 941,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:33.865Z",
+      "rating": {
+        "score": 4.3,
+        "count": 1479,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=16446749131689416154&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:33.865Z"
+      }
     },
     {
       "slug": "코시",
@@ -4132,7 +4522,26 @@
           "name": "치즈돈카츠",
           "price": 12500
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4851156941348,
+        "lng": 127.04472259199
+      },
+      "place": {
+        "kakaoId": "1003513439",
+        "kakaoUrl": "https://place.map.kakao.com/1003513439",
+        "address": "서울 강남구 논현로38길 32-7"
+      },
+      "walkMeters": 883,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:34.227Z",
+      "rating": {
+        "score": 4.7,
+        "count": 170,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=12146086409614108512&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:34.227Z"
+      }
     },
     {
       "slug": "시래정-양재점",
@@ -4167,7 +4576,26 @@
           "name": "가마솥 소고기 시래정국",
           "price": 12000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.48578568281491,
+        "lng": 127.03195307055152
+      },
+      "place": {
+        "kakaoId": "783020696",
+        "kakaoUrl": "https://place.map.kakao.com/783020696",
+        "address": "서울 서초구 강남대로39길 15-10"
+      },
+      "walkMeters": 265,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:34.598Z",
+      "rating": {
+        "score": 4.2,
+        "count": 295,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3228281619134012570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:34.598Z"
+      }
     },
     {
       "slug": "카츠오우-도곡점",
@@ -4205,7 +4633,26 @@
           "name": "큰 모듬가츠",
           "price": 18000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4846551336881,
+        "lng": 127.045104482156
+      },
+      "place": {
+        "kakaoId": "1878711032",
+        "kakaoUrl": "https://place.map.kakao.com/1878711032",
+        "address": "서울 강남구 논현로30길 42"
+      },
+      "walkMeters": 917,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:34.947Z",
+      "rating": {
+        "score": 4.3,
+        "count": 199,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=113523394828223507&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:34.947Z"
+      }
     },
     {
       "slug": "샐러디-양재역점",
@@ -4243,7 +4690,26 @@
           "name": "로스트닭다리살 샐러디 세트",
           "price": 12400
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.48707400736088,
+        "lng": 127.03238328575675
+      },
+      "place": {
+        "kakaoId": "1749506482",
+        "kakaoUrl": "https://place.map.kakao.com/1749506482",
+        "address": "서울 서초구 강남대로 265"
+      },
+      "walkMeters": 320,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:35.313Z",
+      "rating": {
+        "score": 4.5,
+        "count": 64,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=2490420806926788478&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:35.314Z"
+      }
     },
     {
       "slug": "한양돈까스",
@@ -4282,7 +4748,26 @@
           "name": "치즈돈까스",
           "price": 16000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4772508278192,
+        "lng": 127.039555798651
+      },
+      "place": {
+        "kakaoId": "1176904318",
+        "kakaoUrl": "https://place.map.kakao.com/1176904318",
+        "address": "서울 서초구 양재천로 107-19"
+      },
+      "walkMeters": 949,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:35.684Z",
+      "rating": {
+        "score": 4.3,
+        "count": 475,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7170198123740767701&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:35.684Z"
+      }
     },
     {
       "slug": "양재-초밥",
@@ -4317,7 +4802,21 @@
           "name": "연어덮밥+반우동",
           "price": 18000
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.4823777348091,
+        "lng": 127.044175996142
+      },
+      "walkMeters": 879,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:37.023Z",
+      "rating": {
+        "score": 4.6,
+        "count": 204,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=12931477985023447487&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:37.023Z"
+      }
     },
     {
       "slug": "멘츠루-양재점",
@@ -4355,7 +4854,26 @@
           "name": "매운소유(해장라멘)",
           "price": 11500
         }
-      ]
+      ],
+      "location": {
+        "lat": 37.48498823686284,
+        "lng": 127.03215059814973
+      },
+      "place": {
+        "kakaoId": "811739187",
+        "kakaoUrl": "https://place.map.kakao.com/811739187",
+        "address": "서울 서초구 강남대로37길 26"
+      },
+      "walkMeters": 227,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:37.367Z",
+      "rating": {
+        "score": 4.8,
+        "count": 41,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=13804449825094069497&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:37.367Z"
+      }
     }
   ],
   "office": {
