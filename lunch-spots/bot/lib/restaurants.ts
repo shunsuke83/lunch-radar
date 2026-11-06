@@ -19,7 +19,35 @@ export type Restaurant = {
   mentionCount: number;
 };
 
+/** Slack conversations.history pagination / catch-up watermark per channel. */
+export type HistoryState = {
+  channelId: string;
+  /** Newest message ts successfully seen (for catch-up with oldest=). */
+  newestTs?: string;
+  /** Oldest message ts reached during backfill. */
+  oldestTs?: string;
+  /** Slack response_metadata.next_cursor for older pages; null when done. */
+  pageCursor?: string | null;
+  backfillComplete: boolean;
+  updatedAt: string;
+  lastIngestAt?: string;
+  lastFetchedCount?: number;
+};
+
 export const INDEX_KEY = "restaurant:index";
+
+export function historyStateKey(channelId: string): string {
+  return `restaurant:history:${channelId}`;
+}
+
+export type KvLike = {
+  get(key: string): Promise<unknown>;
+};
+
+export async function isRestaurantStoreEmpty(kv: KvLike): Promise<boolean> {
+  const index = (await kv.get(INDEX_KEY)) as string[] | null;
+  return !Array.isArray(index) || index.length === 0;
+}
 
 export function normalizeName(name: string): string {
   return name.trim().replace(/\s+/g, " ").toLowerCase();
