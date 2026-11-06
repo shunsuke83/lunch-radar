@@ -67,6 +67,16 @@ npx @grok/agent-sdk slack create --dir . --name "점심맛집" --channel-posts
 3. 봇을 `REDACTED_CHANNEL` 채널에 **초대**합니다 (`channels:history`로 히스토리 읽기 + channelPosts 수신).
 4. 채널에서 `@점심맛집 히스토리 수집`으로 시드한 뒤, 이후 맛집 글은 멘션 없이도 쌓입니다.
 
+### 봇을 채널에 초대하지 않고 히스토리만 수집하기 (사용자 토큰)
+
+비공개 채널은 봇이 멤버여야 봇 토큰으로 읽을 수 있습니다. 봇을 초대하고 싶지 않다면 본인 계정의 사용자 토큰으로 히스토리를 읽을 수 있습니다.
+
+1. https://api.slack.com/apps → 앱 → **OAuth & Permissions → User Token Scopes**에 `channels:history`, `groups:history` 추가
+2. 페이지 상단의 **Reinstall to Workspace**로 재설치 → **User OAuth Token**(`xoxp-...`) 복사
+3. `.env.local`에 `LUNCH_SPOTS_SLACK_USER_TOKEN=xoxp-...` 추가
+
+설정되면 `ingest-channel-history`가 봇 토큰 대신 사용자 토큰으로 `conversations.history`를 호출합니다. 이 방식에서는 실시간 채널 포스트 수집(`channelPosts`)이 동작하지 않으므로, 히스토리 수집(멘션/DM 요청, 또는 `history-catchup` 스케줄)으로만 쌓입니다. 본인 권한으로 읽는 것이므로 회사 정책을 확인하세요.
+
 ```bash
 npx @grok/agent-sdk slack doctor --prefix LUNCH_SPOTS
 npx @grok/agent-sdk serve --dir . --dev

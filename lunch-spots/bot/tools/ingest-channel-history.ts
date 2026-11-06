@@ -36,6 +36,37 @@ type SlackHistoryClient = {
   };
 };
 
+const USER_TOKEN_ENV = "LUNCH_SPOTS_SLACK_USER_TOKEN";
+
+// A user token (xoxp-) reads private channels the user belongs to without
+// inviting the bot; Slack only lets bot tokens read channels the bot is in.
+function userTokenClient(token: string): SlackHistoryClient {
+  return {
+    conversations: {
+      async history(args) {
+        const params = new URLSearchParams({
+          channel: args.channel,
+          limit: String(args.limit),
+        });
+        if (args.cursor) params.set("cursor", args.cursor);
+        if (args.oldest) params.set("oldest", args.oldest);
+        if (args.latest) params.set("latest", args.latest);
+        if (args.inclusive !== undefined) {
+          params.set("inclusive", String(args.inclusive));
+        }
+        const res = await fetch(
+          `https://slack.com/api/conversations.history?${params.toString()}`,
+          { headers: { Authorization: `Bearer ${token}` } },
+        );
+        if (!res.ok) {
+          return { ok: false, error: `http_${res.status}` };
+        }
+        return (await res.json()) as HistoryResponse;
+      },
+    },
+  };
+}
+
 type MappedMessage = {
   ts?: string;
   user?: string;
@@ -57,7 +88,7 @@ function emptyResult(
     hasMore: false,
     state,
     nextStep:
-      "Fix Slack credentials / channel invite, then retry ingest-channel-history.",
+      "Fix Slack credentials (bot invite, or LUNCH_SPOTS_SLACK_USER_TOKEN with channels:history/groups:history), then retry ingest-channel-history.",
   };
 }
 
@@ -158,8 +189,11 @@ export default defineTool({
     }
 
     let client: SlackHistoryClient;
+    const userToken = process.env[USER_TOKEN_ENV]?.trim();
     try {
-      client = (await ctx.host.slack.getClient()) as SlackHistoryClient;
+      client = userToken
+        ? userTokenClient(userToken)
+        : ((await ctx.host.slack.getClient()) as SlackHistoryClient);
     } catch (err) {
       return emptyResult(
         channelId,
