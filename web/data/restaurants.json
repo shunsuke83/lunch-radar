@@ -41,6 +41,14 @@
         "kakaoId": "899406562",
         "kakaoUrl": "https://place.map.kakao.com/899406562",
         "address": "서울 강남구 남부순환로359길 19"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:09.688Z",
+      "rating": {
+        "score": 3.9,
+        "count": 252,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7820476884504141869&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:09.689Z"
       }
     },
     {
@@ -80,6 +88,14 @@
         "kakaoId": "1898111480",
         "kakaoUrl": "https://place.map.kakao.com/1898111480",
         "address": "서울 서초구 서운로6길 22"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:09.947Z",
+      "rating": {
+        "score": 3.9,
+        "count": 253,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=14411114309729853590&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:09.947Z"
       }
     },
     {
@@ -120,6 +136,14 @@
         "kakaoId": "1457439855",
         "kakaoUrl": "https://place.map.kakao.com/1457439855",
         "address": "서울 서초구 남부순환로 2579"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:10.211Z",
+      "rating": {
+        "score": 4.2,
+        "count": 41,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=14722893549549685710&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:10.211Z"
       }
     },
     {
@@ -160,6 +184,14 @@
         "kakaoId": "420171715",
         "kakaoUrl": "https://place.map.kakao.com/420171715",
         "address": "서울 서초구 남부순환로347길 23"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:10.418Z",
+      "rating": {
+        "score": 4.2,
+        "count": 41,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=14722893549549685710&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:10.418Z"
       }
     },
     {
@@ -200,6 +232,14 @@
         "kakaoId": "10397965",
         "kakaoUrl": "https://place.map.kakao.com/10397965",
         "address": "서울 서초구 남부순환로356길 15"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:10.644Z",
+      "rating": {
+        "score": 3.4,
+        "count": 58,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4047442882755188040&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:10.644Z"
       }
     },
     {
@@ -240,6 +280,14 @@
         "kakaoId": "2104071381",
         "kakaoUrl": "https://place.map.kakao.com/2104071381",
         "address": "서울 강남구 남부순환로359길 14"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:10.871Z",
+      "rating": {
+        "score": 5,
+        "count": 1,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=18252938837568077916&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:10.871Z"
       }
     },
     {
@@ -276,6 +324,14 @@
         "kakaoId": "2106084901",
         "kakaoUrl": "https://place.map.kakao.com/2106084901",
         "address": "서울 서초구 강남대로34길 5"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:11.114Z",
+      "rating": {
+        "score": 4.8,
+        "count": 32,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4267220462323288104&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:11.114Z"
       }
     },
     {
@@ -316,7 +372,8 @@
         "kakaoId": "1798631130",
         "kakaoUrl": "https://place.map.kakao.com/1798631130",
         "address": "서울 서초구 남부순환로 2567"
-      }
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:11.350Z"
     },
     {
       "slug": "작은공간-양재역",
@@ -355,6 +412,14 @@
         "kakaoId": "14590990",
         "kakaoUrl": "https://place.map.kakao.com/14590990",
         "address": "서울 강남구 남부순환로359길 31"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:11.627Z",
+      "rating": {
+        "score": 4.7,
+        "count": 10,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=14473695912449009192&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:11.627Z"
       }
     },
     {
@@ -395,6 +460,14 @@
         "kakaoId": "1809445927",
         "kakaoUrl": "https://place.map.kakao.com/1809445927",
         "address": "서울 강남구 강남대로48길 6"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:11.766Z",
+      "rating": {
+        "score": 4.6,
+        "count": 46,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=16126822952093639249&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:11.766Z"
       }
     },
     {
@@ -434,6 +507,14 @@
         "kakaoId": "1842885713",
         "kakaoUrl": "https://place.map.kakao.com/1842885713",
         "address": "서울 서초구 남부순환로347길 53"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:11.949Z",
+      "rating": {
+        "score": 4.5,
+        "count": 20,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=2573317864294913643&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:11.949Z"
       }
     },
     {
@@ -474,6 +555,14 @@
         "kakaoId": "1392790108",
         "kakaoUrl": "https://place.map.kakao.com/1392790108",
         "address": "서울 서초구 남부순환로347길 20"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:12.111Z",
+      "rating": {
+        "score": 3.6,
+        "count": 5,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=14436982873022591879&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:12.111Z"
       }
     },
     {
@@ -513,6 +602,14 @@
         "kakaoId": "1160955124",
         "kakaoUrl": "https://place.map.kakao.com/1160955124",
         "address": "서울 강남구 남부순환로359길 13"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:12.296Z",
+      "rating": {
+        "score": 4.3,
+        "count": 3,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=9877093658919412898&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:12.296Z"
       }
     },
     {
@@ -552,6 +649,14 @@
         "kakaoId": "1279884639",
         "kakaoUrl": "https://place.map.kakao.com/1279884639",
         "address": "서울 서초구 남부순환로347길 52"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:12.486Z",
+      "rating": {
+        "score": 3.9,
+        "count": 237,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=14835054197518965794&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:12.486Z"
       }
     },
     {
@@ -583,7 +688,8 @@
         "open": "08:30",
         "close": "20:30"
       },
-      "walkMeters": 420
+      "walkMeters": 420,
+      "ratingCheckedAt": "2026-11-06T06:08:14.853Z"
     },
     {
       "slug": "누룩목-양재본점",
@@ -623,6 +729,14 @@
         "kakaoId": "1311036367",
         "kakaoUrl": "https://place.map.kakao.com/1311036367",
         "address": "서울 서초구 강남대로43길 11"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:15.000Z",
+      "rating": {
+        "score": 4.6,
+        "count": 29,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=11229684787321972010&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:15.000Z"
       }
     },
     {
@@ -663,6 +777,14 @@
         "kakaoId": "807181905",
         "kakaoUrl": "https://place.map.kakao.com/807181905",
         "address": "서울 강남구 남부순환로359길 16"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:15.193Z",
+      "rating": {
+        "score": 4.8,
+        "count": 8,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=5762758034312760537&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:15.193Z"
       }
     },
     {
@@ -698,6 +820,14 @@
         "kakaoId": "1710392001",
         "kakaoUrl": "https://place.map.kakao.com/1710392001",
         "address": "서울 서초구 남부순환로356길 33"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:15.363Z",
+      "rating": {
+        "score": 4.5,
+        "count": 6,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=1170362784230957620&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:15.363Z"
       }
     },
     {
@@ -738,6 +868,14 @@
         "kakaoId": "16296395",
         "kakaoUrl": "https://place.map.kakao.com/16296395",
         "address": "서울 서초구 강남대로45길 10"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:15.535Z",
+      "rating": {
+        "score": 4,
+        "count": 7,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=15427318549431047547&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:15.535Z"
       }
     },
     {
@@ -778,6 +916,14 @@
         "kakaoId": "542751775",
         "kakaoUrl": "https://place.map.kakao.com/542751775",
         "address": "서울 서초구 강남대로37길 46"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:15.690Z",
+      "rating": {
+        "score": 4.8,
+        "count": 155,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=2188873996615883028&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:15.690Z"
       }
     },
     {
@@ -818,6 +964,14 @@
         "kakaoId": "193773470",
         "kakaoUrl": "https://place.map.kakao.com/193773470",
         "address": "서울 서초구 강남대로34길 33"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:15.863Z",
+      "rating": {
+        "score": 4.6,
+        "count": 39,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7242982942752984041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:15.863Z"
       }
     },
     {
@@ -858,6 +1012,14 @@
         "kakaoId": "1565116350",
         "kakaoUrl": "https://place.map.kakao.com/1565116350",
         "address": "서울 서초구 서운로6길 19"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:16.011Z",
+      "rating": {
+        "score": 4.5,
+        "count": 8,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3292838528248486591&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:16.011Z"
       }
     },
     {
@@ -898,6 +1060,14 @@
         "kakaoId": "1154364290",
         "kakaoUrl": "https://place.map.kakao.com/1154364290",
         "address": "서울 강남구 남부순환로351길 28"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:16.173Z",
+      "rating": {
+        "score": 5,
+        "count": 2,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=6339183221885936298&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:16.173Z"
       }
     },
     {
@@ -938,6 +1108,14 @@
         "kakaoId": "873475210",
         "kakaoUrl": "https://place.map.kakao.com/873475210",
         "address": "서울 서초구 강남대로 222-4"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:16.323Z",
+      "rating": {
+        "score": 3.7,
+        "count": 25,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=11979829608776522427&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:16.323Z"
       }
     },
     {
@@ -978,6 +1156,14 @@
         "kakaoId": "22837365",
         "kakaoUrl": "https://place.map.kakao.com/22837365",
         "address": "서울 강남구 남부순환로363길 9-4"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:16.519Z",
+      "rating": {
+        "score": 4.3,
+        "count": 39,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=15334427617348330179&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:16.519Z"
       }
     },
     {
@@ -1009,7 +1195,15 @@
         "open": "08:00",
         "close": "20:00"
       },
-      "walkMeters": 289
+      "walkMeters": 289,
+      "ratingCheckedAt": "2026-11-06T06:08:17.414Z",
+      "rating": {
+        "score": 4,
+        "count": 1,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=10910431042058281875&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:17.414Z"
+      }
     },
     {
       "slug": "오향절면",
@@ -1049,6 +1243,14 @@
         "kakaoId": "18923939",
         "kakaoUrl": "https://place.map.kakao.com/18923939",
         "address": "서울 강남구 남부순환로355길 13"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:17.568Z",
+      "rating": {
+        "score": 3.9,
+        "count": 620,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3033297836994293432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:17.568Z"
       }
     },
     {
@@ -1089,6 +1291,14 @@
         "kakaoId": "9278989",
         "kakaoUrl": "https://place.map.kakao.com/9278989",
         "address": "서울 서초구 강남대로 221"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:17.732Z",
+      "rating": {
+        "score": 2.7,
+        "count": 3,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3449338796972954694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:17.732Z"
       }
     },
     {
@@ -1129,6 +1339,14 @@
         "kakaoId": "212834123",
         "kakaoUrl": "https://place.map.kakao.com/212834123",
         "address": "서울 강남구 강남대로44길 28"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:17.911Z",
+      "rating": {
+        "score": 3.8,
+        "count": 8,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=6891997555286625784&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:17.911Z"
       }
     },
     {
@@ -1145,7 +1363,8 @@
         {
           "name": "수제비"
         }
-      ]
+      ],
+      "ratingCheckedAt": "2026-11-06T06:08:18.824Z"
     },
     {
       "slug": "제레미버거-양재역",
@@ -1184,6 +1403,14 @@
         "kakaoId": "1236636959",
         "kakaoUrl": "https://place.map.kakao.com/1236636959",
         "address": "서울 강남구 남부순환로361길 7"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:19.033Z",
+      "rating": {
+        "score": 4.4,
+        "count": 125,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=944423424938876025&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:19.033Z"
       }
     },
     {
@@ -1223,6 +1450,14 @@
         "kakaoId": "27082190",
         "kakaoUrl": "https://place.map.kakao.com/27082190",
         "address": "서울 서초구 강남대로43길 22-2"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:19.233Z",
+      "rating": {
+        "score": 4.1,
+        "count": 459,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4106383746555634515&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:19.233Z"
       }
     },
     {
@@ -1262,6 +1497,14 @@
         "kakaoId": "715044171",
         "kakaoUrl": "https://place.map.kakao.com/715044171",
         "address": "서울 서초구 강남대로37길 59"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:19.409Z",
+      "rating": {
+        "score": 4.1,
+        "count": 358,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=16328930727851083786&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:19.409Z"
       }
     },
     {
@@ -1301,6 +1544,14 @@
         "kakaoId": "1185236896",
         "kakaoUrl": "https://place.map.kakao.com/1185236896",
         "address": "서울 서초구 강남대로30길 34"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:19.558Z",
+      "rating": {
+        "score": 4.4,
+        "count": 8,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=17087941949943004681&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:19.558Z"
       }
     },
     {
@@ -1341,6 +1592,14 @@
         "kakaoId": "132562159",
         "kakaoUrl": "https://place.map.kakao.com/132562159",
         "address": "서울 서초구 강남대로41길 15-19"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:19.929Z",
+      "rating": {
+        "score": 4.3,
+        "count": 21,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3839510617455017948&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:19.929Z"
       }
     },
     {
@@ -1380,6 +1639,14 @@
         "kakaoId": "408071280",
         "kakaoUrl": "https://place.map.kakao.com/408071280",
         "address": "서울 강남구 남부순환로359길 4"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:20.139Z",
+      "rating": {
+        "score": 3.8,
+        "count": 16,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=13678839826911783851&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:20.139Z"
       }
     },
     {
@@ -1420,6 +1687,14 @@
         "kakaoId": "872121672",
         "kakaoUrl": "https://place.map.kakao.com/872121672",
         "address": "서울 서초구 남부순환로356길 26"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:20.341Z",
+      "rating": {
+        "score": 3.9,
+        "count": 123,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=16338042118412924677&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:20.341Z"
       }
     },
     {
@@ -1461,6 +1736,14 @@
         "kakaoId": "1371914067",
         "kakaoUrl": "https://place.map.kakao.com/1371914067",
         "address": "서울 강남구 남부순환로359길 14"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:20.493Z",
+      "rating": {
+        "score": 4.6,
+        "count": 44,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4732687314633720613&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:20.493Z"
       }
     },
     {
@@ -1497,6 +1780,14 @@
         "kakaoId": "32010788",
         "kakaoUrl": "https://place.map.kakao.com/32010788",
         "address": "서울 서초구 강남대로34길 8"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:20.708Z",
+      "rating": {
+        "score": 4,
+        "count": 2,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=18298751277595795504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:20.708Z"
       }
     },
     {
@@ -1537,6 +1828,14 @@
         "kakaoId": "13291936",
         "kakaoUrl": "https://place.map.kakao.com/13291936",
         "address": "서울 서초구 남부순환로350길 36"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:20.915Z",
+      "rating": {
+        "score": 4,
+        "count": 617,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=16574257140149256636&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:20.915Z"
       }
     },
     {
@@ -1577,6 +1876,14 @@
         "kakaoId": "14659473",
         "kakaoUrl": "https://place.map.kakao.com/14659473",
         "address": "서울 강남구 강남대로 240"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:21.066Z",
+      "rating": {
+        "score": 4,
+        "count": 528,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=18020289195045086729&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:21.066Z"
       }
     },
     {
@@ -1616,6 +1923,14 @@
         "kakaoId": "1776637227",
         "kakaoUrl": "https://place.map.kakao.com/1776637227",
         "address": "서울 강남구 도곡로2길 13"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:21.240Z",
+      "rating": {
+        "score": 4.4,
+        "count": 67,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=530894911517505024&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:21.240Z"
       }
     },
     {
@@ -1656,6 +1971,14 @@
         "kakaoId": "25412320",
         "kakaoUrl": "https://place.map.kakao.com/25412320",
         "address": "서울 서초구 강남대로39길 15-10"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:21.380Z",
+      "rating": {
+        "score": 4,
+        "count": 145,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4575351800822574302&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:21.380Z"
       }
     },
     {
@@ -1674,6 +1997,14 @@
         "kakaoId": "980974717",
         "kakaoUrl": "https://place.map.kakao.com/980974717",
         "address": "서울 서초구 남부순환로356길 33"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:21.697Z",
+      "rating": {
+        "score": 5,
+        "count": 3,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=17416311286922798575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:21.697Z"
       }
     },
     {
@@ -1714,6 +2045,14 @@
         "kakaoId": "20125498",
         "kakaoUrl": "https://place.map.kakao.com/20125498",
         "address": "서울 서초구 강남대로43길 17"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:21.842Z",
+      "rating": {
+        "score": 4.3,
+        "count": 19,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=10369864928520765772&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:21.842Z"
       }
     },
     {
@@ -1753,6 +2092,14 @@
         "kakaoId": "320179256",
         "kakaoUrl": "https://place.map.kakao.com/320179256",
         "address": "서울 강남구 남부순환로359길 10"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:22.029Z",
+      "rating": {
+        "score": 3.7,
+        "count": 7,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=1894493870903248838&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:22.029Z"
       }
     },
     {
@@ -1793,6 +2140,14 @@
         "kakaoId": "16648236",
         "kakaoUrl": "https://place.map.kakao.com/16648236",
         "address": "서울 강남구 남부순환로361길 6"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:22.250Z",
+      "rating": {
+        "score": 4,
+        "count": 2,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=8392303944783839260&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:22.250Z"
       }
     },
     {
@@ -1833,7 +2188,8 @@
         "kakaoId": "1185902797",
         "kakaoUrl": "https://place.map.kakao.com/1185902797",
         "address": "서울 서초구 강남대로37길 60"
-      }
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:22.414Z"
     },
     {
       "slug": "미다재",
@@ -1850,7 +2206,8 @@
           "name": "시레기밥",
           "price": 15000
         }
-      ]
+      ],
+      "ratingCheckedAt": "2026-11-06T06:08:23.879Z"
     },
     {
       "slug": "미면정-양재칼국수-샤브샤브",
@@ -1890,6 +2247,14 @@
         "kakaoId": "1868934600",
         "kakaoUrl": "https://place.map.kakao.com/1868934600",
         "address": "서울 강남구 남부순환로365길 22"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:24.057Z",
+      "rating": {
+        "score": 4.3,
+        "count": 321,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7023836291816782613&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:24.057Z"
       }
     },
     {
@@ -1898,7 +2263,8 @@
       "tags": [],
       "addedAt": "2026-11-06T04:18:51.929Z",
       "updatedAt": "2026-11-06T04:18:51.929Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "ratingCheckedAt": "2026-11-06T06:08:24.856Z"
     },
     {
       "slug": "브라운돈까스-뱅뱅사거리점",
@@ -1938,6 +2304,14 @@
         "kakaoId": "1605549465",
         "kakaoUrl": "https://place.map.kakao.com/1605549465",
         "address": "서울 강남구 도곡로4길 18"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:25.044Z",
+      "rating": {
+        "score": 3.6,
+        "count": 12,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=11437477782459737504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:25.044Z"
       }
     },
     {
@@ -1978,6 +2352,14 @@
         "kakaoId": "22221836",
         "kakaoUrl": "https://place.map.kakao.com/22221836",
         "address": "서울 서초구 남부순환로 지하 2585"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:25.183Z",
+      "rating": {
+        "score": 3.6,
+        "count": 160,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=13504233217390994140&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:25.183Z"
       }
     },
     {
@@ -2017,6 +2399,14 @@
         "kakaoId": "14928984",
         "kakaoUrl": "https://place.map.kakao.com/14928984",
         "address": "서울 강남구 남부순환로359길 20"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:25.388Z",
+      "rating": {
+        "score": 4.2,
+        "count": 252,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=13126534566515892914&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:25.388Z"
       }
     },
     {
@@ -2035,6 +2425,14 @@
         "kakaoId": "96772273",
         "kakaoUrl": "https://place.map.kakao.com/96772273",
         "address": "서울 서초구 남부순환로350길 19-26"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:25.578Z",
+      "rating": {
+        "score": 4.1,
+        "count": 131,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=5855657689333498182&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:25.578Z"
       }
     },
     {
@@ -2066,7 +2464,8 @@
         "open": "11:00",
         "close": "23:00"
       },
-      "walkMeters": 259
+      "walkMeters": 259,
+      "ratingCheckedAt": "2026-11-06T06:08:26.490Z"
     },
     {
       "slug": "양재순대",
@@ -2086,6 +2485,14 @@
         "kakaoId": "770374120",
         "kakaoUrl": "https://place.map.kakao.com/770374120",
         "address": "서울 서초구 강남대로39길 16"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:26.666Z",
+      "rating": {
+        "score": 4.2,
+        "count": 360,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=13946258886215488486&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:26.666Z"
       }
     },
     {
@@ -2117,7 +2524,15 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 244
+      "walkMeters": 244,
+      "ratingCheckedAt": "2026-11-06T06:08:27.443Z",
+      "rating": {
+        "score": 4.7,
+        "count": 80,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7012119545672502365&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:27.443Z"
+      }
     },
     {
       "slug": "영동소금구이-양재점",
@@ -2157,6 +2572,14 @@
         "kakaoId": "24751749",
         "kakaoUrl": "https://place.map.kakao.com/24751749",
         "address": "서울 서초구 남부순환로347길 59"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:27.613Z",
+      "rating": {
+        "score": 3.9,
+        "count": 195,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=6131633964364377657&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:27.613Z"
       }
     },
     {
@@ -2197,6 +2620,14 @@
         "kakaoId": "16555131",
         "kakaoUrl": "https://place.map.kakao.com/16555131",
         "address": "서울 강남구 도곡로2길 12"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:27.820Z",
+      "rating": {
+        "score": 4,
+        "count": 106,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7130216057554382926&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:27.820Z"
       }
     },
     {
@@ -2237,6 +2668,14 @@
         "kakaoId": "10630917",
         "kakaoUrl": "https://place.map.kakao.com/10630917",
         "address": "서울 서초구 남부순환로 2640-11"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:28.004Z",
+      "rating": {
+        "score": 3.9,
+        "count": 250,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7055496146360763282&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:28.004Z"
       }
     },
     {
@@ -2276,6 +2715,14 @@
         "kakaoId": "1113709894",
         "kakaoUrl": "https://place.map.kakao.com/1113709894",
         "address": "서울 서초구 강남대로41길 13"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:28.149Z",
+      "rating": {
+        "score": 4.3,
+        "count": 52,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=13346806357159688365&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:28.149Z"
       }
     },
     {
@@ -2316,6 +2763,14 @@
         "kakaoId": "258034127",
         "kakaoUrl": "https://place.map.kakao.com/258034127",
         "address": "서울 서초구 서운로6길 29"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:28.308Z",
+      "rating": {
+        "score": 4.4,
+        "count": 19,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=12379693406644641644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:28.308Z"
       }
     },
     {
@@ -2356,6 +2811,14 @@
         "kakaoId": "1678250154",
         "kakaoUrl": "https://place.map.kakao.com/1678250154",
         "address": "서울 서초구 강남대로43길 10"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:28.487Z",
+      "rating": {
+        "score": 4.3,
+        "count": 87,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=6232143653335201416&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:28.487Z"
       }
     },
     {
@@ -2395,6 +2858,14 @@
         "kakaoId": "12533122",
         "kakaoUrl": "https://place.map.kakao.com/12533122",
         "address": "서울 서초구 강남대로39길 5"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:28.650Z",
+      "rating": {
+        "score": 4.2,
+        "count": 299,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4674511243938555682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:28.650Z"
       }
     },
     {
@@ -2435,6 +2906,14 @@
         "kakaoId": "1805586037",
         "kakaoUrl": "https://place.map.kakao.com/1805586037",
         "address": "서울 서초구 강남대로43길 16"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:28.796Z",
+      "rating": {
+        "score": 3.9,
+        "count": 105,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3332932958363176095&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:28.796Z"
       }
     },
     {
@@ -2475,6 +2954,14 @@
         "kakaoId": "12446819",
         "kakaoUrl": "https://place.map.kakao.com/12446819",
         "address": "서울 서초구 강남대로 273"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:28.983Z",
+      "rating": {
+        "score": 4,
+        "count": 234,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=14519780704721045910&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:28.983Z"
       }
     },
     {
@@ -2515,6 +3002,14 @@
         "kakaoId": "332296816",
         "kakaoUrl": "https://place.map.kakao.com/332296816",
         "address": "서울 강남구 강남대로 240"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:29.150Z",
+      "rating": {
+        "score": 3.9,
+        "count": 162,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4485071272891995610&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:29.150Z"
       }
     },
     {
@@ -2555,6 +3050,14 @@
         "kakaoId": "1156425526",
         "kakaoUrl": "https://place.map.kakao.com/1156425526",
         "address": "서울 강남구 강남대로 240"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:29.312Z",
+      "rating": {
+        "score": 4.7,
+        "count": 3,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=8550083512197848792&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:29.312Z"
       }
     },
     {
@@ -2594,6 +3097,14 @@
         "kakaoId": "1838335601",
         "kakaoUrl": "https://place.map.kakao.com/1838335601",
         "address": "서울 서초구 강남대로 224"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:29.450Z",
+      "rating": {
+        "score": 4.3,
+        "count": 199,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=16544831135320451987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:29.450Z"
       }
     },
     {
@@ -2633,6 +3144,14 @@
         "kakaoId": "539250139",
         "kakaoUrl": "https://place.map.kakao.com/539250139",
         "address": "서울 서초구 강남대로41길 8"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:29.620Z",
+      "rating": {
+        "score": 4.6,
+        "count": 1824,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=16903641516061433727&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:29.620Z"
       }
     },
     {
@@ -2672,6 +3191,14 @@
         "kakaoId": "957969643",
         "kakaoUrl": "https://place.map.kakao.com/957969643",
         "address": "서울 서초구 남부순환로350길 19-16"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:29.851Z",
+      "rating": {
+        "score": 4.3,
+        "count": 268,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4072976823389595768&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:29.851Z"
       }
     },
     {
@@ -2712,6 +3239,14 @@
         "kakaoId": "783682960",
         "kakaoUrl": "https://place.map.kakao.com/783682960",
         "address": "서울 서초구 강남대로 221"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:29.999Z",
+      "rating": {
+        "score": 4.8,
+        "count": 5,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=340298955999172005&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:29.999Z"
       }
     }
   ],
