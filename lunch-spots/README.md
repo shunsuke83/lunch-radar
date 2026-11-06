@@ -20,6 +20,8 @@
 - `backfill` / `reset` — 과거 메시지 페이지네이션
 - `catchup` — `newestTs` 이후 메시지만
 
+Slack은 최신 글부터 페이지를 주므로, 페이지 한도나 Slack 오류로 중간에 멈추면 아직 안 읽은 메시지가 워터마크 아래에 남습니다. 그래서 `newestTs`는 끝까지 읽었을 때만 앞으로 갑니다. 멈춘 경우 결과는 `hasMore: true`(오류면 `partialError` 포함)이고, 진행 위치는 state의 `catchup`(또는 백필의 `pageCursor`)에 남아 다음 `auto` 호출이 이어서 읽습니다. `export-restaurants`는 백필이나 catch-up이 끝나지 않았으면 `web/data/restaurants.json`을 쓰지 않습니다 (`allowIncomplete: true`면 `lastMessageTs` 없이 씀).
+
 ### 2) 실시간 채널 포스트
 
 `bot/channels/slack.ts`의 `engagement.channelPosts`가 `LUNCH_SPOTS_CHANNEL_ID` 채널의 상위 글을 감시합니다 (값이 없으면 감시하지 않음).
@@ -30,7 +32,7 @@
 
 ## 도구
 
-- `upsert-restaurant` — 맛집 저장/갱신. `mentionCount`는 출처 메시지(`sourceChannelId` + `sourceMessageTs`)당 한 번만 증가하므로 재시도·`reset` 재수집에도 부풀지 않습니다.
+- `upsert-restaurant` — 맛집 저장/갱신. `mentionCount`는 출처 메시지(`sourceChannelId` + `sourceMessageTs`)당 한 번만 증가하므로 재시도·`reset` 재수집에도 부풀지 않습니다. 이미 센 메시지 목록(`countedMessages`)을 가게 레코드 안에 두어 중복 판정과 카운트 증가가 한 번의 쓰기로 끝나므로, 중간에 실패해도 같은 입력으로 다시 호출하면 됩니다 (공개 export에서는 제외).
 - `list-restaurants` — 검색·필터
 - `pick-lunch` — “오늘 뭐 먹지?”
 - `ingest-channel-history` — 채널 히스토리 증거 수집

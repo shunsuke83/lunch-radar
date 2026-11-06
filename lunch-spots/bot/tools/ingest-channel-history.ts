@@ -119,6 +119,9 @@ export default defineTool({
     as evidence for restaurant upserts. Supports pagination via a kv cursor and
     catch-up of messages newer than the last watermark.
     Modes: auto (default), backfill, catchup, reset.
+    hasMore true (page limit or a Slack error) means older messages are still
+    unread: call again with mode auto. The watermark only advances once a
+    catch-up or backfill reaches the end.
     After this returns, call upsert-restaurant for each restaurant you can identify.
     Do not invent places that are not in the messages.
   `,
@@ -176,7 +179,8 @@ export default defineTool({
             ? "catchup"
             : "backfill";
 
-    if (resolvedMode === "catchup" && !prior?.newestTs) {
+    const boundaryTs = prior?.catchup?.boundaryTs ?? prior?.newestTs;
+    if (resolvedMode === "catchup" && !boundaryTs) {
       return {
         ok: true as const,
         channelId,
@@ -206,13 +210,19 @@ export default defineTool({
       );
     }
 
+    const catchup = resolvedMode === "catchup";
     const collected: MappedMessage[] = [];
-    let pageCursor =
-      resolvedMode === "backfill" ? (prior?.pageCursor ?? undefined) : undefined;
+    // Both modes walk newest-to-oldest; the cursor resumes where the last call
+    // stopped (after its last successful page).
+    let pageCursor = catchup
+      ? (prior?.catchup?.cursor ?? undefined)
+      : (prior?.pageCursor ?? undefined);
     let hasMore = false;
     let newestTs = prior?.newestTs;
     let oldestTs = prior?.oldestTs;
+    let catchupMaxTs = catchup ? prior?.catchup?.maxTs : undefined;
     let lastError: string | undefined;
+    let pagesRead = 0;
 
     for (let page = 0; page < pages; page++) {
       const args: {
@@ -223,30 +233,38 @@ export default defineTool({
         inclusive?: boolean;
       } = { channel: channelId, limit };
 
-      if (resolvedMode === "catchup" && prior?.newestTs) {
+      if (catchup) {
         // Exclusive lower bound would skip the watermark; inclusive + filter below.
-        args.oldest = prior.newestTs;
+        args.oldest = boundaryTs;
         args.inclusive = true;
-        if (pageCursor) args.cursor = pageCursor;
-      } else if (pageCursor) {
-        args.cursor = pageCursor;
       }
+      if (pageCursor) args.cursor = pageCursor;
 
-      const res = await client.conversations.history(args);
+      let res: HistoryResponse;
+      try {
+        res = await client.conversations.history(args);
+      } catch (err) {
+        res = { ok: false, error: err instanceof Error ? err.message : String(err) };
+      }
       if (!res.ok) {
         lastError = res.error ?? "conversations.history failed";
         break;
       }
+      pagesRead++;
 
       let mapped = mapMessages(res.messages ?? []);
-      if (resolvedMode === "catchup" && prior?.newestTs) {
-        mapped = mapped.filter((m) => m.ts && m.ts > prior.newestTs!);
+      if (catchup) {
+        mapped = mapped.filter((m) => m.ts && m.ts > boundaryTs!);
       }
 
       for (const m of mapped) {
         collected.push(m);
-        newestTs = maxTs(newestTs, m.ts);
-        oldestTs = minTs(oldestTs, m.ts);
+        if (catchup) {
+          catchupMaxTs = maxTs(catchupMaxTs, m.ts);
+        } else {
+          newestTs = maxTs(newestTs, m.ts);
+          oldestTs = minTs(oldestTs, m.ts);
+        }
       }
 
       const next =
@@ -256,28 +274,34 @@ export default defineTool({
           : undefined;
       hasMore = res.has_more === true && next !== undefined;
       pageCursor = next;
-
-      // Catch-up only needs newer pages once; stop when Slack says no more.
       if (!hasMore) break;
-      // For catch-up, first page is usually enough; keep looping only while hasMore.
     }
 
-    if (lastError && collected.length === 0) {
+    if (lastError && pagesRead === 0) {
       return emptyResult(channelId, lastError, prior);
     }
 
+    // A page limit or an error leaves older messages unread, so the watermark
+    // must not move past them.
+    const incomplete = hasMore || lastError !== undefined;
     const now = new Date().toISOString();
-    const backfillComplete =
-      resolvedMode === "catchup"
-        ? (prior?.backfillComplete ?? false)
-        : !hasMore;
 
     const state: HistoryState = {
       channelId,
-      newestTs,
+      newestTs:
+        catchup && !incomplete ? maxTs(prior?.newestTs, catchupMaxTs) : newestTs,
       oldestTs,
-      pageCursor: resolvedMode === "backfill" ? (pageCursor ?? null) : (prior?.pageCursor ?? null),
-      backfillComplete,
+      pageCursor: catchup
+        ? (prior?.pageCursor ?? null)
+        : incomplete
+          ? (pageCursor ?? null)
+          : null,
+      backfillComplete: catchup ? (prior?.backfillComplete ?? false) : !incomplete,
+      catchup: catchup
+        ? incomplete
+          ? { boundaryTs: boundaryTs!, cursor: pageCursor, maxTs: catchupMaxTs }
+          : null
+        : (prior?.catchup ?? null),
       updatedAt: now,
       lastIngestAt: now,
       lastFetchedCount: collected.length,
@@ -290,11 +314,11 @@ export default defineTool({
       mode: resolvedMode,
       count: collected.length,
       messages: collected,
-      hasMore: resolvedMode === "backfill" ? hasMore : false,
+      hasMore: incomplete,
       partialError: lastError,
       state,
-      nextStep: hasMore && resolvedMode === "backfill"
-        ? "More older history remains. Call upsert-restaurant for these messages, then call ingest-channel-history again (mode backfill or auto) to continue."
+      nextStep: incomplete
+        ? "Older messages remain unread. Call upsert-restaurant for these messages, then call ingest-channel-history again with mode auto to continue (also after partialError)."
         : "Identify restaurant recommendations in these messages, then call upsert-restaurant for each unique place.",
     };
   },

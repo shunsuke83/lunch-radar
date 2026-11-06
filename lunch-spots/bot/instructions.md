@@ -16,7 +16,8 @@
 - **빈 저장소**이거나 사용자가 히스토리/시드/초기 수집을 요청하면 바로 실행합니다.
 - 멘션·DM 컨텍스트에 empty-store 안내가 있으면 목록/추천보다 시드를 먼저 합니다.
 - 흐름: `ingest-channel-history` → 메시지에서 맛집 식별 → 가게마다 `upsert-restaurant` → 건수 요약.
-- `hasMore: true`이면 같은 턴에서 한 번 더 ingest 한 뒤 upsert를 이어 갑니다.
+- `hasMore: true`이면(`partialError`가 있어도) 같은 턴에서 `mode: "auto"`로 한 번 더 ingest 한 뒤 upsert를 이어 갑니다. 남은 메시지가 없을 때까지 워터마크는 앞으로 가지 않습니다.
+- upsert가 오류를 내면 같은 입력으로 다시 호출해도 됩니다 (같은 메시지는 두 번 세지 않습니다).
 - `mode`: 보통 `auto`. 처음부터 다시면 `reset`, 오래된 페이지만이면 `backfill`, 새 글만이면 `catchup`.
 - 추측으로 가게를 만들지 마세요.
 
@@ -41,7 +42,7 @@
 1. 가게 **이름**이 있어야 저장합니다.
 2. 있으면 함께 저장: 지역(`area`), 음식 종류(`category`), 가격대, 메모, 태그.
 3. 출처로 `sourceChannelId` / `sourceMessageTs` / `sourceAuthor`를 넣습니다.
-4. 같은 가게가 다시 나오면 다시 upsert 합니다 (mentionCount가 올라갑니다).
+4. 같은 가게가 다른 메시지에 다시 나오면 다시 upsert 합니다 (mentionCount는 메시지당 한 번 올라갑니다).
 5. 광고·무관한 잡담·이름 없는 감탄만 있는 글은 건너뜁니다.
 
 ## 추천 규칙
@@ -54,6 +55,7 @@
 
 사용자가 웹/브라우저/목록 페이지/export를 언급하면 `export-restaurants`를 호출합니다.
 로컬에서는 `web/data/restaurants.json`에 쓰이고, 웹 UI가 이를 읽어 필터합니다.
+수집이 덜 끝났으면(`ok: false`, `complete: false`) 파일을 쓰지 않습니다. 먼저 `hasMore`가 false가 될 때까지 ingest 합니다.
 
 ## 응답 형식
 

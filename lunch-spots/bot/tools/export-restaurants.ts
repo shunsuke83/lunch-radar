@@ -7,6 +7,7 @@ import { lunchChannelId } from "../lib/config.js";
 import {
   INDEX_KEY,
   historyStateKey,
+  isHistoryComplete,
   restaurantKey,
   type HistoryState,
   type Restaurant,
@@ -28,6 +29,12 @@ export default defineTool({
       .boolean()
       .optional()
       .describe("Write ../web/data/restaurants.json (default true)"),
+    allowIncomplete: z
+      .boolean()
+      .optional()
+      .describe(
+        "Write even while history has gaps (no lastMessageTs, so the next collector run rebuilds). Default false.",
+      ),
   }),
   async execute(input, ctx) {
     const index = ((await ctx.host.kv.get(INDEX_KEY)) as string[] | null) ?? [];
@@ -48,18 +55,27 @@ export default defineTool({
       ? ((await ctx.host.kv.get(historyStateKey(channelId))) as HistoryState | null)
       : null;
 
+    // The collector resumes from lastMessageTs, so a catalog written while
+    // history still has gaps would make the next run skip those messages.
+    const complete = isHistoryComplete(history);
+
     // The web catalog is published on public GitHub Pages: no Slack user,
     // channel, or message identifiers leave the store.
     const catalog = {
       updatedAt: new Date().toISOString(),
       source: "slack-export",
-      lastMessageTs: history?.newestTs,
-      restaurants: restaurants.map(({ source: _source, ...rest }) => rest),
+      lastMessageTs: complete ? history?.newestTs : undefined,
+      restaurants: restaurants.map(
+        ({ source: _source, countedMessages: _counted, ...rest }) => rest,
+      ),
     };
 
     let writtenPath: string | null = null;
     let writeError: string | null = null;
-    if (input.writeFile !== false) {
+    if (input.writeFile !== false && !complete && !input.allowIncomplete) {
+      writeError =
+        "History is incomplete (backfill or catch-up has hasMore). Keep calling ingest-channel-history with mode auto until hasMore is false, then export again.";
+    } else if (input.writeFile !== false) {
       try {
         const outPath = path.resolve(
           process.cwd(),
@@ -77,7 +93,8 @@ export default defineTool({
     }
 
     return {
-      ok: true,
+      ok: writeError === null,
+      complete,
       count: restaurants.length,
       writtenPath,
       writeError,

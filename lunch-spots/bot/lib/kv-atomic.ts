@@ -45,19 +45,3 @@ export async function updateKey<T>(
   }
   throw new Error(`kv update for ${key} kept conflicting`);
 }
-
-/** Create `key` only if absent. Returns true when this call created it. */
-export async function claimKey(
-  kv: HostKvApi,
-  key: string,
-  value: JsonValue,
-): Promise<boolean> {
-  if (supportsKvCas(kv)) {
-    return (await kv.putIfAbsent(key, value)).ok;
-  }
-  return withKeyLock(key, async () => {
-    if ((await kv.get(key)) !== undefined) return false;
-    await kv.put(key, value);
-    return true;
-  });
-}

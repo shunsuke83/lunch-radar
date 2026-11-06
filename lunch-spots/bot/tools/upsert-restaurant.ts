@@ -1,10 +1,10 @@
 import { prompt } from "@grok/agent-sdk";
 import { defineTool } from "@grok/agent-sdk/tools";
 import * as z from "zod/v4";
-import { claimKey, updateKey } from "../lib/kv-atomic.js";
+import { updateKey } from "../lib/kv-atomic.js";
 import {
   INDEX_KEY,
-  mentionKey,
+  mentionId,
   mergeTags,
   normalizeName,
   restaurantKey,
@@ -18,7 +18,7 @@ export default defineTool({
     Use when a Slack message names a place people recommend for lunch.
     Duplicate names merge. mentionCount increments once per distinct source
     message (sourceChannelId + sourceMessageTs); repeating the same message
-    does not count again.
+    does not count again. Safe to retry after an error.
   `,
   effect: "idempotent",
   inputSchema: z.object({
@@ -40,20 +40,19 @@ export default defineTool({
     const now = new Date().toISOString();
 
     const messageTs = input.sourceMessageTs?.trim();
-    const newMention = messageTs
-      ? await claimKey(
-          kv,
-          mentionKey(slug, input.sourceChannelId?.trim() ?? "", messageTs),
-          now,
-        )
-      : true;
+    const mention = messageTs
+      ? mentionId(input.sourceChannelId?.trim() ?? "", messageTs)
+      : undefined;
 
     let created = false;
+    let newMention = false;
     const restaurant = await updateKey<Restaurant>(
       kv,
       restaurantKey(slug),
       (prior) => {
         created = !prior;
+        const counted = prior?.countedMessages ?? [];
+        newMention = !mention || !counted.includes(mention);
         const sameName =
           prior && normalizeName(prior.name) === normalizeName(name);
         return {
@@ -77,10 +76,14 @@ export default defineTool({
           addedAt: prior?.addedAt ?? now,
           updatedAt: now,
           mentionCount: (prior?.mentionCount ?? 0) + (newMention ? 1 : 0),
+          countedMessages:
+            mention && newMention ? [...counted, mention] : counted,
         };
       },
     );
 
+    // Runs after the record write, so a retry of a failed call re-adds the
+    // slug without counting the message twice.
     await updateKey<string[]>(kv, INDEX_KEY, (index = []) =>
       index.includes(slug) ? index : [...index, slug],
     );

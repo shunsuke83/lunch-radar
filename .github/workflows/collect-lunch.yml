@@ -73,11 +73,19 @@ jobs:
         # The trajectory echoes tool arguments (Slack user ids); log only the reply.
         run: |
           set -o pipefail
+          log="$RUNNER_TEMP/agent-run.log"
           npx @grok/agent-sdk run --dir . \
             --state-root "$RUNNER_TEMP/agent-state" \
             --no-trace --no-stream --timeout-ms 1200000 \
-            --message "$(cat ci/collect-prompt.md)" 2>&1 \
-            | { grep -E '^\s*(agent:|usage:|error|Error)' || true; }
+            --message "$(cat ci/collect-prompt.md)" > "$log" 2>&1 \
+            || { grep -E '^\s*(agent:|usage:|error|Error)' "$log"; exit 1; }
+          grep -E '^\s*(agent:|usage:|error|Error)' "$log" || true
+          # export-restaurants leaves the catalog untouched while history has
+          # gaps; fail so the next run's retry is visible.
+          if grep -q 'EXPORT_INCOMPLETE' "$log"; then
+            echo "::error::Collection did not reach the end of the Slack history; catalog not updated."
+            exit 1
+          fi
 
       - name: Check exported catalog
         if: steps.precheck.outputs.run == 'true'
@@ -88,6 +96,10 @@ jobs:
           echo "count=$count" >> "$GITHUB_OUTPUT"
           if [ "$count" -eq 0 ]; then
             echo "::error::Export has no restaurants; keeping the committed catalog."
+            exit 1
+          fi
+          if [ -z "$(jq -r '.lastMessageTs // ""' "$file")" ]; then
+            echo "::error::Export has no lastMessageTs (history incomplete); keeping the committed catalog."
             exit 1
           fi
           normalize='{lastMessageTs, restaurants: (.restaurants | map(del(.addedAt, .updatedAt)) | sort_by(.slug))}'

@@ -69,6 +69,7 @@ export default defineTool({
       newestTs: lastMessageTs,
       pageCursor: null,
       backfillComplete: true,
+      catchup: null,
       updatedAt: now,
     };
     await ctx.host.kv.put(historyStateKey(channelId), state);

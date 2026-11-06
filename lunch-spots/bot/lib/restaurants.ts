@@ -17,18 +17,38 @@ export type Restaurant = {
   addedAt: string;
   updatedAt: string;
   mentionCount: number;
+  /**
+   * `channelId:messageTs` of every message already counted in mentionCount.
+   * Kept on the record so the dedupe check and the increment are one write.
+   */
+  countedMessages?: string[];
+};
+
+/** A catch-up that has not reached the watermark yet (Slack pages newest-first). */
+export type CatchupProgress = {
+  /** Watermark the catch-up started from; messages at or below it are done. */
+  boundaryTs: string;
+  /** next_cursor for the next older page above boundaryTs. */
+  cursor?: string;
+  /** Newest ts fetched so far; becomes newestTs once the catch-up finishes. */
+  maxTs?: string;
 };
 
 /** Slack conversations.history pagination / catch-up watermark per channel. */
 export type HistoryState = {
   channelId: string;
-  /** Newest message ts successfully seen (for catch-up with oldest=). */
+  /**
+   * Every message at or below this ts has been fetched. Only advances when a
+   * backfill or catch-up reaches the end without errors.
+   */
   newestTs?: string;
   /** Oldest message ts reached during backfill. */
   oldestTs?: string;
   /** Slack response_metadata.next_cursor for older pages; null when done. */
   pageCursor?: string | null;
   backfillComplete: boolean;
+  /** Unfinished catch-up; resumed by the next catchup/auto call. */
+  catchup?: CatchupProgress | null;
   updatedAt: string;
   lastIngestAt?: string;
   lastFetchedCount?: number;
@@ -66,13 +86,13 @@ export function restaurantKey(slug: string): string {
   return `restaurant:${slug}`;
 }
 
-/** Marks that one Slack message has already been counted for one restaurant. */
-export function mentionKey(
-  slug: string,
-  channelId: string,
-  messageTs: string,
-): string {
-  return `restaurant-mention:${slug}:${channelId}:${messageTs}`;
+export function mentionId(channelId: string, messageTs: string): string {
+  return `${channelId}:${messageTs}`;
+}
+
+/** True when history has no gaps: backfill finished and no catch-up pending. */
+export function isHistoryComplete(state: HistoryState | null | undefined): boolean {
+  return Boolean(state?.newestTs && state.backfillComplete && !state.catchup);
 }
 
 export function mergeTags(a: string[] = [], b: string[] = []): string[] {
