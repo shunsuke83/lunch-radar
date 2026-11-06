@@ -93,16 +93,30 @@ Slack 연결 시 토큰은 `lunch-spots/.env.local`에 저장됩니다 (형식�
 1. 봇이 채널 히스토리/실시간 글에서 맛집을 수집합니다.
 2. 봇의 `export-restaurants` 도구가 `../web/data/restaurants.json`을 덮어씁니다. 그래서 **`lunch-spots`와 `web`은 이 저장소 구조 그대로 형제 폴더로 두고, 봇은 `lunch-spots` 폴더 안에서 실행**해야 합니다.
 3. 로컬 개발 서버라면 새로고침하면 반영됩니다. 웹이 다른 서버에 있으면 export 결과를 `POST /api/restaurants`로 보냅니다.
-4. GitHub Pages에 반영하려면 갱신된 `web/data/restaurants.json`을 커밋·푸시합니다. `main`에 푸시되면 Actions가 자동으로 다시 빌드·배포합니다.
+4. GitHub Pages에 반영하려면 갱신된 `web/data/restaurants.json`을 커밋·푸시합니다. `main`에 푸시되면 Actions가 자동으로 다시 빌드·배포합니다. 평소에는 `collect-lunch.yml`이 매일 이 과정을 자동으로 합니다.
 
 ## GitHub Pages 배포
 
-`.github/workflows/`에 두 개의 워크플로가 있습니다.
+`.github/workflows/`에 세 개의 워크플로가 있습니다.
 
 | 워크플로 | 트리거 | 하는 일 |
 | --- | --- | --- |
+| [`collect-lunch.yml`](.github/workflows/collect-lunch.yml) | 매일 11:30 (Asia/Seoul), 수동 실행 | Slack 채널 히스토리 수집 → `web/data/restaurants.json` 갱신·커밋 → Pages 배포 호출 |
 | [`deploy-pages.yml`](.github/workflows/deploy-pages.yml) | `main`에 `web/**` 변경 푸시, 수동 실행 | `npm run build:pages` → `web/out/`을 GitHub Pages에 배포 |
 | [`ci.yml`](.github/workflows/ci.yml) | 모든 PR, `main` 푸시 | 웹 정적 빌드(타입체크 포함), 봇 `npm run check`(타입체크) |
+
+### Slack 자동 수집 (`collect-lunch.yml`)
+
+`agent-sdk run`으로 봇을 한 번 실행해 채널 전체 히스토리를 읽고, 모델이 맛집을 골라 저장한 뒤 export 합니다. 지시문은 [`lunch-spots/ci/collect-prompt.md`](lunch-spots/ci/collect-prompt.md)입니다. 실행마다 빈 상태에서 전체 히스토리로 목록을 다시 만들며, 타임스탬프 외에 바뀐 내용이 있을 때만 커밋합니다. export 결과가 0곳이면 실패 처리하고 기존 데이터를 유지합니다.
+
+필요한 저장소 Secrets (**Settings → Secrets and variables → Actions**):
+
+| Secret | 값 |
+| --- | --- |
+| `CURSOR_API_KEY` | Cursor API 키 (모델 호출용, 대시보드에서 발급) |
+| `LUNCH_SPOTS_SLACK_USER_TOKEN` | Slack User OAuth Token `xoxp-...` (`channels:history`, `groups:history`) |
+
+한 번 실행에 약 4~5분, 모델 입력 수십만 토큰이 듭니다. 사용자 토큰은 그 사용자가 볼 수 있는 모든 채널을 읽을 수 있으므로 저장소 쓰기 권한자 범위를 관리하세요.
 
 ### 최초 1회 설정
 
@@ -114,7 +128,7 @@ Slack 연결 시 토큰은 `lunch-spots/.env.local`에 저장됩니다 (형식�
 
 - **GitHub Pages는 누구나 볼 수 있는 공개 사이트입니다** (비공개 저장소여도 Enterprise 플랜이 아니면 공개). 사내 Slack에서 수집한 데이터를 올려도 되는지 먼저 확인하세요.
 - Pages에는 서버가 없으므로 `POST /api/restaurants` import는 동작하지 않습니다. 데이터 갱신은 `web/data/restaurants.json` 커밋으로만 합니다.
-- Slack 봇(`lunch-spots`)은 계속 실행되는 서버형 에이전트라 Pages나 Actions에서는 돌릴 수 없습니다. 봇은 로컬이나 `npx @grok/agent-sdk deploy`로 띄웁니다.
+- Slack에서 멘션·DM으로 대화하는 봇 기능은 계속 실행되는 서버가 필요해 Actions로 대체되지 않습니다. 필요하면 로컬이나 `npx @grok/agent-sdk deploy`로 띄웁니다. 수집만은 `collect-lunch.yml`이 대신합니다.
 
 ## 문제 해결
 
