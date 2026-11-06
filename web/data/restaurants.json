@@ -32,7 +32,16 @@
         "open": "11:00",
         "close": "20:30"
       },
-      "walkMeters": 196
+      "walkMeters": 196,
+      "location": {
+        "lat": 37.4861430508459,
+        "lng": 127.036227220564
+      },
+      "place": {
+        "kakaoId": "899406562",
+        "kakaoUrl": "https://place.map.kakao.com/899406562",
+        "address": "서울 강남구 남부순환로359길 19"
+      }
     },
     {
       "slug": "도화",
@@ -62,7 +71,16 @@
         "open": "11:00",
         "close": "23:00"
       },
-      "walkMeters": 382
+      "walkMeters": 382,
+      "location": {
+        "lat": 37.48567073077524,
+        "lng": 127.03052723393596
+      },
+      "place": {
+        "kakaoId": "1898111480",
+        "kakaoUrl": "https://place.map.kakao.com/1898111480",
+        "address": "서울 서초구 서운로6길 22"
+      }
     },
     {
       "slug": "마차이짬뽕-양재역점",
@@ -93,7 +111,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 177
+      "walkMeters": 177,
+      "location": {
+        "lat": 37.4846303835679,
+        "lng": 127.032707862382
+      },
+      "place": {
+        "kakaoId": "1457439855",
+        "kakaoUrl": "https://place.map.kakao.com/1457439855",
+        "address": "서울 서초구 남부순환로 2579"
+      }
     },
     {
       "slug": "명정루-양재",
@@ -124,7 +151,16 @@
         "open": "11:00",
         "close": "21:30"
       },
-      "walkMeters": 298
+      "walkMeters": 298,
+      "location": {
+        "lat": 37.4854209347542,
+        "lng": 127.031354787404
+      },
+      "place": {
+        "kakaoId": "420171715",
+        "kakaoUrl": "https://place.map.kakao.com/420171715",
+        "address": "서울 서초구 남부순환로347길 23"
+      }
     },
     {
       "slug": "미소야-양재점",
@@ -155,7 +191,16 @@
         "open": "11:30",
         "close": "22:00"
       },
-      "walkMeters": 288
+      "walkMeters": 288,
+      "location": {
+        "lat": 37.4843693519298,
+        "lng": 127.037868083186
+      },
+      "place": {
+        "kakaoId": "10397965",
+        "kakaoUrl": "https://place.map.kakao.com/10397965",
+        "address": "서울 서초구 남부순환로356길 15"
+      }
     },
     {
       "slug": "미트앤샐러드",
@@ -186,7 +231,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 203
+      "walkMeters": 203,
+      "location": {
+        "lat": 37.4859221755422,
+        "lng": 127.03664320559
+      },
+      "place": {
+        "kakaoId": "2104071381",
+        "kakaoUrl": "https://place.map.kakao.com/2104071381",
+        "address": "서울 강남구 남부순환로359길 14"
+      }
     },
     {
       "slug": "샌드워커-양재역",
@@ -213,7 +267,16 @@
           "price": 8800
         }
       ],
-      "walkMeters": 260
+      "walkMeters": 260,
+      "location": {
+        "lat": 37.4828921955007,
+        "lng": 127.03628218284
+      },
+      "place": {
+        "kakaoId": "2106084901",
+        "kakaoUrl": "https://place.map.kakao.com/2106084901",
+        "address": "서울 서초구 강남대로34길 5"
+      }
     },
     {
       "slug": "양산도-양재점",
@@ -244,7 +307,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 306
+      "walkMeters": 306,
+      "location": {
+        "lat": 37.484392948539764,
+        "lng": 127.03111126570808
+      },
+      "place": {
+        "kakaoId": "1798631130",
+        "kakaoUrl": "https://place.map.kakao.com/1798631130",
+        "address": "서울 서초구 남부순환로 2567"
+      }
     },
     {
       "slug": "작은공간-양재역",
@@ -274,7 +346,16 @@
         "open": "11:00",
         "close": "20:50"
       },
-      "walkMeters": 240
+      "walkMeters": 240,
+      "location": {
+        "lat": 37.4868820862099,
+        "lng": 127.035540112817
+      },
+      "place": {
+        "kakaoId": "14590990",
+        "kakaoUrl": "https://place.map.kakao.com/14590990",
+        "address": "서울 강남구 남부순환로359길 31"
+      }
     },
     {
       "slug": "피끄니크",
@@ -305,7 +386,16 @@
         "open": "10:00",
         "close": "21:00"
       },
-      "walkMeters": 214
+      "walkMeters": 214,
+      "location": {
+        "lat": 37.48659610311994,
+        "lng": 127.03370599154538
+      },
+      "place": {
+        "kakaoId": "1809445927",
+        "kakaoUrl": "https://place.map.kakao.com/1809445927",
+        "address": "서울 강남구 강남대로48길 6"
+      }
     },
     {
       "slug": "피넘타이-양재",
@@ -335,7 +425,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 381
+      "walkMeters": 381,
+      "location": {
+        "lat": 37.486608568120985,
+        "lng": 127.0309584100645
+      },
+      "place": {
+        "kakaoId": "1842885713",
+        "kakaoUrl": "https://place.map.kakao.com/1842885713",
+        "address": "서울 서초구 남부순환로347길 53"
+      }
     },
     {
       "slug": "호앙비엣-양재역점",
@@ -366,7 +465,16 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 259
+      "walkMeters": 259,
+      "location": {
+        "lat": 37.485317177491716,
+        "lng": 127.03188276917882
+      },
+      "place": {
+        "kakaoId": "1392790108",
+        "kakaoUrl": "https://place.map.kakao.com/1392790108",
+        "address": "서울 서초구 남부순환로347길 20"
+      }
     },
     {
       "slug": "강남쌀국수-양재점",
@@ -396,7 +504,16 @@
         "open": "10:00",
         "close": "20:30"
       },
-      "walkMeters": 192
+      "walkMeters": 192,
+      "location": {
+        "lat": 37.4858744920393,
+        "lng": 127.036417045661
+      },
+      "place": {
+        "kakaoId": "1160955124",
+        "kakaoUrl": "https://place.map.kakao.com/1160955124",
+        "address": "서울 강남구 남부순환로359길 13"
+      }
     },
     {
       "slug": "고양이부엌-양재",
@@ -426,7 +543,16 @@
         "open": "11:00",
         "close": "21:30"
       },
-      "walkMeters": 370
+      "walkMeters": 370,
+      "location": {
+        "lat": 37.4866418411772,
+        "lng": 127.031202653867
+      },
+      "place": {
+        "kakaoId": "1279884639",
+        "kakaoUrl": "https://place.map.kakao.com/1279884639",
+        "address": "서울 서초구 남부순환로347길 52"
+      }
     },
     {
       "slug": "꼬김빱-서초구청점",
@@ -488,7 +614,16 @@
         "open": "11:30",
         "close": "22:00"
       },
-      "walkMeters": 394
+      "walkMeters": 394,
+      "location": {
+        "lat": 37.4874048749132,
+        "lng": 127.031654123031
+      },
+      "place": {
+        "kakaoId": "1311036367",
+        "kakaoUrl": "https://place.map.kakao.com/1311036367",
+        "address": "서울 서초구 강남대로43길 11"
+      }
     },
     {
       "slug": "돈까스하우스",
@@ -519,7 +654,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 204
+      "walkMeters": 204,
+      "location": {
+        "lat": 37.4860077905814,
+        "lng": 127.036581059719
+      },
+      "place": {
+        "kakaoId": "807181905",
+        "kakaoUrl": "https://place.map.kakao.com/807181905",
+        "address": "서울 강남구 남부순환로359길 16"
+      }
     },
     {
       "slug": "말죽거리-해장국",
@@ -545,7 +689,16 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 341
+      "walkMeters": 341,
+      "location": {
+        "lat": 37.48355202703171,
+        "lng": 127.0382102570792
+      },
+      "place": {
+        "kakaoId": "1710392001",
+        "kakaoUrl": "https://place.map.kakao.com/1710392001",
+        "address": "서울 서초구 남부순환로356길 33"
+      }
     },
     {
       "slug": "서초청국장",
@@ -576,7 +729,16 @@
         "open": "10:30",
         "close": "21:00"
       },
-      "walkMeters": 475
+      "walkMeters": 475,
+      "location": {
+        "lat": 37.48828163545744,
+        "lng": 127.03135485231547
+      },
+      "place": {
+        "kakaoId": "16296395",
+        "kakaoUrl": "https://place.map.kakao.com/16296395",
+        "address": "서울 서초구 강남대로45길 10"
+      }
     },
     {
       "slug": "석문어-양재점",
@@ -607,7 +769,16 @@
         "open": "11:00",
         "close": "23:00"
       },
-      "walkMeters": 330
+      "walkMeters": 330,
+      "location": {
+        "lat": 37.4849299869448,
+        "lng": 127.030969024108
+      },
+      "place": {
+        "kakaoId": "542751775",
+        "kakaoUrl": "https://place.map.kakao.com/542751775",
+        "address": "서울 서초구 강남대로37길 46"
+      }
     },
     {
       "slug": "손수동-양재",
@@ -638,7 +809,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 301
+      "walkMeters": 301,
+      "location": {
+        "lat": 37.4836098615133,
+        "lng": 127.037681142771
+      },
+      "place": {
+        "kakaoId": "193773470",
+        "kakaoUrl": "https://place.map.kakao.com/193773470",
+        "address": "서울 서초구 강남대로34길 33"
+      }
     },
     {
       "slug": "쇼쿠지-양재점",
@@ -669,7 +849,16 @@
         "open": "11:30",
         "close": "21:00"
       },
-      "walkMeters": 383
+      "walkMeters": 383,
+      "location": {
+        "lat": 37.4858959790192,
+        "lng": 127.030542024475
+      },
+      "place": {
+        "kakaoId": "1565116350",
+        "kakaoUrl": "https://place.map.kakao.com/1565116350",
+        "address": "서울 서초구 서운로6길 19"
+      }
     },
     {
       "slug": "수정골한상",
@@ -700,7 +889,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 191
+      "walkMeters": 191,
+      "location": {
+        "lat": 37.48656264964146,
+        "lng": 127.0341107648152
+      },
+      "place": {
+        "kakaoId": "1154364290",
+        "kakaoUrl": "https://place.map.kakao.com/1154364290",
+        "address": "서울 강남구 남부순환로351길 28"
+      }
     },
     {
       "slug": "스시썸",
@@ -731,7 +929,16 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 142
+      "walkMeters": 142,
+      "location": {
+        "lat": 37.4837429695672,
+        "lng": 127.035552193648
+      },
+      "place": {
+        "kakaoId": "873475210",
+        "kakaoUrl": "https://place.map.kakao.com/873475210",
+        "address": "서울 서초구 강남대로 222-4"
+      }
     },
     {
       "slug": "얌얌",
@@ -762,7 +969,16 @@
         "open": "08:00",
         "close": "21:00"
       },
-      "walkMeters": 294
+      "walkMeters": 294,
+      "location": {
+        "lat": 37.485810983893366,
+        "lng": 127.03781001534973
+      },
+      "place": {
+        "kakaoId": "22837365",
+        "kakaoUrl": "https://place.map.kakao.com/22837365",
+        "address": "서울 강남구 남부순환로363길 9-4"
+      }
     },
     {
       "slug": "양재동김밥-도시미점",
@@ -824,7 +1040,16 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 145
+      "walkMeters": 145,
+      "location": {
+        "lat": 37.4858188353278,
+        "lng": 127.03574313196
+      },
+      "place": {
+        "kakaoId": "18923939",
+        "kakaoUrl": "https://place.map.kakao.com/18923939",
+        "address": "서울 강남구 남부순환로355길 13"
+      }
     },
     {
       "slug": "우사기",
@@ -855,7 +1080,16 @@
         "open": "11:00",
         "close": "20:30"
       },
-      "walkMeters": 178
+      "walkMeters": 178,
+      "location": {
+        "lat": 37.4832566418447,
+        "lng": 127.034823828636
+      },
+      "place": {
+        "kakaoId": "9278989",
+        "kakaoUrl": "https://place.map.kakao.com/9278989",
+        "address": "서울 서초구 강남대로 221"
+      }
     },
     {
       "slug": "유라노스-강남-양재역",
@@ -886,7 +1120,16 @@
         "open": "11:30",
         "close": "21:30"
       },
-      "walkMeters": 201
+      "walkMeters": 201,
+      "location": {
+        "lat": 37.4863692764342,
+        "lng": 127.035989884767
+      },
+      "place": {
+        "kakaoId": "212834123",
+        "kakaoUrl": "https://place.map.kakao.com/212834123",
+        "address": "서울 강남구 강남대로44길 28"
+      }
     },
     {
       "slug": "인덕원국수집",
@@ -932,7 +1175,16 @@
         "open": "11:30",
         "close": "20:30"
       },
-      "walkMeters": 244
+      "walkMeters": 244,
+      "location": {
+        "lat": 37.4855678805639,
+        "lng": 127.037278473905
+      },
+      "place": {
+        "kakaoId": "1236636959",
+        "kakaoUrl": "https://place.map.kakao.com/1236636959",
+        "address": "서울 강남구 남부순환로361길 7"
+      }
     },
     {
       "slug": "진스시-양재역",
@@ -962,7 +1214,16 @@
         "open": "11:30",
         "close": "22:00"
       },
-      "walkMeters": 433
+      "walkMeters": 433,
+      "location": {
+        "lat": 37.4875248504576,
+        "lng": 127.031121610146
+      },
+      "place": {
+        "kakaoId": "27082190",
+        "kakaoUrl": "https://place.map.kakao.com/27082190",
+        "address": "서울 서초구 강남대로43길 22-2"
+      }
     },
     {
       "slug": "채석강-양재",
@@ -992,7 +1253,16 @@
         "open": "10:00",
         "close": "22:00"
       },
-      "walkMeters": 385
+      "walkMeters": 385,
+      "location": {
+        "lat": 37.48454272053382,
+        "lng": 127.03032438626536
+      },
+      "place": {
+        "kakaoId": "715044171",
+        "kakaoUrl": "https://place.map.kakao.com/715044171",
+        "address": "서울 서초구 강남대로37길 59"
+      }
     },
     {
       "slug": "카츠공방-양재점",
@@ -1022,7 +1292,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 494
+      "walkMeters": 494,
+      "location": {
+        "lat": 37.482102933610655,
+        "lng": 127.03904052950806
+      },
+      "place": {
+        "kakaoId": "1185236896",
+        "kakaoUrl": "https://place.map.kakao.com/1185236896",
+        "address": "서울 서초구 강남대로30길 34"
+      }
     },
     {
       "slug": "팔향-양재점",
@@ -1053,7 +1332,16 @@
         "open": "11:30",
         "close": "22:00"
       },
-      "walkMeters": 279
+      "walkMeters": 279,
+      "location": {
+        "lat": 37.4864235487205,
+        "lng": 127.032129730095
+      },
+      "place": {
+        "kakaoId": "132562159",
+        "kakaoUrl": "https://place.map.kakao.com/132562159",
+        "address": "서울 서초구 강남대로41길 15-19"
+      }
     },
     {
       "slug": "하쿠라멘-양재역",
@@ -1083,7 +1371,16 @@
         "open": "10:30",
         "close": "22:00"
       },
-      "walkMeters": 218
+      "walkMeters": 218,
+      "location": {
+        "lat": 37.485397655844,
+        "lng": 127.037069214264
+      },
+      "place": {
+        "kakaoId": "408071280",
+        "kakaoUrl": "https://place.map.kakao.com/408071280",
+        "address": "서울 강남구 남부순환로359길 4"
+      }
     },
     {
       "slug": "화차이",
@@ -1114,7 +1411,16 @@
         "open": "11:00",
         "close": "20:50"
       },
-      "walkMeters": 313
+      "walkMeters": 313,
+      "location": {
+        "lat": 37.48369628344809,
+        "lng": 127.03791523079846
+      },
+      "place": {
+        "kakaoId": "872121672",
+        "kakaoUrl": "https://place.map.kakao.com/872121672",
+        "address": "서울 서초구 남부순환로356길 26"
+      }
     },
     {
       "slug": "히노카츠",
@@ -1146,7 +1452,16 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 203
+      "walkMeters": 203,
+      "location": {
+        "lat": 37.485924877171,
+        "lng": 127.036647729645
+      },
+      "place": {
+        "kakaoId": "1371914067",
+        "kakaoUrl": "https://place.map.kakao.com/1371914067",
+        "address": "서울 강남구 남부순환로359길 14"
+      }
     },
     {
       "slug": "강창구찹쌀진순대-양재역점",
@@ -1173,7 +1488,16 @@
           "price": 12000
         }
       ],
-      "walkMeters": 280
+      "walkMeters": 280,
+      "location": {
+        "lat": 37.4828668485882,
+        "lng": 127.03666658746
+      },
+      "place": {
+        "kakaoId": "32010788",
+        "kakaoUrl": "https://place.map.kakao.com/32010788",
+        "address": "서울 서초구 강남대로34길 8"
+      }
     },
     {
       "slug": "강촌원조쭈꾸미-양재역",
@@ -1204,7 +1528,16 @@
         "open": "11:00",
         "close": "23:00"
       },
-      "walkMeters": 215
+      "walkMeters": 215,
+      "location": {
+        "lat": 37.48335443957676,
+        "lng": 127.03619534668032
+      },
+      "place": {
+        "kakaoId": "13291936",
+        "kakaoUrl": "https://place.map.kakao.com/13291936",
+        "address": "서울 서초구 남부순환로350길 36"
+      }
     },
     {
       "slug": "금강수림",
@@ -1235,7 +1568,16 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 38
+      "walkMeters": 38,
+      "location": {
+        "lat": 37.485259699086775,
+        "lng": 127.03443015314183
+      },
+      "place": {
+        "kakaoId": "14659473",
+        "kakaoUrl": "https://place.map.kakao.com/14659473",
+        "address": "서울 강남구 강남대로 240"
+      }
     },
     {
       "slug": "다돈식당",
@@ -1265,7 +1607,16 @@
         "open": "11:00",
         "close": "21:20"
       },
-      "walkMeters": 464
+      "walkMeters": 464,
+      "location": {
+        "lat": 37.4889442290356,
+        "lng": 127.033356520433
+      },
+      "place": {
+        "kakaoId": "1776637227",
+        "kakaoUrl": "https://place.map.kakao.com/1776637227",
+        "address": "서울 강남구 도곡로2길 13"
+      }
     },
     {
       "slug": "돈스라",
@@ -1296,7 +1647,16 @@
         "open": "10:00",
         "close": "20:00"
       },
-      "walkMeters": 258
+      "walkMeters": 258,
+      "location": {
+        "lat": 37.4856829286614,
+        "lng": 127.03209775387
+      },
+      "place": {
+        "kakaoId": "25412320",
+        "kakaoUrl": "https://place.map.kakao.com/25412320",
+        "address": "서울 서초구 강남대로39길 15-10"
+      }
     },
     {
       "slug": "레코드196",
@@ -1305,7 +1665,16 @@
       "tags": [],
       "addedAt": "2026-11-06T04:20:34.281Z",
       "updatedAt": "2026-11-06T04:20:34.281Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "location": {
+        "lat": 37.4835583322624,
+        "lng": 127.038215913532
+      },
+      "place": {
+        "kakaoId": "980974717",
+        "kakaoUrl": "https://place.map.kakao.com/980974717",
+        "address": "서울 서초구 남부순환로356길 33"
+      }
     },
     {
       "slug": "린참치",
@@ -1336,7 +1705,16 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 407
+      "walkMeters": 407,
+      "location": {
+        "lat": 37.4873734165416,
+        "lng": 127.031365779778
+      },
+      "place": {
+        "kakaoId": "20125498",
+        "kakaoUrl": "https://place.map.kakao.com/20125498",
+        "address": "서울 서초구 강남대로43길 17"
+      }
     },
     {
       "slug": "마라홀릭-마라탕-양재역점",
@@ -1366,7 +1744,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 208
+      "walkMeters": 208,
+      "location": {
+        "lat": 37.4857139917147,
+        "lng": 127.036807052622
+      },
+      "place": {
+        "kakaoId": "320179256",
+        "kakaoUrl": "https://place.map.kakao.com/320179256",
+        "address": "서울 강남구 남부순환로359길 10"
+      }
     },
     {
       "slug": "마포갈비",
@@ -1397,7 +1784,16 @@
         "open": "10:00",
         "close": "24:00"
       },
-      "walkMeters": 258
+      "walkMeters": 258,
+      "location": {
+        "lat": 37.4855678161802,
+        "lng": 127.0374819960164
+      },
+      "place": {
+        "kakaoId": "16648236",
+        "kakaoUrl": "https://place.map.kakao.com/16648236",
+        "address": "서울 강남구 남부순환로361길 6"
+      }
     },
     {
       "slug": "맛나돈얼큰돼지찌개-양재역점",
@@ -1428,7 +1824,16 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 397
+      "walkMeters": 397,
+      "location": {
+        "lat": 37.4847770180199,
+        "lng": 127.030186539628
+      },
+      "place": {
+        "kakaoId": "1185902797",
+        "kakaoUrl": "https://place.map.kakao.com/1185902797",
+        "address": "서울 서초구 강남대로37길 60"
+      }
     },
     {
       "slug": "미다재",
@@ -1476,7 +1881,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 473
+      "walkMeters": 473,
+      "location": {
+        "lat": 37.4868646241862,
+        "lng": 127.03945910421
+      },
+      "place": {
+        "kakaoId": "1868934600",
+        "kakaoUrl": "https://place.map.kakao.com/1868934600",
+        "address": "서울 강남구 남부순환로365길 22"
+      }
     },
     {
       "slug": "부대옥",
@@ -1515,7 +1929,16 @@
         "open": "11:00",
         "close": "20:30"
       },
-      "walkMeters": 460
+      "walkMeters": 460,
+      "location": {
+        "lat": 37.4889657246555,
+        "lng": 127.033808821909
+      },
+      "place": {
+        "kakaoId": "1605549465",
+        "kakaoUrl": "https://place.map.kakao.com/1605549465",
+        "address": "서울 강남구 도곡로4길 18"
+      }
     },
     {
       "slug": "소노야-양재역점",
@@ -1546,7 +1969,16 @@
         "open": "07:30",
         "close": "22:00"
       },
-      "walkMeters": 108
+      "walkMeters": 108,
+      "location": {
+        "lat": 37.48279784526058,
+        "lng": 127.03543981277616
+      },
+      "place": {
+        "kakaoId": "22221836",
+        "kakaoUrl": "https://place.map.kakao.com/22221836",
+        "address": "서울 서초구 남부순환로 지하 2585"
+      }
     },
     {
       "slug": "스파게티스토리",
@@ -1576,7 +2008,16 @@
         "open": "10:30",
         "close": "20:00"
       },
-      "walkMeters": 211
+      "walkMeters": 211,
+      "location": {
+        "lat": 37.4861645915202,
+        "lng": 127.036498595982
+      },
+      "place": {
+        "kakaoId": "14928984",
+        "kakaoUrl": "https://place.map.kakao.com/14928984",
+        "address": "서울 강남구 남부순환로359길 20"
+      }
     },
     {
       "slug": "식감이야기-양재역점",
@@ -1585,7 +2026,16 @@
       "tags": [],
       "addedAt": "2026-11-06T04:20:33.842Z",
       "updatedAt": "2026-11-06T04:20:33.842Z",
-      "mentionCount": 1
+      "mentionCount": 1,
+      "location": {
+        "lat": 37.4841606482201,
+        "lng": 127.036823250445
+      },
+      "place": {
+        "kakaoId": "96772273",
+        "kakaoUrl": "https://place.map.kakao.com/96772273",
+        "address": "서울 서초구 남부순환로350길 19-26"
+      }
     },
     {
       "slug": "신향원양꼬치마라탕-양재역",
@@ -1627,7 +2077,16 @@
       "addedAt": "2026-11-06T04:19:08.108Z",
       "updatedAt": "2026-11-06T04:19:08.108Z",
       "mentionCount": 1,
-      "subcategory": "순대"
+      "subcategory": "순대",
+      "location": {
+        "lat": 37.486121706399345,
+        "lng": 127.0321465611313
+      },
+      "place": {
+        "kakaoId": "770374120",
+        "kakaoUrl": "https://place.map.kakao.com/770374120",
+        "address": "서울 서초구 강남대로39길 16"
+      }
     },
     {
       "slug": "양재옥",
@@ -1689,7 +2148,16 @@
         "open": "10:00",
         "close": "22:50"
       },
-      "walkMeters": 423
+      "walkMeters": 423,
+      "location": {
+        "lat": 37.4870600239404,
+        "lng": 127.030764115777
+      },
+      "place": {
+        "kakaoId": "24751749",
+        "kakaoUrl": "https://place.map.kakao.com/24751749",
+        "address": "서울 서초구 남부순환로347길 59"
+      }
     },
     {
       "slug": "예당",
@@ -1720,7 +2188,16 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 467
+      "walkMeters": 467,
+      "location": {
+        "lat": 37.48890107089672,
+        "lng": 127.03303537425661
+      },
+      "place": {
+        "kakaoId": "16555131",
+        "kakaoUrl": "https://place.map.kakao.com/16555131",
+        "address": "서울 강남구 도곡로2길 12"
+      }
     },
     {
       "slug": "오대산산채전문점",
@@ -1751,7 +2228,16 @@
         "open": "11:30",
         "close": "22:00"
       },
-      "walkMeters": 438
+      "walkMeters": 438,
+      "location": {
+        "lat": 37.484589515538545,
+        "lng": 127.03964672849978
+      },
+      "place": {
+        "kakaoId": "10630917",
+        "kakaoUrl": "https://place.map.kakao.com/10630917",
+        "address": "서울 서초구 남부순환로 2640-11"
+      }
     },
     {
       "slug": "오부찌-양재점",
@@ -1781,7 +2267,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 351
+      "walkMeters": 351,
+      "location": {
+        "lat": 37.4869480350627,
+        "lng": 127.031761346716
+      },
+      "place": {
+        "kakaoId": "1113709894",
+        "kakaoUrl": "https://place.map.kakao.com/1113709894",
+        "address": "서울 서초구 강남대로41길 13"
+      }
     },
     {
       "slug": "옥된장-양재점",
@@ -1812,7 +2307,16 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 340
+      "walkMeters": 340,
+      "location": {
+        "lat": 37.485772416584844,
+        "lng": 127.03101912183975
+      },
+      "place": {
+        "kakaoId": "258034127",
+        "kakaoUrl": "https://place.map.kakao.com/258034127",
+        "address": "서울 서초구 서운로6길 29"
+      }
     },
     {
       "slug": "원할매이모네닭한마리",
@@ -1843,7 +2347,16 @@
         "open": "10:00",
         "close": "21:00"
       },
-      "walkMeters": 407
+      "walkMeters": 407,
+      "location": {
+        "lat": 37.48769588681868,
+        "lng": 127.03170512780174
+      },
+      "place": {
+        "kakaoId": "1678250154",
+        "kakaoUrl": "https://place.map.kakao.com/1678250154",
+        "address": "서울 서초구 강남대로43길 10"
+      }
     },
     {
       "slug": "이올로화덕피자",
@@ -1873,7 +2386,16 @@
         "open": "11:00",
         "close": "21:30"
       },
-      "walkMeters": 217
+      "walkMeters": 217,
+      "location": {
+        "lat": 37.4862449777493,
+        "lng": 127.032753793833
+      },
+      "place": {
+        "kakaoId": "12533122",
+        "kakaoUrl": "https://place.map.kakao.com/12533122",
+        "address": "서울 서초구 강남대로39길 5"
+      }
     },
     {
       "slug": "자연사랑-생태찌개",
@@ -1904,7 +2426,16 @@
         "open": "10:00",
         "close": "22:00"
       },
-      "walkMeters": 426
+      "walkMeters": 426,
+      "location": {
+        "lat": 37.4875788822882,
+        "lng": 127.031230180615
+      },
+      "place": {
+        "kakaoId": "1805586037",
+        "kakaoUrl": "https://place.map.kakao.com/1805586037",
+        "address": "서울 서초구 강남대로43길 16"
+      }
     },
     {
       "slug": "전주옛날집",
@@ -1935,7 +2466,16 @@
         "open": "11:20",
         "close": "21:30"
       },
-      "walkMeters": 383
+      "walkMeters": 383,
+      "location": {
+        "lat": 37.48759307949177,
+        "lng": 127.03204768921393
+      },
+      "place": {
+        "kakaoId": "12446819",
+        "kakaoUrl": "https://place.map.kakao.com/12446819",
+        "address": "서울 서초구 강남대로 273"
+      }
     },
     {
       "slug": "지세포세꼬시",
@@ -1966,7 +2506,16 @@
         "open": "11:30",
         "close": "22:00"
       },
-      "walkMeters": 29
+      "walkMeters": 29,
+      "location": {
+        "lat": 37.4852605997728,
+        "lng": 127.034431284229
+      },
+      "place": {
+        "kakaoId": "332296816",
+        "kakaoUrl": "https://place.map.kakao.com/332296816",
+        "address": "서울 강남구 강남대로 240"
+      }
     },
     {
       "slug": "찌개집1979-양재역점",
@@ -1997,7 +2546,16 @@
         "open": "00:00",
         "close": "24:00"
       },
-      "walkMeters": 39
+      "walkMeters": 39,
+      "location": {
+        "lat": 37.4852596990868,
+        "lng": 127.034430153142
+      },
+      "place": {
+        "kakaoId": "1156425526",
+        "kakaoUrl": "https://place.map.kakao.com/1156425526",
+        "address": "서울 강남구 강남대로 240"
+      }
     },
     {
       "slug": "쿠니라멘",
@@ -2027,7 +2585,16 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 116
+      "walkMeters": 116,
+      "location": {
+        "lat": 37.48413145217128,
+        "lng": 127.03505714999207
+      },
+      "place": {
+        "kakaoId": "1838335601",
+        "kakaoUrl": "https://place.map.kakao.com/1838335601",
+        "address": "서울 서초구 강남대로 224"
+      }
     },
     {
       "slug": "크라이치즈버거-양재역점",
@@ -2057,7 +2624,16 @@
         "open": "10:30",
         "close": "21:00"
       },
-      "walkMeters": 354
+      "walkMeters": 354,
+      "location": {
+        "lat": 37.4872543308294,
+        "lng": 127.031935604809
+      },
+      "place": {
+        "kakaoId": "539250139",
+        "kakaoUrl": "https://place.map.kakao.com/539250139",
+        "address": "서울 서초구 강남대로41길 8"
+      }
     },
     {
       "slug": "태국식당356-양재역",
@@ -2087,7 +2663,16 @@
         "open": "11:30",
         "close": "22:00"
       },
-      "walkMeters": 189
+      "walkMeters": 189,
+      "location": {
+        "lat": 37.484108455792175,
+        "lng": 127.0366106613926
+      },
+      "place": {
+        "kakaoId": "957969643",
+        "kakaoUrl": "https://place.map.kakao.com/957969643",
+        "address": "서울 서초구 남부순환로350길 19-16"
+      }
     },
     {
       "slug": "후토루-양재점",
@@ -2118,7 +2703,22 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 169
+      "walkMeters": 169,
+      "location": {
+        "lat": 37.48333414022644,
+        "lng": 127.03478429203255
+      },
+      "place": {
+        "kakaoId": "783682960",
+        "kakaoUrl": "https://place.map.kakao.com/783682960",
+        "address": "서울 서초구 강남대로 221"
+      }
     }
-  ]
+  ],
+  "office": {
+    "name": "플래그원",
+    "address": "서울 강남구 남부순환로 2621",
+    "lat": 37.4852652574455,
+    "lng": 127.036620497399
+  }
 }
