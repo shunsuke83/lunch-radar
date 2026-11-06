@@ -40,6 +40,12 @@ export type MapPlace = {
   address?: string;
 };
 
+/** Naver Map place from a naver.me / place link someone shared in the channel. */
+export type NaverPlace = {
+  placeId: string;
+  url: string;
+};
+
 /** Public web rating (Google Places), refreshed by the enrich script. */
 export type PlaceRating = {
   score: number;
@@ -64,6 +70,7 @@ export type Restaurant = {
   menu?: MenuItem[];
   location?: GeoPoint;
   place?: MapPlace;
+  naver?: NaverPlace;
   rating?: PlaceRating;
   /** Last Google lookup, hit or miss. */
   ratingCheckedAt?: string;

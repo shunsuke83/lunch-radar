@@ -100,8 +100,8 @@ function card(r: Restaurant, onClose: () => void): HTMLElement {
   const links = mapLinks(r);
   const row = el("div", "mt-2 flex gap-1.5");
   for (const [label, href] of [
-    ["카카오맵", links.kakao],
     ["네이버지도", links.naver],
+    ["카카오맵", links.kakao],
   ] as const) {
     const a = el("a", "rounded-full border border-border px-2 py-0.5 text-xs hover:bg-muted", label);
     a.href = href;

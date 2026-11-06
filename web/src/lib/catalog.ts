@@ -37,6 +37,11 @@ export type MapPlace = {
   address?: string;
 };
 
+export type NaverPlace = {
+  placeId: string;
+  url: string;
+};
+
 export type PlaceRating = {
   score: number;
   count: number;
@@ -62,6 +67,7 @@ export type Restaurant = {
   menu?: MenuItem[];
   location?: GeoPoint;
   place?: MapPlace;
+  naver?: NaverPlace;
   rating?: PlaceRating;
   ratingCheckedAt?: string;
   tags: string[];
@@ -84,13 +90,13 @@ export type RestaurantCatalog = {
 
 export type SortKey = "popular" | "distance" | "price" | "rating";
 
-/** Search links for map apps; the Kakao place page when the enrich script found it. */
-export function mapLinks(r: Restaurant): { kakao: string; naver: string } {
+/** Place pages when the enrich script found them, otherwise name searches. */
+export function mapLinks(r: Restaurant): { naver: string; kakao: string } {
   const area = r.area && !r.name.includes(r.area) ? ` ${r.area}` : "";
   const query = encodeURIComponent(`${r.name}${area}`);
   return {
+    naver: r.naver?.url ?? `https://map.naver.com/p/search/${query}`,
     kakao: r.place?.kakaoUrl ?? `https://map.kakao.com/?q=${query}`,
-    naver: `https://map.naver.com/p/search/${query}`,
   };
 }
 

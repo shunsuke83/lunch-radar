@@ -101,6 +101,8 @@ jobs:
         if: env.KAKAO_REST_API_KEY != '' || env.GOOGLE_PLACES_API_KEY != ''
         working-directory: lunch-spots
         continue-on-error: true
+        env:
+          LUNCH_SPOTS_SLACK_USER_TOKEN: ${{ secrets.LUNCH_SPOTS_SLACK_USER_TOKEN }}
         run: npm run -s catalog:enrich
 
       - name: Check exported catalog

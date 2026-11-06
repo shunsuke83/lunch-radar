@@ -53,11 +53,11 @@ export function MapButtons({ r }: { r: Restaurant }) {
     "rounded-full border border-border bg-white/80 px-2 py-0.5 text-xs text-foreground/80 transition hover:bg-muted";
   return (
     <span className="flex gap-1.5">
-      <a href={links.kakao} target="_blank" rel="noreferrer" className={cls}>
-        카카오맵
-      </a>
       <a href={links.naver} target="_blank" rel="noreferrer" className={cls}>
         네이버지도
+      </a>
+      <a href={links.kakao} target="_blank" rel="noreferrer" className={cls}>
+        카카오맵
       </a>
     </span>
   );
