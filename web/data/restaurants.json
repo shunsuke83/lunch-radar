@@ -1,7 +1,6 @@
 {
   "updatedAt": "2026-11-06T04:22:11.225Z",
   "source": "slack-export",
-  "channelId": "REDACTED_CHANNEL",
   "lastMessageTs": "1793930422.021329",
   "restaurants": [
     {
@@ -15,11 +14,6 @@
         "떡볶이",
         "김말이"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793239026.032719",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:04.829Z",
       "updatedAt": "2026-11-06T04:21:13.636Z",
       "mentionCount": 4
@@ -34,11 +28,6 @@
       "tags": [
         "중식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793325410.146139",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:36.760Z",
       "updatedAt": "2026-11-06T04:21:03.394Z",
       "mentionCount": 3
@@ -54,11 +43,6 @@
         "짬뽕",
         "중식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792720658.307079",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:33.525Z",
       "updatedAt": "2026-11-06T04:21:02.574Z",
       "mentionCount": 3
@@ -74,11 +58,6 @@
         "중식",
         "탕수육"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793757405.117539",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:05.876Z",
       "updatedAt": "2026-11-06T04:21:01.044Z",
       "mentionCount": 3
@@ -94,11 +73,6 @@
         "일식",
         "덮밥"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793239026.032719",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:36.103Z",
       "updatedAt": "2026-11-06T04:21:02.959Z",
       "mentionCount": 3
@@ -114,11 +88,6 @@
         "샐러드",
         "스테이크"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793671022.374379",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:07.326Z",
       "updatedAt": "2026-11-06T04:21:01.428Z",
       "mentionCount": 3
@@ -134,11 +103,6 @@
         "샌드위치",
         "브런치"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792979844.858859",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:18:53.232Z",
       "updatedAt": "2026-11-06T04:21:16.266Z",
       "mentionCount": 3
@@ -154,11 +118,6 @@
         "장어덮밥",
         "초밥"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793152609.795469",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:38.680Z",
       "updatedAt": "2026-11-06T04:21:03.708Z",
       "mentionCount": 3
@@ -173,11 +132,6 @@
       "tags": [
         "떡볶이"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793843820.112459",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:30.864Z",
       "updatedAt": "2026-11-06T04:21:01.802Z",
       "mentionCount": 3
@@ -193,11 +147,6 @@
         "샐러드",
         "브런치"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793930215.897649",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:31.533Z",
       "updatedAt": "2026-11-06T04:21:02.180Z",
       "mentionCount": 3
@@ -212,11 +161,6 @@
       "tags": [
         "태국음식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792634252.348319",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:03.603Z",
       "updatedAt": "2026-11-06T04:21:00.491Z",
       "mentionCount": 3
@@ -232,11 +176,6 @@
         "베트남",
         "쌀국수"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793584639.372789",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:18:56.952Z",
       "updatedAt": "2026-11-06T04:21:00.489Z",
       "mentionCount": 3
@@ -251,11 +190,6 @@
       "tags": [
         "쌀국수"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792547822.154579",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:17.273Z",
       "updatedAt": "2026-11-06T04:21:14.483Z",
       "mentionCount": 2
@@ -270,11 +204,6 @@
       "tags": [
         "떡볶이"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793066236.804279",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:18.727Z",
       "updatedAt": "2026-11-06T04:21:15.009Z",
       "mentionCount": 2
@@ -290,11 +219,6 @@
         "김밥",
         "분식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791770206.742389",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:39.364Z",
       "updatedAt": "2026-11-06T04:21:04.145Z",
       "mentionCount": 2
@@ -310,11 +234,6 @@
         "고기",
         "점심특선"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793584639.372789",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:14.924Z",
       "updatedAt": "2026-11-06T04:21:06.145Z",
       "mentionCount": 2
@@ -330,11 +249,6 @@
         "돈까스",
         "경양식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792720658.307079",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:22.048Z",
       "updatedAt": "2026-11-06T04:21:17.238Z",
       "mentionCount": 2
@@ -349,11 +263,6 @@
       "tags": [
         "해장국"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792599685.608439",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:16.660Z",
       "updatedAt": "2026-11-06T04:21:13.696Z",
       "mentionCount": 2
@@ -369,11 +278,6 @@
         "청국장",
         "콩국수"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792115824.998959",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:34.807Z",
       "updatedAt": "2026-11-06T04:20:54.704Z",
       "mentionCount": 2
@@ -389,11 +293,6 @@
         "문어",
         "칼국수"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793930215.897649",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:20.715Z",
       "updatedAt": "2026-11-06T04:21:15.840Z",
       "mentionCount": 2
@@ -409,11 +308,6 @@
         "우동",
         "일식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793325410.146139",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:30.072Z",
       "updatedAt": "2026-11-06T04:21:17.584Z",
       "mentionCount": 2
@@ -429,11 +323,6 @@
         "텐동",
         "일식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793757405.117539",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:40.684Z",
       "updatedAt": "2026-11-06T04:21:04.520Z",
       "mentionCount": 2
@@ -449,11 +338,6 @@
         "한식",
         "제육"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793757405.117539",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:15.395Z",
       "updatedAt": "2026-11-06T04:21:13.639Z",
       "mentionCount": 2
@@ -469,11 +353,6 @@
         "스시",
         "덮밥"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791251792.747899",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:30.118Z",
       "updatedAt": "2026-11-06T04:20:52.685Z",
       "mentionCount": 2
@@ -489,11 +368,6 @@
         "김밥",
         "분식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792979844.858859",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:16.051Z",
       "updatedAt": "2026-11-06T04:21:13.672Z",
       "mentionCount": 2
@@ -509,11 +383,6 @@
         "김밥",
         "분식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793152609.795469",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:20.060Z",
       "updatedAt": "2026-11-06T04:21:15.376Z",
       "mentionCount": 2
@@ -529,11 +398,6 @@
         "칼국수",
         "보쌈"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792029398.584299",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:32.233Z",
       "updatedAt": "2026-11-06T04:20:53.660Z",
       "mentionCount": 2
@@ -549,11 +413,6 @@
         "국수",
         "회덮밥"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792461414.442429",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:17.899Z",
       "updatedAt": "2026-11-06T04:21:14.668Z",
       "mentionCount": 2
@@ -569,11 +428,6 @@
         "파스타",
         "샐러드"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793152609.795469",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:41.399Z",
       "updatedAt": "2026-11-06T04:21:04.922Z",
       "mentionCount": 2
@@ -584,11 +438,6 @@
       "category": "국수",
       "notes": "수제비",
       "tags": [],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1788231645.737989",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:18:50.984Z",
       "updatedAt": "2026-11-06T04:18:51.608Z",
       "mentionCount": 2
@@ -603,11 +452,6 @@
       "tags": [
         "수제버거"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793066236.804279",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:14.917Z",
       "updatedAt": "2026-11-06T04:21:05.354Z",
       "mentionCount": 2
@@ -622,11 +466,6 @@
       "tags": [
         "초밥"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793671022.374379",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:35.458Z",
       "updatedAt": "2026-11-06T04:20:55.055Z",
       "mentionCount": 2
@@ -641,11 +480,6 @@
       "tags": [
         "칼국수"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792634252.348319",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:09.205Z",
       "updatedAt": "2026-11-06T04:20:52.301Z",
       "mentionCount": 2
@@ -660,11 +494,6 @@
       "tags": [
         "돈까스"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791165392.286629",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:18:58.061Z",
       "updatedAt": "2026-11-06T04:20:50.766Z",
       "mentionCount": 2
@@ -680,11 +509,6 @@
         "딤섬",
         "중식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791943029.016199",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:34.202Z",
       "updatedAt": "2026-11-06T04:20:54.396Z",
       "mentionCount": 2
@@ -699,11 +523,6 @@
       "tags": [
         "라멘"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792634252.348319",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:14.923Z",
       "updatedAt": "2026-11-06T04:21:05.726Z",
       "mentionCount": 2
@@ -719,11 +538,6 @@
         "중식",
         "짜장면"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793584639.372789",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:29.286Z",
       "updatedAt": "2026-11-06T04:21:17.886Z",
       "mentionCount": 2
@@ -738,11 +552,6 @@
       "tags": [
         "돈카츠"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793930215.897649",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:18:54.213Z",
       "updatedAt": "2026-11-06T04:21:16.623Z",
       "mentionCount": 2
@@ -758,11 +567,6 @@
         "순대",
         "순대국"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1789450406.355609",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:29.610Z",
       "updatedAt": "2026-11-06T04:19:29.610Z",
       "mentionCount": 1
@@ -778,11 +582,6 @@
         "쭈꾸미",
         "덮밥"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792979844.858859",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:35.673Z",
       "updatedAt": "2026-11-06T04:20:35.673Z",
       "mentionCount": 1
@@ -798,11 +597,6 @@
         "육개장",
         "한식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1790647020.060579",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:39.998Z",
       "updatedAt": "2026-11-06T04:19:39.998Z",
       "mentionCount": 1
@@ -817,11 +611,6 @@
       "tags": [
         "돈까스"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791770206.742389",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:23.974Z",
       "updatedAt": "2026-11-06T04:20:23.974Z",
       "mentionCount": 1
@@ -837,11 +626,6 @@
         "돈까스",
         "경양식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1789955852.192599",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:10.469Z",
       "updatedAt": "2026-11-06T04:19:10.469Z",
       "mentionCount": 1
@@ -851,11 +635,6 @@
       "name": "레코드196",
       "area": "서울 서초구 남부순환로356길 33",
       "tags": [],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792553255.256909",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:34.281Z",
       "updatedAt": "2026-11-06T04:20:34.281Z",
       "mentionCount": 1
@@ -871,11 +650,6 @@
         "참치",
         "회"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1790128702.098699",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:32.866Z",
       "updatedAt": "2026-11-06T04:19:32.866Z",
       "mentionCount": 1
@@ -890,11 +664,6 @@
       "tags": [
         "마라탕"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1790560588.289139",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:37.946Z",
       "updatedAt": "2026-11-06T04:19:37.946Z",
       "mentionCount": 1
@@ -910,11 +679,6 @@
         "갈비",
         "냉면"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793671022.374379",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:38.238Z",
       "updatedAt": "2026-11-06T04:20:38.238Z",
       "mentionCount": 1
@@ -930,11 +694,6 @@
         "찌개",
         "냉면"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1789610694.465829",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:00.979Z",
       "updatedAt": "2026-11-06T04:19:00.979Z",
       "mentionCount": 1
@@ -946,11 +705,6 @@
       "priceRange": "15,000원",
       "notes": "시레기밥 15,000원. 그 이상은 예산 초과",
       "tags": [],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1787884006.357379",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:18:50.983Z",
       "updatedAt": "2026-11-06T04:21:18.136Z",
       "mentionCount": 1
@@ -966,11 +720,6 @@
         "칼국수",
         "샤브샤브"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791511001.422999",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:22.792Z",
       "updatedAt": "2026-11-06T04:20:22.792Z",
       "mentionCount": 1
@@ -979,11 +728,6 @@
       "slug": "부대옥",
       "name": "부대옥",
       "tags": [],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1788489031.364139",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:18:51.929Z",
       "updatedAt": "2026-11-06T04:18:51.929Z",
       "mentionCount": 1
@@ -999,11 +743,6 @@
         "돈까스",
         "경양식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792547822.154579",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:33.495Z",
       "updatedAt": "2026-11-06T04:20:33.495Z",
       "mentionCount": 1
@@ -1019,11 +758,6 @@
         "우동",
         "라멘"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793066236.804279",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:36.341Z",
       "updatedAt": "2026-11-06T04:20:36.341Z",
       "mentionCount": 1
@@ -1038,11 +772,6 @@
       "tags": [
         "파스타"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1789610694.465829",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:02.222Z",
       "updatedAt": "2026-11-06T04:19:02.222Z",
       "mentionCount": 1
@@ -1052,11 +781,6 @@
       "name": "식감이야기 양재역점",
       "area": "서울 서초구 남부순환로350길 19-26",
       "tags": [],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792553137.118809",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:33.842Z",
       "updatedAt": "2026-11-06T04:20:33.842Z",
       "mentionCount": 1
@@ -1072,11 +796,6 @@
         "마라탕",
         "중식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792029398.584299",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:27.975Z",
       "updatedAt": "2026-11-06T04:20:27.975Z",
       "mentionCount": 1
@@ -1087,11 +806,6 @@
       "area": "양재",
       "category": "순대",
       "tags": [],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1789696701.509449",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:08.108Z",
       "updatedAt": "2026-11-06T04:19:08.108Z",
       "mentionCount": 1
@@ -1107,11 +821,6 @@
         "보쌈",
         "곰탕"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792375023.769889",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:30.662Z",
       "updatedAt": "2026-11-06T04:20:30.662Z",
       "mentionCount": 1
@@ -1127,11 +836,6 @@
         "차돌박이",
         "찌개"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1789524200.216139",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:18:59.462Z",
       "updatedAt": "2026-11-06T04:18:59.462Z",
       "mentionCount": 1
@@ -1147,11 +851,6 @@
         "만두",
         "한식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793239026.032719",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:36.920Z",
       "updatedAt": "2026-11-06T04:20:36.920Z",
       "mentionCount": 1
@@ -1167,11 +866,6 @@
         "산채",
         "한식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791770206.742389",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:24.601Z",
       "updatedAt": "2026-11-06T04:20:24.601Z",
       "mentionCount": 1
@@ -1186,11 +880,6 @@
       "tags": [
         "부대찌개"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792720658.307079",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:34.954Z",
       "updatedAt": "2026-11-06T04:20:34.954Z",
       "mentionCount": 1
@@ -1206,11 +895,6 @@
         "순두부",
         "한식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1793325410.146139",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:37.608Z",
       "updatedAt": "2026-11-06T04:20:37.608Z",
       "mentionCount": 1
@@ -1226,11 +910,6 @@
         "닭칼국수",
         "닭곰탕"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792461414.442429",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:32.045Z",
       "updatedAt": "2026-11-06T04:20:32.045Z",
       "mentionCount": 1
@@ -1245,11 +924,6 @@
       "tags": [
         "피자"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791251792.747899",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:19.368Z",
       "updatedAt": "2026-11-06T04:20:19.368Z",
       "mentionCount": 1
@@ -1265,11 +939,6 @@
         "생태찌개",
         "한식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792547822.154579",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:32.637Z",
       "updatedAt": "2026-11-06T04:20:32.637Z",
       "mentionCount": 1
@@ -1285,11 +954,6 @@
         "한정식",
         "비빔밥"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1790301371.305279",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:37.303Z",
       "updatedAt": "2026-11-06T04:19:37.303Z",
       "mentionCount": 1
@@ -1305,11 +969,6 @@
         "회",
         "덮밥"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792375023.769889",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:31.308Z",
       "updatedAt": "2026-11-06T04:20:31.308Z",
       "mentionCount": 1
@@ -1325,11 +984,6 @@
         "김치찌개",
         "한식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791424593.021979",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:21.412Z",
       "updatedAt": "2026-11-06T04:20:21.412Z",
       "mentionCount": 1
@@ -1344,11 +998,6 @@
       "tags": [
         "라멘"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791511001.422999",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:23.394Z",
       "updatedAt": "2026-11-06T04:20:23.394Z",
       "mentionCount": 1
@@ -1363,11 +1012,6 @@
       "tags": [
         "수제버거"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1789955852.192599",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:19:11.683Z",
       "updatedAt": "2026-11-06T04:19:11.683Z",
       "mentionCount": 1
@@ -1382,11 +1026,6 @@
       "tags": [
         "태국음식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1792029398.584299",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:28.647Z",
       "updatedAt": "2026-11-06T04:20:28.647Z",
       "mentionCount": 1
@@ -1402,11 +1041,6 @@
         "김밥",
         "분식"
       ],
-      "source": {
-        "channelId": "REDACTED_CHANNEL",
-        "messageTs": "1791856601.858139",
-        "author": "redacted"
-      },
       "addedAt": "2026-11-06T04:20:27.256Z",
       "updatedAt": "2026-11-06T04:20:27.256Z",
       "mentionCount": 1

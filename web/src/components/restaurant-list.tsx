@@ -66,7 +66,6 @@ export function RestaurantList({ restaurants, loading, error }: Props) {
           <div className="space-y-1 text-sm text-muted-foreground">
             {r.area ? <p>지역 · {r.area}</p> : null}
             {r.priceRange ? <p>가격 · {r.priceRange}</p> : null}
-            {r.source?.author ? <p>출처 · {r.source.author}</p> : null}
           </div>
 
           <div className="text-right text-sm">

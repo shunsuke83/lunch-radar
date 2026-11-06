@@ -15,10 +15,12 @@ const DEFAULT_CHANNEL = "REDACTED_CHANNEL";
 
 export default defineTool({
   description: prompt`
-    Export all saved restaurants as JSON for the web catalog.
-    Writes to ../web/data/restaurants.json when possible (monorepo layout),
-    and always returns the payload so it can be POSTed to the web app
-    /api/restaurants endpoint.
+    Export all saved restaurants as JSON for the public web catalog
+    (Slack user/channel/message ids are stripped).
+    Writes to ../web/data/restaurants.json when that folder exists (local
+    checkout or the GitHub Actions collector) and always returns the payload.
+    A hosted deployment has no web folder: the published site is updated only
+    by the GitHub Actions collector, not by this tool.
   `,
   effect: "idempotent",
   inputSchema: z.object({
@@ -47,12 +49,13 @@ export default defineTool({
       historyStateKey(channelId),
     )) as HistoryState | null;
 
+    // The web catalog is published on public GitHub Pages: no Slack user,
+    // channel, or message identifiers leave the store.
     const catalog = {
       updatedAt: new Date().toISOString(),
       source: "slack-export",
-      channelId,
       lastMessageTs: history?.newestTs,
-      restaurants,
+      restaurants: restaurants.map(({ source: _source, ...rest }) => rest),
     };
 
     let writtenPath: string | null = null;

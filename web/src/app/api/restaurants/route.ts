@@ -25,7 +25,6 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({
       updatedAt: catalog.updatedAt,
       source: catalog.source,
-      channelId: catalog.channelId,
       total: catalog.restaurants.length,
       count: filtered.length,
       restaurants: filtered,
@@ -48,7 +47,6 @@ export async function GET(request: NextRequest) {
 type ImportBody = {
   restaurants?: Restaurant[];
   source?: string;
-  channelId?: string;
   replace?: boolean;
 };
 
@@ -80,17 +78,21 @@ export async function POST(request: NextRequest) {
       (): RestaurantCatalog => ({
         updatedAt: new Date().toISOString(),
         source: "import",
-        channelId: "REDACTED_CHANNEL",
         restaurants: [],
       }),
     );
 
+    // data/restaurants.json is published publicly; drop Slack identifiers.
+    const incomingRestaurants = body.restaurants.map(
+      ({ source: _source, ...rest }) => rest,
+    );
+
     let restaurants: Restaurant[];
     if (body.replace) {
-      restaurants = body.restaurants;
+      restaurants = incomingRestaurants;
     } else {
       const bySlug = new Map(existing.restaurants.map((r) => [r.slug, r]));
-      for (const incoming of body.restaurants) {
+      for (const incoming of incomingRestaurants) {
         if (!incoming?.slug || !incoming?.name) continue;
         const prior = bySlug.get(incoming.slug);
         bySlug.set(incoming.slug, {
@@ -111,7 +113,7 @@ export async function POST(request: NextRequest) {
     const catalog: RestaurantCatalog = {
       updatedAt: new Date().toISOString(),
       source: body.source ?? "slack-export",
-      channelId: body.channelId ?? existing.channelId ?? "REDACTED_CHANNEL",
+      lastMessageTs: existing.lastMessageTs,
       restaurants,
     };
     await saveCatalog(catalog);
