@@ -66,6 +66,15 @@ export function restaurantKey(slug: string): string {
   return `restaurant:${slug}`;
 }
 
+/** Marks that one Slack message has already been counted for one restaurant. */
+export function mentionKey(
+  slug: string,
+  channelId: string,
+  messageTs: string,
+): string {
+  return `restaurant-mention:${slug}:${channelId}:${messageTs}`;
+}
+
 export function mergeTags(a: string[] = [], b: string[] = []): string[] {
   const out = new Set<string>();
   for (const tag of [...a, ...b]) {

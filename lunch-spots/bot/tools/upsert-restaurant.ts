@@ -1,8 +1,10 @@
 import { prompt } from "@grok/agent-sdk";
 import { defineTool } from "@grok/agent-sdk/tools";
 import * as z from "zod/v4";
+import { claimKey, updateKey } from "../lib/kv-atomic.js";
 import {
   INDEX_KEY,
+  mentionKey,
   mergeTags,
   normalizeName,
   restaurantKey,
@@ -14,7 +16,9 @@ export default defineTool({
   description: prompt`
     Save or update a lunch restaurant in the shared store.
     Use when a Slack message names a place people recommend for lunch.
-    Duplicate names merge (mentionCount increments).
+    Duplicate names merge. mentionCount increments once per distinct source
+    message (sourceChannelId + sourceMessageTs); repeating the same message
+    does not count again.
   `,
   effect: "idempotent",
   inputSchema: z.object({
@@ -30,48 +34,61 @@ export default defineTool({
     sourceAuthor: z.string().optional(),
   }),
   async execute(input, ctx) {
+    const kv = ctx.host.kv;
     const name = input.name.trim();
     const slug = toSlug(name);
-    const key = restaurantKey(slug);
     const now = new Date().toISOString();
 
-    const prior = (await ctx.host.kv.get(key)) as Restaurant | null;
-    const sameName =
-      prior && normalizeName(prior.name) === normalizeName(name);
+    const messageTs = input.sourceMessageTs?.trim();
+    const newMention = messageTs
+      ? await claimKey(
+          kv,
+          mentionKey(slug, input.sourceChannelId?.trim() ?? "", messageTs),
+          now,
+        )
+      : true;
 
-    const restaurant: Restaurant = {
-      slug,
-      name: sameName ? prior.name : name,
-      area: input.area?.trim() || prior?.area,
-      category: input.category?.trim() || prior?.category,
-      priceRange: input.priceRange?.trim() || prior?.priceRange,
-      notes: input.notes?.trim() || prior?.notes,
-      tags: mergeTags(prior?.tags ?? [], input.tags ?? []),
-      source:
-        input.sourceChannelId || prior?.source
-          ? {
-              channelId:
-                input.sourceChannelId ?? prior?.source?.channelId ?? "",
-              messageTs: input.sourceMessageTs ?? prior?.source?.messageTs,
-              permalink: input.sourcePermalink ?? prior?.source?.permalink,
-              author: input.sourceAuthor ?? prior?.source?.author,
-            }
-          : undefined,
-      addedAt: prior?.addedAt ?? now,
-      updatedAt: now,
-      mentionCount: (prior?.mentionCount ?? 0) + 1,
-    };
+    let created = false;
+    const restaurant = await updateKey<Restaurant>(
+      kv,
+      restaurantKey(slug),
+      (prior) => {
+        created = !prior;
+        const sameName =
+          prior && normalizeName(prior.name) === normalizeName(name);
+        return {
+          slug,
+          name: sameName ? prior.name : name,
+          area: input.area?.trim() || prior?.area,
+          category: input.category?.trim() || prior?.category,
+          priceRange: input.priceRange?.trim() || prior?.priceRange,
+          notes: input.notes?.trim() || prior?.notes,
+          tags: mergeTags(prior?.tags ?? [], input.tags ?? []),
+          source:
+            input.sourceChannelId || prior?.source
+              ? {
+                  channelId:
+                    input.sourceChannelId ?? prior?.source?.channelId ?? "",
+                  messageTs: messageTs ?? prior?.source?.messageTs,
+                  permalink: input.sourcePermalink ?? prior?.source?.permalink,
+                  author: input.sourceAuthor ?? prior?.source?.author,
+                }
+              : undefined,
+          addedAt: prior?.addedAt ?? now,
+          updatedAt: now,
+          mentionCount: (prior?.mentionCount ?? 0) + (newMention ? 1 : 0),
+        };
+      },
+    );
 
-    await ctx.host.kv.put(key, restaurant);
-
-    const index = ((await ctx.host.kv.get(INDEX_KEY)) as string[] | null) ?? [];
-    if (!index.includes(slug)) {
-      await ctx.host.kv.put(INDEX_KEY, [...index, slug]);
-    }
+    await updateKey<string[]>(kv, INDEX_KEY, (index = []) =>
+      index.includes(slug) ? index : [...index, slug],
+    );
 
     return {
       ok: true,
-      created: !prior,
+      created,
+      counted: newMention,
       restaurant,
     };
   },
