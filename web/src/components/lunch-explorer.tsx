@@ -6,6 +6,8 @@ import {
   type FilterState,
 } from "@/components/restaurant-filters";
 import { RestaurantList } from "@/components/restaurant-list";
+import { RestaurantMap } from "@/components/restaurant-map";
+import { Button } from "@/components/ui/button";
 import {
   filterRestaurants,
   presentGroups,
@@ -42,6 +44,7 @@ function useSeoulClock(): number | null {
 
 export function LunchExplorer({ catalog }: Props) {
   const [filters, setFilters] = useState<FilterState>(EMPTY_FILTERS);
+  const [view, setView] = useState<"list" | "map">("list");
   const deferred = useDeferredValue(filters);
   const now = useSeoulClock();
 
@@ -101,6 +104,26 @@ export function LunchExplorer({ catalog }: Props) {
         onChange={setFilters}
         onReset={() => setFilters(EMPTY_FILTERS)}
       />
+
+      <div className="flex gap-2" role="group" aria-label="보기 방식">
+        {(["list", "map"] as const).map((v) => (
+          <Button
+            key={v}
+            type="button"
+            size="sm"
+            variant={view === v ? "default" : "outline"}
+            aria-pressed={view === v}
+            className="rounded-full px-3"
+            onClick={() => setView(v)}
+          >
+            {v === "list" ? "목록" : "지도보기"}
+          </Button>
+        ))}
+      </div>
+
+      {view === "map" ? (
+        <RestaurantMap restaurants={restaurants} office={catalog.office} />
+      ) : null}
 
       <RestaurantList restaurants={restaurants} now={now} />
 

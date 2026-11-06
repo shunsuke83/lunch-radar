@@ -6,6 +6,7 @@
   "scripts": {
     "check": "tsc --noEmit",
     "catalog:structure": "tsx scripts/structure-catalog.ts",
+    "catalog:enrich": "tsx --env-file-if-exists=.env.local scripts/enrich-places.ts",
     "dev": "agent-sdk dev"
   },
   "dependencies": {

@@ -24,6 +24,8 @@ jobs:
     timeout-minutes: 30
     env:
       LUNCH_SPOTS_CHANNEL_ID: ${{ secrets.LUNCH_SPOTS_CHANNEL_ID }}
+      KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+      GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
     steps:
       - uses: actions/checkout@v7
 
@@ -54,14 +56,14 @@ jobs:
           fi
 
       - uses: actions/setup-node@v7
-        if: steps.precheck.outputs.run == 'true'
+        if: steps.precheck.outputs.run == 'true' || env.KAKAO_REST_API_KEY != '' || env.GOOGLE_PLACES_API_KEY != ''
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: lunch-spots/package-lock.json
 
       - run: npm ci
-        if: steps.precheck.outputs.run == 'true'
+        if: steps.precheck.outputs.run == 'true' || env.KAKAO_REST_API_KEY != '' || env.GOOGLE_PLACES_API_KEY != ''
         working-directory: lunch-spots
 
       - name: Collect channel history and export catalog
@@ -93,8 +95,15 @@ jobs:
             exit 1
           fi
 
+      # Runs even without new Slack messages: new places get coordinates and
+      # ratings older than a week are refreshed.
+      - name: Add map coordinates and web ratings
+        if: env.KAKAO_REST_API_KEY != '' || env.GOOGLE_PLACES_API_KEY != ''
+        working-directory: lunch-spots
+        continue-on-error: true
+        run: npm run -s catalog:enrich
+
       - name: Check exported catalog
-        if: steps.precheck.outputs.run == 'true'
         id: diff
         run: |
           file=web/data/restaurants.json
@@ -108,7 +117,7 @@ jobs:
             echo "::error::Export has no lastMessageTs (history incomplete); keeping the committed catalog."
             exit 1
           fi
-          normalize='{lastMessageTs, restaurants: (.restaurants | map(del(.addedAt, .updatedAt)) | sort_by(.slug))}'
+          normalize='{lastMessageTs, office, restaurants: (.restaurants | map(del(.addedAt, .updatedAt)) | sort_by(.slug))}'
           if diff <(git show "HEAD:$file" | jq -S "$normalize") <(jq -S "$normalize" "$file") > /dev/null; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             git checkout -- "$file"
@@ -122,7 +131,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add web/data/restaurants.json
-          git commit -m "Update lunch catalog from Slack (${{ steps.diff.outputs.count }} spots)"
+          git commit -m "Update lunch catalog (${{ steps.diff.outputs.count }} spots)"
           git push
 
       - name: Deploy Pages

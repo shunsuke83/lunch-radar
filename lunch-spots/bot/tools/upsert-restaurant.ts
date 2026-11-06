@@ -81,7 +81,9 @@ export default defineTool({
         const category = input.category?.trim();
         // New notes re-derive the parsed fields unless they are passed too.
         const notesChanged = Boolean(input.notes?.trim());
+        // Spread first so enrichment fields (location, place, rating) survive.
         return structureRestaurant({
+          ...prior,
           slug,
           name: sameName ? prior.name : name,
           area: input.area?.trim() || prior?.area,

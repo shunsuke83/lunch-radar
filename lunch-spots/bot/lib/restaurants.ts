@@ -31,6 +31,24 @@ export type OpeningHours = {
   breakEnd?: string;
 };
 
+export type GeoPoint = { lat: number; lng: number };
+
+/** Map place found by the enrich script (Kakao Local keyword search). */
+export type MapPlace = {
+  kakaoId: string;
+  kakaoUrl: string;
+  address?: string;
+};
+
+/** Public web rating (Google Places), refreshed by the enrich script. */
+export type PlaceRating = {
+  score: number;
+  count: number;
+  source: "google";
+  url?: string;
+  fetchedAt: string;
+};
+
 export type Restaurant = {
   slug: string;
   name: string;
@@ -44,6 +62,11 @@ export type Restaurant = {
   walkMeters?: number;
   hours?: OpeningHours;
   menu?: MenuItem[];
+  location?: GeoPoint;
+  place?: MapPlace;
+  rating?: PlaceRating;
+  /** Last Google lookup, hit or miss. */
+  ratingCheckedAt?: string;
   tags: string[];
   source?: RestaurantSource;
   addedAt: string;

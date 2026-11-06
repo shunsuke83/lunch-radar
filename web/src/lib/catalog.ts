@@ -29,6 +29,24 @@ export type OpeningHours = {
   breakEnd?: string;
 };
 
+export type GeoPoint = { lat: number; lng: number };
+
+export type MapPlace = {
+  kakaoId: string;
+  kakaoUrl: string;
+  address?: string;
+};
+
+export type PlaceRating = {
+  score: number;
+  count: number;
+  source: "google";
+  url?: string;
+  fetchedAt: string;
+};
+
+export type Office = GeoPoint & { name: string; address: string };
+
 export type Restaurant = {
   slug: string;
   name: string;
@@ -42,6 +60,10 @@ export type Restaurant = {
   walkMeters?: number;
   hours?: OpeningHours;
   menu?: MenuItem[];
+  location?: GeoPoint;
+  place?: MapPlace;
+  rating?: PlaceRating;
+  ratingCheckedAt?: string;
   tags: string[];
   source?: RestaurantSource;
   addedAt: string;
@@ -55,10 +77,22 @@ export type RestaurantCatalog = {
   channelId?: string;
   /** Newest Slack message ts already processed by the collector. */
   lastMessageTs?: string;
+  /** Map center; set by the enrich script. */
+  office?: Office;
   restaurants: Restaurant[];
 };
 
-export type SortKey = "popular" | "distance" | "price";
+export type SortKey = "popular" | "distance" | "price" | "rating";
+
+/** Search links for map apps; the Kakao place page when the enrich script found it. */
+export function mapLinks(r: Restaurant): { kakao: string; naver: string } {
+  const area = r.area && !r.name.includes(r.area) ? ` ${r.area}` : "";
+  const query = encodeURIComponent(`${r.name}${area}`);
+  return {
+    kakao: r.place?.kakaoUrl ?? `https://map.kakao.com/?q=${query}`,
+    naver: `https://map.naver.com/p/search/${query}`,
+  };
+}
 
 export type RestaurantFilters = {
   q?: string;
@@ -192,7 +226,9 @@ export function filterRestaurants(
       ? byKey((r) => r.walkMeters)
       : filters.sort === "price"
         ? byKey(minPrice)
-        : byPopular;
+        : filters.sort === "rating"
+          ? byKey((r) => (r.rating ? -(r.rating.score * 1e6 + r.rating.count) : undefined))
+          : byPopular;
   return rows.sort(sort);
 }
 

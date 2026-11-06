@@ -32,6 +32,7 @@ const SORTS: { value: SortKey; label: string }[] = [
   { value: "popular", label: "추천순 (멘션)" },
   { value: "distance", label: "가까운 순" },
   { value: "price", label: "저렴한 순" },
+  { value: "rating", label: "평점 높은 순" },
 ];
 
 function Chip({

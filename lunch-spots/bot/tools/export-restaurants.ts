@@ -1,6 +1,6 @@
 import { prompt } from "@grok/agent-sdk";
 import { defineTool } from "@grok/agent-sdk/tools";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import * as z from "zod/v4";
 import { lunchChannelId } from "../lib/config.js";
@@ -87,8 +87,16 @@ export default defineTool({
           "data",
           "restaurants.json",
         );
+        // The office point comes from the enrich script, not the store.
+        const office = await readFile(outPath, "utf8")
+          .then((text) => (JSON.parse(text) as { office?: unknown }).office)
+          .catch(() => undefined);
         await mkdir(path.dirname(outPath), { recursive: true });
-        await writeFile(outPath, `${JSON.stringify(catalog, null, 2)}\n`, "utf8");
+        await writeFile(
+          outPath,
+          `${JSON.stringify({ ...catalog, office }, null, 2)}\n`,
+          "utf8",
+        );
         writtenPath = outPath;
       } catch (err) {
         writeError = err instanceof Error ? err.message : String(err);

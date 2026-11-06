@@ -111,7 +111,8 @@ npx @grok/agent-sdk dev
 
 1. **사전 확인 (모델 호출 없음)**: Slack에서 최신 메시지 시각만 조회해 `web/data/restaurants.json`의 `lastMessageTs`와 비교합니다. 새 메시지가 없으면 여기서 끝납니다.
 2. **증분 수집**: `agent-sdk run`으로 봇을 한 번 실행합니다. `seed-from-catalog`가 기존 카탈로그를 불러오고, `ingest-channel-history`는 `lastMessageTs` 이후 메시지만 가져와 모델이 새 맛집만 반영합니다. 카탈로그에 `lastMessageTs`가 없으면 전체 히스토리로 다시 만듭니다.
-3. **커밋·배포**: 타임스탬프 외에 바뀐 내용이 있을 때만 커밋하고 Pages 배포를 호출합니다. export 결과가 0곳이면 실패 처리하고 기존 데이터를 유지합니다.
+3. **지도·평점 보강** (키가 있을 때만, 새 메시지가 없어도 실행): `npm run catalog:enrich`가 카카오 Local API로 회사 위치와 가게 좌표·카카오맵 링크를 찾고, Google Places API로 별점·리뷰 수를 붙입니다. 평점은 7일마다 다시 조회합니다. 이 단계가 실패해도 수집 결과 커밋은 계속합니다.
+4. **커밋·배포**: 타임스탬프 외에 바뀐 내용이 있을 때만 커밋하고 Pages 배포를 호출합니다. export 결과가 0곳이면 실패 처리하고 기존 데이터를 유지합니다.
 
 지시문은 [`lunch-spots/ci/collect-prompt.md`](lunch-spots/ci/collect-prompt.md)입니다. 수동 실행 시 `force`를 켜면 새 메시지가 없어도 봇을 실행합니다. 처음부터 다시 만들려면 JSON에서 `lastMessageTs`를 지우고 실행합니다.
 
@@ -122,6 +123,16 @@ npx @grok/agent-sdk dev
 | `CURSOR_API_KEY` | Cursor API 키 (모델 호출용, 대시보드에서 발급) |
 | `LUNCH_SPOTS_SLACK_USER_TOKEN` | Slack User OAuth Token `xoxp-...` (`channels:history`, `groups:history`) |
 | `LUNCH_SPOTS_CHANNEL_ID` | 수집할 Slack 채널 ID (Slack 채널 정보 하단의 `C…` 값). Secret이라 로그에서도 가려집니다. |
+| `KAKAO_REST_API_KEY` | (선택) [Kakao Developers](https://developers.kakao.com/) 앱의 REST API 키. 가게 좌표·카카오맵 링크 |
+| `GOOGLE_PLACES_API_KEY` | (선택) Google Cloud에서 **Places API (New)**를 켠 API 키. 별점·리뷰 수 |
+
+지도 표시용 **Variable**(Secret 아님, 같은 화면의 Variables 탭):
+
+| Variable | 값 |
+| --- | --- |
+| `KAKAO_MAP_JS_KEY` | 같은 카카오 앱의 JavaScript 키. 브라우저에 그대로 노출되는 키라 Secret이 아닌 Variable로 둡니다. 카카오 앱 **플랫폼 → Web 사이트 도메인**에 `https://<사용자명>.github.io`와 로컬 확인용 `http://127.0.0.1:3847`을 등록해야 지도가 뜹니다. |
+
+회사 위치는 기본값 `서울 강남구 남부순환로 2621`(플래그원)이며 `LUNCH_OFFICE_ADDRESS` / `LUNCH_OFFICE_NAME` 환경 변수로 바꿀 수 있습니다. 키가 없으면 지도 대신 안내 문구가 나오고, 가게별 카카오맵·네이버지도 검색 버튼은 키 없이도 동작합니다. Google 평점은 Places API 유료 SKU(Text Search + rating 필드)라 월 무료 한도 안에서 쓰도록 주 1회만 다시 조회합니다.
 
 수집 단계 로그에는 모델의 최종 답변만 남깁니다(도구 호출 인자에 Slack 사용자 ID가 들어 있기 때문).
 

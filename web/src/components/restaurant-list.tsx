@@ -3,6 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import {
   isOpenAt,
+  mapLinks,
   walkMinutes,
   type OpeningHours,
   type Restaurant,
@@ -21,6 +22,45 @@ const won = (n: number) => `${n.toLocaleString("ko-KR")}원`;
 function hoursText(h: OpeningHours): string {
   const base = h.open === "00:00" && h.close === "24:00" ? "24시간" : `${h.open}–${h.close}`;
   return h.breakStart && h.breakEnd ? `${base} (브레이크 ${h.breakStart}–${h.breakEnd})` : base;
+}
+
+export function RatingText({ r }: { r: Restaurant }) {
+  if (!r.rating) return null;
+  const text = (
+    <>
+      <span aria-hidden className="text-amber-500">★</span> {r.rating.score.toFixed(1)}
+      <span className="text-muted-foreground"> ({r.rating.count.toLocaleString("ko-KR")}) Google</span>
+    </>
+  );
+  return r.rating.url ? (
+    <a
+      href={r.rating.url}
+      target="_blank"
+      rel="noreferrer"
+      className="hover:underline"
+      aria-label={`Google 평점 ${r.rating.score.toFixed(1)}, 리뷰 ${r.rating.count}개`}
+    >
+      {text}
+    </a>
+  ) : (
+    <span>{text}</span>
+  );
+}
+
+export function MapButtons({ r }: { r: Restaurant }) {
+  const links = mapLinks(r);
+  const cls =
+    "rounded-full border border-border bg-white/80 px-2 py-0.5 text-xs text-foreground/80 transition hover:bg-muted";
+  return (
+    <span className="flex gap-1.5">
+      <a href={links.kakao} target="_blank" rel="noreferrer" className={cls}>
+        카카오맵
+      </a>
+      <a href={links.naver} target="_blank" rel="noreferrer" className={cls}>
+        네이버지도
+      </a>
+    </span>
+  );
 }
 
 export function RestaurantList({ restaurants, now = null, loading, error }: Props) {
@@ -114,8 +154,10 @@ export function RestaurantList({ restaurants, now = null, loading, error }: Prop
               {r.priceRange ? <p>가격 · {r.priceRange}</p> : null}
             </div>
 
-            <div className="text-right text-sm">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm sm:flex-col sm:items-end">
               <p className="font-medium text-primary">멘션 {r.mentionCount}</p>
+              <RatingText r={r} />
+              <MapButtons r={r} />
             </div>
           </li>
         );
