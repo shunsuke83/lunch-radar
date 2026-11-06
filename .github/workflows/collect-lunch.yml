@@ -72,17 +72,23 @@ jobs:
           LUNCH_SPOTS_SLACK_USER_TOKEN: ${{ secrets.LUNCH_SPOTS_SLACK_USER_TOKEN }}
         # The trajectory echoes tool arguments (Slack user ids); log only the reply.
         run: |
-          set -o pipefail
-          log="$RUNNER_TEMP/agent-run.log"
+          out="$RUNNER_TEMP/agent-run.out"
+          status=0
           npx @grok/agent-sdk run --dir . \
             --state-root "$RUNNER_TEMP/agent-state" \
-            --no-trace --no-stream --timeout-ms 1200000 \
-            --message "$(cat ci/collect-prompt.md)" > "$log" 2>&1 \
-            || { grep -E '^\s*(agent:|usage:|error|Error)' "$log"; exit 1; }
-          grep -E '^\s*(agent:|usage:|error|Error)' "$log" || true
+            --no-trace --no-stream --json --timeout-ms 1200000 \
+            --message "$(cat ci/collect-prompt.md)" > "$out" 2> "$RUNNER_TEMP/agent-run.err" || status=$?
+          # stdout carries a few log lines before the JSON document.
+          result=$(sed -n '/^{/,$p' "$out")
+          echo "$result" | jq -r '"ok=\(.ok) tools=\(.trajectory.toolCallCount // 0) failedTurns=\(.trajectory.turnsFailed // 0)", "reply: \(.trajectory.finalText // .error.message // "")"' \
+            || echo "::error::agent-sdk run printed no JSON result"
+          if [ "$status" -ne 0 ] || [ "$(echo "$result" | jq -r '.ok' 2>/dev/null)" != "true" ]; then
+            echo "::error::agent-sdk run failed (exit $status)."
+            exit 1
+          fi
           # export-restaurants leaves the catalog untouched while history has
           # gaps; fail so the next run's retry is visible.
-          if grep -q 'EXPORT_INCOMPLETE' "$log"; then
+          if echo "$result" | jq -r '.trajectory.finalText // ""' | grep -q 'EXPORT_INCOMPLETE'; then
             echo "::error::Collection did not reach the end of the Slack history; catalog not updated."
             exit 1
           fi
