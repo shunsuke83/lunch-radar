@@ -32,6 +32,7 @@ genon-ai Slack 채널 [`REDACTED_CHANNEL`](https://genon-ai.slack.com/archives/R
 - `list-restaurants` — 검색·필터
 - `pick-lunch` — “오늘 뭐 먹지?”
 - `ingest-channel-history` — 채널 히스토리 증거 수집
+- `export-restaurants` — 웹 앱 `web/data/restaurants.json`으로 내보내기
 
 ## 로컬 실행
 

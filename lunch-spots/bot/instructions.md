@@ -34,6 +34,7 @@
 | `list-restaurants` | “맛집 목록”, 검색, 필터 요청 |
 | `pick-lunch` | “오늘 뭐 먹지?”, 랜덤/조건 추천 |
 | `ingest-channel-history` | 히스토리 시드, 캐치업, 빈 저장소 자동 시드, 재수집 요청 |
+| `export-restaurants` | 웹 앱(`web/data/restaurants.json`)으로보내 달라는 요청, 또는 수집 후 동기화 |
 
 ## 수집 규칙
 
@@ -48,6 +49,11 @@
 1. 조건(한식, 매운, 을지로 등)이 있으면 `pick-lunch` 또는 `list-restaurants`에 넘깁니다.
 2. 결과가 비면 저장이 비었다고 말하고, 채널 추천 또는 `히스토리 수집`을 안내합니다. 가능하면 즉시 시드를 시도합니다.
 3. 추천은 가게명, 한 줄 이유(지역/카테고리/메모), mentionCount 순으로 짧게 적습니다.
+
+## 웹 앱 동기화
+
+사용자가 웹/브라우저/목록 페이지/export를 언급하면 `export-restaurants`를 호출합니다.
+로컬에서는 `web/data/restaurants.json`에 쓰이고, 웹 UI가 이를 읽어 필터합니다.
 
 ## 응답 형식
 

@@ -1,0 +1,111 @@
+{
+  "updatedAt": "2026-11-06T01:00:00.000Z",
+  "source": "sample",
+  "channelId": "REDACTED_CHANNEL",
+  "restaurants": [
+    {
+      "slug": "황소국밥",
+      "name": "황소국밥",
+      "area": "을지로",
+      "category": "한식",
+      "priceRange": "1만원대",
+      "notes": "머릿고기 국밥이 든든함",
+      "tags": ["국밥", "든든"],
+      "source": { "channelId": "REDACTED_CHANNEL", "author": "sample" },
+      "addedAt": "2026-11-01T03:00:00.000Z",
+      "updatedAt": "2026-11-05T04:00:00.000Z",
+      "mentionCount": 4
+    },
+    {
+      "slug": "을지로골뱅이",
+      "name": "을지로골뱅이",
+      "area": "을지로3가",
+      "category": "한식",
+      "priceRange": "1~2만원",
+      "notes": "골뱅이무침 + 소면, 점심 세트 있음",
+      "tags": ["골뱅이", "안주"],
+      "source": { "channelId": "REDACTED_CHANNEL", "author": "sample" },
+      "addedAt": "2026-11-02T02:10:00.000Z",
+      "updatedAt": "2026-11-04T08:00:00.000Z",
+      "mentionCount": 3
+    },
+    {
+      "slug": "미도인",
+      "name": "미도인",
+      "area": "시청",
+      "category": "일식",
+      "priceRange": "1만원대",
+      "notes": "가성비 돈카츠 정식",
+      "tags": ["돈카츠", "정식"],
+      "source": { "channelId": "REDACTED_CHANNEL", "author": "sample" },
+      "addedAt": "2026-10-28T01:00:00.000Z",
+      "updatedAt": "2026-11-03T01:00:00.000Z",
+      "mentionCount": 5
+    },
+    {
+      "slug": "차이나타운마라탕",
+      "name": "차이나타운 마라탕",
+      "area": "을지로",
+      "category": "중식",
+      "priceRange": "1만원 전후",
+      "notes": "맵기 조절 가능, 점심 줄 길 수 있음",
+      "tags": ["마라탕", "매운"],
+      "source": { "channelId": "REDACTED_CHANNEL", "author": "sample" },
+      "addedAt": "2026-10-30T06:00:00.000Z",
+      "updatedAt": "2026-11-02T06:00:00.000Z",
+      "mentionCount": 2
+    },
+    {
+      "slug": "성수국수",
+      "name": "성수국수",
+      "area": "성수",
+      "category": "한식",
+      "priceRange": "9천원대",
+      "notes": "잔치국수·비빔국수 빠른 회전",
+      "tags": ["국수", "빠른"],
+      "source": { "channelId": "REDACTED_CHANNEL", "author": "sample" },
+      "addedAt": "2026-11-01T07:30:00.000Z",
+      "updatedAt": "2026-11-01T07:30:00.000Z",
+      "mentionCount": 2
+    },
+    {
+      "slug": "파스타리오",
+      "name": "파스타리오",
+      "area": "시청",
+      "category": "양식",
+      "priceRange": "1.2만원대",
+      "notes": "알리오올리오·크림 파스타 런치",
+      "tags": ["파스타", "런치"],
+      "source": { "channelId": "REDACTED_CHANNEL", "author": "sample" },
+      "addedAt": "2026-10-20T02:00:00.000Z",
+      "updatedAt": "2026-10-29T02:00:00.000Z",
+      "mentionCount": 1
+    },
+    {
+      "slug": "김밥천국-을지로점",
+      "name": "김밥천국 을지로점",
+      "area": "을지로",
+      "category": "분식",
+      "priceRange": "5~8천원",
+      "notes": "빠른 한 끼, 라볶이 추천 멘션 있음",
+      "tags": ["김밥", "분식", "빠른"],
+      "source": { "channelId": "REDACTED_CHANNEL", "author": "sample" },
+      "addedAt": "2026-09-15T03:00:00.000Z",
+      "updatedAt": "2026-11-05T03:00:00.000Z",
+      "mentionCount": 6
+    },
+    {
+      "slug": "블루보틀-성수",
+      "name": "블루보틀 성수",
+      "area": "성수",
+      "category": "카페",
+      "priceRange": "음료 6천원대",
+      "notes": "점심 후 커피용으로 자주 언급",
+      "tags": ["커피", "디저트"],
+      "source": { "channelId": "REDACTED_CHANNEL", "author": "sample" },
+      "addedAt": "2026-10-01T04:00:00.000Z",
+      "updatedAt": "2026-10-18T04:00:00.000Z",
+      "mentionCount": 2
+    }
+  ]
+}
