@@ -10,7 +10,9 @@ genon-ai Slack 채널 [`REDACTED_CHANNEL`](https://genon-ai.slack.com/archives/R
 | --- | --- |
 | 저장소가 비어 있는 멘션·DM | `onAppMention` / `onDirectMessage`가 empty-store 컨텍스트를 넣고, 모델이 `ingest-channel-history` → `upsert-restaurant` |
 | 사용자가 “히스토리 수집” 요청 | 동일 파이프라인 (`mode: auto` / `reset`) |
-| 스케줄 `history-catchup` (매일 11:30 Asia/Seoul = 02:30 UTC) | `ingest-channel-history` 캐치업·백필 → upsert → `export-restaurants` |
+| GitHub Actions [`collect-lunch.yml`](../.github/workflows/collect-lunch.yml) (매일 11:30 Asia/Seoul) | `seed-from-catalog` → `ingest-channel-history` (새 글만) → upsert → `export-restaurants` → 커밋·Pages 배포 |
+
+공개 사이트로 가는 수집은 GitHub Actions만 담당합니다. 봇 자체 스케줄은 두지 않습니다 — 클라우드에 배포된 봇에는 `web/` 폴더가 없어 export 결과를 사이트로 보낼 방법이 없기 때문입니다.
 
 `ingest-channel-history`는 Slack `conversations.history`를 페이지 단위로 읽고, 커서·newest watermark를 `ctx.host.kv` (`restaurant:history:<channelId>`)에 저장합니다.
 
@@ -28,11 +30,12 @@ genon-ai Slack 채널 [`REDACTED_CHANNEL`](https://genon-ai.slack.com/archives/R
 
 ## 도구
 
-- `upsert-restaurant` — 맛집 저장/갱신 (`mentionCount` 증가)
+- `upsert-restaurant` — 맛집 저장/갱신. `mentionCount`는 출처 메시지(`sourceChannelId` + `sourceMessageTs`)당 한 번만 증가하므로 재시도·`reset` 재수집에도 부풀지 않습니다.
 - `list-restaurants` — 검색·필터
 - `pick-lunch` — “오늘 뭐 먹지?”
 - `ingest-channel-history` — 채널 히스토리 증거 수집
-- `export-restaurants` — 웹 앱 `web/data/restaurants.json`으로 내보내기
+- `seed-from-catalog` — 기존 `web/data/restaurants.json`을 불러와 `lastMessageTs` 이후만 이어서 수집 (Actions 증분 수집용)
+- `export-restaurants` — 웹 앱 `web/data/restaurants.json`으로 내보내기. 공개 사이트용이라 Slack 사용자·채널·메시지 ID는 빼고 씁니다.
 
 ## 로컬 실행
 
@@ -46,10 +49,10 @@ npx @grok/agent-sdk validate --dir .
 npx @grok/agent-sdk dev
 ```
 
-Playground에서 저장·목록·추천을 시험합니다. 스케줄은 `--dev`에서 자동 실행되지 않습니다. 수동 디스패치:
+Playground에서 저장·목록·추천을 시험합니다. Actions와 같은 수집을 로컬에서 한 번 돌리려면:
 
 ```bash
-curl -X POST http://127.0.0.1:3000/lunch-spots/v1/dev/schedules/history-catchup
+npx @grok/agent-sdk run --dir . --message "$(cat ci/collect-prompt.md)"
 ```
 
 ## Slack 연결 (사용자가 해야 할 일)
@@ -75,7 +78,7 @@ npx @grok/agent-sdk slack create --dir . --name "점심맛집" --channel-posts
 2. 페이지 상단의 **Reinstall to Workspace**로 재설치 → **User OAuth Token**(`xoxp-...`) 복사
 3. `.env.local`에 `LUNCH_SPOTS_SLACK_USER_TOKEN=xoxp-...` 추가
 
-설정되면 `ingest-channel-history`가 봇 토큰 대신 사용자 토큰으로 `conversations.history`를 호출합니다. 이 방식에서는 실시간 채널 포스트 수집(`channelPosts`)이 동작하지 않으므로, 히스토리 수집(멘션/DM 요청, 또는 `history-catchup` 스케줄)으로만 쌓입니다. 본인 권한으로 읽는 것이므로 회사 정책을 확인하세요.
+설정되면 `ingest-channel-history`가 봇 토큰 대신 사용자 토큰으로 `conversations.history`를 호출합니다. 이 방식에서는 실시간 채널 포스트 수집(`channelPosts`)이 동작하지 않으므로, 히스토리 수집(멘션/DM 요청, 또는 GitHub Actions `collect-lunch.yml`)으로만 쌓입니다. 본인 권한으로 읽는 것이므로 회사 정책을 확인하세요.
 
 ```bash
 npx @grok/agent-sdk slack doctor --prefix LUNCH_SPOTS
@@ -87,7 +90,7 @@ npx @grok/agent-sdk serve --dir . --dev
 ```bash
 npx tsc --noEmit -p .
 npx @grok/agent-sdk validate --dir .
-npx @grok/agent-sdk tool call upsert-restaurant --dir . --state-root /tmp/lunch-spots-smoke --input '{"name":"황소국밥","category":"한식","tags":["국밥"]}'
+npx @grok/agent-sdk tool call upsert-restaurant --dir . --state-root /tmp/lunch-spots-smoke --input '{"name":"말죽거리 해장국","area":"양재","category":"한식","tags":["해장국"]}'
 npx @grok/agent-sdk tool call list-restaurants --dir . --state-root /tmp/lunch-spots-smoke --input '{}'
 npx @grok/agent-sdk tool call ingest-channel-history --dir . --state-root /tmp/lunch-spots-smoke --input '{"mode":"catchup","pages":1}'
 npx @grok/agent-sdk eval --dir . --tag smoke
@@ -99,4 +102,4 @@ npx @grok/agent-sdk eval --dir . --tag smoke
 
 ## 배포
 
-요청 시에만 `npx @grok/agent-sdk deploy --dir .`를 실행하세요. 첫 deploy의 alias 토큰은 안전한 곳에 보관하세요. 배포 후 스케줄 `history-catchup`이 매일 **11:30 Asia/Seoul**에 돕니다.
+요청 시에만 `npx @grok/agent-sdk deploy --dir .`를 실행하세요. 첫 deploy의 alias 토큰은 안전한 곳에 보관하세요. 배포한 봇은 Slack 대화(멘션·DM 추천)용이며, 사이트 데이터 갱신은 GitHub Actions `collect-lunch.yml`이 합니다.

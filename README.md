@@ -146,6 +146,7 @@ Slack 연결 시 토큰은 `lunch-spots/.env.local`에 저장됩니다 (형식�
 | `Port 3847 is already in use` | 이미 실행 중인 dev 서버를 종료하거나 `npx next dev --port 3848`처럼 다른 포트를 씁니다. |
 | 웹 목록이 비어 있음 / 빌드 실패 | `web/data/restaurants.json`이 없거나 JSON이 깨졌습니다. `git checkout web/data/restaurants.json`으로 샘플을 복구합니다. |
 | Pages에서 화면이 깨지거나 CSS/JS가 404 | Settings → Pages의 Source가 **GitHub Actions**인지 확인합니다. 직접 빌드했다면 `NEXT_PUBLIC_BASE_PATH`가 저장소 경로와 같은지 확인합니다. |
+| Windows에서 `build:pages`가 `EPERM ... rename` 오류 | 실행 중인 `npm run dev`가 `src/app/api` 폴더를 잡고 있습니다. dev 서버를 끄고 다시 실행합니다. |
 | `build:pages` 도중 강제 종료 후 API가 사라짐 | `web/.api-parked` 폴더를 `web/src/app/api`로 되돌립니다. |
 
 ## 참고

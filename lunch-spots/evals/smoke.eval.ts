@@ -5,7 +5,7 @@ export default defineEval({
   description: "Save a lunch spot then list and pick it.",
   async test(t) {
     await t.send(
-      '을지로 "황소국밥"을 한식 맛집으로 저장해. 메모는 머릿고기 국밥. 태그는 국밥.',
+      '양재 "말죽거리 해장국"을 한식 맛집으로 저장해. 메모는 해장국. 태그는 해장국.',
     );
     t.succeeded();
     t.calledTool("upsert-restaurant");
