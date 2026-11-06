@@ -123,7 +123,7 @@ npx @grok/agent-sdk dev
 | `CURSOR_API_KEY` | Cursor API 키 (모델 호출용, 대시보드에서 발급) |
 | `LUNCH_SPOTS_SLACK_USER_TOKEN` | Slack User OAuth Token `xoxp-...` (`channels:history`, `groups:history`) |
 | `LUNCH_SPOTS_CHANNEL_ID` | 수집할 Slack 채널 ID (Slack 채널 정보 하단의 `C…` 값). Secret이라 로그에서도 가려집니다. |
-| `KAKAO_REST_API_KEY` | (선택) [Kakao Developers](https://developers.kakao.com/) 앱의 REST API 키. 가게 좌표·카카오맵 링크 |
+| `KAKAO_REST_API_KEY` | (선택) [Kakao Developers](https://developers.kakao.com/) 앱의 REST API 키. 가게 좌표·카카오맵 링크. 앱 설정의 **제품 설정 → 카카오맵**을 "사용함"으로 켜야 합니다(꺼져 있으면 `disabled OPEN_MAP_AND_LOCAL service` 403) |
 | `GOOGLE_PLACES_API_KEY` | (선택) Google Cloud에서 **Places API (New)**를 켠 API 키. 별점·리뷰 수 |
 
 지도 표시용 **Variable**(Secret 아님, 같은 화면의 Variables 탭):
