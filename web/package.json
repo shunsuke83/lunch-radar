@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack --port 3847",
     "build": "next build",
+    "build:pages": "node scripts/build-pages.mjs",
     "start": "next start --port 3847",
     "lint": "next lint"
   },

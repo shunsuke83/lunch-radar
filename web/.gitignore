@@ -19,6 +19,7 @@
 
 # production
 /build
+/.api-parked
 
 # misc
 .DS_Store

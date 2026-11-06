@@ -36,9 +36,11 @@ genon-ai Slack 채널 [`REDACTED_CHANNEL`](https://genon-ai.slack.com/archives/R
 
 ## 로컬 실행
 
+**Node.js 22.13 이상**이 필요합니다 (의존성 `@cursor/sdk`의 engines 요구사항). CLI는 Bun이 아니라 Node로 실행하세요.
+
 ```bash
 cd lunch-spots
-npm install
+npm ci
 npx @grok/agent-sdk login
 npx @grok/agent-sdk validate --dir .
 npx @grok/agent-sdk dev
@@ -80,6 +82,8 @@ npx @grok/agent-sdk tool call list-restaurants --dir . --state-root /tmp/lunch-s
 npx @grok/agent-sdk tool call ingest-channel-history --dir . --state-root /tmp/lunch-spots-smoke --input '{"mode":"catchup","pages":1}'
 npx @grok/agent-sdk eval --dir . --tag smoke
 ```
+
+위 `tool call` 예시는 bash 기준입니다. Windows PowerShell에서는 `--state-root .\.smoke`처럼 로컬 경로를 쓰고, JSON 입력은 따옴표를 이스케이프해야 합니다 (예: `--input '{\"mode\":\"catchup\",\"pages\":1}'`). `curl` 대신 `Invoke-RestMethod -Method Post <URL>`을 써도 됩니다.
 
 `ingest-channel-history`는 토큰이 없으면 `ok: false`와 안내 메시지로 soft-fail 합니다.
 

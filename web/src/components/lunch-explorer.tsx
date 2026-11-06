@@ -1,27 +1,17 @@
 "use client";
 
-import { useDeferredValue, useEffect, useMemo, useState, useTransition } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 import {
   RestaurantFilters,
   type FilterState,
 } from "@/components/restaurant-filters";
 import { RestaurantList } from "@/components/restaurant-list";
-import type { Restaurant } from "@/lib/restaurants";
-
-type ApiResponse = {
-  updatedAt: string;
-  source: string;
-  channelId: string;
-  total: number;
-  count: number;
-  restaurants: Restaurant[];
-  facets: {
-    categories: string[];
-    areas: string[];
-    tags: string[];
-  };
-  error?: string;
-};
+import {
+  filterRestaurants,
+  uniqueTags,
+  uniqueValues,
+  type RestaurantCatalog,
+} from "@/lib/catalog";
 
 const EMPTY_FILTERS: FilterState = {
   q: "",
@@ -30,50 +20,34 @@ const EMPTY_FILTERS: FilterState = {
   tag: "all",
 };
 
-export function LunchExplorer() {
+type Props = {
+  catalog: RestaurantCatalog;
+};
+
+export function LunchExplorer({ catalog }: Props) {
   const [filters, setFilters] = useState<FilterState>(EMPTY_FILTERS);
   const deferred = useDeferredValue(filters);
-  const [data, setData] = useState<ApiResponse | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [pending, startTransition] = useTransition();
 
-  useEffect(() => {
-    const params = new URLSearchParams();
-    if (deferred.q.trim()) params.set("q", deferred.q.trim());
-    if (deferred.category !== "all") params.set("category", deferred.category);
-    if (deferred.area !== "all") params.set("area", deferred.area);
-    if (deferred.tag !== "all") params.set("tag", deferred.tag);
+  const facets = useMemo(
+    () => ({
+      categories: uniqueValues(catalog.restaurants, "category"),
+      areas: uniqueValues(catalog.restaurants, "area"),
+      tags: uniqueTags(catalog.restaurants),
+    }),
+    [catalog],
+  );
 
-    const controller = new AbortController();
-    startTransition(async () => {
-      try {
-        setError(null);
-        const res = await fetch(`/api/restaurants?${params.toString()}`, {
-          signal: controller.signal,
-          cache: "no-store",
-        });
-        const json = (await res.json()) as ApiResponse;
-        if (!res.ok) {
-          throw new Error(json.error || "목록을 불러오지 못했습니다.");
-        }
-        setData(json);
-      } catch (err) {
-        if (controller.signal.aborted) return;
-        setError(err instanceof Error ? err.message : "목록을 불러오지 못했습니다.");
-      }
-    });
+  const restaurants = useMemo(
+    () => filterRestaurants(catalog.restaurants, deferred),
+    [catalog, deferred],
+  );
 
-    return () => controller.abort();
-  }, [deferred]);
-
-  const meta = useMemo(() => {
-    if (!data) return null;
-    const when = new Date(data.updatedAt);
-    const stamp = Number.isNaN(when.getTime())
-      ? data.updatedAt
+  const stamp = useMemo(() => {
+    const when = new Date(catalog.updatedAt);
+    return Number.isNaN(when.getTime())
+      ? catalog.updatedAt
       : when.toLocaleString("ko-KR", { timeZone: "Asia/Seoul" });
-    return { stamp, source: data.source, total: data.total, count: data.count };
-  }, [data]);
+  }, [catalog.updatedAt]);
 
   return (
     <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 py-10 sm:px-6 lg:py-14">
@@ -87,31 +61,25 @@ export function LunchExplorer() {
         <p className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
           Slack 채널에서 모은 점심 맛집을 한곳에서 보고, 종류·지역·태그로 골라 보세요.
         </p>
-        {meta ? (
-          <p className="text-sm text-muted-foreground">
-            {meta.count}/{meta.total}곳 · 데이터{" "}
-            {meta.source === "sample" ? "샘플(Slack 연동 전)" : meta.source} · 갱신{" "}
-            {meta.stamp} (Asia/Seoul)
-          </p>
-        ) : null}
+        <p className="text-sm text-muted-foreground">
+          {restaurants.length}/{catalog.restaurants.length}곳 · 데이터{" "}
+          {catalog.source === "sample" ? "샘플(Slack 연동 전)" : catalog.source} · 갱신{" "}
+          {stamp} (Asia/Seoul)
+        </p>
       </header>
 
       <RestaurantFilters
         value={filters}
-        categories={data?.facets.categories ?? []}
-        areas={data?.facets.areas ?? []}
-        tags={data?.facets.tags ?? []}
+        categories={facets.categories}
+        areas={facets.areas}
+        tags={facets.tags}
         onChange={setFilters}
         onReset={() => setFilters(EMPTY_FILTERS)}
       />
 
-      <RestaurantList
-        restaurants={data?.restaurants ?? []}
-        loading={!data && !error}
-        error={error}
-      />
+      <RestaurantList restaurants={restaurants} />
 
-      {pending && data ? (
+      {deferred !== filters ? (
         <p className="text-center text-xs text-muted-foreground">필터 적용 중…</p>
       ) : null}
     </div>

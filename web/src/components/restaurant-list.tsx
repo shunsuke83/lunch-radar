@@ -1,7 +1,7 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import type { Restaurant } from "@/lib/restaurants";
+import type { Restaurant } from "@/lib/catalog";
 
 type Props = {
   restaurants: Restaurant[];
