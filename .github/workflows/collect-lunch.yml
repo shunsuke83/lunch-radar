@@ -1,8 +1,12 @@
 name: Collect lunch spots from Slack
 
 on:
+  # GitHub delays (sometimes by hours) or drops scheduled runs, busiest on the
+  # hour and half hour. Off-peak minutes, plus a later retry that is a cheap
+  # no-op when the first run already collected.
   schedule:
-    - cron: "30 2 * * *" # 11:30 Asia/Seoul
+    - cron: "17 2 * * *" # 11:17 Asia/Seoul
+    - cron: "43 5 * * *" # 14:43 Asia/Seoul
   workflow_dispatch:
     inputs:
       force:
@@ -90,6 +94,10 @@ jobs:
           fi
           # export-restaurants leaves the catalog untouched while history has
           # gaps; fail so the next run's retry is visible.
+          if echo "$result" | jq -r '.trajectory.finalText // ""' | grep -q 'SEED_FAILED'; then
+            echo "::error::seed-from-catalog failed; catalog not updated."
+            exit 1
+          fi
           if echo "$result" | jq -r '.trajectory.finalText // ""' | grep -q 'EXPORT_INCOMPLETE'; then
             echo "::error::Collection did not reach the end of the Slack history; catalog not updated."
             exit 1

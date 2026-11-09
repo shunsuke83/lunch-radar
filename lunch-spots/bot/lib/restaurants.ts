@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+
 export type RestaurantSource = {
   channelId: string;
   messageTs?: string;
@@ -158,8 +160,17 @@ export function toSlug(name: string): string {
   return base || `spot-${Date.now().toString(36)}`;
 }
 
+/**
+ * The local/hosted kv stores each key as a file whose name is the key
+ * percent-encoded twice; a Korean character becomes 15 bytes, so a long slug
+ * passes the 255-byte file name limit. Such slugs get a hashed key instead.
+ */
+const MAX_ENCODED_KEY = 150;
+
 export function restaurantKey(slug: string): string {
-  return `restaurant:${slug}`;
+  const key = `restaurant:${slug}`;
+  if (encodeURIComponent(encodeURIComponent(key)).length <= MAX_ENCODED_KEY) return key;
+  return `restaurant:#${createHash("sha256").update(slug).digest("hex").slice(0, 24)}`;
 }
 
 export function mentionId(channelId: string, messageTs: string): string {

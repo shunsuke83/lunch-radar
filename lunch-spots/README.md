@@ -10,7 +10,7 @@
 | --- | --- |
 | 저장소가 비어 있는 멘션·DM | `onAppMention` / `onDirectMessage`가 empty-store 컨텍스트를 넣고, 모델이 `ingest-channel-history` → `upsert-restaurant` |
 | 사용자가 “히스토리 수집” 요청 | 동일 파이프라인 (`mode: auto` / `reset`) |
-| GitHub Actions [`collect-lunch.yml`](../.github/workflows/collect-lunch.yml) (매일 11:30 Asia/Seoul) | `seed-from-catalog` → `ingest-channel-history` (새 글만) → upsert → `export-restaurants` → 커밋·Pages 배포 |
+| GitHub Actions [`collect-lunch.yml`](../.github/workflows/collect-lunch.yml) (매일 11:17·14:43 Asia/Seoul) | `seed-from-catalog` → `ingest-channel-history` (새 글만) → upsert → `export-restaurants` → 커밋·Pages 배포 |
 
 공개 사이트로 가는 수집은 GitHub Actions만 담당합니다. 봇 자체 스케줄은 두지 않습니다 — 클라우드에 배포된 봇에는 `web/` 폴더가 없어 export 결과를 사이트로 보낼 방법이 없기 때문입니다.
 

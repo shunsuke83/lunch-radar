@@ -144,7 +144,17 @@ export function structureRestaurant<T extends Restaurant>(r: T): T {
   const { category, subcategory } = normalizeCategory(r);
   const next: T = { ...r, category, subcategory };
   const menu = r.menu?.length ? r.menu : parsed.menu;
-  const hours = r.hours ?? parsed.hours;
+  let hours = r.hours ?? parsed.hours;
+  // A break time added to the notes later still reaches an explicit hours value.
+  if (
+    hours &&
+    !hours.breakStart &&
+    parsed.hours?.breakStart &&
+    parsed.hours.open === hours.open &&
+    parsed.hours.close === hours.close
+  ) {
+    hours = { ...hours, breakStart: parsed.hours.breakStart, breakEnd: parsed.hours.breakEnd };
+  }
   const walkMeters = r.walkMeters ?? parsed.walkMeters;
   if (menu) next.menu = menu;
   if (hours) next.hours = hours;

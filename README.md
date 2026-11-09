@@ -102,7 +102,7 @@ npx @grok/agent-sdk dev
 
 | 워크플로 | 트리거 | 하는 일 |
 | --- | --- | --- |
-| [`collect-lunch.yml`](.github/workflows/collect-lunch.yml) | 매일 11:30 (Asia/Seoul), 수동 실행 | Slack 채널 히스토리 수집 → `web/data/restaurants.json` 갱신·커밋 → Pages 배포 호출 |
+| [`collect-lunch.yml`](.github/workflows/collect-lunch.yml) | 매일 11:17·14:43 (Asia/Seoul, GitHub 사정으로 늦어질 수 있음), 수동 실행 | Slack 채널 히스토리 수집 → `web/data/restaurants.json` 갱신·커밋 → Pages 배포 호출 |
 | [`deploy-pages.yml`](.github/workflows/deploy-pages.yml) | `main`에 `web/**` 변경 푸시, 수동 실행 | `npm run build:pages` → `web/out/`을 GitHub Pages에 배포 |
 | [`ci.yml`](.github/workflows/ci.yml) | 모든 PR, `main` 푸시 | 웹 정적 빌드(타입체크 포함), 봇 `npm run check`(타입체크) |
 
