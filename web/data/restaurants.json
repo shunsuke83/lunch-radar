@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-06T04:22:11.225Z",
+  "updatedAt": "2026-11-09T08:26:06.318Z",
   "source": "slack-export",
-  "lastMessageTs": "1793930422.021329",
+  "lastMessageTs": "1794203767.645569",
   "restaurants": [
     {
       "slug": "국미당-양재역",
@@ -15,7 +15,7 @@
         "김말이"
       ],
       "addedAt": "2026-11-06T04:19:04.829Z",
-      "updatedAt": "2026-11-06T04:21:13.636Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 4,
       "subcategory": "떡볶이·김말이",
       "menu": [
@@ -62,8 +62,8 @@
         "중식"
       ],
       "addedAt": "2026-11-06T04:19:36.760Z",
-      "updatedAt": "2026-11-06T04:21:03.394Z",
-      "mentionCount": 3,
+      "updatedAt": "2026-11-09T08:25:51.900Z",
+      "mentionCount": 4,
       "subcategory": "중식·유산슬덮밥",
       "menu": [
         {
@@ -103,18 +103,50 @@
       }
     },
     {
+      "slug": "꼬김빱-서초구청점",
+      "name": "꼬김빱 서초구청점",
+      "area": "양재",
+      "category": "분식",
+      "priceRange": "6,000~6,900원",
+      "notes": "꼬마김밥 모둠세트 6,000 / 크래미유부초밥 6,900 · 08:30-20:30 · 도보 약 420m",
+      "tags": [
+        "김밥",
+        "분식"
+      ],
+      "addedAt": "2026-11-06T04:19:39.364Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
+      "mentionCount": 3,
+      "subcategory": "김밥·분식",
+      "menu": [
+        {
+          "name": "꼬마김밥 모둠세트",
+          "price": 6000
+        },
+        {
+          "name": "크래미유부초밥",
+          "price": 6900
+        }
+      ],
+      "hours": {
+        "open": "08:30",
+        "close": "20:30"
+      },
+      "walkMeters": 420,
+      "ratingCheckedAt": "2026-11-06T06:08:14.853Z"
+    },
+    {
       "slug": "마차이짬뽕-양재역점",
       "name": "마차이짬뽕 양재역점",
       "area": "양재",
       "category": "중식",
       "priceRange": "10,000원",
-      "notes": "마차이짬뽕 10,000 / 마차이 중화비빔밥 10,000 · 11:00-21:00 · 도보 약 177m",
+      "notes": "마차이짬뽕 10,000 / 마차이 중화비빔밥 10,000 · 11:00-21:00 (14:30-16:00 브레이크) · 도보 약 177m",
       "tags": [
         "짬뽕",
         "중식"
       ],
       "addedAt": "2026-11-06T04:19:33.525Z",
-      "updatedAt": "2026-11-06T04:21:02.574Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 3,
       "subcategory": "짬뽕·중식",
       "menu": [
@@ -129,7 +161,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "21:00"
+        "close": "21:00",
+        "breakStart": "14:30",
+        "breakEnd": "16:00"
       },
       "walkMeters": 177,
       "location": {
@@ -162,7 +196,7 @@
         "탕수육"
       ],
       "addedAt": "2026-11-06T04:19:05.876Z",
-      "updatedAt": "2026-11-06T04:21:01.044Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 3,
       "subcategory": "중식·탕수육",
       "menu": [
@@ -210,7 +244,7 @@
         "덮밥"
       ],
       "addedAt": "2026-11-06T04:19:36.103Z",
-      "updatedAt": "2026-11-06T04:21:02.959Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 3,
       "subcategory": "일식·덮밥",
       "menu": [
@@ -258,7 +292,7 @@
         "스테이크"
       ],
       "addedAt": "2026-11-06T04:19:07.326Z",
-      "updatedAt": "2026-11-06T04:21:01.428Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 3,
       "subcategory": "샐러드·스테이크",
       "menu": [
@@ -306,7 +340,7 @@
         "브런치"
       ],
       "addedAt": "2026-11-06T04:18:53.232Z",
-      "updatedAt": "2026-11-06T04:21:16.266Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 3,
       "subcategory": "샌드위치·브런치",
       "menu": [
@@ -343,18 +377,68 @@
       }
     },
     {
+      "slug": "스시썸",
+      "name": "스시썸",
+      "area": "양재",
+      "category": "일식",
+      "priceRange": "11,500~13,900원",
+      "notes": "런치초밥 11,500 / 사케동(연어덮밥) 13,900 · 11:00-22:00 (14:30-16:00 브레이크) · 도보 약 142m",
+      "tags": [
+        "스시",
+        "덮밥"
+      ],
+      "addedAt": "2026-11-06T04:19:30.118Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
+      "mentionCount": 3,
+      "subcategory": "스시·덮밥",
+      "menu": [
+        {
+          "name": "런치초밥",
+          "price": 11500
+        },
+        {
+          "name": "사케동(연어덮밥)",
+          "price": 13900
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00",
+        "breakStart": "14:30",
+        "breakEnd": "16:00"
+      },
+      "walkMeters": 142,
+      "location": {
+        "lat": 37.4837429695672,
+        "lng": 127.035552193648
+      },
+      "place": {
+        "kakaoId": "873475210",
+        "kakaoUrl": "https://place.map.kakao.com/873475210",
+        "address": "서울 서초구 강남대로 222-4"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:16.323Z",
+      "rating": {
+        "score": 3.7,
+        "count": 25,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=11979829608776522427&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:16.323Z"
+      }
+    },
+    {
       "slug": "양산도-양재점",
       "name": "양산도 양재점",
       "area": "양재",
       "category": "일식",
       "priceRange": "7,000~12,000원",
-      "notes": "연어사시미 12,000 / 장새고 만두 7,000 · 11:00-21:00 · 도보 약 306m",
+      "notes": "연어사시미 12,000 / 장새고 만두 7,000 · 11:00-21:00 (15:00-17:00 브레이크) · 도보 약 306m",
       "tags": [
         "장어덮밥",
         "초밥"
       ],
       "addedAt": "2026-11-06T04:19:38.680Z",
-      "updatedAt": "2026-11-06T04:21:03.708Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 3,
       "subcategory": "장어덮밥·초밥",
       "menu": [
@@ -369,7 +453,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "21:00"
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 306,
       "location": {
@@ -394,7 +480,7 @@
         "떡볶이"
       ],
       "addedAt": "2026-11-06T04:19:30.864Z",
-      "updatedAt": "2026-11-06T04:21:01.802Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 3,
       "subcategory": "즉석떡볶이",
       "menu": [
@@ -442,7 +528,7 @@
         "브런치"
       ],
       "addedAt": "2026-11-06T04:19:31.533Z",
-      "updatedAt": "2026-11-06T04:21:02.180Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 3,
       "subcategory": "샐러드·브런치",
       "menu": [
@@ -484,12 +570,12 @@
       "area": "양재",
       "category": "아시안",
       "priceRange": "9,900~12,000원",
-      "notes": "꾸아이띠아오(치킨) 9,900 / 꾸아이띠아오(소고기) 12,000 · 11:00-21:00 · 도보 약 381m",
+      "notes": "꾸아이띠아오(치킨) 9,900 / 꾸아이띠아오(소고기) 12,000 · 11:00-21:00 (15:00-16:30 브레이크) · 도보 약 381m",
       "tags": [
         "태국음식"
       ],
       "addedAt": "2026-11-06T04:19:03.603Z",
-      "updatedAt": "2026-11-06T04:21:00.491Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 3,
       "subcategory": "태국음식",
       "menu": [
@@ -504,7 +590,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "21:00"
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "16:30"
       },
       "walkMeters": 381,
       "location": {
@@ -531,13 +619,13 @@
       "area": "양재",
       "category": "아시안",
       "priceRange": "9,000~11,000원",
-      "notes": "소고기 쌀국수 11,000 / 시그니처 에그 반미 9,000 · 11:00-22:00 · 도보 약 259m",
+      "notes": "소고기 쌀국수 11,000 / 시그니처 에그 반미 9,000 · 11:00-22:00 (15:00-17:00 브레이크) · 도보 약 259m",
       "tags": [
         "베트남",
         "쌀국수"
       ],
       "addedAt": "2026-11-06T04:18:56.952Z",
-      "updatedAt": "2026-11-06T04:21:00.489Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 3,
       "subcategory": "베트남 쌀국수",
       "menu": [
@@ -552,7 +640,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 259,
       "location": {
@@ -584,7 +674,7 @@
         "쌀국수"
       ],
       "addedAt": "2026-11-06T04:20:17.273Z",
-      "updatedAt": "2026-11-06T04:21:14.483Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "쌀국수",
       "menu": [
@@ -631,7 +721,7 @@
         "떡볶이"
       ],
       "addedAt": "2026-11-06T04:20:18.727Z",
-      "updatedAt": "2026-11-06T04:21:15.009Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "즉석떡볶이",
       "menu": [
@@ -668,50 +758,18 @@
       }
     },
     {
-      "slug": "꼬김빱-서초구청점",
-      "name": "꼬김빱 서초구청점",
-      "area": "양재",
-      "category": "분식",
-      "priceRange": "6,000~6,900원",
-      "notes": "꼬마김밥 모둠세트 6,000 / 크래미유부초밥 6,900 · 08:30-20:30 · 도보 약 420m",
-      "tags": [
-        "김밥",
-        "분식"
-      ],
-      "addedAt": "2026-11-06T04:19:39.364Z",
-      "updatedAt": "2026-11-06T04:21:04.145Z",
-      "mentionCount": 2,
-      "subcategory": "김밥·분식",
-      "menu": [
-        {
-          "name": "꼬마김밥 모둠세트",
-          "price": 6000
-        },
-        {
-          "name": "크래미유부초밥",
-          "price": 6900
-        }
-      ],
-      "hours": {
-        "open": "08:30",
-        "close": "20:30"
-      },
-      "walkMeters": 420,
-      "ratingCheckedAt": "2026-11-06T06:08:14.853Z"
-    },
-    {
       "slug": "누룩목-양재본점",
       "name": "누룩목 양재본점",
       "area": "양재",
       "category": "한식",
       "priceRange": "9,000~12,000원",
-      "notes": "평일 점심특선 제육 보리밥정식 12,000 / 수제 물비빔냉면 9,000 · 11:30-22:00 · 도보 약 394m",
+      "notes": "평일 점심특선 제육 보리밥정식 12,000 / 수제 물비빔냉면 9,000 · 11:30-22:00 (14:00-16:00 브레이크) · 도보 약 394m",
       "tags": [
         "고기",
         "점심특선"
       ],
       "addedAt": "2026-11-06T04:20:14.924Z",
-      "updatedAt": "2026-11-06T04:21:06.145Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "고깃집·점심특선",
       "menu": [
@@ -726,7 +784,9 @@
       ],
       "hours": {
         "open": "11:30",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "14:00",
+        "breakEnd": "16:00"
       },
       "walkMeters": 394,
       "location": {
@@ -759,7 +819,7 @@
         "경양식"
       ],
       "addedAt": "2026-11-06T04:20:22.048Z",
-      "updatedAt": "2026-11-06T04:21:17.238Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "돈까스·경양식",
       "menu": [
@@ -806,7 +866,7 @@
         "해장국"
       ],
       "addedAt": "2026-11-06T04:20:16.660Z",
-      "updatedAt": "2026-11-06T04:21:13.696Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "해장국",
       "menu": [
@@ -844,6 +904,25 @@
       "address": "서울 서초구 남부순환로356길 33 103호"
     },
     {
+      "slug": "미다재",
+      "name": "미다재",
+      "category": "한식",
+      "priceRange": "15,000원",
+      "notes": "시레기밥 15,000원. 그 이상은 예산 초과",
+      "tags": [],
+      "addedAt": "2026-11-06T04:18:50.983Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
+      "mentionCount": 2,
+      "menu": [
+        {
+          "name": "시레기밥",
+          "price": 15000
+        }
+      ],
+      "ratingCheckedAt": "2026-11-06T06:08:23.879Z",
+      "subcategory": "시래기밥"
+    },
+    {
       "slug": "서초청국장",
       "name": "서초청국장",
       "area": "양재",
@@ -855,7 +934,7 @@
         "콩국수"
       ],
       "addedAt": "2026-11-06T04:19:34.807Z",
-      "updatedAt": "2026-11-06T04:20:54.704Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "청국장·콩국수",
       "menu": [
@@ -903,7 +982,7 @@
         "칼국수"
       ],
       "addedAt": "2026-11-06T04:20:20.715Z",
-      "updatedAt": "2026-11-06T04:21:15.840Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "문어·칼국수",
       "menu": [
@@ -945,13 +1024,13 @@
       "area": "양재",
       "category": "일식",
       "priceRange": "10,000~12,000원",
-      "notes": "기본우동 10,000 / 유부우동 12,000 · 11:00-21:00 · 도보 약 301m",
+      "notes": "기본우동 10,000 / 유부우동 12,000 · 11:00-21:00 (15:00-17:00 브레이크) · 도보 약 301m",
       "tags": [
         "우동",
         "일식"
       ],
       "addedAt": "2026-11-06T04:20:30.072Z",
-      "updatedAt": "2026-11-06T04:21:17.584Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "우동·튀김",
       "menu": [
@@ -966,7 +1045,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "21:00"
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 301,
       "location": {
@@ -993,13 +1074,13 @@
       "area": "양재",
       "category": "일식",
       "priceRange": "13,000~15,000원",
-      "notes": "텐동 15,000 / 명란 우삼겹 덮밥 13,000 · 11:30-21:00 · 도보 약 383m",
+      "notes": "텐동 15,000 / 명란 우삼겹 덮밥 13,000 · 11:30-21:00 (15:00-17:00 브레이크) · 도보 약 383m",
       "tags": [
         "텐동",
         "일식"
       ],
       "addedAt": "2026-11-06T04:19:40.684Z",
-      "updatedAt": "2026-11-06T04:21:04.520Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "텐동·사케동",
       "menu": [
@@ -1014,7 +1095,9 @@
       ],
       "hours": {
         "open": "11:30",
-        "close": "21:00"
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 383,
       "location": {
@@ -1047,7 +1130,7 @@
         "제육"
       ],
       "addedAt": "2026-11-06T04:20:15.395Z",
-      "updatedAt": "2026-11-06T04:21:13.639Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "제육볶음·백반",
       "menu": [
@@ -1084,52 +1167,36 @@
       }
     },
     {
-      "slug": "스시썸",
-      "name": "스시썸",
+      "slug": "신향원양꼬치마라탕-양재역",
+      "name": "신향원양꼬치마라탕 양재역",
       "area": "양재",
-      "category": "일식",
-      "priceRange": "11,500~13,900원",
-      "notes": "런치초밥 11,500 / 사케동(연어덮밥) 13,900 · 11:00-22:00 · 도보 약 142m",
+      "category": "중식",
+      "priceRange": "11,000~15,000원",
+      "notes": "차돌짬뽕 11,000 / 꿔보러우 15,000 · 11:00-23:00 · 도보 약 259m",
       "tags": [
-        "스시",
-        "덮밥"
+        "마라탕",
+        "중식"
       ],
-      "addedAt": "2026-11-06T04:19:30.118Z",
-      "updatedAt": "2026-11-06T04:20:52.685Z",
+      "addedAt": "2026-11-06T04:20:27.975Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
-      "subcategory": "스시·덮밥",
+      "subcategory": "마라탕·중식",
       "menu": [
         {
-          "name": "런치초밥",
-          "price": 11500
+          "name": "차돌짬뽕",
+          "price": 11000
         },
         {
-          "name": "사케동(연어덮밥)",
-          "price": 13900
+          "name": "꿔보러우",
+          "price": 15000
         }
       ],
       "hours": {
         "open": "11:00",
-        "close": "22:00"
+        "close": "23:00"
       },
-      "walkMeters": 142,
-      "location": {
-        "lat": 37.4837429695672,
-        "lng": 127.035552193648
-      },
-      "place": {
-        "kakaoId": "873475210",
-        "kakaoUrl": "https://place.map.kakao.com/873475210",
-        "address": "서울 서초구 강남대로 222-4"
-      },
-      "ratingCheckedAt": "2026-11-06T06:08:16.323Z",
-      "rating": {
-        "score": 3.7,
-        "count": 25,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=11979829608776522427&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:08:16.323Z"
-      }
+      "walkMeters": 259,
+      "ratingCheckedAt": "2026-11-06T06:08:26.490Z"
     },
     {
       "slug": "얌얌",
@@ -1143,7 +1210,7 @@
         "분식"
       ],
       "addedAt": "2026-11-06T04:20:16.051Z",
-      "updatedAt": "2026-11-06T04:21:13.672Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "김밥·분식",
       "menu": [
@@ -1191,7 +1258,7 @@
         "분식"
       ],
       "addedAt": "2026-11-06T04:20:20.060Z",
-      "updatedAt": "2026-11-06T04:21:15.376Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "김밥·분식",
       "menu": [
@@ -1224,13 +1291,13 @@
       "area": "양재",
       "category": "한식",
       "priceRange": "12,000~15,000원",
-      "notes": "칼국수정식(점심특선) 12,000 / 칼국수보쌈정식(점심특선) 15,000 · 11:00-22:00 · 도보 약 145m",
+      "notes": "칼국수정식(점심특선) 12,000 / 칼국수보쌈정식(점심특선) 15,000 · 11:00-22:00 (14:30-16:30 브레이크) · 도보 약 145m",
       "tags": [
         "칼국수",
         "보쌈"
       ],
       "addedAt": "2026-11-06T04:19:32.233Z",
-      "updatedAt": "2026-11-06T04:20:53.660Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "칼국수·보쌈",
       "menu": [
@@ -1245,7 +1312,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "14:30",
+        "breakEnd": "16:30"
       },
       "walkMeters": 145,
       "location": {
@@ -1278,7 +1347,7 @@
         "회덮밥"
       ],
       "addedAt": "2026-11-06T04:20:17.899Z",
-      "updatedAt": "2026-11-06T04:21:14.668Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "국수전골·회덮밥",
       "menu": [
@@ -1320,13 +1389,13 @@
       "area": "양재",
       "category": "양식",
       "priceRange": "13,000원",
-      "notes": "부라타 치즈 샐러드 13,000 / 갈릭 쉬림프 샐러드 13,000 · 11:30-21:30 · 도보 약 201m",
+      "notes": "부라타 치즈 샐러드 13,000 / 갈릭 쉬림프 샐러드 13,000 · 11:30-21:30 (15:00-17:00 브레이크) · 도보 약 201m",
       "tags": [
         "파스타",
         "샐러드"
       ],
       "addedAt": "2026-11-06T04:19:41.399Z",
-      "updatedAt": "2026-11-06T04:21:04.922Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "파스타·샐러드",
       "menu": [
@@ -1341,7 +1410,9 @@
       ],
       "hours": {
         "open": "11:30",
-        "close": "21:30"
+        "close": "21:30",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 201,
       "location": {
@@ -1369,7 +1440,7 @@
       "notes": "수제비",
       "tags": [],
       "addedAt": "2026-11-06T04:18:50.984Z",
-      "updatedAt": "2026-11-06T04:18:51.608Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "국수",
       "menu": [
@@ -1385,12 +1456,12 @@
       "area": "양재",
       "category": "양식",
       "priceRange": "10,900~12,500원",
-      "notes": "제레미버거 10,900 / 벨기에프라이 12,500 · 11:30-20:30 · 도보 약 244m",
+      "notes": "제레미버거 10,900 / 벨기에프라이 12,500 · 11:30-20:30 (15:00-17:00 브레이크) · 도보 약 244m",
       "tags": [
         "수제버거"
       ],
       "addedAt": "2026-11-06T04:20:14.917Z",
-      "updatedAt": "2026-11-06T04:21:05.354Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "수제버거",
       "menu": [
@@ -1405,7 +1476,9 @@
       ],
       "hours": {
         "open": "11:30",
-        "close": "20:30"
+        "close": "20:30",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 244,
       "location": {
@@ -1432,12 +1505,12 @@
       "area": "양재",
       "category": "일식",
       "priceRange": "15,000원",
-      "notes": "광어초밥 15,000 / 도로초밥 15,000 · 11:30-22:00 · 도보 약 433m",
+      "notes": "광어초밥 15,000 / 도로초밥 15,000 · 11:30-22:00 (15:00-17:00 브레이크) · 도보 약 433m",
       "tags": [
         "초밥"
       ],
       "addedAt": "2026-11-06T04:19:35.458Z",
-      "updatedAt": "2026-11-06T04:20:55.055Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "초밥",
       "menu": [
@@ -1452,7 +1525,9 @@
       ],
       "hours": {
         "open": "11:30",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 433,
       "location": {
@@ -1479,12 +1554,12 @@
       "area": "양재",
       "category": "한식",
       "priceRange": "11,000~14,000원",
-      "notes": "칼국수 11,000 / 치즈조개전 14,000 · 10:00-22:00 · 도보 약 385m",
+      "notes": "칼국수 11,000 / 치즈조개전 14,000 · 10:00-22:00 (16:00-17:00 브레이크) · 도보 약 385m",
       "tags": [
         "칼국수"
       ],
       "addedAt": "2026-11-06T04:19:09.205Z",
-      "updatedAt": "2026-11-06T04:20:52.301Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "바지락칼국수",
       "menu": [
@@ -1499,7 +1574,9 @@
       ],
       "hours": {
         "open": "10:00",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "16:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 385,
       "location": {
@@ -1526,12 +1603,12 @@
       "area": "양재",
       "category": "일식",
       "priceRange": "10,000~12,000원",
-      "notes": "로스카츠 12,000 / 직화소고기우동 10,000 · 11:00-21:00 · 도보 약 494m",
+      "notes": "로스카츠 12,000 / 직화소고기우동 10,000 · 11:00-21:00 (15:00-17:00 브레이크) · 도보 약 494m",
       "tags": [
         "돈까스"
       ],
       "addedAt": "2026-11-06T04:18:58.061Z",
-      "updatedAt": "2026-11-06T04:20:50.766Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "돈까스",
       "menu": [
@@ -1546,7 +1623,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "21:00"
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 494,
       "location": {
@@ -1568,18 +1647,67 @@
       }
     },
     {
+      "slug": "태국식당356-양재역",
+      "name": "태국식당356 양재역",
+      "area": "양재",
+      "category": "아시안",
+      "priceRange": "12,000~15,000원",
+      "notes": "팟타이꿍 12,000 / 똠얌꿍 15,000 · 11:30-22:00 (15:00-17:00 브레이크) · 도보 약 189m",
+      "tags": [
+        "태국음식"
+      ],
+      "addedAt": "2026-11-06T04:20:28.647Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
+      "mentionCount": 2,
+      "subcategory": "태국음식",
+      "menu": [
+        {
+          "name": "팟타이꿍",
+          "price": 12000
+        },
+        {
+          "name": "똠얌꿍",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMeters": 189,
+      "location": {
+        "lat": 37.484108455792175,
+        "lng": 127.0366106613926
+      },
+      "place": {
+        "kakaoId": "957969643",
+        "kakaoUrl": "https://place.map.kakao.com/957969643",
+        "address": "서울 서초구 남부순환로350길 19-16"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:29.851Z",
+      "rating": {
+        "score": 4.3,
+        "count": 268,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4072976823389595768&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:29.851Z"
+      }
+    },
+    {
       "slug": "팔향-양재점",
       "name": "팔향 양재점",
       "area": "양재",
       "category": "중식",
       "priceRange": "10,000~12,000원",
-      "notes": "샤오롱바오 10,000 / 팔향짜장면 12,000 · 11:30-22:00 · 도보 약 279m",
+      "notes": "샤오롱바오 10,000 / 팔향짜장면 12,000 · 11:30-22:00 (15:00-17:00 브레이크) · 도보 약 279m",
       "tags": [
         "딤섬",
         "중식"
       ],
       "addedAt": "2026-11-06T04:19:34.202Z",
-      "updatedAt": "2026-11-06T04:20:54.396Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "딤섬·중식",
       "menu": [
@@ -1594,7 +1722,9 @@
       ],
       "hours": {
         "open": "11:30",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 279,
       "location": {
@@ -1626,7 +1756,7 @@
         "라멘"
       ],
       "addedAt": "2026-11-06T04:20:14.923Z",
-      "updatedAt": "2026-11-06T04:21:05.726Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "라멘",
       "menu": [
@@ -1674,7 +1804,7 @@
         "짜장면"
       ],
       "addedAt": "2026-11-06T04:20:29.286Z",
-      "updatedAt": "2026-11-06T04:21:17.886Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "짬뽕·해물덮밥",
       "menu": [
@@ -1721,7 +1851,7 @@
         "돈카츠"
       ],
       "addedAt": "2026-11-06T04:18:54.213Z",
-      "updatedAt": "2026-11-06T04:21:16.623Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 2,
       "subcategory": "돈카츠",
       "menu": [
@@ -1771,7 +1901,7 @@
         "순대국"
       ],
       "addedAt": "2026-11-06T04:19:29.610Z",
-      "updatedAt": "2026-11-06T04:19:29.610Z",
+      "updatedAt": "2026-11-09T08:25:20.510Z",
       "mentionCount": 1,
       "subcategory": "순대·순대국",
       "menu": [
@@ -1815,7 +1945,7 @@
         "덮밥"
       ],
       "addedAt": "2026-11-06T04:20:35.673Z",
-      "updatedAt": "2026-11-06T04:20:35.673Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "쭈꾸미·덮밥",
       "menu": [
@@ -1857,13 +1987,13 @@
       "area": "양재",
       "category": "한식",
       "priceRange": "12,000~13,000원",
-      "notes": "육개장 12,000 / 육칼(육개장+칼국수) 13,000 · 11:00-22:00 · 도보 약 38m",
+      "notes": "육개장 12,000 / 육칼(육개장+칼국수) 13,000 · 11:00-22:00 (16:00-17:00 브레이크) · 도보 약 38m",
       "tags": [
         "육개장",
         "한식"
       ],
       "addedAt": "2026-11-06T04:19:39.998Z",
-      "updatedAt": "2026-11-06T04:19:39.998Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "육개장·집밥",
       "menu": [
@@ -1878,7 +2008,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "16:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 38,
       "location": {
@@ -1905,12 +2037,12 @@
       "area": "양재",
       "category": "일식",
       "priceRange": "10,000~12,500원",
-      "notes": "로스까스 10,000 / 코돈부르치즈돈까스 12,500 · 11:00-21:20 · 도보 약 464m",
+      "notes": "로스까스 10,000 / 코돈부르치즈돈까스 12,500 · 11:00-21:20 (14:00-16:00 브레이크) · 도보 약 464m",
       "tags": [
         "돈까스"
       ],
       "addedAt": "2026-11-06T04:20:23.974Z",
-      "updatedAt": "2026-11-06T04:20:23.974Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "돈까스",
       "menu": [
@@ -1925,7 +2057,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "21:20"
+        "close": "21:20",
+        "breakStart": "14:00",
+        "breakEnd": "16:00"
       },
       "walkMeters": 464,
       "location": {
@@ -1952,13 +2086,13 @@
       "area": "양재",
       "category": "양식",
       "priceRange": "11,500~12,500원",
-      "notes": "에그후라이돈까스 11,500 / 매운에그후라이돈까스 12,500 · 10:00-20:00 · 도보 약 258m",
+      "notes": "에그후라이돈까스 11,500 / 매운에그후라이돈까스 12,500 · 10:00-20:00 (15:00-17:30 브레이크) · 도보 약 258m",
       "tags": [
         "돈까스",
         "경양식"
       ],
       "addedAt": "2026-11-06T04:19:10.469Z",
-      "updatedAt": "2026-11-06T04:19:10.469Z",
+      "updatedAt": "2026-11-09T08:25:23.585Z",
       "mentionCount": 1,
       "subcategory": "돈까스·경양식",
       "menu": [
@@ -1973,7 +2107,9 @@
       ],
       "hours": {
         "open": "10:00",
-        "close": "20:00"
+        "close": "20:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:30"
       },
       "walkMeters": 258,
       "location": {
@@ -2000,7 +2136,7 @@
       "area": "서울 서초구 남부순환로356길 33",
       "tags": [],
       "addedAt": "2026-11-06T04:20:34.281Z",
-      "updatedAt": "2026-11-06T04:20:34.281Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "location": {
         "lat": 37.4835583322624,
@@ -2033,13 +2169,13 @@
       "area": "양재",
       "category": "일식",
       "priceRange": "13,000원",
-      "notes": "대구탕(점심메뉴) 13,000 / 알탕(점심메뉴) 13,000 · 11:00-22:00 · 도보 약 407m",
+      "notes": "대구탕(점심메뉴) 13,000 / 알탕(점심메뉴) 13,000 · 11:00-22:00 (15:00-16:30 브레이크) · 도보 약 407m",
       "tags": [
         "참치",
         "회"
       ],
       "addedAt": "2026-11-06T04:19:32.866Z",
-      "updatedAt": "2026-11-06T04:19:32.866Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "참치회·점심메뉴",
       "menu": [
@@ -2054,7 +2190,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "16:30"
       },
       "walkMeters": 407,
       "location": {
@@ -2086,7 +2224,7 @@
         "마라탕"
       ],
       "addedAt": "2026-11-06T04:19:37.946Z",
-      "updatedAt": "2026-11-06T04:19:37.946Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "마라탕",
       "menu": [
@@ -2134,7 +2272,7 @@
         "냉면"
       ],
       "addedAt": "2026-11-06T04:20:38.238Z",
-      "updatedAt": "2026-11-06T04:20:38.238Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "돼지갈비·냉면",
       "menu": [
@@ -2176,13 +2314,13 @@
       "area": "양재",
       "category": "한식",
       "priceRange": "7,500~8,000원",
-      "notes": "살얼음동동 물냉면 7,500 / 미나리비빔냉면 8,000 · 11:00-22:00 · 도보 약 397m",
+      "notes": "살얼음동동 물냉면 7,500 / 미나리비빔냉면 8,000 · 11:00-22:00 (15:00-17:00 브레이크) · 도보 약 397m",
       "tags": [
         "찌개",
         "냉면"
       ],
       "addedAt": "2026-11-06T04:19:00.979Z",
-      "updatedAt": "2026-11-06T04:19:00.979Z",
+      "updatedAt": "2026-11-09T08:24:53.269Z",
       "mentionCount": 1,
       "subcategory": "찌개·냉면",
       "menu": [
@@ -2197,7 +2335,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 397,
       "location": {
@@ -2212,36 +2352,18 @@
       "ratingCheckedAt": "2026-11-06T06:08:22.414Z"
     },
     {
-      "slug": "미다재",
-      "name": "미다재",
-      "category": "한식",
-      "priceRange": "15,000원",
-      "notes": "시레기밥 15,000원. 그 이상은 예산 초과",
-      "tags": [],
-      "addedAt": "2026-11-06T04:18:50.983Z",
-      "updatedAt": "2026-11-06T04:21:18.136Z",
-      "mentionCount": 1,
-      "menu": [
-        {
-          "name": "시레기밥",
-          "price": 15000
-        }
-      ],
-      "ratingCheckedAt": "2026-11-06T06:08:23.879Z"
-    },
-    {
       "slug": "미면정-양재칼국수-샤브샤브",
       "name": "미면정 양재칼국수 샤브샤브",
       "area": "양재",
       "category": "한식",
       "priceRange": "6,000~13,000원",
-      "notes": "콩국수(보쌈+열무보리밥) 13,000 / 배추만두 4알 6,000 · 11:00-21:00 · 도보 약 473m",
+      "notes": "콩국수(보쌈+열무보리밥) 13,000 / 배추만두 4알 6,000 · 11:00-21:00 (15:00-16:50 브레이크) · 도보 약 473m",
       "tags": [
         "칼국수",
         "샤브샤브"
       ],
       "addedAt": "2026-11-06T04:20:22.792Z",
-      "updatedAt": "2026-11-06T04:20:22.792Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "칼국수·샤브샤브",
       "menu": [
@@ -2256,7 +2378,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "21:00"
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "16:50"
       },
       "walkMeters": 473,
       "location": {
@@ -2282,7 +2406,7 @@
       "name": "부대옥",
       "tags": [],
       "addedAt": "2026-11-06T04:18:51.929Z",
-      "updatedAt": "2026-11-06T04:18:51.929Z",
+      "updatedAt": "2026-11-09T08:24:41.899Z",
       "mentionCount": 1,
       "ratingCheckedAt": "2026-11-06T06:08:24.856Z"
     },
@@ -2298,7 +2422,7 @@
         "경양식"
       ],
       "addedAt": "2026-11-06T04:20:33.495Z",
-      "updatedAt": "2026-11-06T04:20:33.495Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "돈까스·경양식",
       "menu": [
@@ -2340,13 +2464,13 @@
       "area": "양재",
       "category": "일식",
       "priceRange": "9,000~10,000원",
-      "notes": "돈코츠라멘 10,000 / 냉모밀·비빔모밀 9,000 · 07:30-22:00 · 도보 약 108m",
+      "notes": "돈코츠라멘 10,000 / 냉모밀·비빔모밀 9,000 · 07:30-22:00 (15:00-16:00 브레이크) · 도보 약 108m",
       "tags": [
         "우동",
         "라멘"
       ],
       "addedAt": "2026-11-06T04:20:36.341Z",
-      "updatedAt": "2026-11-06T04:20:36.341Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "우동·덮밥",
       "menu": [
@@ -2361,7 +2485,9 @@
       ],
       "hours": {
         "open": "07:30",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "16:00"
       },
       "walkMeters": 108,
       "location": {
@@ -2393,7 +2519,7 @@
         "파스타"
       ],
       "addedAt": "2026-11-06T04:19:02.222Z",
-      "updatedAt": "2026-11-06T04:19:02.222Z",
+      "updatedAt": "2026-11-09T08:25:20.513Z",
       "mentionCount": 1,
       "subcategory": "파스타",
       "menu": [
@@ -2430,12 +2556,72 @@
       }
     },
     {
+      "slug": "시래정-양재점",
+      "name": "시래정 양재점",
+      "area": "양재",
+      "category": "한식",
+      "priceRange": "12,000~14,000원",
+      "notes": "꼬막 시래기밥 정식 14,000 / 가마솥 소고기 시래정국 12,000 · 10:30-21:00 (15:00-17:00 브레이크) · 도보 약 262m",
+      "tags": [
+        "양재",
+        "한식",
+        "시래기",
+        "국밥",
+        "도보10분권",
+        "신규조사"
+      ],
+      "addedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 강남대로39길 15-10 한라비발디 스튜디오193 지하1층 103호",
+      "curated": {
+        "by": "Claude 웹조사 (2026-11-06)",
+        "url": "https://polle.com/place/28syuP"
+      },
+      "subcategory": "시래기국·시래기밥",
+      "menu": [
+        {
+          "name": "꼬막 시래기밥 정식",
+          "price": 14000
+        },
+        {
+          "name": "가마솥 소고기 시래정국",
+          "price": 12000
+        }
+      ],
+      "location": {
+        "lat": 37.48578568281491,
+        "lng": 127.03195307055152
+      },
+      "place": {
+        "kakaoId": "783020696",
+        "kakaoUrl": "https://place.map.kakao.com/783020696",
+        "address": "서울 서초구 강남대로39길 15-10"
+      },
+      "walkMeters": 265,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:34.598Z",
+      "rating": {
+        "score": 4.2,
+        "count": 295,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3228281619134012570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:34.598Z"
+      },
+      "hours": {
+        "open": "10:30",
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      }
+    },
+    {
       "slug": "식감이야기-양재역점",
       "name": "식감이야기 양재역점",
       "area": "서울 서초구 남부순환로350길 19-26",
       "tags": [],
       "addedAt": "2026-11-06T04:20:33.842Z",
-      "updatedAt": "2026-11-06T04:20:33.842Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "location": {
         "lat": 37.4841606482201,
@@ -2463,45 +2649,13 @@
       "walkFromMap": true
     },
     {
-      "slug": "신향원양꼬치마라탕-양재역",
-      "name": "신향원양꼬치마라탕 양재역",
-      "area": "양재",
-      "category": "중식",
-      "priceRange": "11,000~15,000원",
-      "notes": "차돌짬뽕 11,000 / 꿔보러우 15,000 · 11:00-23:00 · 도보 약 259m",
-      "tags": [
-        "마라탕",
-        "중식"
-      ],
-      "addedAt": "2026-11-06T04:20:27.975Z",
-      "updatedAt": "2026-11-06T04:20:27.975Z",
-      "mentionCount": 1,
-      "subcategory": "마라탕·중식",
-      "menu": [
-        {
-          "name": "차돌짬뽕",
-          "price": 11000
-        },
-        {
-          "name": "꿔보러우",
-          "price": 15000
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "23:00"
-      },
-      "walkMeters": 259,
-      "ratingCheckedAt": "2026-11-06T06:08:26.490Z"
-    },
-    {
       "slug": "양재순대",
       "name": "양재순대",
       "area": "양재",
       "category": "한식",
       "tags": [],
       "addedAt": "2026-11-06T04:19:08.108Z",
-      "updatedAt": "2026-11-06T04:19:08.108Z",
+      "updatedAt": "2026-11-09T08:25:22.221Z",
       "mentionCount": 1,
       "subcategory": "순대",
       "location": {
@@ -2540,7 +2694,7 @@
         "곰탕"
       ],
       "addedAt": "2026-11-06T04:20:30.662Z",
-      "updatedAt": "2026-11-06T04:20:30.662Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "보쌈·돼지곰탕",
       "menu": [
@@ -2573,13 +2727,13 @@
       "area": "양재",
       "category": "한식",
       "priceRange": "7,000~9,000원",
-      "notes": "차돌된장찌개 7,000 / 키조개관자+묵은지 9,000 · 10:00-22:50 · 도보 약 423m",
+      "notes": "차돌된장찌개 7,000 / 키조개관자+묵은지 9,000 · 10:00-22:50 (15:00-17:00 브레이크) · 도보 약 423m",
       "tags": [
         "차돌박이",
         "찌개"
       ],
       "addedAt": "2026-11-06T04:18:59.462Z",
-      "updatedAt": "2026-11-06T04:18:59.462Z",
+      "updatedAt": "2026-11-09T08:24:51.023Z",
       "mentionCount": 1,
       "subcategory": "차돌박이·찌개",
       "menu": [
@@ -2594,7 +2748,9 @@
       ],
       "hours": {
         "open": "10:00",
-        "close": "22:50"
+        "close": "22:50",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 423,
       "location": {
@@ -2627,7 +2783,7 @@
         "한식"
       ],
       "addedAt": "2026-11-06T04:20:36.920Z",
-      "updatedAt": "2026-11-06T04:20:36.920Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "만두국·손만두전골",
       "menu": [
@@ -2669,13 +2825,13 @@
       "area": "양재",
       "category": "한식",
       "priceRange": "14,000~15,000원",
-      "notes": "돌솥 곤드레밥 14,000 / 두부구이 15,000 · 11:30-22:00 · 도보 약 438m",
+      "notes": "돌솥 곤드레밥 14,000 / 두부구이 15,000 · 11:30-22:00 (16:00-17:00 브레이크) · 도보 약 438m",
       "tags": [
         "산채",
         "한식"
       ],
       "addedAt": "2026-11-06T04:20:24.601Z",
-      "updatedAt": "2026-11-06T04:20:24.601Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "산채정식·나물",
       "menu": [
@@ -2690,7 +2846,9 @@
       ],
       "hours": {
         "open": "11:30",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "16:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 438,
       "location": {
@@ -2717,12 +2875,12 @@
       "area": "양재",
       "category": "한식",
       "priceRange": "11,000~13,000원",
-      "notes": "스팸부대찌개 13,000 / 기본부대찌개 11,000 · 11:00-21:00 · 도보 약 351m",
+      "notes": "스팸부대찌개 13,000 / 기본부대찌개 11,000 · 11:00-21:00 (14:30-17:00 브레이크) · 도보 약 351m",
       "tags": [
         "부대찌개"
       ],
       "addedAt": "2026-11-06T04:20:34.954Z",
-      "updatedAt": "2026-11-06T04:20:34.954Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "부대찌개",
       "menu": [
@@ -2737,7 +2895,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "21:00"
+        "close": "21:00",
+        "breakStart": "14:30",
+        "breakEnd": "17:00"
       },
       "walkMeters": 351,
       "location": {
@@ -2770,7 +2930,7 @@
         "한식"
       ],
       "addedAt": "2026-11-06T04:20:37.608Z",
-      "updatedAt": "2026-11-06T04:20:37.608Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "순두부전골·한식",
       "menu": [
@@ -2818,7 +2978,7 @@
         "닭곰탕"
       ],
       "addedAt": "2026-11-06T04:20:32.045Z",
-      "updatedAt": "2026-11-06T04:20:32.045Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "닭칼국수·닭곰탕",
       "menu": [
@@ -2855,17 +3015,85 @@
       }
     },
     {
+      "slug": "유월의-보리-양재점",
+      "name": "유월의 보리 양재점",
+      "category": "한식",
+      "subcategory": "솥밥",
+      "priceRange": "14,000원",
+      "notes": "솥밥 정식 14,000",
+      "tags": [
+        "솥밥"
+      ],
+      "addedAt": "2026-08-28T02:25:00.000Z",
+      "updatedAt": "2026-11-09T08:24:39.237Z",
+      "mentionCount": 1,
+      "menu": [
+        {
+          "name": "솥밥 정식",
+          "price": 14000
+        }
+      ],
+      "location": {
+        "lat": 37.485233326189,
+        "lng": 127.04085123601
+      },
+      "place": {
+        "kakaoId": "1023716899",
+        "kakaoUrl": "https://place.map.kakao.com/1023716899",
+        "address": "서울 서초구 남부순환로 2652"
+      },
+      "naver": {
+        "placeId": "1889387567",
+        "url": "https://map.naver.com/p/entry/place/1889387567"
+      },
+      "ratingCheckedAt": "2026-11-06T06:57:21.094Z",
+      "rating": {
+        "score": 4.6,
+        "count": 10,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4029114487450602982&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:57:21.094Z"
+      },
+      "walkMeters": 542,
+      "walkFromMap": true,
+      "area": "양재"
+    },
+    {
+      "slug": "이가원항아리수제비-도곡점",
+      "name": "이가원항아리수제비 도곡점",
+      "category": "한식",
+      "subcategory": "수제비",
+      "tags": [
+        "수제비"
+      ],
+      "addedAt": "2026-08-28T02:25:00.000Z",
+      "updatedAt": "2026-11-09T08:24:39.849Z",
+      "mentionCount": 1,
+      "naver": {
+        "placeId": "2011667416",
+        "url": "https://map.naver.com/p/entry/place/2011667416"
+      },
+      "ratingCheckedAt": "2026-11-06T06:57:20.683Z",
+      "rating": {
+        "score": 4,
+        "count": 2,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=6805267969683539577&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:57:20.684Z"
+      }
+    },
+    {
       "slug": "이올로화덕피자",
       "name": "이올로화덕피자",
       "area": "양재",
       "category": "양식",
       "priceRange": "12,000~15,000원",
-      "notes": "마리나라 피자 15,000 / 오리엔탈샐러드 12,000 · 11:00-21:30 · 도보 약 217m",
+      "notes": "마리나라 피자 15,000 / 오리엔탈샐러드 12,000 · 11:00-21:30 (15:00-17:00 브레이크) · 도보 약 217m",
       "tags": [
         "피자"
       ],
       "addedAt": "2026-11-06T04:20:19.368Z",
-      "updatedAt": "2026-11-06T04:20:19.368Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "화덕피자",
       "menu": [
@@ -2880,7 +3108,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "21:30"
+        "close": "21:30",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 217,
       "location": {
@@ -2913,7 +3143,7 @@
         "한식"
       ],
       "addedAt": "2026-11-06T04:20:32.637Z",
-      "updatedAt": "2026-11-06T04:20:32.637Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "생태찌개",
       "menu": [
@@ -2955,13 +3185,13 @@
       "area": "양재",
       "category": "한식",
       "priceRange": "10,000~13,000원",
-      "notes": "전주비빔밥 10,000 / 코다리정식 13,000 · 11:20-21:30 · 도보 약 383m",
+      "notes": "전주비빔밥 10,000 / 코다리정식 13,000 · 11:20-21:30 (15:00-17:00 브레이크) · 도보 약 383m",
       "tags": [
         "한정식",
         "비빔밥"
       ],
       "addedAt": "2026-11-06T04:19:37.303Z",
-      "updatedAt": "2026-11-06T04:19:37.303Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "한정식·비빔밥",
       "menu": [
@@ -2976,7 +3206,9 @@
       ],
       "hours": {
         "open": "11:20",
-        "close": "21:30"
+        "close": "21:30",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
       },
       "walkMeters": 383,
       "location": {
@@ -3003,13 +3235,13 @@
       "area": "양재",
       "category": "한식",
       "priceRange": "14,000~15,000원",
-      "notes": "갈치구이정식 14,000 / 해초활어덮밥 15,000 · 11:30-22:00 · 도보 약 29m",
+      "notes": "갈치구이정식 14,000 / 해초활어덮밥 15,000 · 11:30-22:00 (14:00-16:30 브레이크) · 도보 약 29m",
       "tags": [
         "회",
         "덮밥"
       ],
       "addedAt": "2026-11-06T04:20:31.308Z",
-      "updatedAt": "2026-11-06T04:20:31.308Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "횟집·회덮밥",
       "menu": [
@@ -3024,7 +3256,9 @@
       ],
       "hours": {
         "open": "11:30",
-        "close": "22:00"
+        "close": "22:00",
+        "breakStart": "14:00",
+        "breakEnd": "16:30"
       },
       "walkMeters": 29,
       "location": {
@@ -3057,7 +3291,7 @@
         "한식"
       ],
       "addedAt": "2026-11-06T04:20:21.412Z",
-      "updatedAt": "2026-11-06T04:20:21.412Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "김치찌개",
       "menu": [
@@ -3099,12 +3333,12 @@
       "area": "양재",
       "category": "일식",
       "priceRange": "9,000원",
-      "notes": "쿠니라멘 9,000 / 핫쿠니라멘 9,000 · 11:00-21:00 · 도보 약 116m",
+      "notes": "쿠니라멘 9,000 / 핫쿠니라멘 9,000 · 11:00-21:00 (15:20-16:30 브레이크) · 도보 약 116m",
       "tags": [
         "라멘"
       ],
       "addedAt": "2026-11-06T04:20:23.394Z",
-      "updatedAt": "2026-11-06T04:20:23.394Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "라멘",
       "menu": [
@@ -3119,7 +3353,9 @@
       ],
       "hours": {
         "open": "11:00",
-        "close": "21:00"
+        "close": "21:00",
+        "breakStart": "15:20",
+        "breakEnd": "16:30"
       },
       "walkMeters": 116,
       "location": {
@@ -3151,7 +3387,7 @@
         "수제버거"
       ],
       "addedAt": "2026-11-06T04:19:11.683Z",
-      "updatedAt": "2026-11-06T04:19:11.683Z",
+      "updatedAt": "2026-11-09T08:25:23.950Z",
       "mentionCount": 1,
       "subcategory": "수제버거",
       "menu": [
@@ -3188,53 +3424,6 @@
       }
     },
     {
-      "slug": "태국식당356-양재역",
-      "name": "태국식당356 양재역",
-      "area": "양재",
-      "category": "아시안",
-      "priceRange": "12,000~15,000원",
-      "notes": "팟타이꿍 12,000 / 똠얌꿍 15,000 · 11:30-22:00 · 도보 약 189m",
-      "tags": [
-        "태국음식"
-      ],
-      "addedAt": "2026-11-06T04:20:28.647Z",
-      "updatedAt": "2026-11-06T04:20:28.647Z",
-      "mentionCount": 1,
-      "subcategory": "태국음식",
-      "menu": [
-        {
-          "name": "팟타이꿍",
-          "price": 12000
-        },
-        {
-          "name": "똠얌꿍",
-          "price": 15000
-        }
-      ],
-      "hours": {
-        "open": "11:30",
-        "close": "22:00"
-      },
-      "walkMeters": 189,
-      "location": {
-        "lat": 37.484108455792175,
-        "lng": 127.0366106613926
-      },
-      "place": {
-        "kakaoId": "957969643",
-        "kakaoUrl": "https://place.map.kakao.com/957969643",
-        "address": "서울 서초구 남부순환로350길 19-16"
-      },
-      "ratingCheckedAt": "2026-11-06T06:08:29.851Z",
-      "rating": {
-        "score": 4.3,
-        "count": 268,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=4072976823389595768&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:08:29.851Z"
-      }
-    },
-    {
       "slug": "후토루-양재점",
       "name": "후토루 양재점",
       "area": "양재",
@@ -3246,7 +3435,7 @@
         "분식"
       ],
       "addedAt": "2026-11-06T04:20:27.256Z",
-      "updatedAt": "2026-11-06T04:20:27.256Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
       "mentionCount": 1,
       "subcategory": "김밥·후토마키",
       "menu": [
@@ -3283,129 +3472,69 @@
       }
     },
     {
-      "slug": "이가원항아리수제비-도곡점",
-      "name": "이가원항아리수제비 도곡점",
-      "category": "한식",
-      "subcategory": "수제비",
-      "tags": [
-        "수제비"
-      ],
-      "addedAt": "2026-08-28T02:25:00.000Z",
-      "updatedAt": "2026-11-06T06:56:36.469Z",
-      "mentionCount": 1,
-      "naver": {
-        "placeId": "2011667416",
-        "url": "https://map.naver.com/p/entry/place/2011667416"
-      },
-      "ratingCheckedAt": "2026-11-06T06:57:20.683Z",
-      "rating": {
-        "score": 4,
-        "count": 2,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=6805267969683539577&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:57:20.684Z"
-      }
-    },
-    {
-      "slug": "유월의-보리-양재점",
-      "name": "유월의 보리 양재점",
-      "category": "한식",
-      "subcategory": "솥밥",
-      "priceRange": "14,000원",
-      "notes": "솥밥 정식 14,000",
-      "tags": [
-        "솥밥"
-      ],
-      "addedAt": "2026-08-28T02:25:00.000Z",
-      "updatedAt": "2026-11-06T06:56:36.469Z",
-      "mentionCount": 1,
-      "menu": [
-        {
-          "name": "솥밥 정식",
-          "price": 14000
-        }
-      ],
-      "location": {
-        "lat": 37.485233326189,
-        "lng": 127.04085123601
-      },
-      "place": {
-        "kakaoId": "1023716899",
-        "kakaoUrl": "https://place.map.kakao.com/1023716899",
-        "address": "서울 서초구 남부순환로 2652"
-      },
-      "naver": {
-        "placeId": "1889387567",
-        "url": "https://map.naver.com/p/entry/place/1889387567"
-      },
-      "ratingCheckedAt": "2026-11-06T06:57:21.094Z",
-      "rating": {
-        "score": 4.6,
-        "count": 10,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=4029114487450602982&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:57:21.094Z"
-      },
-      "walkMeters": 542,
-      "walkFromMap": true
-    },
-    {
-      "slug": "미몽-양재역점",
-      "name": "미몽 양재역점",
+      "slug": "고려향",
+      "name": "고려향",
       "area": "양재",
       "category": "중식",
-      "notes": "계절메뉴 냉짬뽕 10,000 / 중화냉면 10,000 (상시 메뉴 가격 미확인) · 11:30-23:00",
+      "priceRange": "8,000원",
+      "notes": "짜장면 8,000 / 짬뽕 9,000 / 삼선짬뽕 11,000",
       "tags": [
         "양재",
         "중식",
-        "짬뽕",
+        "짜장면",
+        "가성비",
+        "도보10분권",
         "신규조사"
       ],
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 서초구 강남대로34길 27-4",
+      "address": "서울 서초구 강남대로 156-1 극동빌딩 1층",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/3NvmR6"
+        "url": "https://polle.com/place/30AZEV"
       },
       "menu": [
         {
-          "name": "계절메뉴 냉짬뽕",
-          "price": 10000
+          "name": "짜장면",
+          "price": 8000
+        },
+        {
+          "name": "짬뽕",
+          "price": 9000
+        },
+        {
+          "name": "삼선짬뽕",
+          "price": 11000
         }
       ],
-      "hours": {
-        "open": "11:30",
-        "close": "23:00"
-      },
       "location": {
-        "lat": 37.4835495619062,
-        "lng": 127.037467419986
+        "lat": 37.4787827120623,
+        "lng": 127.039050107904
       },
       "place": {
-        "kakaoId": "1210437091",
-        "kakaoUrl": "https://place.map.kakao.com/1210437091",
-        "address": "서울 서초구 강남대로34길 27-4"
+        "kakaoId": "704188840",
+        "kakaoUrl": "https://place.map.kakao.com/704188840",
+        "address": "서울 서초구 강남대로 156-1"
       },
-      "walkMeters": 283,
+      "walkMeters": 777,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:24.531Z",
+      "ratingCheckedAt": "2026-11-06T08:45:32.434Z",
       "rating": {
-        "score": 3.6,
-        "count": 27,
+        "score": 4,
+        "count": 2,
         "source": "google",
-        "url": "https://maps.google.com/?cid=524405568271111562&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:24.532Z"
+        "url": "https://maps.google.com/?cid=7778891458362160399&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:32.434Z"
       }
     },
     {
-      "slug": "치킨영토-양재-점심뷔페",
-      "name": "치킨영토 양재 점심뷔페",
+      "slug": "깐부치킨-양재역점-점심뷔페",
+      "name": "깐부치킨 양재역점 점심뷔페",
       "area": "양재",
       "category": "한식",
-      "priceRange": "9,500원",
-      "notes": "점심 한식뷔페 9,500 · 평일만, 주말·공휴일 휴무 · 11:00-14:00",
+      "priceRange": "9,900원",
+      "notes": "점심 한식뷔페 9,900~ · 11:00-14:00",
       "tags": [
         "양재",
         "한식",
@@ -3416,35 +3545,128 @@
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 서초구 남부순환로350길 29-3",
+      "address": "서울 서초구 강남대로 243 1층",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://www.daangn.com/kr/local-profile/%EC%B9%98%ED%82%A8%EC%98%81%ED%86%A0%EC%96%91%EC%9E%AC%EC%A0%90%EC%8B%AC%EB%B7%94%ED%8E%98-t3a5qqv91f6i/"
+        "url": "https://www.daangn.com/kr/local-profile/%EA%B9%90%EB%B6%80%EC%B9%98%ED%82%A8%EC%96%91%EC%9E%AC%EC%97%AD%EC%A0%90%EC%A0%90%EC%8B%AC%EB%B7%94%ED%8E%98-4j7v5iqnqqiy/"
       },
       "subcategory": "한식뷔페",
-      "menu": [
-        {
-          "name": "점심 한식뷔페",
-          "price": 9500
-        }
-      ],
       "hours": {
         "open": "11:00",
         "close": "14:00"
       },
       "location": {
-        "lat": 37.4836427122966,
-        "lng": 127.036358299282
+        "lat": 37.4851359560245,
+        "lng": 127.033293431719
       },
-      "walkMeters": 199,
+      "walkMeters": 129,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:25.536Z",
+      "ratingCheckedAt": "2026-11-06T08:45:31.002Z",
       "rating": {
         "score": 3.7,
-        "count": 154,
+        "count": 368,
         "source": "google",
-        "url": "https://maps.google.com/?cid=7007181789264704543&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:25.536Z"
+        "url": "https://maps.google.com/?cid=7676089975587368515&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:31.002Z"
+      }
+    },
+    {
+      "slug": "두부1번지",
+      "name": "두부1번지",
+      "area": "양재",
+      "category": "한식",
+      "priceRange": "10,000원",
+      "notes": "비지찌개 10,000 / 두부조림정식 10,000 / 닭개장 10,000 · 10:00-20:00 (15:00-17:00 휴게)",
+      "tags": [
+        "양재",
+        "한식",
+        "두부",
+        "찌개",
+        "신규조사"
+      ],
+      "addedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-06T09:00:00.000Z",
+      "mentionCount": 0,
+      "address": "서울 서초구 강남대로30길 55",
+      "curated": {
+        "by": "Claude 웹조사 (2026-11-06)",
+        "url": "https://www.daangn.com/kr/local-profile/%EB%91%90%EB%B6%801%EB%B2%88%EC%A7%80-esrqu65pwqp4/"
+      },
+      "subcategory": "두부요리·한식",
+      "menu": [
+        {
+          "name": "비지찌개",
+          "price": 10000
+        },
+        {
+          "name": "두부조림정식",
+          "price": 10000
+        },
+        {
+          "name": "닭개장",
+          "price": 10000
+        }
+      ],
+      "location": {
+        "lat": 37.4826116360008,
+        "lng": 127.040137509184
+      },
+      "place": {
+        "kakaoId": "540306071",
+        "kakaoUrl": "https://place.map.kakao.com/540306071",
+        "address": "서울 서초구 강남대로30길 55"
+      },
+      "walkMeters": 540,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:26.322Z"
+    },
+    {
+      "slug": "디오디아",
+      "name": "디오디아",
+      "area": "양재",
+      "category": "한식",
+      "priceRange": "79,000원",
+      "notes": "주중 런치 79,000 (12:00-14:30) / 주말 런치 109,000 · 주중 런치 12:00-14:30",
+      "tags": [
+        "양재",
+        "뷔페",
+        "회식",
+        "특별한날",
+        "신규조사"
+      ],
+      "addedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-06T09:00:00.000Z",
+      "mentionCount": 0,
+      "address": "서울 서초구 강남대로 213 엘타워 4층",
+      "curated": {
+        "by": "Claude 웹조사 (2026-11-06)",
+        "url": "https://polle.com/place/4OZqtI"
+      },
+      "subcategory": "뷔페",
+      "menu": [
+        {
+          "name": "주말 런치",
+          "price": 109000
+        }
+      ],
+      "location": {
+        "lat": 37.48235358031832,
+        "lng": 127.03566459833955
+      },
+      "place": {
+        "kakaoId": "7850610",
+        "kakaoUrl": "https://place.map.kakao.com/7850610",
+        "address": "서울 서초구 강남대로 213"
+      },
+      "walkMeters": 292,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:27.431Z",
+      "rating": {
+        "score": 4,
+        "count": 1428,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=18279512968195817102&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:27.431Z"
       }
     },
     {
@@ -3500,106 +3722,277 @@
       }
     },
     {
-      "slug": "두부1번지",
-      "name": "두부1번지",
+      "slug": "로마옥-도곡",
+      "name": "로마옥 도곡",
       "area": "양재",
-      "category": "한식",
-      "priceRange": "10,000원",
-      "notes": "비지찌개 10,000 / 두부조림정식 10,000 / 닭개장 10,000 · 10:00-20:00 (15:00-17:00 휴게)",
+      "category": "샐러드",
+      "priceRange": "16,000원",
+      "notes": "잣 카프레제 샐러드 16,000 / 치킨 꼬르동 시저샐러드 16,000",
       "tags": [
         "양재",
-        "한식",
-        "두부",
-        "찌개",
+        "양식",
+        "샐러드",
+        "도보10분권",
         "신규조사"
       ],
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 서초구 강남대로30길 55",
+      "address": "서울 강남구 강남대로48길 11 1층",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://www.daangn.com/kr/local-profile/%EB%91%90%EB%B6%801%EB%B2%88%EC%A7%80-esrqu65pwqp4/"
+        "url": "https://polle.com/place/2nVzed"
       },
-      "subcategory": "두부요리·한식",
+      "subcategory": "샐러드·양식",
       "menu": [
         {
-          "name": "비지찌개",
-          "price": 10000
+          "name": "잣 카프레제 샐러드",
+          "price": 16000
         },
         {
-          "name": "두부조림정식",
-          "price": 10000
-        },
-        {
-          "name": "닭개장",
-          "price": 10000
+          "name": "치킨 꼬르동 시저샐러드",
+          "price": 16000
         }
       ],
       "location": {
-        "lat": 37.4826116360008,
-        "lng": 127.040137509184
+        "lat": 37.48699874957846,
+        "lng": 127.03406912719488
       },
       "place": {
-        "kakaoId": "540306071",
-        "kakaoUrl": "https://place.map.kakao.com/540306071",
-        "address": "서울 서초구 강남대로30길 55"
+        "kakaoId": "237005010",
+        "kakaoUrl": "https://place.map.kakao.com/237005010",
+        "address": "서울 강남구 강남대로48길 11"
       },
-      "walkMeters": 540,
+      "walkMeters": 244,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:26.322Z"
+      "ratingCheckedAt": "2026-11-06T08:45:31.719Z",
+      "rating": {
+        "score": 4.5,
+        "count": 566,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=466623626968031325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:31.719Z"
+      }
     },
     {
-      "slug": "양재-오제섞어-양재본점",
-      "name": "양재 오제섞어 양재본점",
+      "slug": "멘츠루-양재점",
+      "name": "멘츠루 양재점",
       "area": "양재",
-      "category": "한식",
-      "priceRange": "16,900원",
-      "notes": "주꾸미삼겹철판 16,900 / 오제새(오징어+제육+새우) 18,900",
+      "category": "일식",
+      "priceRange": "11,000원",
+      "notes": "쇼유라멘 11,000 / 시오라멘 11,000 / 매운소유(해장라멘) 11,500",
       "tags": [
         "양재",
-        "한식",
-        "철판",
-        "쭈꾸미",
+        "일식",
+        "라멘",
+        "도보10분권",
         "신규조사"
       ],
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 서초구 바우뫼로41길 8",
+      "address": "서울 서초구 강남대로37길 26 산동빌딩 1층",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/3SgNbU"
+        "url": "https://polle.com/place/3pP5EI"
       },
-      "subcategory": "철판·한식",
+      "subcategory": "라멘",
       "menu": [
         {
-          "name": "주꾸미삼겹철판",
-          "price": 16900
+          "name": "쇼유라멘",
+          "price": 11000
         },
         {
-          "name": "오제새(오징어+제육+새우)",
-          "price": 18900
+          "name": "시오라멘",
+          "price": 11000
+        },
+        {
+          "name": "매운소유(해장라멘)",
+          "price": 11500
         }
       ],
       "location": {
-        "lat": 37.4810605349624,
-        "lng": 127.041483236757
+        "lat": 37.48498823686284,
+        "lng": 127.03215059814973
       },
       "place": {
-        "kakaoId": "661927676",
-        "kakaoUrl": "https://place.map.kakao.com/661927676",
-        "address": "서울 서초구 바우뫼로41길 8"
+        "kakaoId": "811739187",
+        "kakaoUrl": "https://place.map.kakao.com/811739187",
+        "address": "서울 서초구 강남대로37길 26"
       },
-      "walkMeters": 732,
+      "walkMeters": 227,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:26.743Z",
+      "ratingCheckedAt": "2026-11-06T08:45:37.367Z",
       "rating": {
-        "score": 4,
-        "count": 304,
+        "score": 4.8,
+        "count": 41,
         "source": "google",
-        "url": "https://maps.google.com/?cid=1360224840523035753&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:26.743Z"
+        "url": "https://maps.google.com/?cid=13804449825094069497&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:37.367Z"
+      }
+    },
+    {
+      "slug": "미몽-양재역점",
+      "name": "미몽 양재역점",
+      "area": "양재",
+      "category": "중식",
+      "notes": "계절메뉴 냉짬뽕 10,000 / 중화냉면 10,000 (상시 메뉴 가격 미확인) · 11:30-23:00",
+      "tags": [
+        "양재",
+        "중식",
+        "짬뽕",
+        "신규조사"
+      ],
+      "addedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-06T09:00:00.000Z",
+      "mentionCount": 0,
+      "address": "서울 서초구 강남대로34길 27-4",
+      "curated": {
+        "by": "Claude 웹조사 (2026-11-06)",
+        "url": "https://polle.com/place/3NvmR6"
+      },
+      "menu": [
+        {
+          "name": "계절메뉴 냉짬뽕",
+          "price": 10000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "23:00"
+      },
+      "location": {
+        "lat": 37.4835495619062,
+        "lng": 127.037467419986
+      },
+      "place": {
+        "kakaoId": "1210437091",
+        "kakaoUrl": "https://place.map.kakao.com/1210437091",
+        "address": "서울 서초구 강남대로34길 27-4"
+      },
+      "walkMeters": 283,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:24.531Z",
+      "rating": {
+        "score": 3.6,
+        "count": 27,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=524405568271111562&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:24.532Z"
+      }
+    },
+    {
+      "slug": "백소정-도곡매봉점",
+      "name": "백소정 도곡매봉점",
+      "area": "양재",
+      "category": "일식",
+      "priceRange": "11,500원",
+      "notes": "로스카츠 11,500 / 냉소바 9,900 / 키소카레 8,900",
+      "tags": [
+        "양재",
+        "일식",
+        "돈카츠",
+        "소바",
+        "도보10분권",
+        "신규조사"
+      ],
+      "addedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-06T09:00:00.000Z",
+      "mentionCount": 0,
+      "address": "서울 강남구 논현로28길 35 대동빌딩 1층 102호",
+      "curated": {
+        "by": "Claude 웹조사 (2026-11-06)",
+        "url": "https://polle.com/place/4Cpybw"
+      },
+      "subcategory": "돈카츠·일식",
+      "menu": [
+        {
+          "name": "로스카츠",
+          "price": 11500
+        },
+        {
+          "name": "냉소바",
+          "price": 9900
+        },
+        {
+          "name": "키소카레",
+          "price": 8900
+        }
+      ],
+      "location": {
+        "lat": 37.48414439058794,
+        "lng": 127.04476610864586
+      },
+      "place": {
+        "kakaoId": "1136397501",
+        "kakaoUrl": "https://place.map.kakao.com/1136397501",
+        "address": "서울 강남구 논현로28길 35"
+      },
+      "walkMeters": 890,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:32.797Z",
+      "rating": {
+        "score": 3.8,
+        "count": 19,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=12289608945885366978&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:32.797Z"
+      }
+    },
+    {
+      "slug": "버거킹-양재점",
+      "name": "버거킹 양재점",
+      "area": "양재",
+      "category": "양식",
+      "priceRange": "9,600원",
+      "notes": "와퍼세트 9,600 / 통새우와퍼세트 10,400 / 통새우와퍼주니어세트 7,800",
+      "tags": [
+        "양재",
+        "양식",
+        "버거",
+        "신규조사"
+      ],
+      "addedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-06T09:00:00.000Z",
+      "mentionCount": 0,
+      "address": "서울 서초구 강남대로 221 양재역 환승주차장 지하1층",
+      "curated": {
+        "by": "Claude 웹조사 (2026-11-06)",
+        "url": "https://polle.com/place/2RtNbw"
+      },
+      "subcategory": "버거",
+      "menu": [
+        {
+          "name": "와퍼세트",
+          "price": 9600
+        },
+        {
+          "name": "통새우와퍼세트",
+          "price": 10400
+        },
+        {
+          "name": "통새우와퍼주니어세트",
+          "price": 7800
+        }
+      ],
+      "location": {
+        "lat": 37.48403714904699,
+        "lng": 127.0340214254793
+      },
+      "place": {
+        "kakaoId": "7900896",
+        "kakaoUrl": "https://place.map.kakao.com/7900896",
+        "address": "서울 서초구 서초동 1376-21"
+      },
+      "walkMeters": 111,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:29.280Z",
+      "rating": {
+        "score": 3.9,
+        "count": 893,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=17998334946403559211&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:29.280Z"
       }
     },
     {
@@ -3660,52 +4053,117 @@
       }
     },
     {
-      "slug": "디오디아",
-      "name": "디오디아",
+      "slug": "샐러디-양재역점",
+      "name": "샐러디 양재역점",
       "area": "양재",
-      "category": "한식",
-      "priceRange": "79,000원",
-      "notes": "주중 런치 79,000 (12:00-14:30) / 주말 런치 109,000 · 주중 런치 12:00-14:30",
+      "category": "샐러드",
+      "priceRange": "11,400원",
+      "notes": "칠리베이컨 포케볼 세트 11,400 / 우삼겹 메밀 누들볼 세트 11,800 / 로스트닭다리살 샐러디 세트 12,400",
       "tags": [
         "양재",
-        "뷔페",
-        "회식",
-        "특별한날",
+        "샐러드",
+        "포케",
+        "가벼운",
+        "도보10분권",
         "신규조사"
       ],
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 서초구 강남대로 213 엘타워 4층",
+      "address": "서울 서초구 강남대로 265 강남로드빌딩 1층",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/4OZqtI"
+        "url": "https://polle.com/place/3eqWqz"
       },
-      "subcategory": "뷔페",
       "menu": [
         {
-          "name": "주말 런치",
-          "price": 109000
+          "name": "칠리베이컨 포케볼 세트",
+          "price": 11400
+        },
+        {
+          "name": "우삼겹 메밀 누들볼 세트",
+          "price": 11800
+        },
+        {
+          "name": "로스트닭다리살 샐러디 세트",
+          "price": 12400
         }
       ],
       "location": {
-        "lat": 37.48235358031832,
-        "lng": 127.03566459833955
+        "lat": 37.48707400736088,
+        "lng": 127.03238328575675
       },
       "place": {
-        "kakaoId": "7850610",
-        "kakaoUrl": "https://place.map.kakao.com/7850610",
-        "address": "서울 서초구 강남대로 213"
+        "kakaoId": "1749506482",
+        "kakaoUrl": "https://place.map.kakao.com/1749506482",
+        "address": "서울 서초구 강남대로 265"
       },
-      "walkMeters": 292,
+      "walkMeters": 320,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:27.431Z",
+      "ratingCheckedAt": "2026-11-06T08:45:35.313Z",
       "rating": {
-        "score": 4,
-        "count": 1428,
+        "score": 4.5,
+        "count": 64,
         "source": "google",
-        "url": "https://maps.google.com/?cid=18279512968195817102&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:27.431Z"
+        "url": "https://maps.google.com/?cid=2490420806926788478&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:35.314Z"
+      }
+    },
+    {
+      "slug": "서울김밥-양재역점",
+      "name": "서울김밥 양재역점",
+      "area": "양재",
+      "category": "분식",
+      "priceRange": "4,500원",
+      "notes": "서울김밥 4,500 / 치즈김밥 5,000 / 참치김밥 5,500",
+      "tags": [
+        "양재",
+        "분식",
+        "김밥",
+        "가성비",
+        "신규조사"
+      ],
+      "addedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-06T09:00:00.000Z",
+      "mentionCount": 0,
+      "address": "서울 서초구 강남대로 224 양재한신휴플러스 1층 103호",
+      "curated": {
+        "by": "Claude 웹조사 (2026-11-06)",
+        "url": "https://polle.com/place/5nypxs"
+      },
+      "subcategory": "김밥·분식",
+      "menu": [
+        {
+          "name": "서울김밥",
+          "price": 4500
+        },
+        {
+          "name": "치즈김밥",
+          "price": 5000
+        },
+        {
+          "name": "참치김밥",
+          "price": 5500
+        }
+      ],
+      "location": {
+        "lat": 37.48400351433854,
+        "lng": 127.03503899973343
+      },
+      "place": {
+        "kakaoId": "1970703529",
+        "kakaoUrl": "https://place.map.kakao.com/1970703529",
+        "address": "서울 서초구 강남대로 224"
+      },
+      "walkMeters": 100,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:28.894Z",
+      "rating": {
+        "score": 3.9,
+        "count": 38,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3530266668122922473&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:28.894Z"
       }
     },
     {
@@ -3823,492 +4281,105 @@
       }
     },
     {
-      "slug": "콩부자-전주콩나물국밥-양재역점",
-      "name": "콩부자 전주콩나물국밥 양재역점",
+      "slug": "양재-오제섞어-양재본점",
+      "name": "양재 오제섞어 양재본점",
       "area": "양재",
       "category": "한식",
-      "notes": "메뉴·가격 미확인",
+      "priceRange": "16,900원",
+      "notes": "주꾸미삼겹철판 16,900 / 오제새(오징어+제육+새우) 18,900",
       "tags": [
         "양재",
         "한식",
-        "국밥",
-        "콩나물국밥",
+        "철판",
+        "쭈꾸미",
         "신규조사"
       ],
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 강남구 남부순환로359길 8 1층",
+      "address": "서울 서초구 바우뫼로41길 8",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://www.daangn.com/kr/local-profile/%EC%BD%A9%EB%B6%80%EC%9E%90-%EC%A0%84%EC%A3%BC%EC%BD%A9%EB%82%98%EB%AC%BC%EA%B5%AD%EB%B0%A5-%EC%96%91%EC%9E%AC%EC%97%AD%EC%A0%90-ezm687phzqi7/"
+        "url": "https://polle.com/place/3SgNbU"
       },
-      "subcategory": "콩나물국밥",
+      "subcategory": "철판·한식",
       "menu": [
         {
-          "name": "메뉴·가격 미확인"
+          "name": "주꾸미삼겹철판",
+          "price": 16900
+        },
+        {
+          "name": "오제새(오징어+제육+새우)",
+          "price": 18900
         }
       ],
       "location": {
-        "lat": 37.4856770168622,
-        "lng": 127.036914449103
+        "lat": 37.4810605349624,
+        "lng": 127.041483236757
       },
       "place": {
-        "kakaoId": "1331035449",
-        "kakaoUrl": "https://place.map.kakao.com/1331035449",
-        "address": "서울 강남구 남부순환로359길 8"
+        "kakaoId": "661927676",
+        "kakaoUrl": "https://place.map.kakao.com/661927676",
+        "address": "서울 서초구 바우뫼로41길 8"
       },
-      "walkMeters": 213,
+      "walkMeters": 732,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:28.538Z",
-      "rating": {
-        "score": 5,
-        "count": 4,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=5767964849281157538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:28.538Z"
-      }
-    },
-    {
-      "slug": "서울김밥-양재역점",
-      "name": "서울김밥 양재역점",
-      "area": "양재",
-      "category": "분식",
-      "priceRange": "4,500원",
-      "notes": "서울김밥 4,500 / 치즈김밥 5,000 / 참치김밥 5,500",
-      "tags": [
-        "양재",
-        "분식",
-        "김밥",
-        "가성비",
-        "신규조사"
-      ],
-      "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
-      "mentionCount": 0,
-      "address": "서울 서초구 강남대로 224 양재한신휴플러스 1층 103호",
-      "curated": {
-        "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/5nypxs"
-      },
-      "subcategory": "김밥·분식",
-      "menu": [
-        {
-          "name": "서울김밥",
-          "price": 4500
-        },
-        {
-          "name": "치즈김밥",
-          "price": 5000
-        },
-        {
-          "name": "참치김밥",
-          "price": 5500
-        }
-      ],
-      "location": {
-        "lat": 37.48400351433854,
-        "lng": 127.03503899973343
-      },
-      "place": {
-        "kakaoId": "1970703529",
-        "kakaoUrl": "https://place.map.kakao.com/1970703529",
-        "address": "서울 서초구 강남대로 224"
-      },
-      "walkMeters": 100,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:28.894Z",
-      "rating": {
-        "score": 3.9,
-        "count": 38,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=3530266668122922473&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:28.894Z"
-      }
-    },
-    {
-      "slug": "버거킹-양재점",
-      "name": "버거킹 양재점",
-      "area": "양재",
-      "category": "양식",
-      "priceRange": "9,600원",
-      "notes": "와퍼세트 9,600 / 통새우와퍼세트 10,400 / 통새우와퍼주니어세트 7,800",
-      "tags": [
-        "양재",
-        "양식",
-        "버거",
-        "신규조사"
-      ],
-      "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
-      "mentionCount": 0,
-      "address": "서울 서초구 강남대로 221 양재역 환승주차장 지하1층",
-      "curated": {
-        "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/2RtNbw"
-      },
-      "subcategory": "버거",
-      "menu": [
-        {
-          "name": "와퍼세트",
-          "price": 9600
-        },
-        {
-          "name": "통새우와퍼세트",
-          "price": 10400
-        },
-        {
-          "name": "통새우와퍼주니어세트",
-          "price": 7800
-        }
-      ],
-      "location": {
-        "lat": 37.48403714904699,
-        "lng": 127.0340214254793
-      },
-      "place": {
-        "kakaoId": "7900896",
-        "kakaoUrl": "https://place.map.kakao.com/7900896",
-        "address": "서울 서초구 서초동 1376-21"
-      },
-      "walkMeters": 111,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:29.280Z",
-      "rating": {
-        "score": 3.9,
-        "count": 893,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=17998334946403559211&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:29.280Z"
-      }
-    },
-    {
-      "slug": "깐부치킨-양재역점-점심뷔페",
-      "name": "깐부치킨 양재역점 점심뷔페",
-      "area": "양재",
-      "category": "한식",
-      "priceRange": "9,900원",
-      "notes": "점심 한식뷔페 9,900~ · 11:00-14:00",
-      "tags": [
-        "양재",
-        "한식",
-        "뷔페",
-        "가성비",
-        "신규조사"
-      ],
-      "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
-      "mentionCount": 0,
-      "address": "서울 서초구 강남대로 243 1층",
-      "curated": {
-        "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://www.daangn.com/kr/local-profile/%EA%B9%90%EB%B6%80%EC%B9%98%ED%82%A8%EC%96%91%EC%9E%AC%EC%97%AD%EC%A0%90%EC%A0%90%EC%8B%AC%EB%B7%94%ED%8E%98-4j7v5iqnqqiy/"
-      },
-      "subcategory": "한식뷔페",
-      "hours": {
-        "open": "11:00",
-        "close": "14:00"
-      },
-      "location": {
-        "lat": 37.4851359560245,
-        "lng": 127.033293431719
-      },
-      "walkMeters": 129,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:31.002Z",
-      "rating": {
-        "score": 3.7,
-        "count": 368,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=7676089975587368515&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:31.002Z"
-      }
-    },
-    {
-      "slug": "한국순대-본점",
-      "name": "한국순대 본점",
-      "area": "양재",
-      "category": "한식",
-      "priceRange": "13,000원",
-      "notes": "순대국 13,000 / 순대국(특) 14,000 / 소꼬리·우거지 해장국 14,000 · 24시간",
-      "tags": [
-        "양재",
-        "한식",
-        "순대",
-        "국밥",
-        "신규조사"
-      ],
-      "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
-      "mentionCount": 0,
-      "address": "서울 서초구 바우뫼로35길 4 원빌딩 1층",
-      "curated": {
-        "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/5FtKI2"
-      },
-      "subcategory": "순대국",
-      "menu": [
-        {
-          "name": "순대국",
-          "price": 13000
-        },
-        {
-          "name": "순대국(특)",
-          "price": 14000
-        },
-        {
-          "name": "소꼬리·우거지 해장국",
-          "price": 14000
-        }
-      ],
-      "hours": {
-        "open": "00:00",
-        "close": "24:00"
-      },
-      "location": {
-        "lat": 37.4787896863926,
-        "lng": 127.03975106892
-      },
-      "place": {
-        "kakaoId": "17363119",
-        "kakaoUrl": "https://place.map.kakao.com/17363119",
-        "address": "서울 서초구 바우뫼로35길 4"
-      },
-      "walkMeters": 809,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:31.373Z",
+      "ratingCheckedAt": "2026-11-06T08:45:26.743Z",
       "rating": {
         "score": 4,
-        "count": 1701,
+        "count": 304,
         "source": "google",
-        "url": "https://maps.google.com/?cid=8944245470913569731&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:31.373Z"
+        "url": "https://maps.google.com/?cid=1360224840523035753&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:26.743Z"
       }
     },
     {
-      "slug": "로마옥-도곡",
-      "name": "로마옥 도곡",
-      "area": "양재",
-      "category": "샐러드",
-      "priceRange": "16,000원",
-      "notes": "잣 카프레제 샐러드 16,000 / 치킨 꼬르동 시저샐러드 16,000",
-      "tags": [
-        "양재",
-        "양식",
-        "샐러드",
-        "도보10분권",
-        "신규조사"
-      ],
-      "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
-      "mentionCount": 0,
-      "address": "서울 강남구 강남대로48길 11 1층",
-      "curated": {
-        "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/2nVzed"
-      },
-      "subcategory": "샐러드·양식",
-      "menu": [
-        {
-          "name": "잣 카프레제 샐러드",
-          "price": 16000
-        },
-        {
-          "name": "치킨 꼬르동 시저샐러드",
-          "price": 16000
-        }
-      ],
-      "location": {
-        "lat": 37.48699874957846,
-        "lng": 127.03406912719488
-      },
-      "place": {
-        "kakaoId": "237005010",
-        "kakaoUrl": "https://place.map.kakao.com/237005010",
-        "address": "서울 강남구 강남대로48길 11"
-      },
-      "walkMeters": 244,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:31.719Z",
-      "rating": {
-        "score": 4.5,
-        "count": 566,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=466623626968031325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:31.719Z"
-      }
-    },
-    {
-      "slug": "춘업-순댓국",
-      "name": "춘업 순댓국",
-      "area": "양재",
-      "category": "한식",
-      "priceRange": "10,000원",
-      "notes": "일반순댓국 10,000 / 얼큰순댓국 11,000 / 특순댓국 12,000",
-      "tags": [
-        "양재",
-        "한식",
-        "순대",
-        "국밥",
-        "도보10분권",
-        "신규조사"
-      ],
-      "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
-      "mentionCount": 0,
-      "address": "서울 서초구 양재천로29길 3 원창빌딩 1층",
-      "curated": {
-        "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/49fX7O"
-      },
-      "subcategory": "순대국",
-      "menu": [
-        {
-          "name": "일반순댓국",
-          "price": 10000
-        },
-        {
-          "name": "얼큰순댓국",
-          "price": 11000
-        },
-        {
-          "name": "특순댓국",
-          "price": 12000
-        }
-      ],
-      "location": {
-        "lat": 37.4792753634806,
-        "lng": 127.042252177425
-      },
-      "place": {
-        "kakaoId": "10898803",
-        "kakaoUrl": "https://place.map.kakao.com/10898803",
-        "address": "서울 서초구 양재천로29길 3"
-      },
-      "walkMeters": 910,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:32.074Z",
-      "rating": {
-        "score": 4.2,
-        "count": 141,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=8714875439532359986&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:32.074Z"
-      }
-    },
-    {
-      "slug": "고려향",
-      "name": "고려향",
-      "area": "양재",
-      "category": "중식",
-      "priceRange": "8,000원",
-      "notes": "짜장면 8,000 / 짬뽕 9,000 / 삼선짬뽕 11,000",
-      "tags": [
-        "양재",
-        "중식",
-        "짜장면",
-        "가성비",
-        "도보10분권",
-        "신규조사"
-      ],
-      "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
-      "mentionCount": 0,
-      "address": "서울 서초구 강남대로 156-1 극동빌딩 1층",
-      "curated": {
-        "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/30AZEV"
-      },
-      "menu": [
-        {
-          "name": "짜장면",
-          "price": 8000
-        },
-        {
-          "name": "짬뽕",
-          "price": 9000
-        },
-        {
-          "name": "삼선짬뽕",
-          "price": 11000
-        }
-      ],
-      "location": {
-        "lat": 37.4787827120623,
-        "lng": 127.039050107904
-      },
-      "place": {
-        "kakaoId": "704188840",
-        "kakaoUrl": "https://place.map.kakao.com/704188840",
-        "address": "서울 서초구 강남대로 156-1"
-      },
-      "walkMeters": 777,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:32.434Z",
-      "rating": {
-        "score": 4,
-        "count": 2,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=7778891458362160399&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:32.434Z"
-      }
-    },
-    {
-      "slug": "백소정-도곡매봉점",
-      "name": "백소정 도곡매봉점",
+      "slug": "양재-초밥",
+      "name": "양재 초밥",
       "area": "양재",
       "category": "일식",
-      "priceRange": "11,500원",
-      "notes": "로스카츠 11,500 / 냉소바 9,900 / 키소카레 8,900",
+      "priceRange": "17,000원",
+      "notes": "런치초밥 6피스+반우동 17,000 / 연어덮밥+반우동 18,000",
       "tags": [
         "양재",
         "일식",
-        "돈카츠",
-        "소바",
+        "초밥",
+        "덮밥",
         "도보10분권",
         "신규조사"
       ],
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 강남구 논현로28길 35 대동빌딩 1층 102호",
+      "address": "서울 강남구 논현로26길 16 1층 102호",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/4Cpybw"
+        "url": "https://polle.com/place/1X3hiL"
       },
-      "subcategory": "돈카츠·일식",
+      "subcategory": "초밥",
       "menu": [
         {
-          "name": "로스카츠",
-          "price": 11500
+          "name": "런치초밥 6피스+반우동",
+          "price": 17000
         },
         {
-          "name": "냉소바",
-          "price": 9900
-        },
-        {
-          "name": "키소카레",
-          "price": 8900
+          "name": "연어덮밥+반우동",
+          "price": 18000
         }
       ],
       "location": {
-        "lat": 37.48414439058794,
-        "lng": 127.04476610864586
+        "lat": 37.4823777348091,
+        "lng": 127.044175996142
       },
-      "place": {
-        "kakaoId": "1136397501",
-        "kakaoUrl": "https://place.map.kakao.com/1136397501",
-        "address": "서울 강남구 논현로28길 35"
-      },
-      "walkMeters": 890,
+      "walkMeters": 879,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:32.797Z",
+      "ratingCheckedAt": "2026-11-06T08:45:37.023Z",
       "rating": {
-        "score": 3.8,
-        "count": 19,
+        "score": 4.6,
+        "count": 204,
         "source": "google",
-        "url": "https://maps.google.com/?cid=12289608945885366978&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:32.797Z"
+        "url": "https://maps.google.com/?cid=12931477985023447487&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:37.023Z"
       }
     },
     {
@@ -4374,16 +4445,16 @@
       }
     },
     {
-      "slug": "하영호-신촌설렁탕-본점",
-      "name": "하영호 신촌설렁탕 본점",
+      "slug": "춘업-순댓국",
+      "name": "춘업 순댓국",
       "area": "양재",
       "category": "한식",
-      "priceRange": "12,000원",
-      "notes": "명품설렁탕 12,000 / 송해(동충하초)설렁탕 13,000 / 백세설렁탕 14,000",
+      "priceRange": "10,000원",
+      "notes": "일반순댓국 10,000 / 얼큰순댓국 11,000 / 특순댓국 12,000",
       "tags": [
         "양재",
         "한식",
-        "설렁탕",
+        "순대",
         "국밥",
         "도보10분권",
         "신규조사"
@@ -4391,98 +4462,149 @@
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 강남구 논현로28길 36 1층",
+      "address": "서울 서초구 양재천로29길 3 원창빌딩 1층",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/3CAp04"
+        "url": "https://polle.com/place/49fX7O"
       },
-      "subcategory": "설렁탕",
+      "subcategory": "순대국",
       "menu": [
         {
-          "name": "명품설렁탕",
+          "name": "일반순댓국",
+          "price": 10000
+        },
+        {
+          "name": "얼큰순댓국",
+          "price": 11000
+        },
+        {
+          "name": "특순댓국",
           "price": 12000
-        },
-        {
-          "name": "송해(동충하초)설렁탕",
-          "price": 13000
-        },
-        {
-          "name": "백세설렁탕",
-          "price": 14000
         }
       ],
       "location": {
-        "lat": 37.483898304876966,
-        "lng": 127.04505653973965
+        "lat": 37.4792753634806,
+        "lng": 127.042252177425
       },
       "place": {
-        "kakaoId": "11616612",
-        "kakaoUrl": "https://place.map.kakao.com/11616612",
-        "address": "서울 강남구 논현로28길 36"
+        "kakaoId": "10898803",
+        "kakaoUrl": "https://place.map.kakao.com/10898803",
+        "address": "서울 서초구 양재천로29길 3"
       },
-      "walkMeters": 918,
+      "walkMeters": 910,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:33.523Z",
+      "ratingCheckedAt": "2026-11-06T08:45:32.074Z",
       "rating": {
-        "score": 4.1,
-        "count": 19,
+        "score": 4.2,
+        "count": 141,
         "source": "google",
-        "url": "https://maps.google.com/?cid=13647753350475464348&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:33.523Z"
+        "url": "https://maps.google.com/?cid=8714875439532359986&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:32.074Z"
       }
     },
     {
-      "slug": "포-브라더스-도곡점",
-      "name": "포 브라더스 도곡점",
+      "slug": "치킨영토-양재-점심뷔페",
+      "name": "치킨영토 양재 점심뷔페",
       "area": "양재",
       "category": "한식",
-      "priceRange": "14,000원",
-      "notes": "나시고랭 14,000 / 푸팟퐁커리 36,000 · 연중무휴",
+      "priceRange": "9,500원",
+      "notes": "점심 한식뷔페 9,500 · 평일만, 주말·공휴일 휴무 · 11:00-14:00",
       "tags": [
         "양재",
-        "아시안",
-        "동남아",
-        "볶음밥",
+        "한식",
+        "뷔페",
+        "가성비",
+        "신규조사"
+      ],
+      "addedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-06T09:00:00.000Z",
+      "mentionCount": 0,
+      "address": "서울 서초구 남부순환로350길 29-3",
+      "curated": {
+        "by": "Claude 웹조사 (2026-11-06)",
+        "url": "https://www.daangn.com/kr/local-profile/%EC%B9%98%ED%82%A8%EC%98%81%ED%86%A0%EC%96%91%EC%9E%AC%EC%A0%90%EC%8B%AC%EB%B7%94%ED%8E%98-t3a5qqv91f6i/"
+      },
+      "subcategory": "한식뷔페",
+      "menu": [
+        {
+          "name": "점심 한식뷔페",
+          "price": 9500
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "14:00"
+      },
+      "location": {
+        "lat": 37.4836427122966,
+        "lng": 127.036358299282
+      },
+      "walkMeters": 199,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:25.536Z",
+      "rating": {
+        "score": 3.7,
+        "count": 154,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=7007181789264704543&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:25.536Z"
+      }
+    },
+    {
+      "slug": "카츠오우-도곡점",
+      "name": "카츠오우 도곡점",
+      "area": "양재",
+      "category": "일식",
+      "priceRange": "12,000원",
+      "notes": "야끼우동카츠 12,000 / 제육카츠 13,000 / 큰 모듬가츠 18,000",
+      "tags": [
+        "양재",
+        "일식",
+        "돈까스",
         "도보10분권",
         "신규조사"
       ],
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 강남구 논현로28길 40 덕영빌딩 1층",
+      "address": "서울 강남구 논현로30길 42 신우빌딩 1층",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/4541ns"
+        "url": "https://polle.com/place/3npwn6"
       },
-      "subcategory": "동남아",
+      "subcategory": "돈까스",
       "menu": [
         {
-          "name": "나시고랭",
-          "price": 14000
+          "name": "야끼우동카츠",
+          "price": 12000
         },
         {
-          "name": "푸팟퐁커리",
-          "price": 36000
+          "name": "제육카츠",
+          "price": 13000
+        },
+        {
+          "name": "큰 모듬가츠",
+          "price": 18000
         }
       ],
       "location": {
-        "lat": 37.4839991131454,
-        "lng": 127.045330218763
+        "lat": 37.4846551336881,
+        "lng": 127.045104482156
       },
       "place": {
-        "kakaoId": "17662981",
-        "kakaoUrl": "https://place.map.kakao.com/17662981",
-        "address": "서울 강남구 논현로28길 40"
+        "kakaoId": "1878711032",
+        "kakaoUrl": "https://place.map.kakao.com/1878711032",
+        "address": "서울 강남구 논현로30길 42"
       },
-      "walkMeters": 941,
+      "walkMeters": 917,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:33.865Z",
+      "ratingCheckedAt": "2026-11-06T08:45:34.947Z",
       "rating": {
         "score": 4.3,
-        "count": 1479,
+        "count": 199,
         "source": "google",
-        "url": "https://maps.google.com/?cid=16446749131689416154&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:33.865Z"
+        "url": "https://maps.google.com/?cid=113523394828223507&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:34.947Z"
       }
     },
     {
@@ -4544,16 +4666,117 @@
       }
     },
     {
-      "slug": "시래정-양재점",
-      "name": "시래정 양재점",
+      "slug": "콩부자-전주콩나물국밥-양재역점",
+      "name": "콩부자 전주콩나물국밥 양재역점",
       "area": "양재",
       "category": "한식",
-      "priceRange": "10,000원",
-      "notes": "가마솥 시래정국 10,000 / 가마솥 소고기 시래정국 12,000",
+      "notes": "메뉴·가격 미확인",
       "tags": [
         "양재",
         "한식",
-        "시래기",
+        "국밥",
+        "콩나물국밥",
+        "신규조사"
+      ],
+      "addedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-06T09:00:00.000Z",
+      "mentionCount": 0,
+      "address": "서울 강남구 남부순환로359길 8 1층",
+      "curated": {
+        "by": "Claude 웹조사 (2026-11-06)",
+        "url": "https://www.daangn.com/kr/local-profile/%EC%BD%A9%EB%B6%80%EC%9E%90-%EC%A0%84%EC%A3%BC%EC%BD%A9%EB%82%98%EB%AC%BC%EA%B5%AD%EB%B0%A5-%EC%96%91%EC%9E%AC%EC%97%AD%EC%A0%90-ezm687phzqi7/"
+      },
+      "subcategory": "콩나물국밥",
+      "menu": [
+        {
+          "name": "메뉴·가격 미확인"
+        }
+      ],
+      "location": {
+        "lat": 37.4856770168622,
+        "lng": 127.036914449103
+      },
+      "place": {
+        "kakaoId": "1331035449",
+        "kakaoUrl": "https://place.map.kakao.com/1331035449",
+        "address": "서울 강남구 남부순환로359길 8"
+      },
+      "walkMeters": 213,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:28.538Z",
+      "rating": {
+        "score": 5,
+        "count": 4,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=5767964849281157538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:28.538Z"
+      }
+    },
+    {
+      "slug": "포-브라더스-도곡점",
+      "name": "포 브라더스 도곡점",
+      "area": "양재",
+      "category": "한식",
+      "priceRange": "14,000원",
+      "notes": "나시고랭 14,000 / 푸팟퐁커리 36,000 · 연중무휴",
+      "tags": [
+        "양재",
+        "아시안",
+        "동남아",
+        "볶음밥",
+        "도보10분권",
+        "신규조사"
+      ],
+      "addedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-06T09:00:00.000Z",
+      "mentionCount": 0,
+      "address": "서울 강남구 논현로28길 40 덕영빌딩 1층",
+      "curated": {
+        "by": "Claude 웹조사 (2026-11-06)",
+        "url": "https://polle.com/place/4541ns"
+      },
+      "subcategory": "동남아",
+      "menu": [
+        {
+          "name": "나시고랭",
+          "price": 14000
+        },
+        {
+          "name": "푸팟퐁커리",
+          "price": 36000
+        }
+      ],
+      "location": {
+        "lat": 37.4839991131454,
+        "lng": 127.045330218763
+      },
+      "place": {
+        "kakaoId": "17662981",
+        "kakaoUrl": "https://place.map.kakao.com/17662981",
+        "address": "서울 강남구 논현로28길 40"
+      },
+      "walkMeters": 941,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-06T08:45:33.865Z",
+      "rating": {
+        "score": 4.3,
+        "count": 1479,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=16446749131689416154&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:33.865Z"
+      }
+    },
+    {
+      "slug": "하영호-신촌설렁탕-본점",
+      "name": "하영호 신촌설렁탕 본점",
+      "area": "양재",
+      "category": "한식",
+      "priceRange": "12,000원",
+      "notes": "명품설렁탕 12,000 / 송해(동충하초)설렁탕 13,000 / 백세설렁탕 14,000",
+      "tags": [
+        "양재",
+        "한식",
+        "설렁탕",
         "국밥",
         "도보10분권",
         "신규조사"
@@ -4561,154 +4784,105 @@
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 서초구 강남대로39길 15-10 한라비발디 스튜디오193 지하1층 103호",
+      "address": "서울 강남구 논현로28길 36 1층",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/28syuP"
+        "url": "https://polle.com/place/3CAp04"
       },
-      "subcategory": "시래기·한식",
+      "subcategory": "설렁탕",
       "menu": [
         {
-          "name": "가마솥 시래정국",
-          "price": 10000
-        },
-        {
-          "name": "가마솥 소고기 시래정국",
-          "price": 12000
-        }
-      ],
-      "location": {
-        "lat": 37.48578568281491,
-        "lng": 127.03195307055152
-      },
-      "place": {
-        "kakaoId": "783020696",
-        "kakaoUrl": "https://place.map.kakao.com/783020696",
-        "address": "서울 서초구 강남대로39길 15-10"
-      },
-      "walkMeters": 265,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:34.598Z",
-      "rating": {
-        "score": 4.2,
-        "count": 295,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=3228281619134012570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:34.598Z"
-      }
-    },
-    {
-      "slug": "카츠오우-도곡점",
-      "name": "카츠오우 도곡점",
-      "area": "양재",
-      "category": "일식",
-      "priceRange": "12,000원",
-      "notes": "야끼우동카츠 12,000 / 제육카츠 13,000 / 큰 모듬가츠 18,000",
-      "tags": [
-        "양재",
-        "일식",
-        "돈까스",
-        "도보10분권",
-        "신규조사"
-      ],
-      "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
-      "mentionCount": 0,
-      "address": "서울 강남구 논현로30길 42 신우빌딩 1층",
-      "curated": {
-        "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/3npwn6"
-      },
-      "subcategory": "돈까스",
-      "menu": [
-        {
-          "name": "야끼우동카츠",
+          "name": "명품설렁탕",
           "price": 12000
         },
         {
-          "name": "제육카츠",
+          "name": "송해(동충하초)설렁탕",
           "price": 13000
         },
         {
-          "name": "큰 모듬가츠",
-          "price": 18000
+          "name": "백세설렁탕",
+          "price": 14000
         }
       ],
       "location": {
-        "lat": 37.4846551336881,
-        "lng": 127.045104482156
+        "lat": 37.483898304876966,
+        "lng": 127.04505653973965
       },
       "place": {
-        "kakaoId": "1878711032",
-        "kakaoUrl": "https://place.map.kakao.com/1878711032",
-        "address": "서울 강남구 논현로30길 42"
+        "kakaoId": "11616612",
+        "kakaoUrl": "https://place.map.kakao.com/11616612",
+        "address": "서울 강남구 논현로28길 36"
       },
-      "walkMeters": 917,
+      "walkMeters": 918,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:34.947Z",
+      "ratingCheckedAt": "2026-11-06T08:45:33.523Z",
       "rating": {
-        "score": 4.3,
-        "count": 199,
+        "score": 4.1,
+        "count": 19,
         "source": "google",
-        "url": "https://maps.google.com/?cid=113523394828223507&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:34.947Z"
+        "url": "https://maps.google.com/?cid=13647753350475464348&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:33.523Z"
       }
     },
     {
-      "slug": "샐러디-양재역점",
-      "name": "샐러디 양재역점",
+      "slug": "한국순대-본점",
+      "name": "한국순대 본점",
       "area": "양재",
-      "category": "샐러드",
-      "priceRange": "11,400원",
-      "notes": "칠리베이컨 포케볼 세트 11,400 / 우삼겹 메밀 누들볼 세트 11,800 / 로스트닭다리살 샐러디 세트 12,400",
+      "category": "한식",
+      "priceRange": "13,000원",
+      "notes": "순대국 13,000 / 순대국(특) 14,000 / 소꼬리·우거지 해장국 14,000 · 24시간",
       "tags": [
         "양재",
-        "샐러드",
-        "포케",
-        "가벼운",
-        "도보10분권",
+        "한식",
+        "순대",
+        "국밥",
         "신규조사"
       ],
       "addedAt": "2026-11-06T09:00:00.000Z",
       "updatedAt": "2026-11-06T09:00:00.000Z",
       "mentionCount": 0,
-      "address": "서울 서초구 강남대로 265 강남로드빌딩 1층",
+      "address": "서울 서초구 바우뫼로35길 4 원빌딩 1층",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/3eqWqz"
+        "url": "https://polle.com/place/5FtKI2"
       },
+      "subcategory": "순대국",
       "menu": [
         {
-          "name": "칠리베이컨 포케볼 세트",
-          "price": 11400
+          "name": "순대국",
+          "price": 13000
         },
         {
-          "name": "우삼겹 메밀 누들볼 세트",
-          "price": 11800
+          "name": "순대국(특)",
+          "price": 14000
         },
         {
-          "name": "로스트닭다리살 샐러디 세트",
-          "price": 12400
+          "name": "소꼬리·우거지 해장국",
+          "price": 14000
         }
       ],
+      "hours": {
+        "open": "00:00",
+        "close": "24:00"
+      },
       "location": {
-        "lat": 37.48707400736088,
-        "lng": 127.03238328575675
+        "lat": 37.4787896863926,
+        "lng": 127.03975106892
       },
       "place": {
-        "kakaoId": "1749506482",
-        "kakaoUrl": "https://place.map.kakao.com/1749506482",
-        "address": "서울 서초구 강남대로 265"
+        "kakaoId": "17363119",
+        "kakaoUrl": "https://place.map.kakao.com/17363119",
+        "address": "서울 서초구 바우뫼로35길 4"
       },
-      "walkMeters": 320,
+      "walkMeters": 809,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:35.313Z",
+      "ratingCheckedAt": "2026-11-06T08:45:31.373Z",
       "rating": {
-        "score": 4.5,
-        "count": 64,
+        "score": 4,
+        "count": 1701,
         "source": "google",
-        "url": "https://maps.google.com/?cid=2490420806926788478&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:35.314Z"
+        "url": "https://maps.google.com/?cid=8944245470913569731&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T08:45:31.373Z"
       }
     },
     {
@@ -4767,112 +4941,6 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=7170198123740767701&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T08:45:35.684Z"
-      }
-    },
-    {
-      "slug": "양재-초밥",
-      "name": "양재 초밥",
-      "area": "양재",
-      "category": "일식",
-      "priceRange": "17,000원",
-      "notes": "런치초밥 6피스+반우동 17,000 / 연어덮밥+반우동 18,000",
-      "tags": [
-        "양재",
-        "일식",
-        "초밥",
-        "덮밥",
-        "도보10분권",
-        "신규조사"
-      ],
-      "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
-      "mentionCount": 0,
-      "address": "서울 강남구 논현로26길 16 1층 102호",
-      "curated": {
-        "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/1X3hiL"
-      },
-      "subcategory": "초밥",
-      "menu": [
-        {
-          "name": "런치초밥 6피스+반우동",
-          "price": 17000
-        },
-        {
-          "name": "연어덮밥+반우동",
-          "price": 18000
-        }
-      ],
-      "location": {
-        "lat": 37.4823777348091,
-        "lng": 127.044175996142
-      },
-      "walkMeters": 879,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:37.023Z",
-      "rating": {
-        "score": 4.6,
-        "count": 204,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=12931477985023447487&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:37.023Z"
-      }
-    },
-    {
-      "slug": "멘츠루-양재점",
-      "name": "멘츠루 양재점",
-      "area": "양재",
-      "category": "일식",
-      "priceRange": "11,000원",
-      "notes": "쇼유라멘 11,000 / 시오라멘 11,000 / 매운소유(해장라멘) 11,500",
-      "tags": [
-        "양재",
-        "일식",
-        "라멘",
-        "도보10분권",
-        "신규조사"
-      ],
-      "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
-      "mentionCount": 0,
-      "address": "서울 서초구 강남대로37길 26 산동빌딩 1층",
-      "curated": {
-        "by": "Claude 웹조사 (2026-11-06)",
-        "url": "https://polle.com/place/3pP5EI"
-      },
-      "subcategory": "라멘",
-      "menu": [
-        {
-          "name": "쇼유라멘",
-          "price": 11000
-        },
-        {
-          "name": "시오라멘",
-          "price": 11000
-        },
-        {
-          "name": "매운소유(해장라멘)",
-          "price": 11500
-        }
-      ],
-      "location": {
-        "lat": 37.48498823686284,
-        "lng": 127.03215059814973
-      },
-      "place": {
-        "kakaoId": "811739187",
-        "kakaoUrl": "https://place.map.kakao.com/811739187",
-        "address": "서울 서초구 강남대로37길 26"
-      },
-      "walkMeters": 227,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-06T08:45:37.367Z",
-      "rating": {
-        "score": 4.8,
-        "count": 41,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=13804449825094069497&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T08:45:37.367Z"
       }
     }
   ],
