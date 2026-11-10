@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-09T08:26:06.318Z",
+  "updatedAt": "2026-11-10T09:56:45.816Z",
   "source": "slack-export",
-  "lastMessageTs": "1794203767.645569",
+  "lastMessageTs": "1794276027.750079",
   "restaurants": [
     {
       "slug": "국미당-양재역",
@@ -50,6 +50,38 @@
         "url": "https://maps.google.com/?cid=7820476884504141869&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:09.689Z"
       }
+    },
+    {
+      "slug": "꼬김빱-서초구청점",
+      "name": "꼬김빱 서초구청점",
+      "area": "양재",
+      "category": "분식",
+      "priceRange": "6,000~6,900원",
+      "notes": "꼬마김밥 모둠세트 6,000 / 크래미유부초밥 6,900 · 08:30-20:30 · 도보 약 420m",
+      "tags": [
+        "김밥",
+        "분식"
+      ],
+      "addedAt": "2026-11-06T04:19:39.364Z",
+      "updatedAt": "2026-11-09T08:25:51.900Z",
+      "mentionCount": 3,
+      "subcategory": "김밥·분식",
+      "menu": [
+        {
+          "name": "꼬마김밥 모둠세트",
+          "price": 6000
+        },
+        {
+          "name": "크래미유부초밥",
+          "price": 6900
+        }
+      ],
+      "hours": {
+        "open": "08:30",
+        "close": "20:30"
+      },
+      "walkMeters": 420,
+      "ratingCheckedAt": "2026-11-06T06:08:14.853Z"
     },
     {
       "slug": "도화",
@@ -101,38 +133,6 @@
         "placeId": "1698302178",
         "url": "https://map.naver.com/p/entry/place/1698302178"
       }
-    },
-    {
-      "slug": "꼬김빱-서초구청점",
-      "name": "꼬김빱 서초구청점",
-      "area": "양재",
-      "category": "분식",
-      "priceRange": "6,000~6,900원",
-      "notes": "꼬마김밥 모둠세트 6,000 / 크래미유부초밥 6,900 · 08:30-20:30 · 도보 약 420m",
-      "tags": [
-        "김밥",
-        "분식"
-      ],
-      "addedAt": "2026-11-06T04:19:39.364Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 3,
-      "subcategory": "김밥·분식",
-      "menu": [
-        {
-          "name": "꼬마김밥 모둠세트",
-          "price": 6000
-        },
-        {
-          "name": "크래미유부초밥",
-          "price": 6900
-        }
-      ],
-      "hours": {
-        "open": "08:30",
-        "close": "20:30"
-      },
-      "walkMeters": 420,
-      "ratingCheckedAt": "2026-11-06T06:08:14.853Z"
     },
     {
       "slug": "마차이짬뽕-양재역점",
@@ -514,6 +514,56 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=14473695912449009192&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:11.627Z"
+      }
+    },
+    {
+      "slug": "팔향-양재점",
+      "name": "팔향 양재점",
+      "area": "양재",
+      "category": "중식",
+      "priceRange": "10,000~12,000원",
+      "notes": "샤오롱바오 10,000 / 팔향짜장면 12,000 · 11:30-22:00 (15:00-17:00 브레이크) · 도보 약 279m",
+      "tags": [
+        "딤섬",
+        "중식"
+      ],
+      "addedAt": "2026-11-06T04:19:34.202Z",
+      "updatedAt": "2026-11-10T09:56:43.875Z",
+      "mentionCount": 3,
+      "subcategory": "딤섬·중식",
+      "menu": [
+        {
+          "name": "샤오롱바오",
+          "price": 10000
+        },
+        {
+          "name": "팔향짜장면",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMeters": 279,
+      "location": {
+        "lat": 37.4864235487205,
+        "lng": 127.032129730095
+      },
+      "place": {
+        "kakaoId": "132562159",
+        "kakaoUrl": "https://place.map.kakao.com/132562159",
+        "address": "서울 서초구 강남대로41길 15-19"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:19.929Z",
+      "rating": {
+        "score": 4.3,
+        "count": 21,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3839510617455017948&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:19.929Z"
       }
     },
     {
@@ -1434,6 +1484,55 @@
       }
     },
     {
+      "slug": "이올로화덕피자",
+      "name": "이올로화덕피자",
+      "area": "양재",
+      "category": "양식",
+      "priceRange": "12,000~15,000원",
+      "notes": "마리나라 피자 15,000 / 오리엔탈샐러드 12,000 · 11:00-21:30 (15:00-17:00 브레이크) · 도보 약 217m",
+      "tags": [
+        "피자"
+      ],
+      "addedAt": "2026-11-06T04:20:19.368Z",
+      "updatedAt": "2026-11-10T09:56:43.994Z",
+      "mentionCount": 2,
+      "subcategory": "화덕피자",
+      "menu": [
+        {
+          "name": "마리나라 피자",
+          "price": 15000
+        },
+        {
+          "name": "오리엔탈샐러드",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:30",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMeters": 217,
+      "location": {
+        "lat": 37.4862449777493,
+        "lng": 127.032753793833
+      },
+      "place": {
+        "kakaoId": "12533122",
+        "kakaoUrl": "https://place.map.kakao.com/12533122",
+        "address": "서울 서초구 강남대로39길 5"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:28.650Z",
+      "rating": {
+        "score": 4.2,
+        "count": 299,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=4674511243938555682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:28.650Z"
+      }
+    },
+    {
       "slug": "인덕원국수집",
       "name": "인덕원국수집",
       "category": "한식",
@@ -1449,6 +1548,56 @@
         }
       ],
       "ratingCheckedAt": "2026-11-06T06:08:18.824Z"
+    },
+    {
+      "slug": "전주옛날집",
+      "name": "전주옛날집",
+      "area": "양재",
+      "category": "한식",
+      "priceRange": "10,000~13,000원",
+      "notes": "전주비빔밥 10,000 / 코다리정식 13,000 · 11:20-21:30 (15:00-17:00 브레이크) · 도보 약 383m",
+      "tags": [
+        "한정식",
+        "비빔밥"
+      ],
+      "addedAt": "2026-11-06T04:19:37.303Z",
+      "updatedAt": "2026-11-10T09:56:43.636Z",
+      "mentionCount": 2,
+      "subcategory": "한정식·비빔밥",
+      "menu": [
+        {
+          "name": "전주비빔밥",
+          "price": 10000
+        },
+        {
+          "name": "코다리정식",
+          "price": 13000
+        }
+      ],
+      "hours": {
+        "open": "11:20",
+        "close": "21:30",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMeters": 383,
+      "location": {
+        "lat": 37.48759307949177,
+        "lng": 127.03204768921393
+      },
+      "place": {
+        "kakaoId": "12446819",
+        "kakaoUrl": "https://place.map.kakao.com/12446819",
+        "address": "서울 서초구 강남대로 273"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:28.983Z",
+      "rating": {
+        "score": 4,
+        "count": 234,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=14519780704721045910&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:28.983Z"
+      }
     },
     {
       "slug": "제레미버거-양재역",
@@ -1693,56 +1842,6 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=4072976823389595768&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:29.851Z"
-      }
-    },
-    {
-      "slug": "팔향-양재점",
-      "name": "팔향 양재점",
-      "area": "양재",
-      "category": "중식",
-      "priceRange": "10,000~12,000원",
-      "notes": "샤오롱바오 10,000 / 팔향짜장면 12,000 · 11:30-22:00 (15:00-17:00 브레이크) · 도보 약 279m",
-      "tags": [
-        "딤섬",
-        "중식"
-      ],
-      "addedAt": "2026-11-06T04:19:34.202Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 2,
-      "subcategory": "딤섬·중식",
-      "menu": [
-        {
-          "name": "샤오롱바오",
-          "price": 10000
-        },
-        {
-          "name": "팔향짜장면",
-          "price": 12000
-        }
-      ],
-      "hours": {
-        "open": "11:30",
-        "close": "22:00",
-        "breakStart": "15:00",
-        "breakEnd": "17:00"
-      },
-      "walkMeters": 279,
-      "location": {
-        "lat": 37.4864235487205,
-        "lng": 127.032129730095
-      },
-      "place": {
-        "kakaoId": "132562159",
-        "kakaoUrl": "https://place.map.kakao.com/132562159",
-        "address": "서울 서초구 강남대로41길 15-19"
-      },
-      "ratingCheckedAt": "2026-11-06T06:08:19.929Z",
-      "rating": {
-        "score": 4.3,
-        "count": 21,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=3839510617455017948&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:08:19.929Z"
       }
     },
     {
@@ -3083,55 +3182,6 @@
       }
     },
     {
-      "slug": "이올로화덕피자",
-      "name": "이올로화덕피자",
-      "area": "양재",
-      "category": "양식",
-      "priceRange": "12,000~15,000원",
-      "notes": "마리나라 피자 15,000 / 오리엔탈샐러드 12,000 · 11:00-21:30 (15:00-17:00 브레이크) · 도보 약 217m",
-      "tags": [
-        "피자"
-      ],
-      "addedAt": "2026-11-06T04:20:19.368Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 1,
-      "subcategory": "화덕피자",
-      "menu": [
-        {
-          "name": "마리나라 피자",
-          "price": 15000
-        },
-        {
-          "name": "오리엔탈샐러드",
-          "price": 12000
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "21:30",
-        "breakStart": "15:00",
-        "breakEnd": "17:00"
-      },
-      "walkMeters": 217,
-      "location": {
-        "lat": 37.4862449777493,
-        "lng": 127.032753793833
-      },
-      "place": {
-        "kakaoId": "12533122",
-        "kakaoUrl": "https://place.map.kakao.com/12533122",
-        "address": "서울 서초구 강남대로39길 5"
-      },
-      "ratingCheckedAt": "2026-11-06T06:08:28.650Z",
-      "rating": {
-        "score": 4.2,
-        "count": 299,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=4674511243938555682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:08:28.650Z"
-      }
-    },
-    {
       "slug": "자연사랑-생태찌개",
       "name": "자연사랑 생태찌개",
       "area": "양재",
@@ -3177,56 +3227,6 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=3332932958363176095&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:28.796Z"
-      }
-    },
-    {
-      "slug": "전주옛날집",
-      "name": "전주옛날집",
-      "area": "양재",
-      "category": "한식",
-      "priceRange": "10,000~13,000원",
-      "notes": "전주비빔밥 10,000 / 코다리정식 13,000 · 11:20-21:30 (15:00-17:00 브레이크) · 도보 약 383m",
-      "tags": [
-        "한정식",
-        "비빔밥"
-      ],
-      "addedAt": "2026-11-06T04:19:37.303Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 1,
-      "subcategory": "한정식·비빔밥",
-      "menu": [
-        {
-          "name": "전주비빔밥",
-          "price": 10000
-        },
-        {
-          "name": "코다리정식",
-          "price": 13000
-        }
-      ],
-      "hours": {
-        "open": "11:20",
-        "close": "21:30",
-        "breakStart": "15:00",
-        "breakEnd": "17:00"
-      },
-      "walkMeters": 383,
-      "location": {
-        "lat": 37.48759307949177,
-        "lng": 127.03204768921393
-      },
-      "place": {
-        "kakaoId": "12446819",
-        "kakaoUrl": "https://place.map.kakao.com/12446819",
-        "address": "서울 서초구 강남대로 273"
-      },
-      "ratingCheckedAt": "2026-11-06T06:08:28.983Z",
-      "rating": {
-        "score": 4,
-        "count": 234,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=14519780704721045910&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:08:28.983Z"
       }
     },
     {
