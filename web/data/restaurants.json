@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-10T09:56:45.816Z",
+  "updatedAt": "2026-11-11T09:30:46.917Z",
   "source": "slack-export",
-  "lastMessageTs": "1794276027.750079",
+  "lastMessageTs": "1794362421.107349",
   "restaurants": [
     {
       "slug": "국미당-양재역",
@@ -468,6 +468,54 @@
         "address": "서울 서초구 남부순환로 2567"
       },
       "ratingCheckedAt": "2026-11-06T06:08:11.350Z"
+    },
+    {
+      "slug": "우사기",
+      "name": "우사기",
+      "area": "양재",
+      "category": "한식",
+      "priceRange": "12,000~13,000원",
+      "notes": "국수전골 13,000 / 에비까스동 12,000 · 11:00-20:30 · 도보 약 178m",
+      "tags": [
+        "국수",
+        "회덮밥"
+      ],
+      "addedAt": "2026-11-06T04:20:17.899Z",
+      "updatedAt": "2026-11-11T09:30:42.004Z",
+      "mentionCount": 3,
+      "subcategory": "국수전골·회덮밥",
+      "menu": [
+        {
+          "name": "국수전골",
+          "price": 13000
+        },
+        {
+          "name": "에비까스동",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "20:30"
+      },
+      "walkMeters": 178,
+      "location": {
+        "lat": 37.4832566418447,
+        "lng": 127.034823828636
+      },
+      "place": {
+        "kakaoId": "9278989",
+        "kakaoUrl": "https://place.map.kakao.com/9278989",
+        "address": "서울 서초구 강남대로 221"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:17.732Z",
+      "rating": {
+        "score": 2.7,
+        "count": 3,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=3449338796972954694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:17.732Z"
+      }
     },
     {
       "slug": "작은공간-양재역",
@@ -1386,54 +1434,6 @@
       }
     },
     {
-      "slug": "우사기",
-      "name": "우사기",
-      "area": "양재",
-      "category": "한식",
-      "priceRange": "12,000~13,000원",
-      "notes": "국수전골 13,000 / 에비까스동 12,000 · 11:00-20:30 · 도보 약 178m",
-      "tags": [
-        "국수",
-        "회덮밥"
-      ],
-      "addedAt": "2026-11-06T04:20:17.899Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 2,
-      "subcategory": "국수전골·회덮밥",
-      "menu": [
-        {
-          "name": "국수전골",
-          "price": 13000
-        },
-        {
-          "name": "에비까스동",
-          "price": 12000
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "20:30"
-      },
-      "walkMeters": 178,
-      "location": {
-        "lat": 37.4832566418447,
-        "lng": 127.034823828636
-      },
-      "place": {
-        "kakaoId": "9278989",
-        "kakaoUrl": "https://place.map.kakao.com/9278989",
-        "address": "서울 서초구 강남대로 221"
-      },
-      "ratingCheckedAt": "2026-11-06T06:08:17.732Z",
-      "rating": {
-        "score": 2.7,
-        "count": 3,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=3449338796972954694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:08:17.732Z"
-      }
-    },
-    {
       "slug": "유라노스-강남-양재역",
       "name": "유라노스 강남 양재역",
       "area": "양재",
@@ -1937,6 +1937,54 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=16338042118412924677&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:20.341Z"
+      }
+    },
+    {
+      "slug": "후토루-양재점",
+      "name": "후토루 양재점",
+      "area": "양재",
+      "category": "분식",
+      "priceRange": "8,900~14,900원",
+      "notes": "고등어스테이크 프누키 14,900 / 고단백 매콤 비빔면 8,900 · 11:00-21:00 · 도보 약 169m",
+      "tags": [
+        "김밥",
+        "분식"
+      ],
+      "addedAt": "2026-11-06T04:20:27.256Z",
+      "updatedAt": "2026-11-11T09:30:41.763Z",
+      "mentionCount": 2,
+      "subcategory": "김밥·후토마키",
+      "menu": [
+        {
+          "name": "고등어스테이크 프누키",
+          "price": 14900
+        },
+        {
+          "name": "고단백 매콤 비빔면",
+          "price": 8900
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 169,
+      "location": {
+        "lat": 37.48333414022644,
+        "lng": 127.03478429203255
+      },
+      "place": {
+        "kakaoId": "783682960",
+        "kakaoUrl": "https://place.map.kakao.com/783682960",
+        "address": "서울 서초구 강남대로 221"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:29.999Z",
+      "rating": {
+        "score": 4.8,
+        "count": 5,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=340298955999172005&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:29.999Z"
       }
     },
     {
@@ -2498,6 +2546,56 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=7023836291816782613&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:24.057Z"
+      }
+    },
+    {
+      "slug": "보글이-생태탕왕코다리-양재역",
+      "name": "보글이 생태탕왕코다리 양재역",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "동태탕·해물",
+      "priceRange": "13,000~15,000원",
+      "notes": "동태탕 13,000 / 알탕 15,000 · 11:00-21:40 (15:00-17:00 브레이크) · 도보 약 375m",
+      "menu": [
+        {
+          "name": "동태탕",
+          "price": 13000
+        },
+        {
+          "name": "알탕",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:40",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMeters": 375,
+      "tags": [
+        "동태탕",
+        "해물"
+      ],
+      "addedAt": "2026-11-11T09:30:43.944Z",
+      "updatedAt": "2026-11-11T09:30:43.944Z",
+      "mentionCount": 1,
+      "location": {
+        "lat": 37.48545538016031,
+        "lng": 127.03056445864897
+      },
+      "place": {
+        "kakaoId": "1233001797",
+        "kakaoUrl": "https://place.map.kakao.com/1233001797",
+        "address": "서울 서초구 강남대로37길 56-18"
+      },
+      "ratingCheckedAt": "2026-11-11T09:30:59.735Z",
+      "rating": {
+        "score": 4,
+        "count": 157,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=2736744032565507095&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-11T09:30:59.735Z"
       }
     },
     {
@@ -3421,54 +3519,6 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=16903641516061433727&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:29.620Z"
-      }
-    },
-    {
-      "slug": "후토루-양재점",
-      "name": "후토루 양재점",
-      "area": "양재",
-      "category": "분식",
-      "priceRange": "8,900~14,900원",
-      "notes": "고등어스테이크 프누키 14,900 / 고단백 매콤 비빔면 8,900 · 11:00-21:00 · 도보 약 169m",
-      "tags": [
-        "김밥",
-        "분식"
-      ],
-      "addedAt": "2026-11-06T04:20:27.256Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 1,
-      "subcategory": "김밥·후토마키",
-      "menu": [
-        {
-          "name": "고등어스테이크 프누키",
-          "price": 14900
-        },
-        {
-          "name": "고단백 매콤 비빔면",
-          "price": 8900
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "21:00"
-      },
-      "walkMeters": 169,
-      "location": {
-        "lat": 37.48333414022644,
-        "lng": 127.03478429203255
-      },
-      "place": {
-        "kakaoId": "783682960",
-        "kakaoUrl": "https://place.map.kakao.com/783682960",
-        "address": "서울 서초구 강남대로 221"
-      },
-      "ratingCheckedAt": "2026-11-06T06:08:29.999Z",
-      "rating": {
-        "score": 4.8,
-        "count": 5,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=340298955999172005&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:08:29.999Z"
       }
     },
     {
