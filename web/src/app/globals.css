@@ -1,53 +1,15 @@
-@import "shadcn/tailwind.css";
-@import "./globals-extra.css";
+@import "./ds-tokens.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: #f3f6f2;
-    --foreground: #1c2a24;
-    --card: #ffffffcc;
-    --card-foreground: #1c2a24;
-    --popover: #ffffff;
-    --popover-foreground: #1c2a24;
-    --primary: #1f6a4f;
-    --primary-foreground: #f4fff8;
-    --secondary: #e4eee7;
-    --secondary-foreground: #1c2a24;
-    --muted: #e8efe9;
-    --muted-foreground: #5b6d64;
-    --accent: #d8efe4;
-    --accent-foreground: #154836;
-    --destructive: #b42318;
-    --border: #c9d7ce;
-    --input: #c9d7ce;
-    --ring: #2f8f6b;
-    --radius: 0.75rem;
-  }
-
   * {
-    border-color: var(--border);
+    border-color: var(--token-color-border-default);
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    background-image:
-      radial-gradient(ellipse 80% 50% at 10% -10%, #cfe8da 0%, transparent 55%),
-      radial-gradient(ellipse 60% 40% at 100% 0%, #d9e7f2 0%, transparent 50%),
-      linear-gradient(180deg, #f7faf6 0%, #eef3ee 45%, #e7eee8 100%);
-    background-attachment: fixed;
+    @apply bg-background-default font-sans text-text-primary antialiased;
     min-height: 100vh;
-  }
-
-  body::before {
-    content: "";
-    pointer-events: none;
-    position: fixed;
-    inset: 0;
-    opacity: 0.35;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cpath d='M0 60h120M60 0v120' stroke='%231f6a4f' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
-    z-index: 0;
   }
 }

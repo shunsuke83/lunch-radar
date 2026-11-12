@@ -199,5 +199,5 @@ GitHub 웹의 "Add files via upload"는 로컬 훅을 거치지 않습니다. �
 
 ## 참고
 
-- 폰트(Manrope, Syne, SIL OFL)는 `web/src/app/fonts/`에 포함되어 있어 빌드 시 Google Fonts에 접속하지 않습니다. Next.js 15.2.4의 `next/font/google`이 Google의 새 폰트 URL 형식을 처리하지 못해 빌드가 실패하기 때문입니다.
+- 화면은 사내 [Admin Design System](https://genonai.github.io/admin-design-system)의 토큰·컴포넌트 모양을 따릅니다. 폰트는 `pretendard` npm 패키지(SIL OFL)에서 번들되어 빌드 시 외부 폰트 서버에 접속하지 않습니다. 자세한 내용은 [web/README](web/README.md#디자인)를 참고하세요.
 - `web`이 고정한 Next.js 15.2.4에는 보안 권고([CVE-2025-66478](https://nextjs.org/blog/CVE-2025-66478))가 있습니다. 로컬 확인용이 아니라 외부에 배포한다면 패치된 버전으로 올리세요.

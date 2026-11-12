@@ -1,6 +1,8 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
+import { Star } from "lucide-react";
+import type { ReactNode } from "react";
+import { Badge, Button, EmptyState, LinkButton, Tag } from "@/components/ds";
 import {
   isOpenAt,
   mapLinks,
@@ -8,6 +10,7 @@ import {
   type OpeningHours,
   type Restaurant,
 } from "@/lib/catalog";
+import { cn } from "@/lib/utils";
 
 type Props = {
   restaurants: Restaurant[];
@@ -15,153 +18,242 @@ type Props = {
   now?: number | null;
   loading?: boolean;
   error?: string | null;
+  onReset?: () => void;
 };
 
 const won = (n: number) => `${n.toLocaleString("ko-KR")}원`;
 
 function hoursText(h: OpeningHours): string {
-  const base = h.open === "00:00" && h.close === "24:00" ? "24시간" : `${h.open}–${h.close}`;
-  return h.breakStart && h.breakEnd ? `${base} (브레이크 ${h.breakStart}–${h.breakEnd})` : base;
+  return h.open === "00:00" && h.close === "24:00" ? "24시간" : `${h.open}–${h.close}`;
 }
 
+const COLUMNS = "lg:grid-cols-[minmax(0,1fr)_80px_184px_128px_112px_64px_168px]";
+const HEADS: { label: string; align?: "right" }[] = [
+  { label: "가게" },
+  { label: "도보" },
+  { label: "영업시간" },
+  { label: "가격" },
+  { label: "평점" },
+  { label: "멘션", align: "right" },
+  { label: "지도", align: "right" },
+];
+
+/** Table cell; below lg it stacks with its column label. */
+function Cell({
+  label,
+  className,
+  children,
+}: {
+  label: string;
+  className?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className={cn("flex min-w-0 flex-col gap-group-xxs lg:px-inline-md lg:py-stack-md", className)}>
+      <span className="text-text-tertiary typography-body-sm-regular lg:hidden">{label}</span>
+      {children}
+    </div>
+  );
+}
+
+const muted = <span className="text-text-disabled typography-body-md-regular">–</span>;
+
 export function RatingText({ r }: { r: Restaurant }) {
-  if (!r.rating) return null;
+  if (!r.rating) return muted;
   const text = (
-    <>
-      <span aria-hidden className="text-amber-500">★</span> {r.rating.score.toFixed(1)}
-      <span className="text-muted-foreground"> ({r.rating.count.toLocaleString("ko-KR")}) Google</span>
-    </>
+    <span className="inline-flex items-center gap-group-xxs">
+      <Star aria-hidden className="size-size-icon-sm fill-icon-warning-default text-icon-warning-default" />
+      <span className="text-text-primary typography-body-md-medium">{r.rating.score.toFixed(1)}</span>
+      <span className="text-text-tertiary typography-body-sm-regular">
+        ({r.rating.count.toLocaleString("ko-KR")})
+      </span>
+    </span>
   );
   return r.rating.url ? (
     <a
       href={r.rating.url}
       target="_blank"
       rel="noreferrer"
-      className="hover:underline"
+      className="w-fit rounded-xxs hover:bg-action-tertiary-subtle"
       aria-label={`Google 평점 ${r.rating.score.toFixed(1)}, 리뷰 ${r.rating.count}개`}
     >
       {text}
     </a>
   ) : (
-    <span>{text}</span>
+    text
   );
 }
 
 export function MapButtons({ r }: { r: Restaurant }) {
   const links = mapLinks(r);
-  const cls =
-    "rounded-full border border-border bg-white/80 px-2 py-0.5 text-xs text-foreground/80 transition hover:bg-muted";
   return (
-    <span className="flex gap-1.5">
-      <a href={links.naver} target="_blank" rel="noreferrer" className={cls}>
-        네이버지도
-      </a>
-      <a href={links.kakao} target="_blank" rel="noreferrer" className={cls}>
-        카카오맵
-      </a>
+    <span className="flex gap-group-sm">
+      <LinkButton href={links.naver} aria-label={`${r.name} 네이버지도`}>
+        네이버
+      </LinkButton>
+      <LinkButton href={links.kakao} aria-label={`${r.name} 카카오맵`}>
+        카카오
+      </LinkButton>
     </span>
   );
 }
 
-export function RestaurantList({ restaurants, now = null, loading, error }: Props) {
+function Shell({ children }: { children: ReactNode }) {
+  return <div className="overflow-hidden rounded-sm bg-surface-default">{children}</div>;
+}
+
+export function RestaurantList({ restaurants, now = null, loading, error, onReset }: Props) {
   if (loading) {
     return (
-      <div className="rounded-2xl border border-dashed border-border bg-white/50 p-10 text-center text-muted-foreground">
-        맛집 목록을 불러오는 중…
-      </div>
+      <Shell>
+        <p className="px-inline-xxl py-stack-xxxxl text-center text-text-tertiary typography-body-md-regular">
+          맛집 목록을 불러오는 중…
+        </p>
+      </Shell>
     );
   }
 
   if (error) {
     return (
-      <div className="rounded-2xl border border-destructive/30 bg-destructive/5 p-10 text-center text-destructive">
-        {error}
-      </div>
+      <Shell>
+        <EmptyState type="error" title="목록을 불러오지 못했습니다." description={error} />
+      </Shell>
     );
   }
 
   if (restaurants.length === 0) {
     return (
-      <div className="rounded-2xl border border-dashed border-border bg-white/50 p-10 text-center text-muted-foreground">
-        조건에 맞는 맛집이 없습니다. 조건을 줄이거나 Slack에서 새로 수집해 보세요.
-      </div>
+      <Shell>
+        <EmptyState
+          type="noResult"
+          title="조건에 맞는 맛집이 없습니다."
+          description="검색어 또는 필터를 조정해 주세요."
+          action={onReset ? <Button onClick={onReset}>필터 초기화</Button> : undefined}
+        />
+      </Shell>
     );
   }
 
   return (
-    <ul className="divide-y divide-border/70 overflow-hidden rounded-2xl border border-border/80 bg-white/75 shadow-lift backdrop-blur-md">
-      {restaurants.map((r, index) => {
-        const open = now !== null && r.hours ? isOpenAt(r.hours, now) : null;
-        return (
-          <li
-            key={r.slug}
-            className="restaurant-row grid gap-2 px-4 py-4 transition-colors hover:bg-accent/40 sm:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_auto] sm:items-start sm:gap-4 sm:px-5"
-            style={{ animationDelay: `${Math.min(index, 12) * 35}ms` }}
+    <Shell>
+      <div
+        aria-hidden
+        className={cn("hidden bg-surface-subtle lg:grid", COLUMNS)}
+      >
+        {HEADS.map((h) => (
+          <div
+            key={h.label}
+            className={cn(
+              "flex h-size-control-lg items-center px-inline-md text-text-secondary typography-label-md-medium",
+              h.align === "right" && "justify-end",
+            )}
           >
-            <div className="min-w-0 space-y-1">
-              <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-                <h2 className="font-display text-lg font-semibold tracking-tight text-foreground">
-                  {r.name}
-                </h2>
-                {r.category ? (
-                  <span className="text-sm font-medium text-primary">{r.category}</span>
-                ) : null}
-                {r.subcategory ? (
-                  <span className="text-sm text-muted-foreground">{r.subcategory}</span>
-                ) : null}
-              </div>
-              {r.menu?.length ? (
-                <ul className="flex flex-wrap gap-x-3 gap-y-0.5 text-sm text-foreground/80">
-                  {r.menu.map((m) => (
-                    <li key={m.name}>
-                      {m.name}
-                      {m.price !== undefined ? (
-                        <span className="text-muted-foreground"> {won(m.price)}</span>
-                      ) : null}
-                    </li>
-                  ))}
-                </ul>
-              ) : r.notes ? (
-                <p className="text-sm leading-relaxed text-foreground/80">{r.notes}</p>
-              ) : null}
-              <div className="flex flex-wrap gap-1.5 pt-1">
-                {r.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary" className="font-normal">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-
-            <div className="space-y-1 text-sm text-muted-foreground">
-              {r.walkMeters !== undefined ? (
-                <p>
-                  도보 {walkMinutes(r.walkMeters)}분 · {r.walkMeters}m
-                </p>
-              ) : r.area ? (
-                <p>지역 · {r.area}</p>
-              ) : null}
-              {r.hours ? (
-                <p className="flex flex-wrap items-center gap-1.5">
-                  {hoursText(r.hours)}
-                  {open !== null ? (
-                    <Badge variant={open ? "default" : "outline"} className="font-normal">
-                      {open ? "영업 중" : "영업 전/종료"}
-                    </Badge>
+            {h.label}
+          </div>
+        ))}
+      </div>
+      <ul>
+        {restaurants.map((r) => {
+          const open = now !== null && r.hours ? isOpenAt(r.hours, now) : null;
+          return (
+            <li
+              key={r.slug}
+              className={cn(
+                "grid grid-cols-2 gap-x-group-lg gap-y-group-md border-b border-border-default px-inline-lg py-stack-lg transition-colors last:border-b-0 hover:bg-surface-subtlest lg:items-center lg:gap-0 lg:p-0",
+                COLUMNS,
+              )}
+            >
+              <div className="col-span-2 flex min-w-0 flex-col gap-group-xs lg:col-span-1 lg:px-inline-md lg:py-stack-md">
+                <div className="flex flex-wrap items-center gap-x-group-sm gap-y-group-xxs">
+                  <h2 className="text-text-primary typography-headline-sm">{r.name}</h2>
+                  {r.category ? <Tag color="brand" size="xsmall">{r.category}</Tag> : null}
+                  {r.subcategory ? (
+                    <span className="text-text-tertiary typography-body-sm-regular">{r.subcategory}</span>
                   ) : null}
-                </p>
-              ) : null}
-              {r.priceRange ? <p>가격 · {r.priceRange}</p> : null}
-            </div>
+                </div>
+                {r.menu?.length ? (
+                  <ul className="flex flex-wrap gap-x-group-md gap-y-group-xxs text-text-secondary typography-body-sm-regular">
+                    {r.menu.map((m) => (
+                      <li key={m.name}>
+                        {m.name}
+                        {m.price !== undefined ? (
+                          <span className="text-text-tertiary"> {won(m.price)}</span>
+                        ) : null}
+                      </li>
+                    ))}
+                  </ul>
+                ) : r.notes ? (
+                  <p className="text-text-secondary typography-body-sm-regular">{r.notes}</p>
+                ) : null}
+                {r.tags.length ? (
+                  <div className="flex flex-wrap gap-group-xs pt-stack-xxs">
+                    {r.tags.map((tag) => (
+                      <Tag key={tag} color="gray" size="xsmall">
+                        {tag}
+                      </Tag>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
 
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm sm:flex-col sm:items-end">
-              <p className="font-medium text-primary">멘션 {r.mentionCount}</p>
-              <RatingText r={r} />
-              <MapButtons r={r} />
-            </div>
-          </li>
-        );
-      })}
-    </ul>
+              <Cell label="도보">
+                {r.walkMeters !== undefined ? (
+                  <>
+                    <span className="text-text-primary typography-body-md-medium">
+                      {walkMinutes(r.walkMeters)}분
+                    </span>
+                    <span className="text-text-tertiary typography-body-sm-regular">{r.walkMeters}m</span>
+                  </>
+                ) : r.area ? (
+                  <span className="text-text-secondary typography-body-md-regular">{r.area}</span>
+                ) : (
+                  muted
+                )}
+              </Cell>
+
+              <Cell label="영업시간">
+                {r.hours ? (
+                  <>
+                    {open !== null ? (
+                      <Badge status={open ? "success" : "disabled"}>{open ? "영업 중" : "영업 전·종료"}</Badge>
+                    ) : null}
+                    <span className="text-text-tertiary typography-body-sm-regular">{hoursText(r.hours)}</span>
+                    {r.hours.breakStart && r.hours.breakEnd ? (
+                      <span className="text-text-tertiary typography-body-sm-regular">
+                        브레이크 {r.hours.breakStart}–{r.hours.breakEnd}
+                      </span>
+                    ) : null}
+                  </>
+                ) : (
+                  muted
+                )}
+              </Cell>
+
+              <Cell label="가격">
+                {r.priceRange ? (
+                  <span className="whitespace-nowrap text-text-secondary typography-body-md-regular">
+                    {r.priceRange}
+                  </span>
+                ) : (
+                  muted
+                )}
+              </Cell>
+
+              <Cell label="평점 (Google)">
+                <RatingText r={r} />
+              </Cell>
+
+              <Cell label="멘션" className="lg:items-end">
+                <span className="text-text-primary typography-body-md-medium">{r.mentionCount}</span>
+              </Cell>
+
+              <div className="col-span-2 flex lg:col-span-1 lg:justify-end lg:px-inline-md lg:py-stack-md">
+                <MapButtons r={r} />
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </Shell>
   );
 }

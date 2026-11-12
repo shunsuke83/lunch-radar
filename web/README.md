@@ -23,7 +23,18 @@ npm run build:pages                                   # web/out/ 생성
 NEXT_PUBLIC_BASE_PATH=/lunch-radar npm run build:pages  # 하위 경로 배포용 (bash)
 ```
 
-맛집 데이터는 빌드 시점에 `data/restaurants.json`에서 읽어 HTML에 포함되고, 검색·필터는 브라우저에서 처리합니다. 각 가게의 `category`는 한식·중식·일식·양식·아시안·분식·샐러드 중 하나이고 세부 종류는 `subcategory`에 있습니다. `menu[{name, price}]` / `hours{open, close, breakStart?, breakEnd?}` / `walkMeters`로 "도보 5분 이내(≈400m)", "지금 영업 중(Asia/Seoul, 브라우저 시계 기준)", "만원 이하(메뉴 최저가)" 칩과 거리·가격 정렬을 합니다. 휴무일 정보는 없어서 영업 중 표시는 시간만 봅니다. `location` / `place`(카카오맵 링크) / `naver`(네이버지도 장소 링크, 버튼은 네이버가 먼저) / `rating`(Google 별점)은 `lunch-spots`의 `npm run catalog:enrich`가 채우며, "지도보기"는 빌드 시 `NEXT_PUBLIC_KAKAO_MAP_KEY`(카카오 JavaScript 키)가 있을 때만 카카오 지도를 그립니다. 로컬에서는 `web/.env.local`에 `NEXT_PUBLIC_KAKAO_MAP_KEY=...`를 넣고 개발 서버를 다시 시작합니다. 이 필드는 `lunch-spots`가 notes에서 뽑아 넣으며, 기존 카탈로그는 `lunch-spots`에서 `npm run catalog:structure`로 다시 계산할 수 있습니다. 배포는 루트의 `.github/workflows/deploy-pages.yml`이 자동으로 합니다 ([루트 README](../README.md#github-pages-배포) 참고).
+맛집 데이터는 빌드 시점에 `data/restaurants.json`에서 읽어 HTML에 포함되고, 검색·필터는 브라우저에서 처리합니다. 각 가게의 `category`는 한식·중식·일식·양식·아시안·분식·샐러드 중 하나이고 세부 종류는 `subcategory`에 있습니다. `menu[{name, price}]` / `hours{open, close, breakStart?, breakEnd?}` / `walkMeters`로 "도보 5분 이내(≈400m)", "지금 영업 중(Asia/Seoul, 브라우저 시계 기준)", "만원 이하(메뉴 최저가)" 칩과 거리·가격 정렬을 합니다. 휴무일 정보는 없어서 영업 중 표시는 시간만 봅니다. `location` / `place`(카카오맵 링크) / `naver`(네이버지도 장소 링크, 버튼은 네이버가 먼저) / `rating`(Google 별점)은 `lunch-spots`의 `npm run catalog:enrich`가 채우며, 보기 방식의 "지도"는 빌드 시 `NEXT_PUBLIC_KAKAO_MAP_KEY`(카카오 JavaScript 키)가 있을 때만 카카오 지도를 그립니다. 로컬에서는 `web/.env.local`에 `NEXT_PUBLIC_KAKAO_MAP_KEY=...`를 넣고 개발 서버를 다시 시작합니다. 이 필드는 `lunch-spots`가 notes에서 뽑아 넣으며, 기존 카탈로그는 `lunch-spots`에서 `npm run catalog:structure`로 다시 계산할 수 있습니다. 배포는 루트의 `.github/workflows/deploy-pages.yml`이 자동으로 합니다 ([루트 README](../README.md#github-pages-배포) 참고).
+
+## 디자인
+
+화면은 사내 [Admin Design System](https://genonai.github.io/admin-design-system)의 리스트 페이지 템플릿(PageHeader → ListControl → 목록)을 따릅니다. `@genonai/admin-design-system` 패키지는 비공개 저장소라 설치하지 않고, 쇼케이스와 같은 모양을 로컬에서 재현합니다.
+
+- `src/app/ds-tokens.css` — 쇼케이스에서 가져온 `--token-*` 변수(색·타이포·간격·반경·그림자). 디자인 시스템 값이 바뀌면 이 파일을 갱신합니다.
+- `tailwind.config.ts` — 토큰을 디자인 시스템과 같은 클래스 이름으로 연결합니다 (`text-text-primary`, `bg-surface-subtle`, `gap-stack-md`, `px-inline-md`, `h-size-control-md`, `rounded-xs`, `shadow-default-sm`, `typography-label-md-regular` 등).
+- `src/components/ds.tsx` — Button · LinkButton · Tag · Badge · Chip · SegmentedControl · SearchField · FilterSelect · PageHeader · EmptyState. 이름과 상태는 쇼케이스와 같게 맞춰 두어, 패키지 접근 권한이 생기면 import 경로만 바꾸면 됩니다.
+- 폰트는 Pretendard(`pretendard` 패키지, 동적 서브셋)입니다.
+
+UI 규칙은 [AGENTS.md](AGENTS.md)에 있습니다.
 
 ## API (로컬/서버 모드 전용, Pages에서는 동작하지 않음)
 

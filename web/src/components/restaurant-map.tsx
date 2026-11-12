@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { buttonClass } from "@/components/ds";
 import { mapLinks, walkMinutes, type Office, type Restaurant } from "@/lib/catalog";
 
 // Kakao JS keys are public by design; Kakao only serves them to the
@@ -67,10 +68,13 @@ function el<K extends keyof HTMLElementTagNameMap>(
 
 /** Popup card built with DOM APIs (textContent), so names cannot inject markup. */
 function card(r: Restaurant, onClose: () => void): HTMLElement {
-  const root = el("div", "w-60 rounded-xl border border-border bg-white p-3 text-sm shadow-lg");
-  const head = el("div", "flex items-start justify-between gap-2");
-  head.append(el("p", "font-semibold text-foreground", r.name));
-  const close = el("button", "text-muted-foreground hover:text-foreground", "✕");
+  const root = el(
+    "div",
+    "flex w-60 flex-col gap-group-xxs rounded-lg border border-border-default bg-surface-default px-inline-lg py-stack-md shadow-default-lg",
+  );
+  const head = el("div", "flex items-start justify-between gap-group-sm");
+  head.append(el("p", "text-text-primary typography-headline-sm", r.name));
+  const close = el("button", "text-icon-tertiary hover:text-icon-primary typography-body-md-regular", "✕");
   close.type = "button";
   close.setAttribute("aria-label", "닫기");
   close.onclick = onClose;
@@ -78,32 +82,38 @@ function card(r: Restaurant, onClose: () => void): HTMLElement {
   root.append(head);
 
   const meta = [r.category, r.subcategory].filter(Boolean).join(" · ");
-  if (meta) root.append(el("p", "text-xs text-muted-foreground", meta));
+  if (meta) root.append(el("p", "text-text-tertiary typography-body-sm-regular", meta));
   if (r.rating) {
     root.append(
       el(
         "p",
-        "mt-1 text-xs",
+        "text-text-secondary typography-body-sm-medium",
         `★ ${r.rating.score.toFixed(1)} (${r.rating.count.toLocaleString("ko-KR")}) Google`,
       ),
     );
   }
   if (r.walkMeters !== undefined) {
-    root.append(el("p", "text-xs text-muted-foreground", `도보 ${walkMinutes(r.walkMeters)}분 · ${r.walkMeters}m`));
+    root.append(
+      el("p", "text-text-tertiary typography-body-sm-regular", `도보 ${walkMinutes(r.walkMeters)}분 · ${r.walkMeters}m`),
+    );
   }
   if (r.menu?.[0]) {
     const m = r.menu[0];
     root.append(
-      el("p", "text-xs", m.price !== undefined ? `${m.name} ${m.price.toLocaleString("ko-KR")}원` : m.name),
+      el(
+        "p",
+        "text-text-secondary typography-body-sm-regular",
+        m.price !== undefined ? `${m.name} ${m.price.toLocaleString("ko-KR")}원` : m.name,
+      ),
     );
   }
   const links = mapLinks(r);
-  const row = el("div", "mt-2 flex gap-1.5");
+  const row = el("div", "flex gap-group-sm pt-stack-sm");
   for (const [label, href] of [
     ["네이버지도", links.naver],
     ["카카오맵", links.kakao],
   ] as const) {
-    const a = el("a", "rounded-full border border-border px-2 py-0.5 text-xs hover:bg-muted", label);
+    const a = el("a", buttonClass("tertiary", "sm"), label);
     a.href = href;
     a.target = "_blank";
     a.rel = "noreferrer";
@@ -163,7 +173,7 @@ export function RestaurantMap({ restaurants, office }: Props) {
       const pos = new kakao.maps.LatLng(office.lat, office.lng);
       const label = el(
         "div",
-        "rounded-full bg-primary px-2.5 py-1 text-xs font-semibold text-primary-foreground shadow",
+        "rounded-full bg-surface-brand-default px-inline-md py-stack-xs text-text-inverse shadow-brand-md typography-label-sm-bold",
         `회사 · ${office.name}`,
       );
       const o = new kakao.maps.CustomOverlay({ position: pos, content: label, yAnchor: 1.6, zIndex: 2 });
@@ -197,7 +207,7 @@ export function RestaurantMap({ restaurants, office }: Props) {
 
   if (!KAKAO_KEY) {
     return (
-      <div className="rounded-2xl border border-dashed border-border bg-white/50 p-6 text-center text-sm text-muted-foreground">
+      <div className="rounded-sm bg-surface-default px-inline-xxl py-stack-xl text-center text-text-tertiary typography-body-md-regular">
         카카오 지도 키(NEXT_PUBLIC_KAKAO_MAP_KEY)가 설정되지 않아 지도를 표시할 수 없습니다. 각 가게의
         카카오맵·네이버지도 버튼을 이용해 주세요.
       </div>
@@ -205,12 +215,12 @@ export function RestaurantMap({ restaurants, office }: Props) {
   }
 
   return (
-    <section aria-label="맛집 지도" className="space-y-2">
+    <section aria-label="맛집 지도" className="flex flex-col gap-stack-sm">
       <div
         ref={box}
-        className="h-[420px] w-full overflow-hidden rounded-2xl border border-border/80 bg-muted shadow-lift"
+        className="h-[420px] w-full overflow-hidden rounded-sm border border-border-default bg-surface-subtle"
       />
-      <p className="text-xs text-muted-foreground">
+      <p className="text-text-tertiary typography-caption">
         {error ??
           (located.length === restaurants.length
             ? `${located.length}곳 표시`
