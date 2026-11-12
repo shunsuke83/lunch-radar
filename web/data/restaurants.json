@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-11T09:30:46.917Z",
+  "updatedAt": "2026-11-12T09:54:51.997Z",
   "source": "slack-export",
-  "lastMessageTs": "1794362421.107349",
+  "lastMessageTs": "1794448813.059719",
   "restaurants": [
     {
       "slug": "국미당-양재역",
@@ -49,6 +49,53 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=7820476884504141869&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:09.689Z"
+      }
+    },
+    {
+      "slug": "강남쌀국수-양재점",
+      "name": "강남쌀국수 양재점",
+      "area": "양재",
+      "category": "아시안",
+      "priceRange": "8,500원",
+      "notes": "강남쌀국수 8,500 / 얼큰강남쌀국수 8,500 · 10:00-20:30 · 도보 약 192m",
+      "tags": [
+        "쌀국수"
+      ],
+      "addedAt": "2026-11-06T04:20:17.273Z",
+      "updatedAt": "2026-11-12T09:54:30.866Z",
+      "mentionCount": 3,
+      "subcategory": "쌀국수",
+      "menu": [
+        {
+          "name": "강남쌀국수",
+          "price": 8500
+        },
+        {
+          "name": "얼큰강남쌀국수",
+          "price": 8500
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "20:30"
+      },
+      "walkMeters": 192,
+      "location": {
+        "lat": 37.4858744920393,
+        "lng": 127.036417045661
+      },
+      "place": {
+        "kakaoId": "1160955124",
+        "kakaoUrl": "https://place.map.kakao.com/1160955124",
+        "address": "서울 강남구 남부순환로359길 13"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:12.296Z",
+      "rating": {
+        "score": 4.3,
+        "count": 3,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=9877093658919412898&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:12.296Z"
       }
     },
     {
@@ -762,53 +809,6 @@
       }
     },
     {
-      "slug": "강남쌀국수-양재점",
-      "name": "강남쌀국수 양재점",
-      "area": "양재",
-      "category": "아시안",
-      "priceRange": "8,500원",
-      "notes": "강남쌀국수 8,500 / 얼큰강남쌀국수 8,500 · 10:00-20:30 · 도보 약 192m",
-      "tags": [
-        "쌀국수"
-      ],
-      "addedAt": "2026-11-06T04:20:17.273Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 2,
-      "subcategory": "쌀국수",
-      "menu": [
-        {
-          "name": "강남쌀국수",
-          "price": 8500
-        },
-        {
-          "name": "얼큰강남쌀국수",
-          "price": 8500
-        }
-      ],
-      "hours": {
-        "open": "10:00",
-        "close": "20:30"
-      },
-      "walkMeters": 192,
-      "location": {
-        "lat": 37.4858744920393,
-        "lng": 127.036417045661
-      },
-      "place": {
-        "kakaoId": "1160955124",
-        "kakaoUrl": "https://place.map.kakao.com/1160955124",
-        "address": "서울 강남구 남부순환로359길 13"
-      },
-      "ratingCheckedAt": "2026-11-06T06:08:12.296Z",
-      "rating": {
-        "score": 4.3,
-        "count": 3,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=9877093658919412898&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:08:12.296Z"
-      }
-    },
-    {
       "slug": "고양이부엌-양재",
       "name": "고양이부엌 양재",
       "area": "양재",
@@ -951,6 +951,53 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=5762758034312760537&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:15.193Z"
+      }
+    },
+    {
+      "slug": "마라홀릭-마라탕-양재역점",
+      "name": "마라홀릭 마라탕 양재역점",
+      "area": "양재",
+      "category": "중식",
+      "priceRange": "9,900~10,900원",
+      "notes": "꿔바로우 9,900 / 칠리새우 10,900 · 11:00-21:00 · 도보 약 208m",
+      "tags": [
+        "마라탕"
+      ],
+      "addedAt": "2026-11-06T04:19:37.946Z",
+      "updatedAt": "2026-11-12T09:54:30.254Z",
+      "mentionCount": 2,
+      "subcategory": "마라탕",
+      "menu": [
+        {
+          "name": "꿔바로우",
+          "price": 9900
+        },
+        {
+          "name": "칠리새우",
+          "price": 10900
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMeters": 208,
+      "location": {
+        "lat": 37.4857139917147,
+        "lng": 127.036807052622
+      },
+      "place": {
+        "kakaoId": "320179256",
+        "kakaoUrl": "https://place.map.kakao.com/320179256",
+        "address": "서울 강남구 남부순환로359길 10"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:22.029Z",
+      "rating": {
+        "score": 3.7,
+        "count": 7,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=1894493870903248838&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:22.029Z"
       }
     },
     {
@@ -1698,6 +1745,54 @@
       }
     },
     {
+      "slug": "찌개집1979-양재역점",
+      "name": "찌개집1979 양재역점",
+      "area": "양재",
+      "category": "한식",
+      "priceRange": "7,000~10,000원",
+      "notes": "점심특선 통돼지 김치찌개 10,000 / 된장술밥(후식) 7,000 · 24시간 · 도보 약 39m",
+      "tags": [
+        "김치찌개",
+        "한식"
+      ],
+      "addedAt": "2026-11-06T04:20:21.412Z",
+      "updatedAt": "2026-11-12T09:54:35.484Z",
+      "mentionCount": 2,
+      "subcategory": "김치찌개",
+      "menu": [
+        {
+          "name": "점심특선 통돼지 김치찌개",
+          "price": 10000
+        },
+        {
+          "name": "된장술밥(후식)",
+          "price": 7000
+        }
+      ],
+      "hours": {
+        "open": "00:00",
+        "close": "24:00"
+      },
+      "walkMeters": 39,
+      "location": {
+        "lat": 37.4852596990868,
+        "lng": 127.034430153142
+      },
+      "place": {
+        "kakaoId": "1156425526",
+        "kakaoUrl": "https://place.map.kakao.com/1156425526",
+        "address": "서울 강남구 강남대로 240"
+      },
+      "ratingCheckedAt": "2026-11-06T06:08:29.312Z",
+      "rating": {
+        "score": 4.7,
+        "count": 3,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=8550083512197848792&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-06T06:08:29.312Z"
+      }
+    },
+    {
       "slug": "채석강-양재",
       "name": "채석강 양재",
       "area": "양재",
@@ -2358,53 +2453,6 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=10369864928520765772&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:21.842Z"
-      }
-    },
-    {
-      "slug": "마라홀릭-마라탕-양재역점",
-      "name": "마라홀릭 마라탕 양재역점",
-      "area": "양재",
-      "category": "중식",
-      "priceRange": "9,900~10,900원",
-      "notes": "꿔바로우 9,900 / 칠리새우 10,900 · 11:00-21:00 · 도보 약 208m",
-      "tags": [
-        "마라탕"
-      ],
-      "addedAt": "2026-11-06T04:19:37.946Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 1,
-      "subcategory": "마라탕",
-      "menu": [
-        {
-          "name": "꿔바로우",
-          "price": 9900
-        },
-        {
-          "name": "칠리새우",
-          "price": 10900
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "21:00"
-      },
-      "walkMeters": 208,
-      "location": {
-        "lat": 37.4857139917147,
-        "lng": 127.036807052622
-      },
-      "place": {
-        "kakaoId": "320179256",
-        "kakaoUrl": "https://place.map.kakao.com/320179256",
-        "address": "서울 강남구 남부순환로359길 10"
-      },
-      "ratingCheckedAt": "2026-11-06T06:08:22.029Z",
-      "rating": {
-        "score": 3.7,
-        "count": 7,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=1894493870903248838&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:08:22.029Z"
       }
     },
     {
@@ -3375,54 +3423,6 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=4485071272891995610&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:29.150Z"
-      }
-    },
-    {
-      "slug": "찌개집1979-양재역점",
-      "name": "찌개집1979 양재역점",
-      "area": "양재",
-      "category": "한식",
-      "priceRange": "7,000~10,000원",
-      "notes": "점심특선 통돼지 김치찌개 10,000 / 된장술밥(후식) 7,000 · 24시간 · 도보 약 39m",
-      "tags": [
-        "김치찌개",
-        "한식"
-      ],
-      "addedAt": "2026-11-06T04:20:21.412Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 1,
-      "subcategory": "김치찌개",
-      "menu": [
-        {
-          "name": "점심특선 통돼지 김치찌개",
-          "price": 10000
-        },
-        {
-          "name": "된장술밥(후식)",
-          "price": 7000
-        }
-      ],
-      "hours": {
-        "open": "00:00",
-        "close": "24:00"
-      },
-      "walkMeters": 39,
-      "location": {
-        "lat": 37.4852596990868,
-        "lng": 127.034430153142
-      },
-      "place": {
-        "kakaoId": "1156425526",
-        "kakaoUrl": "https://place.map.kakao.com/1156425526",
-        "address": "서울 강남구 강남대로 240"
-      },
-      "ratingCheckedAt": "2026-11-06T06:08:29.312Z",
-      "rating": {
-        "score": 4.7,
-        "count": 3,
-        "source": "google",
-        "url": "https://maps.google.com/?cid=8550083512197848792&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "fetchedAt": "2026-11-06T06:08:29.312Z"
       }
     },
     {
