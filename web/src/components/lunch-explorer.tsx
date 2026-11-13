@@ -30,7 +30,7 @@ const EMPTY_FILTERS: FilterState = {
   near: false,
   openNow: false,
   budget: false,
-  sort: "popular",
+  sort: "reviews",
 };
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -111,7 +111,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
         near: isOffice && deferred.near,
         budget: deferred.budget,
         openAt: deferred.openNow ? now : null,
-        sort: !isOffice && deferred.sort === "distance" ? "popular" : deferred.sort,
+        sort: !isOffice && deferred.sort === "distance" ? "reviews" : deferred.sort,
       }),
     [source, deferred, now, isOffice],
   );
@@ -124,12 +124,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
       : when.toLocaleString("ko-KR", { timeZone: "Asia/Seoul" });
   }, [updatedAt]);
 
-  const emptyFor = (r: string): FilterState =>
-    r === OFFICE_REGION ? EMPTY_FILTERS : { ...EMPTY_FILTERS, sort: "rating" };
-  const reset = () => setFilters(emptyFor(region));
+  const reset = () => setFilters(EMPTY_FILTERS);
   const changeRegion = (next: string) => {
     setRegion(next);
-    setFilters(emptyFor(next));
+    setFilters(EMPTY_FILTERS);
   };
 
   const regionOptions = [

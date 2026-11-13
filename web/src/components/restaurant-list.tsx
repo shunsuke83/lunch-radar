@@ -31,14 +31,14 @@ function hoursText(h: OpeningHours): string {
   return h.open === "00:00" && h.close === "24:00" ? "24시간" : `${h.open}–${h.close}`;
 }
 
-const COLUMNS = "lg:grid-cols-[minmax(0,1fr)_80px_184px_128px_112px_64px_168px]";
+const COLUMNS = "lg:grid-cols-[minmax(0,1fr)_80px_184px_128px_112px_96px_168px]";
 const HEADS: { label: string; align?: "right" }[] = [
   { label: "가게" },
   { label: "도보" },
   { label: "영업시간" },
   { label: "가격" },
-  { label: "평점" },
-  { label: "멘션", align: "right" },
+  { label: "카카오 평점" },
+  { label: "네이버 리뷰", align: "right" },
   { label: "지도", align: "right" },
 ];
 
@@ -62,25 +62,35 @@ function Cell({
 
 const muted = <span className="text-text-disabled typography-body-md-regular">–</span>;
 
-export function RatingText({ r }: { r: Restaurant }) {
-  if (!r.rating && (r.naverReviews || r.naverScore)) {
-    return (
-      <span className="flex flex-col gap-group-xxs">
-        {r.naverScore ? (
-          <span className="inline-flex items-center gap-group-xxs">
-            <Star aria-hidden className="size-size-icon-sm fill-icon-warning-default text-icon-warning-default" />
-            <span className="text-text-primary typography-body-md-medium">{r.naverScore.toFixed(2)}</span>
-          </span>
-        ) : null}
-        {r.naverReviews ? (
-          <span className="text-text-secondary typography-body-sm-regular">
-            네이버 리뷰 {r.naverReviews.toLocaleString("ko-KR")}
-          </span>
-        ) : null}
+export function NaverReviews({ r }: { r: Restaurant }) {
+  if (!r.naverReviews) return muted;
+  const text = (
+    <span className="flex flex-col items-end gap-group-xxs">
+      <span className="text-text-primary typography-body-md-medium">
+        {r.naverReviews.toLocaleString("ko-KR")}
       </span>
-    );
-  }
-  if (!r.rating) return muted;
+      {r.naverScore ? (
+        <span className="text-text-tertiary typography-body-sm-regular">★ {r.naverScore.toFixed(2)}</span>
+      ) : null}
+    </span>
+  );
+  return r.naver ? (
+    <a
+      href={r.naver.url}
+      target="_blank"
+      rel="noreferrer"
+      className="w-fit rounded-xxs hover:bg-action-tertiary-subtle"
+      aria-label={`네이버 리뷰 ${r.naverReviews}개`}
+    >
+      {text}
+    </a>
+  ) : (
+    text
+  );
+}
+
+export function RatingText({ r }: { r: Restaurant }) {
+  if (r.rating?.source !== "kakao") return muted;
   const text = (
     <span className="inline-flex items-center gap-group-xxs">
       <Star aria-hidden className="size-size-icon-sm fill-icon-warning-default text-icon-warning-default" />
@@ -96,7 +106,7 @@ export function RatingText({ r }: { r: Restaurant }) {
       target="_blank"
       rel="noreferrer"
       className="w-fit rounded-xxs hover:bg-action-tertiary-subtle"
-      aria-label={`Google 평점 ${r.rating.score.toFixed(1)}, 리뷰 ${r.rating.count}개`}
+      aria-label={`카카오 평점 ${r.rating.score.toFixed(1)}, 리뷰 ${r.rating.count}개`}
     >
       {text}
     </a>
@@ -270,16 +280,12 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
                 )}
               </Cell>
 
-              <Cell label={nearby ? "평점 (Google)" : "평점·리뷰"}>
+              <Cell label="카카오 평점">
                 <RatingText r={r} />
               </Cell>
 
-              <Cell label="멘션" className="lg:items-end">
-                {r.mentionCount > 0 ? (
-                  <span className="text-text-primary typography-body-md-medium">{r.mentionCount}</span>
-                ) : (
-                  muted
-                )}
+              <Cell label="네이버 리뷰" className="lg:items-end">
+                <NaverReviews r={r} />
               </Cell>
 
               <div className="col-span-2 flex lg:col-span-1 lg:justify-end lg:px-inline-md lg:py-stack-md">

@@ -8,6 +8,7 @@
     "catalog:structure": "tsx scripts/structure-catalog.ts",
     "catalog:enrich": "tsx --env-file-if-exists=.env.local scripts/enrich-places.ts",
     "catalog:naver-folders": "tsx scripts/import-naver-folders.ts",
+    "catalog:kakao-regions": "tsx --env-file-if-exists=.env.local scripts/kakao-regions.ts",
     "dev": "agent-sdk dev"
   },
   "dependencies": {

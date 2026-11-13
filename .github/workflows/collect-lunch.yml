@@ -25,11 +25,10 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     env:
       LUNCH_SPOTS_CHANNEL_ID: ${{ secrets.LUNCH_SPOTS_CHANNEL_ID }}
       KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
-      GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
     steps:
       - uses: actions/checkout@v7
 
@@ -60,14 +59,12 @@ jobs:
           fi
 
       - uses: actions/setup-node@v7
-        if: steps.precheck.outputs.run == 'true' || env.KAKAO_REST_API_KEY != '' || env.GOOGLE_PLACES_API_KEY != ''
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: lunch-spots/package-lock.json
 
       - run: npm ci
-        if: steps.precheck.outputs.run == 'true' || env.KAKAO_REST_API_KEY != '' || env.GOOGLE_PLACES_API_KEY != ''
         working-directory: lunch-spots
 
       - name: Collect channel history and export catalog
@@ -103,10 +100,9 @@ jobs:
             exit 1
           fi
 
-      # Runs even without new Slack messages: new places get coordinates and
-      # ratings older than a week are refreshed.
-      - name: Add map coordinates and web ratings
-        if: env.KAKAO_REST_API_KEY != '' || env.GOOGLE_PLACES_API_KEY != ''
+      # Runs even without new Slack messages: new places get coordinates, and
+      # Kakao ratings and Naver review counts older than a week are refreshed.
+      - name: Add map places, Kakao ratings, and Naver reviews
         working-directory: lunch-spots
         continue-on-error: true
         env:

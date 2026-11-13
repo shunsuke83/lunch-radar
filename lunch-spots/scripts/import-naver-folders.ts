@@ -3,16 +3,19 @@
 // Folder share ids live in .naver-folders.local (gitignored), one per line:
 //   <shareId> [theme name]
 // Place details (category, hours, menu) are cached in .cache/naver-places.json,
-// so an interrupted run resumes where it stopped.
+// so an interrupted run resumes where it stopped. Kakao places and ratings from
+// `npm run catalog:kakao-regions` (.cache/kakao-places.json) are merged in.
 // Usage: npm run catalog:naver-folders [-- --concurrency 1 --delay 3000] [-- --offline]
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import type { KakaoCacheEntry } from "./lib/place-sources.js";
 
 const root = path.resolve(import.meta.dirname, "..");
 const webDir = path.resolve(root, "..", "web");
 const listFile = path.join(root, ".naver-folders.local");
 const cacheFile = path.join(root, ".cache", "naver-places.json");
+const kakaoFile = path.join(root, ".cache", "kakao-places.json");
 const officeFile = path.join(webDir, "data", "restaurants.json");
 const outDir = path.join(webDir, "public", "regions");
 const indexFile = path.join(webDir, "data", "regions.json");
@@ -309,6 +312,10 @@ await Promise.all(
 );
 if (!offline) await writeFile(cacheFile, JSON.stringify(cache));
 
+const kakao: Record<string, KakaoCacheEntry> = existsSync(kakaoFile)
+  ? JSON.parse(await readFile(kakaoFile, "utf8"))
+  : {};
+
 type Row = Record<string, unknown> & { district: string; collections?: string[] };
 const byProvince = new Map<string, Row[]>();
 let unplaced = 0;
@@ -326,6 +333,7 @@ for (const p of todo) {
   const hi = prices.length ? Math.max(...prices) : undefined;
   const url = `https://map.naver.com/p/entry/place/${p.sid}`;
   const name = d?.name ?? p.name;
+  const k = kakao[p.sid];
   const row: Row = {
     slug: `naver-${p.sid}`,
     name,
@@ -344,6 +352,10 @@ for (const p of todo) {
     ...(d?.hours ? { hours: d.hours } : {}),
     location: { lat: p.py, lng: p.px },
     naver: { placeId: p.sid, url },
+    ...(k?.kakaoId && k.kakaoUrl ? { place: { kakaoId: k.kakaoId, kakaoUrl: k.kakaoUrl } } : {}),
+    ...(k?.score && k.count
+      ? { rating: { score: k.score, count: k.count, source: "kakao", url: k.kakaoUrl, fetchedAt: k.checkedAt } }
+      : {}),
     ...(d?.reviews ? { naverReviews: d.reviews } : {}),
     ...(d?.score ? { naverScore: d.score } : {}),
     ...(p.collections.size ? { collections: [...p.collections].sort() } : {}),

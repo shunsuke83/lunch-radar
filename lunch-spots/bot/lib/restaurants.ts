@@ -57,11 +57,11 @@ export type NaverPlace = {
   url: string;
 };
 
-/** Public web rating (Google Places), refreshed by the enrich script. */
+/** Public web rating (Kakao Map reviews; older rows Google), refreshed by the enrich script. */
 export type PlaceRating = {
   score: number;
   count: number;
-  source: "google";
+  source: "kakao" | "google";
   url?: string;
   fetchedAt: string;
 };
@@ -88,8 +88,14 @@ export type Restaurant = {
   naver?: NaverPlace;
   curated?: CuratedInfo;
   rating?: PlaceRating;
-  /** Last Google lookup, hit or miss. */
+  /** Last rating lookup, hit or miss. */
   ratingCheckedAt?: string;
+  /** Naver visitor review count. */
+  naverReviews?: number;
+  /** Naver visitor star score, only where the owner publishes it. */
+  naverScore?: number;
+  /** Last Naver lookup, hit or miss. */
+  naverCheckedAt?: string;
   tags: string[];
   source?: RestaurantSource;
   addedAt: string;

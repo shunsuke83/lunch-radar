@@ -38,10 +38,10 @@ type Props = {
 };
 
 const SORTS: { value: SortKey; label: string }[] = [
-  { value: "popular", label: "추천순 (멘션)" },
+  { value: "reviews", label: "리뷰 많은 순" },
+  { value: "rating", label: "평점 높은 순" },
   { value: "distance", label: "가까운 순" },
   { value: "price", label: "저렴한 순" },
-  { value: "rating", label: "평점 높은 순" },
 ];
 
 export function RestaurantFilters({
@@ -85,13 +85,7 @@ export function RestaurantFilters({
           <FilterSelect
             label="정렬"
             value={value.sort}
-            options={
-              nearby
-                ? SORTS
-                : SORTS.filter((s) => s.value !== "distance").map((s) =>
-                    s.value === "rating" ? { ...s, label: "리뷰 많은 순" } : s,
-                  )
-            }
+            options={nearby ? SORTS : SORTS.filter((s) => s.value !== "distance")}
             onChange={(sort) => set({ sort })}
           />
           <FilterSelect

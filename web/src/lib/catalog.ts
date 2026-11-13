@@ -52,7 +52,7 @@ export type NaverPlace = {
 export type PlaceRating = {
   score: number;
   count: number;
-  source: "google";
+  source: "kakao" | "google";
   url?: string;
   fetchedAt: string;
 };
@@ -80,7 +80,7 @@ export type Restaurant = {
   curated?: CuratedInfo;
   rating?: PlaceRating;
   ratingCheckedAt?: string;
-  /** Naver visitor review count (region files; Naver publishes no score). */
+  /** Naver visitor review count. */
   naverReviews?: number;
   /** Naver visitor star score, only where the owner publishes it. */
   naverScore?: number;
@@ -106,7 +106,7 @@ export type RestaurantCatalog = {
   restaurants: Restaurant[];
 };
 
-export type SortKey = "popular" | "distance" | "price" | "rating";
+export type SortKey = "reviews" | "distance" | "price" | "rating";
 
 /** Province files under public/regions/<id>.json, listed in data/regions.json. */
 export type RegionIndex = {
@@ -231,18 +231,18 @@ export function seoulMinutes(date: Date): number {
   return get("hour") * 60 + get("minute");
 }
 
-const byPopular = (a: Restaurant, b: Restaurant) =>
-  b.mentionCount - a.mentionCount || a.name.localeCompare(b.name, "ko");
+const byReviews = (a: Restaurant, b: Restaurant) =>
+  (b.naverReviews ?? 0) - (a.naverReviews ?? 0) || a.name.localeCompare(b.name, "ko");
 
 /** Ascending by a numeric key; rows without a value go last. */
 function byKey(key: (r: Restaurant) => number | undefined) {
   return (a: Restaurant, b: Restaurant) => {
     const x = key(a);
     const y = key(b);
-    if (x === undefined && y === undefined) return byPopular(a, b);
+    if (x === undefined && y === undefined) return byReviews(a, b);
     if (x === undefined) return 1;
     if (y === undefined) return -1;
-    return x - y || byPopular(a, b);
+    return x - y || byReviews(a, b);
   };
 }
 
@@ -303,14 +303,8 @@ export function filterRestaurants(
       : filters.sort === "price"
         ? byKey(minPrice)
         : filters.sort === "rating"
-          ? byKey((r) =>
-              r.rating
-                ? -(r.rating.score * 1e6 + r.rating.count) - 1e12
-                : r.naverReviews
-                  ? -r.naverReviews
-                  : undefined,
-            )
-          : byPopular;
+          ? byKey((r) => (r.rating ? -(r.rating.score * 1e6 + r.rating.count) : undefined))
+          : byReviews;
   return rows.sort(sort);
 }
 

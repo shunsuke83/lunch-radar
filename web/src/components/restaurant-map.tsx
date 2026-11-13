@@ -90,14 +90,14 @@ function card(r: Restaurant, onClose: () => void): HTMLElement {
 
   const meta = [r.category, r.subcategory].filter(Boolean).join(" · ");
   if (meta) root.append(el("p", "text-text-tertiary typography-body-sm-regular", meta));
-  if (r.rating) {
-    root.append(
-      el(
-        "p",
-        "text-text-secondary typography-body-sm-medium",
-        `★ ${r.rating.score.toFixed(1)} (${r.rating.count.toLocaleString("ko-KR")}) Google`,
-      ),
-    );
+  const scores = [
+    r.rating?.source === "kakao"
+      ? `카카오 ★ ${r.rating.score.toFixed(1)} (${r.rating.count.toLocaleString("ko-KR")})`
+      : "",
+    r.naverReviews ? `네이버 리뷰 ${r.naverReviews.toLocaleString("ko-KR")}` : "",
+  ].filter(Boolean);
+  if (scores.length) {
+    root.append(el("p", "text-text-secondary typography-body-sm-medium", scores.join(" · ")));
   }
   if (r.walkMeters !== undefined) {
     root.append(
