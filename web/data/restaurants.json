@@ -609,6 +609,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=14473695912449009192&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T06:08:11.627Z"
+      },
+      "naver": {
+        "placeId": "20897027",
+        "url": "https://map.naver.com/p/entry/place/20897027"
       }
     },
     {
@@ -3769,6 +3773,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=16285640578794301278&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T08:45:25.943Z"
+      },
+      "naver": {
+        "placeId": "12962167",
+        "url": "https://map.naver.com/p/entry/place/12962167"
       }
     },
     {
@@ -4267,6 +4275,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=723116124623618111&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T08:45:27.784Z"
+      },
+      "naver": {
+        "placeId": "36122875",
+        "url": "https://map.naver.com/p/entry/place/36122875"
       }
     },
     {
@@ -4381,6 +4393,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=1360224840523035753&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T08:45:26.743Z"
+      },
+      "naver": {
+        "placeId": "37307613",
+        "url": "https://map.naver.com/p/entry/place/37307613"
       }
     },
     {
@@ -4933,6 +4949,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=8944245470913569731&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T08:45:31.373Z"
+      },
+      "naver": {
+        "placeId": "32254662",
+        "url": "https://map.naver.com/p/entry/place/32254662"
       }
     },
     {
@@ -5086,6 +5106,10 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=17845093790145452465&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-13T01:36:48.823Z"
+      },
+      "naver": {
+        "placeId": "11692888",
+        "url": "https://map.naver.com/p/entry/place/11692888"
       }
     },
     {
@@ -5412,6 +5436,645 @@
         "source": "google",
         "url": "https://maps.google.com/?cid=6682187979037910877&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-13T01:36:51.894Z"
+      }
+    },
+    {
+      "slug": "자인뭉티기-본점",
+      "name": "자인뭉티기 본점",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "뭉티기·소고기구이",
+      "notes": "뭉티기 대 (250g) / 모듬구이 1인분 150g · 11:00-22:00 (14:30-16:30 브레이크) · 토·일 휴무 · 도보 약 227m",
+      "tags": [
+        "뭉티기",
+        "소고기"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 강남대로37길 24-7 호원빌딩 1,2층",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/19882315"
+      },
+      "menu": [
+        {
+          "name": "뭉티기 대 (250g)"
+        },
+        {
+          "name": "모듬구이 1인분 150g"
+        }
+      ],
+      "location": {
+        "lat": 37.4851869,
+        "lng": 127.0321774
+      },
+      "naver": {
+        "placeId": "19882315",
+        "url": "https://map.naver.com/p/entry/place/19882315"
+      },
+      "walkMeters": 227,
+      "walkFromMap": true,
+      "hours": {
+        "open": "11:00",
+        "close": "22:00",
+        "breakStart": "14:30",
+        "breakEnd": "16:30"
+      }
+    },
+    {
+      "slug": "영동족발-본점",
+      "name": "영동족발 본점",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "족발·보쌈",
+      "priceRange": "11,000~46,000원",
+      "notes": "순두부찌개 11,000 / 막국수 12,000 / 쟁반막국수 20,000 / 왕족발 중 46,000 · 12:00-23:00 · 일 휴무 · 도보 약 296m",
+      "tags": [
+        "족발",
+        "막국수"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 남부순환로358길 8 1층 영동족발 본점",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/12917286"
+      },
+      "menu": [
+        {
+          "name": "순두부찌개",
+          "price": 11000
+        },
+        {
+          "name": "막국수",
+          "price": 12000
+        },
+        {
+          "name": "쟁반막국수",
+          "price": 20000
+        },
+        {
+          "name": "왕족발 중",
+          "price": 46000
+        }
+      ],
+      "location": {
+        "lat": 37.4845761,
+        "lng": 127.0380511
+      },
+      "naver": {
+        "placeId": "12917286",
+        "url": "https://map.naver.com/p/entry/place/12917286"
+      },
+      "walkMeters": 296,
+      "walkFromMap": true,
+      "hours": {
+        "open": "12:00",
+        "close": "23:00"
+      }
+    },
+    {
+      "slug": "양재골",
+      "name": "양재골",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "백반·찌개",
+      "priceRange": "9,000~10,000원",
+      "notes": "생고기김치찌개·된장찌개 9,000 / 고등어구이·조기구이 9,000 / 제육볶음 10,000 / 돼지불고기 10,000 · 11:00-22:00 (15:00-17:00 브레이크) · 일 휴무 · 도보 약 362m",
+      "tags": [
+        "찌개",
+        "백반",
+        "생선구이"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 강남대로37길 54 지하 1층",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/1508052350"
+      },
+      "menu": [
+        {
+          "name": "생고기김치찌개·된장찌개",
+          "price": 9000
+        },
+        {
+          "name": "고등어구이·조기구이",
+          "price": 9000
+        },
+        {
+          "name": "제육볶음",
+          "price": 10000
+        },
+        {
+          "name": "돼지불고기",
+          "price": 10000
+        }
+      ],
+      "location": {
+        "lat": 37.4848199,
+        "lng": 127.0306196
+      },
+      "naver": {
+        "placeId": "1508052350",
+        "url": "https://map.naver.com/p/entry/place/1508052350"
+      },
+      "walkMeters": 362,
+      "walkFromMap": true,
+      "hours": {
+        "open": "11:00",
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      }
+    },
+    {
+      "slug": "임병주산동칼국수",
+      "name": "임병주산동칼국수",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "칼국수·만두",
+      "priceRange": "12,000~13,000원",
+      "notes": "산동칼국수 12,000 / 만두국 12,000 / 평양왕만두 12,000 / 냉콩국수 13,000 · 11:00-21:00 · 월 휴무 · 도보 약 417m",
+      "tags": [
+        "칼국수",
+        "만두"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 강남대로37길 65",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/1420055829"
+      },
+      "menu": [
+        {
+          "name": "산동칼국수",
+          "price": 12000
+        },
+        {
+          "name": "만두국",
+          "price": 12000
+        },
+        {
+          "name": "평양왕만두",
+          "price": 12000
+        },
+        {
+          "name": "냉콩국수",
+          "price": 13000
+        }
+      ],
+      "location": {
+        "lat": 37.4845716,
+        "lng": 127.0300034
+      },
+      "naver": {
+        "placeId": "1420055829",
+        "url": "https://map.naver.com/p/entry/place/1420055829"
+      },
+      "walkMeters": 417,
+      "walkFromMap": true,
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      }
+    },
+    {
+      "slug": "문어세상해천탕-양재점",
+      "name": "문어세상해천탕 양재점",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "해천탕·해물",
+      "priceRange": "8,000~15,000원",
+      "notes": "홍합칼국수 (점심) 8,000 / 문어볶음 (점심) 15,000 · 도보 약 477m",
+      "tags": [
+        "해물",
+        "칼국수"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 강남대로 188 화승빌딩",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/38251615"
+      },
+      "menu": [
+        {
+          "name": "홍합칼국수 (점심)",
+          "price": 8000
+        },
+        {
+          "name": "문어볶음 (점심)",
+          "price": 15000
+        }
+      ],
+      "location": {
+        "lat": 37.4813766,
+        "lng": 127.0378506
+      },
+      "naver": {
+        "placeId": "38251615",
+        "url": "https://map.naver.com/p/entry/place/38251615"
+      },
+      "walkMeters": 477,
+      "walkFromMap": true
+    },
+    {
+      "slug": "버드나무집-서초동본점",
+      "name": "버드나무집 서초동본점",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "갈비·갈비탕",
+      "priceRange": "15,000~49,000원",
+      "notes": "소고기국밥 15,000 / 비빔밥 18,000 / 갈비탕 28,000 / 갈비정식 49,000 · 도보 약 570m",
+      "tags": [
+        "갈비",
+        "국밥"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 효령로 434",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/11627634"
+      },
+      "menu": [
+        {
+          "name": "소고기국밥",
+          "price": 15000
+        },
+        {
+          "name": "비빔밥",
+          "price": 18000
+        },
+        {
+          "name": "갈비탕",
+          "price": 28000
+        },
+        {
+          "name": "갈비정식",
+          "price": 49000
+        }
+      ],
+      "location": {
+        "lat": 37.4891425,
+        "lng": 127.0311501
+      },
+      "naver": {
+        "placeId": "11627634",
+        "url": "https://map.naver.com/p/entry/place/11627634"
+      },
+      "walkMeters": 570,
+      "walkFromMap": true
+    },
+    {
+      "slug": "양재순대국",
+      "name": "양재순대국",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "순대국·해장국",
+      "priceRange": "9,000~11,000원",
+      "notes": "순대국 9,000 / 추어탕 9,000 / 뼈해장국 10,000 / 소내장탕 11,000 · 10:30-22:30 · 일 휴무 · 도보 약 590m",
+      "tags": [
+        "순대국",
+        "해장"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 남부순환로356길 92",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/37883012"
+      },
+      "menu": [
+        {
+          "name": "순대국",
+          "price": 9000
+        },
+        {
+          "name": "추어탕",
+          "price": 9000
+        },
+        {
+          "name": "뼈해장국",
+          "price": 10000
+        },
+        {
+          "name": "소내장탕",
+          "price": 11000
+        }
+      ],
+      "location": {
+        "lat": 37.4807974,
+        "lng": 127.039013
+      },
+      "naver": {
+        "placeId": "37883012",
+        "url": "https://map.naver.com/p/entry/place/37883012"
+      },
+      "walkMeters": 590,
+      "walkFromMap": true,
+      "hours": {
+        "open": "10:30",
+        "close": "22:30"
+      }
+    },
+    {
+      "slug": "원스타-올드패션드-햄버거-도곡점",
+      "name": "원스타 올드패션드 햄버거 도곡점",
+      "area": "양재",
+      "category": "양식",
+      "subcategory": "수제버거",
+      "priceRange": "9,800~12,800원",
+      "notes": "치즈버거 9,800 / 원스타 디럭스 11,800 / 패티멜트 12,800 · 11:00-21:00 (15:00-17:00 브레이크) · 도보 약 884m",
+      "tags": [
+        "버거"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 강남구 논현로26길 23 1층",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/1635037172"
+      },
+      "menu": [
+        {
+          "name": "치즈버거",
+          "price": 9800
+        },
+        {
+          "name": "원스타 디럭스",
+          "price": 11800
+        },
+        {
+          "name": "패티멜트",
+          "price": 12800
+        }
+      ],
+      "location": {
+        "lat": 37.4828438,
+        "lng": 127.0444028
+      },
+      "naver": {
+        "placeId": "1635037172",
+        "url": "https://map.naver.com/p/entry/place/1635037172"
+      },
+      "walkMeters": 884,
+      "walkFromMap": true,
+      "hours": {
+        "open": "11:00",
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      }
+    },
+    {
+      "slug": "덴키-도곡본점",
+      "name": "덴키 도곡본점",
+      "area": "양재",
+      "category": "일식",
+      "subcategory": "라멘",
+      "priceRange": "9,000~13,000원",
+      "notes": "아부라소바 9,000 / 이에케라멘 10,000 / 치킨난반 정식 11,000 / 차슈멘 13,000 · 11:00-21:00 (15:00-17:00 브레이크) · 토·일 휴무 · 도보 약 921m",
+      "tags": [
+        "라멘"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 강남구 논현로30길 43 1층",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/1297421035"
+      },
+      "menu": [
+        {
+          "name": "아부라소바",
+          "price": 9000
+        },
+        {
+          "name": "이에케라멘",
+          "price": 10000
+        },
+        {
+          "name": "치킨난반 정식",
+          "price": 11000
+        },
+        {
+          "name": "차슈멘",
+          "price": 13000
+        }
+      ],
+      "location": {
+        "lat": 37.4848824,
+        "lng": 127.0451597
+      },
+      "naver": {
+        "placeId": "1297421035",
+        "url": "https://map.naver.com/p/entry/place/1297421035"
+      },
+      "walkMeters": 921,
+      "walkFromMap": true,
+      "hours": {
+        "open": "11:00",
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      }
+    },
+    {
+      "slug": "대려도",
+      "name": "대려도",
+      "area": "양재",
+      "category": "중식",
+      "subcategory": "중식 요리",
+      "priceRange": "45,000~56,000원",
+      "notes": "면보하 45,000 / 육품냉채 56,000 · 11:30-22:00 (15:00-17:30 브레이크) · 도보 약 986m",
+      "tags": [
+        "중식",
+        "요리"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 강남구 역삼로 118 대려도",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/12008857"
+      },
+      "menu": [
+        {
+          "name": "면보하",
+          "price": 45000
+        },
+        {
+          "name": "육품냉채",
+          "price": 56000
+        }
+      ],
+      "location": {
+        "lat": 37.493497,
+        "lng": 127.0321519
+      },
+      "naver": {
+        "placeId": "12008857",
+        "url": "https://map.naver.com/p/entry/place/12008857"
+      },
+      "walkMeters": 986,
+      "walkFromMap": true,
+      "hours": {
+        "open": "11:30",
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:30"
+      }
+    },
+    {
+      "slug": "구스아일랜드-브루하우스",
+      "name": "구스아일랜드 브루하우스",
+      "area": "양재",
+      "category": "양식",
+      "subcategory": "브루펍·시카고피자",
+      "priceRange": "22,000~39,000원",
+      "notes": "피쉬&칩스 22,000 / 클래식 시카고피자 34,000 / 브리스킷 플레이트 39,000 · 11:30-24:00 · 도보 약 989m",
+      "tags": [
+        "피자",
+        "펍"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 강남구 역삼로 118",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/505375149"
+      },
+      "menu": [
+        {
+          "name": "피쉬&칩스",
+          "price": 22000
+        },
+        {
+          "name": "클래식 시카고피자",
+          "price": 34000
+        },
+        {
+          "name": "브리스킷 플레이트",
+          "price": 39000
+        }
+      ],
+      "location": {
+        "lat": 37.493496,
+        "lng": 127.0319708
+      },
+      "naver": {
+        "placeId": "505375149",
+        "url": "https://map.naver.com/p/entry/place/505375149"
+      },
+      "walkMeters": 989,
+      "walkFromMap": true,
+      "hours": {
+        "open": "11:30",
+        "close": "24:00"
+      }
+    },
+    {
+      "slug": "풍년집",
+      "name": "풍년집",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "소갈비살",
+      "priceRange": "6,000~20,000원",
+      "notes": "참숯불 소갈비살 20,000 / 후식 물냉면 6,000 · 도보 약 990m",
+      "tags": [
+        "고기",
+        "냉면"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 강남구 역삼로14길 13",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/18583473"
+      },
+      "menu": [
+        {
+          "name": "참숯불 소갈비살",
+          "price": 20000
+        },
+        {
+          "name": "후식 물냉면",
+          "price": 6000
+        }
+      ],
+      "location": {
+        "lat": 37.4937381,
+        "lng": 127.0357349
+      },
+      "naver": {
+        "placeId": "18583473",
+        "url": "https://map.naver.com/p/entry/place/18583473"
+      },
+      "walkMeters": 990,
+      "walkFromMap": true
+    },
+    {
+      "slug": "장꼬방묵은김치찌개전문",
+      "name": "장꼬방묵은김치찌개전문",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "김치찌개",
+      "priceRange": "10,000~12,000원",
+      "notes": "장꼬방찌개 10,000 / 계란말이 10,000 / 장꼬방구이 12,000 · 10:00-22:00 · 도보 약 998m",
+      "tags": [
+        "김치찌개",
+        "찌개"
+      ],
+      "addedAt": "2026-11-13T01:52:20.322Z",
+      "updatedAt": "2026-11-13T01:52:20.322Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 효령로 364 장꼬방",
+      "curated": {
+        "by": "네이버지도 저장 목록 (2026-11-13)",
+        "url": "https://map.naver.com/p/entry/place/11819292"
+      },
+      "menu": [
+        {
+          "name": "장꼬방찌개",
+          "price": 10000
+        },
+        {
+          "name": "계란말이",
+          "price": 10000
+        },
+        {
+          "name": "장꼬방구이",
+          "price": 12000
+        }
+      ],
+      "location": {
+        "lat": 37.4868563,
+        "lng": 127.0236857
+      },
+      "naver": {
+        "placeId": "11819292",
+        "url": "https://map.naver.com/p/entry/place/11819292"
+      },
+      "walkMeters": 998,
+      "walkFromMap": true,
+      "hours": {
+        "open": "10:00",
+        "close": "22:00"
       }
     }
   ],
