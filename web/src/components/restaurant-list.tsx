@@ -63,10 +63,20 @@ function Cell({
 const muted = <span className="text-text-disabled typography-body-md-regular">–</span>;
 
 export function RatingText({ r }: { r: Restaurant }) {
-  if (!r.rating && r.naverReviews) {
+  if (!r.rating && (r.naverReviews || r.naverScore)) {
     return (
-      <span className="text-text-secondary typography-body-sm-regular">
-        네이버 리뷰 {r.naverReviews.toLocaleString("ko-KR")}
+      <span className="flex flex-col gap-group-xxs">
+        {r.naverScore ? (
+          <span className="inline-flex items-center gap-group-xxs">
+            <Star aria-hidden className="size-size-icon-sm fill-icon-warning-default text-icon-warning-default" />
+            <span className="text-text-primary typography-body-md-medium">{r.naverScore.toFixed(2)}</span>
+          </span>
+        ) : null}
+        {r.naverReviews ? (
+          <span className="text-text-secondary typography-body-sm-regular">
+            네이버 리뷰 {r.naverReviews.toLocaleString("ko-KR")}
+          </span>
+        ) : null}
       </span>
     );
   }

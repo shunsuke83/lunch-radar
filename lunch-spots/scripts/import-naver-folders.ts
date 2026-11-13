@@ -95,6 +95,8 @@ type PlaceDetail = {
   roadAddress?: string;
   address?: string;
   reviews?: number;
+  /** Visitor star score; Naver only publishes it when the owner opts in. */
+  score?: number;
   hours?: Hours;
   closedDays?: string[];
   menu?: MenuItem[];
@@ -205,6 +207,7 @@ async function placeDetail(sid: string): Promise<PlaceDetail> {
     roadAddress: base.roadAddress as string | undefined,
     address: base.address as string | undefined,
     reviews: base.visitorReviewsTotal as number | undefined,
+    score: typeof base.visitorReviewsScore === "number" ? base.visitorReviewsScore : undefined,
     hours,
     closedDays,
     menu,
@@ -342,6 +345,7 @@ for (const p of todo) {
     location: { lat: p.py, lng: p.px },
     naver: { placeId: p.sid, url },
     ...(d?.reviews ? { naverReviews: d.reviews } : {}),
+    ...(d?.score ? { naverScore: d.score } : {}),
     ...(p.collections.size ? { collections: [...p.collections].sort() } : {}),
   };
   const list = byProvince.get(region.province) ?? [];

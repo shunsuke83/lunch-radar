@@ -82,6 +82,8 @@ export type Restaurant = {
   ratingCheckedAt?: string;
   /** Naver visitor review count (region files; Naver publishes no score). */
   naverReviews?: number;
+  /** Naver visitor star score, only where the owner publishes it. */
+  naverScore?: number;
   tags: string[];
   /** Region files only: 시·군·구 from the address. */
   district?: string;
