@@ -63,6 +63,13 @@ function Cell({
 const muted = <span className="text-text-disabled typography-body-md-regular">–</span>;
 
 export function RatingText({ r }: { r: Restaurant }) {
+  if (!r.rating && r.naverReviews) {
+    return (
+      <span className="text-text-secondary typography-body-sm-regular">
+        네이버 리뷰 {r.naverReviews.toLocaleString("ko-KR")}
+      </span>
+    );
+  }
   if (!r.rating) return muted;
   const text = (
     <span className="inline-flex items-center gap-group-xxs">
@@ -253,7 +260,7 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
                 )}
               </Cell>
 
-              <Cell label="평점 (Google)">
+              <Cell label={nearby ? "평점 (Google)" : "평점·리뷰"}>
                 <RatingText r={r} />
               </Cell>
 

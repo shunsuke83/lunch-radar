@@ -80,6 +80,8 @@ export type Restaurant = {
   curated?: CuratedInfo;
   rating?: PlaceRating;
   ratingCheckedAt?: string;
+  /** Naver visitor review count (region files; Naver publishes no score). */
+  naverReviews?: number;
   tags: string[];
   /** Region files only: 시·군·구 from the address. */
   district?: string;
@@ -299,7 +301,13 @@ export function filterRestaurants(
       : filters.sort === "price"
         ? byKey(minPrice)
         : filters.sort === "rating"
-          ? byKey((r) => (r.rating ? -(r.rating.score * 1e6 + r.rating.count) : undefined))
+          ? byKey((r) =>
+              r.rating
+                ? -(r.rating.score * 1e6 + r.rating.count) - 1e12
+                : r.naverReviews
+                  ? -r.naverReviews
+                  : undefined,
+            )
           : byPopular;
   return rows.sort(sort);
 }

@@ -85,7 +85,13 @@ export function RestaurantFilters({
           <FilterSelect
             label="정렬"
             value={value.sort}
-            options={nearby ? SORTS : SORTS.filter((s) => s.value !== "distance")}
+            options={
+              nearby
+                ? SORTS
+                : SORTS.filter((s) => s.value !== "distance").map((s) =>
+                    s.value === "rating" ? { ...s, label: "리뷰 많은 순" } : s,
+                  )
+            }
             onChange={(sort) => set({ sort })}
           />
           <FilterSelect

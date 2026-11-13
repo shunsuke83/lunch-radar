@@ -124,10 +124,12 @@ export function LunchExplorer({ catalog, regions }: Props) {
       : when.toLocaleString("ko-KR", { timeZone: "Asia/Seoul" });
   }, [updatedAt]);
 
-  const reset = () => setFilters(EMPTY_FILTERS);
+  const emptyFor = (r: string): FilterState =>
+    r === OFFICE_REGION ? EMPTY_FILTERS : { ...EMPTY_FILTERS, sort: "rating" };
+  const reset = () => setFilters(emptyFor(region));
   const changeRegion = (next: string) => {
     setRegion(next);
-    setFilters(EMPTY_FILTERS);
+    setFilters(emptyFor(next));
   };
 
   const regionOptions = [

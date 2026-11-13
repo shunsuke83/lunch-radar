@@ -304,7 +304,7 @@ await Promise.all(
     }
   }),
 );
-await writeFile(cacheFile, JSON.stringify(cache));
+if (!offline) await writeFile(cacheFile, JSON.stringify(cache));
 
 type Row = Record<string, unknown> & { district: string; collections?: string[] };
 const byProvince = new Map<string, Row[]>();
@@ -328,7 +328,7 @@ for (const p of todo) {
     name,
     area: region.district,
     district: region.district,
-    category: groupOf(d?.category ?? p.mcidName),
+    ...(d?.category ? { category: groupOf(d.category) } : {}),
     ...(d?.category ? { subcategory: d.category.replace(/,/g, "·") } : {}),
     ...(lo !== undefined ? { priceRange: lo === hi ? `${fmt(lo)}원` : `${fmt(lo)}~${fmt(hi!)}원` } : {}),
     ...(d?.closedDays?.length ? { notes: `${d.closedDays.join("·")} 휴무` } : {}),
@@ -341,6 +341,7 @@ for (const p of todo) {
     ...(d?.hours ? { hours: d.hours } : {}),
     location: { lat: p.py, lng: p.px },
     naver: { placeId: p.sid, url },
+    ...(d?.reviews ? { naverReviews: d.reviews } : {}),
     ...(p.collections.size ? { collections: [...p.collections].sort() } : {}),
   };
   const list = byProvince.get(region.province) ?? [];
