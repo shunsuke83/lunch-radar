@@ -4992,6 +4992,268 @@
         "url": "https://maps.google.com/?cid=7170198123740767701&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "fetchedAt": "2026-11-06T08:45:35.684Z"
       }
+    },
+    {
+      "slug": "곰작골나주곰탕-양재점",
+      "name": "곰작골나주곰탕 양재점",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "나주곰탕",
+      "priceRange": "12,000원",
+      "notes": "나주곰탕 12,000 · 폐업 기록과 영업 정보가 엇갈림, 방문 전 전화 확인 (02-572-0879)",
+      "tags": [
+        "곰탕",
+        "해장",
+        "영업확인필요"
+      ],
+      "addedAt": "2026-11-13T01:34:06.246Z",
+      "updatedAt": "2026-11-13T01:34:06.246Z",
+      "mentionCount": 1,
+      "address": "서울 남부순환로 2626",
+      "curated": {
+        "by": "ChatGPT 웹검색 (2026-11-05)"
+      },
+      "menu": [
+        {
+          "name": "나주곰탕",
+          "price": 12000
+        }
+      ]
+    },
+    {
+      "slug": "남순남순대국-본점",
+      "name": "남순남순대국 본점",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "순대국",
+      "priceRange": "12,000~13,000원",
+      "notes": "일반순대국 12,000 / 토종순대국 13,000 · 10:00 오픈",
+      "tags": [
+        "순대국",
+        "해장"
+      ],
+      "addedAt": "2026-11-13T01:34:06.246Z",
+      "updatedAt": "2026-11-13T01:34:06.246Z",
+      "mentionCount": 1,
+      "address": "서울 강남구 도곡로4길 12",
+      "curated": {
+        "by": "ChatGPT 웹검색 (2026-11-05)"
+      },
+      "menu": [
+        {
+          "name": "일반순대국",
+          "price": 12000
+        },
+        {
+          "name": "토종순대국",
+          "price": 13000
+        }
+      ]
+    },
+    {
+      "slug": "신사골감자탕-양재점",
+      "name": "신사골감자탕 양재점",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "감자탕·뼈해장국",
+      "priceRange": "8,500원",
+      "notes": "뼈해장국 8,500 · 24시간",
+      "tags": [
+        "뼈해장국",
+        "해장",
+        "24시간"
+      ],
+      "addedAt": "2026-11-13T01:34:06.246Z",
+      "updatedAt": "2026-11-13T01:34:06.246Z",
+      "mentionCount": 1,
+      "address": "서울 강남구 강남대로 242",
+      "curated": {
+        "by": "ChatGPT 웹검색 (2026-11-05)"
+      },
+      "menu": [
+        {
+          "name": "뼈해장국",
+          "price": 8500
+        }
+      ],
+      "hours": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    {
+      "slug": "양재해장국",
+      "name": "양재해장국",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "해장국",
+      "priceRange": "11,000원",
+      "notes": "양선지해장국 11,000 / 뼈해장국 11,000 · 24시간 · 양재시민의숲역 방향",
+      "tags": [
+        "선지해장국",
+        "해장",
+        "24시간"
+      ],
+      "addedAt": "2026-11-13T01:34:06.246Z",
+      "updatedAt": "2026-11-13T01:34:06.246Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 강남대로10길 11",
+      "curated": {
+        "by": "ChatGPT 웹검색 (2026-11-05)"
+      },
+      "menu": [
+        {
+          "name": "양선지해장국",
+          "price": 11000
+        },
+        {
+          "name": "뼈해장국",
+          "price": 11000
+        }
+      ],
+      "hours": {
+        "open": "00:00",
+        "close": "24:00"
+      }
+    },
+    {
+      "slug": "뚝배기양평해장국-양재점",
+      "name": "뚝배기양평해장국 양재점",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "양평해장국",
+      "priceRange": "12,000원",
+      "notes": "양평해장국 12,000",
+      "tags": [
+        "해장국",
+        "해장"
+      ],
+      "addedAt": "2026-11-13T01:34:06.246Z",
+      "updatedAt": "2026-11-13T01:34:06.246Z",
+      "mentionCount": 1,
+      "curated": {
+        "by": "ChatGPT 웹검색 (2026-11-05)"
+      },
+      "menu": [
+        {
+          "name": "양평해장국",
+          "price": 12000
+        }
+      ]
+    },
+    {
+      "slug": "탐라순대국감자탕-양재역직영점",
+      "name": "탐라순대국감자탕 양재역직영점",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "순대국·감자탕",
+      "priceRange": "11,000원",
+      "notes": "뼈해장국 11,000",
+      "tags": [
+        "뼈해장국",
+        "해장"
+      ],
+      "addedAt": "2026-11-13T01:34:06.246Z",
+      "updatedAt": "2026-11-13T01:34:06.246Z",
+      "mentionCount": 1,
+      "curated": {
+        "by": "ChatGPT 웹검색 (2026-11-05)"
+      },
+      "menu": [
+        {
+          "name": "뼈해장국",
+          "price": 11000
+        }
+      ]
+    },
+    {
+      "slug": "어머니집",
+      "name": "어머니집",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "백반·생선구이",
+      "priceRange": "10,000원",
+      "notes": "고등어구이 10,000",
+      "tags": [
+        "백반",
+        "생선구이"
+      ],
+      "addedAt": "2026-11-13T01:34:06.246Z",
+      "updatedAt": "2026-11-13T01:34:06.246Z",
+      "mentionCount": 1,
+      "address": "서울 강남구 남부순환로365길 17",
+      "curated": {
+        "by": "ChatGPT 웹검색 (2026-11-05)"
+      },
+      "menu": [
+        {
+          "name": "고등어구이",
+          "price": 10000
+        }
+      ]
+    },
+    {
+      "slug": "한일생선구이",
+      "name": "한일생선구이",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "생선구이",
+      "priceRange": "13,000~14,000원",
+      "notes": "고등어구이 13,000 / 삼치구이 13,000 / 갈치구이 14,000 / 조기구이 14,000 · 남부터미널 방향",
+      "tags": [
+        "생선구이",
+        "솥밥"
+      ],
+      "addedAt": "2026-11-13T01:34:06.246Z",
+      "updatedAt": "2026-11-13T01:34:06.246Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 남부순환로339길 60",
+      "curated": {
+        "by": "ChatGPT 웹검색 (2026-11-05)"
+      },
+      "menu": [
+        {
+          "name": "고등어구이",
+          "price": 13000
+        },
+        {
+          "name": "삼치구이",
+          "price": 13000
+        },
+        {
+          "name": "갈치구이",
+          "price": 14000
+        },
+        {
+          "name": "조기구이",
+          "price": 14000
+        }
+      ]
+    },
+    {
+      "slug": "연탄불생선구이",
+      "name": "연탄불생선구이",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "생선구이",
+      "priceRange": "14,000원",
+      "notes": "고등어구이 14,000 · 양재시민의숲 방향",
+      "tags": [
+        "생선구이"
+      ],
+      "addedAt": "2026-11-13T01:34:06.246Z",
+      "updatedAt": "2026-11-13T01:34:06.246Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 강남대로6길 100-4",
+      "curated": {
+        "by": "ChatGPT 웹검색 (2026-11-05)"
+      },
+      "menu": [
+        {
+          "name": "고등어구이",
+          "price": 14000
+        }
+      ]
     }
   ],
   "office": {

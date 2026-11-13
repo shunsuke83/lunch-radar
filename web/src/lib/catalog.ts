@@ -108,11 +108,34 @@ export function mapLinks(r: Restaurant): { naver: string; kakao: string } {
   };
 }
 
+/** Cross-category themes, matched on name, subcategory, tags, and menu names. */
+export const THEMES = [
+  {
+    id: "해장",
+    keywords: ["해장", "국밥", "순대국", "곰탕", "설렁탕", "감자탕", "선지", "콩나물", "내장탕", "우거지"],
+  },
+  {
+    id: "생선구이",
+    keywords: ["생선", "고등어구이", "삼치구이", "갈치구이", "조기구이", "임연수구이"],
+  },
+] as const;
+
+export function matchesTheme(r: Restaurant, theme: string): boolean {
+  const def = THEMES.find((t) => t.id === theme);
+  if (!def) return true;
+  const hay = [r.name, r.subcategory, ...r.tags, ...(r.menu ?? []).map((m) => m.name)]
+    .filter(Boolean)
+    .join(" ");
+  return def.keywords.some((k) => hay.includes(k));
+}
+
 export type RestaurantFilters = {
   q?: string;
   category?: string;
   area?: string;
   tag?: string;
+  /** One of THEMES ids, or "all". */
+  theme?: string;
   /** Walking distance within NEAR_METERS. */
   near?: boolean;
   /** Minutes since midnight (Asia/Seoul); keeps only places open then. */
@@ -208,6 +231,7 @@ export function filterRestaurants(
     if (tag && tag !== "all") {
       if (!r.tags.some((t) => t.toLowerCase() === tag)) return false;
     }
+    if (filters.theme && filters.theme !== "all" && !matchesTheme(r, filters.theme)) return false;
     if (filters.near && !(r.walkMeters !== undefined && r.walkMeters <= NEAR_METERS)) {
       return false;
     }

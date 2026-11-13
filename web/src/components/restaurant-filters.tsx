@@ -8,6 +8,7 @@ export type FilterState = {
   q: string;
   category: string;
   tag: string;
+  theme: string;
   near: boolean;
   openNow: boolean;
   budget: boolean;
@@ -18,6 +19,7 @@ type Props = {
   value: FilterState;
   categories: string[];
   tags: string[];
+  themes: { value: string; label: string }[];
   /** False until the client clock is known (static HTML has no "now"). */
   clockReady: boolean;
   onChange: (next: FilterState) => void;
@@ -32,7 +34,15 @@ const SORTS: { value: SortKey; label: string }[] = [
   { value: "rating", label: "평점 높은 순" },
 ];
 
-export function RestaurantFilters({ value, categories, tags, clockReady, onChange, actions }: Props) {
+export function RestaurantFilters({
+  value,
+  categories,
+  tags,
+  themes,
+  clockReady,
+  onChange,
+  actions,
+}: Props) {
   const set = (patch: Partial<FilterState>) => onChange({ ...value, ...patch });
 
   return (
@@ -51,6 +61,12 @@ export function RestaurantFilters({ value, categories, tags, clockReady, onChang
             value={value.sort}
             options={SORTS}
             onChange={(sort) => set({ sort })}
+          />
+          <FilterSelect
+            label="테마"
+            value={value.theme}
+            options={[{ value: "all", label: "전체" }, ...themes]}
+            onChange={(theme) => set({ theme })}
           />
           <FilterSelect
             label="태그"

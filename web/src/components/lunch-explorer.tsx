@@ -11,7 +11,9 @@ import { RotateCcw } from "lucide-react";
 import { Button, PageHeader, SegmentedControl } from "@/components/ds";
 import {
   filterRestaurants,
+  matchesTheme,
   presentGroups,
+  THEMES,
   seoulMinutes,
   uniqueTags,
   type RestaurantCatalog,
@@ -21,6 +23,7 @@ const EMPTY_FILTERS: FilterState = {
   q: "",
   category: "all",
   tag: "all",
+  theme: "all",
   near: false,
   openNow: false,
   budget: false,
@@ -53,6 +56,10 @@ export function LunchExplorer({ catalog }: Props) {
     () => ({
       categories: presentGroups(catalog.restaurants),
       tags: uniqueTags(catalog.restaurants),
+      themes: THEMES.map(({ id }) => ({
+        value: id,
+        label: `${id} (${catalog.restaurants.filter((r) => matchesTheme(r, id)).length})`,
+      })),
     }),
     [catalog],
   );
@@ -63,6 +70,7 @@ export function LunchExplorer({ catalog }: Props) {
         q: deferred.q,
         category: deferred.category,
         tag: deferred.tag,
+        theme: deferred.theme,
         near: deferred.near,
         budget: deferred.budget,
         openAt: deferred.openNow ? now : null,
@@ -100,6 +108,7 @@ export function LunchExplorer({ catalog }: Props) {
           value={filters}
           categories={facets.categories}
           tags={facets.tags}
+          themes={facets.themes}
           clockReady={now !== null}
           onChange={setFilters}
           actions={
