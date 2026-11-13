@@ -5480,6 +5480,14 @@
         "close": "22:00",
         "breakStart": "14:30",
         "breakEnd": "16:30"
+      },
+      "ratingCheckedAt": "2026-11-13T01:56:09.566Z",
+      "rating": {
+        "score": 4.4,
+        "count": 575,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=205356011721134627&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:09.566Z"
       }
     },
     {
@@ -5533,6 +5541,14 @@
       "hours": {
         "open": "12:00",
         "close": "23:00"
+      },
+      "ratingCheckedAt": "2026-11-13T01:56:09.846Z",
+      "rating": {
+        "score": 3.8,
+        "count": 2439,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=5015559990610433084&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:09.846Z"
       }
     },
     {
@@ -5589,6 +5605,14 @@
         "close": "22:00",
         "breakStart": "15:00",
         "breakEnd": "17:00"
+      },
+      "ratingCheckedAt": "2026-11-13T01:56:10.054Z",
+      "rating": {
+        "score": 4.1,
+        "count": 40,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=706488361330287541&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:10.054Z"
       }
     },
     {
@@ -5642,6 +5666,14 @@
       "hours": {
         "open": "11:00",
         "close": "21:00"
+      },
+      "ratingCheckedAt": "2026-11-13T01:56:10.268Z",
+      "rating": {
+        "score": 4.1,
+        "count": 3306,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=9766384003786500436&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:10.268Z"
       }
     },
     {
@@ -5683,7 +5715,15 @@
         "url": "https://map.naver.com/p/entry/place/38251615"
       },
       "walkMeters": 477,
-      "walkFromMap": true
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-13T01:56:10.502Z",
+      "rating": {
+        "score": 4,
+        "count": 592,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=11268991267903725194&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:10.502Z"
+      }
     },
     {
       "slug": "버드나무집-서초동본점",
@@ -5732,7 +5772,15 @@
         "url": "https://map.naver.com/p/entry/place/11627634"
       },
       "walkMeters": 570,
-      "walkFromMap": true
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-13T01:56:10.704Z",
+      "rating": {
+        "score": 4.1,
+        "count": 1368,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=17071952888226848258&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:10.704Z"
+      }
     },
     {
       "slug": "양재순대국",
@@ -5777,14 +5825,22 @@
         "lng": 127.039013
       },
       "naver": {
-        "placeId": "37883012",
-        "url": "https://map.naver.com/p/entry/place/37883012"
+        "placeId": "1751873950",
+        "url": "https://map.naver.com/p/entry/place/1751873950"
       },
       "walkMeters": 590,
       "walkFromMap": true,
       "hours": {
         "open": "10:30",
         "close": "22:30"
+      },
+      "ratingCheckedAt": "2026-11-13T01:56:10.977Z",
+      "rating": {
+        "score": 4.3,
+        "count": 105,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=10204304811838826379&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:10.977Z"
       }
     },
     {
@@ -5835,6 +5891,14 @@
         "close": "21:00",
         "breakStart": "15:00",
         "breakEnd": "17:00"
+      },
+      "ratingCheckedAt": "2026-11-13T01:56:11.168Z",
+      "rating": {
+        "score": 4.5,
+        "count": 247,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=687210209935461129&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:11.168Z"
       }
     },
     {
@@ -5889,6 +5953,14 @@
         "close": "21:00",
         "breakStart": "15:00",
         "breakEnd": "17:00"
+      },
+      "ratingCheckedAt": "2026-11-13T01:56:11.436Z",
+      "rating": {
+        "score": 4.2,
+        "count": 96,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=980033291771453343&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:11.436Z"
       }
     },
     {
@@ -5936,6 +6008,14 @@
         "close": "22:00",
         "breakStart": "15:00",
         "breakEnd": "17:30"
+      },
+      "ratingCheckedAt": "2026-11-13T01:56:11.603Z",
+      "rating": {
+        "score": 4.2,
+        "count": 836,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=5679208699847450217&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:11.603Z"
       }
     },
     {
@@ -5985,6 +6065,14 @@
       "hours": {
         "open": "11:30",
         "close": "24:00"
+      },
+      "ratingCheckedAt": "2026-11-13T01:56:11.849Z",
+      "rating": {
+        "score": 4.4,
+        "count": 2722,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=15430720727115756607&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:11.849Z"
       }
     },
     {
@@ -6026,7 +6114,15 @@
         "url": "https://map.naver.com/p/entry/place/18583473"
       },
       "walkMeters": 990,
-      "walkFromMap": true
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-13T01:56:12.062Z",
+      "rating": {
+        "score": 4.2,
+        "count": 727,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=148275193225279436&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:12.062Z"
+      }
     },
     {
       "slug": "장꼬방묵은김치찌개전문",
@@ -6075,6 +6171,14 @@
       "hours": {
         "open": "10:00",
         "close": "22:00"
+      },
+      "ratingCheckedAt": "2026-11-13T01:56:12.243Z",
+      "rating": {
+        "score": 4.3,
+        "count": 905,
+        "source": "google",
+        "url": "https://maps.google.com/?cid=12703205928491224192&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "fetchedAt": "2026-11-13T01:56:12.243Z"
       }
     }
   ],
