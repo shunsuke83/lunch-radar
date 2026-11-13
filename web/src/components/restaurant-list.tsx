@@ -1,7 +1,7 @@
 "use client";
 
 import { Star } from "lucide-react";
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { Badge, Button, EmptyState, LinkButton, Tag } from "@/components/ds";
 import {
   isOpenAt,
@@ -19,7 +19,11 @@ type Props = {
   loading?: boolean;
   error?: string | null;
   onReset?: () => void;
+  /** False outside the office area: the 도보 column shows the 시·군·구 instead. */
+  nearby?: boolean;
 };
+
+const PAGE_SIZE = 100;
 
 const won = (n: number) => `${n.toLocaleString("ko-KR")}원`;
 
@@ -102,7 +106,12 @@ function Shell({ children }: { children: ReactNode }) {
   return <div className="overflow-hidden rounded-sm bg-surface-default">{children}</div>;
 }
 
-export function RestaurantList({ restaurants, now = null, loading, error, onReset }: Props) {
+export function RestaurantList({ restaurants, now = null, loading, error, onReset, nearby = true }: Props) {
+  const [limit, setLimit] = useState(PAGE_SIZE);
+  useEffect(() => setLimit(PAGE_SIZE), [restaurants]);
+  const heads = nearby ? HEADS : HEADS.map((h) => (h.label === "도보" ? { ...h, label: "지역" } : h));
+  const visible = restaurants.slice(0, limit);
+
   if (loading) {
     return (
       <Shell>
@@ -140,7 +149,7 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
         aria-hidden
         className={cn("hidden bg-surface-subtle lg:grid", COLUMNS)}
       >
-        {HEADS.map((h) => (
+        {heads.map((h) => (
           <div
             key={h.label}
             className={cn(
@@ -153,7 +162,7 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
         ))}
       </div>
       <ul>
-        {restaurants.map((r) => {
+        {visible.map((r) => {
           const open = now !== null && r.hours ? isOpenAt(r.hours, now) : null;
           return (
             <li
@@ -185,8 +194,13 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
                 ) : r.notes ? (
                   <p className="text-text-secondary typography-body-sm-regular">{r.notes}</p>
                 ) : null}
-                {r.tags.length ? (
+                {r.tags.length || r.collections?.length ? (
                   <div className="flex flex-wrap gap-group-xs pt-stack-xxs">
+                    {r.collections?.map((c) => (
+                      <Tag key={c} color="purple" size="xsmall">
+                        {c}
+                      </Tag>
+                    ))}
                     {r.tags.map((tag) => (
                       <Tag key={tag} color="gray" size="xsmall">
                         {tag}
@@ -196,8 +210,8 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
                 ) : null}
               </div>
 
-              <Cell label="도보">
-                {r.walkMeters !== undefined ? (
+              <Cell label={nearby ? "도보" : "지역"}>
+                {nearby && r.walkMeters !== undefined ? (
                   <>
                     <span className="text-text-primary typography-body-md-medium">
                       {walkMinutes(r.walkMeters)}분
@@ -244,7 +258,11 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
               </Cell>
 
               <Cell label="멘션" className="lg:items-end">
-                <span className="text-text-primary typography-body-md-medium">{r.mentionCount}</span>
+                {r.mentionCount > 0 ? (
+                  <span className="text-text-primary typography-body-md-medium">{r.mentionCount}</span>
+                ) : (
+                  muted
+                )}
               </Cell>
 
               <div className="col-span-2 flex lg:col-span-1 lg:justify-end lg:px-inline-md lg:py-stack-md">
@@ -254,6 +272,13 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
           );
         })}
       </ul>
+      {restaurants.length > limit ? (
+        <div className="flex justify-center border-t border-border-default px-inline-lg py-stack-lg">
+          <Button onClick={() => setLimit((n) => n + PAGE_SIZE)}>
+            더 보기 ({limit.toLocaleString("ko-KR")} / {restaurants.length.toLocaleString("ko-KR")})
+          </Button>
+        </div>
+      ) : null}
     </Shell>
   );
 }

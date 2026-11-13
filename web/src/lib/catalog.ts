@@ -13,6 +13,8 @@ export const CATEGORY_GROUPS = [
   "아시안",
   "분식",
   "샐러드",
+  "카페·디저트",
+  "주점",
 ] as const;
 
 export type MenuItem = {
@@ -79,6 +81,10 @@ export type Restaurant = {
   rating?: PlaceRating;
   ratingCheckedAt?: string;
   tags: string[];
+  /** Region files only: 시·군·구 from the address. */
+  district?: string;
+  /** Curated lists the place came from (e.g. a Naver Map folder), shown as themes. */
+  collections?: string[];
   source?: RestaurantSource;
   addedAt: string;
   updatedAt: string;
@@ -97,6 +103,15 @@ export type RestaurantCatalog = {
 };
 
 export type SortKey = "popular" | "distance" | "price" | "rating";
+
+/** Province files under public/regions/<id>.json, listed in data/regions.json. */
+export type RegionIndex = {
+  updatedAt: string;
+  regions: { id: string; label: string; count: number; districts: { name: string; count: number }[] }[];
+};
+
+/** The embedded office catalog. */
+export const OFFICE_REGION = "office";
 
 /** Place pages when the enrich script found them, otherwise name searches. */
 export function mapLinks(r: Restaurant): { naver: string; kakao: string } {
@@ -120,9 +135,25 @@ export const THEMES = [
   },
 ] as const;
 
+/** Keyword themes first, then collection names present in `restaurants`. */
+export function themeOptions(restaurants: Restaurant[]): { value: string; label: string }[] {
+  const collections = new Map<string, number>();
+  for (const r of restaurants) {
+    for (const c of r.collections ?? []) collections.set(c, (collections.get(c) ?? 0) + 1);
+  }
+  return [
+    ...THEMES.map(({ id }) => ({ id, count: restaurants.filter((r) => matchesTheme(r, id)).length })),
+    ...[...collections.entries()]
+      .sort((a, b) => a[0].localeCompare(b[0], "ko"))
+      .map(([id, count]) => ({ id, count })),
+  ]
+    .filter((t) => t.count > 0)
+    .map(({ id, count }) => ({ value: id, label: `${id} (${count})` }));
+}
+
 export function matchesTheme(r: Restaurant, theme: string): boolean {
   const def = THEMES.find((t) => t.id === theme);
-  if (!def) return true;
+  if (!def) return r.collections?.includes(theme) ?? false;
   const hay = [r.name, r.subcategory, ...r.tags, ...(r.menu ?? []).map((m) => m.name)]
     .filter(Boolean)
     .join(" ");
@@ -134,8 +165,10 @@ export type RestaurantFilters = {
   category?: string;
   area?: string;
   tag?: string;
-  /** One of THEMES ids, or "all". */
+  /** A THEMES id or collection name, or "all". */
   theme?: string;
+  /** 시·군·구 for region files, or "all". */
+  district?: string;
   /** Walking distance within NEAR_METERS. */
   near?: boolean;
   /** Minutes since midnight (Asia/Seoul); keeps only places open then. */
@@ -220,6 +253,7 @@ export function filterRestaurants(
   const openAt = filters.openAt;
 
   const rows = restaurants.filter((r) => {
+    if (filters.district && filters.district !== "all" && r.district !== filters.district) return false;
     if (category && category !== "all") {
       const group = (r.category ?? "").toLowerCase();
       const detail = (r.subcategory ?? "").toLowerCase();

@@ -106,6 +106,14 @@ npx @grok/agent-sdk dev
 | [`deploy-pages.yml`](.github/workflows/deploy-pages.yml) | `main`에 `web/**` 변경 푸시, 수동 실행 | `npm run build:pages` → `web/out/`을 GitHub Pages에 배포 |
 | [`ci.yml`](.github/workflows/ci.yml) | 모든 PR, `main` 푸시 | 웹 정적 빌드(타입체크 포함), 봇 `npm run check`(타입체크) |
 
+### 네이버지도 저장 목록 (지역 데이터)
+
+회사 근처 밖의 맛집은 네이버지도 공유 폴더에서 한 번씩 가져옵니다(자동 수집 아님).
+
+1. `lunch-spots/.naver-folders.local`(커밋 안 됨)에 공유 폴더 ID를 한 줄에 하나씩 적습니다. `naver.me` 링크를 열었을 때 주소의 `.../sharedPlace/folder/<ID>` 부분입니다. ID 뒤에 이름을 적으면 그 폴더의 가게가 웹의 테마로 보입니다(예: `<ID> 미쉐린 서울 2026`).
+2. `lunch-spots`에서 `npm run catalog:naver-folders`를 실행합니다. 가게마다 네이버 장소 페이지에서 업종·주소·평일 영업시간·휴무일·대표 메뉴를 읽습니다. 네이버가 빠른 요청을 429로 막으므로 기본은 한 번에 1곳, 요청 사이 3초(`--concurrency`, `--delay`로 조정)이며 5천 곳이면 몇 시간 걸립니다. 받은 내용은 `lunch-spots/.cache/`에 쌓여서 중간에 끊겨도 다시 실행하면 이어 받습니다. `--offline`은 요청 없이 캐시만으로 파일을 다시 만듭니다.
+3. 결과는 `web/public/regions/<시·도>.json`과 `web/data/regions.json`입니다. 회사 근처 목록에 이미 있는 가게(네이버 장소 ID 기준)와 폐업 표시된 장소는 빠집니다. 폴더 링크·폴더 이름(테마로 지정한 것 제외)·저장한 사람 정보는 파일에 넣지 않습니다.
+
 ### Slack 자동 수집 (`collect-lunch.yml`)
 
 동작 순서:

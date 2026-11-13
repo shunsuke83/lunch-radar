@@ -29,8 +29,15 @@ type Kakao = {
       zIndex?: number;
     }) => Overlay;
     event: { addListener: (target: object, type: string, fn: () => void) => void };
+    MarkerClusterer: new (opts: { map: KakaoMap; averageCenter?: boolean; minLevel?: number }) => {
+      addMarkers: (markers: Overlay[]) => void;
+      clear: () => void;
+    };
   };
 };
+
+/** Above this many markers they are grouped into clusters. */
+const CLUSTER_FROM = 200;
 
 declare global {
   interface Window {
@@ -43,7 +50,7 @@ let sdk: Promise<Kakao> | null = null;
 function loadKakao(key: string): Promise<Kakao> {
   sdk ??= new Promise<Kakao>((resolve, reject) => {
     const script = document.createElement("script");
-    script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${encodeURIComponent(key)}&autoload=false`;
+    script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${encodeURIComponent(key)}&libraries=clusterer&autoload=false`;
     script.async = true;
     script.onload = () => window.kakao?.maps.load(() => resolve(window.kakao!));
     script.onerror = () => {
@@ -132,6 +139,7 @@ export function RestaurantMap({ restaurants, office }: Props) {
   const box = useRef<HTMLDivElement>(null);
   const mapRef = useRef<{ kakao: Kakao; map: KakaoMap } | null>(null);
   const layers = useRef<Overlay[]>([]);
+  const clusterer = useRef<{ clear: () => void } | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
 
@@ -165,6 +173,10 @@ export function RestaurantMap({ restaurants, office }: Props) {
     const { kakao, map } = current;
     for (const layer of layers.current) layer.setMap(null);
     layers.current = [];
+    clusterer.current?.clear();
+    clusterer.current = null;
+    const cluster = located.length > CLUSTER_FROM;
+    const markers: Overlay[] = [];
 
     const bounds = new kakao.maps.LatLngBounds();
     let popup: Overlay | null = null;
@@ -185,8 +197,12 @@ export function RestaurantMap({ restaurants, office }: Props) {
     for (const r of located) {
       const pos = new kakao.maps.LatLng(r.location!.lat, r.location!.lng);
       const marker = new kakao.maps.Marker({ position: pos, title: r.name });
-      marker.setMap(map);
-      layers.current.push(marker);
+      if (cluster) {
+        markers.push(marker);
+      } else {
+        marker.setMap(map);
+        layers.current.push(marker);
+      }
       bounds.extend(pos);
       kakao.maps.event.addListener(marker, "click", () => {
         popup?.setMap(null);
@@ -202,6 +218,11 @@ export function RestaurantMap({ restaurants, office }: Props) {
       });
     }
 
+    if (cluster) {
+      const c = new kakao.maps.MarkerClusterer({ map, averageCenter: true, minLevel: 5 });
+      c.addMarkers(markers);
+      clusterer.current = c;
+    }
     if (located.length > 0) map.setBounds(bounds);
   }, [ready, located, office]);
 

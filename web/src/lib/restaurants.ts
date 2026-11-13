@@ -1,10 +1,20 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-import type { RestaurantCatalog } from "./catalog";
+import type { RegionIndex, RestaurantCatalog } from "./catalog";
 
 export * from "./catalog";
 
 const DATA_PATH = path.join(process.cwd(), "data", "restaurants.json");
+const REGIONS_PATH = path.join(process.cwd(), "data", "regions.json");
+
+/** Index of the province files in public/regions; empty until the Naver import runs. */
+export async function loadRegions(): Promise<RegionIndex> {
+  try {
+    return JSON.parse(await readFile(REGIONS_PATH, "utf8")) as RegionIndex;
+  } catch {
+    return { updatedAt: "", regions: [] };
+  }
+}
 
 export function dataPath(): string {
   return DATA_PATH;
