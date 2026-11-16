@@ -3,7 +3,7 @@
 import { useEffect, useId, useMemo, useState, type ReactNode } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
 import { Button, Chip, FilterSelect, SearchField, SegmentedControl } from "@/components/ds";
-import { NEAR_MINUTES, type SortKey } from "@/lib/catalog";
+import { NEAR_MINUTES, type SortKey, type ThemeGroup, type ThemeOption } from "@/lib/catalog";
 import { EMPTY_FILTERS } from "@/lib/filter-url";
 import { cn } from "@/lib/utils";
 
@@ -39,7 +39,7 @@ type Props = {
   categories: string[];
   /** Popular tags first; chips show the top few. */
   tags: Option[];
-  themes: Option[];
+  themes: ThemeOption[];
   /** False until the client clock is known (static HTML has no "now"). */
   clockReady: boolean;
   onChange: (next: FilterState) => void;
@@ -56,6 +56,13 @@ const SORTS: { value: SortKey; label: string }[] = [
 
 /** How many tag chips to pin before “더보기”. */
 const PINNED_TAGS = 8;
+
+const THEME_GROUPS: ThemeGroup[] = ["상황", "메뉴", "모음"];
+const THEME_GROUP_LABELS: Record<ThemeGroup, string> = {
+  상황: "상황별",
+  메뉴: "메뉴별",
+  모음: "저장 목록",
+};
 
 function activeFilterCount(value: FilterState, nearby: boolean): number {
   let n = 0;
@@ -167,17 +174,28 @@ export function RestaurantFilters({
     </div>
   );
 
-  const themeChips = themes.length ? (
-    <ChipRow label="테마">
-      <Chip selected={value.theme === "all"} onClick={() => set({ theme: "all" })}>
-        전체
-      </Chip>
-      {themes.map((t) => (
-        <Chip key={t.value} selected={value.theme === t.value} onClick={() => set({ theme: t.value })}>
-          {t.label}
-        </Chip>
+  const themeGroups = THEME_GROUPS.map((group) => ({
+    group,
+    items: themes.filter((t) => t.group === group),
+  })).filter((g) => g.items.length > 0);
+
+  const themeChips = themeGroups.length ? (
+    <div className="flex flex-col gap-stack-sm">
+      {themeGroups.map(({ group, items }, i) => (
+        <ChipRow key={group} label={`테마 · ${THEME_GROUP_LABELS[group]}`}>
+          {i === 0 ? (
+            <Chip selected={value.theme === "all"} onClick={() => set({ theme: "all" })}>
+              전체
+            </Chip>
+          ) : null}
+          {items.map((t) => (
+            <Chip key={t.value} selected={value.theme === t.value} onClick={() => set({ theme: t.value })}>
+              {t.label}
+            </Chip>
+          ))}
+        </ChipRow>
       ))}
-    </ChipRow>
+    </div>
   ) : null;
 
   const tagChips = tags.length ? (

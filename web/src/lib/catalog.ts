@@ -127,41 +127,165 @@ export function mapLinks(r: Restaurant): { naver: string; kakao: string } {
   };
 }
 
-/** Cross-category themes, matched on name, subcategory, tags, and menu names. */
-export const THEMES = [
+/** Theme chip rows: situations, dishes, and curated lists (region files). */
+export type ThemeGroup = "상황" | "메뉴" | "모음";
+
+export type ThemeDef = {
+  id: string;
+  group: Exclude<ThemeGroup, "모음">;
+  /** Any keyword in the name, subcategory, tags, or menu names. */
+  keywords?: readonly string[];
+  /** Match keywords on the name, subcategory, and tags only (side dishes in menus are noise). */
+  coreOnly?: boolean;
+  /** Restrict to these CATEGORY_GROUPS. */
+  categories?: readonly string[];
+  /** Extra condition for themes that keywords cannot express (hours, price). */
+  test?: (r: Restaurant) => boolean;
+};
+
+/** Late lunch: open without a break from 14:00 until 15:30. */
+const LATE_LUNCH_FROM = 14 * 60;
+const LATE_LUNCH_UNTIL = 15 * 60 + 30;
+/** Cheapest menu item at or above this suggests a sit-down meal for guests or team dinners. */
+const HOSTING_MIN_WON = 18_000;
+
+/** Cross-category themes. Order here is chip order within each group. */
+export const THEMES: readonly ThemeDef[] = [
+  { id: "점심특선", group: "상황", keywords: ["점심", "런치", "lunch", "Lunch", "LUNCH"] },
+  {
+    id: "늦은 점심",
+    group: "상황",
+    test: (r) => {
+      if (!r.hours) return false;
+      for (let t = LATE_LUNCH_FROM; t < LATE_LUNCH_UNTIL; t += 30) {
+        if (!isOpenAt(r.hours, t)) return false;
+      }
+      return true;
+    },
+  },
   {
     id: "해장",
+    group: "상황",
     keywords: ["해장", "국밥", "순대국", "곰탕", "설렁탕", "감자탕", "선지", "콩나물", "내장탕", "우거지"],
   },
   {
+    id: "비 오는 날",
+    group: "상황",
+    keywords: ["파전", "부침개", "빈대떡", "감자전", "김치전", "해물전", "모듬전", "육전", "칼국수", "수제비", "짬뽕"],
+  },
+  {
+    id: "회식·접대",
+    group: "상황",
+    test: (r) =>
+      (minPrice(r) ?? 0) >= HOSTING_MIN_WON ||
+      ["한정식", "코스", "오마카세", "호텔"].some((k) => r.subcategory?.includes(k)),
+  },
+  {
+    id: "집밥·백반",
+    group: "메뉴",
+    categories: ["한식"],
+    keywords: [
+      "백반", "집밥", "한식뷔페", "점심뷔페", "기사식당", "쌈밥", "보리밥", "제육볶음", "청국장",
+      "된장찌개", "생선구이", "나물", "산채", "곤드레", "한상", "정식", "두부",
+    ],
+  },
+  {
+    id: "면 요리",
+    group: "메뉴",
+    keywords: [
+      "국수", "국시", "칼국수", "냉면", "막국수", "라멘", "라면", "우동", "소바", "모밀", "메밀", "짬뽕",
+      "짜장", "파스타", "스파게티", "쫄면", "콩국수", "탄탄면", "팟타이", "꾸아이띠아오", "분짜", "밀면",
+      "비빔면", "온면", "수제비",
+    ],
+  },
+  {
+    id: "찌개·전골",
+    group: "메뉴",
+    keywords: ["찌개", "전골", "순두부", "샤브샤브", "닭한마리", "짜글이"],
+  },
+  {
+    id: "덮밥·한 그릇",
+    group: "메뉴",
+    keywords: [
+      "덮밥", "비빔밥", "카레", "커리", "솥밥", "오므라이스", "볶음밥", "규동", "사케동", "텐동", "가츠동",
+      "부타동", "에비동", "돈부리", "포케", "나시고랭",
+    ],
+  },
+  { id: "돈까스·카츠", group: "메뉴", keywords: ["돈까스", "돈가스", "돈카츠", "카츠", "가츠", "까스"] },
+  {
+    id: "고기 든든",
+    group: "메뉴",
+    categories: ["한식"],
+    keywords: ["제육", "불고기", "불백", "갈비", "보쌈", "수육", "두루치기", "차돌", "육회", "고깃집", "숯불", "정육", "족발", "삼겹"],
+  },
+  {
+    id: "매콤한",
+    group: "메뉴",
+    keywords: [
+      "매운", "매콤", "얼큰", "마라", "짬뽕", "불닭", "떡볶이", "낙지", "쭈꾸미", "주꾸미", "닭갈비", "육개장",
+      "부대찌개", "땡초", "김치찌개",
+    ],
+  },
+  {
+    id: "회·초밥",
+    group: "메뉴",
+    // Menus alone mislead here (참치김밥, 연어샐러드).
+    coreOnly: true,
+    keywords: ["초밥", "스시", "사시미", "회덮밥", "물회", "참치", "횟집", "뭉티기", "세꼬시"],
+  },
+  {
+    id: "가벼운 한 끼",
+    group: "메뉴",
+    coreOnly: true,
+    keywords: ["샐러드", "포케", "샌드위치", "김밥", "브런치", "반미", "베이글", "토스트", "보울"],
+  },
+  { id: "버거·피자", group: "메뉴", keywords: ["버거", "피자"] },
+  {
     id: "생선구이",
+    group: "메뉴",
     keywords: ["생선", "고등어구이", "삼치구이", "갈치구이", "조기구이", "임연수구이"],
   },
-] as const;
+];
 
-/** Keyword themes first, then collection names present in `restaurants`. */
-export function themeOptions(restaurants: Restaurant[]): { value: string; label: string }[] {
+export type ThemeOption = { value: string; label: string; group: ThemeGroup };
+
+/** Built-in themes in THEMES order, then collection names present in `restaurants`. */
+export function themeOptions(restaurants: Restaurant[]): ThemeOption[] {
   const collections = new Map<string, number>();
   for (const r of restaurants) {
     for (const c of r.collections ?? []) collections.set(c, (collections.get(c) ?? 0) + 1);
   }
-  return [
-    ...THEMES.map(({ id }) => ({ id, count: restaurants.filter((r) => matchesTheme(r, id)).length })),
+  const counted: { value: string; group: ThemeGroup; count: number }[] = [
+    ...THEMES.map((t) => ({
+      value: t.id,
+      group: t.group,
+      count: restaurants.filter((r) => matchesThemeDef(r, t)).length,
+    })),
     ...[...collections.entries()]
       .sort((a, b) => a[0].localeCompare(b[0], "ko"))
-      .map(([id, count]) => ({ id, count })),
-  ]
+      .map(([id, count]) => ({ value: id, group: "모음" as const, count })),
+  ];
+  return counted
     .filter((t) => t.count > 0)
-    .map(({ id, count }) => ({ value: id, label: `${id} (${count})` }));
+    .map(({ value, group, count }) => ({ value, group, label: `${value} (${count})` }));
+}
+
+function matchesThemeDef(r: Restaurant, def: ThemeDef): boolean {
+  if (def.categories && !def.categories.includes(r.category ?? "")) return false;
+  if (def.keywords?.length) {
+    const fields = def.coreOnly
+      ? [r.name, r.subcategory, ...r.tags]
+      : [r.name, r.subcategory, ...r.tags, ...(r.menu ?? []).map((m) => m.name)];
+    const hay = fields.filter(Boolean).join(" ");
+    if (def.keywords.some((k) => hay.includes(k))) return true;
+  }
+  return def.test?.(r) ?? false;
 }
 
 export function matchesTheme(r: Restaurant, theme: string): boolean {
   const def = THEMES.find((t) => t.id === theme);
   if (!def) return r.collections?.includes(theme) ?? false;
-  const hay = [r.name, r.subcategory, ...r.tags, ...(r.menu ?? []).map((m) => m.name)]
-    .filter(Boolean)
-    .join(" ");
-  return def.keywords.some((k) => hay.includes(k));
+  return matchesThemeDef(r, def);
 }
 
 export type RestaurantFilters = {
