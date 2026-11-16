@@ -31,7 +31,7 @@
         "open": "10:00",
         "close": "20:30"
       },
-      "walkMeters": 192,
+      "walkMeters": 280,
       "location": {
         "lat": 37.4858744920393,
         "lng": 127.036417045661
@@ -54,7 +54,9 @@
         "placeId": "1544329925",
         "url": "https://map.naver.com/p/entry/place/1544329925"
       },
-      "naverReviews": 111
+      "naverReviews": 111,
+      "walkMinutes": 4,
+      "walkFromMap": true
     },
     {
       "slug": "강창구찹쌀진순대-양재역점",
@@ -81,7 +83,7 @@
           "price": 12000
         }
       ],
-      "walkMeters": 280,
+      "walkMeters": 385,
       "location": {
         "lat": 37.4828668485882,
         "lng": 127.03666658746
@@ -104,7 +106,13 @@
         "placeId": "36406497",
         "url": "https://map.naver.com/p/entry/place/36406497"
       },
-      "naverReviews": 545
+      "naverReviews": 545,
+      "hours": {
+        "open": "10:00",
+        "close": "23:00"
+      },
+      "walkMinutes": 7,
+      "walkFromMap": true
     },
     {
       "slug": "강촌원조쭈꾸미-양재역",
@@ -135,7 +143,7 @@
         "open": "11:00",
         "close": "23:00"
       },
-      "walkMeters": 215,
+      "walkMeters": 348,
       "location": {
         "lat": 37.48335443957676,
         "lng": 127.03619534668032
@@ -158,7 +166,9 @@
         "placeId": "32708325",
         "url": "https://map.naver.com/p/entry/place/32708325"
       },
-      "naverReviews": 1271
+      "naverReviews": 1271,
+      "walkMinutes": 6,
+      "walkFromMap": true
     },
     {
       "slug": "고려향",
@@ -203,7 +213,7 @@
         "kakaoUrl": "https://place.map.kakao.com/704188840",
         "address": "서울 서초구 강남대로 156-1"
       },
-      "walkMeters": 777,
+      "walkMeters": 861,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:34:43.084Z",
       "rating": {
@@ -218,7 +228,12 @@
         "placeId": "1427943416",
         "url": "https://map.naver.com/p/entry/place/1427943416"
       },
-      "naverReviews": 613
+      "naverReviews": 613,
+      "hours": {
+        "open": "10:50",
+        "close": "21:00"
+      },
+      "walkMinutes": 13
     },
     {
       "slug": "고양이부엌-양재",
@@ -248,7 +263,7 @@
         "open": "11:00",
         "close": "21:30"
       },
-      "walkMeters": 370,
+      "walkMeters": 519,
       "location": {
         "lat": 37.4866418411772,
         "lng": 127.031202653867
@@ -272,7 +287,9 @@
         "url": "https://map.naver.com/p/entry/place/38591616"
       },
       "naverReviews": 695,
-      "naverScore": 4.28
+      "naverScore": 4.28,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "곰작골나주곰탕-양재점",
@@ -313,7 +330,7 @@
         "kakaoUrl": "https://place.map.kakao.com/585218532",
         "address": "서울 서초구 남부순환로 2626"
       },
-      "walkMeters": 300,
+      "walkMeters": 380,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:25:18.639Z",
       "rating": {
@@ -332,7 +349,8 @@
         "placeId": "1257299870",
         "url": "https://map.naver.com/p/entry/place/1257299870"
       },
-      "naverReviews": 934
+      "naverReviews": 934,
+      "walkMinutes": 7
     },
     {
       "slug": "구스아일랜드-브루하우스",
@@ -376,7 +394,7 @@
         "placeId": "505375149",
         "url": "https://map.naver.com/p/entry/place/505375149"
       },
-      "walkMeters": 989,
+      "walkMeters": 1207,
       "walkFromMap": true,
       "hours": {
         "open": "11:30",
@@ -397,7 +415,8 @@
       },
       "naverCheckedAt": "2026-11-13T04:28:56.007Z",
       "naverReviews": 2491,
-      "naverScore": 4.7
+      "naverScore": 4.7,
+      "walkMinutes": 18
     },
     {
       "slug": "국고집",
@@ -440,7 +459,7 @@
         "kakaoUrl": "https://place.map.kakao.com/293690686",
         "address": "서울 강남구 남부순환로355길 14"
       },
-      "walkMeters": 164,
+      "walkMeters": 259,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:32:18.314Z",
       "rating": {
@@ -456,7 +475,8 @@
         "url": "https://map.naver.com/p/entry/place/1034622849"
       },
       "naverReviews": 1218,
-      "naverScore": 4.58
+      "naverScore": 4.58,
+      "walkMinutes": 4
     },
     {
       "slug": "국미당-양재역",
@@ -487,7 +507,7 @@
         "open": "11:00",
         "close": "20:30"
       },
-      "walkMeters": 196,
+      "walkMeters": 313,
       "location": {
         "lat": 37.4861430508459,
         "lng": 127.036227220564
@@ -511,7 +531,9 @@
         "url": "https://map.naver.com/p/entry/place/35155951"
       },
       "naverReviews": 735,
-      "naverScore": 4.36
+      "naverScore": 4.36,
+      "walkMinutes": 5,
+      "walkFromMap": true
     },
     {
       "slug": "금강수림",
@@ -544,7 +566,7 @@
         "breakStart": "16:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 38,
+      "walkMeters": 122,
       "location": {
         "lat": 37.485259699086775,
         "lng": 127.03443015314183
@@ -554,14 +576,16 @@
         "kakaoUrl": "https://place.map.kakao.com/14659473",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-16T01:32:23.071Z",
+      "ratingCheckedAt": "2026-11-16T04:59:46.582Z",
       "naverCheckedAt": "2026-11-13T04:29:02.847Z",
       "naver": {
         "placeId": "20652838",
         "url": "https://map.naver.com/p/entry/place/20652838"
       },
       "naverReviews": 837,
-      "naverScore": 4.4
+      "naverScore": 4.4,
+      "walkMinutes": 2,
+      "walkFromMap": true
     },
     {
       "slug": "김밥천국-양재점",
@@ -591,16 +615,26 @@
         "kakaoUrl": "https://place.map.kakao.com/1962594858",
         "address": "서울 서초구 강남대로 221"
       },
-      "walkMeters": 148,
+      "walkMeters": 289,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:32:24.447Z",
+      "ratingCheckedAt": "2026-11-16T04:59:47.773Z",
       "naverCheckedAt": "2026-11-16T01:32:28.144Z",
       "naver": {
         "placeId": "1733030490",
         "url": "https://map.naver.com/p/entry/place/1733030490"
       },
       "naverReviews": 952,
-      "naverScore": 4
+      "naverScore": 4,
+      "menu": [
+        {
+          "name": "시간 부족할 때 대안"
+        }
+      ],
+      "hours": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "walkMinutes": 5
     },
     {
       "slug": "깐부치킨-양재역점-점심뷔페",
@@ -631,9 +665,10 @@
         "lat": 37.4851359560245,
         "lng": 127.033293431719
       },
-      "walkMeters": 129,
+      "walkMeters": 195,
       "walkFromMap": true,
-      "naverCheckedAt": "2026-11-13T04:34:54.132Z"
+      "naverCheckedAt": "2026-11-13T04:34:54.132Z",
+      "walkMinutes": 4
     },
     {
       "slug": "꼬김빱-서초구청점",
@@ -664,7 +699,7 @@
         "open": "08:30",
         "close": "20:30"
       },
-      "walkMeters": 420,
+      "walkMeters": 505,
       "ratingCheckedAt": "2026-11-06T06:08:14.853Z",
       "naverCheckedAt": "2026-11-13T04:23:45.229Z",
       "naver": {
@@ -675,7 +710,9 @@
       "location": {
         "lat": 37.4846895,
         "lng": 127.0299448
-      }
+      },
+      "walkMinutes": 8,
+      "walkFromMap": true
     },
     {
       "slug": "남순남순대국-본점",
@@ -715,7 +752,7 @@
         "kakaoUrl": "https://place.map.kakao.com/11139515",
         "address": "서울 강남구 도곡로4길 12"
       },
-      "walkMeters": 490,
+      "walkMeters": 720,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:29:05.171Z",
       "rating": {
@@ -731,7 +768,15 @@
       },
       "naverCheckedAt": "2026-11-13T04:29:09.523Z",
       "naverReviews": 925,
-      "naverScore": 4.26
+      "naverScore": 4.26,
+      "hours": {
+        "open": "10:00",
+        "close": "21:30",
+        "closedDays": [
+          "일"
+        ]
+      },
+      "walkMinutes": 11
     },
     {
       "slug": "누룩목-양재본점",
@@ -764,7 +809,7 @@
         "breakStart": "14:00",
         "breakEnd": "16:00"
       },
-      "walkMeters": 394,
+      "walkMeters": 542,
       "location": {
         "lat": 37.4874048749132,
         "lng": 127.031654123031
@@ -774,14 +819,16 @@
         "kakaoUrl": "https://place.map.kakao.com/1311036367",
         "address": "서울 서초구 강남대로43길 11"
       },
-      "ratingCheckedAt": "2026-11-16T01:32:35.194Z",
+      "ratingCheckedAt": "2026-11-16T05:00:02.567Z",
       "naverCheckedAt": "2026-11-13T04:25:29.842Z",
       "naver": {
         "placeId": "1798445957",
         "url": "https://map.naver.com/p/entry/place/1798445957"
       },
       "naverReviews": 1217,
-      "naverScore": 4.89
+      "naverScore": 4.89,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "다돈식당",
@@ -813,7 +860,7 @@
         "breakStart": "14:00",
         "breakEnd": "16:00"
       },
-      "walkMeters": 464,
+      "walkMeters": 592,
       "location": {
         "lat": 37.4889442290356,
         "lng": 127.033356520433
@@ -836,7 +883,9 @@
         "placeId": "1765708831",
         "url": "https://map.naver.com/p/entry/place/1765708831"
       },
-      "naverReviews": 2520
+      "naverReviews": 2520,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "대려도",
@@ -876,7 +925,7 @@
         "placeId": "12008857",
         "url": "https://map.naver.com/p/entry/place/12008857"
       },
-      "walkMeters": 987,
+      "walkMeters": 1212,
       "walkFromMap": true,
       "hours": {
         "open": "11:30",
@@ -898,7 +947,8 @@
         "address": "서울 강남구 역삼로 118"
       },
       "naverCheckedAt": "2026-11-13T04:29:24.872Z",
-      "naverReviews": 762
+      "naverReviews": 762,
+      "walkMinutes": 18
     },
     {
       "slug": "더대박칼국수",
@@ -936,7 +986,7 @@
         "kakaoUrl": "https://place.map.kakao.com/424606603",
         "address": "서울 서초구 바우뫼로 188"
       },
-      "walkMeters": 833,
+      "walkMeters": 1081,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:32:36.751Z",
       "rating": {
@@ -951,7 +1001,8 @@
         "placeId": "1190140734",
         "url": "https://map.naver.com/p/entry/place/1190140734"
       },
-      "naverReviews": 245
+      "naverReviews": 245,
+      "walkMinutes": 17
     },
     {
       "slug": "덴키-도곡본점",
@@ -998,17 +1049,22 @@
         "placeId": "1297421035",
         "url": "https://map.naver.com/p/entry/place/1297421035"
       },
-      "walkMeters": 921,
+      "walkMeters": 1074,
       "walkFromMap": true,
       "hours": {
         "open": "11:00",
         "close": "21:00",
         "breakStart": "15:00",
-        "breakEnd": "17:00"
+        "breakEnd": "17:00",
+        "closedDays": [
+          "토",
+          "일"
+        ]
       },
       "naverCheckedAt": "2026-11-13T04:29:31.183Z",
       "naverReviews": 733,
-      "naverScore": 4.54
+      "naverScore": 4.54,
+      "walkMinutes": 18
     },
     {
       "slug": "도하정-서초양재점",
@@ -1049,7 +1105,7 @@
         "kakaoUrl": "https://place.map.kakao.com/2044777817",
         "address": "서울 서초구 바우뫼로 220"
       },
-      "walkMeters": 804,
+      "walkMeters": 1127,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:32:41.921Z",
       "rating": {
@@ -1065,7 +1121,8 @@
         "url": "https://map.naver.com/p/entry/place/1008560025"
       },
       "naverReviews": 1652,
-      "naverScore": 4.84
+      "naverScore": 4.84,
+      "walkMinutes": 19
     },
     {
       "slug": "도화",
@@ -1095,7 +1152,7 @@
         "open": "11:00",
         "close": "23:00"
       },
-      "walkMeters": 382,
+      "walkMeters": 477,
       "location": {
         "lat": 37.48567073077524,
         "lng": 127.03052723393596
@@ -1119,7 +1176,9 @@
       },
       "naverCheckedAt": "2026-11-13T04:23:52.466Z",
       "naverReviews": 2634,
-      "naverScore": 4.81
+      "naverScore": 4.81,
+      "walkMinutes": 8,
+      "walkFromMap": true
     },
     {
       "slug": "돈까스하우스",
@@ -1150,7 +1209,7 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 204,
+      "walkMeters": 281,
       "location": {
         "lat": 37.4860077905814,
         "lng": 127.036581059719
@@ -1173,7 +1232,9 @@
         "placeId": "1252440472",
         "url": "https://map.naver.com/p/entry/place/1252440472"
       },
-      "naverReviews": 139
+      "naverReviews": 139,
+      "walkMinutes": 4,
+      "walkFromMap": true
     },
     {
       "slug": "돈스라",
@@ -1206,7 +1267,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:30"
       },
-      "walkMeters": 258,
+      "walkMeters": 350,
       "location": {
         "lat": 37.4856829286614,
         "lng": 127.03209775387
@@ -1230,7 +1291,9 @@
         "url": "https://map.naver.com/p/entry/place/36339164"
       },
       "naverReviews": 619,
-      "naverScore": 4.34
+      "naverScore": 4.34,
+      "walkMinutes": 6,
+      "walkFromMap": true
     },
     {
       "slug": "두부1번지",
@@ -1276,7 +1339,7 @@
         "kakaoUrl": "https://place.map.kakao.com/540306071",
         "address": "서울 서초구 강남대로30길 55"
       },
-      "walkMeters": 540,
+      "walkMeters": 780,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:34:56.721Z",
       "rating": {
@@ -1291,7 +1354,17 @@
         "placeId": "1343695234",
         "url": "https://map.naver.com/p/entry/place/1343695234"
       },
-      "naverReviews": 59
+      "naverReviews": 59,
+      "hours": {
+        "open": "10:00",
+        "close": "20:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00",
+        "closedDays": [
+          "일"
+        ]
+      },
+      "walkMinutes": 12
     },
     {
       "slug": "디오디아",
@@ -1329,7 +1402,7 @@
         "kakaoUrl": "https://place.map.kakao.com/7850610",
         "address": "서울 서초구 강남대로 213"
       },
-      "walkMeters": 292,
+      "walkMeters": 378,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:35:03.348Z",
       "rating": {
@@ -1344,7 +1417,14 @@
         "placeId": "12950069",
         "url": "https://map.naver.com/p/entry/place/12950069"
       },
-      "naverReviews": 6444
+      "naverReviews": 6449,
+      "hours": {
+        "open": "12:00",
+        "close": "21:00",
+        "breakStart": "14:30",
+        "breakEnd": "18:00"
+      },
+      "walkMinutes": 7
     },
     {
       "slug": "뚝배기양평해장국-양재점",
@@ -1379,15 +1459,25 @@
         "kakaoUrl": "https://place.map.kakao.com/1128846505",
         "address": "서울 서초구 강남대로30길 68"
       },
-      "walkMeters": 602,
+      "walkMeters": 835,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:32:46.560Z",
+      "ratingCheckedAt": "2026-11-16T05:00:17.248Z",
       "naverCheckedAt": "2026-11-13T04:29:44.885Z",
       "naver": {
         "placeId": "1910073147",
         "url": "https://map.naver.com/p/entry/place/1910073147"
       },
-      "naverReviews": 51
+      "naverReviews": 52,
+      "hours": {
+        "open": "11:00",
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00",
+        "closedDays": [
+          "일"
+        ]
+      },
+      "walkMinutes": 13
     },
     {
       "slug": "라그릴리아-양재점",
@@ -1428,7 +1518,7 @@
         "kakaoUrl": "https://place.map.kakao.com/18373278",
         "address": "서울 서초구 남부순환로 2620"
       },
-      "walkMeters": 233,
+      "walkMeters": 364,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:35:10.151Z",
       "rating": {
@@ -1443,7 +1533,12 @@
         "url": "https://map.naver.com/p/entry/place/12962167"
       },
       "naverCheckedAt": "2026-11-13T04:35:14.540Z",
-      "naverReviews": 2539
+      "naverReviews": 2540,
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMinutes": 6
     },
     {
       "slug": "레코드196",
@@ -1475,10 +1570,36 @@
         "url": "https://map.naver.com/p/entry/place/1012489746"
       },
       "address": "서울 서초구 남부순환로356길 33 2층 201호",
-      "walkMeters": 341,
+      "walkMeters": 544,
       "walkFromMap": true,
       "naverCheckedAt": "2026-11-13T04:29:52.049Z",
-      "naverReviews": 43
+      "naverReviews": 43,
+      "hours": {
+        "open": "19:00",
+        "close": "23:30",
+        "closedDays": [
+          "일"
+        ]
+      },
+      "menu": [
+        {
+          "name": "진토닉",
+          "price": 8000
+        },
+        {
+          "name": "산미구엘",
+          "price": 10000
+        },
+        {
+          "name": "와일드터키",
+          "price": 12000
+        },
+        {
+          "name": "제임슨진저하이볼",
+          "price": 12000
+        }
+      ],
+      "walkMinutes": 9
     },
     {
       "slug": "로마옥-도곡",
@@ -1519,7 +1640,7 @@
         "kakaoUrl": "https://place.map.kakao.com/237005010",
         "address": "서울 강남구 강남대로48길 11"
       },
-      "walkMeters": 244,
+      "walkMeters": 370,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:35:17.075Z",
       "rating": {
@@ -1534,7 +1655,14 @@
         "placeId": "1786476142",
         "url": "https://map.naver.com/p/entry/place/1786476142"
       },
-      "naverReviews": 5686
+      "naverReviews": 5699,
+      "hours": {
+        "open": "11:30",
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMinutes": 7
     },
     {
       "slug": "린참치",
@@ -1567,7 +1695,7 @@
         "breakStart": "15:00",
         "breakEnd": "16:30"
       },
-      "walkMeters": 407,
+      "walkMeters": 561,
       "location": {
         "lat": 37.4873734165416,
         "lng": 127.031365779778
@@ -1591,7 +1719,9 @@
         "url": "https://map.naver.com/p/entry/place/12802904"
       },
       "naverReviews": 1555,
-      "naverScore": 4.86
+      "naverScore": 4.86,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "마라홀릭-마라탕-양재역점",
@@ -1621,7 +1751,7 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 208,
+      "walkMeters": 301,
       "location": {
         "lat": 37.4857139917147,
         "lng": 127.036807052622
@@ -1644,7 +1774,9 @@
         "placeId": "1889974700",
         "url": "https://map.naver.com/p/entry/place/1889974700"
       },
-      "naverReviews": 3050
+      "naverReviews": 3050,
+      "walkMinutes": 5,
+      "walkFromMap": true
     },
     {
       "slug": "마차이짬뽕-양재역점",
@@ -1677,7 +1809,7 @@
         "breakStart": "14:30",
         "breakEnd": "16:00"
       },
-      "walkMeters": 177,
+      "walkMeters": 195,
       "location": {
         "lat": 37.4846303835679,
         "lng": 127.032707862382
@@ -1701,7 +1833,9 @@
         "url": "https://map.naver.com/p/entry/place/1255806748"
       },
       "naverReviews": 359,
-      "naverScore": 4.87
+      "naverScore": 4.87,
+      "walkMinutes": 4,
+      "walkFromMap": true
     },
     {
       "slug": "마포갈비",
@@ -1732,7 +1866,7 @@
         "open": "10:00",
         "close": "24:00"
       },
-      "walkMeters": 258,
+      "walkMeters": 295,
       "location": {
         "lat": 37.4855678161802,
         "lng": 127.0374819960164
@@ -1755,7 +1889,9 @@
         "placeId": "11716299",
         "url": "https://map.naver.com/p/entry/place/11716299"
       },
-      "naverReviews": 188
+      "naverReviews": 188,
+      "walkMinutes": 4,
+      "walkFromMap": true
     },
     {
       "slug": "말죽거리-해장국",
@@ -1781,7 +1917,7 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 341,
+      "walkMeters": 543,
       "location": {
         "lat": 37.48355202703171,
         "lng": 127.0382102570792
@@ -1805,7 +1941,9 @@
       },
       "address": "서울 서초구 남부순환로356길 33 103호",
       "naverCheckedAt": "2026-11-13T04:25:51.158Z",
-      "naverReviews": 77
+      "naverReviews": 77,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "맛나돈얼큰돼지찌개-양재역점",
@@ -1838,7 +1976,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 397,
+      "walkMeters": 529,
       "location": {
         "lat": 37.4847770180199,
         "lng": 127.030186539628
@@ -1862,7 +2000,9 @@
         "url": "https://map.naver.com/p/entry/place/2033878266"
       },
       "naverReviews": 302,
-      "naverScore": 4.93
+      "naverScore": 4.93,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "멘츠루-양재점",
@@ -1907,7 +2047,7 @@
         "kakaoUrl": "https://place.map.kakao.com/811739187",
         "address": "서울 서초구 강남대로37길 26"
       },
-      "walkMeters": 227,
+      "walkMeters": 324,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:35:24.043Z",
       "rating": {
@@ -1922,8 +2062,13 @@
         "placeId": "2054594883",
         "url": "https://map.naver.com/p/entry/place/2054594883"
       },
-      "naverReviews": 2626,
-      "naverScore": 4.88
+      "naverReviews": 2655,
+      "naverScore": 4.88,
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMinutes": 6
     },
     {
       "slug": "명갈비곰탕",
@@ -1963,7 +2108,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1886399664",
         "address": "서울 서초구 서운로6길 26"
       },
-      "walkMeters": 352,
+      "walkMeters": 461,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:32:48.028Z",
       "rating": {
@@ -1978,7 +2123,8 @@
         "placeId": "1588460554",
         "url": "https://map.naver.com/p/entry/place/1588460554"
       },
-      "naverReviews": 338
+      "naverReviews": 338,
+      "walkMinutes": 7
     },
     {
       "slug": "명정루-양재",
@@ -2009,7 +2155,7 @@
         "open": "11:00",
         "close": "21:30"
       },
-      "walkMeters": 298,
+      "walkMeters": 382,
       "location": {
         "lat": 37.4854209347542,
         "lng": 127.031354787404
@@ -2019,14 +2165,16 @@
         "kakaoUrl": "https://place.map.kakao.com/420171715",
         "address": "서울 서초구 남부순환로347길 23"
       },
-      "ratingCheckedAt": "2026-11-16T01:32:52.927Z",
+      "ratingCheckedAt": "2026-11-16T05:00:51.462Z",
       "naverCheckedAt": "2026-11-13T04:24:06.791Z",
       "naver": {
         "placeId": "1583880509",
         "url": "https://map.naver.com/p/entry/place/1583880509"
       },
       "naverReviews": 906,
-      "naverScore": 4.81
+      "naverScore": 4.81,
+      "walkMinutes": 6,
+      "walkFromMap": true
     },
     {
       "slug": "문어세상해천탕-양재점",
@@ -2066,7 +2214,7 @@
         "placeId": "38251615",
         "url": "https://map.naver.com/p/entry/place/38251615"
       },
-      "walkMeters": 476,
+      "walkMeters": 563,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:30:16.220Z",
       "rating": {
@@ -2082,7 +2230,12 @@
         "address": "서울 서초구 강남대로 188"
       },
       "naverCheckedAt": "2026-11-13T04:30:20.737Z",
-      "naverReviews": 621
+      "naverReviews": 622,
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMinutes": 9
     },
     {
       "slug": "미다재",
@@ -2135,7 +2288,7 @@
         "breakStart": "15:00",
         "breakEnd": "16:50"
       },
-      "walkMeters": 473,
+      "walkMeters": 596,
       "location": {
         "lat": 37.4868646241862,
         "lng": 127.03945910421
@@ -2145,14 +2298,16 @@
         "kakaoUrl": "https://place.map.kakao.com/1868934600",
         "address": "서울 강남구 남부순환로365길 22"
       },
-      "ratingCheckedAt": "2026-11-16T01:32:54.499Z",
+      "ratingCheckedAt": "2026-11-16T05:00:59.431Z",
       "naverCheckedAt": "2026-11-13T04:30:27.717Z",
       "naver": {
         "placeId": "1017653627",
         "url": "https://map.naver.com/p/entry/place/1017653627"
       },
       "naverReviews": 7591,
-      "naverScore": 4.85
+      "naverScore": 4.85,
+      "walkMinutes": 10,
+      "walkFromMap": true
     },
     {
       "slug": "미몽-양재역점",
@@ -2191,10 +2346,11 @@
         "kakaoUrl": "https://place.map.kakao.com/1210437091",
         "address": "서울 서초구 강남대로34길 27-4"
       },
-      "walkMeters": 283,
+      "walkMeters": 490,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:32:55.784Z",
-      "naverCheckedAt": "2026-11-13T04:35:35.000Z"
+      "ratingCheckedAt": "2026-11-16T05:01:00.682Z",
+      "naverCheckedAt": "2026-11-13T04:35:35.000Z",
+      "walkMinutes": 8
     },
     {
       "slug": "미소야-양재점",
@@ -2225,7 +2381,7 @@
         "open": "11:30",
         "close": "22:00"
       },
-      "walkMeters": 288,
+      "walkMeters": 440,
       "location": {
         "lat": 37.4843693519298,
         "lng": 127.037868083186
@@ -2248,7 +2404,9 @@
         "placeId": "11761360",
         "url": "https://map.naver.com/p/entry/place/11761360"
       },
-      "naverReviews": 485
+      "naverReviews": 485,
+      "walkMinutes": 7,
+      "walkFromMap": true
     },
     {
       "slug": "미트앤샐러드",
@@ -2279,7 +2437,7 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 203,
+      "walkMeters": 270,
       "location": {
         "lat": 37.4859221755422,
         "lng": 127.03664320559
@@ -2302,7 +2460,9 @@
         "placeId": "1006858200",
         "url": "https://map.naver.com/p/entry/place/1006858200"
       },
-      "naverReviews": 62
+      "naverReviews": 62,
+      "walkMinutes": 4,
+      "walkFromMap": true
     },
     {
       "slug": "백소정-도곡매봉점",
@@ -2348,7 +2508,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1136397501",
         "address": "서울 강남구 논현로28길 35"
       },
-      "walkMeters": 890,
+      "walkMeters": 1288,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:35:37.471Z",
       "rating": {
@@ -2363,7 +2523,12 @@
         "placeId": "1933502323",
         "url": "https://map.naver.com/p/entry/place/1933502323"
       },
-      "naverReviews": 2358
+      "naverReviews": 2358,
+      "hours": {
+        "open": "10:30",
+        "close": "21:00"
+      },
+      "walkMinutes": 21
     },
     {
       "slug": "버거킹-양재점",
@@ -2408,7 +2573,7 @@
         "kakaoUrl": "https://place.map.kakao.com/7900896",
         "address": "서울 서초구 서초동 1376-21"
       },
-      "walkMeters": 111,
+      "walkMeters": 187,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:35:44.180Z",
       "rating": {
@@ -2423,7 +2588,12 @@
         "placeId": "694130133",
         "url": "https://map.naver.com/p/entry/place/694130133"
       },
-      "naverReviews": 6325
+      "naverReviews": 6325,
+      "hours": {
+        "open": "08:00",
+        "close": "22:00"
+      },
+      "walkMinutes": 4
     },
     {
       "slug": "버드나무집-서초동본점",
@@ -2471,7 +2641,7 @@
         "placeId": "11627634",
         "url": "https://map.naver.com/p/entry/place/11627634"
       },
-      "walkMeters": 569,
+      "walkMeters": 696,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:30:31.042Z",
       "rating": {
@@ -2487,7 +2657,12 @@
         "address": "서울 서초구 효령로 434"
       },
       "naverCheckedAt": "2026-11-13T04:30:35.433Z",
-      "naverReviews": 1648
+      "naverReviews": 1648,
+      "hours": {
+        "open": "11:00",
+        "close": "21:30"
+      },
+      "walkMinutes": 11
     },
     {
       "slug": "별난횟집",
@@ -2516,7 +2691,7 @@
         "kakaoUrl": "https://place.map.kakao.com/10386341",
         "address": "서울 서초구 강남대로 224"
       },
-      "walkMeters": 102,
+      "walkMeters": 213,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:32:57.159Z",
       "rating": {
@@ -2531,7 +2706,19 @@
         "placeId": "1913109921",
         "url": "https://map.naver.com/p/entry/place/1913109921"
       },
-      "naverReviews": 91
+      "naverReviews": 91,
+      "menu": [
+        {
+          "name": "환승주차장 인근 회·탕 후보"
+        }
+      ],
+      "hours": {
+        "open": "11:30",
+        "close": "22:00",
+        "breakStart": "14:30",
+        "breakEnd": "16:30"
+      },
+      "walkMinutes": 4
     },
     {
       "slug": "보글이-생태탕왕코다리-양재역",
@@ -2557,7 +2744,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 375,
+      "walkMeters": 517,
       "tags": [
         "동태탕",
         "해물"
@@ -2587,7 +2774,9 @@
         "placeId": "1932467805",
         "url": "https://map.naver.com/p/entry/place/1932467805"
       },
-      "naverReviews": 2004
+      "naverReviews": 2004,
+      "walkMinutes": 8,
+      "walkFromMap": true
     },
     {
       "slug": "부대옥",
@@ -2628,7 +2817,7 @@
         "open": "11:00",
         "close": "20:30"
       },
-      "walkMeters": 460,
+      "walkMeters": 684,
       "location": {
         "lat": 37.4889657246555,
         "lng": 127.033808821909
@@ -2652,7 +2841,9 @@
         "url": "https://map.naver.com/p/entry/place/1776021604"
       },
       "naverReviews": 347,
-      "naverScore": 4.79
+      "naverScore": 4.79,
+      "walkMinutes": 11,
+      "walkFromMap": true
     },
     {
       "slug": "산들해-양재점",
@@ -2698,7 +2889,7 @@
         "kakaoUrl": "https://place.map.kakao.com/9063870",
         "address": "서울 서초구 강남대로 213"
       },
-      "walkMeters": 236,
+      "walkMeters": 378,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:35:50.961Z",
       "rating": {
@@ -2713,8 +2904,15 @@
         "placeId": "18246142",
         "url": "https://map.naver.com/p/entry/place/18246142"
       },
-      "naverReviews": 1873,
-      "naverScore": 4.3
+      "naverReviews": 1872,
+      "naverScore": 4.31,
+      "hours": {
+        "open": "11:10",
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMinutes": 7
     },
     {
       "slug": "샌드워커-양재역",
@@ -2741,7 +2939,7 @@
           "price": 8800
         }
       ],
-      "walkMeters": 260,
+      "walkMeters": 371,
       "location": {
         "lat": 37.4828921955007,
         "lng": 127.03628218284
@@ -2769,7 +2967,9 @@
         "url": "https://map.naver.com/p/entry/place/2070764434"
       },
       "naverReviews": 318,
-      "naverScore": 4.75
+      "naverScore": 4.75,
+      "walkMinutes": 6,
+      "walkFromMap": true
     },
     {
       "slug": "샐러디-양재역점",
@@ -2814,7 +3014,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1749506482",
         "address": "서울 서초구 강남대로 265"
       },
-      "walkMeters": 320,
+      "walkMeters": 397,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:35:57.529Z",
       "rating": {
@@ -2829,7 +3029,16 @@
         "placeId": "1248467129",
         "url": "https://map.naver.com/p/entry/place/1248467129"
       },
-      "naverReviews": 3639
+      "naverReviews": 3639,
+      "hours": {
+        "open": "07:30",
+        "close": "21:00",
+        "closedDays": [
+          "토",
+          "일"
+        ]
+      },
+      "walkMinutes": 7
     },
     {
       "slug": "서울김밥-양재역점",
@@ -2875,7 +3084,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1970703529",
         "address": "서울 서초구 강남대로 224"
       },
-      "walkMeters": 100,
+      "walkMeters": 218,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:36:04.603Z",
       "rating": {
@@ -2891,7 +3100,12 @@
         "url": "https://map.naver.com/p/entry/place/940333588"
       },
       "naverReviews": 1115,
-      "naverScore": 4.27
+      "naverScore": 4.27,
+      "hours": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "walkMinutes": 4
     },
     {
       "slug": "서초청국장",
@@ -2922,7 +3136,7 @@
         "open": "10:30",
         "close": "21:00"
       },
-      "walkMeters": 475,
+      "walkMeters": 598,
       "location": {
         "lat": 37.48828163545744,
         "lng": 127.03135485231547
@@ -2945,7 +3159,9 @@
         "placeId": "20878708",
         "url": "https://map.naver.com/p/entry/place/20878708"
       },
-      "naverReviews": 199
+      "naverReviews": 199,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "석문어-양재점",
@@ -2976,7 +3192,7 @@
         "open": "11:00",
         "close": "23:00"
       },
-      "walkMeters": 330,
+      "walkMeters": 395,
       "location": {
         "lat": 37.4849299869448,
         "lng": 127.030969024108
@@ -3000,7 +3216,9 @@
         "url": "https://map.naver.com/p/entry/place/1702897215"
       },
       "naverReviews": 1973,
-      "naverScore": 4.95
+      "naverScore": 4.95,
+      "walkMinutes": 7,
+      "walkFromMap": true
     },
     {
       "slug": "설마중",
@@ -3042,7 +3260,7 @@
         "kakaoUrl": "https://place.map.kakao.com/26410902",
         "address": "서울 서초구 남부순환로 2648"
       },
-      "walkMeters": 505,
+      "walkMeters": 620,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:36:11.134Z",
       "rating": {
@@ -3057,8 +3275,15 @@
         "url": "https://map.naver.com/p/entry/place/36122875"
       },
       "naverCheckedAt": "2026-11-13T04:36:15.652Z",
-      "naverReviews": 1720,
-      "naverScore": 4.63
+      "naverReviews": 1721,
+      "naverScore": 4.63,
+      "hours": {
+        "open": "11:30",
+        "close": "21:45",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMinutes": 11
     },
     {
       "slug": "소노야-양재역점",
@@ -3091,7 +3316,7 @@
         "breakStart": "15:00",
         "breakEnd": "16:00"
       },
-      "walkMeters": 108,
+      "walkMeters": 365,
       "location": {
         "lat": 37.48279784526058,
         "lng": 127.03543981277616
@@ -3115,7 +3340,9 @@
         "url": "https://map.naver.com/p/entry/place/33510707"
       },
       "naverReviews": 1417,
-      "naverScore": 4.27
+      "naverScore": 4.27,
+      "walkMinutes": 6,
+      "walkFromMap": true
     },
     {
       "slug": "손수동-양재",
@@ -3148,7 +3375,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 301,
+      "walkMeters": 510,
       "location": {
         "lat": 37.4836098615133,
         "lng": 127.037681142771
@@ -3171,7 +3398,9 @@
         "placeId": "1906380511",
         "url": "https://map.naver.com/p/entry/place/1906380511"
       },
-      "naverReviews": 987
+      "naverReviews": 987,
+      "walkMinutes": 8,
+      "walkFromMap": true
     },
     {
       "slug": "쇼쿠지-양재점",
@@ -3204,7 +3433,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 383,
+      "walkMeters": 480,
       "location": {
         "lat": 37.4858959790192,
         "lng": 127.030542024475
@@ -3227,7 +3456,9 @@
         "placeId": "1081029406",
         "url": "https://map.naver.com/p/entry/place/1081029406"
       },
-      "naverReviews": 2057
+      "naverReviews": 2057,
+      "walkMinutes": 8,
+      "walkFromMap": true
     },
     {
       "slug": "수정골한상",
@@ -3258,7 +3489,7 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 191,
+      "walkMeters": 227,
       "location": {
         "lat": 37.48656264964146,
         "lng": 127.0341107648152
@@ -3282,7 +3513,9 @@
         "url": "https://map.naver.com/p/entry/place/1236248474"
       },
       "naverReviews": 136,
-      "naverScore": 4.81
+      "naverScore": 4.81,
+      "walkMinutes": 4,
+      "walkFromMap": true
     },
     {
       "slug": "순대일번지-양재점",
@@ -3312,7 +3545,7 @@
         "kakaoUrl": "https://place.map.kakao.com/788681423",
         "address": "서울 서초구 남부순환로350길 11"
       },
-      "walkMeters": 114,
+      "walkMeters": 235,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:33:02.419Z",
       "rating": {
@@ -3328,7 +3561,22 @@
         "url": "https://map.naver.com/p/entry/place/2026037512"
       },
       "naverReviews": 1442,
-      "naverScore": 4.89
+      "naverScore": 4.89,
+      "menu": [
+        {
+          "name": "정성순대와 같은 건물권 비교 후보"
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "01:00",
+        "breakStart": "15:30",
+        "breakEnd": "16:30",
+        "closedDays": [
+          "일"
+        ]
+      },
+      "walkMinutes": 4
     },
     {
       "slug": "스시썸",
@@ -3361,7 +3609,7 @@
         "breakStart": "14:30",
         "breakEnd": "16:00"
       },
-      "walkMeters": 142,
+      "walkMeters": 247,
       "location": {
         "lat": 37.4837429695672,
         "lng": 127.035552193648
@@ -3371,14 +3619,16 @@
         "kakaoUrl": "https://place.map.kakao.com/873475210",
         "address": "서울 서초구 강남대로 222-4"
       },
-      "ratingCheckedAt": "2026-11-16T01:33:07.332Z",
+      "ratingCheckedAt": "2026-11-16T05:02:00.994Z",
       "naverCheckedAt": "2026-11-13T04:24:27.734Z",
       "naver": {
         "placeId": "964119437",
         "url": "https://map.naver.com/p/entry/place/964119437"
       },
       "naverReviews": 1240,
-      "naverScore": 4.53
+      "naverScore": 4.53,
+      "walkMinutes": 5,
+      "walkFromMap": true
     },
     {
       "slug": "스파게티스토리",
@@ -3408,7 +3658,7 @@
         "open": "10:30",
         "close": "20:00"
       },
-      "walkMeters": 211,
+      "walkMeters": 304,
       "location": {
         "lat": 37.4861645915202,
         "lng": 127.036498595982
@@ -3431,7 +3681,9 @@
         "placeId": "30922907",
         "url": "https://map.naver.com/p/entry/place/30922907"
       },
-      "naverReviews": 685
+      "naverReviews": 685,
+      "walkMinutes": 5,
+      "walkFromMap": true
     },
     {
       "slug": "시래정-양재점",
@@ -3473,7 +3725,7 @@
         "kakaoUrl": "https://place.map.kakao.com/783020696",
         "address": "서울 서초구 강남대로39길 15-10"
       },
-      "walkMeters": 265,
+      "walkMeters": 363,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:31:11.306Z",
       "rating": {
@@ -3495,7 +3747,8 @@
         "url": "https://map.naver.com/p/entry/place/1977075600"
       },
       "naverReviews": 83,
-      "naverScore": 4.33
+      "naverScore": 4.33,
+      "walkMinutes": 7
     },
     {
       "slug": "식감이야기-양재역점",
@@ -3514,17 +3767,43 @@
         "kakaoUrl": "https://place.map.kakao.com/96772273",
         "address": "서울 서초구 남부순환로350길 19-26"
       },
-      "ratingCheckedAt": "2026-11-16T01:33:08.601Z",
+      "ratingCheckedAt": "2026-11-16T05:02:02.245Z",
       "naver": {
         "placeId": "1788599337",
         "url": "https://map.naver.com/p/entry/place/1788599337"
       },
       "address": "서울 서초구 남부순환로350길 19-26 도담빌딩 2층",
-      "walkMeters": 202,
+      "walkMeters": 368,
       "walkFromMap": true,
       "naverCheckedAt": "2026-11-13T04:31:22.552Z",
       "naverReviews": 1263,
-      "naverScore": 4.64
+      "naverScore": 4.64,
+      "hours": {
+        "open": "17:30",
+        "close": "23:00",
+        "closedDays": [
+          "일"
+        ]
+      },
+      "menu": [
+        {
+          "name": "사시미 모리아와세 (25P)",
+          "price": 56000
+        },
+        {
+          "name": "고마 부리",
+          "price": 33000
+        },
+        {
+          "name": "청어이소베마끼",
+          "price": 20000
+        },
+        {
+          "name": "아롱사태스지나베",
+          "price": 33000
+        }
+      ],
+      "walkMinutes": 6
     },
     {
       "slug": "신사골감자탕-양재점",
@@ -3565,7 +3844,7 @@
         "kakaoUrl": "https://place.map.kakao.com/241426052",
         "address": "서울 강남구 강남대로 242"
       },
-      "walkMeters": 79,
+      "walkMeters": 116,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:31:25.022Z",
       "rating": {
@@ -3580,7 +3859,8 @@
         "placeId": "2065009878",
         "url": "https://map.naver.com/p/entry/place/2065009878"
       },
-      "naverReviews": 152
+      "naverReviews": 152,
+      "walkMinutes": 2
     },
     {
       "slug": "신선설농탕-도곡점",
@@ -3620,7 +3900,7 @@
         "kakaoUrl": "https://place.map.kakao.com/16054933",
         "address": "서울 서초구 논현로 161"
       },
-      "walkMeters": 627,
+      "walkMeters": 792,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:33:10.160Z",
       "rating": {
@@ -3636,7 +3916,8 @@
         "url": "https://map.naver.com/p/entry/place/11680229"
       },
       "naverReviews": 1518,
-      "naverScore": 4.29
+      "naverScore": 4.29,
+      "walkMinutes": 13
     },
     {
       "slug": "신향원양꼬치마라탕-양재역",
@@ -3719,7 +4000,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1862124437",
         "address": "서울 서초구 강남대로 212"
       },
-      "walkMeters": 227,
+      "walkMeters": 299,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:36:18.116Z",
       "rating": {
@@ -3734,7 +4015,8 @@
         "placeId": "1932155766",
         "url": "https://map.naver.com/p/entry/place/1932155766"
       },
-      "naverReviews": 343
+      "naverReviews": 343,
+      "walkMinutes": 5
     },
     {
       "slug": "얌얌",
@@ -3765,7 +4047,7 @@
         "open": "08:00",
         "close": "21:00"
       },
-      "walkMeters": 294,
+      "walkMeters": 333,
       "location": {
         "lat": 37.485810983893366,
         "lng": 127.03781001534973
@@ -3788,7 +4070,9 @@
         "placeId": "34098856",
         "url": "https://map.naver.com/p/entry/place/34098856"
       },
-      "naverReviews": 2956
+      "naverReviews": 2956,
+      "walkMinutes": 5,
+      "walkFromMap": true
     },
     {
       "slug": "양계옥",
@@ -3830,7 +4114,7 @@
         "kakaoUrl": "https://place.map.kakao.com/427153962",
         "address": "서울 강남구 남부순환로 2615"
       },
-      "walkMeters": 109,
+      "walkMeters": 128,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:33:15.245Z",
       "rating": {
@@ -3846,7 +4130,8 @@
         "url": "https://map.naver.com/p/entry/place/1682848718"
       },
       "naverReviews": 345,
-      "naverScore": 4.9
+      "naverScore": 4.9,
+      "walkMinutes": 2
     },
     {
       "slug": "양산도-양재점",
@@ -3879,7 +4164,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 306,
+      "walkMeters": 357,
       "location": {
         "lat": 37.484392948539764,
         "lng": 127.03111126570808
@@ -3903,7 +4188,9 @@
         "url": "https://map.naver.com/p/entry/place/2054325366"
       },
       "naverReviews": 294,
-      "naverScore": 4.88
+      "naverScore": 4.88,
+      "walkMinutes": 6,
+      "walkFromMap": true
     },
     {
       "slug": "양재-오제섞어-양재본점",
@@ -3945,7 +4232,7 @@
         "kakaoUrl": "https://place.map.kakao.com/661927676",
         "address": "서울 서초구 바우뫼로41길 8"
       },
-      "walkMeters": 732,
+      "walkMeters": 1231,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:36:24.657Z",
       "rating": {
@@ -3960,7 +4247,14 @@
         "url": "https://map.naver.com/p/entry/place/37307613"
       },
       "naverCheckedAt": "2026-11-13T04:36:28.986Z",
-      "naverReviews": 2081
+      "naverReviews": 2085,
+      "hours": {
+        "open": "11:00",
+        "close": "22:00",
+        "breakStart": "15:30",
+        "breakEnd": "17:00"
+      },
+      "walkMinutes": 20
     },
     {
       "slug": "양재-초밥",
@@ -3997,7 +4291,7 @@
         "lat": 37.482366919331604,
         "lng": 127.04418503481699
       },
-      "walkMeters": 880,
+      "walkMeters": 1241,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:36:32.237Z",
       "rating": {
@@ -4018,7 +4312,17 @@
         "url": "https://map.naver.com/p/entry/place/1662252522"
       },
       "naverReviews": 526,
-      "naverScore": 4.53
+      "naverScore": 4.53,
+      "hours": {
+        "open": "11:30",
+        "close": "21:30",
+        "breakStart": "15:00",
+        "breakEnd": "17:00",
+        "closedDays": [
+          "월"
+        ]
+      },
+      "walkMinutes": 20
     },
     {
       "slug": "양재골",
@@ -4067,13 +4371,16 @@
         "placeId": "1508052350",
         "url": "https://map.naver.com/p/entry/place/1508052350"
       },
-      "walkMeters": 365,
+      "walkMeters": 430,
       "walkFromMap": true,
       "hours": {
         "open": "11:00",
         "close": "22:00",
         "breakStart": "15:00",
-        "breakEnd": "17:00"
+        "breakEnd": "17:00",
+        "closedDays": [
+          "일"
+        ]
       },
       "ratingCheckedAt": "2026-11-13T04:31:32.590Z",
       "rating": {
@@ -4089,7 +4396,8 @@
         "address": "서울 서초구 강남대로37길 54"
       },
       "naverCheckedAt": "2026-11-13T04:31:36.903Z",
-      "naverReviews": 227
+      "naverReviews": 227,
+      "walkMinutes": 7
     },
     {
       "slug": "양재동김밥-도시미점",
@@ -4154,11 +4462,36 @@
         "placeId": "1751873950",
         "url": "https://map.naver.com/p/entry/place/1751873950"
       },
-      "walkMeters": 266,
+      "walkMeters": 402,
       "walkFromMap": true,
       "naverCheckedAt": "2026-11-13T04:31:43.820Z",
       "naverReviews": 1000,
-      "naverScore": 4.33
+      "naverScore": 4.33,
+      "hours": {
+        "open": "10:00",
+        "close": "21:50",
+        "breakStart": "15:00",
+        "breakEnd": "16:00"
+      },
+      "menu": [
+        {
+          "name": "순대국",
+          "price": 11000
+        },
+        {
+          "name": "순대국(특)",
+          "price": 13000
+        },
+        {
+          "name": "술국",
+          "price": 25000
+        },
+        {
+          "name": "수육",
+          "price": 38000
+        }
+      ],
+      "walkMinutes": 7
     },
     {
       "slug": "양재순대국",
@@ -4206,11 +4539,14 @@
         "placeId": "1751873950",
         "url": "https://map.naver.com/p/entry/place/1751873950"
       },
-      "walkMeters": 588,
+      "walkMeters": 785,
       "walkFromMap": true,
       "hours": {
         "open": "10:30",
-        "close": "22:30"
+        "close": "22:30",
+        "closedDays": [
+          "일"
+        ]
       },
       "ratingCheckedAt": "2026-11-13T04:31:46.997Z",
       "rating": {
@@ -4225,7 +4561,8 @@
         "kakaoUrl": "https://place.map.kakao.com/16877084",
         "address": "서울 서초구 남부순환로356길 92"
       },
-      "naverCheckedAt": "2026-11-13T04:31:51.422Z"
+      "naverCheckedAt": "2026-11-13T04:31:51.422Z",
+      "walkMinutes": 12
     },
     {
       "slug": "양재옥",
@@ -4256,7 +4593,7 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 244,
+      "walkMeters": 259,
       "naverCheckedAt": "2026-11-13T04:31:57.714Z",
       "naver": {
         "placeId": "1809378769",
@@ -4267,7 +4604,9 @@
       "location": {
         "lat": 37.4853113,
         "lng": 127.0374197
-      }
+      },
+      "walkMinutes": 4,
+      "walkFromMap": true
     },
     {
       "slug": "양재카츠",
@@ -4303,7 +4642,7 @@
         "kakaoUrl": "https://place.map.kakao.com/934243899",
         "address": "서울 서초구 논현로31길 56"
       },
-      "walkMeters": 714,
+      "walkMeters": 968,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:33:20.595Z",
       "rating": {
@@ -4319,7 +4658,12 @@
         "url": "https://map.naver.com/p/entry/place/1361599856"
       },
       "naverReviews": 3883,
-      "naverScore": 4.87
+      "naverScore": 4.87,
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "walkMinutes": 15
     },
     {
       "slug": "양재해장국",
@@ -4364,7 +4708,7 @@
         "kakaoUrl": "https://place.map.kakao.com/9239532",
         "address": "서울 서초구 강남대로10길 11"
       },
-      "walkMeters": 1939,
+      "walkMeters": 2323,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:32:00.302Z",
       "rating": {
@@ -4380,7 +4724,8 @@
         "url": "https://map.naver.com/p/entry/place/18384714"
       },
       "naverReviews": 1500,
-      "naverScore": 4.14
+      "naverScore": 4.14,
+      "walkMinutes": 37
     },
     {
       "slug": "어머니집",
@@ -4416,7 +4761,7 @@
         "kakaoUrl": "https://place.map.kakao.com/16081354",
         "address": "서울 강남구 남부순환로365길 17"
       },
-      "walkMeters": 433,
+      "walkMeters": 564,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:32:07.425Z",
       "rating": {
@@ -4431,7 +4776,8 @@
         "placeId": "31535630",
         "url": "https://map.naver.com/p/entry/place/31535630"
       },
-      "naverReviews": 144
+      "naverReviews": 144,
+      "walkMinutes": 9
     },
     {
       "slug": "연탄불생선구이",
@@ -4461,14 +4807,25 @@
         "lat": 37.4694016074373,
         "lng": 127.045509054864
       },
-      "walkMeters": 1966,
+      "walkMeters": 2723,
       "walkFromMap": true,
       "naverCheckedAt": "2026-11-13T04:32:18.102Z",
       "naver": {
         "placeId": "1355826619",
         "url": "https://map.naver.com/p/entry/place/1355826619"
       },
-      "naverReviews": 193
+      "naverReviews": 193,
+      "hours": {
+        "open": "11:30",
+        "close": "20:30",
+        "breakStart": "15:00",
+        "breakEnd": "17:00",
+        "closedDays": [
+          "토",
+          "일"
+        ]
+      },
+      "walkMinutes": 43
     },
     {
       "slug": "영동소금구이-양재점",
@@ -4501,7 +4858,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 423,
+      "walkMeters": 582,
       "location": {
         "lat": 37.4870600239404,
         "lng": 127.030764115777
@@ -4525,7 +4882,9 @@
         "url": "https://map.naver.com/p/entry/place/35125605"
       },
       "naverReviews": 199,
-      "naverScore": 4.13
+      "naverScore": 4.13,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "영동족발-본점",
@@ -4573,20 +4932,24 @@
         "placeId": "12917286",
         "url": "https://map.naver.com/p/entry/place/12917286"
       },
-      "walkMeters": 292,
+      "walkMeters": 399,
       "walkFromMap": true,
       "hours": {
         "open": "12:00",
-        "close": "23:00"
+        "close": "23:00",
+        "closedDays": [
+          "일"
+        ]
       },
-      "ratingCheckedAt": "2026-11-16T01:33:25.511Z",
+      "ratingCheckedAt": "2026-11-16T05:02:49.912Z",
       "place": {
         "kakaoId": "23985599",
         "kakaoUrl": "https://place.map.kakao.com/23985599",
         "address": "서울 서초구 남부순환로358길 8"
       },
       "naverCheckedAt": "2026-11-13T04:32:32.507Z",
-      "naverReviews": 830
+      "naverReviews": 830,
+      "walkMinutes": 7
     },
     {
       "slug": "예당",
@@ -4617,7 +4980,7 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 467,
+      "walkMeters": 604,
       "location": {
         "lat": 37.48890107089672,
         "lng": 127.03303537425661
@@ -4640,7 +5003,9 @@
         "placeId": "18855701",
         "url": "https://map.naver.com/p/entry/place/18855701"
       },
-      "naverReviews": 334
+      "naverReviews": 334,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "오대산산채전문점",
@@ -4673,7 +5038,7 @@
         "breakStart": "16:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 438,
+      "walkMeters": 560,
       "location": {
         "lat": 37.484589515538545,
         "lng": 127.03964672849978
@@ -4683,14 +5048,16 @@
         "kakaoUrl": "https://place.map.kakao.com/10630917",
         "address": "서울 서초구 남부순환로 2640-11"
       },
-      "ratingCheckedAt": "2026-11-16T01:33:26.751Z",
+      "ratingCheckedAt": "2026-11-16T05:02:51.179Z",
       "naverCheckedAt": "2026-11-13T04:32:46.160Z",
       "naver": {
         "placeId": "19699783",
         "url": "https://map.naver.com/p/entry/place/19699783"
       },
       "naverReviews": 676,
-      "naverScore": 4.12
+      "naverScore": 4.12,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "오부찌-양재점",
@@ -4722,7 +5089,7 @@
         "breakStart": "14:30",
         "breakEnd": "17:00"
       },
-      "walkMeters": 351,
+      "walkMeters": 486,
       "location": {
         "lat": 37.4869480350627,
         "lng": 127.031761346716
@@ -4745,7 +5112,9 @@
         "placeId": "1192671730",
         "url": "https://map.naver.com/p/entry/place/1192671730"
       },
-      "naverReviews": 748
+      "naverReviews": 748,
+      "walkMinutes": 8,
+      "walkFromMap": true
     },
     {
       "slug": "오선채",
@@ -4785,7 +5154,7 @@
         "kakaoUrl": "https://place.map.kakao.com/96268218",
         "address": "서울 서초구 남부순환로 2634-8"
       },
-      "walkMeters": 349,
+      "walkMeters": 443,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:33:28.399Z",
       "rating": {
@@ -4800,7 +5169,8 @@
         "placeId": "573699969",
         "url": "https://map.naver.com/p/entry/place/573699969"
       },
-      "naverReviews": 551
+      "naverReviews": 551,
+      "walkMinutes": 8
     },
     {
       "slug": "오향절면",
@@ -4833,7 +5203,7 @@
         "breakStart": "14:30",
         "breakEnd": "16:30"
       },
-      "walkMeters": 145,
+      "walkMeters": 257,
       "location": {
         "lat": 37.4858188353278,
         "lng": 127.03574313196
@@ -4856,7 +5226,9 @@
         "placeId": "38474259",
         "url": "https://map.naver.com/p/entry/place/38474259"
       },
-      "naverReviews": 1277
+      "naverReviews": 1277,
+      "walkMinutes": 4,
+      "walkFromMap": true
     },
     {
       "slug": "옥된장-양재점",
@@ -4887,7 +5259,7 @@
         "open": "11:00",
         "close": "22:00"
       },
-      "walkMeters": 340,
+      "walkMeters": 439,
       "location": {
         "lat": 37.485772416584844,
         "lng": 127.03101912183975
@@ -4911,7 +5283,9 @@
         "url": "https://map.naver.com/p/entry/place/1137666363"
       },
       "naverReviews": 8238,
-      "naverScore": 4.89
+      "naverScore": 4.89,
+      "walkMinutes": 7,
+      "walkFromMap": true
     },
     {
       "slug": "용짜장",
@@ -4939,7 +5313,7 @@
         "kakaoUrl": "https://place.map.kakao.com/17144475",
         "address": "서울 서초구 강남대로 221"
       },
-      "walkMeters": 171,
+      "walkMeters": 287,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:33:33.505Z",
       "rating": {
@@ -4954,7 +5328,14 @@
         "placeId": "1664070278",
         "url": "https://map.naver.com/p/entry/place/1664070278"
       },
-      "naverReviews": 338
+      "naverReviews": 338,
+      "menu": [
+        {
+          "name": "간짜장 후보·가까운 점심"
+        }
+      ],
+      "naverScore": 4.08,
+      "walkMinutes": 5
     },
     {
       "slug": "우사기",
@@ -4985,7 +5366,7 @@
         "open": "11:00",
         "close": "20:30"
       },
-      "walkMeters": 178,
+      "walkMeters": 297,
       "location": {
         "lat": 37.4832566418447,
         "lng": 127.034823828636
@@ -5008,7 +5389,9 @@
         "placeId": "18246195",
         "url": "https://map.naver.com/p/entry/place/18246195"
       },
-      "naverReviews": 236
+      "naverReviews": 236,
+      "walkMinutes": 5,
+      "walkFromMap": true
     },
     {
       "slug": "원스타-올드패션드-햄버거-도곡점",
@@ -5051,7 +5434,7 @@
         "placeId": "1635037172",
         "url": "https://map.naver.com/p/entry/place/1635037172"
       },
-      "walkMeters": 880,
+      "walkMeters": 1268,
       "walkFromMap": true,
       "hours": {
         "open": "11:00",
@@ -5073,7 +5456,8 @@
         "address": "서울 강남구 논현로26길 23"
       },
       "naverCheckedAt": "2026-11-13T04:33:07.771Z",
-      "naverReviews": 1235
+      "naverReviews": 1235,
+      "walkMinutes": 21
     },
     {
       "slug": "원할매이모네닭한마리",
@@ -5104,7 +5488,7 @@
         "open": "10:00",
         "close": "21:00"
       },
-      "walkMeters": 407,
+      "walkMeters": 520,
       "location": {
         "lat": 37.48769588681868,
         "lng": 127.03170512780174
@@ -5127,7 +5511,9 @@
         "placeId": "38325046",
         "url": "https://map.naver.com/p/entry/place/38325046"
       },
-      "naverReviews": 472
+      "naverReviews": 472,
+      "walkMinutes": 8,
+      "walkFromMap": true
     },
     {
       "slug": "유라노스-강남-양재역",
@@ -5160,7 +5546,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 201,
+      "walkMeters": 291,
       "location": {
         "lat": 37.4863692764342,
         "lng": 127.035989884767
@@ -5183,7 +5569,9 @@
         "placeId": "1868413328",
         "url": "https://map.naver.com/p/entry/place/1868413328"
       },
-      "naverReviews": 128
+      "naverReviews": 128,
+      "walkMinutes": 5,
+      "walkFromMap": true
     },
     {
       "slug": "유월의-보리-양재점",
@@ -5217,13 +5605,20 @@
         "placeId": "1889387567",
         "url": "https://map.naver.com/p/entry/place/1889387567"
       },
-      "ratingCheckedAt": "2026-11-16T01:33:38.383Z",
-      "walkMeters": 542,
+      "ratingCheckedAt": "2026-11-16T05:02:59.216Z",
+      "walkMeters": 678,
       "walkFromMap": true,
       "area": "양재",
       "naverCheckedAt": "2026-11-13T04:33:21.535Z",
-      "naverReviews": 1592,
-      "naverScore": 4.9
+      "naverReviews": 1609,
+      "naverScore": 4.91,
+      "hours": {
+        "open": "11:00",
+        "close": "22:00",
+        "breakStart": "14:30",
+        "breakEnd": "17:00"
+      },
+      "walkMinutes": 11
     },
     {
       "slug": "이가원항아리수제비-도곡점",
@@ -5241,13 +5636,36 @@
         "url": "https://map.naver.com/p/entry/place/2011667416"
       },
       "naverCheckedAt": "2026-11-13T04:33:27.950Z",
-      "naverReviews": 194,
+      "naverReviews": 199,
       "location": {
         "lat": 37.4850892,
         "lng": 127.0421476
       },
-      "walkMeters": 656,
-      "walkFromMap": true
+      "walkMeters": 742,
+      "walkFromMap": true,
+      "hours": {
+        "open": "11:00",
+        "close": "21:00"
+      },
+      "menu": [
+        {
+          "name": "항아리수제비",
+          "price": 10000
+        },
+        {
+          "name": "쭈꾸미볶음",
+          "price": 27000
+        },
+        {
+          "name": "들깨수제비",
+          "price": 12000
+        },
+        {
+          "name": "얼큰수제비",
+          "price": 11000
+        }
+      ],
+      "walkMinutes": 13
     },
     {
       "slug": "이올로화덕피자",
@@ -5279,7 +5697,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 217,
+      "walkMeters": 381,
       "location": {
         "lat": 37.4862449777493,
         "lng": 127.032753793833
@@ -5303,7 +5721,9 @@
         "url": "https://map.naver.com/p/entry/place/13588839"
       },
       "naverReviews": 1242,
-      "naverScore": 4.37
+      "naverScore": 4.37,
+      "walkMinutes": 7,
+      "walkFromMap": true
     },
     {
       "slug": "인덕원국수집",
@@ -5369,11 +5789,14 @@
         "placeId": "1420055829",
         "url": "https://map.naver.com/p/entry/place/1420055829"
       },
-      "walkMeters": 415,
+      "walkMeters": 498,
       "walkFromMap": true,
       "hours": {
         "open": "11:00",
-        "close": "21:00"
+        "close": "21:00",
+        "closedDays": [
+          "월"
+        ]
       },
       "ratingCheckedAt": "2026-11-13T04:33:31.248Z",
       "rating": {
@@ -5389,7 +5812,8 @@
         "address": "서울 서초구 강남대로37길 65"
       },
       "naverCheckedAt": "2026-11-13T04:33:35.781Z",
-      "naverReviews": 5789
+      "naverReviews": 5789,
+      "walkMinutes": 8
     },
     {
       "slug": "자연사랑-생태찌개",
@@ -5420,7 +5844,7 @@
         "open": "10:00",
         "close": "22:00"
       },
-      "walkMeters": 426,
+      "walkMeters": 561,
       "location": {
         "lat": 37.4875788822882,
         "lng": 127.031230180615
@@ -5443,7 +5867,9 @@
         "placeId": "13157784",
         "url": "https://map.naver.com/p/entry/place/13157784"
       },
-      "naverReviews": 150
+      "naverReviews": 150,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "자인뭉티기-본점",
@@ -5480,16 +5906,21 @@
         "placeId": "19882315",
         "url": "https://map.naver.com/p/entry/place/19882315"
       },
-      "walkMeters": 227,
+      "walkMeters": 324,
       "walkFromMap": true,
       "hours": {
         "open": "11:00",
         "close": "22:00",
         "breakStart": "14:30",
-        "breakEnd": "16:30"
+        "breakEnd": "16:30",
+        "closedDays": [
+          "토",
+          "일"
+        ]
       },
       "naverCheckedAt": "2026-11-13T04:33:49.246Z",
-      "naverReviews": 713
+      "naverReviews": 713,
+      "walkMinutes": 6
     },
     {
       "slug": "작은공간-양재역",
@@ -5519,7 +5950,7 @@
         "open": "11:00",
         "close": "20:50"
       },
-      "walkMeters": 240,
+      "walkMeters": 433,
       "location": {
         "lat": 37.4868820862099,
         "lng": 127.035540112817
@@ -5542,7 +5973,9 @@
         "url": "https://map.naver.com/p/entry/place/20897027"
       },
       "naverCheckedAt": "2026-11-13T04:24:48.123Z",
-      "naverReviews": 2375
+      "naverReviews": 2375,
+      "walkMinutes": 7,
+      "walkFromMap": true
     },
     {
       "slug": "장꼬방묵은김치찌개전문",
@@ -5586,7 +6019,7 @@
         "placeId": "11819292",
         "url": "https://map.naver.com/p/entry/place/11819292"
       },
-      "walkMeters": 1002,
+      "walkMeters": 1396,
       "walkFromMap": true,
       "hours": {
         "open": "10:00",
@@ -5606,7 +6039,8 @@
         "address": "서울 서초구 효령로 364"
       },
       "naverCheckedAt": "2026-11-13T04:33:57.147Z",
-      "naverReviews": 3904
+      "naverReviews": 3904,
+      "walkMinutes": 22
     },
     {
       "slug": "장모사랑",
@@ -5640,7 +6074,7 @@
         "kakaoUrl": "https://place.map.kakao.com/27322618",
         "address": "서울 서초구 남부순환로350길 36"
       },
-      "walkMeters": 219,
+      "walkMeters": 345,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:33:40.302Z",
       "rating": {
@@ -5655,7 +6089,8 @@
         "placeId": "1144486302",
         "url": "https://map.naver.com/p/entry/place/1144486302"
       },
-      "naverReviews": 90
+      "naverReviews": 90,
+      "walkMinutes": 6
     },
     {
       "slug": "전주-콩뿌리-콩나물국밥-도곡점",
@@ -5705,7 +6140,7 @@
         "kakaoUrl": "https://place.map.kakao.com/17467651",
         "address": "서울 강남구 논현로28길 41"
       },
-      "walkMeters": 913,
+      "walkMeters": 1340,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:36:39.230Z",
       "rating": {
@@ -5715,7 +6150,8 @@
         "url": "https://place.map.kakao.com/17467651",
         "fetchedAt": "2026-11-13T04:36:39.230Z"
       },
-      "naverCheckedAt": "2026-11-13T04:36:43.585Z"
+      "naverCheckedAt": "2026-11-13T04:36:43.585Z",
+      "walkMinutes": 22
     },
     {
       "slug": "전주옛날집",
@@ -5748,7 +6184,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 383,
+      "walkMeters": 465,
       "location": {
         "lat": 37.48759307949177,
         "lng": 127.03204768921393
@@ -5771,7 +6207,9 @@
         "placeId": "11861500",
         "url": "https://map.naver.com/p/entry/place/11861500"
       },
-      "naverReviews": 377
+      "naverReviews": 377,
+      "walkMinutes": 8,
+      "walkFromMap": true
     },
     {
       "slug": "정성순대-양재역점",
@@ -5812,7 +6250,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1057981586",
         "address": "서울 서초구 남부순환로350길 11"
       },
-      "walkMeters": 113,
+      "walkMeters": 236,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:33:45.501Z",
       "rating": {
@@ -5828,7 +6266,8 @@
         "url": "https://map.naver.com/p/entry/place/2005400128"
       },
       "naverReviews": 1844,
-      "naverScore": 4.94
+      "naverScore": 4.94,
+      "walkMinutes": 4
     },
     {
       "slug": "제레미버거-양재역",
@@ -5860,7 +6299,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 244,
+      "walkMeters": 311,
       "location": {
         "lat": 37.4855678805639,
         "lng": 127.037278473905
@@ -5883,7 +6322,9 @@
         "placeId": "35307516",
         "url": "https://map.naver.com/p/entry/place/35307516"
       },
-      "naverReviews": 670
+      "naverReviews": 670,
+      "walkMinutes": 5,
+      "walkFromMap": true
     },
     {
       "slug": "지세포세꼬시",
@@ -5916,7 +6357,7 @@
         "breakStart": "14:00",
         "breakEnd": "16:30"
       },
-      "walkMeters": 29,
+      "walkMeters": 122,
       "location": {
         "lat": 37.4852605997728,
         "lng": 127.034431284229
@@ -5926,13 +6367,15 @@
         "kakaoUrl": "https://place.map.kakao.com/332296816",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-16T01:33:50.267Z",
+      "ratingCheckedAt": "2026-11-16T05:03:20.971Z",
       "naverCheckedAt": "2026-11-13T04:34:04.040Z",
       "naver": {
         "placeId": "1278613093",
         "url": "https://map.naver.com/p/entry/place/1278613093"
       },
-      "naverReviews": 325
+      "naverReviews": 325,
+      "walkMinutes": 2,
+      "walkFromMap": true
     },
     {
       "slug": "진스시-양재역",
@@ -5964,7 +6407,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 433,
+      "walkMeters": 590,
       "location": {
         "lat": 37.4875248504576,
         "lng": 127.031121610146
@@ -5987,7 +6430,9 @@
         "placeId": "18771333",
         "url": "https://map.naver.com/p/entry/place/18771333"
       },
-      "naverReviews": 1222
+      "naverReviews": 1222,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "찌개집1979-양재역점",
@@ -6018,7 +6463,7 @@
         "open": "00:00",
         "close": "24:00"
       },
-      "walkMeters": 39,
+      "walkMeters": 122,
       "location": {
         "lat": 37.4852596990868,
         "lng": 127.034430153142
@@ -6041,7 +6486,9 @@
         "placeId": "2096530100",
         "url": "https://map.naver.com/p/entry/place/2096530100"
       },
-      "naverReviews": 502
+      "naverReviews": 502,
+      "walkMinutes": 2,
+      "walkFromMap": true
     },
     {
       "slug": "채석강-양재",
@@ -6073,7 +6520,7 @@
         "breakStart": "16:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 385,
+      "walkMeters": 545,
       "location": {
         "lat": 37.48454272053382,
         "lng": 127.03032438626536
@@ -6096,7 +6543,9 @@
         "placeId": "1361137881",
         "url": "https://map.naver.com/p/entry/place/1361137881"
       },
-      "naverReviews": 657
+      "naverReviews": 657,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "청정해참치",
@@ -6126,7 +6575,7 @@
         "kakaoUrl": "https://place.map.kakao.com/10848243",
         "address": "서울 서초구 강남대로 221"
       },
-      "walkMeters": 166,
+      "walkMeters": 282,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:33:51.705Z",
       "rating": {
@@ -6142,7 +6591,22 @@
         "url": "https://map.naver.com/p/entry/place/18239739"
       },
       "naverReviews": 104,
-      "naverScore": 4.59
+      "naverScore": 4.59,
+      "menu": [
+        {
+          "name": "점심 특식/소규모 모임"
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00",
+        "breakStart": "14:00",
+        "breakEnd": "17:00",
+        "closedDays": [
+          "일"
+        ]
+      },
+      "walkMinutes": 5
     },
     {
       "slug": "춘업-순댓국",
@@ -6188,7 +6652,7 @@
         "kakaoUrl": "https://place.map.kakao.com/10898803",
         "address": "서울 서초구 양재천로29길 3"
       },
-      "walkMeters": 910,
+      "walkMeters": 1330,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:36:46.076Z",
       "rating": {
@@ -6204,7 +6668,17 @@
         "url": "https://map.naver.com/p/entry/place/20071008"
       },
       "naverReviews": 437,
-      "naverScore": 4.27
+      "naverScore": 4.27,
+      "hours": {
+        "open": "10:00",
+        "close": "21:30",
+        "breakStart": "14:30",
+        "breakEnd": "16:30",
+        "closedDays": [
+          "토"
+        ]
+      },
+      "walkMinutes": 21
     },
     {
       "slug": "치킨영토-양재-점심뷔페",
@@ -6241,9 +6715,10 @@
         "lat": 37.4836427122966,
         "lng": 127.036358299282
       },
-      "walkMeters": 199,
+      "walkMeters": 355,
       "walkFromMap": true,
-      "naverCheckedAt": "2026-11-13T04:36:56.761Z"
+      "naverCheckedAt": "2026-11-13T04:36:56.761Z",
+      "walkMinutes": 6
     },
     {
       "slug": "카츠공방-양재점",
@@ -6275,7 +6750,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 494,
+      "walkMeters": 669,
       "location": {
         "lat": 37.482102933610655,
         "lng": 127.03904052950806
@@ -6298,7 +6773,9 @@
         "placeId": "1417896057",
         "url": "https://map.naver.com/p/entry/place/1417896057"
       },
-      "naverReviews": 3217
+      "naverReviews": 3217,
+      "walkMinutes": 10,
+      "walkFromMap": true
     },
     {
       "slug": "카츠오우-도곡점",
@@ -6343,7 +6820,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1878711032",
         "address": "서울 강남구 논현로30길 42"
       },
-      "walkMeters": 917,
+      "walkMeters": 1064,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:36:59.228Z",
       "rating": {
@@ -6358,7 +6835,17 @@
         "placeId": "1003690665",
         "url": "https://map.naver.com/p/entry/place/1003690665"
       },
-      "naverReviews": 1157
+      "naverReviews": 1157,
+      "hours": {
+        "open": "11:00",
+        "close": "20:30",
+        "breakStart": "15:00",
+        "breakEnd": "17:00",
+        "closedDays": [
+          "일"
+        ]
+      },
+      "walkMinutes": 18
     },
     {
       "slug": "코시",
@@ -6404,7 +6891,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1003513439",
         "address": "서울 강남구 논현로38길 32-7"
       },
-      "walkMeters": 883,
+      "walkMeters": 999,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:37:06.092Z",
       "rating": {
@@ -6419,8 +6906,15 @@
         "placeId": "1382004181",
         "url": "https://map.naver.com/p/entry/place/1382004181"
       },
-      "naverReviews": 1094,
-      "naverScore": 4.85
+      "naverReviews": 1095,
+      "naverScore": 4.85,
+      "hours": {
+        "open": "11:10",
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMinutes": 17
     },
     {
       "slug": "콩부자-전주콩나물국밥-양재역점",
@@ -6456,7 +6950,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1331035449",
         "address": "서울 강남구 남부순환로359길 8"
       },
-      "walkMeters": 213,
+      "walkMeters": 294,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:37:12.892Z",
       "rating": {
@@ -6466,7 +6960,8 @@
         "url": "https://place.map.kakao.com/1331035449",
         "fetchedAt": "2026-11-13T04:37:12.892Z"
       },
-      "naverCheckedAt": "2026-11-13T04:37:17.287Z"
+      "naverCheckedAt": "2026-11-13T04:37:17.287Z",
+      "walkMinutes": 5
     },
     {
       "slug": "쿠니라멘",
@@ -6498,7 +6993,7 @@
         "breakStart": "15:20",
         "breakEnd": "16:30"
       },
-      "walkMeters": 116,
+      "walkMeters": 174,
       "location": {
         "lat": 37.48413145217128,
         "lng": 127.03505714999207
@@ -6522,7 +7017,9 @@
         "url": "https://map.naver.com/p/entry/place/1879800911"
       },
       "naverReviews": 601,
-      "naverScore": 4.35
+      "naverScore": 4.35,
+      "walkMinutes": 4,
+      "walkFromMap": true
     },
     {
       "slug": "크라이치즈버거-양재역점",
@@ -6552,7 +7049,7 @@
         "open": "10:30",
         "close": "21:00"
       },
-      "walkMeters": 354,
+      "walkMeters": 462,
       "location": {
         "lat": 37.4872543308294,
         "lng": 127.031935604809
@@ -6576,7 +7073,9 @@
         "url": "https://map.naver.com/p/entry/place/1320179295"
       },
       "naverReviews": 4464,
-      "naverScore": 4.59
+      "naverScore": 4.59,
+      "walkMinutes": 8,
+      "walkFromMap": true
     },
     {
       "slug": "탐라순대국감자탕-양재역직영점",
@@ -6611,7 +7110,7 @@
         "kakaoUrl": "https://place.map.kakao.com/924738133",
         "address": "서울 서초구 남부순환로347길 19"
       },
-      "walkMeters": 274,
+      "walkMeters": 367,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:34:20.985Z",
       "rating": {
@@ -6626,7 +7125,15 @@
         "placeId": "1113983640",
         "url": "https://map.naver.com/p/entry/place/1113983640"
       },
-      "naverReviews": 3334
+      "naverReviews": 3343,
+      "hours": {
+        "open": "10:00",
+        "close": "01:00",
+        "closedDays": [
+          "일"
+        ]
+      },
+      "walkMinutes": 6
     },
     {
       "slug": "태국식당356-양재역",
@@ -6658,7 +7165,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 189,
+      "walkMeters": 350,
       "location": {
         "lat": 37.484108455792175,
         "lng": 127.0366106613926
@@ -6682,7 +7189,9 @@
         "url": "https://map.naver.com/p/entry/place/46696494"
       },
       "naverReviews": 749,
-      "naverScore": 4.44
+      "naverScore": 4.44,
+      "walkMinutes": 6,
+      "walkFromMap": true
     },
     {
       "slug": "팔향-양재점",
@@ -6715,7 +7224,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 279,
+      "walkMeters": 414,
       "location": {
         "lat": 37.4864235487205,
         "lng": 127.032129730095
@@ -6738,7 +7247,9 @@
         "placeId": "1463499369",
         "url": "https://map.naver.com/p/entry/place/1463499369"
       },
-      "naverReviews": 384
+      "naverReviews": 384,
+      "walkMinutes": 7,
+      "walkFromMap": true
     },
     {
       "slug": "포-브라더스-도곡점",
@@ -6780,7 +7291,7 @@
         "kakaoUrl": "https://place.map.kakao.com/17662981",
         "address": "서울 강남구 논현로28길 40"
       },
-      "walkMeters": 941,
+      "walkMeters": 1343,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:37:19.958Z",
       "rating": {
@@ -6796,7 +7307,12 @@
         "url": "https://map.naver.com/p/entry/place/21732929"
       },
       "naverReviews": 3287,
-      "naverScore": 4.43
+      "naverScore": 4.43,
+      "hours": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "walkMinutes": 22
     },
     {
       "slug": "포히아-베트남쌀국수",
@@ -6836,7 +7352,7 @@
         "kakaoUrl": "https://place.map.kakao.com/556100036",
         "address": "서울 서초구 남부순환로356길 121"
       },
-      "walkMeters": 725,
+      "walkMeters": 867,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-16T01:33:56.979Z",
       "rating": {
@@ -6852,7 +7368,8 @@
         "url": "https://map.naver.com/p/entry/place/1264706146"
       },
       "naverReviews": 5579,
-      "naverScore": 4.9
+      "naverScore": 4.9,
+      "walkMinutes": 13
     },
     {
       "slug": "풍년집",
@@ -6892,7 +7409,7 @@
         "placeId": "18583473",
         "url": "https://map.naver.com/p/entry/place/18583473"
       },
-      "walkMeters": 992,
+      "walkMeters": 1425,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:34:29.203Z",
       "rating": {
@@ -6909,7 +7426,12 @@
       },
       "naverCheckedAt": "2026-11-13T04:34:33.815Z",
       "naverReviews": 887,
-      "naverScore": 4.31
+      "naverScore": 4.31,
+      "hours": {
+        "open": "11:00",
+        "close": "24:00"
+      },
+      "walkMinutes": 22
     },
     {
       "slug": "피끄니크",
@@ -6940,7 +7462,7 @@
         "open": "10:00",
         "close": "21:00"
       },
-      "walkMeters": 214,
+      "walkMeters": 306,
       "location": {
         "lat": 37.48659610311994,
         "lng": 127.03370599154538
@@ -6964,7 +7486,9 @@
         "url": "https://map.naver.com/p/entry/place/1037966057"
       },
       "naverReviews": 1740,
-      "naverScore": 4.61
+      "naverScore": 4.61,
+      "walkMinutes": 5,
+      "walkFromMap": true
     },
     {
       "slug": "피넘타이-양재",
@@ -6996,7 +7520,7 @@
         "breakStart": "15:00",
         "breakEnd": "16:30"
       },
-      "walkMeters": 381,
+      "walkMeters": 580,
       "location": {
         "lat": 37.486608568120985,
         "lng": 127.0309584100645
@@ -7006,14 +7530,16 @@
         "kakaoUrl": "https://place.map.kakao.com/1842885713",
         "address": "서울 서초구 남부순환로347길 53"
       },
-      "ratingCheckedAt": "2026-11-16T01:34:01.769Z",
+      "ratingCheckedAt": "2026-11-16T05:04:07.994Z",
       "naverCheckedAt": "2026-11-13T04:23:31.447Z",
       "naver": {
         "placeId": "1925656389",
         "url": "https://map.naver.com/p/entry/place/1925656389"
       },
       "naverReviews": 8174,
-      "naverScore": 4.9
+      "naverScore": 4.9,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "하영호-신촌설렁탕-본점",
@@ -7059,7 +7585,7 @@
         "kakaoUrl": "https://place.map.kakao.com/11616612",
         "address": "서울 강남구 논현로28길 36"
       },
-      "walkMeters": 918,
+      "walkMeters": 1310,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:37:27.092Z",
       "rating": {
@@ -7075,7 +7601,15 @@
         "url": "https://map.naver.com/p/entry/place/10985460"
       },
       "naverReviews": 1488,
-      "naverScore": 4.42
+      "naverScore": 4.42,
+      "hours": {
+        "open": "07:00",
+        "close": "22:00",
+        "closedDays": [
+          "월"
+        ]
+      },
+      "walkMinutes": 22
     },
     {
       "slug": "하쿠라멘-양재역",
@@ -7105,7 +7639,7 @@
         "open": "10:30",
         "close": "22:00"
       },
-      "walkMeters": 218,
+      "walkMeters": 258,
       "location": {
         "lat": 37.485397655844,
         "lng": 127.037069214264
@@ -7129,7 +7663,9 @@
         "url": "https://map.naver.com/p/entry/place/1671426312"
       },
       "naverReviews": 240,
-      "naverScore": 4.44
+      "naverScore": 4.44,
+      "walkMinutes": 4,
+      "walkFromMap": true
     },
     {
       "slug": "한국순대-본점",
@@ -7179,7 +7715,7 @@
         "kakaoUrl": "https://place.map.kakao.com/17363119",
         "address": "서울 서초구 바우뫼로35길 4"
       },
-      "walkMeters": 809,
+      "walkMeters": 889,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:37:34.569Z",
       "rating": {
@@ -7195,7 +7731,8 @@
       },
       "naverCheckedAt": "2026-11-13T04:37:39.104Z",
       "naverReviews": 2644,
-      "naverScore": 4.33
+      "naverScore": 4.33,
+      "walkMinutes": 14
     },
     {
       "slug": "한양돈까스",
@@ -7241,7 +7778,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1176904318",
         "address": "서울 서초구 양재천로 107-19"
       },
-      "walkMeters": 949,
+      "walkMeters": 1130,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:37:41.654Z",
       "rating": {
@@ -7256,8 +7793,13 @@
         "placeId": "38264349",
         "url": "https://map.naver.com/p/entry/place/38264349"
       },
-      "naverReviews": 1324,
-      "naverScore": 4.42
+      "naverReviews": 1325,
+      "naverScore": 4.42,
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMinutes": 18
     },
     {
       "slug": "한일생선구이",
@@ -7305,7 +7847,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1773451168",
         "address": "서울 서초구 남부순환로339길 60"
       },
-      "walkMeters": 1162,
+      "walkMeters": 1402,
       "walkFromMap": true,
       "ratingCheckedAt": "2026-11-13T04:34:36.161Z",
       "rating": {
@@ -7320,7 +7862,19 @@
         "placeId": "1779839683",
         "url": "https://map.naver.com/p/entry/place/1779839683"
       },
-      "naverReviews": 100
+      "naverReviews": 100,
+      "hours": {
+        "open": "10:30",
+        "close": "19:30",
+        "breakStart": "15:00",
+        "breakEnd": "16:30",
+        "closedDays": [
+          "토",
+          "일"
+        ]
+      },
+      "naverScore": 5,
+      "walkMinutes": 23
     },
     {
       "slug": "해남미가",
@@ -7350,15 +7904,21 @@
         "kakaoUrl": "https://place.map.kakao.com/2110064652",
         "address": "서울 서초구 강남대로 224"
       },
-      "walkMeters": 101,
+      "walkMeters": 214,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:34:03.299Z",
+      "ratingCheckedAt": "2026-11-16T05:04:28.902Z",
       "naverCheckedAt": "2026-11-16T01:34:06.734Z",
       "naver": {
         "placeId": "1044144861",
         "url": "https://map.naver.com/p/entry/place/1044144861"
       },
-      "naverReviews": 4
+      "naverReviews": 4,
+      "menu": [
+        {
+          "name": "양재역 지하상가 점심 후보, 메뉴 미확인"
+        }
+      ],
+      "walkMinutes": 4
     },
     {
       "slug": "호랑이초밥-양재점",
@@ -7394,16 +7954,23 @@
         "kakaoUrl": "https://place.map.kakao.com/1679708561",
         "address": "서울 서초구 남부순환로356길 92"
       },
-      "walkMeters": 584,
+      "walkMeters": 780,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:34:08.590Z",
+      "ratingCheckedAt": "2026-11-16T05:04:36.765Z",
       "naverCheckedAt": "2026-11-16T01:34:12.341Z",
       "naver": {
         "placeId": "1123021012",
         "url": "https://map.naver.com/p/entry/place/1123021012"
       },
       "naverReviews": 2609,
-      "naverScore": 4.84
+      "naverScore": 4.84,
+      "hours": {
+        "open": "11:00",
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMinutes": 12
     },
     {
       "slug": "호앙비엣-양재역점",
@@ -7436,7 +8003,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 259,
+      "walkMeters": 353,
       "location": {
         "lat": 37.485317177491716,
         "lng": 127.03188276917882
@@ -7459,7 +8026,9 @@
         "placeId": "2024175810",
         "url": "https://map.naver.com/p/entry/place/2024175810"
       },
-      "naverReviews": 90
+      "naverReviews": 90,
+      "walkMinutes": 6,
+      "walkFromMap": true
     },
     {
       "slug": "화차이",
@@ -7490,7 +8059,7 @@
         "open": "11:00",
         "close": "20:50"
       },
-      "walkMeters": 313,
+      "walkMeters": 503,
       "location": {
         "lat": 37.48369628344809,
         "lng": 127.03791523079846
@@ -7513,7 +8082,9 @@
         "placeId": "193891932",
         "url": "https://map.naver.com/p/entry/place/193891932"
       },
-      "naverReviews": 625
+      "naverReviews": 625,
+      "walkMinutes": 8,
+      "walkFromMap": true
     },
     {
       "slug": "후토루-양재점",
@@ -7544,7 +8115,7 @@
         "open": "11:00",
         "close": "21:00"
       },
-      "walkMeters": 169,
+      "walkMeters": 287,
       "location": {
         "lat": 37.48333414022644,
         "lng": 127.03478429203255
@@ -7567,7 +8138,9 @@
         "placeId": "1347202430",
         "url": "https://map.naver.com/p/entry/place/1347202430"
       },
-      "naverReviews": 629
+      "naverReviews": 629,
+      "walkMinutes": 5,
+      "walkFromMap": true
     },
     {
       "slug": "히노카츠",
@@ -7599,7 +8172,7 @@
         "breakStart": "15:00",
         "breakEnd": "17:00"
       },
-      "walkMeters": 203,
+      "walkMeters": 270,
       "location": {
         "lat": 37.485924877171,
         "lng": 127.036647729645
@@ -7622,13 +8195,15 @@
         "placeId": "1793575614",
         "url": "https://map.naver.com/p/entry/place/1793575614"
       },
-      "naverReviews": 338
+      "naverReviews": 338,
+      "walkMinutes": 4,
+      "walkFromMap": true
     }
   ],
   "office": {
     "name": "플래그원",
     "address": "서울 강남구 남부순환로 2621",
-    "lat": 37.4852652574455,
-    "lng": 127.036620497399
+    "lat": 37.48487,
+    "lng": 127.03472
   }
 }

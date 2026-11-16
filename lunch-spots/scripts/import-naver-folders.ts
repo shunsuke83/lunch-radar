@@ -91,7 +91,14 @@ const CATEGORY_RULES: [string, RegExp][] = [
 ];
 
 type MenuItem = { name: string; price?: number };
-type Hours = { open: string; close: string; breakStart?: string; breakEnd?: string };
+type Weekday = "월" | "화" | "수" | "목" | "금" | "토" | "일";
+type Hours = {
+  open: string;
+  close: string;
+  breakStart?: string;
+  breakEnd?: string;
+  closedDays?: Weekday[];
+};
 type PlaceDetail = {
   name?: string;
   category?: string;
@@ -101,7 +108,7 @@ type PlaceDetail = {
   /** Visitor star score; Naver only publishes it when the owner opts in. */
   score?: number;
   hours?: Hours;
-  closedDays?: string[];
+  closedDays?: Weekday[];
   menu?: MenuItem[];
   fetchedAt: string;
 };
@@ -174,17 +181,23 @@ async function placeDetail(sid: string): Promise<PlaceDetail> {
   const detail = (detailKey ? rootQuery[detailKey] : {}) as Record<string, unknown>;
   const hoursKey = Object.keys(detail).find((k) => k.startsWith("newBusinessHours"));
   const days = ((hoursKey ? (detail[hoursKey] as { businessHours?: WorkingDay[] }[]) : [])[0]?.businessHours ?? []);
-  const weekday = days.find((d) => "월화수목금".includes(d.day) && d.businessHours);
-  const hours: Hours | undefined = weekday?.businessHours
+  const closedDays = days
+    .filter((d) => /휴무/.test(d.description ?? ""))
+    .map((d) => d.day)
+    .filter((d): d is Weekday => "월화수목금토일".includes(d) && d.length === 1);
+  const openRow =
+    days.find((d) => "월화수목금".includes(d.day) && d.businessHours) ??
+    days.find((d) => d.businessHours);
+  const hours: Hours | undefined = openRow?.businessHours
     ? {
-        open: weekday.businessHours.start,
-        close: weekday.businessHours.end,
-        ...(weekday.breakHours?.[0]
-          ? { breakStart: weekday.breakHours[0].start, breakEnd: weekday.breakHours[0].end }
+        open: openRow.businessHours.start,
+        close: openRow.businessHours.end,
+        ...(openRow.breakHours?.[0]
+          ? { breakStart: openRow.breakHours[0].start, breakEnd: openRow.breakHours[0].end }
           : {}),
+        ...(closedDays.length ? { closedDays } : {}),
       }
     : undefined;
-  const closedDays = days.filter((d) => /휴무/.test(d.description ?? "")).map((d) => d.day);
 
   const menuState = apollo(await fetchText(`https://m.place.naver.com/restaurant/${sid}/menu/list`));
   const items = Object.entries(menuState)
@@ -351,7 +364,16 @@ for (const p of todo) {
     mentionCount: 0,
     address: d?.roadAddress ?? p.address,
     ...(menu.length ? { menu } : {}),
-    ...(d?.hours ? { hours: d.hours } : {}),
+    ...(d?.hours
+      ? {
+          hours: {
+            ...d.hours,
+            ...(d.closedDays?.length && !d.hours.closedDays?.length
+              ? { closedDays: d.closedDays }
+              : {}),
+          },
+        }
+      : {}),
     location: { lat: p.py, lng: p.px },
     naver: { placeId: p.sid, url },
     ...(k?.kakaoId && k.kakaoUrl ? { place: { kakaoId: k.kakaoId, kakaoUrl: k.kakaoUrl } } : {}),

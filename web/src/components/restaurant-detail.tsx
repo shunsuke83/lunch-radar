@@ -4,29 +4,64 @@ import { useEffect, useId } from "react";
 import { X } from "lucide-react";
 import { Badge, Button, LinkButton, Tag } from "@/components/ds";
 import {
+  closedDaysLabel,
+  displayWalkMinutes,
+  isRecentlyAdded,
   mapLinks,
+  needsHoursCheck,
   openStatus,
-  walkMinutes,
   type OpeningHours,
   type Restaurant,
+  type Weekday,
 } from "@/lib/catalog";
+import type { VisitMark } from "@/lib/visitor-store";
+
 const won = (n: number) => `${n.toLocaleString("ko-KR")}원`;
 
 function hoursText(h: OpeningHours): string {
   return h.open === "00:00" && h.close === "24:00" ? "24시간" : `${h.open}–${h.close}`;
 }
 
+/** Hide notes that only repeat menu / hours / walk already shown. */
+function usefulNotes(r: Restaurant): string | null {
+  const notes = r.notes?.trim();
+  if (!notes) return null;
+  const parts = notes.split(/\s+·\s+/).map((s) => s.trim()).filter(Boolean);
+  const kept = parts.filter((p) => {
+    if (/도보/.test(p)) return false;
+    if (/휴무/.test(p)) return false;
+    if (/^\d{1,2}:\d{2}/.test(p) || p === "24시간") return false;
+    if (r.menu?.length && r.menu.some((m) => p.includes(m.name))) return false;
+    return true;
+  });
+  return kept.length ? kept.join(" · ") : null;
+}
+
 type Props = {
   restaurant: Restaurant;
   now: number | null;
+  weekday?: Weekday | null;
   nearby: boolean;
+  visitMark?: VisitMark | null;
+  onVisitMark?: (mark: VisitMark | null) => void;
   onClose: () => void;
 };
 
-export function RestaurantDetail({ restaurant: r, now, nearby, onClose }: Props) {
+export function RestaurantDetail({
+  restaurant: r,
+  now,
+  weekday = null,
+  nearby,
+  visitMark = null,
+  onVisitMark,
+  onClose,
+}: Props) {
   const titleId = useId();
-  const status = openStatus(r.hours, now);
+  const status = openStatus(r.hours, now, weekday);
   const links = mapLinks(r);
+  const walk = displayWalkMinutes(r);
+  const notes = usefulNotes(r);
+  const closed = closedDaysLabel(r.hours?.closedDays);
 
   useEffect(() => {
     const prev = document.body.style.overflow;
@@ -68,7 +103,7 @@ export function RestaurantDetail({ restaurant: r, now, nearby, onClose }: Props)
               {[r.category, r.subcategory].filter(Boolean).join(" · ") || "–"}
             </p>
           </div>
-          <Button size="md" className="min-h-size-control-lg min-w-size-control-lg px-0" onClick={onClose}>
+          <Button size="md" className="min-w-size-control-lg px-0" onClick={onClose}>
             <X aria-hidden className="size-size-icon-sm" />
             <span className="sr-only">닫기</span>
           </Button>
@@ -79,6 +114,8 @@ export function RestaurantDetail({ restaurant: r, now, nearby, onClose }: Props)
             <Badge status={badgeStatus}>{status.label}</Badge>
             {status.lunchOk ? <Tag color="green" size="xsmall">점심 가능</Tag> : null}
             {!status.lunchOk && r.hours ? <Tag color="gray" size="xsmall">점심 어려움</Tag> : null}
+            {needsHoursCheck(r) ? <Badge status="warning">영업확인필요</Badge> : null}
+            {isRecentlyAdded(r) ? <Tag color="brand" size="xsmall">새로 추가</Tag> : null}
           </div>
 
           {r.hours ? (
@@ -87,14 +124,16 @@ export function RestaurantDetail({ restaurant: r, now, nearby, onClose }: Props)
               {r.hours.breakStart && r.hours.breakEnd
                 ? ` · 브레이크 ${r.hours.breakStart}–${r.hours.breakEnd}`
                 : ""}
+              {closed ? ` · ${closed}` : ""}
             </p>
           ) : null}
 
-          {nearby && r.walkMeters !== undefined ? (
+          {nearby && walk !== undefined ? (
             <p className="text-text-secondary typography-body-md-regular">
-              도보 약 {walkMinutes(r.walkMeters)}분 ({r.walkMeters}m)
+              도보 약 {walk}분
+              {r.walkMeters !== undefined ? ` (${r.walkMeters}m)` : ""}
             </p>
-          ) : r.address || r.place?.address ? (
+          ) : r.place?.address || r.address ? (
             <p className="text-text-secondary typography-body-md-regular">
               {r.place?.address || r.address}
             </p>
@@ -137,26 +176,32 @@ export function RestaurantDetail({ restaurant: r, now, nearby, onClose }: Props)
             <p className="text-text-secondary typography-body-md-regular">가격대 {r.priceRange}</p>
           ) : null}
 
-          {r.notes ? (
-            <p className="text-text-secondary typography-body-sm-regular">{r.notes}</p>
-          ) : null}
+          {notes ? <p className="text-text-secondary typography-body-sm-regular">{notes}</p> : null}
 
-          {r.location || r.address || r.place?.address ? (
+          {(r.place?.address || r.address) && (
             <div className="rounded-sm border border-border-default bg-surface-subtle px-inline-lg py-stack-md">
               <h3 className="mb-group-xs text-text-tertiary typography-label-sm-medium">위치</h3>
               <p className="text-text-secondary typography-body-md-regular">
-                {r.place?.address || r.address || `${r.location!.lat.toFixed(5)}, ${r.location!.lng.toFixed(5)}`}
+                {r.place?.address || r.address}
               </p>
-              {r.location ? (
-                <p className="mt-group-xxs text-text-tertiary typography-caption">
-                  {r.location.lat.toFixed(5)}, {r.location.lng.toFixed(5)}
-                </p>
-              ) : null}
             </div>
-          ) : null}
+          )}
 
-          {r.curated?.by ? (
-            <p className="text-text-tertiary typography-caption">출처 {r.curated.by}</p>
+          {onVisitMark ? (
+            <div className="flex flex-wrap gap-group-sm">
+              <ChipButton
+                selected={visitMark === "visited"}
+                onClick={() => onVisitMark(visitMark === "visited" ? null : "visited")}
+              >
+                가봤어요
+              </ChipButton>
+              <ChipButton
+                selected={visitMark === "dislike"}
+                onClick={() => onVisitMark(visitMark === "dislike" ? null : "dislike")}
+              >
+                별로
+              </ChipButton>
+            </div>
           ) : null}
         </div>
 
@@ -170,5 +215,29 @@ export function RestaurantDetail({ restaurant: r, now, nearby, onClose }: Props)
         </div>
       </aside>
     </div>
+  );
+}
+
+function ChipButton({
+  selected,
+  onClick,
+  children,
+}: {
+  selected: boolean;
+  onClick: () => void;
+  children: string;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={
+        selected
+          ? "rounded-xs bg-surface-brand-subtle px-inline-md py-stack-xs text-text-brand typography-label-md-medium"
+          : "rounded-xs bg-surface-subtle px-inline-md py-stack-xs text-text-secondary typography-label-md-medium"
+      }
+    >
+      {children}
+    </button>
   );
 }

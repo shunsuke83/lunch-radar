@@ -1,9 +1,15 @@
 "use client";
 
 import { useEffect, useId, useMemo, useState, type ReactNode } from "react";
-import { SlidersHorizontal, X } from "lucide-react";
+import { ChevronDown, SlidersHorizontal, X } from "lucide-react";
 import { Button, Chip, FilterSelect, SearchField, SegmentedControl } from "@/components/ds";
-import { NEAR_MINUTES, type SortKey, type ThemeGroup, type ThemeOption } from "@/lib/catalog";
+import {
+  BUDGET_OPTIONS,
+  NEAR_MINUTES,
+  type SortKey,
+  type ThemeGroup,
+  type ThemeOption,
+} from "@/lib/catalog";
 import { EMPTY_FILTERS } from "@/lib/filter-url";
 import { cn } from "@/lib/utils";
 
@@ -15,8 +21,10 @@ export type FilterState = {
   district: string;
   near: boolean;
   openNow: boolean;
-  budget: boolean;
+  /** Max menu price in won, or null when off. */
+  budget: number | null;
   noBreak: boolean;
+  unvisitedOnly: boolean;
   sort: SortKey;
 };
 
@@ -28,23 +36,17 @@ type Props = {
   value: FilterState;
   scope: ScopeTab;
   onScopeChange: (scope: ScopeTab) => void;
-  /** Province id when scope is nationwide. */
   region: string;
-  /** Province options (no office entry). */
   provinces: Option[];
-  /** 시·군·구 options for the selected province; empty for the office area. */
   districts: Option[];
   onRegionChange: (region: string) => void;
-  /** Office area: walking distance applies. */
   nearby: boolean;
   categories: string[];
-  /** Popular tags first; chips show the top few. */
   tags: Option[];
   themes: ThemeOption[];
-  /** False until the client clock is known (static HTML has no "now"). */
   clockReady: boolean;
+  weatherRainy?: boolean;
   onChange: (next: FilterState) => void;
-  /** Right-aligned ListControl actions. */
   actions?: ReactNode;
 };
 
@@ -52,10 +54,10 @@ const SORTS: { value: SortKey; label: string }[] = [
   { value: "reviews", label: "리뷰 많은 순" },
   { value: "rating", label: "평점 높은 순" },
   { value: "distance", label: "가까운 순" },
+  { value: "nearby", label: "내 주변 가까운 순" },
   { value: "price", label: "저렴한 순" },
 ];
 
-/** How many tag chips to pin before “더보기”. */
 const PINNED_TAGS = 8;
 
 const THEME_GROUPS: ThemeGroup[] = ["상황", "메뉴", "모음"];
@@ -73,24 +75,39 @@ function activeFilterCount(value: FilterState, nearby: boolean): number {
   if (value.district !== "all") n++;
   if (nearby && value.near) n++;
   if (value.openNow) n++;
-  if (value.budget) n++;
+  if (value.budget != null) n++;
   if (value.noBreak) n++;
+  if (value.unvisitedOnly) n++;
   if (value.sort !== "reviews") n++;
   return n;
 }
 
-function ChipRow({
-  label,
-  children,
-}: {
-  label: string;
-  children: ReactNode;
-}) {
+function ChipRow({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div className="flex flex-col gap-group-xs">
       <p className="text-text-tertiary typography-label-sm-medium">{label}</p>
       <div className="flex flex-wrap items-center gap-group-sm">{children}</div>
     </div>
+  );
+}
+
+function Collapsible({
+  title,
+  defaultOpen = false,
+  children,
+}: {
+  title: string;
+  defaultOpen?: boolean;
+  children: ReactNode;
+}) {
+  return (
+    <details className="group rounded-sm border border-border-default open:bg-surface-subtlest" open={defaultOpen ? true : undefined}>
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-group-sm px-inline-md py-stack-sm text-text-secondary typography-label-md-medium [&::-webkit-details-marker]:hidden">
+        {title}
+        <ChevronDown aria-hidden className="size-size-icon-sm transition-transform group-open:rotate-180" />
+      </summary>
+      <div className="border-t border-border-default px-inline-md py-stack-md">{children}</div>
+    </details>
   );
 }
 
@@ -107,6 +124,7 @@ export function RestaurantFilters({
   tags,
   themes,
   clockReady,
+  weatherRainy,
   onChange,
   actions,
 }: Props) {
@@ -115,7 +133,9 @@ export function RestaurantFilters({
   const [tagQuery, setTagQuery] = useState("");
   const sheetTitleId = useId();
   const active = activeFilterCount(value, nearby);
-  const sortOptions = nearby ? SORTS : SORTS.filter((s) => s.value !== "distance");
+  const sortOptions = nearby
+    ? SORTS.filter((s) => s.value !== "nearby")
+    : SORTS.filter((s) => s.value !== "distance");
 
   const pinnedTags = tags.slice(0, PINNED_TAGS);
   const filteredTags = useMemo(() => {
@@ -172,10 +192,27 @@ export function RestaurantFilters({
       <Chip selected={value.noBreak} onClick={() => set({ noBreak: !value.noBreak })}>
         브레이크 없음
       </Chip>
-      <Chip selected={value.budget} onClick={() => set({ budget: !value.budget })}>
-        만원 이하
+      {BUDGET_OPTIONS.map((won) => (
+        <Chip
+          key={won}
+          selected={value.budget === won}
+          onClick={() => set({ budget: value.budget === won ? null : won })}
+        >
+          {(won / 10_000).toLocaleString("ko-KR")}만 이하
+        </Chip>
+      ))}
+      <Chip selected={value.unvisitedOnly} onClick={() => set({ unvisitedOnly: !value.unvisitedOnly })}>
+        안 가본 곳만
       </Chip>
-      <span className="text-text-tertiary typography-caption">점심 11:30–13:30 기준 · 곧 마감 30분</span>
+      {weatherRainy ? (
+        <Chip
+          selected={value.theme === "비 오는 날"}
+          onClick={() => set({ theme: value.theme === "비 오는 날" ? "all" : "비 오는 날" })}
+        >
+          비 오는 날 추천
+        </Chip>
+      ) : null}
+      <span className="text-text-tertiary typography-caption">점심 11:30–13:30 · 곧 마감 30분</span>
     </div>
   );
 
@@ -184,10 +221,10 @@ export function RestaurantFilters({
     items: themes.filter((t) => t.group === group),
   })).filter((g) => g.items.length > 0);
 
-  const themeChips = themeGroups.length ? (
+  const themeBody = themeGroups.length ? (
     <div className="flex flex-col gap-stack-sm">
       {themeGroups.map(({ group, items }, i) => (
-        <ChipRow key={group} label={`테마 · ${THEME_GROUP_LABELS[group]}`}>
+        <ChipRow key={group} label={THEME_GROUP_LABELS[group]}>
           {i === 0 ? (
             <Chip selected={value.theme === "all"} onClick={() => set({ theme: "all" })}>
               전체
@@ -203,7 +240,7 @@ export function RestaurantFilters({
     </div>
   ) : null;
 
-  const tagChips = tags.length ? (
+  const tagBody = tags.length ? (
     <ChipRow label="태그">
       <Chip selected={value.tag === "all"} onClick={() => set({ tag: "all" })}>
         전체
@@ -234,13 +271,12 @@ export function RestaurantFilters({
   );
 
   return (
-    <section aria-label="맛집 필터" className="flex flex-col gap-stack-md">
+    <section aria-label="맛집 필터" className="flex flex-col gap-stack-sm">
       <div className="flex flex-wrap items-center gap-group-sm">
         {scopeTabs}
         {provinceSelect}
       </div>
 
-      {/* Compact mobile bar: search + sheet trigger + view actions */}
       <div className="flex flex-wrap items-center gap-group-sm md:hidden">
         <SearchField
           aria-label="검색어 입력"
@@ -251,7 +287,6 @@ export function RestaurantFilters({
         />
         <Button
           size="md"
-          className="min-h-size-control-lg"
           aria-expanded={sheetOpen}
           aria-controls={sheetTitleId}
           onClick={() => setSheetOpen(true)}
@@ -262,8 +297,7 @@ export function RestaurantFilters({
         {actions}
       </div>
 
-      {/* Desktop / tablet: full inline controls */}
-      <div className="hidden flex-col gap-stack-md md:flex">
+      <div className="hidden flex-col gap-stack-sm md:flex">
         <div data-slot="list-control" className="flex flex-wrap items-center gap-group-sm">
           <div data-slot="list-control-filters" className="flex flex-wrap items-center gap-group-sm">
             {districts.length ? (
@@ -279,7 +313,7 @@ export function RestaurantFilters({
               placeholder="가게·메뉴·메모 검색"
               value={value.q}
               onChange={(e) => set({ q: e.target.value })}
-              className="w-full sm:w-[240px]"
+              className="w-full sm:w-[220px]"
             />
             <FilterSelect
               label="정렬"
@@ -302,11 +336,10 @@ export function RestaurantFilters({
           {categoryControl}
           {quickChips}
         </div>
-        {themeChips}
-        {tagChips}
+        {themeBody ? <Collapsible title="테마">{themeBody}</Collapsible> : null}
+        {tagBody ? <Collapsible title="태그">{tagBody}</Collapsible> : null}
       </div>
 
-      {/* Mobile bottom sheet */}
       {sheetOpen ? (
         <div className="fixed inset-0 z-50 md:hidden">
           <button
@@ -325,7 +358,7 @@ export function RestaurantFilters({
               <h2 id={sheetTitleId} className="text-text-primary typography-headline-sm">
                 필터{active > 0 ? ` · ${active}개 적용` : ""}
               </h2>
-              <Button size="md" className="min-h-size-control-lg min-w-size-control-lg px-0" onClick={() => setSheetOpen(false)}>
+              <Button size="md" className="min-w-size-control-lg px-0" onClick={() => setSheetOpen(false)}>
                 <X aria-hidden className="size-size-icon-sm" />
                 <span className="sr-only">닫기</span>
               </Button>
@@ -347,7 +380,7 @@ export function RestaurantFilters({
               />
               {categoryControl}
               {quickChips}
-              {themeChips}
+              {themeBody}
               {tags.length ? (
                 <div className="flex flex-col gap-group-sm">
                   <ChipRow label="태그">
@@ -398,7 +431,6 @@ export function RestaurantFilters({
         </div>
       ) : null}
 
-      {/* Mobile: keep category + quick chips visible under the compact bar */}
       <div className={cn("flex flex-col gap-stack-sm md:hidden")}>
         {categoryControl}
         {quickChips}

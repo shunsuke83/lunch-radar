@@ -3,12 +3,13 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { buttonClass } from "@/components/ds";
 import {
+  displayWalkMinutes,
   mapLinks,
   openStatus,
-  walkMinutes,
   type Office,
   type OpenKind,
   type Restaurant,
+  type Weekday,
 } from "@/lib/catalog";
 
 // Kakao JS keys are public by design; Kakao only serves them to the
@@ -156,10 +157,10 @@ function card(r: Restaurant, onClose: () => void): HTMLElement {
   if (scores.length) {
     root.append(el("p", "text-text-secondary typography-body-sm-medium", scores.join(" · ")));
   }
-  if (r.walkMeters !== undefined) {
-    root.append(
-      el("p", "text-text-tertiary typography-body-sm-regular", `도보 ${walkMinutes(r.walkMeters)}분 · ${r.walkMeters}m`),
-    );
+  const walk = displayWalkMinutes(r);
+  if (walk !== undefined) {
+    const meters = r.walkMeters !== undefined ? ` · ${r.walkMeters}m` : "";
+    root.append(el("p", "text-text-tertiary typography-body-sm-regular", `도보 ${walk}분${meters}`));
   }
   if (r.menu?.[0]) {
     const m = r.menu[0];
@@ -191,11 +192,19 @@ type Props = {
   restaurants: Restaurant[];
   office?: Office;
   now?: number | null;
+  weekday?: Weekday | null;
   selectedSlug?: string | null;
   onSelect?: (slug: string) => void;
 };
 
-export function RestaurantMap({ restaurants, office, now = null, selectedSlug, onSelect }: Props) {
+export function RestaurantMap({
+  restaurants,
+  office,
+  now = null,
+  weekday = null,
+  selectedSlug,
+  onSelect,
+}: Props) {
   const box = useRef<HTMLDivElement>(null);
   const mapRef = useRef<{ kakao: Kakao; map: KakaoMap } | null>(null);
   const layers = useRef<Overlay[]>([]);
@@ -293,7 +302,7 @@ export function RestaurantMap({ restaurants, office, now = null, selectedSlug, o
     for (const r of visible) {
       const pos = new kakao.maps.LatLng(r.location!.lat, r.location!.lng);
       const selected = r.slug === selectedSlug;
-      const kind = openStatus(r.hours, now).kind;
+      const kind = openStatus(r.hours, now, weekday).kind;
       const marker = new kakao.maps.Marker({
         position: pos,
         title: r.name,
@@ -330,7 +339,7 @@ export function RestaurantMap({ restaurants, office, now = null, selectedSlug, o
         map.setBounds(bounds);
       }
     }
-  }, [ready, visible, office, expanded, selectedSlug, now]);
+  }, [ready, visible, office, expanded, selectedSlug, now, weekday]);
 
   // List→map: pan to the selected pin without resetting the whole viewport.
   useEffect(() => {

@@ -26,11 +26,14 @@ export type MenuItem = {
 };
 
 /** "HH:MM" local (Asia/Seoul) times; close may be "24:00" or past midnight. */
+export type Weekday = "월" | "화" | "수" | "목" | "금" | "토" | "일";
+
 export type OpeningHours = {
   open: string;
   close: string;
   breakStart?: string;
   breakEnd?: string;
+  closedDays?: Weekday[];
 };
 
 export type GeoPoint = { lat: number; lng: number };
@@ -79,6 +82,8 @@ export type Restaurant = {
   walkMeters?: number;
   /** walkMeters was computed from location (WALK_ORIGIN), not read from notes. */
   walkFromMap?: boolean;
+  /** Walking minutes from Kakao walk routing when available. */
+  walkMinutes?: number;
   hours?: OpeningHours;
   menu?: MenuItem[];
   /** Street address; the enrich script geocodes it when the name search misses. */

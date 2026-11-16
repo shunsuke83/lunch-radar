@@ -4,13 +4,17 @@ import { Star } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 import { Badge, Button, EmptyState, LinkButton, Tag } from "@/components/ds";
 import {
+  closedDaysLabel,
   displayTags,
+  displayWalkMinutes,
+  isRecentlyAdded,
   mapLinks,
+  needsHoursCheck,
   openStatus,
-  walkMinutes,
   type OpeningHours,
   type OpenKind,
   type Restaurant,
+  type Weekday,
 } from "@/lib/catalog";
 import { cn } from "@/lib/utils";
 
@@ -18,6 +22,7 @@ type Props = {
   restaurants: Restaurant[];
   /** Minutes since midnight in Seoul; null until the client clock is known. */
   now?: number | null;
+  weekday?: Weekday | null;
   loading?: boolean;
   error?: string | null;
   onReset?: () => void;
@@ -163,21 +168,22 @@ function Shell({ children }: { children: ReactNode }) {
 function MobileCard({
   r,
   now,
+  weekday,
   nearby,
   selected,
   onSelect,
 }: {
   r: Restaurant;
   now: number | null;
+  weekday: Weekday | null;
   nearby: boolean;
   selected: boolean;
   onSelect?: (slug: string) => void;
 }) {
-  const status = openStatus(r.hours, now);
+  const status = openStatus(r.hours, now, weekday);
+  const walk = displayWalkMinutes(r);
   const place =
-    nearby && r.walkMeters !== undefined
-      ? `도보 ${walkMinutes(r.walkMeters)}분`
-      : r.area || r.district || null;
+    nearby && walk !== undefined ? `도보 ${walk}분` : r.area || r.district || null;
   const dish = r.menu?.[0]
     ? r.menu[0].price !== undefined
       ? `${r.menu[0].name} ${won(r.menu[0].price)}`
@@ -200,6 +206,8 @@ function MobileCard({
             {r.category ? <Tag color="brand" size="xsmall">{r.category}</Tag> : null}
             <Badge status={badgeFor(status.kind)}>{status.label}</Badge>
             {status.lunchOk ? <Tag color="green" size="xsmall">점심</Tag> : null}
+            {needsHoursCheck(r) ? <Badge status="warning">영업확인필요</Badge> : null}
+            {isRecentlyAdded(r) ? <Tag color="brand" size="xsmall">새로 추가</Tag> : null}
           </div>
           <p className="mt-group-xxs truncate text-text-secondary typography-body-sm-regular">
             {[place, dish].filter(Boolean).join(" · ") || "–"}
@@ -217,6 +225,7 @@ function MobileCard({
 export function RestaurantList({
   restaurants,
   now = null,
+  weekday = null,
   loading,
   error,
   onReset,
@@ -273,6 +282,7 @@ export function RestaurantList({
             key={r.slug}
             r={r}
             now={now}
+            weekday={weekday}
             nearby={nearby}
             selected={selectedSlug === r.slug}
             onSelect={onSelect}
@@ -295,8 +305,9 @@ export function RestaurantList({
       </div>
       <ul className="hidden lg:block">
         {visible.map((r) => {
-          const status = openStatus(r.hours, now);
+          const status = openStatus(r.hours, now, weekday);
           const selected = selectedSlug === r.slug;
+          const walk = displayWalkMinutes(r);
           return (
             <li
               key={r.slug}
@@ -316,6 +327,8 @@ export function RestaurantList({
                     <span className="text-text-tertiary typography-body-sm-regular">{r.subcategory}</span>
                   ) : null}
                   {status.lunchOk ? <Tag color="green" size="xsmall">점심</Tag> : null}
+                  {needsHoursCheck(r) ? <Badge status="warning">영업확인필요</Badge> : null}
+                  {isRecentlyAdded(r) ? <Tag color="brand" size="xsmall">새로 추가</Tag> : null}
                 </div>
                 {r.menu?.length ? (
                   <ul className="flex flex-wrap gap-x-group-md gap-y-group-xxs text-text-secondary typography-body-sm-regular">
@@ -352,12 +365,12 @@ export function RestaurantList({
               </div>
 
               <Cell label={nearby ? "도보" : "지역"}>
-                {nearby && r.walkMeters !== undefined ? (
+                {nearby && walk !== undefined ? (
                   <>
-                    <span className="text-text-primary typography-body-md-medium">
-                      {walkMinutes(r.walkMeters)}분
-                    </span>
-                    <span className="text-text-tertiary typography-body-sm-regular">{r.walkMeters}m</span>
+                    <span className="text-text-primary typography-body-md-medium">{walk}분</span>
+                    {r.walkMeters !== undefined ? (
+                      <span className="text-text-tertiary typography-body-sm-regular">{r.walkMeters}m</span>
+                    ) : null}
                   </>
                 ) : r.area ? (
                   <span className="text-text-secondary typography-body-md-regular">{r.area}</span>
@@ -371,6 +384,11 @@ export function RestaurantList({
                   <>
                     <Badge status={badgeFor(status.kind)}>{status.label}</Badge>
                     <span className="text-text-tertiary typography-body-sm-regular">{hoursText(r.hours)}</span>
+                    {closedDaysLabel(r.hours.closedDays) ? (
+                      <span className="text-text-tertiary typography-body-sm-regular">
+                        {closedDaysLabel(r.hours.closedDays)}
+                      </span>
+                    ) : null}
                   </>
                 ) : (
                   <Badge status="default">시간 미확인</Badge>

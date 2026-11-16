@@ -4,6 +4,7 @@ import {
   type MenuItem,
   type OpeningHours,
   type Restaurant,
+  type Weekday,
 } from "./restaurants.js";
 
 // Checked per "·" segment of the subcategory, in order; the first segment
@@ -64,9 +65,22 @@ const ITEM = new RegExp(
 const HOURS =
   /^(\d{1,2}:\d{2})\s*[-~]\s*(\d{1,2}:\d{2})(?:\s*\(\s*(\d{1,2}:\d{2})\s*[-~]\s*(\d{1,2}:\d{2})\s*브레이크\s*\))?$/;
 const WALK = /도보\s*약?\s*([\d,]+)\s*m\b/;
+const CLOSED =
+  /^([월화수목금토일](?:\s*[·,、\/]\s*[월화수목금토일])*)\s*휴무$/;
+const WEEKDAY_SET = new Set<string>(["월", "화", "수", "목", "금", "토", "일"]);
 
 const toWon = (s: string) => Number(s.replace(/,/g, ""));
 const pad = (t: string) => t.padStart(5, "0");
+
+function parseClosedDays(segment: string): Weekday[] | undefined {
+  const m = CLOSED.exec(segment.trim());
+  if (!m) return undefined;
+  const days = m[1]
+    .split(/\s*[·,、\/]\s*/)
+    .map((d) => d.trim())
+    .filter((d): d is Weekday => WEEKDAY_SET.has(d));
+  return days.length ? days : undefined;
+}
 
 function parseMenu(segment: string, allowPriceless: boolean): MenuItem[] {
   const items: MenuItem[] = [];
@@ -102,8 +116,14 @@ export function parseNotes(notes: string | undefined): {
   menu?: MenuItem[];
   hours?: OpeningHours;
   walkMeters?: number;
+  closedDays?: Weekday[];
 } {
-  const out: { menu?: MenuItem[]; hours?: OpeningHours; walkMeters?: number } = {};
+  const out: {
+    menu?: MenuItem[];
+    hours?: OpeningHours;
+    walkMeters?: number;
+    closedDays?: Weekday[];
+  } = {};
   if (!notes?.trim()) return out;
   notes
     .split(/\s+·\s+/)
@@ -112,6 +132,11 @@ export function parseNotes(notes: string | undefined): {
       const walk = WALK.exec(segment);
       if (walk) {
         out.walkMeters = toWon(walk[1]);
+        return;
+      }
+      const closed = parseClosedDays(segment);
+      if (closed) {
+        out.closedDays = closed;
         return;
       }
       if (segment === "24시간") {
@@ -132,6 +157,9 @@ export function parseNotes(notes: string | undefined): {
         if (menu.length > 0) out.menu = menu;
       }
     });
+  if (out.hours && out.closedDays?.length) {
+    out.hours = { ...out.hours, closedDays: out.closedDays };
+  }
   return out;
 }
 
@@ -154,6 +182,10 @@ export function structureRestaurant<T extends Restaurant>(r: T): T {
     parsed.hours.close === hours.close
   ) {
     hours = { ...hours, breakStart: parsed.hours.breakStart, breakEnd: parsed.hours.breakEnd };
+  }
+  const closedDays = hours?.closedDays ?? parsed.closedDays ?? parsed.hours?.closedDays;
+  if (hours && closedDays?.length && !hours.closedDays?.length) {
+    hours = { ...hours, closedDays };
   }
   const walkMeters = r.walkMeters ?? parsed.walkMeters;
   if (menu) next.menu = menu;

@@ -160,3 +160,142 @@ export async function kakaoRating(kakaoId: string): Promise<{ score: number; cou
   if (!set?.review_count || typeof set.average_score !== "number") return undefined;
   return { score: Math.round(set.average_score * 10) / 10, count: set.review_count };
 }
+
+export type Weekday = "월" | "화" | "수" | "목" | "금" | "토" | "일";
+
+export type NaverPlaceHours = {
+  open: string;
+  close: string;
+  breakStart?: string;
+  breakEnd?: string;
+  closedDays?: Weekday[];
+};
+
+export type NaverPlaceDetail = {
+  name?: string;
+  category?: string;
+  roadAddress?: string;
+  address?: string;
+  reviews?: number;
+  score?: number;
+  hours?: NaverPlaceHours;
+  closedDays?: Weekday[];
+  menu?: { name: string; price?: number }[];
+  fetchedAt: string;
+};
+
+type WorkingDay = {
+  day: string;
+  businessHours?: { start: string; end: string } | null;
+  breakHours?: { start: string; end: string }[] | null;
+  description?: string | null;
+};
+
+/**
+ * Naver place home + menu pages (Apollo state). Shared by import and enrich.
+ * Uses politeFetch pacing for m.place.naver.com.
+ */
+export async function naverPlaceDetail(sid: string): Promise<NaverPlaceDetail> {
+  const headers = {
+    "User-Agent": MOBILE_UA,
+    "Accept-Language": "ko-KR,ko;q=0.9",
+    Referer: "https://map.naver.com/",
+  };
+  const home = apolloState(await politeFetch(`https://m.place.naver.com/restaurant/${sid}/home`, headers));
+  const base = (home[`PlaceDetailBase:${sid}`] ?? {}) as Record<string, unknown>;
+  const rootQuery = home.ROOT_QUERY ?? {};
+  const detailKey = Object.keys(rootQuery).find((k) => k.startsWith("placeDetail"));
+  const detail = (detailKey ? rootQuery[detailKey] : {}) as Record<string, unknown>;
+  const hoursKey = Object.keys(detail).find((k) => k.startsWith("newBusinessHours"));
+  const days =
+    ((hoursKey ? (detail[hoursKey] as { businessHours?: WorkingDay[] }[]) : [])[0]?.businessHours ??
+      []) as WorkingDay[];
+  const closedDays = days
+    .filter((d) => /휴무/.test(d.description ?? ""))
+    .map((d) => d.day)
+    .filter((d): d is Weekday => "월화수목금토일".includes(d) && d.length === 1);
+  // Prefer a weekday row; "매일" / weekend-only rows still carry open–close.
+  const openRow =
+    days.find((d) => "월화수목금".includes(d.day) && d.businessHours) ??
+    days.find((d) => d.businessHours);
+  const hours: NaverPlaceHours | undefined = openRow?.businessHours
+    ? {
+        open: openRow.businessHours.start,
+        close: openRow.businessHours.end,
+        ...(openRow.breakHours?.[0]
+          ? { breakStart: openRow.breakHours[0].start, breakEnd: openRow.breakHours[0].end }
+          : {}),
+        ...(closedDays.length ? { closedDays } : {}),
+      }
+    : undefined;
+
+  const menuState = apolloState(
+    await politeFetch(`https://m.place.naver.com/restaurant/${sid}/menu/list`, headers),
+  );
+  const items = Object.entries(menuState)
+    .filter(([k]) => k.startsWith("PlaceMenuItem:"))
+    .map(([, v]) => {
+      const price = v.price as { priceType?: string; displayText?: string } | undefined;
+      const value =
+        price?.priceType === "fixed" ? Number(String(price.displayText ?? "").replace(/[^\d]/g, "")) : NaN;
+      return {
+        name: String(v.name ?? "").trim(),
+        price: Number.isFinite(value) && value > 0 ? value : undefined,
+        repr: ((v.badges as string[] | undefined) ?? []).includes("repr"),
+      };
+    })
+    .filter((m) => m.name);
+  const menu = [...items.filter((m) => m.repr), ...items.filter((m) => !m.repr)]
+    .slice(0, 4)
+    .map(({ name, price }) => (price ? { name, price } : { name }));
+
+  return {
+    name: base.name as string | undefined,
+    category: base.category as string | undefined,
+    roadAddress: base.roadAddress as string | undefined,
+    address: base.address as string | undefined,
+    reviews: base.visitorReviewsTotal as number | undefined,
+    score: typeof base.visitorReviewsScore === "number" ? base.visitorReviewsScore : undefined,
+    hours,
+    closedDays,
+    menu,
+    fetchedAt: new Date().toISOString(),
+  };
+}
+
+/** Kakao walk routing; returns path distance (m) and duration (sec). */
+export async function kakaoWalkRoute(
+  key: string,
+  origin: GeoPoint,
+  dest: GeoPoint,
+): Promise<{ distanceM: number; durationSec: number; landingUrl?: string } | undefined> {
+  const params = new URLSearchParams({
+    start_x: String(origin.lng),
+    start_y: String(origin.lat),
+    end_x: String(dest.lng),
+    end_y: String(dest.lat),
+  });
+  const res = await fetch(`https://dapi.kakao.com/v2/routing/walk?${params}`, {
+    headers: { Authorization: `KakaoAK ${key}` },
+  });
+  if (!res.ok) {
+    if (res.status === 400 || res.status === 404) return undefined;
+    throw new Error(`Kakao walk HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  }
+  const data = (await res.json()) as {
+    route?: {
+      properties?: { totalDistance?: number; totalTime?: number; landingUrl?: string };
+      legs?: { properties?: { distance?: number; time?: number } }[];
+    };
+  };
+  const props = data.route?.properties;
+  const leg = data.route?.legs?.[0]?.properties;
+  const distanceM = props?.totalDistance ?? leg?.distance;
+  const durationSec = props?.totalTime ?? leg?.time;
+  if (!distanceM) return undefined;
+  return {
+    distanceM: Math.round(distanceM),
+    durationSec: Math.round(durationSec ?? 0),
+    landingUrl: props?.landingUrl,
+  };
+}

@@ -9,21 +9,30 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { GeoPoint, PlaceRating, Restaurant } from "../bot/lib/restaurants.js";
 import { matchesPlaceName } from "../bot/lib/place-match.js";
-import { distanceM, kakaoRating, kakaoSearch, naverSearch, setHostDelay } from "./lib/place-sources.js";
+import {
+  distanceM,
+  kakaoRating,
+  kakaoSearch,
+  kakaoWalkRoute,
+  naverPlaceDetail,
+  naverSearch,
+  setHostDelay,
+} from "./lib/place-sources.js";
 
 setHostDelay("place-api.map.kakao.com", 1000);
+setHostDelay("m.place.naver.com", 3000);
 
 const OFFICE_NAME = process.env.LUNCH_OFFICE_NAME ?? "플래그원";
 const OFFICE_ADDRESS = process.env.LUNCH_OFFICE_ADDRESS ?? "서울 강남구 남부순환로 2621";
 const SEARCH_RADIUS_M = 2000;
 const REFRESH_DAYS = 7;
 /**
- * Origin of the "도보 약 Nm" figures in the channel's daily picks, fitted from
- * 63 of them: they are straight-line meters from here (RMS error ≈18m). The
- * office geocode is ~170m off, so rows without a Slack figure use this point
- * to stay comparable.
+ * Origin for walking distance and the map "회사" pin. Fitted from Slack
+ * "도보 약 Nm" figures (RMS ≈18m). Address text still comes from geocoding.
  */
 const WALK_ORIGIN: GeoPoint = { lat: 37.48487, lng: 127.03472 };
+const walkOnly = process.argv.includes("--walk");
+const hoursOnly = process.argv.includes("--hours");
 
 const KAKAO_KEY = process.env.KAKAO_REST_API_KEY?.trim();
 const SLACK_TOKEN = process.env.LUNCH_SPOTS_SLACK_USER_TOKEN?.trim();
@@ -144,11 +153,16 @@ const stats = {
   unrated: 0,
   naverFound: 0,
   naverMissed: [] as string[],
+  hoursFilled: 0,
+  walkRouted: 0,
+  walkFailed: 0,
   errors: [] as string[],
 };
 
 let naverLinks: NaverLink[] = [];
-if (SLACK_TOKEN && CHANNEL_ID) {
+const fullPass = !hoursOnly && !walkOnly;
+
+if (fullPass && SLACK_TOKEN && CHANNEL_ID) {
   try {
     naverLinks = await collectNaverLinks();
   } catch (err) {
@@ -156,17 +170,17 @@ if (SLACK_TOKEN && CHANNEL_ID) {
   }
 }
 
-if (KAKAO_KEY && (force || !catalog.office || catalog.office.address !== OFFICE_ADDRESS)) {
+if (catalog.office) {
+  catalog.office = { ...catalog.office, ...WALK_ORIGIN };
+} else if (KAKAO_KEY) {
   const point = await kakaoAddress(OFFICE_ADDRESS);
   if (!point) throw new Error(`Kakao could not geocode ${OFFICE_ADDRESS}`);
-  catalog.office = { name: OFFICE_NAME, address: OFFICE_ADDRESS, ...point };
+  catalog.office = { name: OFFICE_NAME, address: OFFICE_ADDRESS, ...WALK_ORIGIN };
 }
 const office = catalog.office;
 
 for (const r of catalog.restaurants) {
-  // A Kakao place gives the map link and the review score, so look it up even
-  // when coordinates came from elsewhere (a Naver link, a curated row).
-  if (KAKAO_KEY && office && (force || !r.place)) {
+  if (fullPass && KAKAO_KEY && office && (force || !r.place)) {
     const place = await kakaoSearch(KAKAO_KEY, r.name, r.location ?? office, r.location ? 300 : SEARCH_RADIUS_M);
     if (place) {
       r.location = { lat: Number(place.y), lng: Number(place.x) };
@@ -187,26 +201,28 @@ for (const r of catalog.restaurants) {
     }
   }
 
-  const link = naverLinks.find((l) => matchesPlaceName(r.name, l.title));
-  if (link) {
-    r.naver = { placeId: link.placeId, url: `https://map.naver.com/p/entry/place/${link.placeId}` };
-    const nearOffice = !office || !link.point || distanceM(office, link.point) <= SEARCH_RADIUS_M;
-    if (!r.location && link.point && nearOffice) r.location = link.point;
+  if (fullPass) {
+    const link = naverLinks.find((l) => matchesPlaceName(r.name, l.title));
+    if (link) {
+      r.naver = { placeId: link.placeId, url: `https://map.naver.com/p/entry/place/${link.placeId}` };
+      const nearOffice = !office || !link.point || distanceM(office, link.point) <= SEARCH_RADIUS_M;
+      if (!r.location && link.point && nearOffice) r.location = link.point;
+    }
   }
 
-  if (r.location && (r.walkMeters === undefined || r.walkFromMap)) {
+  if (fullPass && r.location && (r.walkMeters === undefined || r.walkFromMap) && !r.walkMinutes) {
     r.walkMeters = Math.round(distanceM(WALK_ORIGIN, r.location));
     r.walkFromMap = true;
     stats.walkComputed++;
   }
 
-  if (r.rating && r.rating.source !== "kakao" && !r.place?.kakaoId) {
+  if (fullPass && r.rating && r.rating.source !== "kakao" && !r.place?.kakaoId) {
     delete r.rating;
     delete r.ratingCheckedAt;
   }
 
   try {
-    if (r.place?.kakaoId && (stale(r.ratingCheckedAt) || r.rating?.source !== "kakao")) {
+    if (fullPass && r.place?.kakaoId && (stale(r.ratingCheckedAt) || r.rating?.source !== "kakao")) {
       const score = await kakaoRating(r.place.kakaoId);
       r.ratingCheckedAt = new Date().toISOString();
       if (score) {
@@ -225,7 +241,7 @@ for (const r of catalog.restaurants) {
     }
 
     const near = r.location ?? office;
-    if (near && stale(r.naverCheckedAt)) {
+    if (fullPass && near && stale(r.naverCheckedAt)) {
       const hit = await naverSearch(r.name, near, r.location ? 300 : SEARCH_RADIUS_M);
       r.naverCheckedAt = new Date().toISOString();
       if (hit && (!r.naver || r.naver.placeId === hit.placeId)) {
@@ -240,6 +256,36 @@ for (const r of catalog.restaurants) {
         stats.naverMissed.push(r.name);
       }
     }
+
+    if ((hoursOnly || fullPass) && !r.hours && r.naver?.placeId) {
+      console.log(`hours: ${r.name}`);
+      const detail = await naverPlaceDetail(r.naver.placeId);
+      if (detail.hours) {
+        r.hours = detail.hours;
+        stats.hoursFilled++;
+      }
+      if (detail.menu?.length && !r.menu?.length) r.menu = detail.menu;
+      if (detail.reviews) r.naverReviews = detail.reviews;
+      if (detail.score) r.naverScore = detail.score;
+    }
+
+    if (
+      (walkOnly || fullPass) &&
+      KAKAO_KEY &&
+      r.location &&
+      (force || r.walkFromMap || r.walkMinutes === undefined)
+    ) {
+      const route = await kakaoWalkRoute(KAKAO_KEY, WALK_ORIGIN, r.location);
+      await new Promise((resolve) => setTimeout(resolve, 200));
+      if (route) {
+        r.walkMeters = route.distanceM;
+        r.walkMinutes = Math.max(1, Math.ceil(route.durationSec / 60));
+        r.walkFromMap = true;
+        stats.walkRouted++;
+      } else {
+        stats.walkFailed++;
+      }
+    }
   } catch (err) {
     stats.errors.push(`${r.name}: ${err instanceof Error ? err.message : String(err)}`);
   }
@@ -249,7 +295,9 @@ console.log(
   [
     office ? `office: ${office.name} (${office.lat.toFixed(5)}, ${office.lng.toFixed(5)})` : "office: -",
     KAKAO_KEY ? `kakao located ${stats.located}, not found ${stats.notFound.length}` : "kakao search: skipped (no key)",
-    `walk distance from coordinates: ${stats.walkComputed}`,
+    `walk straight-line: ${stats.walkComputed}`,
+    `walk routed: ${stats.walkRouted}, failed ${stats.walkFailed}`,
+    `hours filled: ${stats.hoursFilled}`,
     `kakao rating: rated ${stats.rated}, no reviews ${stats.unrated}`,
     `naver: found ${stats.naverFound}, missed ${stats.naverMissed.length}`,
     naverLinks.length ? `naver links from Slack: ${naverLinks.length}` : "",

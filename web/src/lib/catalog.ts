@@ -23,12 +23,19 @@ export type MenuItem = {
   price?: number;
 };
 
+export type Weekday = "월" | "화" | "수" | "목" | "금" | "토" | "일";
+
+/** JS getDay() order: 0=Sun … 6=Sat → Korean short names. */
+export const WEEKDAYS: readonly Weekday[] = ["일", "월", "화", "수", "목", "금", "토"];
+
 /** "HH:MM" in Asia/Seoul; close may be "24:00" or earlier than open (past midnight). */
 export type OpeningHours = {
   open: string;
   close: string;
   breakStart?: string;
   breakEnd?: string;
+  /** Days the place is closed (Korean short names). Holidays are out of scope. */
+  closedDays?: Weekday[];
 };
 
 export type GeoPoint = { lat: number; lng: number };
@@ -71,6 +78,8 @@ export type Restaurant = {
   notes?: string;
   walkMeters?: number;
   walkFromMap?: boolean;
+  /** Walking minutes from Kakao walk routing when available. */
+  walkMinutes?: number;
   hours?: OpeningHours;
   menu?: MenuItem[];
   address?: string;
@@ -106,7 +115,7 @@ export type RestaurantCatalog = {
   restaurants: Restaurant[];
 };
 
-export type SortKey = "reviews" | "distance" | "price" | "rating";
+export type SortKey = "reviews" | "distance" | "price" | "rating" | "nearby";
 
 /** Province files under public/regions/<id>.json, listed in data/regions.json. */
 export type RegionIndex = {
@@ -287,10 +296,18 @@ export type RestaurantFilters = {
   near?: boolean;
   /** Minutes since midnight (Asia/Seoul); keeps only places open then. */
   openAt?: number | null;
-  /** Some menu item at or under BUDGET_WON. */
-  budget?: boolean;
+  /** Seoul weekday for openAt / closedDays checks. */
+  weekday?: Weekday | null;
+  /** Max menu price in won; true means BUDGET_WON for legacy callers. */
+  budget?: boolean | number;
   /** Known hours with no break time. */
   noBreak?: boolean;
+  /** Hide places the visitor marked as visited/disliked. */
+  unvisitedOnly?: boolean;
+  /** Slugs the visitor has recorded (visited or disliked). */
+  recordedSlugs?: ReadonlySet<string>;
+  /** Viewer lat/lng for nationwide "nearby" sort. */
+  viewer?: GeoPoint | null;
   sort?: SortKey;
 };
 
@@ -306,9 +323,62 @@ const METERS_PER_MINUTE = 80;
 export const NEAR_MINUTES = 5;
 export const NEAR_METERS = NEAR_MINUTES * METERS_PER_MINUTE;
 export const BUDGET_WON = 10_000;
+export const BUDGET_OPTIONS = [8_000, 10_000, 12_000, 15_000] as const;
+/** Bayesian prior strength for rating sort. */
+const RATING_PRIOR_N = 10;
+/** Places added within this many days show a "새로 추가" badge. */
+export const NEW_DAYS = 7;
 
 export function walkMinutes(meters: number): number {
   return Math.max(1, Math.ceil(meters / METERS_PER_MINUTE));
+}
+
+/** Prefer Kakao routing minutes when present. */
+export function displayWalkMinutes(r: Restaurant): number | undefined {
+  if (r.walkMinutes !== undefined) return r.walkMinutes;
+  if (r.walkMeters !== undefined) return walkMinutes(r.walkMeters);
+  return undefined;
+}
+
+export function isClosedOn(hours: OpeningHours | undefined, weekday: Weekday | null | undefined): boolean {
+  return !!weekday && !!hours?.closedDays?.includes(weekday);
+}
+
+export function closedDaysLabel(days: Weekday[] | undefined): string | null {
+  if (!days?.length) return null;
+  return `${days.join("·")} 휴무`;
+}
+
+export function isRecentlyAdded(r: Restaurant, now = Date.now()): boolean {
+  const t = Date.parse(r.addedAt);
+  return Number.isFinite(t) && now - t <= NEW_DAYS * 24 * 60 * 60 * 1000;
+}
+
+/** Search synonyms so 돈가스 hits 돈까스, etc. */
+const SEARCH_SYNONYMS: [RegExp, string][] = [
+  [/돈가스|돈카츠|돈까스|카츠|가츠|까스/g, "돈까스"],
+  [/순댓국|순대국/g, "순대국"],
+  [/짬뽕|참뽕/g, "짬뽕"],
+  [/라멘|라면(?!사리)/g, "라멘"],
+];
+
+export function normalizeSearchText(text: string): string {
+  let s = text.toLowerCase();
+  for (const [re, to] of SEARCH_SYNONYMS) s = s.replace(re, to);
+  return s;
+}
+
+export function bayesianRating(score: number, count: number, priorMean: number, priorN = RATING_PRIOR_N): number {
+  return (count / (count + priorN)) * score + (priorN / (count + priorN)) * priorMean;
+}
+
+export function haversineM(a: GeoPoint, b: GeoPoint): number {
+  const rad = (d: number) => (d * Math.PI) / 180;
+  const dLat = rad(b.lat - a.lat);
+  const dLng = rad(b.lng - a.lng);
+  const h =
+    Math.sin(dLat / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(dLng / 2) ** 2;
+  return 2 * 6_371_000 * Math.asin(Math.sqrt(h));
 }
 
 export function minPrice(r: Restaurant): number | undefined {
@@ -333,8 +403,13 @@ export const LUNCH_END = 13 * 60 + 30;
 const CLOSING_SOON_MIN = 30;
 
 /** Open at `now` (minutes since midnight), outside the break. Unknown hours → false. */
-export function isOpenAt(hours: OpeningHours | undefined, now: number): boolean {
+export function isOpenAt(
+  hours: OpeningHours | undefined,
+  now: number,
+  weekday?: Weekday | null,
+): boolean {
   if (!hours) return false;
+  if (isClosedOn(hours, weekday)) return false;
   const open = toMinutes(hours.open);
   const close = toMinutes(hours.close);
   const allDay = open === close || (open === 0 && close === 24 * 60);
@@ -350,18 +425,26 @@ export type OpenKind = "open" | "break" | "closingSoon" | "closed" | "unknown";
 export type OpenStatus = {
   kind: OpenKind;
   label: string;
-  /** True when the place is open for some time during the lunch window. */
+  /** True when the place is open for some time during the lunch window today. */
   lunchOk: boolean;
 };
 
 /** Badge copy for the list/map: open now, on break, closing soon, or closed. */
-export function openStatus(hours: OpeningHours | undefined, now: number | null): OpenStatus {
-  const lunchOk = !!hours && (
-    isOpenAt(hours, LUNCH_START) ||
-    isOpenAt(hours, Math.floor((LUNCH_START + LUNCH_END) / 2)) ||
-    isOpenAt(hours, LUNCH_END - 1)
-  );
+export function openStatus(
+  hours: OpeningHours | undefined,
+  now: number | null,
+  weekday: Weekday | null = null,
+): OpenStatus {
+  const lunchOk =
+    !!hours &&
+    !isClosedOn(hours, weekday) &&
+    (isOpenAt(hours, LUNCH_START, weekday) ||
+      isOpenAt(hours, Math.floor((LUNCH_START + LUNCH_END) / 2), weekday) ||
+      isOpenAt(hours, LUNCH_END - 1, weekday));
   if (!hours || now === null) return { kind: "unknown", label: "시간 미확인", lunchOk };
+  if (isClosedOn(hours, weekday)) {
+    return { kind: "closed", label: closedDaysLabel(hours.closedDays) ?? "휴무", lunchOk: false };
+  }
   if (hours.breakStart && hours.breakEnd) {
     const bs = toMinutes(hours.breakStart);
     const be = toMinutes(hours.breakEnd);
@@ -369,7 +452,7 @@ export function openStatus(hours: OpeningHours | undefined, now: number | null):
       return { kind: "break", label: `브레이크 ${hours.breakStart}–${hours.breakEnd}`, lunchOk };
     }
   }
-  if (!isOpenAt(hours, now)) return { kind: "closed", label: "영업 전·종료", lunchOk };
+  if (!isOpenAt(hours, now, weekday)) return { kind: "closed", label: "영업 전·종료", lunchOk };
   const close = toMinutes(hours.close);
   const allDay = toMinutes(hours.open) === close || close === 24 * 60;
   if (!allDay) {
@@ -392,6 +475,21 @@ export function seoulMinutes(date: Date): number {
   return get("hour") * 60 + get("minute");
 }
 
+/** Korean weekday short name in Asia/Seoul. */
+export function seoulWeekday(date: Date): Weekday {
+  const day = new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Seoul", weekday: "short" }).format(date);
+  const map: Record<string, Weekday> = {
+    Sun: "일",
+    Mon: "월",
+    Tue: "화",
+    Wed: "수",
+    Thu: "목",
+    Fri: "금",
+    Sat: "토",
+  };
+  return map[day] ?? WEEKDAYS[date.getDay()];
+}
+
 const byReviews = (a: Restaurant, b: Restaurant) =>
   (b.naverReviews ?? 0) - (a.naverReviews ?? 0) || a.name.localeCompare(b.name, "ko");
 
@@ -411,11 +509,14 @@ export function filterRestaurants(
   restaurants: Restaurant[],
   filters: RestaurantFilters,
 ): Restaurant[] {
-  const q = filters.q?.trim().toLowerCase();
+  const q = filters.q?.trim() ? normalizeSearchText(filters.q.trim()) : "";
   const category = filters.category?.trim().toLowerCase();
   const area = filters.area?.trim().toLowerCase();
   const tag = filters.tag?.trim().toLowerCase();
   const openAt = filters.openAt;
+  const weekday = filters.weekday ?? null;
+  const budgetCap =
+    filters.budget === true ? BUDGET_WON : typeof filters.budget === "number" ? filters.budget : null;
 
   const rows = restaurants.filter((r) => {
     if (filters.district && filters.district !== "all" && r.district !== filters.district) return false;
@@ -434,39 +535,54 @@ export function filterRestaurants(
     if (filters.near && !(r.walkMeters !== undefined && r.walkMeters <= NEAR_METERS)) {
       return false;
     }
-    if (typeof openAt === "number" && !isOpenAt(r.hours, openAt)) return false;
+    if (typeof openAt === "number" && !isOpenAt(r.hours, openAt, weekday)) return false;
     if (filters.noBreak && !hasNoBreak(r.hours)) return false;
-    if (filters.budget) {
+    if (budgetCap !== null) {
       const p = minPrice(r);
-      if (p === undefined || p > BUDGET_WON) return false;
+      if (p === undefined || p > budgetCap) return false;
     }
+    if (filters.unvisitedOnly && filters.recordedSlugs?.has(r.slug)) return false;
     if (q) {
-      const hay = [
-        r.name,
-        r.area,
-        r.category,
-        r.subcategory,
-        r.priceRange,
-        r.notes,
-        ...r.tags,
-        ...(r.menu ?? []).map((m) => m.name),
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase();
+      const hay = normalizeSearchText(
+        [
+          r.name,
+          r.area,
+          r.category,
+          r.subcategory,
+          r.priceRange,
+          r.notes,
+          ...r.tags,
+          ...(r.menu ?? []).map((m) => m.name),
+        ]
+          .filter(Boolean)
+          .join(" "),
+      );
       if (!hay.includes(q)) return false;
     }
     return true;
   });
 
+  const rated = rows.filter((r) => r.rating?.source === "kakao");
+  const priorMean =
+    rated.length > 0 ? rated.reduce((s, r) => s + r.rating!.score, 0) / rated.length : 3.5;
+
   const sort =
     filters.sort === "distance"
       ? byKey((r) => r.walkMeters)
-      : filters.sort === "price"
-        ? byKey(minPrice)
-        : filters.sort === "rating"
-          ? byKey((r) => (r.rating ? -(r.rating.score * 1e6 + r.rating.count) : undefined))
-          : byReviews;
+      : filters.sort === "nearby" && filters.viewer
+        ? byKey((r) => (r.location ? haversineM(filters.viewer!, r.location) : undefined))
+        : filters.sort === "price"
+          ? byKey(minPrice)
+          : filters.sort === "rating"
+            ? byKey((r) =>
+                r.rating
+                  ? -(
+                      bayesianRating(r.rating.score, r.rating.count, priorMean) * 1e6 +
+                      r.rating.count
+                    )
+                  : undefined,
+              )
+            : byReviews;
   return rows.sort(sort);
 }
 
@@ -489,8 +605,13 @@ export function presentGroups(restaurants: Restaurant[]): string[] {
 }
 
 /** Scraped/meta tags that should not appear on the public site. */
-const INTERNAL_TAGS = new Set(["신규조사", "도보10분권", "양재"]);
+const INTERNAL_TAGS = new Set(["신규조사", "도보10분권", "양재", "영업확인필요"]);
 const CATEGORY_TAG_SET = new Set<string>(CATEGORY_GROUPS);
+
+/** Needs a manual hours check; shown as a warning badge, not a tag chip. */
+export function needsHoursCheck(r: Restaurant): boolean {
+  return r.tags.some((t) => t.trim() === "영업확인필요");
+}
 
 /** Tags worth showing next to the category badge (drops internals and kind duplicates). */
 export function displayTags(r: Restaurant): string[] {

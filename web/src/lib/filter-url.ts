@@ -1,5 +1,10 @@
 import type { FilterState } from "@/components/restaurant-filters";
-import { LEGACY_NO_BREAK_THEME, OFFICE_REGION, type SortKey } from "@/lib/catalog";
+import {
+  BUDGET_OPTIONS,
+  LEGACY_NO_BREAK_THEME,
+  OFFICE_REGION,
+  type SortKey,
+} from "@/lib/catalog";
 
 export const EMPTY_FILTERS: FilterState = {
   q: "",
@@ -9,8 +14,9 @@ export const EMPTY_FILTERS: FilterState = {
   district: "all",
   near: false,
   openNow: false,
-  budget: false,
+  budget: null,
   noBreak: false,
+  unvisitedOnly: false,
   sort: "reviews",
 };
 
@@ -19,13 +25,22 @@ function migrateLegacyTheme(filters: FilterState): FilterState {
   return filters.theme === LEGACY_NO_BREAK_THEME ? { ...filters, theme: "all", noBreak: true } : filters;
 }
 
+function migrateBudget(filters: FilterState): FilterState {
+  const b = filters.budget as unknown;
+  if (b === true) return { ...filters, budget: 10_000 };
+  if (b === false) return { ...filters, budget: null };
+  if (typeof b === "number" && (BUDGET_OPTIONS as readonly number[]).includes(b)) return filters;
+  if (b != null && typeof b !== "number") return { ...filters, budget: null };
+  return filters;
+}
+
 export type ExplorerState = {
   region: string;
   view: "list" | "map";
   filters: FilterState;
 };
 
-const SORTS = new Set<SortKey>(["reviews", "rating", "distance", "price"]);
+const SORTS = new Set<SortKey>(["reviews", "rating", "distance", "price", "nearby"]);
 export const FILTER_STORAGE_KEY = "lunch-radar:filters:v1";
 
 function flag(v: string | null): boolean {
@@ -54,11 +69,19 @@ export function parseExplorerSearch(search: string): Partial<ExplorerState> {
   if (q.has("district")) set("district", q.get("district") || "all");
   if (q.has("near")) set("near", flag(q.get("near")));
   if (q.has("open")) set("openNow", flag(q.get("open")));
-  if (q.has("budget")) set("budget", flag(q.get("budget")));
+  if (q.has("budget")) {
+    const raw = q.get("budget");
+    if (raw === "1" || raw === "true") set("budget", 10_000);
+    else {
+      const n = Number(raw);
+      if ((BUDGET_OPTIONS as readonly number[]).includes(n)) set("budget", n);
+    }
+  }
   if (q.has("nobreak")) set("noBreak", flag(q.get("nobreak")));
+  if (q.has("unvisited")) set("unvisitedOnly", flag(q.get("unvisited")));
   const sort = q.get("sort");
   if (sort && SORTS.has(sort as SortKey)) set("sort", sort as SortKey);
-  if (touched) out.filters = migrateLegacyTheme(filters);
+  if (touched) out.filters = migrateBudget(migrateLegacyTheme(filters));
   return out;
 }
 
@@ -75,8 +98,9 @@ export function serializeExplorerSearch(state: ExplorerState): string {
   if (f.district !== "all") q.set("district", f.district);
   if (f.near) q.set("near", "1");
   if (f.openNow) q.set("open", "1");
-  if (f.budget) q.set("budget", "1");
+  if (f.budget != null) q.set("budget", String(f.budget));
   if (f.noBreak) q.set("nobreak", "1");
+  if (f.unvisitedOnly) q.set("unvisited", "1");
   if (f.sort !== "reviews") q.set("sort", f.sort);
   return q.toString();
 }
@@ -90,7 +114,7 @@ export function readStoredExplorer(): Partial<ExplorerState> | null {
     if (typeof data.region === "string" && data.region) out.region = data.region;
     if (data.view === "list" || data.view === "map") out.view = data.view;
     if (data.filters && typeof data.filters === "object") {
-      out.filters = migrateLegacyTheme({ ...EMPTY_FILTERS, ...data.filters });
+      out.filters = migrateBudget(migrateLegacyTheme({ ...EMPTY_FILTERS, ...data.filters }));
       if (!SORTS.has(out.filters.sort)) out.filters.sort = "reviews";
     }
     return out;
