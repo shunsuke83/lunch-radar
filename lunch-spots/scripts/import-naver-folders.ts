@@ -220,7 +220,9 @@ async function placeDetail(sid: string): Promise<PlaceDetail> {
 
 function regionOf(address: string | undefined): { province: string; district: string } | undefined {
   const parts = (address ?? "").trim().split(/\s+/);
-  const head = PROVINCE_ALIASES[parts[0]] ?? parts[0];
+  let head = PROVINCE_ALIASES[parts[0]] ?? parts[0];
+  // Naver writes the merged province as "전남광주"; its 구 are the former Gwangju city.
+  if (head.startsWith("전남광주")) head = parts[1]?.endsWith("구") ? "광주" : "전남";
   if (!PROVINCES[head]) return undefined;
   if (head === "세종") return { province: head, district: "세종" };
   return { province: head, district: parts[1] ?? head };

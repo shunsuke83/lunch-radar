@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T07:02:41.988Z",
+  "updatedAt": "2026-11-16T00:20:46.793Z",
   "regions": [
     {
       "id": "seoul",
@@ -126,11 +126,11 @@
     {
       "id": "gyeonggi",
       "label": "경기",
-      "count": 460,
+      "count": 459,
       "districts": [
         {
           "name": "가평군",
-          "count": 14
+          "count": 13
         },
         {
           "name": "고양시",
@@ -174,7 +174,7 @@
         },
         {
           "name": "성남시",
-          "count": 21
+          "count": 22
         },
         {
           "name": "수원시",
@@ -218,7 +218,7 @@
         },
         {
           "name": "용인시",
-          "count": 22
+          "count": 21
         },
         {
           "name": "의왕시",
@@ -297,7 +297,7 @@
         },
         {
           "name": "서구",
-          "count": 2
+          "count": 1
         },
         {
           "name": "수영구",
@@ -313,7 +313,7 @@
         },
         {
           "name": "중구",
-          "count": 15
+          "count": 16
         },
         {
           "name": "해운대구",
@@ -324,7 +324,7 @@
     {
       "id": "gangwon",
       "label": "강원",
-      "count": 211,
+      "count": 212,
       "districts": [
         {
           "name": "강릉시",
@@ -376,7 +376,7 @@
         },
         {
           "name": "춘천시",
-          "count": 26
+          "count": 27
         },
         {
           "name": "태백시",
@@ -616,7 +616,7 @@
         },
         {
           "name": "서구",
-          "count": 40
+          "count": 39
         },
         {
           "name": "유성구",
@@ -624,7 +624,7 @@
         },
         {
           "name": "중구",
-          "count": 27
+          "count": 28
         }
       ]
     },
@@ -740,6 +740,10 @@
           "count": 7
         },
         {
+          "name": "검단구",
+          "count": 3
+        },
+        {
           "name": "계양구",
           "count": 3
         },
@@ -756,16 +760,20 @@
           "count": 15
         },
         {
-          "name": "서구",
-          "count": 7
+          "name": "서해구",
+          "count": 4
         },
         {
           "name": "연수구",
           "count": 18
         },
         {
-          "name": "중구",
-          "count": 23
+          "name": "영종구",
+          "count": 5
+        },
+        {
+          "name": "제물포구",
+          "count": 18
         }
       ]
     },
@@ -870,7 +878,7 @@
       "districts": [
         {
           "name": "남구",
-          "count": 33
+          "count": 34
         },
         {
           "name": "동구",
@@ -882,14 +890,14 @@
         },
         {
           "name": "중구",
-          "count": 6
+          "count": 5
         }
       ]
     },
     {
       "id": "gwangju",
       "label": "광주",
-      "count": 21,
+      "count": 22,
       "districts": [
         {
           "name": "광산구",
@@ -909,7 +917,7 @@
         },
         {
           "name": "서구",
-          "count": 2
+          "count": 3
         }
       ]
     },
