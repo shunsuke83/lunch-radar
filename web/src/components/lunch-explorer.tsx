@@ -14,8 +14,8 @@ import {
   OFFICE_REGION,
   presentGroups,
   seoulMinutes,
+  tagOptions,
   themeOptions,
-  uniqueTags,
   type RegionIndex,
   type Restaurant,
   type RestaurantCatalog,
@@ -94,7 +94,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
   const facets = useMemo(
     () => ({
       categories: presentGroups(source),
-      tags: uniqueTags(source),
+      tags: tagOptions(source).map(({ value, label }) => ({ value, label })),
       themes: themeOptions(source),
     }),
     [source],

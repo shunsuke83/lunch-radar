@@ -341,9 +341,16 @@ export function displayTags(r: Restaurant): string[] {
 }
 
 export function uniqueTags(restaurants: Restaurant[]): string[] {
-  const set = new Set<string>();
+  return tagOptions(restaurants).map((t) => t.value);
+}
+
+/** Display tags with counts, most used first (for chip filters). */
+export function tagOptions(restaurants: Restaurant[]): { value: string; label: string; count: number }[] {
+  const counts = new Map<string, number>();
   for (const r of restaurants) {
-    for (const t of displayTags(r)) set.add(t);
+    for (const t of displayTags(r)) counts.set(t, (counts.get(t) ?? 0) + 1);
   }
-  return [...set].sort((a, b) => a.localeCompare(b, "ko"));
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"))
+    .map(([value, count]) => ({ value, label: `${value} (${count})`, count }));
 }

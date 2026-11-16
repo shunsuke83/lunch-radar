@@ -13,8 +13,8 @@ type ButtonSize = "sm" | "md";
 const BUTTON_BASE =
   "inline-flex shrink-0 items-center justify-center gap-group-xs whitespace-nowrap rounded-xs outline-none transition-all cursor-pointer focus-visible:ring focus-visible:ring-border-subtle disabled:pointer-events-none";
 const BUTTON_SIZE: Record<ButtonSize, string> = {
-  sm: "h-size-control-sm min-w-[64px] px-inline-md py-stack-xs typography-label-sm-regular",
-  md: "h-size-control-md min-w-[80px] px-inline-lg py-stack-sm typography-label-md-medium",
+  sm: "min-h-10 h-size-control-sm min-w-[64px] px-inline-md py-stack-xs typography-label-sm-regular sm:min-h-size-control-sm",
+  md: "min-h-10 h-size-control-md min-w-[80px] px-inline-lg py-stack-sm typography-label-md-medium sm:min-h-size-control-md",
 };
 const BUTTON_VARIANT: Record<ButtonVariant, string> = {
   primary:
@@ -126,7 +126,7 @@ export function Chip({
       disabled={disabled}
       onClick={onClick}
       className={cn(
-        "inline-flex h-size-control-xxs cursor-pointer items-center gap-group-xs whitespace-nowrap rounded-xxs px-inline-sm py-stack-xxs typography-label-md-regular transition-shadow disabled:cursor-not-allowed",
+        "inline-flex min-h-10 cursor-pointer items-center gap-group-xs whitespace-nowrap rounded-xxs px-inline-md py-stack-xs typography-label-md-regular transition-shadow disabled:cursor-not-allowed sm:min-h-size-control-xxs sm:px-inline-sm sm:py-stack-xxs",
         disabled
           ? "pointer-events-none bg-surface-subtle text-text-disabled"
           : selected
@@ -157,7 +157,7 @@ export function SegmentedControl<T extends string>({
         role="radiogroup"
         aria-label={label}
         data-slot="segmented-control"
-        className="inline-flex h-size-control-md w-fit max-w-full items-center gap-group-xs overflow-x-auto rounded-xs bg-surface-subtle px-inline-xs py-stack-xs [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="inline-flex min-h-size-control-lg w-fit max-w-full items-center gap-group-xs overflow-x-auto rounded-xs bg-surface-subtle px-inline-xs py-stack-xs sm:h-size-control-md sm:min-h-size-control-md [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {options.map((o) => {
           const on = o.value === value;
@@ -170,7 +170,7 @@ export function SegmentedControl<T extends string>({
               data-state={on ? "on" : "off"}
               onClick={() => onChange(o.value)}
               className={cn(
-                "inline-flex h-size-control-xs min-w-[20px] shrink-0 cursor-pointer items-center justify-center gap-group-xs rounded-xxs px-inline-sm py-stack-xs transition-colors",
+                "inline-flex min-h-10 min-w-[40px] shrink-0 cursor-pointer items-center justify-center gap-group-xs rounded-xxs px-inline-md py-stack-xs transition-colors sm:h-size-control-xs sm:min-h-size-control-xs sm:min-w-[20px] sm:px-inline-sm",
                 on
                   ? "bg-surface-default text-text-secondary shadow-default-sm typography-body-md-medium"
                   : "bg-transparent text-text-tertiary typography-body-md-regular hover:text-text-secondary",

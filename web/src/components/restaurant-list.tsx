@@ -116,6 +116,23 @@ export function RatingText({ r }: { r: Restaurant }) {
   );
 }
 
+/** One-line reputation for the compact mobile card. */
+function ReputationLine({ r }: { r: Restaurant }) {
+  const parts: string[] = [];
+  if (r.rating?.source === "kakao") {
+    parts.push(`카카오 ★${r.rating.score.toFixed(1)}`);
+  }
+  if (r.naverReviews) {
+    parts.push(
+      r.naverScore
+        ? `네이버 ${r.naverReviews.toLocaleString("ko-KR")} · ★${r.naverScore.toFixed(2)}`
+        : `네이버 ${r.naverReviews.toLocaleString("ko-KR")}`,
+    );
+  }
+  if (!parts.length) return null;
+  return <span className="text-text-tertiary typography-body-sm-regular">{parts.join(" · ")}</span>;
+}
+
 export function MapButtons({ r }: { r: Restaurant }) {
   const links = mapLinks(r);
   return (
@@ -132,6 +149,50 @@ export function MapButtons({ r }: { r: Restaurant }) {
 
 function Shell({ children }: { children: ReactNode }) {
   return <div className="overflow-hidden rounded-sm bg-surface-default">{children}</div>;
+}
+
+function MobileCard({
+  r,
+  now,
+  nearby,
+}: {
+  r: Restaurant;
+  now: number | null;
+  nearby: boolean;
+}) {
+  const open = now !== null && r.hours ? isOpenAt(r.hours, now) : null;
+  const place =
+    nearby && r.walkMeters !== undefined
+      ? `도보 ${walkMinutes(r.walkMeters)}분`
+      : r.area || r.district || null;
+  const dish = r.menu?.[0]
+    ? r.menu[0].price !== undefined
+      ? `${r.menu[0].name} ${won(r.menu[0].price)}`
+      : r.menu[0].name
+    : r.priceRange || null;
+
+  return (
+    <li className="border-b border-border-default px-inline-lg py-stack-md last:border-b-0">
+      <div className="flex items-start justify-between gap-group-sm">
+        <div className="min-w-0 flex-1">
+          <div className="flex flex-wrap items-center gap-x-group-sm gap-y-group-xxs">
+            <h2 className="truncate text-text-primary typography-headline-sm">{r.name}</h2>
+            {r.category ? <Tag color="brand" size="xsmall">{r.category}</Tag> : null}
+            {open !== null ? (
+              <Badge status={open ? "success" : "disabled"}>{open ? "영업 중" : "종료"}</Badge>
+            ) : null}
+          </div>
+          <p className="mt-group-xxs truncate text-text-secondary typography-body-sm-regular">
+            {[place, dish].filter(Boolean).join(" · ") || "–"}
+          </p>
+          <div className="mt-group-xxs">
+            <ReputationLine r={r} />
+          </div>
+        </div>
+        <MapButtons r={r} />
+      </div>
+    </li>
+  );
 }
 
 export function RestaurantList({ restaurants, now = null, loading, error, onReset, nearby = true }: Props) {
@@ -173,10 +234,15 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
 
   return (
     <Shell>
-      <div
-        aria-hidden
-        className={cn("hidden bg-surface-subtle lg:grid", COLUMNS)}
-      >
+      {/* Mobile: two-line summary cards */}
+      <ul className="lg:hidden">
+        {visible.map((r) => (
+          <MobileCard key={r.slug} r={r} now={now} nearby={nearby} />
+        ))}
+      </ul>
+
+      {/* Desktop: full table */}
+      <div aria-hidden className={cn("hidden bg-surface-subtle lg:grid", COLUMNS)}>
         {heads.map((h) => (
           <div
             key={h.label}
@@ -189,7 +255,7 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
           </div>
         ))}
       </div>
-      <ul>
+      <ul className="hidden lg:block">
         {visible.map((r) => {
           const open = now !== null && r.hours ? isOpenAt(r.hours, now) : null;
           return (
