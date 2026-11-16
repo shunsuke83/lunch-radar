@@ -4,8 +4,8 @@
 
 | 폴더 | 역할 | 실행에 필요한 것 |
 | --- | --- | --- |
-| [`web/`](web/) | 맛집 목록 브라우저 앱 (Next.js, 검색·7개 대분류·도보 5분/영업 중/만원 이하 칩·거리/가격 정렬) | Node.js만 있으면 됨 (샘플 데이터 포함) |
-| [`lunch-spots/`](lunch-spots/) | Slack Agent SDK 봇 (히스토리 + 실시간 수집, 추천) | Node.js 22.13+, Agent SDK 로그인, Slack 토큰 |
+| [`web/`](web/) | 맛집 목록 브라우저 앱 (Next.js). 회사 근처·전국 탭, 테마(상황/메뉴/모음), 영업·휴무·점심 안내, 지도·상세, URL 공유 | Node.js만 있으면 됨 (샘플 데이터 포함) |
+| [`lunch-spots/`](lunch-spots/) | Slack Agent SDK 봇 (히스토리 + 실시간 수집, 추천) + 카탈로그 enrich/import 스크립트 | Node.js 22.13+, Agent SDK 로그인, Slack 토큰 |
 
 처음이라면 **웹 앱만 먼저 실행**해 보세요. Slack 없이도 `web/data/restaurants.json` 샘플 데이터로 UI를 확인할 수 있습니다.
 
@@ -111,7 +111,7 @@ npx @grok/agent-sdk dev
 회사 근처 밖의 맛집은 네이버지도 공유 폴더에서 한 번씩 가져옵니다(자동 수집 아님).
 
 1. `lunch-spots/.naver-folders.local`(커밋 안 됨)에 공유 폴더 ID를 한 줄에 하나씩 적습니다. `naver.me` 링크를 열었을 때 주소의 `.../sharedPlace/folder/<ID>` 부분입니다. ID 뒤에 이름을 적으면 그 폴더의 가게가 웹의 테마로 보입니다(예: `<ID> 미쉐린 서울 2026`).
-2. `lunch-spots`에서 `npm run catalog:naver-folders`를 실행합니다. 가게마다 네이버 장소 페이지에서 업종·주소·평일 영업시간·휴무일·대표 메뉴를 읽습니다. 네이버가 빠른 요청을 429로 막으므로 기본은 한 번에 1곳, 요청 사이 3초(`--concurrency`, `--delay`로 조정)이며 5천 곳이면 몇 시간 걸립니다. 받은 내용은 `lunch-spots/.cache/`에 쌓여서 중간에 끊겨도 다시 실행하면 이어 받습니다. `--offline`은 요청 없이 캐시만으로 파일을 다시 만듭니다.
+2. `lunch-spots`에서 `npm run catalog:naver-folders`를 실행합니다. 가게마다 네이버 장소 페이지에서 업종·주소·영업시간(`hours`, 휴무 요일은 `hours.closedDays`)·대표 메뉴를 읽습니다. 네이버가 빠른 요청을 429로 막으므로 기본은 한 번에 1곳, 요청 사이 3초(`--concurrency`, `--delay`로 조정)이며 5천 곳이면 몇 시간 걸립니다. 받은 내용은 `lunch-spots/.cache/`에 쌓여서 중간에 끊겨도 다시 실행하면 이어 받습니다. `--offline`은 요청 없이 캐시만으로 파일을 다시 만듭니다.
 3. 결과는 `web/public/regions/<시·도>.json`과 `web/data/regions.json`입니다. 회사 근처 목록에 이미 있는 가게(네이버 장소 ID 기준)와 폐업 표시된 장소는 빠집니다. 폴더 링크·폴더 이름(테마로 지정한 것 제외)·저장한 사람 정보는 파일에 넣지 않습니다.
 
 ### Slack 자동 수집 (`collect-lunch.yml`)
@@ -120,7 +120,7 @@ npx @grok/agent-sdk dev
 
 1. **사전 확인 (모델 호출 없음)**: Slack에서 최신 메시지 시각만 조회해 `web/data/restaurants.json`의 `lastMessageTs`와 비교합니다. 새 메시지가 없으면 여기서 끝납니다.
 2. **증분 수집**: `agent-sdk run`으로 봇을 한 번 실행합니다. `seed-from-catalog`가 기존 카탈로그를 불러오고, `ingest-channel-history`는 `lastMessageTs` 이후 메시지만 가져와 모델이 새 맛집만 반영합니다. 카탈로그에 `lastMessageTs`가 없으면 전체 히스토리로 다시 만듭니다.
-3. **지도·평점·리뷰 보강** (새 메시지가 없어도 실행): `npm run catalog:enrich`가 카카오 Local API(`KAKAO_REST_API_KEY`가 있을 때)로 회사 위치와 가게 좌표·카카오맵 링크를 찾고, 카카오맵 장소 페이지의 후기 별점·후기 수를 `rating`에, 네이버지도 장소 검색의 방문자 리뷰 수(공개된 곳은 별점도)를 `naverReviews`/`naverScore`에 붙입니다. 평점과 리뷰는 키 없이 비공식 웹 엔드포인트로 읽으며, 요청 사이에 쉬어 갑니다. 채널에 공유된 네이버지도 장소 링크(`naver.me`, `map.naver.com/.../place/<id>`)는 가게 이름과 맞춰 `naver` 필드(장소 페이지)로 저장하고, 카카오가 못 찾은 가게는 그 좌표를 씁니다. 도보 거리는 모두 같은 기준점(채널 추천 글의 "도보 약 Nm"을 역산한 점, 직선거리)으로 맞춥니다. notes에 거리가 없는 가게는 좌표로 계산하고 `walkFromMap: true`로 표시합니다. 평점과 리뷰 수는 7일마다 다시 조회합니다. 이 단계가 실패해도 수집 결과 커밋은 계속합니다.
+3. **지도·평점·리뷰·도보 보강** (새 메시지가 없어도 실행): `npm run catalog:enrich`가 카카오 Local API(`KAKAO_REST_API_KEY`가 있을 때)로 가게 좌표·카카오맵 링크를 찾고, 카카오맵 후기 별점·후기 수를 `rating`에, 네이버 방문자 리뷰를 `naverReviews`/`naverScore`에 붙입니다. 지도의 **회사 핀**과 도보 기준점은 같은 좌표(`WALK_ORIGIN`, 채널 "도보 약 Nm"을 역산한 점)를 쓰고, 주소 문자열만 지오코딩 결과를 유지합니다. 도보 거리는 카카오 도보 길찾기(`GET /v2/routing/walk`)로 `walkMeters`·`walkMinutes`를 채우며, 실패 시 직선거리로 폴백합니다(`walkFromMap: true`). 영업시간이 비어 있고 네이버 장소 ID가 있으면 장소 상세에서 `hours`(휴무 요일 `closedDays` 포함)를 채웁니다. 로컬에서만 돌릴 때 `--hours`(영업시간만), `--walk`(도보만)로 범위를 줄일 수 있습니다. 평점·리뷰는 7일마다 다시 조회합니다. 이 단계가 실패해도 수집 결과 커밋은 계속합니다.
 4. **커밋·배포**: 타임스탬프 외에 바뀐 내용이 있을 때만 커밋하고 Pages 배포를 호출합니다. export 결과가 0곳이면 실패 처리하고 기존 데이터를 유지합니다.
 
 지시문은 [`lunch-spots/ci/collect-prompt.md`](lunch-spots/ci/collect-prompt.md)입니다. 수동 실행 시 `force`를 켜면 새 메시지가 없어도 봇을 실행합니다. 처음부터 다시 만들려면 JSON에서 `lastMessageTs`를 지우고 실행합니다.
@@ -139,7 +139,15 @@ npx @grok/agent-sdk dev
 | --- | --- |
 | `KAKAO_MAP_JS_KEY` | 같은 카카오 앱의 JavaScript 키. 브라우저에 그대로 노출되는 키라 Secret이 아닌 Variable로 둡니다. 카카오 앱 **플랫폼 → Web 사이트 도메인**에 `https://<사용자명>.github.io`와 로컬 확인용 `http://127.0.0.1:3847`을 등록해야 지도가 뜹니다. |
 
-회사 위치는 기본값 `서울 강남구 남부순환로 2621`(플래그원)이며 `LUNCH_OFFICE_ADDRESS` / `LUNCH_OFFICE_NAME` 환경 변수로 바꿀 수 있습니다. 키가 없으면 지도 대신 안내 문구가 나오고, 가게별 네이버지도·카카오맵 버튼은 키 없이도 동작합니다(장소를 모르면 이름 검색으로 연결). 웹 목록의 정렬은 "리뷰 많은 순"(네이버 방문자 리뷰 수)이 기본이고, "평점 높은 순"은 카카오맵 별점 기준입니다. 카카오맵 별점은 후기가 몇 개뿐인 곳이 많아 후기 수를 함께 보여 줍니다.
+회사 위치는 기본값 `서울 강남구 남부순환로 2621`(플래그원)이며 `LUNCH_OFFICE_ADDRESS` / `LUNCH_OFFICE_NAME` 환경 변수로 바꿀 수 있습니다. 키가 없으면 지도 대신 안내 문구가 나오고, 가게별 네이버지도·카카오맵 버튼은 키 없이도 동작합니다(장소를 모르면 이름 검색으로 연결).
+
+웹 앱 요약 (자세한 UI는 [`web/README.md`](web/README.md)):
+
+- **범위**: 회사 근처 / 전국(시·도 → 시·군·구). 필터는 URL·localStorage에 남아 링크 공유가 됩니다.
+- **퀵 칩**: 도보 5분 이내, 지금 영업 중, 브레이크 없음, 식대 상한(8천·1만·1.2만·1.5만), 안 가본 곳만. 영업·휴무는 Asia/Seoul 요일·시간 기준(공휴일 미반영).
+- **테마**: 상황·메뉴·모음 그룹(기본 접힘). 비 오는 날이면 Open-Meteo로 날씨 배너·테마 제안.
+- **정렬**: 리뷰 많은 순(기본), 평점 높은 순(Bayesian 보정), 가까운 순(회사 근처), 내 주변 가까운 순(전국·위치 권한), 저렴한 순.
+- **목록·지도·상세**: 행/핀 클릭으로 상세(메뉴·휴무·가봤어요/별로). 지도 핀 색은 영업 상태. 「오늘 뭐 먹지」로 후보 3곳 + Slack 투표 문구 복사(자동 게시는 없음).
 
 수집 단계 로그에는 모델의 최종 답변만 남깁니다(도구 호출 인자에 Slack 사용자 ID가 들어 있기 때문).
 

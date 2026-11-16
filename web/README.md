@@ -1,6 +1,6 @@
 # 점심맛집 웹
 
-사내 Slack 점심 채널에서 모은 점심 맛집을 브라우저에서 검색·필터하는 Next.js 앱입니다.
+사내 Slack 점심 채널·네이버지도 저장 목록에서 모은 맛집을 브라우저에서 검색·필터하는 Next.js 앱입니다. 배포본: https://shunsuke83.github.io/lunch-radar/
 
 ## 실행
 
@@ -23,7 +23,42 @@ npm run build:pages                                   # web/out/ 생성
 NEXT_PUBLIC_BASE_PATH=/lunch-radar npm run build:pages  # 하위 경로 배포용 (bash)
 ```
 
-맛집 데이터는 빌드 시점에 `data/restaurants.json`에서 읽어 HTML에 포함되고, 검색·필터는 브라우저에서 처리합니다. 각 가게의 `category`는 한식·중식·일식·양식·아시안·분식·샐러드 중 하나이고 세부 종류는 `subcategory`에 있습니다. `menu[{name, price}]` / `hours{open, close, breakStart?, breakEnd?}` / `walkMeters`로 "도보 5분 이내(≈400m)", "지금 영업 중(Asia/Seoul, 브라우저 시계 기준)", "만원 이하(메뉴 최저가)" 칩과 거리·가격 정렬을 합니다. "테마"(해장·생선구이)는 종류와 상관없이 가게 이름·`subcategory`·태그·메뉴 이름에 든 키워드로 고르며, 키워드는 `src/lib/catalog.ts`의 `THEMES`에 있습니다. "지역"에서 회사 근처 대신 시·도를 고르면 `public/regions/<id>.json`(네이버지도 저장 목록에서 가져온 가게)을 그때 불러오고, 시·군·구로 다시 좁힐 수 있습니다. 시·도 목록과 가게 수는 `data/regions.json`에 있으며, 이 파일이 없으면 지역 선택은 숨겨집니다. 다른 지역에서는 도보 칩과 거리 정렬을 숨기고, 저장 폴더에서 온 테마(`collections`)는 테마 필터와 보라색 태그로 보입니다. 두 파일은 `lunch-spots`의 `npm run catalog:naver-folders`가 만듭니다. 휴무일 정보는 없어서 영업 중 표시는 시간만 봅니다. `location` / `place`(카카오맵 링크) / `naver`(네이버지도 장소 링크, 버튼은 네이버가 먼저) / `rating`(카카오맵 별점·후기 수) / `naverReviews`·`naverScore`(네이버 방문자 리뷰 수·공개된 별점)은 `lunch-spots`의 `npm run catalog:enrich`가 채우며, 보기 방식의 "지도"는 빌드 시 `NEXT_PUBLIC_KAKAO_MAP_KEY`(카카오 JavaScript 키)가 있을 때만 카카오 지도를 그립니다. 로컬에서는 `web/.env.local`에 `NEXT_PUBLIC_KAKAO_MAP_KEY=...`를 넣고 개발 서버를 다시 시작합니다. 이 필드는 `lunch-spots`가 notes에서 뽑아 넣으며, 기존 카탈로그는 `lunch-spots`에서 `npm run catalog:structure`로 다시 계산할 수 있습니다. 배포는 루트의 `.github/workflows/deploy-pages.yml`이 자동으로 합니다 ([루트 README](../README.md#github-pages-배포) 참고).
+배포는 루트의 `.github/workflows/deploy-pages.yml`이 담당합니다 ([루트 README](../README.md#github-pages-배포)).
+
+## 화면·필터
+
+- **범위 탭**: 회사 근처 / 전국. 전국이면 시·도 선택 후 시·군·구로 좁힙니다.
+- **보기**: 목록 / 지도. 행·핀 클릭 → 상세 드로어(메뉴·영업·휴무·평판·가봤어요/별로). Slack 원글·모집은 넣지 않습니다.
+- **퀵 칩**: 도보 5분 이내(회사 근처), 지금 영업 중, 브레이크 없음, 식대 상한(8천·1만·1.2만·1.5만), 안 가본 곳만. 비가 오면 Open-Meteo 배너 + 「비 오는 날」테마 제안.
+- **테마·태그**: 상황 / 메뉴 / 모음 그룹과 태그 칩은 기본 접힘. 테마 정의는 `src/lib/catalog.ts`의 `THEMES`.
+- **정렬**: 리뷰 많은 순(기본), 평점 높은 순(Bayesian 보정), 가까운 순, 내 주변 가까운 순(전국·Geolocation), 저렴한 순.
+- **기타**: 「오늘 뭐 먹지」(랜덤 3 + Slack 투표 문구 복사), 필터 URL·`localStorage` 공유, 최근 7일 `addedAt` → 「새로 추가」뱃지, 「영업확인필요」는 태그 대신 경고 뱃지.
+
+영업 상태는 Asia/Seoul 요일·분 기준입니다. `hours.closedDays`(예: `["월"]`)가 있으면 그날은 휴무로 표시합니다. 공휴일은 다루지 않습니다. 점심 가능 여부는 11:30–13:30 창을 봅니다.
+
+## 데이터 필드
+
+맛집 데이터는 빌드 시점에 `data/restaurants.json`(회사 근처)과 `public/regions/<id>.json`(전국)에서 읽습니다. 검색·필터는 브라우저에서 처리합니다.
+
+| 필드 | 용도 |
+| --- | --- |
+| `category` / `subcategory` | 대분류(한식·중식·일식·양식·아시안·분식·샐러드·카페·디저트·주점 등) / 세부 종류 |
+| `menu`, `hours` | 메뉴·영업시간. `hours.closedDays`는 휴무 요일 |
+| `walkMeters`, `walkMinutes` | 도보 거리(m)·분. 분은 카카오 도보 길찾기, 없으면 m÷80 |
+| `location`, `place`, `naver` | 좌표·카카오맵·네이버지도 링크 |
+| `rating`, `naverReviews`, `naverScore` | 카카오 별점·네이버 리뷰 |
+| `collections` | 네이버 저장 폴더명 → 테마「모음」 |
+| `tags`, `addedAt` | 태그·신규 뱃지 |
+
+보강·재생성은 `lunch-spots`에서 합니다.
+
+- `npm run catalog:structure` — notes에서 메뉴·시간·휴무·도보 파싱
+- `npm run catalog:enrich` — 좌표·평점·리뷰·도보 라우팅·빈 영업시간 채우기 (`--hours`, `--walk`로 범위 축소)
+- `npm run catalog:naver-folders` — 전국 region 파일 (`--offline`은 캐시만)
+
+시·도 목록은 `data/regions.json`입니다. 파일이 없으면 전국 탭용 목록이 비어 보입니다. 지도는 빌드 시 `NEXT_PUBLIC_KAKAO_MAP_KEY`(카카오 JavaScript 키)가 있을 때만 그려집니다. 로컬은 `web/.env.local`에 넣고 개발 서버를 다시 시작합니다.
+
+검색은 동의어를 정규화합니다(예: 돈가스↔돈까스, 순댓국↔순대국).
 
 ## 디자인
 
