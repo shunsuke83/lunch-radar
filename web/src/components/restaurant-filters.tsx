@@ -4,6 +4,7 @@ import { useEffect, useId, useMemo, useState, type ReactNode } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
 import { Button, Chip, FilterSelect, SearchField, SegmentedControl } from "@/components/ds";
 import { NEAR_MINUTES, type SortKey } from "@/lib/catalog";
+import { EMPTY_FILTERS } from "@/lib/filter-url";
 import { cn } from "@/lib/utils";
 
 export type FilterState = {
@@ -330,17 +331,7 @@ export function RestaurantFilters({
                 size="md"
                 className="min-h-size-control-lg flex-1"
                 onClick={() => {
-                  onChange({
-                    ...value,
-                    category: "all",
-                    tag: "all",
-                    theme: "all",
-                    district: "all",
-                    near: false,
-                    openNow: false,
-                    budget: false,
-                    sort: "reviews",
-                  });
+                  onChange({ ...EMPTY_FILTERS, q: value.q });
                   setTagQuery("");
                 }}
               >

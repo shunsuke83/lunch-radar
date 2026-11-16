@@ -1,13 +1,13 @@
 "use client";
 
-import { useDeferredValue, useEffect, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
   RestaurantFilters,
   type FilterState,
 } from "@/components/restaurant-filters";
 import { RestaurantList } from "@/components/restaurant-list";
 import { RestaurantMap } from "@/components/restaurant-map";
-import { RotateCcw } from "lucide-react";
+import { Check, Link2, RotateCcw } from "lucide-react";
 import { Button, EmptyState, PageHeader, SegmentedControl } from "@/components/ds";
 import {
   filterRestaurants,
@@ -20,18 +20,15 @@ import {
   type Restaurant,
   type RestaurantCatalog,
 } from "@/lib/catalog";
-
-const EMPTY_FILTERS: FilterState = {
-  q: "",
-  category: "all",
-  tag: "all",
-  theme: "all",
-  district: "all",
-  near: false,
-  openNow: false,
-  budget: false,
-  sort: "reviews",
-};
+import {
+  EMPTY_FILTERS,
+  explorerShareUrl,
+  parseExplorerSearch,
+  readStoredExplorer,
+  serializeExplorerSearch,
+  writeStoredExplorer,
+  type ExplorerState,
+} from "@/lib/filter-url";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -79,13 +76,94 @@ function useRegion(region: string, office: Restaurant[]): RegionState {
   return loaded[region] ?? { status: "loading" };
 }
 
+function mergeExplorer(
+  base: ExplorerState,
+  patch: Partial<ExplorerState>,
+): ExplorerState {
+  return {
+    region: patch.region ?? base.region,
+    view: patch.view ?? base.view,
+    filters: patch.filters ? { ...EMPTY_FILTERS, ...patch.filters } : base.filters,
+  };
+}
+
 export function LunchExplorer({ catalog, regions }: Props) {
   const [region, setRegion] = useState<string>(OFFICE_REGION);
   const [filters, setFilters] = useState<FilterState>(EMPTY_FILTERS);
   const [view, setView] = useState<"list" | "map">("list");
+  const [hydrated, setHydrated] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const skipUrlWrite = useRef(true);
   const deferred = useDeferredValue(filters);
   const now = useSeoulClock();
   const isOffice = region === OFFICE_REGION;
+
+  const knownRegions = useMemo(
+    () => new Set([OFFICE_REGION, ...regions.regions.map((r) => r.id)]),
+    [regions],
+  );
+
+  // URL first, then localStorage. Defaults stay until mount to avoid hydration mismatch.
+  useEffect(() => {
+    const fromUrl = parseExplorerSearch(window.location.search);
+    const hasUrl = Object.keys(fromUrl).length > 0;
+    const fromStore = hasUrl ? null : readStoredExplorer();
+    const patch = hasUrl ? fromUrl : (fromStore ?? {});
+    if (patch.region && !knownRegions.has(patch.region)) delete patch.region;
+    if (patch.region) setRegion(patch.region);
+    if (patch.view) setView(patch.view);
+    if (patch.filters) {
+      const next = { ...EMPTY_FILTERS, ...patch.filters };
+      const regionId = patch.region ?? OFFICE_REGION;
+      if (regionId !== OFFICE_REGION) {
+        next.near = false;
+        if (next.sort === "distance") next.sort = "reviews";
+      }
+      setFilters(next);
+    }
+    setHydrated(true);
+    // Allow URL writes on the next state commit.
+    queueMicrotask(() => {
+      skipUrlWrite.current = false;
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- restore once on mount
+  }, [knownRegions]);
+
+  const explorerState: ExplorerState = useMemo(
+    () => ({ region, view, filters }),
+    [region, view, filters],
+  );
+
+  // Keep the address bar and localStorage in sync after hydration.
+  useEffect(() => {
+    if (!hydrated || skipUrlWrite.current) return;
+    const qs = serializeExplorerSearch(explorerState);
+    const next = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
+    const cur = `${window.location.pathname}${window.location.search}`;
+    if (next !== cur) window.history.replaceState(null, "", next);
+    writeStoredExplorer(explorerState);
+  }, [explorerState, hydrated]);
+
+  // Back/forward should re-apply the query.
+  useEffect(() => {
+    const onPop = () => {
+      const patch = parseExplorerSearch(window.location.search);
+      const next = mergeExplorer(
+        { region: OFFICE_REGION, view: "list", filters: EMPTY_FILTERS },
+        patch,
+      );
+      if (!knownRegions.has(next.region)) next.region = OFFICE_REGION;
+      skipUrlWrite.current = true;
+      setRegion(next.region);
+      setView(next.view);
+      setFilters(next.filters);
+      queueMicrotask(() => {
+        skipUrlWrite.current = false;
+      });
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, [knownRegions]);
 
   const state = useRegion(region, catalog.restaurants);
   const source = useMemo(() => (state.status === "ready" ? state.restaurants : []), [state]);
@@ -134,6 +212,17 @@ export function LunchExplorer({ catalog, regions }: Props) {
   const changeRegion = (next: string) => {
     setRegion(next);
     setFilters(EMPTY_FILTERS);
+  };
+
+  const copyLink = async () => {
+    const url = explorerShareUrl(explorerState);
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      window.prompt("이 링크를 복사해 공유하세요", url);
+    }
   };
 
   const regionOptions = [
@@ -190,6 +279,14 @@ export function LunchExplorer({ catalog, regions }: Props) {
                 ]}
                 onChange={setView}
               />
+              <Button size="md" onClick={copyLink} aria-label="필터 링크 복사">
+                {copied ? (
+                  <Check aria-hidden className="size-size-icon-sm" />
+                ) : (
+                  <Link2 aria-hidden className="size-size-icon-sm" />
+                )}
+                {copied ? "복사됨" : "링크"}
+              </Button>
               <Button size="md" onClick={reset}>
                 <RotateCcw aria-hidden className="size-size-icon-sm" />
                 초기화
