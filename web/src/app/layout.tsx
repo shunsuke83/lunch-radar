@@ -3,8 +3,8 @@ import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "점심맛집 · Slack 수집 목록",
-  description: "Slack에서 모은 점심 맛집을 검색하고 필터링합니다.",
+  title: "점심맛집",
+  description: "회사 근처 점심 맛집을 종류·거리·영업시간·가격으로 골라 보세요.",
 };
 
 export default function RootLayout({

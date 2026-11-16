@@ -5,6 +5,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { Badge, Button, EmptyState, LinkButton, Tag } from "@/components/ds";
 import {
   isOpenAt,
+  displayTags,
   mapLinks,
   walkMinutes,
   type OpeningHours,
@@ -221,20 +222,24 @@ export function RestaurantList({ restaurants, now = null, loading, error, onRese
                 ) : r.notes ? (
                   <p className="text-text-secondary typography-body-sm-regular">{r.notes}</p>
                 ) : null}
-                {r.tags.length || r.collections?.length ? (
-                  <div className="flex flex-wrap gap-group-xs pt-stack-xxs">
-                    {r.collections?.map((c) => (
-                      <Tag key={c} color="purple" size="xsmall">
-                        {c}
-                      </Tag>
-                    ))}
-                    {r.tags.map((tag) => (
-                      <Tag key={tag} color="gray" size="xsmall">
-                        {tag}
-                      </Tag>
-                    ))}
-                  </div>
-                ) : null}
+                {(() => {
+                  const tags = displayTags(r);
+                  if (!tags.length && !r.collections?.length) return null;
+                  return (
+                    <div className="flex flex-wrap gap-group-xs pt-stack-xxs">
+                      {r.collections?.map((c) => (
+                        <Tag key={c} color="purple" size="xsmall">
+                          {c}
+                        </Tag>
+                      ))}
+                      {tags.map((tag) => (
+                        <Tag key={tag} color="gray" size="xsmall">
+                          {tag}
+                        </Tag>
+                      ))}
+                    </div>
+                  );
+                })()}
               </div>
 
               <Cell label={nearby ? "도보" : "지역"}>

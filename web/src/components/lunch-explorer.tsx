@@ -116,6 +116,12 @@ export function LunchExplorer({ catalog, regions }: Props) {
     [source, deferred, now, isOffice],
   );
 
+  /** Places dropped by "지금 영업 중" only because hours are unknown. */
+  const openNowSkipped = useMemo(() => {
+    if (!deferred.openNow || now === null) return 0;
+    return source.filter((r) => !r.hours).length;
+  }, [source, deferred.openNow, now]);
+
   const updatedAt = isOffice ? catalog.updatedAt : regions.updatedAt;
   const stamp = useMemo(() => {
     const when = new Date(updatedAt);
@@ -145,15 +151,15 @@ export function LunchExplorer({ catalog, regions }: Props) {
     <main className="mx-auto flex w-full max-w-content flex-col gap-stack-xxxl px-inline-lg py-stack-xxl sm:px-inline-xxl">
       <PageHeader
         title="점심맛집"
-        description="Slack 채널에서 모은 회사 근처 점심 맛집과 지역별 저장 맛집을 종류·거리·영업시간·가격으로 골라 보세요."
+        description="회사 근처 점심 맛집과 지역별 저장 맛집을 종류·거리·영업시간·가격으로 골라 보세요."
         meta={[
           { label: "표시", value: `${restaurants.length.toLocaleString("ko-KR")} / ${source.length.toLocaleString("ko-KR")}곳` },
           {
-            label: "데이터",
+            label: "출처",
             value: isOffice
               ? catalog.source === "sample"
-                ? "샘플(Slack 연동 전)"
-                : catalog.source
+                ? "샘플 데이터"
+                : "팀 공유 목록"
               : "네이버지도 저장 목록",
           },
           { label: "갱신", value: stamp },
@@ -191,6 +197,12 @@ export function LunchExplorer({ catalog, regions }: Props) {
             </>
           }
         />
+
+        {deferred.openNow && openNowSkipped > 0 ? (
+          <p className="text-text-secondary typography-body-sm-regular">
+            영업시간이 없어 {openNowSkipped.toLocaleString("ko-KR")}곳은 목록에서 뺐습니다.
+          </p>
+        ) : null}
 
         {state.status === "loading" ? (
           <p className="py-stack-xl text-center text-text-tertiary typography-body-md-regular">

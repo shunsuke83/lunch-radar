@@ -152,33 +152,40 @@ export function SegmentedControl<T extends string>({
   label: string;
 }) {
   return (
-    <div
-      role="radiogroup"
-      aria-label={label}
-      data-slot="segmented-control"
-      className="inline-flex h-size-control-md w-fit max-w-full items-center gap-group-xs overflow-x-auto rounded-xs bg-surface-subtle px-inline-xs py-stack-xs [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-    >
-      {options.map((o) => {
-        const on = o.value === value;
-        return (
-          <button
-            key={o.value}
-            type="button"
-            role="radio"
-            aria-checked={on}
-            data-state={on ? "on" : "off"}
-            onClick={() => onChange(o.value)}
-            className={cn(
-              "inline-flex h-size-control-xs min-w-[20px] shrink-0 cursor-pointer items-center justify-center gap-group-xs rounded-xxs px-inline-sm py-stack-xs transition-colors",
-              on
-                ? "bg-surface-default text-text-secondary shadow-default-sm typography-body-md-medium"
-                : "bg-transparent text-text-tertiary typography-body-md-regular hover:text-text-secondary",
-            )}
-          >
-            {o.label}
-          </button>
-        );
-      })}
+    <div className="relative max-w-full">
+      <div
+        role="radiogroup"
+        aria-label={label}
+        data-slot="segmented-control"
+        className="inline-flex h-size-control-md w-fit max-w-full items-center gap-group-xs overflow-x-auto rounded-xs bg-surface-subtle px-inline-xs py-stack-xs [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
+        {options.map((o) => {
+          const on = o.value === value;
+          return (
+            <button
+              key={o.value}
+              type="button"
+              role="radio"
+              aria-checked={on}
+              data-state={on ? "on" : "off"}
+              onClick={() => onChange(o.value)}
+              className={cn(
+                "inline-flex h-size-control-xs min-w-[20px] shrink-0 cursor-pointer items-center justify-center gap-group-xs rounded-xxs px-inline-sm py-stack-xs transition-colors",
+                on
+                  ? "bg-surface-default text-text-secondary shadow-default-sm typography-body-md-medium"
+                  : "bg-transparent text-text-tertiary typography-body-md-regular hover:text-text-secondary",
+              )}
+            >
+              {o.label}
+            </button>
+          );
+        })}
+      </div>
+      {/* Hint that more kinds sit off-screen on narrow viewports. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-y-0 right-0 w-8 rounded-r-xs bg-gradient-to-l from-surface-subtle to-transparent sm:hidden"
+      />
     </div>
   );
 }

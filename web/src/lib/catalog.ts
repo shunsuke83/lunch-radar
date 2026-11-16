@@ -326,13 +326,24 @@ export function presentGroups(restaurants: Restaurant[]): string[] {
   return CATEGORY_GROUPS.filter((g) => have.has(g));
 }
 
+/** Scraped/meta tags that should not appear on the public site. */
+const INTERNAL_TAGS = new Set(["신규조사", "도보10분권", "양재"]);
+const CATEGORY_TAG_SET = new Set<string>(CATEGORY_GROUPS);
+
+/** Tags worth showing next to the category badge (drops internals and kind duplicates). */
+export function displayTags(r: Restaurant): string[] {
+  return r.tags.filter((t) => {
+    const v = t.trim();
+    if (!v || INTERNAL_TAGS.has(v) || CATEGORY_TAG_SET.has(v)) return false;
+    if (r.category && v === r.category) return false;
+    return true;
+  });
+}
+
 export function uniqueTags(restaurants: Restaurant[]): string[] {
   const set = new Set<string>();
   for (const r of restaurants) {
-    for (const t of r.tags) {
-      const v = t.trim();
-      if (v) set.add(v);
-    }
+    for (const t of displayTags(r)) set.add(t);
   }
   return [...set].sort((a, b) => a.localeCompare(b, "ko"));
 }
