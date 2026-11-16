@@ -2,7 +2,14 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { buttonClass } from "@/components/ds";
-import { mapLinks, walkMinutes, type Office, type Restaurant } from "@/lib/catalog";
+import {
+  mapLinks,
+  openStatus,
+  walkMinutes,
+  type Office,
+  type OpenKind,
+  type Restaurant,
+} from "@/lib/catalog";
 
 // Kakao JS keys are public by design; Kakao only serves them to the
 // domains registered for the app (Pages URL, localhost).
@@ -26,7 +33,10 @@ type Kakao = {
     LatLng: new (lat: number, lng: number) => LatLng;
     LatLngBounds: new () => { extend: (p: LatLng) => void };
     Map: new (el: HTMLElement, opts: { center: LatLng; level: number }) => KakaoMap;
-    Marker: new (opts: { position: LatLng; title?: string }) => Overlay;
+    Size: new (w: number, h: number) => object;
+    Point: new (x: number, y: number) => object;
+    MarkerImage: new (src: string, size: object, opts?: { offset?: object }) => object;
+    Marker: new (opts: { position: LatLng; title?: string; image?: object; zIndex?: number }) => Overlay;
     CustomOverlay: new (opts: {
       position: LatLng;
       content: HTMLElement;
@@ -42,6 +52,25 @@ type Kakao = {
     };
   };
 };
+
+const PIN_COLOR: Record<OpenKind | "selected", string> = {
+  open: "#16a34a",
+  closingSoon: "#d97706",
+  break: "#d97706",
+  closed: "#9ca3af",
+  unknown: "#6b7280",
+  selected: "#0161ed",
+};
+
+function pinImage(kakao: Kakao, kind: OpenKind, selected: boolean) {
+  const size = selected ? 28 : 18;
+  const color = selected ? PIN_COLOR.selected : PIN_COLOR[kind];
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}"><circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - 2}" fill="${color}" stroke="#fff" stroke-width="2"/></svg>`;
+  const url = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+  return new kakao.maps.MarkerImage(url, new kakao.maps.Size(size, size), {
+    offset: new kakao.maps.Point(size / 2, size / 2),
+  });
+}
 
 /** Above this many markers they are grouped into clusters. */
 const CLUSTER_FROM = 200;
@@ -161,15 +190,21 @@ function card(r: Restaurant, onClose: () => void): HTMLElement {
 type Props = {
   restaurants: Restaurant[];
   office?: Office;
+  now?: number | null;
+  selectedSlug?: string | null;
+  onSelect?: (slug: string) => void;
 };
 
-export function RestaurantMap({ restaurants, office }: Props) {
+export function RestaurantMap({ restaurants, office, now = null, selectedSlug, onSelect }: Props) {
   const box = useRef<HTMLDivElement>(null);
   const mapRef = useRef<{ kakao: Kakao; map: KakaoMap } | null>(null);
   const layers = useRef<Overlay[]>([]);
   const clusterer = useRef<{ clear: () => void } | null>(null);
   const popupRef = useRef<Overlay | null>(null);
   const closePopupRef = useRef<() => void>(() => {});
+  const onSelectRef = useRef(onSelect);
+  onSelectRef.current = onSelect;
+  const boundsKey = useRef("");
   const [error, setError] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
   /** When office is set, start zoomed to DEFAULT_RADIUS_M; expand shows every pin. */
@@ -257,14 +292,24 @@ export function RestaurantMap({ restaurants, office }: Props) {
 
     for (const r of visible) {
       const pos = new kakao.maps.LatLng(r.location!.lat, r.location!.lng);
-      const marker = new kakao.maps.Marker({ position: pos, title: r.name });
+      const selected = r.slug === selectedSlug;
+      const kind = openStatus(r.hours, now).kind;
+      const marker = new kakao.maps.Marker({
+        position: pos,
+        title: r.name,
+        image: pinImage(kakao, kind, selected),
+        zIndex: selected ? 4 : 1,
+      });
       if (cluster) {
         markers.push(marker);
       } else {
         marker.setMap(map);
         layers.current.push(marker);
       }
-      kakao.maps.event.addListener(marker, "click", () => openPopup(r, pos));
+      kakao.maps.event.addListener(marker, "click", () => {
+        onSelectRef.current?.(r.slug);
+        openPopup(r, pos);
+      });
     }
 
     if (cluster) {
@@ -273,15 +318,29 @@ export function RestaurantMap({ restaurants, office }: Props) {
       clusterer.current = c;
     }
 
-    if (office && !expanded) {
-      map.setBounds(radiusBounds(kakao, office, DEFAULT_RADIUS_M));
-    } else if (visible.length > 0) {
-      const bounds = new kakao.maps.LatLngBounds();
-      if (office) bounds.extend(new kakao.maps.LatLng(office.lat, office.lng));
-      for (const r of visible) bounds.extend(new kakao.maps.LatLng(r.location!.lat, r.location!.lng));
-      map.setBounds(bounds);
+    const nextBoundsKey = `${expanded}|${office?.lat ?? ""}|${visible.map((r) => r.slug).join(",")}`;
+    if (nextBoundsKey !== boundsKey.current) {
+      boundsKey.current = nextBoundsKey;
+      if (office && !expanded) {
+        map.setBounds(radiusBounds(kakao, office, DEFAULT_RADIUS_M));
+      } else if (visible.length > 0) {
+        const bounds = new kakao.maps.LatLngBounds();
+        if (office) bounds.extend(new kakao.maps.LatLng(office.lat, office.lng));
+        for (const r of visible) bounds.extend(new kakao.maps.LatLng(r.location!.lat, r.location!.lng));
+        map.setBounds(bounds);
+      }
     }
-  }, [ready, visible, office, expanded]);
+  }, [ready, visible, office, expanded, selectedSlug, now]);
+
+  // List→map: pan to the selected pin without resetting the whole viewport.
+  useEffect(() => {
+    const current = mapRef.current;
+    if (!ready || !current || !selectedSlug) return;
+    const r = visible.find((x) => x.slug === selectedSlug);
+    if (!r?.location) return;
+    const pos = new current.kakao.maps.LatLng(r.location.lat, r.location.lng);
+    current.map.panTo(pos);
+  }, [ready, selectedSlug, visible]);
 
   if (!KAKAO_KEY) {
     return (
@@ -298,6 +357,25 @@ export function RestaurantMap({ restaurants, office }: Props) {
         ref={box}
         className="h-[420px] w-full overflow-hidden rounded-sm border border-border-default bg-surface-subtle"
       />
+      <ul className="flex flex-wrap items-center gap-group-md text-text-tertiary typography-caption" aria-label="핀 색 안내">
+        {(
+          [
+            ["영업 중", PIN_COLOR.open],
+            ["곧 마감·브레이크", PIN_COLOR.closingSoon],
+            ["영업 전·종료", PIN_COLOR.closed],
+            ["선택", PIN_COLOR.selected],
+          ] as const
+        ).map(([label, color]) => (
+          <li key={label} className="inline-flex items-center gap-group-xs">
+            <span
+              aria-hidden
+              className="inline-block size-2.5 rounded-full border border-white shadow-sm"
+              style={{ backgroundColor: color }}
+            />
+            {label}
+          </li>
+        ))}
+      </ul>
       <div className="flex flex-wrap items-center gap-group-sm">
         <p className="text-text-tertiary typography-caption">
           {error ??

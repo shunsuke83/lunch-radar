@@ -21,10 +21,16 @@ export type FilterState = {
 
 type Option = { value: string; label: string };
 
+export type ScopeTab = "office" | "nationwide";
+
 type Props = {
   value: FilterState;
+  scope: ScopeTab;
+  onScopeChange: (scope: ScopeTab) => void;
+  /** Province id when scope is nationwide. */
   region: string;
-  regions: Option[];
+  /** Province options (no office entry). */
+  provinces: Option[];
   /** 시·군·구 options for the selected province; empty for the office area. */
   districts: Option[];
   onRegionChange: (region: string) => void;
@@ -81,8 +87,10 @@ function ChipRow({
 
 export function RestaurantFilters({
   value,
+  scope,
+  onScopeChange,
   region,
-  regions,
+  provinces,
   districts,
   onRegionChange,
   nearby,
@@ -121,6 +129,23 @@ export function RestaurantFilters({
     };
   }, [sheetOpen]);
 
+  const scopeTabs = (
+    <SegmentedControl
+      label="범위"
+      value={scope}
+      options={[
+        { value: "office", label: "회사 근처" },
+        { value: "nationwide", label: "전국" },
+      ]}
+      onChange={onScopeChange}
+    />
+  );
+
+  const provinceSelect =
+    scope === "nationwide" && provinces.length > 0 ? (
+      <FilterSelect label="시·도" value={region} options={provinces} onChange={onRegionChange} />
+    ) : null;
+
   const quickChips = (
     <div className="flex flex-wrap items-center gap-group-sm" role="group" aria-label="빠른 조건">
       {nearby ? (
@@ -138,6 +163,7 @@ export function RestaurantFilters({
       <Chip selected={value.budget} onClick={() => set({ budget: !value.budget })}>
         만원 이하
       </Chip>
+      <span className="text-text-tertiary typography-caption">점심 11:30–13:30 기준 · 곧 마감 30분</span>
     </div>
   );
 
@@ -186,11 +212,13 @@ export function RestaurantFilters({
 
   return (
     <section aria-label="맛집 필터" className="flex flex-col gap-stack-md">
+      <div className="flex flex-wrap items-center gap-group-sm">
+        {scopeTabs}
+        {provinceSelect}
+      </div>
+
       {/* Compact mobile bar: search + sheet trigger + view actions */}
       <div className="flex flex-wrap items-center gap-group-sm md:hidden">
-        {regions.length > 1 ? (
-          <FilterSelect label="지역" value={region} options={regions} onChange={onRegionChange} />
-        ) : null}
         <SearchField
           aria-label="검색어 입력"
           placeholder="가게·메뉴·메모 검색"
@@ -215,9 +243,6 @@ export function RestaurantFilters({
       <div className="hidden flex-col gap-stack-md md:flex">
         <div data-slot="list-control" className="flex flex-wrap items-center gap-group-sm">
           <div data-slot="list-control-filters" className="flex flex-wrap items-center gap-group-sm">
-            {regions.length > 1 ? (
-              <FilterSelect label="지역" value={region} options={regions} onChange={onRegionChange} />
-            ) : null}
             {districts.length ? (
               <FilterSelect
                 label="시·군·구"

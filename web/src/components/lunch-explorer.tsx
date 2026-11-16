@@ -4,7 +4,9 @@ import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
   RestaurantFilters,
   type FilterState,
+  type ScopeTab,
 } from "@/components/restaurant-filters";
+import { RestaurantDetail } from "@/components/restaurant-detail";
 import { RestaurantList } from "@/components/restaurant-list";
 import { RestaurantMap } from "@/components/restaurant-map";
 import { Check, Link2, RotateCcw } from "lucide-react";
@@ -91,12 +93,15 @@ export function LunchExplorer({ catalog, regions }: Props) {
   const [region, setRegion] = useState<string>(OFFICE_REGION);
   const [filters, setFilters] = useState<FilterState>(EMPTY_FILTERS);
   const [view, setView] = useState<"list" | "map">("list");
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const [hydrated, setHydrated] = useState(false);
   const [copied, setCopied] = useState(false);
   const skipUrlWrite = useRef(true);
   const deferred = useDeferredValue(filters);
   const now = useSeoulClock();
   const isOffice = region === OFFICE_REGION;
+  const scope: ScopeTab = isOffice ? "office" : "nationwide";
+  const defaultProvince = regions.regions[0]?.id ?? OFFICE_REGION;
 
   const knownRegions = useMemo(
     () => new Set([OFFICE_REGION, ...regions.regions.map((r) => r.id)]),
@@ -126,7 +131,6 @@ export function LunchExplorer({ catalog, regions }: Props) {
     queueMicrotask(() => {
       skipUrlWrite.current = false;
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- restore once on mount
   }, [knownRegions]);
 
   const explorerState: ExplorerState = useMemo(
@@ -212,6 +216,14 @@ export function LunchExplorer({ catalog, regions }: Props) {
   const changeRegion = (next: string) => {
     setRegion(next);
     setFilters(EMPTY_FILTERS);
+    setSelectedSlug(null);
+  };
+  const changeScope = (next: ScopeTab) => {
+    if (next === "office") changeRegion(OFFICE_REGION);
+    else if (isOffice) changeRegion(defaultProvince);
+  };
+  const selectPlace = (slug: string) => {
+    setSelectedSlug((prev) => (prev === slug ? null : slug));
   };
 
   const copyLink = async () => {
@@ -225,16 +237,28 @@ export function LunchExplorer({ catalog, regions }: Props) {
     }
   };
 
-  const regionOptions = [
-    { value: OFFICE_REGION, label: `회사 근처 (${catalog.restaurants.length})` },
-    ...regions.regions.map((r) => ({ value: r.id, label: `${r.label} (${r.count.toLocaleString("ko-KR")})` })),
-  ];
+  const provinceOptions = regions.regions.map((r) => ({
+    value: r.id,
+    label: `${r.label} (${r.count.toLocaleString("ko-KR")})`,
+  }));
   const districtOptions = regionInfo
     ? [
         { value: "all", label: "전체" },
         ...regionInfo.districts.map((d) => ({ value: d.name, label: `${d.name} (${d.count})` })),
       ]
     : [];
+
+  const selected = useMemo(
+    () => (selectedSlug ? restaurants.find((r) => r.slug === selectedSlug) ?? null : null),
+    [restaurants, selectedSlug],
+  );
+
+  // Drop selection when the place leaves the filtered set.
+  useEffect(() => {
+    if (selectedSlug && !restaurants.some((r) => r.slug === selectedSlug)) {
+      setSelectedSlug(null);
+    }
+  }, [restaurants, selectedSlug]);
 
   return (
     <main className="mx-auto flex w-full max-w-content flex-col gap-stack-xxxl px-inline-lg py-stack-xxl sm:px-inline-xxl">
@@ -258,8 +282,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
       <div className="flex flex-col gap-stack-md">
         <RestaurantFilters
           value={filters}
+          scope={scope}
+          onScopeChange={changeScope}
           region={region}
-          regions={regionOptions}
+          provinces={provinceOptions}
           districts={districtOptions}
           onRegionChange={changeRegion}
           nearby={isOffice}
@@ -310,9 +336,22 @@ export function LunchExplorer({ catalog, regions }: Props) {
         ) : (
           <>
             {view === "map" ? (
-              <RestaurantMap restaurants={restaurants} office={isOffice ? catalog.office : undefined} />
+              <RestaurantMap
+                restaurants={restaurants}
+                office={isOffice ? catalog.office : undefined}
+                now={now}
+                selectedSlug={selectedSlug}
+                onSelect={selectPlace}
+              />
             ) : null}
-            <RestaurantList restaurants={restaurants} now={now} onReset={reset} nearby={isOffice} />
+            <RestaurantList
+              restaurants={restaurants}
+              now={now}
+              onReset={reset}
+              nearby={isOffice}
+              selectedSlug={selectedSlug}
+              onSelect={selectPlace}
+            />
           </>
         )}
 
@@ -320,6 +359,15 @@ export function LunchExplorer({ catalog, regions }: Props) {
           <p className="text-center text-text-tertiary typography-caption">필터 적용 중…</p>
         ) : null}
       </div>
+
+      {selected ? (
+        <RestaurantDetail
+          restaurant={selected}
+          now={now}
+          nearby={isOffice}
+          onClose={() => setSelectedSlug(null)}
+        />
+      ) : null}
     </main>
   );
 }

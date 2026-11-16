@@ -207,6 +207,11 @@ function within(now: number, start: number, end: number): boolean {
   return start <= end ? now >= start && now < end : now >= start || now < end;
 }
 
+/** Typical office lunch window (Asia/Seoul minutes since midnight). */
+export const LUNCH_START = 11 * 60 + 30;
+export const LUNCH_END = 13 * 60 + 30;
+const CLOSING_SOON_MIN = 30;
+
 /** Open at `now` (minutes since midnight), outside the break. Unknown hours → false. */
 export function isOpenAt(hours: OpeningHours | undefined, now: number): boolean {
   if (!hours) return false;
@@ -218,6 +223,42 @@ export function isOpenAt(hours: OpeningHours | undefined, now: number): boolean 
     return !within(now, toMinutes(hours.breakStart), toMinutes(hours.breakEnd));
   }
   return true;
+}
+
+export type OpenKind = "open" | "break" | "closingSoon" | "closed" | "unknown";
+
+export type OpenStatus = {
+  kind: OpenKind;
+  label: string;
+  /** True when the place is open for some time during the lunch window. */
+  lunchOk: boolean;
+};
+
+/** Badge copy for the list/map: open now, on break, closing soon, or closed. */
+export function openStatus(hours: OpeningHours | undefined, now: number | null): OpenStatus {
+  const lunchOk = !!hours && (
+    isOpenAt(hours, LUNCH_START) ||
+    isOpenAt(hours, Math.floor((LUNCH_START + LUNCH_END) / 2)) ||
+    isOpenAt(hours, LUNCH_END - 1)
+  );
+  if (!hours || now === null) return { kind: "unknown", label: "시간 미확인", lunchOk };
+  if (hours.breakStart && hours.breakEnd) {
+    const bs = toMinutes(hours.breakStart);
+    const be = toMinutes(hours.breakEnd);
+    if (within(now, bs, be)) {
+      return { kind: "break", label: `브레이크 ${hours.breakStart}–${hours.breakEnd}`, lunchOk };
+    }
+  }
+  if (!isOpenAt(hours, now)) return { kind: "closed", label: "영업 전·종료", lunchOk };
+  const close = toMinutes(hours.close);
+  const allDay = toMinutes(hours.open) === close || close === 24 * 60;
+  if (!allDay) {
+    const minsLeft = close >= now ? close - now : close + 24 * 60 - now;
+    if (minsLeft <= CLOSING_SOON_MIN) {
+      return { kind: "closingSoon", label: `${minsLeft}분 후 마감`, lunchOk };
+    }
+  }
+  return { kind: "open", label: "영업 중", lunchOk };
 }
 
 export function seoulMinutes(date: Date): number {
