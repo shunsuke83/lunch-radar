@@ -1,5 +1,5 @@
 import type { FilterState } from "@/components/restaurant-filters";
-import { OFFICE_REGION, type SortKey } from "@/lib/catalog";
+import { LEGACY_NO_BREAK_THEME, OFFICE_REGION, type SortKey } from "@/lib/catalog";
 
 export const EMPTY_FILTERS: FilterState = {
   q: "",
@@ -10,8 +10,14 @@ export const EMPTY_FILTERS: FilterState = {
   near: false,
   openNow: false,
   budget: false,
+  noBreak: false,
   sort: "reviews",
 };
+
+/** The removed "늦은 점심" theme now lives on as the 브레이크 없음 chip. */
+function migrateLegacyTheme(filters: FilterState): FilterState {
+  return filters.theme === LEGACY_NO_BREAK_THEME ? { ...filters, theme: "all", noBreak: true } : filters;
+}
 
 export type ExplorerState = {
   region: string;
@@ -49,9 +55,10 @@ export function parseExplorerSearch(search: string): Partial<ExplorerState> {
   if (q.has("near")) set("near", flag(q.get("near")));
   if (q.has("open")) set("openNow", flag(q.get("open")));
   if (q.has("budget")) set("budget", flag(q.get("budget")));
+  if (q.has("nobreak")) set("noBreak", flag(q.get("nobreak")));
   const sort = q.get("sort");
   if (sort && SORTS.has(sort as SortKey)) set("sort", sort as SortKey);
-  if (touched) out.filters = filters;
+  if (touched) out.filters = migrateLegacyTheme(filters);
   return out;
 }
 
@@ -69,6 +76,7 @@ export function serializeExplorerSearch(state: ExplorerState): string {
   if (f.near) q.set("near", "1");
   if (f.openNow) q.set("open", "1");
   if (f.budget) q.set("budget", "1");
+  if (f.noBreak) q.set("nobreak", "1");
   if (f.sort !== "reviews") q.set("sort", f.sort);
   return q.toString();
 }
@@ -82,7 +90,7 @@ export function readStoredExplorer(): Partial<ExplorerState> | null {
     if (typeof data.region === "string" && data.region) out.region = data.region;
     if (data.view === "list" || data.view === "map") out.view = data.view;
     if (data.filters && typeof data.filters === "object") {
-      out.filters = { ...EMPTY_FILTERS, ...data.filters };
+      out.filters = migrateLegacyTheme({ ...EMPTY_FILTERS, ...data.filters });
       if (!SORTS.has(out.filters.sort)) out.filters.sort = "reviews";
     }
     return out;

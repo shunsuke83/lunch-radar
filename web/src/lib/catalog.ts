@@ -143,26 +143,12 @@ export type ThemeDef = {
   test?: (r: Restaurant) => boolean;
 };
 
-/** Late lunch: open without a break from 14:00 until 15:30. */
-const LATE_LUNCH_FROM = 14 * 60;
-const LATE_LUNCH_UNTIL = 15 * 60 + 30;
 /** Cheapest menu item at or above this suggests a sit-down meal for guests or team dinners. */
 const HOSTING_MIN_WON = 18_000;
 
 /** Cross-category themes. Order here is chip order within each group. */
 export const THEMES: readonly ThemeDef[] = [
   { id: "점심특선", group: "상황", keywords: ["점심", "런치", "lunch", "Lunch", "LUNCH"] },
-  {
-    id: "늦은 점심",
-    group: "상황",
-    test: (r) => {
-      if (!r.hours) return false;
-      for (let t = LATE_LUNCH_FROM; t < LATE_LUNCH_UNTIL; t += 30) {
-        if (!isOpenAt(r.hours, t)) return false;
-      }
-      return true;
-    },
-  },
   {
     id: "해장",
     group: "상황",
@@ -303,8 +289,18 @@ export type RestaurantFilters = {
   openAt?: number | null;
   /** Some menu item at or under BUDGET_WON. */
   budget?: boolean;
+  /** Known hours with no break time. */
+  noBreak?: boolean;
   sort?: SortKey;
 };
+
+/** Theme id that became the "브레이크 없음" quick filter; old links map onto it. */
+export const LEGACY_NO_BREAK_THEME = "늦은 점심";
+
+/** Hours are known and there is no break time. Unknown hours → false. */
+export function hasNoBreak(hours: OpeningHours | undefined): boolean {
+  return !!hours && !(hours.breakStart && hours.breakEnd);
+}
 
 const METERS_PER_MINUTE = 80;
 export const NEAR_MINUTES = 5;
@@ -439,6 +435,7 @@ export function filterRestaurants(
       return false;
     }
     if (typeof openAt === "number" && !isOpenAt(r.hours, openAt)) return false;
+    if (filters.noBreak && !hasNoBreak(r.hours)) return false;
     if (filters.budget) {
       const p = minPrice(r);
       if (p === undefined || p > BUDGET_WON) return false;

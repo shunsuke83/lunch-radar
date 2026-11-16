@@ -16,6 +16,7 @@ export type FilterState = {
   near: boolean;
   openNow: boolean;
   budget: boolean;
+  noBreak: boolean;
   sort: SortKey;
 };
 
@@ -73,6 +74,7 @@ function activeFilterCount(value: FilterState, nearby: boolean): number {
   if (nearby && value.near) n++;
   if (value.openNow) n++;
   if (value.budget) n++;
+  if (value.noBreak) n++;
   if (value.sort !== "reviews") n++;
   return n;
 }
@@ -166,6 +168,9 @@ export function RestaurantFilters({
         onClick={() => set({ openNow: !value.openNow })}
       >
         지금 영업 중
+      </Chip>
+      <Chip selected={value.noBreak} onClick={() => set({ noBreak: !value.noBreak })}>
+        브레이크 없음
       </Chip>
       <Chip selected={value.budget} onClick={() => set({ budget: !value.budget })}>
         만원 이하

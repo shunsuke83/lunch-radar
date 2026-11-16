@@ -192,17 +192,19 @@ export function LunchExplorer({ catalog, regions }: Props) {
         district: isOffice ? "all" : deferred.district,
         near: isOffice && deferred.near,
         budget: deferred.budget,
+        noBreak: deferred.noBreak,
         openAt: deferred.openNow ? now : null,
         sort: !isOffice && deferred.sort === "distance" ? "reviews" : deferred.sort,
       }),
     [source, deferred, now, isOffice],
   );
 
-  /** Places dropped by "지금 영업 중" only because hours are unknown. */
+  /** Places dropped by "지금 영업 중" or "브레이크 없음" only because hours are unknown. */
+  const hoursFilterOn = (deferred.openNow && now !== null) || deferred.noBreak;
   const openNowSkipped = useMemo(() => {
-    if (!deferred.openNow || now === null) return 0;
+    if (!hoursFilterOn) return 0;
     return source.filter((r) => !r.hours).length;
-  }, [source, deferred.openNow, now]);
+  }, [source, hoursFilterOn]);
 
   const updatedAt = isOffice ? catalog.updatedAt : regions.updatedAt;
   const stamp = useMemo(() => {
@@ -321,7 +323,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
           }
         />
 
-        {deferred.openNow && openNowSkipped > 0 ? (
+        {hoursFilterOn && openNowSkipped > 0 ? (
           <p className="text-text-secondary typography-body-sm-regular">
             영업시간이 없어 {openNowSkipped.toLocaleString("ko-KR")}곳은 목록에서 뺐습니다.
           </p>
