@@ -96,7 +96,7 @@ npx @grok/agent-sdk serve --dir . --dev
 | `npm run catalog:naver-folders` | 네이버 공유 폴더 → `web/public/regions/*.json` (`--offline`은 캐시만) |
 | `npm run catalog:kakao-regions` | region용 카카오 장소·평점 캐시 |
 
-도보 기준점·지도 회사 핀은 `scripts/enrich-places.ts`의 `WALK_ORIGIN`입니다. 주소 문자열만 Local API 지오코딩을 씁니다.
+지도 회사 핀은 주소 지오코딩 좌표입니다. 도보 거리 계산만 `scripts/enrich-places.ts`의 `WALK_ORIGIN`(채널 "도보 약 Nm" 역산점)을 씁니다.
 
 ## 검증
 

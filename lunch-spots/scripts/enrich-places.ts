@@ -27,8 +27,9 @@ const OFFICE_ADDRESS = process.env.LUNCH_OFFICE_ADDRESS ?? "서울 강남구 남
 const SEARCH_RADIUS_M = 2000;
 const REFRESH_DAYS = 7;
 /**
- * Origin for walking distance and the map "회사" pin. Fitted from Slack
- * "도보 약 Nm" figures (RMS ≈18m). Address text still comes from geocoding.
+ * Origin for walking-distance math only (fitted from Slack "도보 약 Nm",
+ * RMS ≈18m). The map "회사" pin uses the geocoded office address instead —
+ * the two differ by ~170m along 남부순환로.
  */
 const WALK_ORIGIN: GeoPoint = { lat: 37.48487, lng: 127.03472 };
 const walkOnly = process.argv.includes("--walk");
@@ -170,12 +171,10 @@ if (fullPass && SLACK_TOKEN && CHANNEL_ID) {
   }
 }
 
-if (catalog.office) {
-  catalog.office = { ...catalog.office, ...WALK_ORIGIN };
-} else if (KAKAO_KEY) {
+if (KAKAO_KEY && (force || !catalog.office || catalog.office.address !== OFFICE_ADDRESS)) {
   const point = await kakaoAddress(OFFICE_ADDRESS);
   if (!point) throw new Error(`Kakao could not geocode ${OFFICE_ADDRESS}`);
-  catalog.office = { name: OFFICE_NAME, address: OFFICE_ADDRESS, ...WALK_ORIGIN };
+  catalog.office = { name: OFFICE_NAME, address: OFFICE_ADDRESS, ...point };
 }
 const office = catalog.office;
 
