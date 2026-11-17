@@ -1,15 +1,27 @@
 # 점심맛집 (lunch-radar)
 
-사내 Slack 점심 채널의 맛집 추천을 수집하고, 웹에서 필터해 보는 프로젝트입니다. 대상 채널은 환경 변수 `LUNCH_SPOTS_CHANNEL_ID`로 지정하며 저장소에는 넣지 않습니다.
+사내 Slack 점심 채널의 맛집 추천과 네이버지도 저장 목록을 모아, 웹에서 필터·지도로 고르는 프로젝트입니다. 대상 채널 ID는 환경 변수 `LUNCH_SPOTS_CHANNEL_ID`로만 두고 저장소에는 넣지 않습니다.
+
+**배포:** https://shunsuke83.github.io/lunch-radar/
 
 | 폴더 | 역할 | 실행에 필요한 것 |
 | --- | --- | --- |
-| [`web/`](web/) | 맛집 목록 브라우저 앱 (Next.js). 회사 근처·전국 탭, 테마(상황/메뉴/모음), 영업·휴무·점심 안내, 지도·상세, URL 공유 | Node.js만 있으면 됨 (샘플 데이터 포함) |
-| [`lunch-spots/`](lunch-spots/) | Slack Agent SDK 봇 (히스토리 + 실시간 수집, 추천) + 카탈로그 enrich/import 스크립트 | Node.js 22.13+, Agent SDK 로그인, Slack 토큰 |
+| [`web/`](web/) | Next.js 정적 사이트. 회사 근처·전국, 테마·영업·지도·상세, URL 공유 | Node.js (샘플 데이터 포함) |
+| [`lunch-spots/`](lunch-spots/) | Slack Agent SDK 봇 + 카탈로그 enrich/import 스크립트 | Node.js 22.13+, Agent SDK 로그인, Slack 토큰 |
 
-처음이라면 **웹 앱만 먼저 실행**해 보세요. Slack 없이도 `web/data/restaurants.json` 샘플 데이터로 UI를 확인할 수 있습니다.
+처음이라면 **웹만** 실행해 보세요. Slack 없이도 `web/data/restaurants.json`으로 UI를 확인할 수 있습니다. UI 상세는 [`web/README.md`](web/README.md), 봇·도구는 [`lunch-spots/README.md`](lunch-spots/README.md)입니다.
 
-웹 앱은 GitHub Actions로 GitHub Pages에 자동 배포됩니다: https://shunsuke83.github.io/lunch-radar/ (설정 방법은 [GitHub Pages 배포](#github-pages-배포) 참고)
+## 웹에서 할 수 있는 것
+
+- **범위**: 회사 근처 / 전국(시·도 → 시·군·구). 필터는 URL·localStorage에 남아 공유 가능.
+- **퀵 칩**: 도보 5분 이내, 지금 영업 중, 브레이크 없음, 식대 상한(8천·1만·1.2만·1.5만), 안 가본 곳만.
+- **영업·휴무**: Asia/Seoul 요일·시간. `hours.closedDays`(예: 월 휴무) 반영. 점심 가능은 11:30–13:30. 공휴일은 미반영.
+- **테마**: 상황·메뉴·모음(기본 접힘). 비 오면 Open-Meteo 배너 + 「비 오는 날」제안.
+- **정렬**: 리뷰 많은 순(기본), 평점 높은 순(Bayesian), 가까운 순, 내 주변 가까운 순(전국·위치 권한), 저렴한 순.
+- **목록·지도·상세**: 행/핀 클릭 → 메뉴·휴무·평판·가봤어요/별로. 회사 핀은 **주소 지오코딩** 좌표, 가게 핀 색은 영업 상태.
+- **오늘 뭐 먹지**: 후보 3곳 + Slack 투표 문구 복사(채널 자동 게시는 없음). 최근 7일 추가는 「새로 추가」뱃지.
+
+도보 거리(`walkMeters`·`walkMinutes`)는 카카오 도보 길찾기로 채우고, 계산 기준점(`WALK_ORIGIN`)은 채널 「도보 약 Nm」 역산점입니다. **지도 회사 핀과는 ~170m 다를 수 있습니다.**
 
 ## 1. 사전 준비
 
@@ -18,8 +30,6 @@
 | Git | 아무 버전 | `git --version` |
 | Node.js | **22.13 이상 권장** (웹만 쓸 경우 20 이상도 가능) | `node -v` |
 | npm | Node.js에 포함 | `npm -v` |
-
-Node.js가 없으면 설치합니다.
 
 ```powershell
 # Windows (PowerShell)
@@ -31,14 +41,14 @@ winget install OpenJS.NodeJS.LTS
 brew install node@22
 ```
 
-또는 [nodejs.org](https://nodejs.org/)에서 LTS 버전을 내려받습니다. **설치 후 터미널(및 Cursor/VS Code)을 완전히 껐다 켜야** `npm` 명령이 인식됩니다.
+또는 [nodejs.org](https://nodejs.org/) LTS. **설치 후 터미널을 다시 열어** `npm`이 잡히는지 확인합니다.
 
 ## 2. 클론
 
 ```bash
 git clone https://github.com/shunsuke83/lunch-radar.git
 cd lunch-radar
-git config core.hooksPath .githooks   # 커밋 전 민감정보 검사 (아래 "민감정보 검사")
+git config core.hooksPath .githooks   # 커밋 전 민감정보 검사
 ```
 
 ## 3. 웹 앱 실행
@@ -49,11 +59,9 @@ npm ci
 npm run dev
 ```
 
-브라우저에서 http://127.0.0.1:3847 을 엽니다.
+http://127.0.0.1:3847
 
-> Windows PowerShell 5에서는 `cd web && npm ci` 처럼 `&&`로 이어 쓸 수 없습니다. 위처럼 한 줄씩 실행하거나 `;`로 구분하세요.
-
-프로덕션 빌드로 실행하려면:
+> PowerShell 5에서는 `&&` 대신 한 줄씩 실행하거나 `;`를 쓰세요.
 
 ```bash
 cd web
@@ -62,22 +70,18 @@ npm run build
 npm run start
 ```
 
-프로덕션 모드에서 `POST /api/restaurants`(데이터 import)를 쓰려면 `web/.env.local`에 `IMPORT_TOKEN=<임의의 비밀값>`을 넣고, 요청 헤더 `x-import-token`으로 같은 값을 보내야 합니다. 설정하지 않으면 import는 403으로 막힙니다. 개발 모드(`npm run dev`)에서는 토큰 없이 import됩니다.
+프로덕션에서 `POST /api/restaurants`를 쓰려면 `web/.env.local`에 `IMPORT_TOKEN`을 넣고 헤더 `x-import-token`으로 보냅니다. 개발 모드에서는 토큰 없이 import됩니다.
 
-맛집 목록은 빌드 시점에 `web/data/restaurants.json`에서 읽어 페이지에 포함됩니다. 개발 모드에서는 새로고침만 하면 반영되지만, `npm run start`(프로덕션 서버)에서는 데이터가 바뀌면 `npm run build`를 다시 해야 합니다.
-
-GitHub Pages와 같은 정적 파일로 빌드하려면:
+맛집 목록은 빌드 시점의 `web/data/restaurants.json`(·`public/regions/`)을 읽습니다. `npm run start`에서는 데이터가 바뀌면 `npm run build`를 다시 해야 합니다.
 
 ```bash
 cd web
 npm run build:pages   # 결과물: web/out/
 ```
 
-`build:pages`는 정적 export에서 지원되지 않는 API 라우트(`src/app/api`)를 빌드 동안만 잠시 치워 두고 빌드한 뒤 원위치합니다. 하위 경로(`/lunch-radar/`)로 배포할 때는 `NEXT_PUBLIC_BASE_PATH=/lunch-radar` 환경 변수를 함께 줍니다.
+`build:pages`는 정적 export에서 안 되는 API 라우트를 빌드 동안만 잠시 치웁니다. 하위 경로 배포 시 `NEXT_PUBLIC_BASE_PATH=/lunch-radar`를 줍니다.
 
 ## 4. Slack 봇 실행 (선택)
-
-봇은 Agent SDK 계정 로그인과 Slack 앱 토큰이 필요합니다. 자세한 내용은 [`lunch-spots/README.md`](lunch-spots/README.md)를 참고하세요.
 
 ```bash
 cd lunch-spots
@@ -87,102 +91,96 @@ npx @grok/agent-sdk validate --dir .
 npx @grok/agent-sdk dev
 ```
 
-`lunch-spots/.env.local`에 대상 채널 `LUNCH_SPOTS_CHANNEL_ID=C…`를 넣어야 수집 도구와 채널 감시가 동작합니다. Slack 연결 시 토큰도 같은 파일에 저장됩니다 (형식은 [`lunch-spots/.env.example`](lunch-spots/.env.example) 참고). `.env*` 파일은 `.gitignore`에 포함되어 있으니 **토큰을 커밋하지 마세요.**
+`lunch-spots/.env.local`에 `LUNCH_SPOTS_CHANNEL_ID=C…`와 Slack 토큰이 필요합니다 ([`.env.example`](lunch-spots/.env.example)). **토큰을 커밋하지 마세요.**
 
 ## 5. 봇 → 웹 데이터 흐름
 
 1. 봇이 채널 히스토리/실시간 글에서 맛집을 수집합니다.
-2. 봇의 `export-restaurants` 도구가 `../web/data/restaurants.json`을 덮어씁니다. 그래서 **`lunch-spots`와 `web`은 이 저장소 구조 그대로 형제 폴더로 두고, 봇은 `lunch-spots` 폴더 안에서 실행**해야 합니다.
-3. 로컬 개발 서버라면 새로고침하면 반영됩니다. 웹이 다른 서버에 있으면 export 결과를 `POST /api/restaurants`로 보냅니다.
-4. GitHub Pages에 반영하려면 갱신된 `web/data/restaurants.json`을 커밋·푸시합니다. `main`에 푸시되면 Actions가 자동으로 다시 빌드·배포합니다. 평소에는 `collect-lunch.yml`이 매일 이 과정을 자동으로 합니다.
+2. `export-restaurants`가 `../web/data/restaurants.json`을 덮어씁니다. **`lunch-spots`와 `web`을 형제 폴더로 두고**, 봇은 `lunch-spots` 안에서 실행합니다.
+3. 로컬 `npm run dev`는 새로고침으로 반영. 원격 서버면 `POST /api/restaurants`.
+4. Pages 반영은 JSON 커밋·푸시. `main`의 `web/**` 변경 시 Actions가 배포합니다. 평소에는 `collect-lunch.yml`이 매일 돌립니다.
+
+### 카탈로그 스크립트 (`lunch-spots/`)
+
+| 명령 | 역할 |
+| --- | --- |
+| `npm run catalog:structure` | notes → menu / hours(`closedDays`) / walkMeters |
+| `npm run catalog:enrich` | 회사·가게 좌표, 평점·리뷰, 도보 길찾기, 빈 영업시간. `--hours` / `--walk`로 범위 축소 |
+| `npm run catalog:naver-folders` | 네이버 공유 폴더 → `web/public/regions/*.json` (`--offline`은 캐시만) |
+| `npm run catalog:kakao-regions` | region용 카카오 장소·평점 캐시 |
 
 ## GitHub Pages 배포
 
-`.github/workflows/`에 세 개의 워크플로가 있습니다.
-
 | 워크플로 | 트리거 | 하는 일 |
 | --- | --- | --- |
-| [`collect-lunch.yml`](.github/workflows/collect-lunch.yml) | 매일 11:17·14:43 (Asia/Seoul, GitHub 사정으로 늦어질 수 있음), 수동 실행 | Slack 채널 히스토리 수집 → `web/data/restaurants.json` 갱신·커밋 → Pages 배포 호출 |
-| [`deploy-pages.yml`](.github/workflows/deploy-pages.yml) | `main`에 `web/**` 변경 푸시, 수동 실행 | `npm run build:pages` → `web/out/`을 GitHub Pages에 배포 |
-| [`ci.yml`](.github/workflows/ci.yml) | 모든 PR, `main` 푸시 | 웹 정적 빌드(타입체크 포함), 봇 `npm run check`(타입체크) |
+| [`collect-lunch.yml`](.github/workflows/collect-lunch.yml) | 매일 11:17·14:43 (Asia/Seoul, 지연 가능), 수동 | Slack 수집 → enrich → `restaurants.json` 커밋 → Pages 배포 |
+| [`deploy-pages.yml`](.github/workflows/deploy-pages.yml) | `main`의 `web/**` 푸시, 수동 | `build:pages` → GitHub Pages |
+| [`ci.yml`](.github/workflows/ci.yml) | PR, `main` 푸시 | 웹 빌드·타입체크, 봇 `npm run check`, 민감정보 검사 |
 
 ### 네이버지도 저장 목록 (지역 데이터)
 
-회사 근처 밖의 맛집은 네이버지도 공유 폴더에서 한 번씩 가져옵니다(자동 수집 아님).
+회사 밖 맛집은 네이버지도 공유 폴더에서 **수동으로** 가져옵니다.
 
-1. `lunch-spots/.naver-folders.local`(커밋 안 됨)에 공유 폴더 ID를 한 줄에 하나씩 적습니다. `naver.me` 링크를 열었을 때 주소의 `.../sharedPlace/folder/<ID>` 부분입니다. ID 뒤에 이름을 적으면 그 폴더의 가게가 웹의 테마로 보입니다(예: `<ID> 미쉐린 서울 2026`).
-2. `lunch-spots`에서 `npm run catalog:naver-folders`를 실행합니다. 가게마다 네이버 장소 페이지에서 업종·주소·영업시간(`hours`, 휴무 요일은 `hours.closedDays`)·대표 메뉴를 읽습니다. 네이버가 빠른 요청을 429로 막으므로 기본은 한 번에 1곳, 요청 사이 3초(`--concurrency`, `--delay`로 조정)이며 5천 곳이면 몇 시간 걸립니다. 받은 내용은 `lunch-spots/.cache/`에 쌓여서 중간에 끊겨도 다시 실행하면 이어 받습니다. `--offline`은 요청 없이 캐시만으로 파일을 다시 만듭니다.
-3. 결과는 `web/public/regions/<시·도>.json`과 `web/data/regions.json`입니다. 회사 근처 목록에 이미 있는 가게(네이버 장소 ID 기준)와 폐업 표시된 장소는 빠집니다. 폴더 링크·폴더 이름(테마로 지정한 것 제외)·저장한 사람 정보는 파일에 넣지 않습니다.
+1. `lunch-spots/.naver-folders.local`(gitignore)에 공유 폴더 ID를 한 줄에 하나. `.../sharedPlace/folder/<ID>`. ID 뒤 이름은 테마「모음」으로 씁니다.
+2. `npm run catalog:naver-folders` — 업종·주소·`hours`/`closedDays`·메뉴. 기본 concurrency 1, delay 3초. 캐시는 `.cache/`. `--offline`은 캐시만 재생성.
+3. 결과: `web/public/regions/<시·도>.json`, `web/data/regions.json`. 회사 목록과 네이버 ID가 겹치거나 폐업 표시면 제외. 폴더 링크·저장자 정보는 넣지 않습니다.
 
 ### Slack 자동 수집 (`collect-lunch.yml`)
 
-동작 순서:
+1. **사전 확인**: Slack 최신 메시지 ts ↔ `lastMessageTs`. 새 글 없으면 종료(모델 호출 없음).
+2. **증분 수집**: `seed-from-catalog` → `ingest-channel-history`(이후 메시지만) → upsert → export. `lastMessageTs` 없으면 전체 재구성.
+3. **enrich**: `catalog:enrich` — 회사 주소 지오코딩(지도 핀), 가게 좌표·카카오맵, 별점·리뷰, 카카오 도보 길찾기(`walkMeters`/`walkMinutes`, 실패 시 직선거리·`walkFromMap`), 빈 `hours` 보강. 평점·리뷰는 약 7일마다. 실패해도 수집 커밋은 진행.
+4. **커밋·배포**: 실질 변경이 있을 때만. export 0곳이면 실패·기존 유지.
 
-1. **사전 확인 (모델 호출 없음)**: Slack에서 최신 메시지 시각만 조회해 `web/data/restaurants.json`의 `lastMessageTs`와 비교합니다. 새 메시지가 없으면 여기서 끝납니다.
-2. **증분 수집**: `agent-sdk run`으로 봇을 한 번 실행합니다. `seed-from-catalog`가 기존 카탈로그를 불러오고, `ingest-channel-history`는 `lastMessageTs` 이후 메시지만 가져와 모델이 새 맛집만 반영합니다. 카탈로그에 `lastMessageTs`가 없으면 전체 히스토리로 다시 만듭니다.
-3. **지도·평점·리뷰·도보 보강** (새 메시지가 없어도 실행): `npm run catalog:enrich`가 카카오 Local API(`KAKAO_REST_API_KEY`가 있을 때)로 회사·가게 좌표와 카카오맵 링크를 찾고, 카카오맵 후기 별점·후기 수를 `rating`에, 네이버 방문자 리뷰를 `naverReviews`/`naverScore`에 붙입니다. 지도 **회사 핀**은 주소 지오코딩 좌표이고, 도보 거리 계산만 별도 기준점(`WALK_ORIGIN`, 채널 "도보 약 Nm" 역산)을 씁니다. 도보 거리는 카카오 도보 길찾기(`GET /v2/routing/walk`)로 `walkMeters`·`walkMinutes`를 채우며, 실패 시 직선거리로 폴백합니다(`walkFromMap: true`). 영업시간이 비어 있고 네이버 장소 ID가 있으면 장소 상세에서 `hours`(휴무 요일 `closedDays` 포함)를 채웁니다. 로컬에서만 돌릴 때 `--hours`(영업시간만), `--walk`(도보만)로 범위를 줄일 수 있습니다. 평점·리뷰는 7일마다 다시 조회합니다. 이 단계가 실패해도 수집 결과 커밋은 계속합니다.
-4. **커밋·배포**: 타임스탬프 외에 바뀐 내용이 있을 때만 커밋하고 Pages 배포를 호출합니다. export 결과가 0곳이면 실패 처리하고 기존 데이터를 유지합니다.
+지시문: [`lunch-spots/ci/collect-prompt.md`](lunch-spots/ci/collect-prompt.md). 수동 실행 시 `force`면 새 글 없어도 봇 실행. 전체 재구성은 JSON에서 `lastMessageTs` 삭제.
 
-지시문은 [`lunch-spots/ci/collect-prompt.md`](lunch-spots/ci/collect-prompt.md)입니다. 수동 실행 시 `force`를 켜면 새 메시지가 없어도 봇을 실행합니다. 처음부터 다시 만들려면 JSON에서 `lastMessageTs`를 지우고 실행합니다.
-
-필요한 저장소 Secrets (**Settings → Secrets and variables → Actions**):
+**Secrets** (Settings → Secrets and variables → Actions):
 
 | Secret | 값 |
 | --- | --- |
-| `CURSOR_API_KEY` | Cursor API 키 (모델 호출용, 대시보드에서 발급) |
-| `LUNCH_SPOTS_SLACK_USER_TOKEN` | Slack User OAuth Token `xoxp-...` (`channels:history`, `groups:history`) |
-| `LUNCH_SPOTS_CHANNEL_ID` | 수집할 Slack 채널 ID (Slack 채널 정보 하단의 `C…` 값). Secret이라 로그에서도 가려집니다. |
-| `KAKAO_REST_API_KEY` | (선택) [Kakao Developers](https://developers.kakao.com/) 앱의 REST API 키. 가게 좌표·카카오맵 링크. 앱 설정의 **제품 설정 → 카카오맵**을 "사용함"으로 켜야 합니다(꺼져 있으면 `disabled OPEN_MAP_AND_LOCAL service` 403) |
-지도 표시용 **Variable**(Secret 아님, 같은 화면의 Variables 탭):
+| `CURSOR_API_KEY` | Cursor API 키 (모델 호출) |
+| `LUNCH_SPOTS_SLACK_USER_TOKEN` | Slack User OAuth `xoxp-...` (`channels:history`, `groups:history`) |
+| `LUNCH_SPOTS_CHANNEL_ID` | 채널 ID (`C…`) |
+| `KAKAO_REST_API_KEY` | (선택) Kakao REST 키. 좌표·지도 링크·**도보 길찾기**. 앱에서 **카카오맵** 제품 ON |
+
+**Variable** (Variables 탭, Secret 아님):
 
 | Variable | 값 |
 | --- | --- |
-| `KAKAO_MAP_JS_KEY` | 같은 카카오 앱의 JavaScript 키. 브라우저에 그대로 노출되는 키라 Secret이 아닌 Variable로 둡니다. 카카오 앱 **플랫폼 → Web 사이트 도메인**에 `https://<사용자명>.github.io`와 로컬 확인용 `http://127.0.0.1:3847`을 등록해야 지도가 뜹니다. |
+| `KAKAO_MAP_JS_KEY` | JavaScript 키. Web 도메인에 `https://<user>.github.io`, `http://127.0.0.1:3847` 등록 |
 
-회사 위치는 기본값 `서울 강남구 남부순환로 2621`(플래그원)이며 `LUNCH_OFFICE_ADDRESS` / `LUNCH_OFFICE_NAME` 환경 변수로 바꿀 수 있습니다. 키가 없으면 지도 대신 안내 문구가 나오고, 가게별 네이버지도·카카오맵 버튼은 키 없이도 동작합니다(장소를 모르면 이름 검색으로 연결).
+회사 기본 주소는 `서울 강남구 남부순환로 2621`(플래그원). `LUNCH_OFFICE_ADDRESS` / `LUNCH_OFFICE_NAME`으로 변경. 지도 JS 키가 없으면 지도 대신 안내 문구, 가게별 네이버·카카오 버튼은 키 없이 동작합니다.
 
-웹 앱 요약 (자세한 UI는 [`web/README.md`](web/README.md)):
-
-- **범위**: 회사 근처 / 전국(시·도 → 시·군·구). 필터는 URL·localStorage에 남아 링크 공유가 됩니다.
-- **퀵 칩**: 도보 5분 이내, 지금 영업 중, 브레이크 없음, 식대 상한(8천·1만·1.2만·1.5만), 안 가본 곳만. 영업·휴무는 Asia/Seoul 요일·시간 기준(공휴일 미반영).
-- **테마**: 상황·메뉴·모음 그룹(기본 접힘). 비 오는 날이면 Open-Meteo로 날씨 배너·테마 제안.
-- **정렬**: 리뷰 많은 순(기본), 평점 높은 순(Bayesian 보정), 가까운 순(회사 근처), 내 주변 가까운 순(전국·위치 권한), 저렴한 순.
-- **목록·지도·상세**: 행/핀 클릭으로 상세(메뉴·휴무·가봤어요/별로). 지도 핀 색은 영업 상태. 「오늘 뭐 먹지」로 후보 3곳 + Slack 투표 문구 복사(자동 게시는 없음).
-
-수집 단계 로그에는 모델의 최종 답변만 남깁니다(도구 호출 인자에 Slack 사용자 ID가 들어 있기 때문).
-
-전체 재구성은 약 4~5분, 모델 입력 수십만 토큰이 들지만, 새 메시지가 없는 날은 모델을 호출하지 않고 새 메시지가 있는 날도 그 메시지만 처리합니다. 사용자 토큰은 그 사용자가 볼 수 있는 모든 채널을 읽을 수 있으므로 저장소 쓰기 권한자 범위를 관리하세요.
+수집 로그에는 모델 최종 답변만 남깁니다(도구 인자에 Slack 사용자 ID가 들어갈 수 있음). 사용자 토큰은 그 사용자가 볼 수 있는 채널을 읽을 수 있으므로 쓰기 권한자 범위를 관리하세요.
 
 ### 최초 1회 설정
 
-1. GitHub 저장소 → **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 바꿉니다.
-2. 변경 사항을 `main`에 푸시하거나, **Actions → Deploy web to GitHub Pages → Run workflow**로 수동 실행합니다.
-3. 배포가 끝나면 `https://<GitHub 사용자명>.github.io/<저장소명>/`에서 열립니다. 하위 경로(basePath)는 워크플로가 `actions/configure-pages`에서 자동으로 받아 오므로, 저장소 이름을 바꾸거나 포크해도 별도 수정이 필요 없습니다.
+1. Settings → Pages → Source → **GitHub Actions**
+2. `main` 푸시 또는 Actions → Deploy web to GitHub Pages → Run workflow
+3. `https://<user>.github.io/<repo>/` — basePath는 `configure-pages`가 맞춤
 
 ### 주의
 
-- **GitHub Pages는 누구나 볼 수 있는 공개 사이트입니다** (비공개 저장소여도 Enterprise 플랜이 아니면 공개). 사내 Slack에서 수집한 데이터를 올려도 되는지 먼저 확인하세요.
-- Pages에는 서버가 없으므로 `POST /api/restaurants` import는 동작하지 않습니다. 데이터 갱신은 `web/data/restaurants.json` 커밋으로만 합니다.
-- Slack에서 멘션·DM으로 대화하는 봇 기능은 계속 실행되는 서버가 필요해 Actions로 대체되지 않습니다. 필요하면 로컬이나 `npx @grok/agent-sdk deploy`로 띄웁니다. 수집만은 `collect-lunch.yml`이 대신합니다.
+- Pages는 **공개**입니다(비공개 저장소도 일반 플랜이면 사이트는 공개).
+- Pages에는 서버가 없어 `POST /api/restaurants`는 동작하지 않습니다. 데이터는 JSON 커밋으로만.
+- Slack 멘션·DM 봇은 상시 서버가 필요합니다. 수집만 Actions가 담당합니다.
 
 ## 민감정보 검사
 
-저장소와 Pages가 모두 공개라서, Slack 식별자가 한 번이라도 커밋되면 이력 재작성이 필요합니다. `node scripts/check-sensitive.mjs`가 추적 파일 전체에서 다음을 찾으면 실패합니다.
+`node scripts/check-sensitive.mjs`가 추적 파일에서 다음을 찾으면 실패합니다.
 
-- Slack 사용자·채널·팀 ID(`U0…`, `C0…`, `T0…` 형태), Slack 토큰(`xoxb-…`, `xoxp-…`, `xapp-…`), Slack 메시지 링크, Google API 키
-- `.env.example`이 아닌 `.env*` 파일
-- `web/data/restaurants.json`의 최상위 `channelId`와 가게별 `source` / `countedMessages` / `author` / `messageTs` / `permalink` / `channelId` 필드
+- Slack 사용자·채널·팀 ID, 토큰, 메시지 링크, Google API 키
+- `.env.example`이 아닌 `.env*`
+- `restaurants.json`의 `channelId` / 가게 `source`·`countedMessages`·`author`·`messageTs`·`permalink`·`channelId`
 
 | 시점 | 동작 |
 | --- | --- |
-| 커밋 전 (`.githooks/pre-commit`, 클론마다 `git config core.hooksPath .githooks` 1회) | 스테이징된 내용 검사, 위반 시 커밋 거부 |
-| CI (`ci.yml`의 `sensitive-data`, push·PR) | 위반 시 실패 |
-| Pages 배포 (`deploy-pages.yml`) | 위반 시 빌드 전에 중단, 사이트는 이전 버전 유지 |
-| 자동 수집 커밋 (`collect-lunch.yml`) | 위반 시 커밋·푸시하지 않음 |
+| 커밋 전 (`.githooks/pre-commit`) | 스테이징 검사, 위반 시 거부 |
+| CI / Pages 배포 / 자동 수집 | 위반 시 실패·배포·푸시 중단 |
 
-GitHub 웹의 "Add files via upload"는 로컬 훅을 거치지 않습니다. 이 경우 CI가 실패로 알리고 배포는 막히지만 커밋 자체는 이미 들어간 상태이므로, 데이터 파일은 로컬에서 커밋하세요.
+GitHub 웹 업로드는 로컬 훅을 건너뜁니다. 데이터 파일은 로컬에서 커밋하세요.
 
-손으로 넣는 가게는 `source` 대신 다음 형식을 씁니다.
+손 등록 가게는 `source` 대신:
 
 ```json
 {
@@ -202,16 +200,17 @@ GitHub 웹의 "Add files via upload"는 로컬 훅을 거치지 않습니다. �
 
 | 증상 | 원인 / 해결 |
 | --- | --- |
-| `'npm' 용어가 ... 인식되지 않습니다` / `npm: command not found` | Node.js 미설치 또는 PATH 미반영. 1단계대로 설치한 뒤 터미널을 다시 엽니다. |
-| `npm ci` 실패 (lockfile 불일치) | `npm install`로 대신 실행합니다. |
-| 봇 설치 시 `EBADENGINE` 경고 / 실행 오류 | Node.js 22.13 미만입니다. `node -v` 확인 후 업그레이드합니다. |
-| `Port 3847 is already in use` | 이미 실행 중인 dev 서버를 종료하거나 `npx next dev --port 3848`처럼 다른 포트를 씁니다. |
-| 웹 목록이 비어 있음 / 빌드 실패 | `web/data/restaurants.json`이 없거나 JSON이 깨졌습니다. `git checkout web/data/restaurants.json`으로 샘플을 복구합니다. |
-| Pages에서 화면이 깨지거나 CSS/JS가 404 | Settings → Pages의 Source가 **GitHub Actions**인지 확인합니다. 직접 빌드했다면 `NEXT_PUBLIC_BASE_PATH`가 저장소 경로와 같은지 확인합니다. |
-| Windows에서 `build:pages`가 `EPERM ... rename` 오류 | 실행 중인 `npm run dev`가 `src/app/api` 폴더를 잡고 있습니다. dev 서버를 끄고 다시 실행합니다. |
-| `build:pages` 도중 강제 종료 후 API가 사라짐 | `web/.api-parked` 폴더를 `web/src/app/api`로 되돌립니다. |
+| `npm` 인식 안 됨 | Node 미설치·PATH. 1단계 후 터미널 재시작 |
+| `npm ci` lockfile 불일치 | `npm install` |
+| 봇 `EBADENGINE` | Node 22.13+ 필요 |
+| Port 3847 in use | 기존 dev 종료 또는 다른 포트 |
+| 목록 비어 있음 / 빌드 실패 | `web/data/restaurants.json` 복구 |
+| Pages CSS/JS 404 | Pages Source = GitHub Actions, `BASE_PATH` 확인 |
+| Windows `build:pages` EPERM | `npm run dev` 종료 후 재시도 |
+| `build:pages` 중단 후 API 사라짐 | `web/.api-parked` → `web/src/app/api` |
+| 회사 핀이 건물과 어긋남 | enrich가 주소 지오코딩을 쓰는지 확인. 도보 기준점(`WALK_ORIGIN`)과 혼동하지 말 것 |
 
 ## 참고
 
-- 화면은 사내 [Admin Design System](https://genonai.github.io/admin-design-system)의 토큰·컴포넌트 모양을 따릅니다. 폰트는 `pretendard` npm 패키지(SIL OFL)에서 번들되어 빌드 시 외부 폰트 서버에 접속하지 않습니다. 자세한 내용은 [web/README](web/README.md#디자인)를 참고하세요.
-- `web`이 고정한 Next.js 15.2.4에는 보안 권고([CVE-2025-66478](https://nextjs.org/blog/CVE-2025-66478))가 있습니다. 로컬 확인용이 아니라 외부에 배포한다면 패치된 버전으로 올리세요.
+- UI는 [Admin Design System](https://genonai.github.io/admin-design-system) 토큰·컴포넌트 모양. 폰트는 `pretendard`(SIL OFL) 번들. → [web/README 디자인](web/README.md#디자인)
+- Next.js 15.2.4에는 [CVE-2025-66478](https://nextjs.org/blog/CVE-2025-66478) 권고가 있습니다. 외부 배포 시 패치 버전으로 올리세요.
