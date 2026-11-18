@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-17T10:48:38.564Z",
+  "updatedAt": "2026-11-18T10:16:12.844Z",
   "source": "slack-export",
-  "lastMessageTs": "1794880827.735469",
+  "lastMessageTs": "1794967225.126299",
   "restaurants": [
     {
       "slug": "국미당-양재역",
@@ -272,7 +272,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1842885713",
         "address": "서울 서초구 남부순환로347길 53"
       },
-      "ratingCheckedAt": "2026-11-17T14:53:39.745Z",
+      "ratingCheckedAt": "2026-11-18T10:16:39.717Z",
       "naverCheckedAt": "2026-11-13T04:23:31.447Z",
       "naver": {
         "placeId": "1925656389",
@@ -477,7 +477,7 @@
         "kakaoUrl": "https://place.map.kakao.com/420171715",
         "address": "서울 서초구 남부순환로347길 23"
       },
-      "ratingCheckedAt": "2026-11-17T14:53:43.947Z",
+      "ratingCheckedAt": "2026-11-18T10:16:43.634Z",
       "naverCheckedAt": "2026-11-13T04:24:06.791Z",
       "naver": {
         "placeId": "1583880509",
@@ -697,7 +697,7 @@
         "kakaoUrl": "https://place.map.kakao.com/873475210",
         "address": "서울 서초구 강남대로 222-4"
       },
-      "ratingCheckedAt": "2026-11-17T14:53:46.875Z",
+      "ratingCheckedAt": "2026-11-18T10:16:46.499Z",
       "naverCheckedAt": "2026-11-13T04:24:27.734Z",
       "naver": {
         "placeId": "964119437",
@@ -1109,6 +1109,62 @@
       "walkFromMap": true
     },
     {
+      "slug": "화차이",
+      "name": "화차이",
+      "area": "양재",
+      "category": "중식",
+      "priceRange": "8,000~9,000원",
+      "notes": "유니짜장면 8,000 / 간짜장면 9,000 · 11:00-20:50 · 도보 약 313m",
+      "tags": [
+        "중식",
+        "짜장면"
+      ],
+      "addedAt": "2026-11-06T04:20:29.286Z",
+      "updatedAt": "2026-11-18T10:16:06.386Z",
+      "mentionCount": 3,
+      "subcategory": "짬뽕·해물덮밥",
+      "menu": [
+        {
+          "name": "유니짜장면",
+          "price": 8000
+        },
+        {
+          "name": "간짜장면",
+          "price": 9000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "20:50"
+      },
+      "walkMeters": 503,
+      "location": {
+        "lat": 37.48369628344809,
+        "lng": 127.03791523079846
+      },
+      "place": {
+        "kakaoId": "872121672",
+        "kakaoUrl": "https://place.map.kakao.com/872121672",
+        "address": "서울 서초구 남부순환로356길 26"
+      },
+      "ratingCheckedAt": "2026-11-13T04:28:17.169Z",
+      "rating": {
+        "score": 4,
+        "count": 50,
+        "source": "kakao",
+        "url": "https://place.map.kakao.com/872121672",
+        "fetchedAt": "2026-11-13T04:28:17.169Z"
+      },
+      "naverCheckedAt": "2026-11-13T04:28:21.582Z",
+      "naver": {
+        "placeId": "193891932",
+        "url": "https://map.naver.com/p/entry/place/193891932"
+      },
+      "naverReviews": 625,
+      "walkMinutes": 8,
+      "walkFromMap": true
+    },
+    {
       "slug": "곰작골나주곰탕-양재점",
       "name": "곰작골나주곰탕 양재점",
       "area": "양재",
@@ -1210,7 +1266,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1311036367",
         "address": "서울 서초구 강남대로43길 11"
       },
-      "ratingCheckedAt": "2026-11-17T14:53:52.576Z",
+      "ratingCheckedAt": "2026-11-18T10:16:52.306Z",
       "naverCheckedAt": "2026-11-13T04:25:29.842Z",
       "naver": {
         "placeId": "1798445957",
@@ -1218,6 +1274,63 @@
       },
       "naverReviews": 1217,
       "naverScore": 4.89,
+      "walkMinutes": 9,
+      "walkFromMap": true
+    },
+    {
+      "slug": "다돈식당",
+      "name": "다돈식당",
+      "area": "양재",
+      "category": "일식",
+      "priceRange": "10,000~12,500원",
+      "notes": "로스까스 10,000 / 코돈부르치즈돈까스 12,500 · 11:00-21:20 (14:00-16:00 브레이크) · 도보 약 464m",
+      "tags": [
+        "돈까스"
+      ],
+      "addedAt": "2026-11-06T04:20:23.974Z",
+      "updatedAt": "2026-11-18T10:16:06.385Z",
+      "mentionCount": 2,
+      "subcategory": "돈까스",
+      "menu": [
+        {
+          "name": "로스까스",
+          "price": 10000
+        },
+        {
+          "name": "코돈부르치즈돈까스",
+          "price": 12500
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:20",
+        "breakStart": "14:00",
+        "breakEnd": "16:00"
+      },
+      "walkMeters": 592,
+      "location": {
+        "lat": 37.4889442290356,
+        "lng": 127.033356520433
+      },
+      "place": {
+        "kakaoId": "1776637227",
+        "kakaoUrl": "https://place.map.kakao.com/1776637227",
+        "address": "서울 강남구 도곡로2길 13"
+      },
+      "ratingCheckedAt": "2026-11-13T04:29:12.069Z",
+      "rating": {
+        "score": 4.5,
+        "count": 15,
+        "source": "kakao",
+        "url": "https://place.map.kakao.com/1776637227",
+        "fetchedAt": "2026-11-13T04:29:12.069Z"
+      },
+      "naverCheckedAt": "2026-11-13T04:29:16.659Z",
+      "naver": {
+        "placeId": "1765708831",
+        "url": "https://map.naver.com/p/entry/place/1765708831"
+      },
+      "naverReviews": 2520,
       "walkMinutes": 9,
       "walkFromMap": true
     },
@@ -1754,6 +1867,62 @@
       },
       "walkMeters": 289,
       "naverCheckedAt": "2026-11-13T04:26:52.046Z"
+    },
+    {
+      "slug": "예당",
+      "name": "예당",
+      "area": "양재",
+      "category": "한식",
+      "priceRange": "10,000~15,000원",
+      "notes": "찐만두 10,000 / 감자전 15,000 · 11:00-22:00 · 도보 약 467m",
+      "tags": [
+        "만두",
+        "한식"
+      ],
+      "addedAt": "2026-11-06T04:20:36.920Z",
+      "updatedAt": "2026-11-18T10:16:06.386Z",
+      "mentionCount": 2,
+      "subcategory": "만두국·손만두전골",
+      "menu": [
+        {
+          "name": "찐만두",
+          "price": 10000
+        },
+        {
+          "name": "감자전",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00"
+      },
+      "walkMeters": 604,
+      "location": {
+        "lat": 37.48890107089672,
+        "lng": 127.03303537425661
+      },
+      "place": {
+        "kakaoId": "16555131",
+        "kakaoUrl": "https://place.map.kakao.com/16555131",
+        "address": "서울 강남구 도곡로2길 12"
+      },
+      "ratingCheckedAt": "2026-11-13T04:32:34.973Z",
+      "rating": {
+        "score": 3.8,
+        "count": 11,
+        "source": "kakao",
+        "url": "https://place.map.kakao.com/16555131",
+        "fetchedAt": "2026-11-13T04:32:34.973Z"
+      },
+      "naverCheckedAt": "2026-11-13T04:32:39.290Z",
+      "naver": {
+        "placeId": "18855701",
+        "url": "https://map.naver.com/p/entry/place/18855701"
+      },
+      "naverReviews": 334,
+      "walkMinutes": 9,
+      "walkFromMap": true
     },
     {
       "slug": "오향절면",
@@ -2347,62 +2516,6 @@
       "walkFromMap": true
     },
     {
-      "slug": "화차이",
-      "name": "화차이",
-      "area": "양재",
-      "category": "중식",
-      "priceRange": "8,000~9,000원",
-      "notes": "유니짜장면 8,000 / 간짜장면 9,000 · 11:00-20:50 · 도보 약 313m",
-      "tags": [
-        "중식",
-        "짜장면"
-      ],
-      "addedAt": "2026-11-06T04:20:29.286Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 2,
-      "subcategory": "짬뽕·해물덮밥",
-      "menu": [
-        {
-          "name": "유니짜장면",
-          "price": 8000
-        },
-        {
-          "name": "간짜장면",
-          "price": 9000
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "20:50"
-      },
-      "walkMeters": 503,
-      "location": {
-        "lat": 37.48369628344809,
-        "lng": 127.03791523079846
-      },
-      "place": {
-        "kakaoId": "872121672",
-        "kakaoUrl": "https://place.map.kakao.com/872121672",
-        "address": "서울 서초구 남부순환로356길 26"
-      },
-      "ratingCheckedAt": "2026-11-13T04:28:17.169Z",
-      "rating": {
-        "score": 4,
-        "count": 50,
-        "source": "kakao",
-        "url": "https://place.map.kakao.com/872121672",
-        "fetchedAt": "2026-11-13T04:28:17.169Z"
-      },
-      "naverCheckedAt": "2026-11-13T04:28:21.582Z",
-      "naver": {
-        "placeId": "193891932",
-        "url": "https://map.naver.com/p/entry/place/193891932"
-      },
-      "naverReviews": 625,
-      "walkMinutes": 8,
-      "walkFromMap": true
-    },
-    {
       "slug": "후토루-양재점",
       "name": "후토루 양재점",
       "area": "양재",
@@ -2734,7 +2847,7 @@
         "kakaoUrl": "https://place.map.kakao.com/14659473",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-17T14:54:07.869Z",
+      "ratingCheckedAt": "2026-11-18T10:17:06.870Z",
       "naverCheckedAt": "2026-11-13T04:29:02.847Z",
       "naver": {
         "placeId": "20652838",
@@ -2808,63 +2921,6 @@
         ]
       },
       "walkMinutes": 11
-    },
-    {
-      "slug": "다돈식당",
-      "name": "다돈식당",
-      "area": "양재",
-      "category": "일식",
-      "priceRange": "10,000~12,500원",
-      "notes": "로스까스 10,000 / 코돈부르치즈돈까스 12,500 · 11:00-21:20 (14:00-16:00 브레이크) · 도보 약 464m",
-      "tags": [
-        "돈까스"
-      ],
-      "addedAt": "2026-11-06T04:20:23.974Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 1,
-      "subcategory": "돈까스",
-      "menu": [
-        {
-          "name": "로스까스",
-          "price": 10000
-        },
-        {
-          "name": "코돈부르치즈돈까스",
-          "price": 12500
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "21:20",
-        "breakStart": "14:00",
-        "breakEnd": "16:00"
-      },
-      "walkMeters": 592,
-      "location": {
-        "lat": 37.4889442290356,
-        "lng": 127.033356520433
-      },
-      "place": {
-        "kakaoId": "1776637227",
-        "kakaoUrl": "https://place.map.kakao.com/1776637227",
-        "address": "서울 강남구 도곡로2길 13"
-      },
-      "ratingCheckedAt": "2026-11-13T04:29:12.069Z",
-      "rating": {
-        "score": 4.5,
-        "count": 15,
-        "source": "kakao",
-        "url": "https://place.map.kakao.com/1776637227",
-        "fetchedAt": "2026-11-13T04:29:12.069Z"
-      },
-      "naverCheckedAt": "2026-11-13T04:29:16.659Z",
-      "naver": {
-        "placeId": "1765708831",
-        "url": "https://map.naver.com/p/entry/place/1765708831"
-      },
-      "naverReviews": 2520,
-      "walkMinutes": 9,
-      "walkFromMap": true
     },
     {
       "slug": "대려도",
@@ -3085,7 +3141,7 @@
       },
       "walkMeters": 835,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-17T14:54:13.521Z",
+      "ratingCheckedAt": "2026-11-18T10:17:11.179Z",
       "naverCheckedAt": "2026-11-13T04:29:44.885Z",
       "naver": {
         "placeId": "1910073147",
@@ -3440,7 +3496,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1868934600",
         "address": "서울 강남구 남부순환로365길 22"
       },
-      "ratingCheckedAt": "2026-11-17T14:54:17.324Z",
+      "ratingCheckedAt": "2026-11-18T10:17:14.770Z",
       "naverCheckedAt": "2026-11-13T04:30:27.717Z",
       "naver": {
         "placeId": "1017653627",
@@ -3841,7 +3897,7 @@
         "kakaoUrl": "https://place.map.kakao.com/96772273",
         "address": "서울 서초구 남부순환로350길 19-26"
       },
-      "ratingCheckedAt": "2026-11-17T14:54:23.217Z",
+      "ratingCheckedAt": "2026-11-18T10:17:20.318Z",
       "naver": {
         "placeId": "1788599337",
         "url": "https://map.naver.com/p/entry/place/1788599337"
@@ -4464,7 +4520,7 @@
           "일"
         ]
       },
-      "ratingCheckedAt": "2026-11-17T14:54:39.993Z",
+      "ratingCheckedAt": "2026-11-18T10:17:36.243Z",
       "place": {
         "kakaoId": "23985599",
         "kakaoUrl": "https://place.map.kakao.com/23985599",
@@ -4473,62 +4529,6 @@
       "naverCheckedAt": "2026-11-13T04:32:32.507Z",
       "naverReviews": 830,
       "walkMinutes": 7
-    },
-    {
-      "slug": "예당",
-      "name": "예당",
-      "area": "양재",
-      "category": "한식",
-      "priceRange": "10,000~15,000원",
-      "notes": "찐만두 10,000 / 감자전 15,000 · 11:00-22:00 · 도보 약 467m",
-      "tags": [
-        "만두",
-        "한식"
-      ],
-      "addedAt": "2026-11-06T04:20:36.920Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 1,
-      "subcategory": "만두국·손만두전골",
-      "menu": [
-        {
-          "name": "찐만두",
-          "price": 10000
-        },
-        {
-          "name": "감자전",
-          "price": 15000
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "22:00"
-      },
-      "walkMeters": 604,
-      "location": {
-        "lat": 37.48890107089672,
-        "lng": 127.03303537425661
-      },
-      "place": {
-        "kakaoId": "16555131",
-        "kakaoUrl": "https://place.map.kakao.com/16555131",
-        "address": "서울 강남구 도곡로2길 12"
-      },
-      "ratingCheckedAt": "2026-11-13T04:32:34.973Z",
-      "rating": {
-        "score": 3.8,
-        "count": 11,
-        "source": "kakao",
-        "url": "https://place.map.kakao.com/16555131",
-        "fetchedAt": "2026-11-13T04:32:34.973Z"
-      },
-      "naverCheckedAt": "2026-11-13T04:32:39.290Z",
-      "naver": {
-        "placeId": "18855701",
-        "url": "https://map.naver.com/p/entry/place/18855701"
-      },
-      "naverReviews": 334,
-      "walkMinutes": 9,
-      "walkFromMap": true
     },
     {
       "slug": "오대산산채전문점",
@@ -4571,7 +4571,7 @@
         "kakaoUrl": "https://place.map.kakao.com/10630917",
         "address": "서울 서초구 남부순환로 2640-11"
       },
-      "ratingCheckedAt": "2026-11-17T14:54:42.305Z",
+      "ratingCheckedAt": "2026-11-18T10:17:38.078Z",
       "naverCheckedAt": "2026-11-13T04:32:46.160Z",
       "naver": {
         "placeId": "19699783",
@@ -4850,7 +4850,7 @@
         "placeId": "1889387567",
         "url": "https://map.naver.com/p/entry/place/1889387567"
       },
-      "ratingCheckedAt": "2026-11-17T14:54:45.686Z",
+      "ratingCheckedAt": "2026-11-18T10:17:41.249Z",
       "walkMeters": 678,
       "walkFromMap": true,
       "area": "양재",
@@ -5197,7 +5197,7 @@
         "kakaoUrl": "https://place.map.kakao.com/332296816",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-17T14:54:51.946Z",
+      "ratingCheckedAt": "2026-11-18T10:17:47.135Z",
       "naverCheckedAt": "2026-11-13T04:34:04.040Z",
       "naver": {
         "placeId": "1278613093",
@@ -5671,7 +5671,7 @@
       },
       "walkMeters": 289,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-17T14:54:56.910Z",
+      "ratingCheckedAt": "2026-11-18T10:17:51.403Z",
       "naverCheckedAt": "2026-11-16T01:32:28.144Z",
       "naver": {
         "placeId": "1733030490",
@@ -6252,7 +6252,7 @@
       },
       "walkMeters": 490,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-17T14:55:04.141Z",
+      "ratingCheckedAt": "2026-11-18T10:17:58.045Z",
       "naverCheckedAt": "2026-11-13T04:35:35.000Z",
       "walkMinutes": 8
     },
@@ -8133,7 +8133,7 @@
       },
       "walkMeters": 214,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-17T14:55:34.812Z",
+      "ratingCheckedAt": "2026-11-18T10:18:27.343Z",
       "naverCheckedAt": "2026-11-16T01:34:06.734Z",
       "naver": {
         "placeId": "1044144861",
@@ -8183,7 +8183,7 @@
       },
       "walkMeters": 780,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-17T14:55:45.634Z",
+      "ratingCheckedAt": "2026-11-18T10:18:37.722Z",
       "naverCheckedAt": "2026-11-16T01:34:12.341Z",
       "naver": {
         "placeId": "1123021012",
