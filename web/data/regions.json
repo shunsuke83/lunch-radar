@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-19T00:24:59.256Z",
+  "updatedAt": "2026-11-19T00:32:43.063Z",
   "regions": [
     {
       "id": "seoul",
       "label": "서울",
-      "count": 4510,
+      "count": 4528,
       "districts": [
         {
           "name": "강남구",
-          "count": 565
+          "count": 567
         },
         {
           "name": "강동구",
@@ -28,7 +28,7 @@
         },
         {
           "name": "광진구",
-          "count": 135
+          "count": 138
         },
         {
           "name": "구로구",
@@ -56,11 +56,11 @@
         },
         {
           "name": "마포구",
-          "count": 493
+          "count": 494
         },
         {
           "name": "서대문구",
-          "count": 115
+          "count": 116
         },
         {
           "name": "서초구",
@@ -68,7 +68,7 @@
         },
         {
           "name": "성동구",
-          "count": 215
+          "count": 220
         },
         {
           "name": "성북구",
@@ -88,7 +88,7 @@
         },
         {
           "name": "용산구",
-          "count": 284
+          "count": 287
         },
         {
           "name": "은평구",
@@ -96,7 +96,7 @@
         },
         {
           "name": "종로구",
-          "count": 341
+          "count": 344
         },
         {
           "name": "중구",
@@ -130,7 +130,7 @@
     {
       "id": "gyeonggi",
       "label": "경기",
-      "count": 570,
+      "count": 588,
       "districts": [
         {
           "name": "가평군",
@@ -178,11 +178,11 @@
         },
         {
           "name": "성남시",
-          "count": 35
+          "count": 43
         },
         {
           "name": "수원시",
-          "count": 50
+          "count": 58
         },
         {
           "name": "시흥시",
@@ -222,7 +222,7 @@
         },
         {
           "name": "용인시",
-          "count": 25
+          "count": 27
         },
         {
           "name": "의왕시",
@@ -261,7 +261,7 @@
     {
       "id": "busan",
       "label": "부산",
-      "count": 310,
+      "count": 318,
       "districts": [
         {
           "name": "강서구",
@@ -273,7 +273,7 @@
         },
         {
           "name": "기장군",
-          "count": 15
+          "count": 16
         },
         {
           "name": "남구",
@@ -289,7 +289,7 @@
         },
         {
           "name": "부산진구",
-          "count": 37
+          "count": 39
         },
         {
           "name": "북구",
@@ -309,7 +309,7 @@
         },
         {
           "name": "수영구",
-          "count": 72
+          "count": 73
         },
         {
           "name": "연제구",
@@ -325,7 +325,7 @@
         },
         {
           "name": "해운대구",
-          "count": 48
+          "count": 52
         }
       ]
     },
@@ -498,7 +498,7 @@
     {
       "id": "jeonbuk",
       "label": "전북",
-      "count": 236,
+      "count": 239,
       "districts": [
         {
           "name": "고창군",
@@ -526,7 +526,7 @@
         },
         {
           "name": "익산시",
-          "count": 29
+          "count": 31
         },
         {
           "name": "임실군",
@@ -538,7 +538,7 @@
         },
         {
           "name": "전주시",
-          "count": 117
+          "count": 118
         },
         {
           "name": "정읍시",
@@ -628,7 +628,7 @@
     {
       "id": "chungnam",
       "label": "충남",
-      "count": 170,
+      "count": 175,
       "districts": [
         {
           "name": "계룡시",
@@ -644,7 +644,7 @@
         },
         {
           "name": "논산시",
-          "count": 11
+          "count": 12
         },
         {
           "name": "당진시",
@@ -676,7 +676,7 @@
         },
         {
           "name": "천안시",
-          "count": 36
+          "count": 40
         },
         {
           "name": "청양군",
@@ -695,7 +695,7 @@
     {
       "id": "jeonnam",
       "label": "전남",
-      "count": 161,
+      "count": 167,
       "districts": [
         {
           "name": "강진군",
@@ -723,7 +723,7 @@
         },
         {
           "name": "목포시",
-          "count": 14
+          "count": 17
         },
         {
           "name": "무안군",
@@ -735,11 +735,11 @@
         },
         {
           "name": "순천시",
-          "count": 52
+          "count": 53
         },
         {
           "name": "여수시",
-          "count": 27
+          "count": 29
         },
         {
           "name": "영광군",
@@ -965,7 +965,7 @@
     {
       "id": "gwangju",
       "label": "광주",
-      "count": 27,
+      "count": 31,
       "districts": [
         {
           "name": "광산구",
@@ -977,11 +977,11 @@
         },
         {
           "name": "동구",
-          "count": 6
+          "count": 7
         },
         {
           "name": "북구",
-          "count": 4
+          "count": 7
         },
         {
           "name": "서구",
@@ -992,11 +992,11 @@
     {
       "id": "sejong",
       "label": "세종",
-      "count": 16,
+      "count": 18,
       "districts": [
         {
           "name": "세종",
-          "count": 16
+          "count": 18
         }
       ]
     }
