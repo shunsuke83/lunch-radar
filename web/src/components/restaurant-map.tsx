@@ -528,7 +528,7 @@ export function RestaurantMap({
       if (selectedRow?.location) {
         const kind = openStatus(selectedRow.hours, now, weekday).kind;
         const color = pinColor(selectedRow, kind, true, pinModeRef.current);
-        let entry = markersRef.current.get(selectedRow.slug);
+        const entry = markersRef.current.get(selectedRow.slug);
         if (!entry) {
           const pos = new kakao.maps.LatLng(selectedRow.location.lat, selectedRow.location.lng);
           const marker = new kakao.maps.Marker({
