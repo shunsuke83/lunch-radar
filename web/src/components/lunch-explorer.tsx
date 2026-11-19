@@ -182,6 +182,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
   const [copied, setCopied] = useState(false);
   const [voteCopied, setVoteCopied] = useState(false);
   const [picks, setPicks] = useState<Restaurant[]>([]);
+  const [pickHint, setPickHint] = useState<string | null>(null);
   const [visits, setVisits] = useState<Record<string, VisitMark>>({});
   const [wishlist, setWishlist] = useState<string[]>([]);
   const [viewer, setViewer] = useState<GeoPoint | null>(null);
@@ -518,7 +519,16 @@ export function LunchExplorer({ catalog, regions }: Props) {
     const unknown = rollPoolOrAll.filter((r) => !r.hours);
     return unknown.length ? unknown : open;
   };
-  const rollPicks = () => setPicks(sampleRestaurants(openAwarePool(), 3));
+  const rollPicks = () => {
+    const pool = openAwarePool();
+    if (!pool.length) {
+      setPicks([]);
+      setPickHint("지금 영업 중인 곳이 없어요.");
+      return;
+    }
+    setPickHint(null);
+    setPicks(sampleRestaurants(pool, 3));
+  };
 
   const copyVote = async () => {
     const pool = openAwarePool();
@@ -677,6 +687,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
 
         {geoError && filters.sort === "nearby" ? (
           <p className="text-text-secondary typography-body-sm-regular">{geoError}</p>
+        ) : null}
+
+        {pickHint ? (
+          <p className="text-text-secondary typography-body-sm-regular">{pickHint}</p>
         ) : null}
 
         {picks.length ? (

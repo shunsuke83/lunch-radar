@@ -95,7 +95,7 @@ const CATEGORY_COLOR: Record<string, string> = {
   분식: "#ca8a04",
   샐러드: "#15803d",
   "카페·디저트": "#9d174d",
-  주점: "#9f1239",
+  주점: "#b45309",
 };
 
 function pinColor(
@@ -376,16 +376,21 @@ export function RestaurantMap({
     if (slug) onSelectRef.current?.(slug);
   };
 
-  /** Pan once so the pin sits ~40% from the top — room for the popup, no panBy (N7). */
+  /** Pan once so the pin leaves room for the popup above it (N7/N9). */
   const panForPopup = (kakao: Kakao, map: KakaoMap, pos: LatLng) => {
-    const h = box.current?.clientHeight ?? 400;
-    const proj = map.getProjection?.();
-    if (proj?.containerPointFromCoords && proj?.coordsFromContainerPoint) {
-      const pinPt = proj.containerPointFromCoords(pos);
-      const desiredY = Math.min(Math.max(h * 0.4, 140), h - 48);
-      const centerPt = { x: pinPt.x, y: pinPt.y + (h / 2 - desiredY) };
-      map.panTo(proj.coordsFromContainerPoint(centerPt));
-      return;
+    try {
+      const h = box.current?.clientHeight ?? 400;
+      const proj = map.getProjection?.();
+      if (proj?.containerPointFromCoords && proj?.coordsFromContainerPoint) {
+        const pinPt = proj.containerPointFromCoords(pos);
+        // Leave ~300px above the pin so mobile popups (yAnchor 1.35) are not clipped.
+        const desiredY = Math.min(h - 28, Math.max(h * 0.4, Math.min(300, h - 48)));
+        const centerPt = new kakao.maps.Point(pinPt.x, pinPt.y + (h / 2 - desiredY)) as MapPoint;
+        map.panTo(proj.coordsFromContainerPoint(centerPt));
+        return;
+      }
+    } catch {
+      /* projection APIs vary — fall through */
     }
     map.panTo(pos);
   };
@@ -502,7 +507,13 @@ export function RestaurantMap({
     if (!ready || !current) return;
     const { kakao, map } = current;
     const nextSlugs = new Set(visible.map((r) => r.slug));
-    const showBubbles = !office && level >= BUBBLE_MAX_LEVEL && visible.length >= BUBBLE_MIN_COUNT;
+    const districtKeys = new Set(visible.map((r) => r.district || "기타"));
+    // One district bubble alone is useless — show pins instead.
+    const showBubbles =
+      !office &&
+      level >= BUBBLE_MAX_LEVEL &&
+      visible.length >= BUBBLE_MIN_COUNT &&
+      districtKeys.size >= 2;
 
     for (const [slug, entry] of markersRef.current) {
       if (!nextSlugs.has(slug)) {
