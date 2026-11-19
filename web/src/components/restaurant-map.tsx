@@ -75,8 +75,11 @@ const PIN_COLOR: Record<OpenKind | "selected", string> = {
   break: "#d97706",
   closed: "#9ca3af",
   unknown: "#6b7280",
-  selected: "#0161ed",
+  selected: "#0f172a",
 };
+
+/** Prefer pins over district bubbles when the filtered set is small (B18). */
+const BUBBLE_MIN_COUNT = 40;
 
 const CATEGORY_COLOR: Record<string, string> = {
   한식: "#c2410c",
@@ -96,15 +99,20 @@ function pinColor(
   selected: boolean,
   mode: "hours" | "category",
 ): string {
-  if (selected) return PIN_COLOR.selected;
+  // Selected keeps category/hours color; size+ring marks selection (B16).
   if (mode === "category") return CATEGORY_COLOR[r.category ?? ""] ?? "#64748b";
+  if (selected) return PIN_COLOR.selected;
   return PIN_COLOR[kind];
 }
 
 function pinImage(kakao: Kakao, color: string, selected: boolean, emphasize = false) {
-  const size = selected ? 28 : emphasize ? 22 : 18;
-  const ring = emphasize && !selected ? `<circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - 1}" fill="none" stroke="#f59e0b" stroke-width="2"/>` : "";
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}">${ring}<circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - 2}" fill="${color}" stroke="#fff" stroke-width="2"/></svg>`;
+  const size = selected ? 30 : emphasize ? 22 : 18;
+  const ring = selected
+    ? `<circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - 1}" fill="none" stroke="#0f172a" stroke-width="3"/>`
+    : emphasize
+      ? `<circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - 1}" fill="none" stroke="#f59e0b" stroke-width="2"/>`
+      : "";
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}">${ring}<circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - (selected ? 4 : 2)}" fill="${color}" stroke="#fff" stroke-width="2"/></svg>`;
   const url = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
   return new kakao.maps.MarkerImage(url, new kakao.maps.Size(size, size), {
     offset: new kakao.maps.Point(size / 2, size / 2),
@@ -369,6 +377,13 @@ export function RestaurantMap({
     o.setMap(current.map);
     popupRef.current = o;
     current.map.panTo(pos);
+    // Keep popup clear of the top edge (B14).
+    window.setTimeout(() => {
+      const proj = current.map;
+      const level = proj.getLevel();
+      proj.panBy(0, -80);
+      if (proj.getLevel() !== level) proj.setLevel(level);
+    }, 0);
   };
 
   useEffect(() => {
@@ -444,7 +459,7 @@ export function RestaurantMap({
     if (!ready || !current) return;
     const { kakao, map } = current;
     const nextSlugs = new Set(visible.map((r) => r.slug));
-    const showBubbles = !office && level >= BUBBLE_MAX_LEVEL;
+    const showBubbles = !office && level >= BUBBLE_MAX_LEVEL && visible.length >= BUBBLE_MIN_COUNT;
 
     for (const [slug, entry] of markersRef.current) {
       if (!nextSlugs.has(slug)) {
@@ -459,9 +474,14 @@ export function RestaurantMap({
     nameLabels.current = [];
 
     if (showBubbles) {
-      for (const [, entry] of markersRef.current) entry.marker.setMap(null);
+      for (const [slug, entry] of markersRef.current) {
+        // Keep the selected place as a pin even in bubble mode (B18).
+        if (slug === selectedRef.current) continue;
+        entry.marker.setMap(null);
+      }
       const byDistrict = new Map<string, { count: number; lat: number; lng: number }>();
       for (const r of visible) {
+        if (r.slug === selectedRef.current) continue;
         const d = r.district || "기타";
         const cur = byDistrict.get(d) ?? { count: 0, lat: 0, lng: 0 };
         cur.count++;
@@ -502,6 +522,39 @@ export function RestaurantMap({
         });
         o.setMap(map);
         bubbleOverlays.current.push(o);
+      }
+      // Always draw the selected place as a pin in bubble mode.
+      const selectedRow = visible.find((r) => r.slug === selectedRef.current);
+      if (selectedRow?.location) {
+        const kind = openStatus(selectedRow.hours, now, weekday).kind;
+        const color = pinColor(selectedRow, kind, true, pinModeRef.current);
+        let entry = markersRef.current.get(selectedRow.slug);
+        if (!entry) {
+          const pos = new kakao.maps.LatLng(selectedRow.location.lat, selectedRow.location.lng);
+          const marker = new kakao.maps.Marker({
+            position: pos,
+            title: selectedRow.name,
+            image: pinImage(kakao, color, true, isEmphasized(selectedRow)),
+            zIndex: 6,
+          });
+          marker.setMap(map);
+          kakao.maps.event.addListener(marker, "click", () => {
+            onSelectRef.current?.(selectedRow.slug);
+          });
+          markersRef.current.set(selectedRow.slug, {
+            marker,
+            restaurant: selectedRow,
+            kind,
+            selected: true,
+          });
+        } else {
+          entry.restaurant = selectedRow;
+          entry.marker.setImage(pinImage(kakao, color, true, isEmphasized(selectedRow)));
+          entry.marker.setZIndex(6);
+          entry.marker.setMap(map);
+          entry.kind = kind;
+          entry.selected = true;
+        }
       }
     } else {
       for (const r of visible) {
@@ -659,14 +712,16 @@ export function RestaurantMap({
           ["중식", CATEGORY_COLOR.중식],
           ["일식", CATEGORY_COLOR.일식],
           ["양식", CATEGORY_COLOR.양식],
-          ["선택", PIN_COLOR.selected],
+          ["아시안", CATEGORY_COLOR.아시안],
+          ["카페·디저트", CATEGORY_COLOR["카페·디저트"]],
+          ["분식", CATEGORY_COLOR.분식],
+          ["미분류", "#64748b"],
         ] as const)
       : ([
           ["영업 중", PIN_COLOR.open],
           ["곧 마감·브레이크", PIN_COLOR.closingSoon],
           ["영업 전·종료", PIN_COLOR.closed],
           ["시간 미확인", PIN_COLOR.unknown],
-          ["선택", PIN_COLOR.selected],
         ] as const);
 
   return (
@@ -702,6 +757,22 @@ export function RestaurantMap({
             {label}
           </li>
         ))}
+        <li className="inline-flex items-center gap-group-xs">
+          <span
+            aria-hidden
+            className="inline-block size-3 rounded-full border-2 border-slate-900 bg-white shadow-sm"
+          />
+          선택 (큰 핀)
+        </li>
+        {pinMode === "category" ? (
+          <li className="inline-flex items-center gap-group-xs">
+            <span
+              aria-hidden
+              className="inline-block size-2.5 rounded-full border-2 border-amber-500 bg-orange-600 shadow-sm"
+            />
+            여러 목록 (금테)
+          </li>
+        ) : null}
       </ul>
       <div className="flex flex-wrap items-center gap-group-sm">
         <p className="text-text-tertiary typography-caption">

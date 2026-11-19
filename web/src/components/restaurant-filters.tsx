@@ -25,6 +25,7 @@ export type FilterState = {
   budget: number | null;
   noBreak: boolean;
   unvisitedOnly: boolean;
+  wishlistOnly: boolean;
   sort: SortKey;
 };
 
@@ -79,6 +80,7 @@ function activeFilterCount(value: FilterState, nearby: boolean): number {
   if (value.budget != null) n++;
   if (value.noBreak) n++;
   if (value.unvisitedOnly) n++;
+  if (value.wishlistOnly) n++;
   if (value.sort !== "reviews") n++;
   return n;
 }
@@ -204,6 +206,9 @@ export function RestaurantFilters({
       ))}
       <Chip selected={value.unvisitedOnly} onClick={() => set({ unvisitedOnly: !value.unvisitedOnly })}>
         안 가본 곳만
+      </Chip>
+      <Chip selected={value.wishlistOnly} onClick={() => set({ wishlistOnly: !value.wishlistOnly })}>
+        담은 곳만
       </Chip>
       {weatherRainy ? (
         <Chip

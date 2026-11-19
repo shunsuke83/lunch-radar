@@ -17,6 +17,7 @@ export const EMPTY_FILTERS: FilterState = {
   budget: null,
   noBreak: false,
   unvisitedOnly: false,
+  wishlistOnly: false,
   sort: "reviews",
 };
 
@@ -82,6 +83,7 @@ export function parseExplorerSearch(search: string): Partial<ExplorerState> {
   }
   if (q.has("nobreak")) set("noBreak", flag(q.get("nobreak")));
   if (q.has("unvisited")) set("unvisitedOnly", flag(q.get("unvisited")));
+  if (q.has("wishlist")) set("wishlistOnly", flag(q.get("wishlist")));
   const sort = q.get("sort");
   if (sort && SORTS.has(sort as SortKey)) set("sort", sort as SortKey);
   if (touched) out.filters = migrateBudget(migrateLegacyTheme(filters));
@@ -115,6 +117,7 @@ export function serializeExplorerSearch(state: ExplorerState): string {
   if (f.budget != null) q.set("budget", String(f.budget));
   if (f.noBreak) q.set("nobreak", "1");
   if (f.unvisitedOnly) q.set("unvisited", "1");
+  if (f.wishlistOnly) q.set("wishlist", "1");
   if (f.sort !== "reviews") q.set("sort", f.sort);
   if (state.place) q.set("place", state.place);
   if (state.map) {

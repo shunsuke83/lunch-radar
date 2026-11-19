@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId } from "react";
+import { useEffect, useId, useRef } from "react";
 import { X } from "lucide-react";
 import { Badge, Button, LinkButton, Tag } from "@/components/ds";
 import {
@@ -10,6 +10,7 @@ import {
   mapLinks,
   needsHoursCheck,
   openStatus,
+  publicNotes,
   type OpeningHours,
   type Restaurant,
   type Weekday,
@@ -20,21 +21,6 @@ const won = (n: number) => `${n.toLocaleString("ko-KR")}원`;
 
 function hoursText(h: OpeningHours): string {
   return h.open === "00:00" && h.close === "24:00" ? "24시간" : `${h.open}–${h.close}`;
-}
-
-/** Hide notes that only repeat menu / hours / walk already shown. */
-function usefulNotes(r: Restaurant): string | null {
-  const notes = r.notes?.trim();
-  if (!notes) return null;
-  const parts = notes.split(/\s+·\s+/).map((s) => s.trim()).filter(Boolean);
-  const kept = parts.filter((p) => {
-    if (/도보/.test(p)) return false;
-    if (/휴무/.test(p)) return false;
-    if (/^\d{1,2}:\d{2}/.test(p) || p === "24시간") return false;
-    if (r.menu?.length && r.menu.some((m) => p.includes(m.name))) return false;
-    return true;
-  });
-  return kept.length ? kept.join(" · ") : null;
 }
 
 type Props = {
@@ -57,17 +43,33 @@ export function RestaurantDetail({
   onClose,
 }: Props) {
   const titleId = useId();
+  const panelRef = useRef<HTMLElement>(null);
   const status = openStatus(r.hours, now, weekday);
   const links = mapLinks(r);
   const walk = displayWalkMinutes(r);
-  const notes = usefulNotes(r);
+  const notes = publicNotes(r);
   const closed = closedDaysLabel(r.hours?.closedDays);
 
   useEffect(() => {
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    panelRef.current?.focus();
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
+      if (e.key !== "Tab" || !panelRef.current) return;
+      const focusable = panelRef.current.querySelectorAll<HTMLElement>(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+      );
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     };
     window.addEventListener("keydown", onKey);
     return () => {
@@ -89,10 +91,12 @@ export function RestaurantDetail({
     <div className="fixed inset-0 z-50 flex justify-end">
       <button type="button" aria-label="상세 닫기" className="absolute inset-0 bg-black/40" onClick={onClose} />
       <aside
+        ref={panelRef}
+        tabIndex={-1}
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="relative flex h-full w-full max-w-md flex-col bg-surface-default shadow-default-lg"
+        className="relative flex h-full w-full max-w-md flex-col bg-surface-default shadow-default-lg outline-none"
       >
         <div className="flex items-start justify-between gap-group-sm border-b border-border-default px-inline-lg py-stack-md">
           <div className="min-w-0">
@@ -230,6 +234,7 @@ function ChipButton({
   return (
     <button
       type="button"
+      aria-pressed={selected}
       onClick={onClick}
       className={
         selected

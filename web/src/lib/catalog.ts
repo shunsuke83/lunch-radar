@@ -306,10 +306,16 @@ export type RestaurantFilters = {
   unvisitedOnly?: boolean;
   /** Slugs the visitor has recorded (visited or disliked). */
   recordedSlugs?: ReadonlySet<string>;
+  /** Only places on the visitor wishlist. */
+  wishlistOnly?: boolean;
+  wishlistSlugs?: ReadonlySet<string>;
   /** Viewer lat/lng for nationwide "nearby" sort. */
   viewer?: GeoPoint | null;
   sort?: SortKey;
 };
+
+/** Filter sentinel for places with no category (B9). */
+export const UNCATEGORIZED = "미분류";
 
 /** Theme id that became the "브레이크 없음" quick filter; old links map onto it. */
 export const LEGACY_NO_BREAK_THEME = "늦은 점심";
@@ -521,9 +527,13 @@ export function filterRestaurants(
   const rows = restaurants.filter((r) => {
     if (filters.district && filters.district !== "all" && r.district !== filters.district) return false;
     if (category && category !== "all") {
-      const group = (r.category ?? "").toLowerCase();
-      const detail = (r.subcategory ?? "").toLowerCase();
-      if (group !== category && !detail.includes(category)) return false;
+      if (category === UNCATEGORIZED.toLowerCase()) {
+        if (r.category) return false;
+      } else {
+        const group = (r.category ?? "").toLowerCase();
+        const detail = (r.subcategory ?? "").toLowerCase();
+        if (group !== category && !detail.includes(category)) return false;
+      }
     }
     if (area && area !== "all") {
       if (!(r.area ?? "").toLowerCase().includes(area)) return false;
@@ -542,6 +552,7 @@ export function filterRestaurants(
       if (p === undefined || p > budgetCap) return false;
     }
     if (filters.unvisitedOnly && filters.recordedSlugs?.has(r.slug)) return false;
+    if (filters.wishlistOnly && !filters.wishlistSlugs?.has(r.slug)) return false;
     if (q) {
       const hay = normalizeSearchText(
         [
@@ -620,7 +631,31 @@ export function uniqueValues(
 /** Category groups present in the data, in CATEGORY_GROUPS order. */
 export function presentGroups(restaurants: Restaurant[]): string[] {
   const have = new Set(restaurants.map((r) => r.category));
-  return CATEGORY_GROUPS.filter((g) => have.has(g));
+  const groups: string[] = CATEGORY_GROUPS.filter((g) => have.has(g));
+  if (restaurants.some((r) => !r.category)) groups.push(UNCATEGORIZED);
+  return groups;
+}
+
+/** Drop import-only memos that should not appear in the UI (B15). */
+const INTERNAL_NOTES =
+  /^(Eat my Seoul|RIBBON_|Neon Vetted|MATJIDO|Sikr|내부|import|scrape)/i;
+
+export function publicNotes(r: Restaurant): string | null {
+  const notes = r.notes?.trim();
+  if (!notes) return null;
+  const parts = notes
+    .split(/\s+·\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean)
+    .filter((p) => {
+      if (INTERNAL_NOTES.test(p)) return false;
+      if (/도보/.test(p)) return false;
+      if (/휴무/.test(p)) return false;
+      if (/^\d{1,2}:\d{2}/.test(p) || p === "24시간") return false;
+      if (r.menu?.length && r.menu.some((m) => p.includes(m.name))) return false;
+      return true;
+    });
+  return parts.length ? parts.join(" · ") : null;
 }
 
 /** Scraped/meta tags that should not appear on the public site. */

@@ -1,6 +1,6 @@
 "use client";
 
-import { Star } from "lucide-react";
+import { Heart, Star } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 import { Badge, Button, EmptyState, LinkButton, Tag } from "@/components/ds";
 import {
@@ -12,11 +12,13 @@ import {
   mapLinks,
   needsHoursCheck,
   openStatus,
+  publicNotes,
   type OpeningHours,
   type OpenKind,
   type Restaurant,
   type Weekday,
 } from "@/lib/catalog";
+import type { VisitMark } from "@/lib/visitor-store";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -41,6 +43,8 @@ type Props = {
   compact?: boolean;
   /** Map sidebar: card rows only (no wide desktop table). */
   cardsOnly?: boolean;
+  wishlist?: ReadonlySet<string>;
+  visits?: Readonly<Record<string, VisitMark>>;
 };
 
 const PAGE_SIZE = 100;
@@ -176,6 +180,18 @@ function Shell({ children }: { children: ReactNode }) {
   return <div className="overflow-hidden rounded-sm bg-surface-default">{children}</div>;
 }
 
+function VisitBadges({ mark, wished }: { mark?: VisitMark | null; wished?: boolean }) {
+  return (
+    <>
+      {wished ? (
+        <Heart aria-label="담김" className="size-3.5 fill-icon-danger-default text-icon-danger-default" />
+      ) : null}
+      {mark === "visited" ? <Tag color="green" size="xsmall">가봤어요</Tag> : null}
+      {mark === "dislike" ? <Tag color="gray" size="xsmall">별로</Tag> : null}
+    </>
+  );
+}
+
 function MobileCard({
   r,
   now,
@@ -185,6 +201,8 @@ function MobileCard({
   onSelect,
   onOpenDetail,
   showNew,
+  wished,
+  visitMark,
 }: {
   r: Restaurant;
   now: number | null;
@@ -194,6 +212,8 @@ function MobileCard({
   onSelect?: (slug: string) => void;
   onOpenDetail?: (slug: string) => void;
   showNew: boolean;
+  wished?: boolean;
+  visitMark?: VisitMark | null;
 }) {
   const status = openStatus(r.hours, now, weekday);
   const walk = displayWalkMinutes(r);
@@ -207,17 +227,25 @@ function MobileCard({
 
   return (
     <li id={`place-${r.slug}`}>
-      <button
-        type="button"
+      <div
+        role="button"
+        tabIndex={0}
         onClick={() => onSelect?.(r.slug)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            onSelect?.(r.slug);
+          }
+        }}
         className={cn(
-          "flex w-full min-w-0 items-start justify-between gap-group-sm border-b border-border-default px-inline-lg py-stack-md text-left transition-colors last:border-b-0",
+          "flex w-full min-w-0 cursor-pointer items-start justify-between gap-group-sm border-b border-border-default px-inline-lg py-stack-md text-left transition-colors last:border-b-0",
           selected ? "bg-surface-brand-subtle" : "hover:bg-surface-subtlest",
         )}
       >
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-x-group-sm gap-y-group-xxs">
             <h2 className="truncate text-text-primary typography-headline-sm">{r.name}</h2>
+            <VisitBadges mark={visitMark} wished={wished} />
             {r.category ? <Tag color="brand" size="xsmall">{r.category}</Tag> : null}
             <Badge status={badgeFor(status.kind)}>{status.label}</Badge>
             {status.lunchOk ? <Tag color="green" size="xsmall">점심</Tag> : null}
@@ -234,7 +262,7 @@ function MobileCard({
           {onOpenDetail ? (
             <button
               type="button"
-              className="mt-group-xxs text-text-brand typography-body-sm-medium"
+              className="mt-group-sm inline-flex min-h-11 min-w-11 items-center text-text-brand typography-body-sm-medium"
               onClick={(e) => {
                 e.stopPropagation();
                 onOpenDetail(r.slug);
@@ -245,7 +273,7 @@ function MobileCard({
           ) : null}
         </div>
         <MapButtons r={r} />
-      </button>
+      </div>
     </li>
   );
 }
@@ -266,6 +294,8 @@ export function RestaurantList({
   className,
   compact = false,
   cardsOnly = false,
+  wishlist,
+  visits,
 }: Props) {
   const [limit, setLimit] = useState(PAGE_SIZE);
   useEffect(() => setLimit(PAGE_SIZE), [restaurants]);
@@ -321,6 +351,8 @@ export function RestaurantList({
           onSelect={onSelect}
           onOpenDetail={onOpenDetail}
           showNew={showNew}
+          wished={wishlist?.has(r.slug)}
+          visitMark={visits?.[r.slug] ?? null}
         />
       ))}
     </ul>
@@ -383,6 +415,7 @@ export function RestaurantList({
               <div className="col-span-2 flex min-w-0 flex-col gap-group-xs lg:col-span-1 lg:px-inline-md lg:py-stack-md">
                 <div className="flex flex-wrap items-center gap-x-group-sm gap-y-group-xxs">
                   <h2 className="text-text-primary typography-headline-sm">{r.name}</h2>
+                  <VisitBadges mark={visits?.[r.slug]} wished={wishlist?.has(r.slug)} />
                   {r.category ? <Tag color="brand" size="xsmall">{r.category}</Tag> : null}
                   {r.subcategory ? (
                     <span className="text-text-tertiary typography-body-sm-regular">{r.subcategory}</span>
@@ -415,8 +448,8 @@ export function RestaurantList({
                       </li>
                     ))}
                   </ul>
-                ) : r.notes ? (
-                  <p className="line-clamp-1 text-text-secondary typography-body-sm-regular">{r.notes}</p>
+                ) : publicNotes(r) ? (
+                  <p className="line-clamp-1 text-text-secondary typography-body-sm-regular">{publicNotes(r)}</p>
                 ) : null}
                 {(() => {
                   const tags = displayTags(r);

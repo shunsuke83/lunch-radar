@@ -265,9 +265,11 @@ export function PageHeader({
       {meta?.length ? (
         <div className="flex flex-wrap items-center gap-x-group-lg gap-y-group-xs">
           {meta.map((m) => (
-            <div key={m.label} className="flex items-center gap-group-xs whitespace-nowrap">
-              <span className="text-text-tertiary typography-body-md-regular">{m.label}</span>
-              <span className="text-text-secondary typography-body-md-medium">{m.value}</span>
+            <div key={m.label} className="flex min-w-0 max-w-full items-center gap-group-xs">
+              <span className="shrink-0 text-text-tertiary typography-body-md-regular">{m.label}</span>
+              <span className="min-w-0 break-words text-text-secondary typography-body-md-medium sm:truncate">
+                {m.value}
+              </span>
             </div>
           ))}
         </div>

@@ -192,6 +192,8 @@ export function LunchExplorer({ catalog, regions }: Props) {
   const [sheetOpen, setSheetOpen] = useState(true);
   const skipUrlWrite = useRef(true);
   const detailHistory = useRef(false);
+  const pushNav = useRef(false);
+  const mapPanelRef = useRef<HTMLDivElement>(null);
   const deferred = useDeferredValue(filters);
   const clock = useSeoulClock();
   const now = clock?.minutes ?? null;
@@ -241,9 +243,13 @@ export function LunchExplorer({ catalog, regions }: Props) {
       return;
     }
     let cancelled = false;
-    fetchWeather(catalog.office).then((w) => {
-      if (!cancelled && w) setWeatherRainy(w.isRainy);
-    });
+    fetchWeather(catalog.office)
+      .then((w) => {
+        if (!cancelled && w) setWeatherRainy(w.isRainy);
+      })
+      .catch(() => {
+        /* B21: network failures stay silent */
+      });
     return () => {
       cancelled = true;
     };
@@ -282,9 +288,31 @@ export function LunchExplorer({ catalog, regions }: Props) {
     const qs = serializeExplorerSearch(explorerState);
     const next = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
     const cur = `${window.location.pathname}${window.location.search}`;
-    if (next !== cur) window.history.replaceState(null, "", next);
+    if (next !== cur) {
+      if (pushNav.current) {
+        window.history.pushState(null, "", next);
+        pushNav.current = false;
+      } else {
+        window.history.replaceState(null, "", next);
+      }
+    } else {
+      pushNav.current = false;
+    }
     writeStoredExplorer(explorerState);
   }, [explorerState, hydrated]);
+
+  // Clear picks when the filter result set changes (B11).
+  useEffect(() => {
+    setPicks([]);
+  }, [deferred, region]);
+
+  // Scroll map into view when switching to map mode (B14).
+  useEffect(() => {
+    if (view !== "map") return;
+    queueMicrotask(() => {
+      mapPanelRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
+    });
+  }, [view]);
 
   useEffect(() => {
     const onPop = () => {
@@ -330,6 +358,23 @@ export function LunchExplorer({ catalog, regions }: Props) {
     [source],
   );
 
+  // Drop filter values that do not exist in the current region (B17).
+  useEffect(() => {
+    if (state.status !== "ready") return;
+    setFilters((prev) => {
+      let next = prev;
+      const cats = new Set(facets.categories);
+      if (prev.category !== "all" && !cats.has(prev.category)) next = { ...next, category: "all" };
+      const tags = new Set(facets.tags.map((t) => t.value));
+      if (prev.tag !== "all" && !tags.has(prev.tag)) next = { ...next, tag: "all" };
+      const themes = new Set(facets.themes.map((t) => t.value));
+      if (prev.theme !== "all" && !themes.has(prev.theme)) next = { ...next, theme: "all" };
+      const districts = new Set(regionInfo?.districts.map((d) => d.name) ?? []);
+      if (prev.district !== "all" && !districts.has(prev.district)) next = { ...next, district: "all" };
+      return next === prev ? prev : next;
+    });
+  }, [state.status, facets, regionInfo]);
+
   const sort =
     !isOffice && deferred.sort === "distance"
       ? "reviews"
@@ -337,6 +382,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
         ? "distance"
         : deferred.sort;
 
+  const wishlistSet = useMemo(() => new Set(wishlist), [wishlist]);
   const restaurants = useMemo(
     () =>
       filterRestaurants(source, {
@@ -352,10 +398,12 @@ export function LunchExplorer({ catalog, regions }: Props) {
         weekday,
         unvisitedOnly: deferred.unvisitedOnly,
         recordedSlugs: recorded,
+        wishlistOnly: deferred.wishlistOnly,
+        wishlistSlugs: wishlistSet,
         viewer: sort === "nearby" ? viewer : null,
         sort,
       }),
-    [source, deferred, now, weekday, isOffice, recorded, viewer, sort],
+    [source, deferred, now, weekday, isOffice, recorded, wishlistSet, viewer, sort],
   );
 
   /** Map-side list shows all filter matches. Viewport count stays on the map chip. */
@@ -388,16 +436,22 @@ export function LunchExplorer({ catalog, regions }: Props) {
 
   const reset = () => setFilters(EMPTY_FILTERS);
   const changeRegion = (next: string) => {
+    pushNav.current = true;
     setRegion(next);
     setFilters(EMPTY_FILTERS);
     setSelectedSlug(null);
     setDetailSlug(null);
     setPicks([]);
     setMapBounds(null);
+    setMapCenter(null);
   };
   const changeScope = (next: ScopeTab) => {
     if (next === "office") changeRegion(OFFICE_REGION);
     else if (isOffice) changeRegion(defaultProvince);
+  };
+  const changeView = (next: "list" | "map") => {
+    pushNav.current = true;
+    setView(next);
   };
   const selectPlace = (slug: string) => {
     setSelectedSlug((prev) => (prev === slug ? null : slug));
@@ -503,6 +557,8 @@ export function LunchExplorer({ catalog, regions }: Props) {
       showNew={isOffice}
       compact={view === "map"}
       cardsOnly={view === "map"}
+      wishlist={wishlistSet}
+      visits={visits}
       className={view === "map" ? "min-w-0 lg:max-h-[calc(100dvh-12rem)]" : undefined}
     />
   );
@@ -560,7 +616,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
                   { value: "list", label: "목록" },
                   { value: "map", label: "지도" },
                 ]}
-                onChange={setView}
+                onChange={changeView}
               />
               <Button size="md" onClick={rollPicks} disabled={rollPool.length === 0}>
                 <Dices aria-hidden className="size-size-icon-sm" />
@@ -569,10 +625,13 @@ export function LunchExplorer({ catalog, regions }: Props) {
               <Button
                 size="md"
                 onClick={() => {
-                  if (!selectedSlug) return;
-                  setWishlist(toggleWishlist(selectedSlug));
+                  if (selectedSlug) {
+                    setWishlist(toggleWishlist(selectedSlug));
+                    return;
+                  }
+                  if (wishlist.length) setFilters((f) => ({ ...f, wishlistOnly: !f.wishlistOnly }));
                 }}
-                disabled={!selectedSlug}
+                disabled={!selectedSlug && !wishlist.length}
                 aria-label="내 리스트에 담기"
               >
                 <Heart aria-hidden className="size-size-icon-sm" />
@@ -612,6 +671,9 @@ export function LunchExplorer({ catalog, regions }: Props) {
                 </Button>
                 <Button size="md" variant="primary" onClick={copyVote}>
                   {voteCopied ? "투표 문구 복사됨" : "Slack 투표 문구 복사"}
+                </Button>
+                <Button size="md" onClick={() => setPicks([])} aria-label="추천 닫기">
+                  닫기
                 </Button>
               </div>
             </div>
@@ -660,7 +722,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
         ) : view === "map" ? (
           <>
             {isLg ? (
-              <div className="grid gap-group-lg grid-cols-[minmax(320px,400px)_minmax(0,1fr)]">
+              <div
+                ref={mapPanelRef}
+                className="grid gap-group-lg grid-cols-[minmax(320px,400px)_minmax(0,1fr)]"
+              >
                 <div className="min-h-0 min-w-0 overflow-hidden">{listBlock}</div>
                 <div className="sticky top-4 min-w-0 self-start">
                   <RestaurantMap
@@ -686,7 +751,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
                 </div>
               </div>
             ) : (
-              <div className="relative">
+              <div ref={mapPanelRef} className="relative">
                 <RestaurantMap
                   restaurants={restaurants}
                   office={isOffice ? catalog.office : undefined}
@@ -697,7 +762,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
                   onOpenDetail={openDetail}
                   initialCenter={mapCenter}
                   pinMode={isOffice ? "hours" : "category"}
-                  heightClass="h-[70dvh]"
+                  heightClass="h-[min(52dvh,420px)]"
                   onBoundsChange={(b, z) => {
                     setMapBounds(b);
                     setMapCenter({
