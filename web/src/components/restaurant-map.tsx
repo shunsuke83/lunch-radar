@@ -371,6 +371,9 @@ export function RestaurantMap({
         };
         kakao.maps.event.addListener(map, "click", () => closePopupRef.current());
         kakao.maps.event.addListener(map, "idle", emitBounds);
+        kakao.maps.event.addListener(map, "zoom_changed", () => {
+          setLevel(map.getLevel());
+        });
         setReady(true);
         emitBounds();
       })
@@ -381,13 +384,34 @@ export function RestaurantMap({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Sync marker set with visible restaurants (no wipe on select/clock).
+  // Fit camera only when the restaurant set / office mode changes — not on zoom.
+  useEffect(() => {
+    const current = mapRef.current;
+    if (!ready || !current || !visible.length) return;
+    const { kakao, map } = current;
+    const nextBoundsKey = `${expanded}|${office?.lat ?? ""}|${visibleKey}`;
+    if (nextBoundsKey === boundsKey.current) return;
+    boundsKey.current = nextBoundsKey;
+    if (office && !expanded) {
+      map.setBounds(radiusBounds(kakao, office, DEFAULT_RADIUS_M));
+    } else {
+      map.setBounds(
+        robustBounds(
+          kakao,
+          visible.map((r) => r.location!),
+        ),
+        40,
+      );
+    }
+  }, [ready, visible, visibleKey, office, expanded]);
+
+  // Sync markers / district bubbles with zoom level.
   useEffect(() => {
     const current = mapRef.current;
     if (!ready || !current) return;
     const { kakao, map } = current;
     const nextSlugs = new Set(visible.map((r) => r.slug));
-    const showBubbles = !office && map.getLevel() >= BUBBLE_MAX_LEVEL;
+    const showBubbles = !office && level >= BUBBLE_MAX_LEVEL;
 
     for (const [slug, entry] of markersRef.current) {
       if (!nextSlugs.has(slug)) {
@@ -424,8 +448,17 @@ export function RestaurantMap({
         label.type = "button";
         label.onclick = (e) => {
           e.stopPropagation();
-          const pts = visible.filter((r) => (r.district || "기타") === name).map((r) => r.location!);
-          if (pts.length) map.setBounds(robustBounds(kakao, pts), 40);
+          const pts = visible
+            .filter((r) => (r.district || "기타") === name)
+            .map((r) => r.location!);
+          if (!pts.length) return;
+          // Zoom into the district; do not rewrite boundsKey so we stay zoomed.
+          map.setBounds(robustBounds(kakao, pts), 48);
+          // Ensure we leave bubble zoom even for a single-pin district.
+          window.setTimeout(() => {
+            if (map.getLevel() >= BUBBLE_MAX_LEVEL) map.setLevel(BUBBLE_MAX_LEVEL - 1);
+            setLevel(map.getLevel());
+          }, 320);
         };
         const o = new kakao.maps.CustomOverlay({
           position: new kakao.maps.LatLng(lat, lng),
@@ -469,7 +502,7 @@ export function RestaurantMap({
         }
       }
 
-      if (map.getLevel() <= NAME_LABEL_MAX_LEVEL) {
+      if (level <= NAME_LABEL_MAX_LEVEL) {
         const top = [...visible]
           .filter(isEmphasized)
           .sort((a, b) => (b.naverReviews ?? 0) - (a.naverReviews ?? 0))
@@ -505,23 +538,7 @@ export function RestaurantMap({
       o.setMap(map);
       officeOverlay.current = o;
     }
-
-    const nextBoundsKey = `${expanded}|${office?.lat ?? ""}|${visibleKey}|bubbles:${showBubbles}`;
-    if (nextBoundsKey !== boundsKey.current) {
-      boundsKey.current = nextBoundsKey;
-      if (office && !expanded) {
-        map.setBounds(radiusBounds(kakao, office, DEFAULT_RADIUS_M));
-      } else if (visible.length > 0) {
-        map.setBounds(
-          robustBounds(
-            kakao,
-            visible.map((r) => r.location!),
-          ),
-          40,
-        );
-      }
-    }
-  }, [ready, visible, visibleKey, office, expanded, now, weekday, pinMode]);
+  }, [ready, visible, visibleKey, office, expanded, now, weekday, pinMode, level]);
 
   // Selection styling + popup without rebuilding markers.
   useEffect(() => {
