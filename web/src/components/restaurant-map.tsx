@@ -59,6 +59,8 @@ type Kakao = {
       content: HTMLElement;
       yAnchor?: number;
       zIndex?: number;
+      /** When false (Kakao default), clicks pass through to the map. */
+      clickable?: boolean;
     }) => Overlay;
     event: {
       addListener: (target: object, type: string, fn: (...args: unknown[]) => void) => void;
@@ -196,13 +198,21 @@ function card(
     "div",
     "flex w-60 flex-col gap-group-xxs rounded-lg border border-border-default bg-surface-default px-inline-lg py-stack-md shadow-default-lg",
   );
-  root.addEventListener("click", (e) => e.stopPropagation());
+  // Stop map from receiving the same gesture (Kakao overlays need clickable:true too).
+  const stop = (e: Event) => e.stopPropagation();
+  root.addEventListener("click", stop);
+  root.addEventListener("mousedown", stop);
+  root.addEventListener("touchstart", stop, { passive: true });
   const head = el("div", "flex items-start justify-between gap-group-sm");
   head.append(el("p", "text-text-primary typography-headline-sm", r.name));
   const close = el("button", "text-icon-tertiary hover:text-icon-primary typography-body-md-regular", "✕");
   close.type = "button";
   close.setAttribute("aria-label", "닫기");
-  close.onclick = onClose;
+  close.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    onClose();
+  });
   head.append(close);
   root.append(head);
 
@@ -231,7 +241,14 @@ function card(
   if (onDetail) {
     const detail = el("button", buttonClass("primary", "sm"), "자세히");
     detail.type = "button";
-    detail.onclick = () => onDetail(r.slug);
+    const open = (e: Event) => {
+      e.preventDefault();
+      e.stopPropagation();
+      onDetail(r.slug);
+    };
+    // mousedown fires more reliably than click inside Kakao overlays.
+    detail.addEventListener("mousedown", open);
+    detail.addEventListener("click", open);
     row.append(detail);
   }
   const links = mapLinks(r);
@@ -243,6 +260,8 @@ function card(
     a.href = href;
     a.target = "_blank";
     a.rel = "noreferrer";
+    a.addEventListener("mousedown", stop);
+    a.addEventListener("click", stop);
     row.append(a);
   }
   root.append(row);
@@ -338,6 +357,7 @@ export function RestaurantMap({
       content: card(r, closePopup, (slug) => onDetailRef.current?.(slug)),
       yAnchor: 1.35,
       zIndex: 10,
+      clickable: true,
     });
     o.setMap(current.map);
     popupRef.current = o;
@@ -465,6 +485,7 @@ export function RestaurantMap({
           content: label,
           yAnchor: 0.5,
           zIndex: 2,
+          clickable: true,
         });
         o.setMap(map);
         bubbleOverlays.current.push(o);
