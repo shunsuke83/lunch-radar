@@ -1,0 +1,2990 @@
+[
+  {
+    "nameEn": "Heungbugol Sutbul Pig Wang Galbi",
+    "nameKo": "흥부골숯불돼지왕갈비",
+    "meta": "Jamsil·🥩 BBQ·₩19,000",
+    "key": "흥부골숯불돼지왕갈비"
+  },
+  {
+    "nameEn": "Daeparine Gopchang Cheonho",
+    "nameKo": "대팔이네곱창 천호본점",
+    "meta": "Jamsil·🥩 BBQ·₩13,900",
+    "key": "대팔이네곱창 천호본점"
+  },
+  {
+    "nameEn": "Yamongyamong Seongsu Pub",
+    "nameKo": "야몽야몽 성수",
+    "meta": "Seongsu·🍺 Pocha·₩12,000",
+    "key": "야몽야몽 성수"
+  },
+  {
+    "nameEn": "Mirae Hoegwan Hannam",
+    "nameKo": "미래회관 한남본점",
+    "meta": "Yongsan·🥩 BBQ·₩19,000",
+    "key": "미래회관 한남본점"
+  },
+  {
+    "nameEn": "Seonbine Korean Restaurant",
+    "nameKo": "선비네",
+    "meta": "Yeongdeungpo·🥘 Home-style·₩13,000",
+    "key": "선비네"
+  },
+  {
+    "nameEn": "Bokdoni Buchu Samgyeopsal",
+    "nameKo": "복돈이부추삼겹살 사당본점",
+    "meta": "Gwanak·🥩 BBQ·₩11,000",
+    "key": "복돈이부추삼겹살 사당본점"
+  },
+  {
+    "nameEn": "Mapo Sogeumgui",
+    "nameKo": "마포소금구이",
+    "meta": "Mapo·🥩 BBQ·₩15,000",
+    "key": "마포소금구이"
+  },
+  {
+    "nameEn": "Bak Mallae Cheongjin-dong Haejangguk",
+    "nameKo": "박막례청진동해장국",
+    "meta": "Gwanak·🍲 Soup & Stew·₩8,000",
+    "key": "박막례청진동해장국"
+  },
+  {
+    "nameEn": "Jangjinyoung Ganjang Gejang Hannam-dong",
+    "nameKo": "장지녕간장게장 한남동본점",
+    "meta": "Yongsan·🥘 Home-style·₩15,000",
+    "key": "장지녕간장게장 한남동본점"
+  },
+  {
+    "nameEn": "Byeoldang Kimchi Jjim",
+    "nameKo": "별당김치찜",
+    "meta": "Mapo·🍲 Soup & Stew·₩5,000",
+    "key": "별당김치찜"
+  },
+  {
+    "nameEn": "Jiojjang Grilled Clams",
+    "nameKo": "지오짱조개구이",
+    "meta": "Mapo·🥘 Home-style·₩8,000",
+    "key": "지오짱조개구이"
+  },
+  {
+    "nameEn": "Heuksando Hongtak Sashimi House",
+    "nameKo": "흑산도홍탁",
+    "meta": "Seocho·🐟 Raw Fish·₩45,000",
+    "key": "흑산도홍탁"
+  },
+  {
+    "nameEn": "Choesin Jokbal",
+    "nameKo": "최신족발",
+    "meta": "Konkuk Univ·🥩 BBQ·₩37,000",
+    "key": "최신족발"
+  },
+  {
+    "nameEn": "Yeoksam Gukbap House",
+    "nameKo": "국밥 참 맛있는 집 역삼점",
+    "meta": "Gangnam·🍲 Soup & Stew·₩10,000",
+    "key": "국밥 참 맛있는 집 역삼점"
+  },
+  {
+    "nameEn": "Insadong Garlic Bossam",
+    "nameKo": "인사동마늘보쌈",
+    "meta": "Bukchon & Insadong·🥩 BBQ·₩10,000",
+    "key": "인사동마늘보쌈"
+  },
+  {
+    "nameEn": "Seouljeong Yangpyeong Haejangguk",
+    "nameKo": "서울정양평해장",
+    "meta": "Gangnam·🍲 Soup & Stew·₩11,000",
+    "key": "서울정양평해장"
+  },
+  {
+    "nameEn": "Fusion Izakaya",
+    "nameKo": "퓨전선술집",
+    "meta": "Mapo·🍺 Pocha·₩65,000",
+    "key": "퓨전선술집"
+  },
+  {
+    "nameEn": "Kakushita Izakaya",
+    "nameKo": "카쿠시타",
+    "meta": "Mapo·🍺 Pocha·₩15,000",
+    "key": "카쿠시타"
+  },
+  {
+    "nameEn": "Jueun Gamjatang",
+    "nameKo": "주은감자탕",
+    "meta": "Jamsil·🍲 Soup & Stew·₩33,000",
+    "key": "주은감자탕"
+  },
+  {
+    "nameEn": "Gunsanjip Korean Restaurant",
+    "nameKo": "군산집",
+    "meta": "Yeongdeungpo·🥘 Home-style·₩15,000",
+    "key": "군산집"
+  },
+  {
+    "nameEn": "Jungnimjang Seolleongtang",
+    "nameKo": "중림장설렁탕",
+    "meta": "Jongro/Myeongdong·🍲 Soup & Stew·₩40,000",
+    "key": "중림장설렁탕"
+  },
+  {
+    "nameEn": "Pyeongando Sangwon Naengmyeon",
+    "nameKo": "평안도 상원냉면",
+    "meta": "Mapo·🍜 Noodles·₩19,000",
+    "key": "평안도 상원냉면"
+  },
+  {
+    "nameEn": "Cheongdam-dong Pocha Sinchon",
+    "nameKo": "청담동포장마차 신촌본점",
+    "meta": "Mapo·🍺 Pocha·₩16,000",
+    "key": "청담동포장마차 신촌본점"
+  },
+  {
+    "nameEn": "Jinhang Jokbal",
+    "nameKo": "진향족발",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩45,000",
+    "key": "진향족발"
+  },
+  {
+    "nameEn": "Geudongne Tteokbokki",
+    "nameKo": "그동네떡볶이 홍대본점",
+    "meta": "Hongdae & Sinchon·🌭 Street Food·₩6,000",
+    "key": "그동네떡볶이 홍대본점"
+  },
+  {
+    "nameEn": "Mapo Yangji Seolleongtang",
+    "nameKo": "마포양지설렁탕",
+    "meta": "Mapo·🍲 Soup & Stew·₩14,000",
+    "key": "마포양지설렁탕"
+  },
+  {
+    "nameEn": "Ildeung Haejangguk",
+    "nameKo": "일등식당",
+    "meta": "Mapo·🍲 Soup & Stew·₩11,000",
+    "key": "일등식당"
+  },
+  {
+    "nameEn": "Donbyeorak Samgyeopsal",
+    "nameKo": "돈벼락삼겹살",
+    "meta": "Gwanak·🥩 BBQ·₩8,000",
+    "key": "돈벼락삼겹살"
+  },
+  {
+    "nameEn": "Jeukseok Udon Jjajang",
+    "nameKo": "즉석우동짜장",
+    "meta": "Yeongdeungpo·🥡 Korean-Chinese·₩6,000",
+    "key": "즉석우동짜장"
+  },
+  {
+    "nameEn": "Seongnae Boldegi Restaurant",
+    "nameKo": "성내볼데기집",
+    "meta": "Jamsil·🥘 Home-style·₩55,000",
+    "key": "성내볼데기집"
+  },
+  {
+    "nameEn": "Ajji Tteokbokki",
+    "nameKo": "아찌떡볶이",
+    "meta": "Konkuk Univ·🌭 Street Food·₩12,000",
+    "key": "아찌떡볶이"
+  },
+  {
+    "nameEn": "Yukgap Restaurant Dangsan Station",
+    "nameKo": "육갑식당 당산역점",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩16,000",
+    "key": "육갑식당 당산역점"
+  },
+  {
+    "nameEn": "Obok Sundae-guk",
+    "nameKo": "오복순대국",
+    "meta": "Yeongdeungpo·🍲 Soup & Stew·₩15,000",
+    "key": "오복순대국"
+  },
+  {
+    "nameEn": "Sukseonghoe Hwado",
+    "nameKo": "숙성회 화도",
+    "meta": "Mapo·🐟 Raw Fish·₩59,000",
+    "key": "숙성회 화도"
+  },
+  {
+    "nameEn": "Cheongsu Sashimi House",
+    "nameKo": "청수횟집",
+    "meta": "Gangnam·🐟 Raw Fish·₩38,000",
+    "key": "청수횟집"
+  },
+  {
+    "nameEn": "Yangjae Chicken House",
+    "nameKo": "양재닭집",
+    "meta": "Gangnam·🍗 Chicken·₩16,000",
+    "key": "양재닭집"
+  },
+  {
+    "nameEn": "Chalman Saengdaepae",
+    "nameKo": "찰만생대패",
+    "meta": "Itaewon·🥩 BBQ·₩17,000",
+    "key": "찰만생대패"
+  },
+  {
+    "nameEn": "Hwarakgwan Sinchon",
+    "nameKo": "화락관 신촌 본점",
+    "meta": "Mapo·🥩 BBQ·₩21,000",
+    "key": "화락관 신촌 본점"
+  },
+  {
+    "nameEn": "Goyangi Bukeok Bangbaesaigil Tteokbokki",
+    "nameKo": "고양이부엌 방배사이길점",
+    "meta": "Gangnam·🌭 Street Food·₩15,500",
+    "key": "고양이부엌 방배사이길점"
+  },
+  {
+    "nameEn": "Jangsu Dak Hanmari Sonkalguksu",
+    "nameKo": "장수 닭한마리손칼국수",
+    "meta": "Konkuk Univ·🍗 Chicken·₩28,000",
+    "key": "장수 닭한마리손칼국수"
+  },
+  {
+    "nameEn": "Gaetmaeul Sashimi House",
+    "nameKo": "갯마을횟집",
+    "meta": "Jongro/Myeongdong·🐟 Raw Fish·₩95,000",
+    "key": "갯마을횟집"
+  },
+  {
+    "nameEn": "Sansugapsan",
+    "nameKo": "산수갑산",
+    "meta": "Jongro/Myeongdong·🍲 Soup & Stew·₩26,000",
+    "key": "산수갑산"
+  },
+  {
+    "nameEn": "Daegohon Naengmyeon",
+    "nameKo": "대고헌 본점",
+    "meta": "Gangnam·🍜 Noodles·₩15,000",
+    "key": "대고헌 본점"
+  },
+  {
+    "nameEn": "Jongno Janggun Gul Bossam",
+    "nameKo": "종로보쌈 장군굴보쌈",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩29,000",
+    "key": "종로보쌈 장군굴보쌈"
+  },
+  {
+    "nameEn": "Joahae Dakbal",
+    "nameKo": "좋아해닭발",
+    "meta": "Mapo·🍺 Pocha·₩33,800",
+    "key": "좋아해닭발"
+  },
+  {
+    "nameEn": "Yeongdong Gamjatang",
+    "nameKo": "영동 감자탕",
+    "meta": "Hongdae & Sinchon·🍲 Soup & Stew·₩38,000",
+    "key": "영동 감자탕"
+  },
+  {
+    "nameEn": "Daewon Galbi",
+    "nameKo": "대원갈비",
+    "meta": "Gwanak·🥩 BBQ·₩18,000",
+    "key": "대원갈비"
+  },
+  {
+    "nameEn": "Hansul Restaurant Sinchon",
+    "nameKo": "한술식당 신촌점",
+    "meta": "Mapo·🥘 Home-style·₩10,900",
+    "key": "한술식당 신촌점"
+  },
+  {
+    "nameEn": "Halmeoni Pocha Myeolchi Guksu",
+    "nameKo": "할머니포장마차멸치국수",
+    "meta": "Jamsil·🍜 Noodles·₩15,000",
+    "key": "할머니포장마차멸치국수"
+  },
+  {
+    "nameEn": "Mapo Choi Daepo BBQ",
+    "nameKo": "마포진짜원조최대포 본점",
+    "meta": "Mapo·🥩 BBQ·₩19,000",
+    "key": "마포진짜원조최대포 본점"
+  },
+  {
+    "nameEn": "Bbongnamujaengi",
+    "nameKo": "뽕나무쟁이 선릉본점",
+    "meta": "Gangnam·🥩 BBQ·₩43,000",
+    "key": "뽕나무쟁이 선릉본점"
+  },
+  {
+    "nameEn": "Paldang Jokbal",
+    "nameKo": "팔당족발",
+    "meta": "Gangnam·🥩 BBQ·₩12,000",
+    "key": "팔당족발"
+  },
+  {
+    "nameEn": "Kimssine Midnight Izakaya",
+    "nameKo": "김씨네심야식당",
+    "meta": "Mapo·🍺 Pocha·₩10,000",
+    "key": "김씨네심야식당"
+  },
+  {
+    "nameEn": "Seongsu Ilmirak Pork BBQ",
+    "nameKo": "성수일미락",
+    "meta": "Seongsu·🥩 BBQ·₩20,000",
+    "key": "성수일미락"
+  },
+  {
+    "nameEn": "Baek Sundae Bon-ga Saemat Sinchon Yonsei",
+    "nameKo": "백순대본가새맛 신촌연대점",
+    "meta": "Mapo·🍲 Soup & Stew·₩11,000",
+    "key": "백순대본가새맛 신촌연대점"
+  },
+  {
+    "nameEn": "Kkupdang",
+    "nameKo": "꿉당",
+    "meta": "Seocho·🥩 BBQ·₩20,000",
+    "key": "꿉당"
+  },
+  {
+    "nameEn": "Jipbulgui Bangi",
+    "nameKo": "짚불구이 본가 방이점",
+    "meta": "Jamsil·🥩 BBQ·₩50,000",
+    "key": "짚불구이 본가 방이점"
+  },
+  {
+    "nameEn": "Gongbok Restaurant Sinchon",
+    "nameKo": "공복식당 신촌점",
+    "meta": "Mapo·🥩 BBQ·₩16,000",
+    "key": "공복식당 신촌점"
+  },
+  {
+    "nameEn": "Gajang Matitneun Jokbal Gongneung",
+    "nameKo": "가장맛있는족발 공릉점",
+    "meta": "Nowon·🥩 BBQ·₩39,000",
+    "key": "가장맛있는족발 공릉점"
+  },
+  {
+    "nameEn": "Hansabal Pocha Cheongnyangni",
+    "nameKo": "한사발포차 청량리점",
+    "meta": "Dongdaemun·🍺 Pocha·₩11,000",
+    "key": "한사발포차 청량리점"
+  },
+  {
+    "nameEn": "Cheongnyangni Shellfish",
+    "nameKo": "청량리조개구이찜",
+    "meta": "Dongdaemun·🥘 Home-style·₩70,000",
+    "key": "청량리조개구이찜"
+  },
+  {
+    "nameEn": "Heobeu Jokbal",
+    "nameKo": "허브족발",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩45,000",
+    "key": "허브족발"
+  },
+  {
+    "nameEn": "Deomi Hanwoo",
+    "nameKo": "더미 한우",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩13,000",
+    "key": "더미 한우"
+  },
+  {
+    "nameEn": "Nongoeul Grill",
+    "nameKo": "논고을",
+    "meta": "Sadang·🥩 BBQ·₩16,000",
+    "key": "논고을"
+  },
+  {
+    "nameEn": "Sillim Hwangso Gopchang",
+    "nameKo": "신림황소곱창",
+    "meta": "Gwanak·🥩 BBQ·₩23,000",
+    "key": "신림황소곱창"
+  },
+  {
+    "nameEn": "Itaewon Hwaro",
+    "nameKo": "이태원화로",
+    "meta": "Itaewon·🥩 BBQ·₩8,000",
+    "key": "이태원화로"
+  },
+  {
+    "nameEn": "Ms Oden Bar",
+    "nameKo": "Ms오뎅바",
+    "meta": "Mapo·🍺 Pocha·₩16,000",
+    "key": "Ms오뎅바"
+  },
+  {
+    "nameEn": "Hong Gopchang",
+    "nameKo": "홍곱창 회기 본점",
+    "meta": "Dongdaemun·🥩 BBQ·₩17,000",
+    "key": "홍곱창 회기 본점"
+  },
+  {
+    "nameEn": "Daejin Dowon Chamchi Gangnam",
+    "nameKo": "대진 도원참치 강남역점",
+    "meta": "Gangnam·🐟 Raw Fish·₩11,900",
+    "key": "대진 도원참치 강남역점"
+  },
+  {
+    "nameEn": "Daemyeong Sogopchang",
+    "nameKo": "대명소곱창 왕십리점",
+    "meta": "Seongsu·🥩 BBQ·₩29,000",
+    "key": "대명소곱창 왕십리점"
+  },
+  {
+    "nameEn": "Singane Kalguksu",
+    "nameKo": "신가네칼국수",
+    "meta": "Nowon·🍜 Noodles·₩5,000",
+    "key": "신가네칼국수"
+  },
+  {
+    "nameEn": "Hyeon-u, Let's Eat Meat",
+    "nameKo": "현우야 고기 먹고가야지",
+    "meta": "Gangnam·🥩 BBQ·₩24,500",
+    "key": "현우야 고기 먹고가야지"
+  },
+  {
+    "nameEn": "Jeil Makchang",
+    "nameKo": "제일막창",
+    "meta": "Gwanak·🥩 BBQ·₩15,000",
+    "key": "제일막창"
+  },
+  {
+    "nameEn": "Choi Buja Bossam",
+    "nameKo": "최부자보쌈",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩32,000",
+    "key": "최부자보쌈"
+  },
+  {
+    "nameEn": "Gwangseong Chinese Restaurant",
+    "nameKo": "광성반점",
+    "meta": "Nowon·🥡 Korean-Chinese·₩11,000",
+    "key": "광성반점"
+  },
+  {
+    "nameEn": "Burim Restaurant",
+    "nameKo": "부림식당",
+    "meta": "Gwanak·🥩 BBQ·₩10,000",
+    "key": "부림식당"
+  },
+  {
+    "nameEn": "Ryu Mongmin Dakgalbi",
+    "nameKo": "류몽민 학동역점",
+    "meta": "Gangnam·🥩 BBQ · 🍗 Chicken·₩14,000",
+    "key": "류몽민 학동역점"
+  },
+  {
+    "nameEn": "Hongdae Jokbal",
+    "nameKo": "홍대족발",
+    "meta": "Hongdae & Sinchon·🥩 BBQ·₩45,000",
+    "key": "홍대족발"
+  },
+  {
+    "nameEn": "Wangdo Sutbul Galbi",
+    "nameKo": "왕도숯불갈비",
+    "meta": "Dongdaemun·🥩 BBQ·₩17,000",
+    "key": "왕도숯불갈비"
+  },
+  {
+    "nameEn": "Chungmuro Jjukkumi Bulgogi",
+    "nameKo": "충무로쭈꾸미불고기",
+    "meta": "Jongro/Myeongdong·🐟 Raw Fish·₩20,000",
+    "key": "충무로쭈꾸미불고기"
+  },
+  {
+    "nameEn": "Seoul Galbi Sillim",
+    "nameKo": "서울갈비 신림점",
+    "meta": "Gwanak·🥩 BBQ·₩17,000",
+    "key": "서울갈비 신림점"
+  },
+  {
+    "nameEn": "Eomeoni Daeseongjip",
+    "nameKo": "어머니대성집",
+    "meta": "Dongdaemun·🥘 Home-style·₩40,000",
+    "key": "어머니대성집"
+  },
+  {
+    "nameEn": "Seongsu Jokbal",
+    "nameKo": "성수족발",
+    "meta": "Seongsu·🥩 BBQ·₩7,000",
+    "key": "성수족발"
+  },
+  {
+    "nameEn": "Bultaneun Kkoggobal",
+    "nameKo": "불타는꼬꼬발 본점",
+    "meta": "Gwanak·🍺 Pocha·₩28,000",
+    "key": "불타는꼬꼬발 본점"
+  },
+  {
+    "nameEn": "Seoul Badang Ttukseom Bar",
+    "nameKo": "서울바당 뚝섬점",
+    "meta": "Seongsu·🍺 Pocha·₩23,000",
+    "key": "서울바당 뚝섬점"
+  },
+  {
+    "nameEn": "Dageuldageul Chicken",
+    "nameKo": "다글다글",
+    "meta": "Gwanak·🍗 Chicken·₩20,000",
+    "key": "다글다글"
+  },
+  {
+    "nameEn": "Mangwon Sujebi",
+    "nameKo": "망원동 수제비",
+    "meta": "Mapo·🍜 Noodles·₩9,000",
+    "key": "망원동 수제비"
+  },
+  {
+    "nameEn": "Pajeon Dakgalbi",
+    "nameKo": "파전닭갈비",
+    "meta": "Yeongdeungpo·🥩 BBQ · 🍗 Chicken·₩14,000",
+    "key": "파전닭갈비"
+  },
+  {
+    "nameEn": "Mullae-dong Naengsam",
+    "nameKo": "문래동냉삼 문래본점",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩5,000",
+    "key": "문래동냉삼 문래본점"
+  },
+  {
+    "nameEn": "Saemgol Charcoal-Grilled Makchang",
+    "nameKo": "샘골 참숯불 막창구이",
+    "meta": "Seocho·🥩 BBQ·₩21,000",
+    "key": "샘골 참숯불 막창구이"
+  },
+  {
+    "nameEn": "Hyeonpung Hwaro Charcoal Grill",
+    "nameKo": "현풍화로참숯불구이",
+    "meta": "Nowon·🥩 BBQ·₩19,000",
+    "key": "현풍화로참숯불구이"
+  },
+  {
+    "nameEn": "Suwonjip Pork BBQ",
+    "nameKo": "수원집",
+    "meta": "Jamsil·🥩 BBQ·₩10,000",
+    "key": "수원집"
+  },
+  {
+    "nameEn": "Matjip Buchu Gopchang",
+    "nameKo": "맛집부추곱창",
+    "meta": "Seocho·🥩 BBQ·₩25,000",
+    "key": "맛집부추곱창"
+  },
+  {
+    "nameEn": "Iheungbu Ohyang Jokbal",
+    "nameKo": "이흥부오향족발",
+    "meta": "Seongsu·🥩 BBQ·₩40,000",
+    "key": "이흥부오향족발"
+  },
+  {
+    "nameEn": "Jeonggam-eorin Yongsan",
+    "nameKo": "정감어린 용산점",
+    "meta": "Yongsan·🥩 BBQ·₩12,000",
+    "key": "정감어린 용산점"
+  },
+  {
+    "nameEn": "Jipbuldon Hapjeong",
+    "nameKo": "짚불돈 합정",
+    "meta": "Mapo·🥩 BBQ·₩56,000",
+    "key": "짚불돈 합정"
+  },
+  {
+    "nameEn": "Baekje Butcher Shop",
+    "nameKo": "백제정육점",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩42,000",
+    "key": "백제정육점"
+  },
+  {
+    "nameEn": "Jin Ok-hwa Halmae Wonjo Dak-hanmari",
+    "nameKo": "진옥화할매원조닭한마리",
+    "meta": "Jongro/Myeongdong·🍗 Chicken·₩28,000",
+    "key": "진옥화할매원조닭한마리"
+  },
+  {
+    "nameEn": "Bak Seobang Sundae-gukbap",
+    "nameKo": "박서방순대국밥 삼성본점",
+    "meta": "Gangnam·🍲 Soup & Stew·₩15,000",
+    "key": "박서방순대국밥 삼성본점"
+  },
+  {
+    "nameEn": "Wonjo Yangpyeong Sinnnae Seoul Haejangguk",
+    "nameKo": "원조양평신내서울해장국 마포직영점",
+    "meta": "Mapo·🍲 Soup & Stew·₩14,000",
+    "key": "원조양평신내서울해장국 마포직영점"
+  },
+  {
+    "nameEn": "Wangsimni Susanghan Makchang",
+    "nameKo": "왕십리 수상한막창 본점",
+    "meta": "Seongsu·🥩 BBQ·₩5,000",
+    "key": "왕십리 수상한막창 본점"
+  },
+  {
+    "nameEn": "Byeolmi Naengsam",
+    "nameKo": "별미냉삼",
+    "meta": "Sadang·🥩 BBQ·₩9,000",
+    "key": "별미냉삼"
+  },
+  {
+    "nameEn": "Apple House Tteokbokki",
+    "nameKo": "애플하우스",
+    "meta": "Sadang·🌭 Street Food·₩6,000",
+    "key": "애플하우스"
+  },
+  {
+    "nameEn": "Gyedan Kalguksu",
+    "nameKo": "계단칼국수 강남성심병원본점",
+    "meta": "Yeongdeungpo·🍜 Noodles·₩10,000",
+    "key": "계단칼국수 강남성심병원본점"
+  },
+  {
+    "nameEn": "Cheonggiwa Town Euljiro",
+    "nameKo": "청기와타운 을지로점",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩31,000",
+    "key": "청기와타운 을지로점"
+  },
+  {
+    "nameEn": "Jjomaemaeun Tteokbokki Gongneung",
+    "nameKo": "쪼매매운떡볶이 공릉",
+    "meta": "Nowon·🌭 Street Food·₩5,500",
+    "key": "쪼매매운떡볶이 공릉"
+  },
+  {
+    "nameEn": "Hwemiri Son Kalguksu Bossam",
+    "nameKo": "훼미리손칼국수보쌈",
+    "meta": "Seongsu·🍜 Noodles·₩18,000",
+    "key": "훼미리손칼국수보쌈"
+  },
+  {
+    "nameEn": "Jokjang Yeouido Jokbal",
+    "nameKo": "족발의장인 족장 여의도본점",
+    "meta": "Yeouido·🥩 BBQ·₩41,000",
+    "key": "족발의장인 족장 여의도본점"
+  },
+  {
+    "nameEn": "Gogibaksa Sillim",
+    "nameKo": "고기박사 신림점",
+    "meta": "Gwanak·🥩 BBQ·₩14,000",
+    "key": "고기박사 신림점"
+  },
+  {
+    "nameEn": "Daehanok Singil-jeom Gomtang",
+    "nameKo": "대한옥 신길점",
+    "meta": "Yeongdeungpo·🍲 Soup & Stew·₩30,000",
+    "key": "대한옥 신길점"
+  },
+  {
+    "nameEn": "Dodongjip",
+    "nameKo": "도동집",
+    "meta": "Yongsan·🥘 Home-style·₩10,000",
+    "key": "도동집"
+  },
+  {
+    "nameEn": "Norumok Hwangso Gopchang",
+    "nameKo": "노루목황소곱창 2호점",
+    "meta": "Mapo·🥩 BBQ·₩18,000",
+    "key": "노루목황소곱창 2호점"
+  },
+  {
+    "nameEn": "Seongmun Restaurant",
+    "nameKo": "성문식당",
+    "meta": "Yeongdeungpo·🥘 Home-style·₩10,000",
+    "key": "성문식당"
+  },
+  {
+    "nameEn": "Myeonjeong",
+    "nameKo": "미면정 양재본점",
+    "meta": "Gangnam·🥘 Home-style·₩19,800",
+    "key": "미면정 양재본점"
+  },
+  {
+    "nameEn": "Memil Danpyeon Yeouido",
+    "nameKo": "메밀단편 여의도점",
+    "meta": "Yeouido·🍜 Noodles·₩12,000",
+    "key": "메밀단편 여의도점"
+  },
+  {
+    "nameEn": "Seongsu Agujjim",
+    "nameKo": "성수아구",
+    "meta": "Seongsu·🐟 Raw Fish·₩15,000",
+    "key": "성수아구"
+  },
+  {
+    "nameEn": "Jeonggane Son Kal-guksu",
+    "nameKo": "정가네손칼국수",
+    "meta": "Gangnam·🍜 Noodles·₩9,500",
+    "key": "정가네손칼국수"
+  },
+  {
+    "nameEn": "Haemul Hansoban",
+    "nameKo": "해물한소반 사당직영점",
+    "meta": "Sadang·🐟 Raw Fish·₩40,000",
+    "key": "해물한소반 사당직영점"
+  },
+  {
+    "nameEn": "Geummun Chinese Restaurant",
+    "nameKo": "금문중화요리",
+    "meta": "Mapo·🥡 Korean-Chinese·₩7,000",
+    "key": "금문중화요리"
+  },
+  {
+    "nameEn": "Mandu Myeongga Damwon",
+    "nameKo": "만두명가담원",
+    "meta": "Sadang·🌭 Street Food·₩5,000",
+    "key": "만두명가담원"
+  },
+  {
+    "nameEn": "Kitchen Bomnal Gimbap",
+    "nameKo": "키친봄날",
+    "meta": "Hongdae & Sinchon·🌭 Street Food·₩6,000",
+    "key": "키친봄날"
+  },
+  {
+    "nameEn": "Daebak Gopchang-gui",
+    "nameKo": "대박곱창구이",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩25,000",
+    "key": "대박곱창구이"
+  },
+  {
+    "nameEn": "Hoseonsaengjeon Cuisine Pub",
+    "nameKo": "호선생전",
+    "meta": "Jongro/Myeongdong·🍺 Pocha·₩9,500",
+    "key": "호선생전"
+  },
+  {
+    "nameEn": "Eommamaneul Bossam",
+    "nameKo": "엄마마늘보쌈",
+    "meta": "Nowon·🥩 BBQ·₩40,000",
+    "key": "엄마마늘보쌈"
+  },
+  {
+    "nameEn": "Wonhalmae Dak Hanmari",
+    "nameKo": "원소닭/원할매소문난원조닭한마리",
+    "meta": "Jongro/Myeongdong·🍗 Chicken·₩55,000",
+    "key": "원소닭/원할매소문난원조닭한마리"
+  },
+  {
+    "nameEn": "Dohwa Gopchang",
+    "nameKo": "도화곱창",
+    "meta": "Mapo·🥩 BBQ·₩24,900",
+    "key": "도화곱창"
+  },
+  {
+    "nameEn": "Sangsu Kimchi Samgyeopsal",
+    "nameKo": "상수김치삼겹살",
+    "meta": "Mapo·🥩 BBQ·₩16,000",
+    "key": "상수김치삼겹살"
+  },
+  {
+    "nameEn": "Choi Won-seok's Pig Platter & Hwasik Hanwoo Guui",
+    "nameKo": "최원석의돼지한판&amp;화식한우 구의점",
+    "meta": "Konkuk Univ·🥩 BBQ",
+    "key": "최원석의돼지한판&amp;화식한우 구의점"
+  },
+  {
+    "nameEn": "Idam Apgujeong",
+    "nameKo": "이담 압구정",
+    "meta": "Apgujeong & Sinsa·🥩 BBQ·₩53,000",
+    "key": "이담 압구정"
+  },
+  {
+    "nameEn": "Sujung Ssambap",
+    "nameKo": "수정쌈밥",
+    "meta": "Yeouido·🥘 Home-style·₩20,000",
+    "key": "수정쌈밥"
+  },
+  {
+    "nameEn": "Najongsun Halmae Jjukkumi",
+    "nameKo": "나정순할매쭈꾸미",
+    "meta": "Dongdaemun·🥘 Home-style·₩6,000",
+    "key": "나정순할매쭈꾸미"
+  },
+  {
+    "nameEn": "Jongno Gopchang",
+    "nameKo": "종로곱창",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩26,000",
+    "key": "종로곱창"
+  },
+  {
+    "nameEn": "Ttosuni Wonjo Sundae",
+    "nameKo": "또순이원조순대 본점",
+    "meta": "Gwanak·🍲 Soup & Stew·₩11,000",
+    "key": "또순이원조순대 본점"
+  },
+  {
+    "nameEn": "Plaza Son Kalguksu",
+    "nameKo": "프라자손칼국수",
+    "meta": "Jamsil·🍜 Noodles·₩10,000",
+    "key": "프라자손칼국수"
+  },
+  {
+    "nameEn": "Jjigae Jeongseok",
+    "nameKo": "찌개의정석 마포성산동점",
+    "meta": "Mapo·🍲 Soup & Stew·₩9,000",
+    "key": "찌개의정석 마포성산동점"
+  },
+  {
+    "nameEn": "Gimmakhoe Sashimi House",
+    "nameKo": "김막회",
+    "meta": "Mapo·🐟 Raw Fish·₩9,000",
+    "key": "김막회"
+  },
+  {
+    "nameEn": "Dongsungak Chinese Restaurant",
+    "nameKo": "동순각",
+    "meta": "Yeongdeungpo·🥡 Korean-Chinese·₩10,000",
+    "key": "동순각"
+  },
+  {
+    "nameEn": "Hyeonshim Izakaya Seongsu",
+    "nameKo": "현심야식당 성수점",
+    "meta": "Seongsu·🍺 Pocha·₩26,000",
+    "key": "현심야식당 성수점"
+  },
+  {
+    "nameEn": "Suji Sanghoe Gangnam",
+    "nameKo": "수지상회 강남1호점",
+    "meta": "Gangnam·🍺 Pocha·₩7,900",
+    "key": "수지상회 강남1호점"
+  },
+  {
+    "nameEn": "Dangol Sonnim Yeongdeungpo Branch",
+    "nameKo": "단골손님 영등포점",
+    "meta": "Yeongdeungpo·🍺 Pocha·₩21,500",
+    "key": "단골손님 영등포점"
+  },
+  {
+    "nameEn": "Sinkimchi Saeng Samgyeopsal",
+    "nameKo": "신김치생삼겹살",
+    "meta": "Mapo·🥩 BBQ·₩17,000",
+    "key": "신김치생삼겹살"
+  },
+  {
+    "nameEn": "Wonjo Hosu Samgyetang",
+    "nameKo": "원조호수삼계탕",
+    "meta": "Yeongdeungpo·🍲 Soup & Stew·₩19,000",
+    "key": "원조호수삼계탕"
+  },
+  {
+    "nameEn": "Sangam Ilmirak Pork BBQ",
+    "nameKo": "상암일미락",
+    "meta": "Mapo·🥩 BBQ·₩22,000",
+    "key": "상암일미락"
+  },
+  {
+    "nameEn": "Ichibang Iyagi Izakaya",
+    "nameKo": "이찌방이야기 본점",
+    "meta": "Konkuk Univ·🍺 Pocha·₩5,000",
+    "key": "이찌방이야기 본점"
+  },
+  {
+    "nameEn": "Yukhoegwan Pocha Yeouido",
+    "nameKo": "육회관포차 여의도점",
+    "meta": "Yeouido·🍺 Pocha·₩44,000",
+    "key": "육회관포차 여의도점"
+  },
+  {
+    "nameEn": "Jinju-jip Gomtang",
+    "nameKo": "진주집",
+    "meta": "Jongro/Myeongdong·🍲 Soup & Stew·₩12,000",
+    "key": "진주집"
+  },
+  {
+    "nameEn": "Hangjeongsai Grill",
+    "nameKo": "항정사이",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩9,000",
+    "key": "항정사이"
+  },
+  {
+    "nameEn": "Ppalganuijajip Gangnam-yeok",
+    "nameKo": "빨간의자집 강남역점",
+    "meta": "Gangnam·🥩 BBQ·₩8,000",
+    "key": "빨간의자집 강남역점"
+  },
+  {
+    "nameEn": "Busan Sashimi House",
+    "nameKo": "부산횟집",
+    "meta": "Bukchon & Insadong·🐟 Raw Fish·₩19,000",
+    "key": "부산횟집"
+  },
+  {
+    "nameEn": "Busandae Won Eomuk Snack Bar",
+    "nameKo": "부산대원어묵",
+    "meta": "Mapo·🌭 Street Food·₩5,000",
+    "key": "부산대원어묵"
+  },
+  {
+    "nameEn": "Pinocchio Naengmyeon Snack Bar",
+    "nameKo": "피노키오냉면",
+    "meta": "Nowon·🌭 Street Food·₩5,000",
+    "key": "피노키오냉면"
+  },
+  {
+    "nameEn": "Nongmin Baegam Sundae",
+    "nameKo": "농민백암순대 본점",
+    "meta": "Gangnam·🍲 Soup & Stew·₩17,000",
+    "key": "농민백암순대 본점"
+  },
+  {
+    "nameEn": "Minha Myeonok",
+    "nameKo": "민하면옥",
+    "meta": "Gwanak·🍜 Noodles·₩12,000",
+    "key": "민하면옥"
+  },
+  {
+    "nameEn": "Horangigul Gopchang",
+    "nameKo": "호랑이굴 방이점",
+    "meta": "Jamsil·🥩 BBQ·₩11,900",
+    "key": "호랑이굴 방이점"
+  },
+  {
+    "nameEn": "Isu Jokbal",
+    "nameKo": "이수족발",
+    "meta": "Gangnam·🥩 BBQ·₩38,000",
+    "key": "이수족발"
+  },
+  {
+    "nameEn": "Gimbapcheoreom Seonyudo-yeok Snack Bar",
+    "nameKo": "김밥처럼 선유도역 본점",
+    "meta": "Yeongdeungpo·🌭 Street Food·₩5,000",
+    "key": "김밥처럼 선유도역 본점"
+  },
+  {
+    "nameEn": "Ilhomyeonok Naengmyeon",
+    "nameKo": "일호면옥",
+    "meta": "Yeouido·🍜 Noodles·₩13,000",
+    "key": "일호면옥"
+  },
+  {
+    "nameEn": "Hyeongje Dakbal Konkuk Univ. Branch",
+    "nameKo": "형제닭발 건대점",
+    "meta": "Konkuk Univ·🍺 Pocha·₩17,000",
+    "key": "형제닭발 건대점"
+  },
+  {
+    "nameEn": "Imo Pocha",
+    "nameKo": "이모포차",
+    "meta": "Gwanak·🍺 Pocha·₩17,000",
+    "key": "이모포차"
+  },
+  {
+    "nameEn": "Mong Galbi",
+    "nameKo": "몽갈비 사당이수본점",
+    "meta": "Sadang·🥩 BBQ·₩8,000",
+    "key": "몽갈비 사당이수본점"
+  },
+  {
+    "nameEn": "Gabongru",
+    "nameKo": "가봉루",
+    "meta": "Jongro/Myeongdong·🥡 Korean-Chinese·₩16,000",
+    "key": "가봉루"
+  },
+  {
+    "nameEn": "Dangsan Wonjo Gopchang",
+    "nameKo": "당산원조곱창",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩27,000",
+    "key": "당산원조곱창"
+  },
+  {
+    "nameEn": "Hamgyeongdo Chapssal Sundae",
+    "nameKo": "함경도찹쌀순대",
+    "meta": "Jamsil·🍲 Soup & Stew·₩20,000",
+    "key": "함경도찹쌀순대"
+  },
+  {
+    "nameEn": "Sotguk Gyeongdong Market",
+    "nameKo": "솥국 경동시장점",
+    "meta": "Dongdaemun·🥩 BBQ · 🍲 Soup & Stew·₩18,000",
+    "key": "솥국 경동시장점"
+  },
+  {
+    "nameEn": "Mungteong Sindae-bangsamgeori-yeok Pork BBQ",
+    "nameKo": "뭉텅 신대방삼거리역점",
+    "meta": "Sadang·🥩 BBQ·₩5,000",
+    "key": "뭉텅 신대방삼거리역점"
+  },
+  {
+    "nameEn": "Sinchon Buchu Gopchang",
+    "nameKo": "신촌부추곱창 신촌본점",
+    "meta": "Mapo·🥩 BBQ·₩26,000",
+    "key": "신촌부추곱창 신촌본점"
+  },
+  {
+    "nameEn": "Wangjumeok Pork BBQ",
+    "nameKo": "왕주먹",
+    "meta": "Gwanak·🥩 BBQ·₩16,000",
+    "key": "왕주먹"
+  },
+  {
+    "nameEn": "Gamasot Son Dubu",
+    "nameKo": "가마솥손두부 사당본점",
+    "meta": "Sadang·🍲 Soup & Stew·₩18,000",
+    "key": "가마솥손두부 사당본점"
+  },
+  {
+    "nameEn": "Kim Gwang-seok Sinchon Kalguksu",
+    "nameKo": "김광석신촌칼국수 본점",
+    "meta": "Hongdae & Sinchon·🍜 Noodles·₩10,000",
+    "key": "김광석신촌칼국수 본점"
+  },
+  {
+    "nameEn": "Deunggalbi Darin",
+    "nameKo": "등갈비달인 본점",
+    "meta": "Jamsil·🥩 BBQ·₩35,000",
+    "key": "등갈비달인 본점"
+  },
+  {
+    "nameEn": "Seochon Gyedanjip",
+    "nameKo": "서촌계단집",
+    "meta": "Seochon & Buam·🐟 Raw Fish·₩29,000",
+    "key": "서촌계단집"
+  },
+  {
+    "nameEn": "Yeoljeongdo Jjukkumi",
+    "nameKo": "열정도쭈꾸미",
+    "meta": "Yongsan·🥘 Home-style·₩14,000",
+    "key": "열정도쭈꾸미"
+  },
+  {
+    "nameEn": "Bbongsabu Chinese Restaurant",
+    "nameKo": "뽕사부",
+    "meta": "Jamsil·🥡 Korean-Chinese·₩14,000",
+    "key": "뽕사부"
+  },
+  {
+    "nameEn": "Mutan Apgujeong",
+    "nameKo": "무탄 압구정 본점",
+    "meta": "Apgujeong & Sinsa·🥡 Korean-Chinese·₩52,000",
+    "key": "무탄 압구정 본점"
+  },
+  {
+    "nameEn": "Mongtan",
+    "nameKo": "몽탄",
+    "meta": "Yongsan·🥩 BBQ·₩18,000",
+    "key": "몽탄"
+  },
+  {
+    "nameEn": "Asojeong Naengmyeon",
+    "nameKo": "아소정",
+    "meta": "Mapo·🍜 Noodles·₩14,000",
+    "key": "아소정"
+  },
+  {
+    "nameEn": "Seolleung Sundae-guk",
+    "nameKo": "선릉 순대국",
+    "meta": "Gangnam·🍲 Soup & Stew·₩30,000",
+    "key": "선릉 순대국"
+  },
+  {
+    "nameEn": "Dangsan Ppalkkan Jjukkumi",
+    "nameKo": "당산빨간쭈꾸미",
+    "meta": "Yeongdeungpo·🥘 Home-style·₩17,000",
+    "key": "당산빨간쭈꾸미"
+  },
+  {
+    "nameEn": "Arichai Chinese Restaurant",
+    "nameKo": "아리차이",
+    "meta": "Gwanak·🥡 Korean-Chinese·₩28,000",
+    "key": "아리차이"
+  },
+  {
+    "nameEn": "Chamchi Sesang Gongneung Sashimi House",
+    "nameKo": "참치세상 공릉본점",
+    "meta": "Nowon·🐟 Raw Fish·₩48,000",
+    "key": "참치세상 공릉본점"
+  },
+  {
+    "nameEn": "Icheon Myeonok Hamheung Naengmyeon",
+    "nameKo": "이천면옥함흥냉면",
+    "meta": "Yongsan·🍜 Noodles·₩45,000",
+    "key": "이천면옥함흥냉면"
+  },
+  {
+    "nameEn": "Ilmijip Gamjatang",
+    "nameKo": "일미집",
+    "meta": "Yongsan·🍲 Soup & Stew·₩23,000",
+    "key": "일미집"
+  },
+  {
+    "nameEn": "Nongmin Baegam Sundae",
+    "nameKo": "농민백암순대",
+    "meta": "Gangnam·🍲 Soup & Stew·₩17,000",
+    "key": "농민백암순대"
+  },
+  {
+    "nameEn": "Hwangtogamasot Seolleongtang",
+    "nameKo": "황토가마솥 설렁탕",
+    "meta": "Sadang·🍲 Soup & Stew·₩20,000",
+    "key": "황토가마솥 설렁탕"
+  },
+  {
+    "nameEn": "Hongdae Gyodori",
+    "nameKo": "홍대 교도리",
+    "meta": "Mapo·🍺 Pocha·₩9,000",
+    "key": "홍대 교도리"
+  },
+  {
+    "nameEn": "Galdaepo Grill",
+    "nameKo": "갈대포",
+    "meta": "Gwanak·🥩 BBQ·₩9,500",
+    "key": "갈대포"
+  },
+  {
+    "nameEn": "Pungnyeon Charcoal Galbi",
+    "nameKo": "풍년숯불갈비",
+    "meta": "Mapo·🥩 BBQ·₩14,000",
+    "key": "풍년숯불갈비"
+  },
+  {
+    "nameEn": "Yeorojip Yeongdeungpo",
+    "nameKo": "여로집 영등포점",
+    "meta": "Yeongdeungpo·🥘 Home-style·₩18,000",
+    "key": "여로집 영등포점"
+  },
+  {
+    "nameEn": "Kal Noodle Bar Bangi",
+    "nameKo": "칼누들바 방이본점",
+    "meta": "Jamsil·🍺 Pocha·₩10,000",
+    "key": "칼누들바 방이본점"
+  },
+  {
+    "nameEn": "Jeonghyeoni Ne Yongsan Main Branch",
+    "nameKo": "정현이네 용산본점",
+    "meta": "Yongsan·🍱 Set Meal·₩12,000",
+    "key": "정현이네 용산본점"
+  },
+  {
+    "nameEn": "Gogissarong Isu Station",
+    "nameKo": "고기싸롱 이수역점",
+    "meta": "Sadang·🥩 BBQ·₩18,900",
+    "key": "고기싸롱 이수역점"
+  },
+  {
+    "nameEn": "Damsot Seongsu",
+    "nameKo": "담솥 성수점",
+    "meta": "Seongsu·🥘 Home-style·₩12,000",
+    "key": "담솥 성수점"
+  },
+  {
+    "nameEn": "Choryang Saeng Galbi",
+    "nameKo": "초량생갈비",
+    "meta": "Yeouido·🥩 BBQ·₩13,000",
+    "key": "초량생갈비"
+  },
+  {
+    "nameEn": "천일삼계탕",
+    "nameKo": null,
+    "meta": "Dongdaemun·🥩 BBQ · 🍗 Chicken",
+    "key": "천일삼계탕"
+  },
+  {
+    "nameEn": "Dongjeok Kkangtonggui",
+    "nameKo": "동적깡통구이 노원직영점",
+    "meta": "Nowon·🥩 BBQ·₩10,000",
+    "key": "동적깡통구이 노원직영점"
+  },
+  {
+    "nameEn": "Daknalda",
+    "nameKo": "닭날다",
+    "meta": "Mapo·🍗 Chicken·₩14,000",
+    "key": "닭날다"
+  },
+  {
+    "nameEn": "Sinpungru Gopchang-gui",
+    "nameKo": "신풍루 곱창구이",
+    "meta": "Gwanak·🥩 BBQ·₩5,000",
+    "key": "신풍루 곱창구이"
+  },
+  {
+    "nameEn": "Chueok-ui Yeontan-gui",
+    "nameKo": "추억의연탄구이",
+    "meta": "Itaewon·🥩 BBQ·₩17,000",
+    "key": "추억의연탄구이"
+  },
+  {
+    "nameEn": "Gitteul",
+    "nameKo": "깃뜰 홍대본점",
+    "meta": "Hongdae & Sinchon·🥩 BBQ·₩19,000",
+    "key": "깃뜰 홍대본점"
+  },
+  {
+    "nameEn": "Hanyang Cham Wang Jokbal Bossam",
+    "nameKo": "한양참왕족발",
+    "meta": "Itaewon·🥩 BBQ",
+    "key": "한양참왕족발"
+  },
+  {
+    "nameEn": "Hanchu Beer Pub",
+    "nameKo": "한추",
+    "meta": "Apgujeong & Sinsa·🍺 Pocha·₩23,000",
+    "key": "한추"
+  },
+  {
+    "nameEn": "Buyeong Doganitang",
+    "nameKo": "부영도가니탕",
+    "meta": "Seochon & Buam·🥘 Home-style·₩17,000",
+    "key": "부영도가니탕"
+  },
+  {
+    "nameEn": "Jingujeong Korean Restaurant",
+    "nameKo": "진구정",
+    "meta": "Konkuk Univ·🥘 Home-style·₩19,000",
+    "key": "진구정"
+  },
+  {
+    "nameEn": "Gwanghwamun Hanok House",
+    "nameKo": "광화문 한옥집",
+    "meta": "Jongro/Myeongdong·🥘 Home-style·₩10,000",
+    "key": "광화문 한옥집"
+  },
+  {
+    "nameEn": "덕성각",
+    "nameKo": null,
+    "meta": "Dongdaemun·🥡 Korean-Chinese",
+    "key": "덕성각"
+  },
+  {
+    "nameEn": "Sinseunggwan Restaurant",
+    "nameKo": "신승관",
+    "meta": "Jongro/Myeongdong·🥡 Korean-Chinese·₩18,000",
+    "key": "신승관"
+  },
+  {
+    "nameEn": "Barbara's Kitchen Tteokbokki",
+    "nameKo": "바바라스키친",
+    "meta": "Itaewon·🌭 Street Food·₩5,000",
+    "key": "바바라스키친"
+  },
+  {
+    "nameEn": "Hapjeong Sundaeguk",
+    "nameKo": "합정순대국",
+    "meta": "Mapo·🍲 Soup & Stew·₩10,500",
+    "key": "합정순대국"
+  },
+  {
+    "nameEn": "Yeonggwang Bossam",
+    "nameKo": "영광보쌈",
+    "meta": "Mapo·🥩 BBQ·₩28,000",
+    "key": "영광보쌈"
+  },
+  {
+    "nameEn": "Baljjak Kyunghee University Beer Hof",
+    "nameKo": "발짝 경희대점",
+    "meta": "Dongdaemun·🍺 Pocha·₩12,900",
+    "key": "발짝 경희대점"
+  },
+  {
+    "nameEn": "Audrey Gopchang",
+    "nameKo": "오드리곱창",
+    "meta": "Sadang·🥩 BBQ·₩24,000",
+    "key": "오드리곱창"
+  },
+  {
+    "nameEn": "Ocheomji Squid Dishes",
+    "nameKo": "오첨지",
+    "meta": "Gwanak·🥘 Home-style·₩14,000",
+    "key": "오첨지"
+  },
+  {
+    "nameEn": "Jjukkumi Blues Sinchon",
+    "nameKo": "쭈꾸미블루스 신촌본점",
+    "meta": "Hongdae & Sinchon·🐟 Raw Fish·₩9,000",
+    "key": "쭈꾸미블루스 신촌본점"
+  },
+  {
+    "nameEn": "Sangnoksu Apgujeong",
+    "nameKo": "상록수 압구정점",
+    "meta": "Apgujeong & Sinsa·🥩 BBQ·₩8,000",
+    "key": "상록수 압구정점"
+  },
+  {
+    "nameEn": "Craft Hans Isujeom",
+    "nameKo": "크래프트한스 이수점",
+    "meta": "Sadang·🍺 Pocha·₩6,900",
+    "key": "크래프트한스 이수점"
+  },
+  {
+    "nameEn": "Gyodong Wang Jokbal",
+    "nameKo": "교동왕족발",
+    "meta": "Mapo·🥩 BBQ·₩28,000",
+    "key": "교동왕족발"
+  },
+  {
+    "nameEn": "Yukmong Hongdae BBQ",
+    "nameKo": "육몽 홍대본점",
+    "meta": "Hongdae & Sinchon·🥩 BBQ·₩13,000",
+    "key": "육몽 홍대본점"
+  },
+  {
+    "nameEn": "Hwarangdae Gopchang",
+    "nameKo": "화랑대곱창",
+    "meta": "Nowon·🥩 BBQ·₩13,000",
+    "key": "화랑대곱창"
+  },
+  {
+    "nameEn": "Beoseotjanchijip",
+    "nameKo": "버섯잔치집 본점",
+    "meta": "Jamsil·🥘 Home-style·₩19,000",
+    "key": "버섯잔치집 본점"
+  },
+  {
+    "nameEn": "Gohyang Sundae-guk",
+    "nameKo": "고향순대국",
+    "meta": "Gwanak·🍲 Soup & Stew·₩40,000",
+    "key": "고향순대국"
+  },
+  {
+    "nameEn": "Kkokgeudak Gangnam",
+    "nameKo": "꼭그닭 강남점",
+    "meta": "Gangnam·🍺 Pocha·₩16,900",
+    "key": "꼭그닭 강남점"
+  },
+  {
+    "nameEn": "Taegisan Deodeok Sundae Namseong Station",
+    "nameKo": "태기산더덕순대 남성역점",
+    "meta": "Sadang·🥩 BBQ · 🍲 Soup & Stew·₩10,000",
+    "key": "태기산더덕순대 남성역점"
+  },
+  {
+    "nameEn": "Jangwon Gimbap Seocho Branch",
+    "nameKo": "장원김밥 서초점",
+    "meta": "Seocho·🌭 Street Food·₩7,500",
+    "key": "장원김밥 서초점"
+  },
+  {
+    "nameEn": "Jeil Kongjip Tofu Cuisine",
+    "nameKo": "제일콩집",
+    "meta": "Nowon·🥘 Home-style·₩13,000",
+    "key": "제일콩집"
+  },
+  {
+    "nameEn": "Gyetan House Dakgalbi",
+    "nameKo": "계탄집",
+    "meta": "Konkuk Univ·🥩 BBQ · 🍗 Chicken·₩15,000",
+    "key": "계탄집"
+  },
+  {
+    "nameEn": "Ellui Pizza Konkuk Univ. Branch",
+    "nameKo": "엘루이피자 건대점",
+    "meta": "Konkuk Univ·🍺 Pocha·₩19,900",
+    "key": "엘루이피자 건대점"
+  },
+  {
+    "nameEn": "Kkokoajji Charcoal Chicken Gangnam",
+    "nameKo": "꼬꼬아찌 숯불치킨 강남점",
+    "meta": "Gangnam·🍗 Chicken·₩25,000",
+    "key": "꼬꼬아찌 숯불치킨 강남점"
+  },
+  {
+    "nameEn": "Uraeok",
+    "nameKo": "우래옥",
+    "meta": "Jongro/Myeongdong·🍜 Noodles·₩18,000",
+    "key": "우래옥"
+  },
+  {
+    "nameEn": "Battery88 Hongdae",
+    "nameKo": "배터리88 홍대",
+    "meta": "Mapo·🍺 Pocha·₩13,500",
+    "key": "배터리88 홍대"
+  },
+  {
+    "nameEn": "Restaurant Jueun",
+    "nameKo": "레스토랑 주은",
+    "meta": "Jongro/Myeongdong·🍱 Set Meal · 🥘 Home-style·₩250,000",
+    "key": "레스토랑 주은"
+  },
+  {
+    "nameEn": "Taeneung Gamjatang",
+    "nameKo": "태능감자탕 본점",
+    "meta": "Nowon·🍲 Soup & Stew·₩11,000",
+    "key": "태능감자탕 본점"
+  },
+  {
+    "nameEn": "Surakio Naengmyeon Nowon",
+    "nameKo": "수락이오냉면 노원본점",
+    "meta": "Nowon·🍜 Noodles·₩9,000",
+    "key": "수락이오냉면 노원본점"
+  },
+  {
+    "nameEn": "Bbaekdon",
+    "nameKo": "빽돈 중구 을지로",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩41,900",
+    "key": "빽돈 중구 을지로"
+  },
+  {
+    "nameEn": "Dong-eo Dong-rak Sashimi House",
+    "nameKo": "동어동락 삼성본점",
+    "meta": "Gangnam·🐟 Raw Fish·₩39,000",
+    "key": "동어동락 삼성본점"
+  },
+  {
+    "nameEn": "Sokcho Saengtae House",
+    "nameKo": "속초생태집",
+    "meta": "Jongro/Myeongdong·🥘 Home-style·₩29,000",
+    "key": "속초생태집"
+  },
+  {
+    "nameEn": "Wolhwa Pork Mullaedong",
+    "nameKo": "월화고기 문래점",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩6,000",
+    "key": "월화고기 문래점"
+  },
+  {
+    "nameEn": "Tosokchon Samgyetang",
+    "nameKo": "토속촌 삼계탕",
+    "meta": "Seochon & Buam·🍲 Soup & Stew·₩18,000",
+    "key": "토속촌 삼계탕"
+  },
+  {
+    "nameEn": "Sunhui's Bindaetteok",
+    "nameKo": "원조순희네빈대떡",
+    "meta": "Jongro/Myeongdong·🍺 Pocha·₩15,000",
+    "key": "원조순희네빈대떡"
+  },
+  {
+    "nameEn": "Beomga Chinese Restaurant",
+    "nameKo": "범가",
+    "meta": "Konkuk Univ·🥡 Korean-Chinese·₩26,000",
+    "key": "범가"
+  },
+  {
+    "nameEn": "Maknae Sashimi House",
+    "nameKo": "막내회집 본점",
+    "meta": "Jongro/Myeongdong·🐟 Raw Fish·₩65,000",
+    "key": "막내회집 본점"
+  },
+  {
+    "nameEn": "Milan Noodles Gaepo",
+    "nameKo": "밀란국수 개포본점",
+    "meta": "Gangnam·🍜 Noodles·₩10,000",
+    "key": "밀란국수 개포본점"
+  },
+  {
+    "nameEn": "Man-gyeong Sanghoe Geondae",
+    "nameKo": "만경상회 건대본점",
+    "meta": "Konkuk Univ·🍺 Pocha·₩12,900",
+    "key": "만경상회 건대본점"
+  },
+  {
+    "nameEn": "Yehangjeong Nowon Korean Restaurant",
+    "nameKo": "예향정 노원점",
+    "meta": "Nowon·🥘 Home-style·₩33,000",
+    "key": "예향정 노원점"
+  },
+  {
+    "nameEn": "Hadong Ureong Chueotang",
+    "nameKo": "하동우렁추어탕 합정본점",
+    "meta": "Mapo·🍲 Soup & Stew·₩13,000",
+    "key": "하동우렁추어탕 합정본점"
+  },
+  {
+    "nameEn": "Cocktail Bam",
+    "nameKo": "칵테일밤",
+    "meta": "Gwanak·🍺 Pocha·₩7,900",
+    "key": "칵테일밤"
+  },
+  {
+    "nameEn": "Wansanjeong",
+    "nameKo": "완산정",
+    "meta": "Gwanak·🥘 Home-style·₩31,000",
+    "key": "완산정"
+  },
+  {
+    "nameEn": "Twimaek Kwangwoon University Branch",
+    "nameKo": "튀맥 광운대점",
+    "meta": "Nowon·🍺 Pocha·₩22,900",
+    "key": "튀맥 광운대점"
+  },
+  {
+    "nameEn": "Bon-ga Wangppyeo Gamjatang Hannam Station",
+    "nameKo": "본가왕뼈감자탕 한남역점",
+    "meta": "Yongsan·🍲 Soup & Stew·₩39,000",
+    "key": "본가왕뼈감자탕 한남역점"
+  },
+  {
+    "nameEn": "Goheung Sundae-guk Meorigogi",
+    "nameKo": "고흥순대국머리고기 본점",
+    "meta": "Konkuk Univ·🍲 Soup & Stew·₩12,000",
+    "key": "고흥순대국머리고기 본점"
+  },
+  {
+    "nameEn": "Seoul Hotteok Sadang",
+    "nameKo": "서울호떡 사당직영점",
+    "meta": "Sadang·🌭 Street Food·₩5,000",
+    "key": "서울호떡 사당직영점"
+  },
+  {
+    "nameEn": "Jeollado Cinema Sundae",
+    "nameKo": "전라도시네마",
+    "meta": "Gwanak·🍲 Soup & Stew·₩22,000",
+    "key": "전라도시네마"
+  },
+  {
+    "nameEn": "Daehwajeong Jinjja Haejangguk",
+    "nameKo": "대화정 진짜해장국",
+    "meta": "Jongro/Myeongdong·🍲 Soup & Stew·₩15,000",
+    "key": "대화정 진짜해장국"
+  },
+  {
+    "nameEn": "Hongdae Ganjang Gejang Hongilpum",
+    "nameKo": "홍대간장게장 홍일품",
+    "meta": "Hongdae & Sinchon·🥘 Home-style·₩29,900",
+    "key": "홍대간장게장 홍일품"
+  },
+  {
+    "nameEn": "Hanyang Tteok Mill Seongsu",
+    "nameKo": "한양떡방앗간 성수",
+    "meta": "Seongsu·🌭 Street Food·₩6,000",
+    "key": "한양떡방앗간 성수"
+  },
+  {
+    "nameEn": "Gubok Mandu",
+    "nameKo": "구복만두",
+    "meta": "Yongsan·🍜 Noodles·₩9,500",
+    "key": "구복만두"
+  },
+  {
+    "nameEn": "Hyeongje Galbi",
+    "nameKo": "형제갈비",
+    "meta": "Mapo·🥩 BBQ·₩7,500",
+    "key": "형제갈비"
+  },
+  {
+    "nameEn": "Uri Seolleongtang",
+    "nameKo": "우리설렁탕",
+    "meta": "Gwanak·🍲 Soup & Stew·₩16,000",
+    "key": "우리설렁탕"
+  },
+  {
+    "nameEn": "Sim Gyeong-hui Lalaland Gwanghwamun",
+    "nameKo": "심경희라라랜드 광화문",
+    "meta": "Jongro/Myeongdong·🥘 Home-style·₩45,000",
+    "key": "심경희라라랜드 광화문"
+  },
+  {
+    "nameEn": "Hanul Galbi",
+    "nameKo": "한울갈비",
+    "meta": "Sadang·🥩 BBQ·₩17,000",
+    "key": "한울갈비"
+  },
+  {
+    "nameEn": "Songi Jokbal",
+    "nameKo": "송이족발 본점",
+    "meta": "Sadang·🥩 BBQ·₩32,000",
+    "key": "송이족발 본점"
+  },
+  {
+    "nameEn": "Apgujeong Jejujip",
+    "nameKo": "압구정제주집",
+    "meta": "Apgujeong & Sinsa·🥩 BBQ·₩62,000",
+    "key": "압구정제주집"
+  },
+  {
+    "nameEn": "Kim Chang-hoon Pocha",
+    "nameKo": "김창훈포차",
+    "meta": "Konkuk Univ·🍺 Pocha·₩15,000",
+    "key": "김창훈포차"
+  },
+  {
+    "nameEn": "Myeong Noodles",
+    "nameKo": "명국수",
+    "meta": "Seongsu·🍜 Noodles·₩8,000",
+    "key": "명국수"
+  },
+  {
+    "nameEn": "Uidaeok Sadang Beef BBQ",
+    "nameKo": "우대옥 사당본점",
+    "meta": "Gangnam·🥩 BBQ·₩35,000",
+    "key": "우대옥 사당본점"
+  },
+  {
+    "nameEn": "Jungang Haejang",
+    "nameKo": "중앙해장",
+    "meta": "Gangnam·🍲 Soup & Stew·₩14,000",
+    "key": "중앙해장"
+  },
+  {
+    "nameEn": "Gwangmyeong Daejangjip Yeongdeungpo",
+    "nameKo": "광명대창집 영등포점",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩10,000",
+    "key": "광명대창집 영등포점"
+  },
+  {
+    "nameEn": "Goryeo Samgyetang",
+    "nameKo": "고려삼계탕",
+    "meta": "Jongro/Myeongdong·🥩 BBQ · 🍗 Chicken·₩18,000",
+    "key": "고려삼계탕"
+  },
+  {
+    "nameEn": "Tongdak Yeonguso Konkuk Univ.",
+    "nameKo": "통닭연구소 건대점",
+    "meta": "Konkuk Univ·🍗 Chicken·₩6,000",
+    "key": "통닭연구소 건대점"
+  },
+  {
+    "nameEn": "Gusuok Seolleongtang",
+    "nameKo": "구수옥설렁탕",
+    "meta": "Gwanak·🍲 Soup & Stew·₩12,000",
+    "key": "구수옥설렁탕"
+  },
+  {
+    "nameEn": "Cheonggyecheon 8-ga Samsung Gopchang",
+    "nameKo": "청계천8가삼성곱창",
+    "meta": "Nowon·🥩 BBQ·₩11,000",
+    "key": "청계천8가삼성곱창"
+  },
+  {
+    "nameEn": "Seobuk Naengmyeon",
+    "nameKo": "서북면옥",
+    "meta": "Konkuk Univ·🍜 Noodles·₩12,000",
+    "key": "서북면옥"
+  },
+  {
+    "nameEn": "Gwon-sik Jokbal Seongsu",
+    "nameKo": "권식족발 성수본점",
+    "meta": "Seongsu·🥩 BBQ·₩42,000",
+    "key": "권식족발 성수본점"
+  },
+  {
+    "nameEn": "Pyeongyang BBQ",
+    "nameKo": "평양고깃집",
+    "meta": "Bukchon & Insadong·🥩 BBQ·₩15,000",
+    "key": "평양고깃집"
+  },
+  {
+    "nameEn": "Minjeong Restaurant",
+    "nameKo": "민정식당",
+    "meta": "Konkuk Univ·🥘 Home-style·₩12,000",
+    "key": "민정식당"
+  },
+  {
+    "nameEn": "Nugunaholtakbanhandak Sadang",
+    "nameKo": "누구나홀딱반한닭 사당점",
+    "meta": "Gangnam·🍗 Chicken·₩19,900",
+    "key": "누구나홀딱반한닭 사당점"
+  },
+  {
+    "nameEn": "Mapo Wang Jokbal",
+    "nameKo": "마포왕족발",
+    "meta": "Mapo·🥩 BBQ·₩34,000",
+    "key": "마포왕족발"
+  },
+  {
+    "nameEn": "Yeonghwajang Chinese Restaurant",
+    "nameKo": "영화장",
+    "meta": "Dongdaemun·🥡 Korean-Chinese·₩13,000",
+    "key": "영화장"
+  },
+  {
+    "nameEn": "Eunja Chicken",
+    "nameKo": "은좌식당",
+    "meta": "Seongsu·🍗 Chicken·₩30,000",
+    "key": "은좌식당"
+  },
+  {
+    "nameEn": "Andongjang",
+    "nameKo": "안동장",
+    "meta": "Jongro/Myeongdong·🥡 Korean-Chinese·₩30,000",
+    "key": "안동장"
+  },
+  {
+    "nameEn": "Sundae Ilbeonji Mangwon",
+    "nameKo": "순대일번지 망원본점",
+    "meta": "Mapo·🍲 Soup & Stew·₩19,000",
+    "key": "순대일번지 망원본점"
+  },
+  {
+    "nameEn": "Bultaneun Saenggogi",
+    "nameKo": "불타는생고기",
+    "meta": "Nowon·🥩 BBQ·₩13,000",
+    "key": "불타는생고기"
+  },
+  {
+    "nameEn": "Sinyongsan Gamjatang",
+    "nameKo": "신용산감자탕",
+    "meta": "Sadang·🍲 Soup & Stew·₩11,000",
+    "key": "신용산감자탕"
+  },
+  {
+    "nameEn": "Sinsa Sogopchang Konkuk Univ.",
+    "nameKo": "신사소곱창 건대점",
+    "meta": "Konkuk Univ·🥩 BBQ·₩20,900",
+    "key": "신사소곱창 건대점"
+  },
+  {
+    "nameEn": "Gyetan Eonni Dakgalbi",
+    "nameKo": "계탄언니 사당본점",
+    "meta": "Gwanak·🥩 BBQ · 🍗 Chicken·₩9,000",
+    "key": "계탄언니 사당본점"
+  },
+  {
+    "nameEn": "Pyeongraeok",
+    "nameKo": "평래옥",
+    "meta": "Jongro/Myeongdong·🥘 Home-style·₩39,000",
+    "key": "평래옥"
+  },
+  {
+    "nameEn": "Dakbaljip",
+    "nameKo": "닭발집",
+    "meta": "Mapo·🍗 Chicken·₩9,000",
+    "key": "닭발집"
+  },
+  {
+    "nameEn": "Hwayang Sijang Halmeoni Sundae-guk",
+    "nameKo": "화양시장할머니순대국",
+    "meta": "Konkuk Univ·🍲 Soup & Stew·₩15,000",
+    "key": "화양시장할머니순대국"
+  },
+  {
+    "nameEn": "Chamimat Gamjatang Sadang",
+    "nameKo": "참이맛감자탕 사당점",
+    "meta": "Gwanak·🍲 Soup & Stew·₩30,000",
+    "key": "참이맛감자탕 사당점"
+  },
+  {
+    "nameEn": "Sinsun Suljib Dowon Konkuk Univ.",
+    "nameKo": "신선술집 도원 건대 본점",
+    "meta": "Konkuk Univ·🍺 Pocha·₩6,500",
+    "key": "신선술집 도원 건대 본점"
+  },
+  {
+    "nameEn": "Chakhan Tagguk",
+    "nameKo": "착한탕국",
+    "meta": "Konkuk Univ·🥘 Home-style·₩9,000",
+    "key": "착한탕국"
+  },
+  {
+    "nameEn": "Jeil Gopchang",
+    "nameKo": "제일곱창 본점",
+    "meta": "Seongsu·🥩 BBQ·₩63,000",
+    "key": "제일곱창 본점"
+  },
+  {
+    "nameEn": "Dining Mokro Seongsu",
+    "nameKo": "다이닝 목로 성수점",
+    "meta": "Seongsu·🍺 Pocha·₩9,000",
+    "key": "다이닝 목로 성수점"
+  },
+  {
+    "nameEn": "Dongnae Bokguk Jongno",
+    "nameKo": "동래복국 종로 본점",
+    "meta": "Jongro/Myeongdong·🐟 Raw Fish·₩22,000",
+    "key": "동래복국 종로 본점"
+  },
+  {
+    "nameEn": "Uri Halmae Tteokbokki Gongneung",
+    "nameKo": "우리할매떡볶이 공릉점",
+    "meta": "Nowon·🌭 Street Food·₩17,000",
+    "key": "우리할매떡볶이 공릉점"
+  },
+  {
+    "nameEn": "Cheongsil Hongsil",
+    "nameKo": "청실홍실",
+    "meta": "Seocho·🥘 Home-style·₩10,000",
+    "key": "청실홍실"
+  },
+  {
+    "nameEn": "Eunjujeong Jjigae & Jeongol",
+    "nameKo": "은주정",
+    "meta": "Jongro/Myeongdong·🍲 Soup & Stew·₩13,000",
+    "key": "은주정"
+  },
+  {
+    "nameEn": "Jogane Jokbal Wang",
+    "nameKo": "조가네족발왕",
+    "meta": "Sadang·🥩 BBQ·₩40,000",
+    "key": "조가네족발왕"
+  },
+  {
+    "nameEn": "Baenggeondi Steakhouse",
+    "nameKo": "밴건디 스테이크하우스",
+    "meta": "Seocho·🍚 Korean·₩260,000",
+    "key": "밴건디 스테이크하우스"
+  },
+  {
+    "nameEn": "Donggyeong Hwaro Mullae",
+    "nameKo": "동경화로 문래점",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩145,000",
+    "key": "동경화로 문래점"
+  },
+  {
+    "nameEn": "Sillim Chuncheonjip",
+    "nameKo": "신림춘천집 본점",
+    "meta": "Gwanak·🥘 Home-style·₩8,500",
+    "key": "신림춘천집 본점"
+  },
+  {
+    "nameEn": "Jamaesusan Gangnam Sashimi House",
+    "nameKo": "자매수산 강남본점",
+    "meta": "Seocho·🐟 Raw Fish·₩69,000",
+    "key": "자매수산 강남본점"
+  },
+  {
+    "nameEn": "Cheongnyeon Gamjatang Songpa",
+    "nameKo": "청년감자탕 송파 본점",
+    "meta": "Jamsil·🍲 Soup & Stew·₩13,000",
+    "key": "청년감자탕 송파 본점"
+  },
+  {
+    "nameEn": "Wangsimni Jeong Gopchang",
+    "nameKo": "왕십리정곱창",
+    "meta": "Seongsu·🥩 BBQ·₩15,000",
+    "key": "왕십리정곱창"
+  },
+  {
+    "nameEn": "Uribada Sashimi",
+    "nameKo": "우리바다수산",
+    "meta": "Mapo·🐟 Raw Fish·₩40,000",
+    "key": "우리바다수산"
+  },
+  {
+    "nameEn": "Changseong Galbi",
+    "nameKo": "창성갈비",
+    "meta": "Seochon & Buam·🥩 BBQ·₩17,000",
+    "key": "창성갈비"
+  },
+  {
+    "nameEn": "Isurahwabang Chinese Restaurant",
+    "nameKo": "이수라화방 직영7호점",
+    "meta": "Sadang·🥡 Korean-Chinese·₩12,000",
+    "key": "이수라화방 직영7호점"
+  },
+  {
+    "nameEn": "Bak-ga-ne Bindaetteok",
+    "nameKo": "박가네 빈대떡",
+    "meta": "Jongro/Myeongdong·🍺 Pocha·₩15,000",
+    "key": "박가네 빈대떡"
+  },
+  {
+    "nameEn": "Ikseon Aeteut",
+    "nameKo": "익선애뜻",
+    "meta": "Bukchon & Insadong·🥘 Home-style·₩17,500",
+    "key": "익선애뜻"
+  },
+  {
+    "nameEn": "Nemojip Hannam",
+    "nameKo": "네모집 한남점",
+    "meta": "Yongsan·🥩 BBQ·₩12,000",
+    "key": "네모집 한남점"
+  },
+  {
+    "nameEn": "Norangjeogori Korean Table d'hôte",
+    "nameKo": "노랑저고리 한정식",
+    "meta": "Seocho·🍱 Set Meal·₩33,000",
+    "key": "노랑저고리 한정식"
+  },
+  {
+    "nameEn": "Daeryeon Kalguksu & Mandu",
+    "nameKo": "대련집",
+    "meta": "Jongro/Myeongdong·🍜 Noodles·₩9,000",
+    "key": "대련집"
+  },
+  {
+    "nameEn": "Dungji Dakbokkeumtang Hongdae",
+    "nameKo": "둥지닭볶음탕 홍대점",
+    "meta": "Hongdae & Sinchon·🥘 Home-style·₩37,900",
+    "key": "둥지닭볶음탕 홍대점"
+  },
+  {
+    "nameEn": "Neuru-jip Dakgalbi",
+    "nameKo": "느루집 문래본점",
+    "meta": "Yeongdeungpo·🥩 BBQ · 🍗 Chicken·₩14,000",
+    "key": "느루집 문래본점"
+  },
+  {
+    "nameEn": "Chuncheongol Dakgalbi",
+    "nameKo": "춘천골닭갈비 건대본점",
+    "meta": "Konkuk Univ·🥩 BBQ · 🍗 Chicken·₩14,000",
+    "key": "춘천골닭갈비 건대본점"
+  },
+  {
+    "nameEn": "Ttotto Kalguksu",
+    "nameKo": "또또칼국수",
+    "meta": "Mapo·🍜 Noodles·₩11,000",
+    "key": "또또칼국수"
+  },
+  {
+    "nameEn": "Eom Yongbaek Dwaeji Gukbap",
+    "nameKo": "엄용백 돼지국밥",
+    "meta": "Bukchon & Insadong·🍲 Soup & Stew·₩11,000",
+    "key": "엄용백 돼지국밥"
+  },
+  {
+    "nameEn": "Hogam Haejang",
+    "nameKo": "호감해장",
+    "meta": "Dongdaemun·🍲 Soup & Stew·₩9,000",
+    "key": "호감해장"
+  },
+  {
+    "nameEn": "Dammion Seongsu Gukbap",
+    "nameKo": "담미온 성수점",
+    "meta": "Seongsu·🍲 Soup & Stew·₩10,000",
+    "key": "담미온 성수점"
+  },
+  {
+    "nameEn": "Cheongjin-dong Haejangguk Sinchon",
+    "nameKo": "청진동해장국 신촌점",
+    "meta": "Hongdae & Sinchon·🍲 Soup & Stew·₩9,000",
+    "key": "청진동해장국 신촌점"
+  },
+  {
+    "nameEn": "New Hope Euljiro Izakaya",
+    "nameKo": "뉴호프 을지로 본점",
+    "meta": "Jongro/Myeongdong·🍺 Pocha·₩5,000",
+    "key": "뉴호프 을지로 본점"
+  },
+  {
+    "nameEn": "Jinmi Eonyang Bulgogi Samseong-dong",
+    "nameKo": "진미언양불고기 삼성동",
+    "meta": "Gangnam·🥩 BBQ·₩37,000",
+    "key": "진미언양불고기 삼성동"
+  },
+  {
+    "nameEn": "Dak Hanmari Gongneung",
+    "nameKo": "닭한마리 공릉본점",
+    "meta": "Nowon·🍗 Chicken·₩27,000",
+    "key": "닭한마리 공릉본점"
+  },
+  {
+    "nameEn": "79 Daepo Bangi Pocha",
+    "nameKo": "79대포 방이점",
+    "meta": "Jamsil·🍺 Pocha·₩12,900",
+    "key": "79대포 방이점"
+  },
+  {
+    "nameEn": "Samgeori Meonjimak Sundae-guk",
+    "nameKo": "삼거리먼지막순대국",
+    "meta": "Yeongdeungpo·🍲 Soup & Stew·₩8,000",
+    "key": "삼거리먼지막순대국"
+  },
+  {
+    "nameEn": "Jangsuwon Korean Restaurant",
+    "nameKo": "장수원",
+    "meta": "Gangnam·🥘 Home-style·₩11,000",
+    "key": "장수원"
+  },
+  {
+    "nameEn": "Cheongnyubyeok Makguksu",
+    "nameKo": "청류벽",
+    "meta": "Seocho·🍜 Noodles·₩12,000",
+    "key": "청류벽"
+  },
+  {
+    "nameEn": "Chowol Yang Gopchang",
+    "nameKo": "초월양곱창",
+    "meta": "Mapo·🥩 BBQ·₩21,900",
+    "key": "초월양곱창"
+  },
+  {
+    "nameEn": "Gimdon-i Seolleung Pork BBQ",
+    "nameKo": "김돈이 선릉본점",
+    "meta": "Gangnam·🥩 BBQ·₩60,000",
+    "key": "김돈이 선릉본점"
+  },
+  {
+    "nameEn": "Dure Guksu",
+    "nameKo": "두레국수",
+    "meta": "Gangnam·🍜 Noodles·₩10,000",
+    "key": "두레국수"
+  },
+  {
+    "nameEn": "Jangnagyo Gimbap",
+    "nameKo": "장나교김밥",
+    "meta": "Sadang·🌭 Street Food·₩5,000",
+    "key": "장나교김밥"
+  },
+  {
+    "nameEn": "Gou Seongsu",
+    "nameKo": "고우성수",
+    "meta": "Seongsu·🥘 Home-style·₩22,000",
+    "key": "고우성수"
+  },
+  {
+    "nameEn": "Gwihan Jokbal Nowon",
+    "nameKo": "귀한족발 노원점",
+    "meta": "Nowon·🥩 BBQ·₩9,900",
+    "key": "귀한족발 노원점"
+  },
+  {
+    "nameEn": "Yeontan Yori-jip Seongsu",
+    "nameKo": "연탄요릿집 성수",
+    "meta": "Seongsu·🍺 Pocha·₩20,000",
+    "key": "연탄요릿집 성수"
+  },
+  {
+    "nameEn": "Long Time No See Dangsan",
+    "nameKo": "롱타임노씨 당산점",
+    "meta": "Yeongdeungpo·🍺 Pocha·₩9,500",
+    "key": "롱타임노씨 당산점"
+  },
+  {
+    "nameEn": "Moechon Chicken",
+    "nameKo": "뫼촌",
+    "meta": "Mapo·🍗 Chicken·₩15,000",
+    "key": "뫼촌"
+  },
+  {
+    "nameEn": "Soul Galbi Yeouido",
+    "nameKo": "소울갈비 여의도점",
+    "meta": "Yeouido·🥩 BBQ·₩39,000",
+    "key": "소울갈비 여의도점"
+  },
+  {
+    "nameEn": "Jeju Ggan Wirye Jungang Gwangjang",
+    "nameKo": "제줏간 위례중앙광장점",
+    "meta": "Jamsil·🥩 BBQ·₩5,900",
+    "key": "제줏간 위례중앙광장점"
+  },
+  {
+    "nameEn": "Sansugol Chueotang Gamjatang",
+    "nameKo": "산수골추어탕감자탕",
+    "meta": "Seongsu·🍲 Soup & Stew·₩12,000",
+    "key": "산수골추어탕감자탕"
+  },
+  {
+    "nameEn": "Bultaneun Sogumgui Sangdo",
+    "nameKo": "불타는소금구이 상도",
+    "meta": "Sadang·🥩 BBQ",
+    "key": "불타는소금구이 상도"
+  },
+  {
+    "nameEn": "Yetgol Toseong Cheonggyesan",
+    "nameKo": "옛골토성 청계산점",
+    "meta": "Seocho·🥩 BBQ·₩33,000",
+    "key": "옛골토성 청계산점"
+  },
+  {
+    "nameEn": "Hwaju Duck Fairy",
+    "nameKo": "화주요정 오리요정",
+    "meta": "Apgujeong & Sinsa·🥩 BBQ·₩32,000",
+    "key": "화주요정 오리요정"
+  },
+  {
+    "nameEn": "Nambuktongil Dumpling Snack Bar",
+    "nameKo": "남북통일",
+    "meta": "Mapo·🌭 Street Food·₩12,000",
+    "key": "남북통일"
+  },
+  {
+    "nameEn": "Gosu Dakgalbi",
+    "nameKo": "고수닭갈비",
+    "meta": "Gangnam·🥩 BBQ · 🍗 Chicken·₩14,900",
+    "key": "고수닭갈비"
+  },
+  {
+    "nameEn": "Wonjo Minsok Sundae Town",
+    "nameKo": "원조민속순대타운",
+    "meta": "Gwanak·🍲 Soup & Stew·₩20,000",
+    "key": "원조민속순대타운"
+  },
+  {
+    "nameEn": "Hannam-dong Gamjatang",
+    "nameKo": "한남동 감자탕 본점",
+    "meta": "Yongsan·🍲 Soup & Stew·₩23,000",
+    "key": "한남동 감자탕 본점"
+  },
+  {
+    "nameEn": "Samsan Hoegwan Yangjae",
+    "nameKo": "삼산회관 양재본점",
+    "meta": "Gangnam·🥩 BBQ·₩7,900",
+    "key": "삼산회관 양재본점"
+  },
+  {
+    "nameEn": "Baengbaeng Makguksu",
+    "nameKo": "뱅뱅막국수",
+    "meta": "Gangnam·🍜 Noodles·₩13,000",
+    "key": "뱅뱅막국수"
+  },
+  {
+    "nameEn": "Ttowasundubu Sujebi",
+    "nameKo": "또와순두부수제비",
+    "meta": "Nowon·🍜 Noodles·₩17,000",
+    "key": "또와순두부수제비"
+  },
+  {
+    "nameEn": "Mimi Snack Bar",
+    "nameKo": "미미스낵",
+    "meta": "Nowon·🍺 Pocha·₩8,900",
+    "key": "미미스낵"
+  },
+  {
+    "nameEn": "Eulji Sanghoe Pocha",
+    "nameKo": "을지상회",
+    "meta": "Jongro/Myeongdong·🍺 Pocha·₩5,000",
+    "key": "을지상회"
+  },
+  {
+    "nameEn": "Shindonggung Gamjatang Charcoal Grilled Bone Seolleung",
+    "nameKo": "신동궁 감자탕 뼈숯불구이 선릉직영점",
+    "meta": "Gangnam·🍲 Soup & Stew·₩38,000",
+    "key": "신동궁 감자탕 뼈숯불구이 선릉직영점"
+  },
+  {
+    "nameEn": "Pungmiyeon Korean Restaurant",
+    "nameKo": "풍미연",
+    "meta": "Nowon·🥘 Home-style·₩12,000",
+    "key": "풍미연"
+  },
+  {
+    "nameEn": "Gogo Galbi Hongdae",
+    "nameKo": "고고갈비 홍대점",
+    "meta": "Hongdae & Sinchon·🥩 BBQ·₩7,000",
+    "key": "고고갈비 홍대점"
+  },
+  {
+    "nameEn": "Gwanghwamun Mijin",
+    "nameKo": "광화문미진",
+    "meta": "Jongro/Myeongdong·🥘 Home-style·₩11,000",
+    "key": "광화문미진"
+  },
+  {
+    "nameEn": "Yukdaejang Butcher Shop Isu Station",
+    "nameKo": "육대장 푸줏간 이수역점",
+    "meta": "Sadang·🍲 Soup & Stew·₩9,000",
+    "key": "육대장 푸줏간 이수역점"
+  },
+  {
+    "nameEn": "Meongteongguri Kkomjangeo Makchang",
+    "nameKo": "멍텅구리꼼장어막창 삼성본점",
+    "meta": "Gangnam·🥩 BBQ·₩16,000",
+    "key": "멍텅구리꼼장어막창 삼성본점"
+  },
+  {
+    "nameEn": "Hansung Kalguksu",
+    "nameKo": "한성칼국수 논현본점",
+    "meta": "Gangnam·🍜 Noodles·₩27,000",
+    "key": "한성칼국수 논현본점"
+  },
+  {
+    "nameEn": "Hiddink's Memories",
+    "nameKo": "히딩크의추억",
+    "meta": "Nowon·🥩 BBQ·₩17,000",
+    "key": "히딩크의추억"
+  },
+  {
+    "nameEn": "Gungmin Tongdak Jamsil",
+    "nameKo": "국민통닭 잠실본점",
+    "meta": "Jamsil·🍗 Chicken·₩5,000",
+    "key": "국민통닭 잠실본점"
+  },
+  {
+    "nameEn": "Doriyon Dakbokkeumtang Sanggye",
+    "nameKo": "도리연닭도리탕 상계본점",
+    "meta": "Nowon·🥩 BBQ·₩33,000",
+    "key": "도리연닭도리탕 상계본점"
+  },
+  {
+    "nameEn": "Gyeyolsa Chicken",
+    "nameKo": "계열사",
+    "meta": "Seochon & Buam·🍗 Chicken·₩24,000",
+    "key": "계열사"
+  },
+  {
+    "nameEn": "Gamdong Restaurant Nowon",
+    "nameKo": "감동식당 노원본점",
+    "meta": "Nowon·🥩 BBQ·₩8,000",
+    "key": "감동식당 노원본점"
+  },
+  {
+    "nameEn": "Samdeok Tongdak Mapo",
+    "nameKo": "삼덕통닭 마포점",
+    "meta": "Mapo·🍗 Chicken·₩21,500",
+    "key": "삼덕통닭 마포점"
+  },
+  {
+    "nameEn": "Sutgarak Bansang Masil",
+    "nameKo": "숟가락반상 마실",
+    "meta": "Nowon·🍱 Set Meal·₩20,000",
+    "key": "숟가락반상 마실"
+  },
+  {
+    "nameEn": "Chimaek Five Hoegi",
+    "nameKo": "치맥파이브 회기점",
+    "meta": "Dongdaemun·🍺 Pocha·₩8,900",
+    "key": "치맥파이브 회기점"
+  },
+  {
+    "nameEn": "Miss Jokbal Seoul Myeongdong",
+    "nameKo": "미쓰족발 서울명동점",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩18,000",
+    "key": "미쓰족발 서울명동점"
+  },
+  {
+    "nameEn": "Uyeogopjeol Gopchang",
+    "nameKo": "우여곱절",
+    "meta": "Sadang·🥩 BBQ·₩13,000",
+    "key": "우여곱절"
+  },
+  {
+    "nameEn": "Sinpo Nakji",
+    "nameKo": "신풍낙지",
+    "meta": "Yeongdeungpo·🥘 Home-style·₩57,000",
+    "key": "신풍낙지"
+  },
+  {
+    "nameEn": "Daeseongjip Gukbap",
+    "nameKo": "대성집",
+    "meta": "Jongro/Myeongdong·🍲 Soup & Stew·₩13,000",
+    "key": "대성집"
+  },
+  {
+    "nameEn": "Wangsimni Gopchang",
+    "nameKo": "왕십리맛나곱창",
+    "meta": "Seongsu·🥩 BBQ·₩20,000",
+    "key": "왕십리맛나곱창"
+  },
+  {
+    "nameEn": "Weizenhaus Bangbae 1st Branch",
+    "nameKo": "바이젠하우스 방배1호점",
+    "meta": "Gangnam·🍺 Pocha·₩29,000",
+    "key": "바이젠하우스 방배1호점"
+  },
+  {
+    "nameEn": "Pungcheon Imgeumnim Eel",
+    "nameKo": "풍천임금님장어",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩35,000",
+    "key": "풍천임금님장어"
+  },
+  {
+    "nameEn": "Janggunjip Yangpyeong-dong",
+    "nameKo": "장군집 양평동본점",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩34,000",
+    "key": "장군집 양평동본점"
+  },
+  {
+    "nameEn": "Yeongdongwon Samgyeopsal",
+    "nameKo": "영동원삼겹살",
+    "meta": "Gangnam·🥩 BBQ·₩6,900",
+    "key": "영동원삼겹살"
+  },
+  {
+    "nameEn": "쟁반집",
+    "nameKo": null,
+    "meta": "Dongdaemun·🥘 Home-style",
+    "key": "쟁반집"
+  },
+  {
+    "nameEn": "Ppalgan Oden Busan Eomuk",
+    "nameKo": "빨간오뎅 부산어묵",
+    "meta": "Gangnam·🌭 Street Food·₩5,000",
+    "key": "빨간오뎅 부산어묵"
+  },
+  {
+    "nameEn": "Chamsaejip Gastropub",
+    "nameKo": "참새집",
+    "meta": "Jongro/Myeongdong·🍺 Pocha·₩15,000",
+    "key": "참새집"
+  },
+  {
+    "nameEn": "Mapo Gopchang Town Yeonnam",
+    "nameKo": "마포곱창타운 연남점",
+    "meta": "Mapo·🥩 BBQ·₩18,000",
+    "key": "마포곱창타운 연남점"
+  },
+  {
+    "nameEn": "Gajok Siktak",
+    "nameKo": "가족식탁",
+    "meta": "Mapo·🍲 Soup & Stew·₩13,000",
+    "key": "가족식탁"
+  },
+  {
+    "nameEn": "Hongssaem Tteokbokki Yeonnam",
+    "nameKo": "홍쌤떡볶이 연남점",
+    "meta": "Mapo·🌭 Street Food·₩5,000",
+    "key": "홍쌤떡볶이 연남점"
+  },
+  {
+    "nameEn": "Myeongpum Cheonggiwa Gamjatang Namseong-yeok",
+    "nameKo": "명품청기와감자탕 남성역점",
+    "meta": "Sadang·🍲 Soup & Stew·₩10,000",
+    "key": "명품청기와감자탕 남성역점"
+  },
+  {
+    "nameEn": "Chyori Sanggyeong",
+    "nameKo": "쵸리상경",
+    "meta": "Seongsu·🥘 Home-style·₩20,000",
+    "key": "쵸리상경"
+  },
+  {
+    "nameEn": "Daebak Ssam",
+    "nameKo": "대박쌈",
+    "meta": "Jamsil·🍺 Pocha·₩39,000",
+    "key": "대박쌈"
+  },
+  {
+    "nameEn": "Matjip Gopchang-gui",
+    "nameKo": "맛집곱창구이",
+    "meta": "Seocho·🥩 BBQ·₩27,000",
+    "key": "맛집곱창구이"
+  },
+  {
+    "nameEn": "Bangbae Gopchang",
+    "nameKo": "방배곱창",
+    "meta": "Seocho·🥩 BBQ·₩26,000",
+    "key": "방배곱창"
+  },
+  {
+    "nameEn": "Hanseong Hamheung Naengmyeon Makguksu",
+    "nameKo": "한성함흥냉면막국수",
+    "meta": "Dongdaemun·🍜 Noodles",
+    "key": "한성함흥냉면막국수"
+  },
+  {
+    "nameEn": "Seongsu Wandang",
+    "nameKo": "성수완당",
+    "meta": "Konkuk Univ·🥘 Home-style·₩6,000",
+    "key": "성수완당"
+  },
+  {
+    "nameEn": "Gorilla Chef",
+    "nameKo": "고릴라쉐프",
+    "meta": "Yeouido·🍺 Pocha·₩30,000",
+    "key": "고릴라쉐프"
+  },
+  {
+    "nameEn": "Mami Tteok Songpa Snack Bar",
+    "nameKo": "마미떡 송파점",
+    "meta": "Jamsil·🌭 Street Food·₩15,000",
+    "key": "마미떡 송파점"
+  },
+  {
+    "nameEn": "Jindallae Silbi Sadang",
+    "nameKo": "진달래실비 사당점",
+    "meta": "Sadang·🍺 Pocha·₩20,000",
+    "key": "진달래실비 사당점"
+  },
+  {
+    "nameEn": "Mapo Gop",
+    "nameKo": "곱 마포직영점",
+    "meta": "Mapo·🥩 BBQ·₩25,000",
+    "key": "곱 마포직영점"
+  },
+  {
+    "nameEn": "Dongnimmun 1897 Seolleongtang",
+    "nameKo": "독립문1897설렁탕",
+    "meta": "Mapo·🍲 Soup & Stew·₩8,000",
+    "key": "독립문1897설렁탕"
+  },
+  {
+    "nameEn": "Manseon Hof",
+    "nameKo": "원조만선호프",
+    "meta": "Jongro/Myeongdong·🍺 Pocha·₩16,000",
+    "key": "원조만선호프"
+  },
+  {
+    "nameEn": "The Makchangs Gangnam",
+    "nameKo": "더막창스 강남본점",
+    "meta": "Seocho·🥩 BBQ·₩17,000",
+    "key": "더막창스 강남본점"
+  },
+  {
+    "nameEn": "Kwonyeongsu Daega Jeongol",
+    "nameKo": "권영수대가전골",
+    "meta": "Dongdaemun·🍲 Soup & Stew·₩19,000",
+    "key": "권영수대가전골"
+  },
+  {
+    "nameEn": "Cheonghwawon Chinese Restaurant",
+    "nameKo": "청화원",
+    "meta": "Mapo·🥡 Korean-Chinese·₩9,500",
+    "key": "청화원"
+  },
+  {
+    "nameEn": "Goldeu Chamchi Sashimi House",
+    "nameKo": "골드참치",
+    "meta": "Jamsil·🐟 Raw Fish·₩35,000",
+    "key": "골드참치"
+  },
+  {
+    "nameEn": "Buttumak Sillim",
+    "nameKo": "부뚜막 신림본점",
+    "meta": "Gwanak·🥩 BBQ·₩14,000",
+    "key": "부뚜막 신림본점"
+  },
+  {
+    "nameEn": "Naepda Cheongyangjip Nowon Station",
+    "nameKo": "냅다청양집 노원역점",
+    "meta": "Nowon·🥩 BBQ·₩10,900",
+    "key": "냅다청양집 노원역점"
+  },
+  {
+    "nameEn": "Iyeogomtang Yongsan",
+    "nameKo": "이여곰탕 용산점",
+    "meta": "Yongsan·🍲 Soup & Stew·₩10,000",
+    "key": "이여곰탕 용산점"
+  },
+  {
+    "nameEn": "Seom Sashimi House",
+    "nameKo": "섬수산",
+    "meta": "Mapo·🐟 Raw Fish",
+    "key": "섬수산"
+  },
+  {
+    "nameEn": "Wonjo Golbaengi Pocha",
+    "nameKo": "원조 골뱅이 전문점",
+    "meta": "Dongdaemun·🍺 Pocha·₩15,000",
+    "key": "원조 골뱅이 전문점"
+  },
+  {
+    "nameEn": "Bangbae Gimbap",
+    "nameKo": "방배김밥 본점",
+    "meta": "Sadang·🌭 Street Food·₩5,000",
+    "key": "방배김밥 본점"
+  },
+  {
+    "nameEn": "Yangyangjip Haejangguk",
+    "nameKo": "양양집",
+    "meta": "Jamsil·🍲 Soup & Stew·₩12,000",
+    "key": "양양집"
+  },
+  {
+    "nameEn": "Seoul Sup Nurungji Roasted Chicken",
+    "nameKo": "서울숲누룽지통닭구이",
+    "meta": "Seongsu·🍗 Chicken·₩24,000",
+    "key": "서울숲누룽지통닭구이"
+  },
+  {
+    "nameEn": "Seongsu AGU",
+    "nameKo": "성수AGU",
+    "meta": "Seongsu·🐟 Raw Fish·₩15,000",
+    "key": "성수AGU"
+  },
+  {
+    "nameEn": "Daeseong Restaurant",
+    "nameKo": "대성식당",
+    "meta": "Jongro/Myeongdong·🥘 Home-style·₩11,000",
+    "key": "대성식당"
+  },
+  {
+    "nameEn": "Saemaul 39 Undong Pocha",
+    "nameKo": "새마을39운동포차",
+    "meta": "Konkuk Univ·🍺 Pocha·₩8,900",
+    "key": "새마을39운동포차"
+  },
+  {
+    "nameEn": "Yeongchunok",
+    "nameKo": "영춘옥",
+    "meta": "Bukchon & Insadong·🍲 Soup & Stew·₩42,000",
+    "key": "영춘옥"
+  },
+  {
+    "nameEn": "Sinsun Hwaro Hongdae",
+    "nameKo": "신선화로 홍대점",
+    "meta": "Mapo·🥩 BBQ·₩16,900",
+    "key": "신선화로 홍대점"
+  },
+  {
+    "nameEn": "Sak Handmade Fried Snack Bar",
+    "nameKo": "삭 수제튀김 전문점 이화본점",
+    "meta": "Hongdae & Sinchon·🌭 Street Food·₩18,000",
+    "key": "삭 수제튀김 전문점 이화본점"
+  },
+  {
+    "nameEn": "Wonjo Imone Yeontan-bul Gopchang",
+    "nameKo": "원조이모네연탄불곱창",
+    "meta": "Nowon·🥩 BBQ·₩20,000",
+    "key": "원조이모네연탄불곱창"
+  },
+  {
+    "nameEn": "Golsue Yeouido Gamjatang",
+    "nameKo": "골수 여의도점",
+    "meta": "Yeouido·🍲 Soup & Stew·₩39,000",
+    "key": "골수 여의도점"
+  },
+  {
+    "nameEn": "Munseonggol Jokbal",
+    "nameKo": "문성골족발집",
+    "meta": "Gwanak·🥩 BBQ·₩38,000",
+    "key": "문성골족발집"
+  },
+  {
+    "nameEn": "Takeo Horumon Teppanyaki",
+    "nameKo": "다케오 호르몬 데판야끼",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩9,000",
+    "key": "다케오 호르몬 데판야끼"
+  },
+  {
+    "nameEn": "Dakjinmi Gangwonjip",
+    "nameKo": "닭진미강원집",
+    "meta": "Jongro/Myeongdong·🍗 Chicken·₩10,000",
+    "key": "닭진미강원집"
+  },
+  {
+    "nameEn": "Anjumaeul",
+    "nameKo": "안주마을",
+    "meta": "Seochon & Buam·🍺 Pocha",
+    "key": "안주마을"
+  },
+  {
+    "nameEn": "Yangjae Jokbal Chamjok",
+    "nameKo": "양재족발 참족",
+    "meta": "Gangnam·🥩 BBQ·₩94,000",
+    "key": "양재족발 참족"
+  },
+  {
+    "nameEn": "Yeontanbul Yeongdeungpo-gu Office",
+    "nameKo": "연탄불 영등포구청본점",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩14,900",
+    "key": "연탄불 영등포구청본점"
+  },
+  {
+    "nameEn": "Hanip Soban Snack Bar",
+    "nameKo": "한입소반",
+    "meta": "Yongsan·🌭 Street Food·₩5,500",
+    "key": "한입소반"
+  },
+  {
+    "nameEn": "Tamna Jonghap Eosijang Nangok Sageori",
+    "nameKo": "탐나종합어시장 난곡사거리점",
+    "meta": "Gwanak·🐟 Raw Fish·₩20,000",
+    "key": "탐나종합어시장 난곡사거리점"
+  },
+  {
+    "nameEn": "Kkotgejangjip Ganjang Gejang Cheongnyangni",
+    "nameKo": "꽃게장집 간장게장 무한리필 청량리본점",
+    "meta": "Dongdaemun·🥘 Home-style·₩24,900",
+    "key": "꽃게장집 간장게장 무한리필 청량리본점"
+  },
+  {
+    "nameEn": "Andongjip Sonkalguksu",
+    "nameKo": "안동집 손칼국시",
+    "meta": "Dongdaemun·🍜 Noodles·₩10,000",
+    "key": "안동집 손칼국시"
+  },
+  {
+    "nameEn": "Cheon-i Ogyeopsal Hapjeong",
+    "nameKo": "천이오겹살 합정본점",
+    "meta": "Mapo·🥩 BBQ·₩7,000",
+    "key": "천이오겹살 합정본점"
+  },
+  {
+    "nameEn": "Jeonjunsu Myeongpum Cheonggiwa Gamjatang",
+    "nameKo": "전준수 명품청기와감자탕 난곡본점",
+    "meta": "Gwanak·🍲 Soup & Stew·₩10,000",
+    "key": "전준수 명품청기와감자탕 난곡본점"
+  },
+  {
+    "nameEn": "Ilwol Meat",
+    "nameKo": "일월고기",
+    "meta": "Jamsil·🥩 BBQ·₩18,000",
+    "key": "일월고기"
+  },
+  {
+    "nameEn": "Naked Wings",
+    "nameKo": "네키드윙즈",
+    "meta": "Itaewon·🍗 Chicken·₩6,500",
+    "key": "네키드윙즈"
+  },
+  {
+    "nameEn": "Byeolmi Gopchang",
+    "nameKo": "별미곱창",
+    "meta": "Jamsil·🥩 BBQ·₩25,000",
+    "key": "별미곱창"
+  },
+  {
+    "nameEn": "Gayang Kalguksu Beoseot Maeuntang",
+    "nameKo": "가양칼국수버섯매운탕",
+    "meta": "Yeouido·🍜 Noodles·₩15,000",
+    "key": "가양칼국수버섯매운탕"
+  },
+  {
+    "nameEn": "Kim Yeong-hui Gangnam Dongtae-jjim Isujeom",
+    "nameKo": "김영희강남동태찜 이수점",
+    "meta": "Gangnam·🐟 Raw Fish·₩52,000",
+    "key": "김영희강남동태찜 이수점"
+  },
+  {
+    "nameEn": "Damso Sundae Yukgaejang",
+    "nameKo": "담소소사골순대육개장 강남본점",
+    "meta": "Gangnam·🥩 BBQ · 🍲 Soup & Stew·₩12,900",
+    "key": "담소소사골순대육개장 강남본점"
+  },
+  {
+    "nameEn": "Cheongjinok Haejangguk",
+    "nameKo": "청진옥",
+    "meta": "Jongro/Myeongdong·🍲 Soup & Stew·₩13,000",
+    "key": "청진옥"
+  },
+  {
+    "nameEn": "Hando Samgyeopsal",
+    "nameKo": "한도삼겹살",
+    "meta": "Jongro/Myeongdong·🥩 BBQ·₩16,000",
+    "key": "한도삼겹살"
+  },
+  {
+    "nameEn": "Ijhilliya Cuisine Pub",
+    "nameKo": "잊힐리야",
+    "meta": "Yeongdeungpo·🍺 Pocha·₩17,500",
+    "key": "잊힐리야"
+  },
+  {
+    "nameEn": "Shintoburi Pocha",
+    "nameKo": "신토불이포장마차",
+    "meta": "Yeongdeungpo·🍺 Pocha·₩15,000",
+    "key": "신토불이포장마차"
+  },
+  {
+    "nameEn": "Samcheongdong Sujebi",
+    "nameKo": "삼청동수제비",
+    "meta": "Bukchon & Insadong·🍜 Noodles·₩17,000",
+    "key": "삼청동수제비"
+  },
+  {
+    "nameEn": "Mutan Yeouido Chinese Restaurant",
+    "nameKo": "무탄 여의도점",
+    "meta": "Yeouido·🥡 Korean-Chinese·₩49,000",
+    "key": "무탄 여의도점"
+  },
+  {
+    "nameEn": "Popeye Chicken",
+    "nameKo": "뽀빠이치킨",
+    "meta": "Yongsan·🍗 Chicken·₩10,000",
+    "key": "뽀빠이치킨"
+  },
+  {
+    "nameEn": "Jingu Gopchang",
+    "nameKo": "진구곱창 강남역본점",
+    "meta": "Seocho·🥩 BBQ·₩5,500",
+    "key": "진구곱창 강남역본점"
+  },
+  {
+    "nameEn": "Mosori Sadang Pork BBQ",
+    "nameKo": "모소리 사당점",
+    "meta": "Sadang·🥩 BBQ·₩14,000",
+    "key": "모소리 사당점"
+  },
+  {
+    "nameEn": "Suhyeoni-ne Tongdak",
+    "nameKo": "수현이네통닭",
+    "meta": "Gwanak·🍗 Chicken·₩10,000",
+    "key": "수현이네통닭"
+  },
+  {
+    "nameEn": "Mullae Golmokjip",
+    "nameKo": "문래 골목집",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩10,000",
+    "key": "문래 골목집"
+  },
+  {
+    "nameEn": "Hanyunju Ga Yeongdeungpo",
+    "nameKo": "한윤주가 영등포 본점",
+    "meta": "Yeongdeungpo·🍺 Pocha·₩9,000",
+    "key": "한윤주가 영등포 본점"
+  },
+  {
+    "nameEn": "Udamjeong Korean BBQ",
+    "nameKo": "우담정",
+    "meta": "Gwanak·🥩 BBQ·₩39,000",
+    "key": "우담정"
+  },
+  {
+    "nameEn": "Sanggye Urisusan Sashimi House",
+    "nameKo": "상계우리수산",
+    "meta": "Nowon·🐟 Raw Fish·₩90,000",
+    "key": "상계우리수산"
+  },
+  {
+    "nameEn": "Baoro China Sadang Branch",
+    "nameKo": "바오로차이나 사당점",
+    "meta": "Gangnam·🥡 Korean-Chinese·₩9,000",
+    "key": "바오로차이나 사당점"
+  },
+  {
+    "nameEn": "Huraideu Chamjalhaneunjip Seongsu",
+    "nameKo": "후라이드참잘하는집 성수점",
+    "meta": "Seongsu·🍗 Chicken·₩18,000",
+    "key": "후라이드참잘하는집 성수점"
+  },
+  {
+    "nameEn": "Dangsan Yetnal Gopchang",
+    "nameKo": "당산옛날곱창",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩24,000",
+    "key": "당산옛날곱창"
+  },
+  {
+    "nameEn": "Seogeullongtang",
+    "nameKo": "서글렁탕",
+    "meta": "Yeouido·🥩 BBQ·₩14,000",
+    "key": "서글렁탕"
+  },
+  {
+    "nameEn": "Wasak Tongtong Dakgangjeong",
+    "nameKo": "와삭통통닭강정",
+    "meta": "Nowon·🍗 Chicken·₩14,000",
+    "key": "와삭통통닭강정"
+  },
+  {
+    "nameEn": "Hadonggwan Yeouido Gomtang",
+    "nameKo": "하동관 여의도직영1호점",
+    "meta": "Yeongdeungpo·🍲 Soup & Stew·₩16,000",
+    "key": "하동관 여의도직영1호점"
+  },
+  {
+    "nameEn": "3il Hanwoo Gukbap",
+    "nameKo": "3일한우국밥",
+    "meta": "Yeongdeungpo·🍲 Soup & Stew·₩11,000",
+    "key": "3일한우국밥"
+  },
+  {
+    "nameEn": "Yeokjeon Hoegwan Mapo",
+    "nameKo": "역전회관 마포본점",
+    "meta": "Mapo·🥘 Home-style·₩21,000",
+    "key": "역전회관 마포본점"
+  },
+  {
+    "nameEn": "Aehorak Anguk",
+    "nameKo": "애호락 안국본점",
+    "meta": "Bukchon & Insadong·🥘 Home-style·₩12,900",
+    "key": "애호락 안국본점"
+  },
+  {
+    "nameEn": "Sogogi Ttaenggineunal Gapjinsiknyuk",
+    "nameKo": "소고기 땡기는날 값진식육",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩16,000",
+    "key": "소고기 땡기는날 값진식육"
+  },
+  {
+    "nameEn": "Guldari Restaurant",
+    "nameKo": "굴다리식당",
+    "meta": "Mapo·🥘 Home-style·₩10,000",
+    "key": "굴다리식당"
+  },
+  {
+    "nameEn": "Sansu Izakaya",
+    "nameKo": "산수 사당본점",
+    "meta": "Sadang·🍺 Pocha·₩19,000",
+    "key": "산수 사당본점"
+  },
+  {
+    "nameEn": "Hantiok Lotte Department Store Nowon",
+    "nameKo": "한티옥 롯데백화점 노원점",
+    "meta": "Nowon·🥘 Home-style·₩14,000",
+    "key": "한티옥 롯데백화점 노원점"
+  },
+  {
+    "nameEn": "Daegu Hyeongje Makchang Bangbae",
+    "nameKo": "대구형제막창 방배점",
+    "meta": "Seocho·🥩 BBQ·₩14,000",
+    "key": "대구형제막창 방배점"
+  },
+  {
+    "nameEn": "Geumeum Jokbal",
+    "nameKo": "그믐족발",
+    "meta": "Yeongdeungpo·🥩 BBQ·₩28,000",
+    "key": "그믐족발"
+  },
+  {
+    "nameEn": "Kodachaya Sadang Branch",
+    "nameKo": "코다차야 사당점",
+    "meta": "Gangnam·🍺 Pocha·₩9,000",
+    "key": "코다차야 사당점"
+  },
+  {
+    "nameEn": "Seolleim Samgyeopsal Sinchon",
+    "nameKo": "설레임삼겹살 신촌점",
+    "meta": "Mapo·🥩 BBQ·₩8,900",
+    "key": "설레임삼겹살 신촌점"
+  },
+  {
+    "nameEn": "Hobo Restaurant",
+    "nameKo": "호보식당 신사역직영점",
+    "meta": "Apgujeong & Sinsa·🥘 Home-style·₩19,500",
+    "key": "호보식당 신사역직영점"
+  },
+  {
+    "nameEn": "Hamheung Naengmyeon",
+    "nameKo": "함흥냉면",
+    "meta": "Yeongdeungpo·🍜 Noodles·₩12,000",
+    "key": "함흥냉면"
+  },
+  {
+    "nameEn": "Nakseong Gopchang",
+    "nameKo": "낙성곱창",
+    "meta": "Sadang·🥩 BBQ·₩25,000",
+    "key": "낙성곱창"
+  },
+  {
+    "nameEn": "Baekho Yangdaechang",
+    "nameKo": "백호양대창",
+    "meta": "Sadang·🥩 BBQ·₩15,900",
+    "key": "백호양대창"
+  },
+  {
+    "nameEn": "Nagwon Snack Konkuk Univ. Branch",
+    "nameKo": "낙원스낵 건대점",
+    "meta": "Konkuk Univ·🍺 Pocha·₩5,000",
+    "key": "낙원스낵 건대점"
+  },
+  {
+    "nameEn": "Pyeonghwa Yeonnam Gopchang",
+    "nameKo": "평화연남",
+    "meta": "Mapo·🥩 BBQ·₩7,000",
+    "key": "평화연남"
+  },
+  {
+    "nameEn": "Chamsae Bangatgan",
+    "nameKo": "참새방앗간",
+    "meta": "Yeongdeungpo·🍺 Pocha·₩27,000",
+    "key": "참새방앗간"
+  },
+  {
+    "nameEn": "Jogae Changgo Bangbae",
+    "nameKo": "조개창고 방배점",
+    "meta": "Seocho·🥘 Home-style·₩28,000",
+    "key": "조개창고 방배점"
+  },
+  {
+    "nameEn": "Eulji Jangmanok",
+    "nameKo": "을지 장만옥",
+    "meta": "Jongro/Myeongdong·🍺 Pocha·₩15,800",
+    "key": "을지 장만옥"
+  },
+  {
+    "nameEn": "Jongno Seolleongtang",
+    "nameKo": "종로설렁탕",
+    "meta": "Jongro/Myeongdong·🍲 Soup & Stew·₩16,000",
+    "key": "종로설렁탕"
+  },
+  {
+    "nameEn": "Ganggangsullae Sanggye",
+    "nameKo": "강강술래 상계점",
+    "meta": "Nowon·🥩 BBQ·₩33,000",
+    "key": "강강술래 상계점"
+  },
+  {
+    "nameEn": "Gonaengji Stew & Hot Pot",
+    "nameKo": "고냉지",
+    "meta": "Mapo·🍲 Soup & Stew·₩8,000",
+    "key": "고냉지"
+  },
+  {
+    "nameEn": "Cheolgil Busanjip Sinchon",
+    "nameKo": "철길부산집 신촌점",
+    "meta": "Mapo·🍺 Pocha·₩18,000",
+    "key": "철길부산집 신촌점"
+  },
+  {
+    "nameEn": "Eulji Jagyeopjang",
+    "nameKo": "을지 작업장",
+    "meta": "Jongro/Myeongdong·🥘 Home-style·₩25,000",
+    "key": "을지 작업장"
+  },
+  {
+    "nameEn": "Yangyang Memil Makguksu",
+    "nameKo": "양양메밀막국수",
+    "meta": "Gangnam·🍜 Noodles",
+    "key": "양양메밀막국수"
+  },
+  {
+    "nameEn": "I-gopchakhan-gogi",
+    "nameKo": "이곱착한고기 사당본점",
+    "meta": "Sadang·🥩 BBQ·₩19,000",
+    "key": "이곱착한고기 사당본점"
+  },
+  {
+    "nameEn": "Minariuri Samgyeop Yeongdeungpo-gu Office",
+    "nameKo": "미나리우리삼겹 영등포구청 본점",
+    "meta": "Yeouido·🥩 BBQ·₩17,000",
+    "key": "미나리우리삼겹 영등포구청 본점"
+  },
+  {
+    "nameEn": "Seoul Jeongyuk Restaurant",
+    "nameKo": "서울정육식당",
+    "meta": "Sadang·🥩 BBQ·₩8,000",
+    "key": "서울정육식당"
+  },
+  {
+    "nameEn": "Hoegi Hof",
+    "nameKo": "회기호프",
+    "meta": "Dongdaemun·🍺 Pocha·₩15,000",
+    "key": "회기호프"
+  },
+  {
+    "nameEn": "Bongsanok Seocho-dong",
+    "nameKo": "봉산옥 서초동본점",
+    "meta": "Seocho·🥘 Home-style·₩15,000",
+    "key": "봉산옥 서초동본점"
+  },
+  {
+    "nameEn": "Daseong King Crab",
+    "nameKo": "다성 대게킹크랩",
+    "meta": "Hongdae & Sinchon·🥘 Home-style·₩89,000",
+    "key": "다성 대게킹크랩"
+  },
+  {
+    "nameEn": "Somunnan Gamjatang Haejangguk",
+    "nameKo": "소문난감자탕해장국",
+    "meta": "Nowon·🍲 Soup & Stew·₩36,000",
+    "key": "소문난감자탕해장국"
+  },
+  {
+    "nameEn": "Mokhwa Haejang Cheongnyangni",
+    "nameKo": "목화해장 청량리직영점",
+    "meta": "Dongdaemun·🍲 Soup & Stew·₩8,900",
+    "key": "목화해장 청량리직영점"
+  },
+  {
+    "nameEn": "Noryangjin Hoetjip Chungnam Mirim",
+    "nameKo": "노량진횟집 충남미림",
+    "meta": "Sadang·🐟 Raw Fish·₩65,000",
+    "key": "노량진횟집 충남미림"
+  },
+  {
+    "nameEn": "Bokdoni Gamasot Sundae-guk Gangnam",
+    "nameKo": "복돈이 가마솥 순대국 강남본점",
+    "meta": "Gangnam·🍲 Soup & Stew·₩11,000",
+    "key": "복돈이 가마솥 순대국 강남본점"
+  },
+  {
+    "nameEn": "Yudak Story Dak Hanmari Sinchon",
+    "nameKo": "유닭스토리 닭한마리 신촌점",
+    "meta": "Mapo·🍗 Chicken·₩11,000",
+    "key": "유닭스토리 닭한마리 신촌점"
+  },
+  {
+    "nameEn": "Hwagyejang",
+    "nameKo": "화계장",
+    "meta": "Nowon·🍺 Pocha·₩17,900",
+    "key": "화계장"
+  },
+  {
+    "nameEn": "Golmok Tteokbokki",
+    "nameKo": "골목떡볶이",
+    "meta": "Jamsil·🌭 Street Food",
+    "key": "골목떡볶이"
+  },
+  {
+    "nameEn": "Kkuldtaegi Gopchang",
+    "nameKo": "꿀때기곱창",
+    "meta": "Sadang·🥩 BBQ·₩12,000",
+    "key": "꿀때기곱창"
+  },
+  {
+    "nameEn": "Golmokjip Gopchang",
+    "nameKo": "골목집곱창",
+    "meta": "Gwanak·🥩 BBQ·₩10,000",
+    "key": "골목집곱창"
+  },
+  {
+    "nameEn": "Mitable Gyodae",
+    "nameKo": "미테이블 교대직영점",
+    "meta": "Seocho·🍚 Korean·₩59,600",
+    "key": "미테이블 교대직영점"
+  },
+  {
+    "nameEn": "Namsanteo Cheongdam",
+    "nameKo": "남산터 청담본점",
+    "meta": "Gangnam·🍲 Soup & Stew·₩13,000",
+    "key": "남산터 청담본점"
+  },
+  {
+    "nameEn": "Sanchon",
+    "nameKo": "산촌 본점",
+    "meta": "Bukchon & Insadong·🍱 Set Meal·₩6,000",
+    "key": "산촌 본점"
+  },
+  {
+    "nameEn": "Hwangdo Bajirak Kalguksu",
+    "nameKo": "황도바지락칼국수",
+    "meta": "Jamsil·🍜 Noodles·₩13,000",
+    "key": "황도바지락칼국수"
+  },
+  {
+    "nameEn": "I Bok-hui Haejang Seolleung",
+    "nameKo": "이복희해장 선릉본점",
+    "meta": "Gangnam·🥘 Home-style·₩10,000",
+    "key": "이복희해장 선릉본점"
+  },
+  {
+    "nameEn": "Kkulkkuljinsundae Seokchon",
+    "nameKo": "꿀꿀진순대 석촌점",
+    "meta": "Jamsil·🥩 BBQ · 🍲 Soup & Stew·₩16,000",
+    "key": "꿀꿀진순대 석촌점"
+  }
+]

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Collect sikr.app restaurants by repeatedly clicking "Load 100 more".
+"""Collect sikr.kr restaurants by repeatedly clicking "Load 100 more".
 
-Requires a reachable sikr.app (DNS). Saves JSON for catalog:sikr import.
+Saves JSON for catalog:sikr import.
 """
 import argparse
 import asyncio
@@ -68,7 +68,7 @@ async def main(args):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--url", default="https://sikr.app/")
+    ap.add_argument("--url", default="https://sikr.kr/")
     ap.add_argument("--output", default="sikr_places.json")
     ap.add_argument("--max-rounds", type=int, default=20)
     ap.add_argument("--wait-ms", type=int, default=2000)

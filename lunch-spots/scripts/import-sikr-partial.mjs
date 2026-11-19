@@ -156,7 +156,7 @@ for (const s of sikr) {
     address: hit.address,
     location: { lat: hit.lat, lng: hit.lng },
     collections: ["Sikr"],
-    curated: { by: "sikr", url: "https://sikr.app/" },
+    curated: { by: "sikr", url: "https://sikr.kr/" },
     place: { kakaoId: String(hit.kakaoId), kakaoUrl: hit.kakaoUrl },
     ...(s.nameEn ? { notes: s.nameEn } : {}),
   };
