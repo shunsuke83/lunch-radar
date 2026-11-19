@@ -38,9 +38,12 @@ export type ExplorerState = {
   region: string;
   view: "list" | "map";
   filters: FilterState;
+  /** Selected place slug (drawer / map highlight). */
+  place?: string | null;
+  map?: { lat: number; lng: number; z: number } | null;
 };
 
-const SORTS = new Set<SortKey>(["reviews", "rating", "distance", "price", "nearby"]);
+const SORTS = new Set<SortKey>(["reviews", "rating", "distance", "price", "nearby", "overlap"]);
 export const FILTER_STORAGE_KEY = "lunch-radar:filters:v1";
 
 function flag(v: string | null): boolean {
@@ -82,6 +85,14 @@ export function parseExplorerSearch(search: string): Partial<ExplorerState> {
   const sort = q.get("sort");
   if (sort && SORTS.has(sort as SortKey)) set("sort", sort as SortKey);
   if (touched) out.filters = migrateBudget(migrateLegacyTheme(filters));
+  const place = q.get("place");
+  if (place) out.place = place;
+  const lat = Number(q.get("lat"));
+  const lng = Number(q.get("lng"));
+  const z = Number(q.get("z"));
+  if (Number.isFinite(lat) && Number.isFinite(lng) && Number.isFinite(z)) {
+    out.map = { lat, lng, z };
+  }
   return out;
 }
 
@@ -102,6 +113,12 @@ export function serializeExplorerSearch(state: ExplorerState): string {
   if (f.noBreak) q.set("nobreak", "1");
   if (f.unvisitedOnly) q.set("unvisited", "1");
   if (f.sort !== "reviews") q.set("sort", f.sort);
+  if (state.place) q.set("place", state.place);
+  if (state.map) {
+    q.set("lat", state.map.lat.toFixed(5));
+    q.set("lng", state.map.lng.toFixed(5));
+    q.set("z", String(Math.round(state.map.z)));
+  }
   return q.toString();
 }
 

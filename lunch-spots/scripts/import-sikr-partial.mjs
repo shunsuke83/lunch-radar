@@ -73,11 +73,14 @@ function regionOf(address) {
 }
 
 const byProvince = new Map();
+const existingAdded = new Map();
 for (const file of readdirSync(outDir).filter((f) => f.endsWith(".json"))) {
   const id = file.replace(/\.json$/, "");
   const label = ID_TO_LABEL[id];
   if (!label) continue;
-  byProvince.set(label, JSON.parse(readFileSync(path.join(outDir, file), "utf8")).restaurants ?? []);
+  const rows = JSON.parse(readFileSync(path.join(outDir, file), "utf8")).restaurants ?? [];
+  byProvince.set(label, rows);
+  for (const r of rows) if (r.slug && r.addedAt) existingAdded.set(r.slug, r.addedAt);
 }
 const office = JSON.parse(readFileSync(officeFile, "utf8"));
 const allRows = () => [...byProvince.values()].flat().concat(office.restaurants);
@@ -150,7 +153,7 @@ for (const s of sikr) {
     area: region.district,
     district: region.district,
     tags: [],
-    addedAt: now,
+    addedAt: existingAdded.get(`kakao-${hit.kakaoId}`) ?? now,
     updatedAt: now,
     mentionCount: 0,
     address: hit.address,

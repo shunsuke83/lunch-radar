@@ -115,7 +115,7 @@ export function RestaurantDetail({
             {status.lunchOk ? <Tag color="green" size="xsmall">점심 가능</Tag> : null}
             {!status.lunchOk && r.hours ? <Tag color="gray" size="xsmall">점심 어려움</Tag> : null}
             {needsHoursCheck(r) ? <Badge status="warning">영업확인필요</Badge> : null}
-            {isRecentlyAdded(r) ? <Tag color="brand" size="xsmall">새로 추가</Tag> : null}
+            {nearby && isRecentlyAdded(r) ? <Tag color="brand" size="xsmall">새로 추가</Tag> : null}
           </div>
 
           {r.hours ? (

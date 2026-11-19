@@ -14,7 +14,10 @@
     "catalog:fix-districts": "tsx --env-file-if-exists=.env.local scripts/fix-districts.mjs",
     "catalog:matzido": "tsx --env-file-if-exists=.env.local scripts/import-matzido-csv.mjs",
     "catalog:kakao-regions": "tsx --env-file-if-exists=.env.local scripts/kakao-regions.ts",
-    "dev": "agent-sdk dev"
+    "dev": "agent-sdk dev",
+    "catalog:fix-geo": "tsx --env-file-if-exists=.env.local scripts/fix-region-geo.mjs",
+    "catalog:summaries": "tsx scripts/export-region-summaries.mjs",
+    "catalog:validate": "tsx scripts/validate-regions.mjs"
   },
   "dependencies": {
     "@grok/agent-sdk": "^0.6.0",

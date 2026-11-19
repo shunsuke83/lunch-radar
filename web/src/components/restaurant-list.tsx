@@ -7,6 +7,7 @@ import {
   closedDaysLabel,
   displayTags,
   displayWalkMinutes,
+  isMultiListed,
   isRecentlyAdded,
   mapLinks,
   needsHoursCheck,
@@ -30,6 +31,14 @@ type Props = {
   nearby?: boolean;
   selectedSlug?: string | null;
   onSelect?: (slug: string) => void;
+  /** Open the detail drawer (map mode should not open it on every select). */
+  onOpenDetail?: (slug: string) => void;
+  /** Scroll the selected row into view (disable on map view). */
+  scrollOnSelect?: boolean;
+  /** Show 「새로 추가」 badges (office only). */
+  showNew?: boolean;
+  className?: string;
+  compact?: boolean;
 };
 
 const PAGE_SIZE = 100;
@@ -172,6 +181,8 @@ function MobileCard({
   nearby,
   selected,
   onSelect,
+  onOpenDetail,
+  showNew,
 }: {
   r: Restaurant;
   now: number | null;
@@ -179,6 +190,8 @@ function MobileCard({
   nearby: boolean;
   selected: boolean;
   onSelect?: (slug: string) => void;
+  onOpenDetail?: (slug: string) => void;
+  showNew: boolean;
 }) {
   const status = openStatus(r.hours, now, weekday);
   const walk = displayWalkMinutes(r);
@@ -207,7 +220,8 @@ function MobileCard({
             <Badge status={badgeFor(status.kind)}>{status.label}</Badge>
             {status.lunchOk ? <Tag color="green" size="xsmall">점심</Tag> : null}
             {needsHoursCheck(r) ? <Badge status="warning">영업확인필요</Badge> : null}
-            {isRecentlyAdded(r) ? <Tag color="brand" size="xsmall">새로 추가</Tag> : null}
+            {showNew && isRecentlyAdded(r) ? <Tag color="brand" size="xsmall">새로 추가</Tag> : null}
+            {isMultiListed(r) ? <Tag color="purple" size="xsmall">여러 목록</Tag> : null}
           </div>
           <p className="mt-group-xxs truncate text-text-secondary typography-body-sm-regular">
             {[place, dish].filter(Boolean).join(" · ") || "–"}
@@ -215,6 +229,18 @@ function MobileCard({
           <div className="mt-group-xxs">
             <ReputationLine r={r} />
           </div>
+          {onOpenDetail ? (
+            <button
+              type="button"
+              className="mt-group-xxs text-text-brand typography-body-sm-medium"
+              onClick={(e) => {
+                e.stopPropagation();
+                onOpenDetail(r.slug);
+              }}
+            >
+              자세히
+            </button>
+          ) : null}
         </div>
         <MapButtons r={r} />
       </button>
@@ -232,14 +258,19 @@ export function RestaurantList({
   nearby = true,
   selectedSlug,
   onSelect,
+  onOpenDetail,
+  scrollOnSelect = true,
+  showNew = true,
+  className,
+  compact = false,
 }: Props) {
   const [limit, setLimit] = useState(PAGE_SIZE);
   useEffect(() => setLimit(PAGE_SIZE), [restaurants]);
   useEffect(() => {
-    if (!selectedSlug) return;
+    if (!scrollOnSelect || !selectedSlug) return;
     const el = document.getElementById(`place-${selectedSlug}`);
     el?.scrollIntoView({ block: "nearest", behavior: "smooth" });
-  }, [selectedSlug]);
+  }, [selectedSlug, scrollOnSelect]);
   const heads = nearby ? HEADS : HEADS.map((h) => (h.label === "도보" ? { ...h, label: "지역" } : h));
   const visible = restaurants.slice(0, limit);
 
@@ -275,7 +306,7 @@ export function RestaurantList({
   }
 
   return (
-    <Shell>
+    <div className={cn("overflow-hidden rounded-sm bg-surface-default", className, compact && "max-h-full overflow-y-auto")}>
       <ul className="lg:hidden">
         {visible.map((r) => (
           <MobileCard
@@ -286,6 +317,8 @@ export function RestaurantList({
             nearby={nearby}
             selected={selectedSlug === r.slug}
             onSelect={onSelect}
+            onOpenDetail={onOpenDetail}
+            showNew={showNew}
           />
         ))}
       </ul>
@@ -328,7 +361,20 @@ export function RestaurantList({
                   ) : null}
                   {status.lunchOk ? <Tag color="green" size="xsmall">점심</Tag> : null}
                   {needsHoursCheck(r) ? <Badge status="warning">영업확인필요</Badge> : null}
-                  {isRecentlyAdded(r) ? <Tag color="brand" size="xsmall">새로 추가</Tag> : null}
+                  {showNew && isRecentlyAdded(r) ? <Tag color="brand" size="xsmall">새로 추가</Tag> : null}
+                  {isMultiListed(r) ? <Tag color="purple" size="xsmall">여러 목록</Tag> : null}
+                  {onOpenDetail ? (
+                    <button
+                      type="button"
+                      className="text-text-brand typography-body-sm-medium"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onOpenDetail(r.slug);
+                      }}
+                    >
+                      자세히
+                    </button>
+                  ) : null}
                 </div>
                 {r.menu?.length ? (
                   <ul className="flex flex-wrap gap-x-group-md gap-y-group-xxs text-text-secondary typography-body-sm-regular">
@@ -427,6 +473,6 @@ export function RestaurantList({
           </Button>
         </div>
       ) : null}
-    </Shell>
+    </div>
   );
 }

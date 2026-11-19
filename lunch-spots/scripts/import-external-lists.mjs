@@ -122,12 +122,15 @@ async function kakaoKeyword(query) {
 
 // ---- load existing regions ----
 const byProvince = new Map();
+const existingAdded = new Map();
 for (const file of readdirSync(outDir).filter((f) => f.endsWith(".json"))) {
   const j = JSON.parse(readFileSync(path.join(outDir, file), "utf8"));
   const id = file.replace(/\.json$/, "");
   const province = Object.values(PROVINCES).find((p) => p.id === id)?.label;
   if (!province) continue;
-  byProvince.set(province, j.restaurants ?? []);
+  const rows = j.restaurants ?? [];
+  byProvince.set(province, rows);
+  for (const r of rows) if (r.slug && r.addedAt) existingAdded.set(r.slug, r.addedAt);
 }
 
 const office = JSON.parse(readFileSync(officeFile, "utf8"));
@@ -203,7 +206,7 @@ function upsert(candidate, theme) {
     ...(candidate.category ? { category: candidate.category } : {}),
     ...(candidate.subcategory ? { subcategory: candidate.subcategory } : {}),
     tags: [],
-    addedAt: now,
+    addedAt: existingAdded.get(slugBase) ?? now,
     updatedAt: now,
     mentionCount: 0,
     address: candidate.address,

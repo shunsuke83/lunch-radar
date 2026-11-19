@@ -12,20 +12,31 @@ import {
   type Weekday,
 } from "@/lib/catalog";
 
-// Kakao JS keys are public by design; Kakao only serves them to the
-// domains registered for the app (Pages URL, localhost).
 const KAKAO_KEY = process.env.NEXT_PUBLIC_KAKAO_MAP_KEY?.trim();
-
-/** Default camera radius around the office so far-away pins do not shrink the view. */
 const DEFAULT_RADIUS_M = 600;
+const BUBBLE_MAX_LEVEL = 7;
+const NAME_LABEL_MAX_LEVEL = 4;
 
-type LatLng = object;
+type LatLng = { getLat?: () => number; getLng?: () => number };
 type KakaoMap = {
-  setBounds: (b: object) => void;
+  setBounds: (b: object, padding?: number) => void;
   setCenter: (p: LatLng) => void;
   panTo: (p: LatLng) => void;
   panBy: (x: number, y: number) => void;
   relayout: () => void;
+  getLevel: () => number;
+  setLevel: (n: number) => void;
+  getBounds: () => {
+    getSouthWest: () => { getLat: () => number; getLng: () => number };
+    getNorthEast: () => { getLat: () => number; getLng: () => number };
+  };
+  getCenter: () => { getLat: () => number; getLng: () => number };
+};
+type MarkerLike = {
+  setMap: (m: KakaoMap | null) => void;
+  setImage: (img: object) => void;
+  setZIndex: (z: number) => void;
+  getPosition: () => LatLng;
 };
 type Overlay = { setMap: (m: KakaoMap | null) => void };
 type Kakao = {
@@ -37,7 +48,12 @@ type Kakao = {
     Size: new (w: number, h: number) => object;
     Point: new (x: number, y: number) => object;
     MarkerImage: new (src: string, size: object, opts?: { offset?: object }) => object;
-    Marker: new (opts: { position: LatLng; title?: string; image?: object; zIndex?: number }) => Overlay;
+    Marker: new (opts: {
+      position: LatLng;
+      title?: string;
+      image?: object;
+      zIndex?: number;
+    }) => MarkerLike;
     CustomOverlay: new (opts: {
       position: LatLng;
       content: HTMLElement;
@@ -46,10 +62,7 @@ type Kakao = {
     }) => Overlay;
     event: {
       addListener: (target: object, type: string, fn: (...args: unknown[]) => void) => void;
-    };
-    MarkerClusterer: new (opts: { map: KakaoMap; averageCenter?: boolean; minLevel?: number }) => {
-      addMarkers: (markers: Overlay[]) => void;
-      clear: () => void;
+      removeListener: (target: object, type: string, fn: (...args: unknown[]) => void) => void;
     };
   };
 };
@@ -63,18 +76,38 @@ const PIN_COLOR: Record<OpenKind | "selected", string> = {
   selected: "#0161ed",
 };
 
-function pinImage(kakao: Kakao, kind: OpenKind, selected: boolean) {
-  const size = selected ? 28 : 18;
-  const color = selected ? PIN_COLOR.selected : PIN_COLOR[kind];
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}"><circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - 2}" fill="${color}" stroke="#fff" stroke-width="2"/></svg>`;
+const CATEGORY_COLOR: Record<string, string> = {
+  한식: "#c2410c",
+  중식: "#b91c1c",
+  일식: "#1d4ed8",
+  양식: "#7c3aed",
+  아시안: "#0f766e",
+  분식: "#ca8a04",
+  샐러드: "#15803d",
+  "카페·디저트": "#9d174d",
+  주점: "#4b5563",
+};
+
+function pinColor(
+  r: Restaurant,
+  kind: OpenKind,
+  selected: boolean,
+  mode: "hours" | "category",
+): string {
+  if (selected) return PIN_COLOR.selected;
+  if (mode === "category") return CATEGORY_COLOR[r.category ?? ""] ?? "#64748b";
+  return PIN_COLOR[kind];
+}
+
+function pinImage(kakao: Kakao, color: string, selected: boolean, emphasize = false) {
+  const size = selected ? 28 : emphasize ? 22 : 18;
+  const ring = emphasize && !selected ? `<circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - 1}" fill="none" stroke="#f59e0b" stroke-width="2"/>` : "";
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}">${ring}<circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - 2}" fill="${color}" stroke="#fff" stroke-width="2"/></svg>`;
   const url = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
   return new kakao.maps.MarkerImage(url, new kakao.maps.Size(size, size), {
     offset: new kakao.maps.Point(size / 2, size / 2),
   });
 }
-
-/** Above this many markers they are grouped into clusters. */
-const CLUSTER_FROM = 200;
 
 declare global {
   interface Window {
@@ -87,7 +120,7 @@ let sdk: Promise<Kakao> | null = null;
 function loadKakao(key: string): Promise<Kakao> {
   sdk ??= new Promise<Kakao>((resolve, reject) => {
     const script = document.createElement("script");
-    script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${encodeURIComponent(key)}&libraries=clusterer&autoload=false`;
+    script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${encodeURIComponent(key)}&autoload=false`;
     script.async = true;
     script.onload = () => window.kakao?.maps.load(() => resolve(window.kakao!));
     script.onerror = () => {
@@ -119,7 +152,6 @@ function distanceM(a: { lat: number; lng: number }, b: { lat: number; lng: numbe
   return 2 * 6_371_000 * Math.asin(Math.sqrt(h));
 }
 
-/** ~DEFAULT_RADIUS_M box around a point, for setBounds. */
 function radiusBounds(kakao: Kakao, center: { lat: number; lng: number }, meters: number) {
   const dLat = meters / 111_320;
   const dLng = meters / (111_320 * Math.cos((center.lat * Math.PI) / 180));
@@ -129,13 +161,41 @@ function radiusBounds(kakao: Kakao, center: { lat: number; lng: number }, meters
   return bounds;
 }
 
-/** Popup card built with DOM APIs (textContent), so names cannot inject markup. */
-function card(r: Restaurant, onClose: () => void): HTMLElement {
+function percentile(sorted: number[], p: number): number {
+  if (!sorted.length) return 0;
+  const i = Math.min(sorted.length - 1, Math.max(0, Math.floor((sorted.length - 1) * p)));
+  return sorted[i]!;
+}
+
+/** Fit bounds using 2–98% percentiles so outliers do not zoom to the peninsula. */
+function robustBounds(kakao: Kakao, points: { lat: number; lng: number }[]) {
+  const lats = points.map((p) => p.lat).sort((a, b) => a - b);
+  const lngs = points.map((p) => p.lng).sort((a, b) => a - b);
+  const latMin = percentile(lats, 0.02);
+  const latMax = percentile(lats, 0.98);
+  const lngMin = percentile(lngs, 0.02);
+  const lngMax = percentile(lngs, 0.98);
+  const bounds = new kakao.maps.LatLngBounds();
+  bounds.extend(new kakao.maps.LatLng(latMin, lngMin));
+  bounds.extend(new kakao.maps.LatLng(latMax, lngMax));
+  return bounds;
+}
+
+function isEmphasized(r: Restaurant): boolean {
+  const reviews = r.naverReviews ?? 0;
+  const score = r.naverScore ?? r.rating?.score ?? 0;
+  return reviews >= 500 || score >= 4.3;
+}
+
+function card(
+  r: Restaurant,
+  onClose: () => void,
+  onDetail?: (slug: string) => void,
+): HTMLElement {
   const root = el(
     "div",
     "flex w-60 flex-col gap-group-xxs rounded-lg border border-border-default bg-surface-default px-inline-lg py-stack-md shadow-default-lg",
   );
-  // Keep clicks inside the card from closing it via the map click handler.
   root.addEventListener("click", (e) => e.stopPropagation());
   const head = el("div", "flex items-start justify-between gap-group-sm");
   head.append(el("p", "text-text-primary typography-headline-sm", r.name));
@@ -162,21 +222,22 @@ function card(r: Restaurant, onClose: () => void): HTMLElement {
     const meters = r.walkMeters !== undefined ? ` · ${r.walkMeters}m` : "";
     root.append(el("p", "text-text-tertiary typography-body-sm-regular", `도보 ${walk}분${meters}`));
   }
-  if (r.menu?.[0]) {
-    const m = r.menu[0];
+  if ((r.collections?.length ?? 0) >= 2) {
     root.append(
-      el(
-        "p",
-        "text-text-secondary typography-body-sm-regular",
-        m.price !== undefined ? `${m.name} ${m.price.toLocaleString("ko-KR")}원` : m.name,
-      ),
+      el("p", "text-text-brand typography-caption", `여러 목록 · ${r.collections!.length}`),
     );
   }
+  const row = el("div", "flex flex-wrap gap-group-sm pt-stack-sm");
+  if (onDetail) {
+    const detail = el("button", buttonClass("primary", "sm"), "자세히");
+    detail.type = "button";
+    detail.onclick = () => onDetail(r.slug);
+    row.append(detail);
+  }
   const links = mapLinks(r);
-  const row = el("div", "flex gap-group-sm pt-stack-sm");
   for (const [label, href] of [
-    ["네이버지도", links.naver],
-    ["카카오맵", links.kakao],
+    ["네이버", links.naver],
+    ["카카오", links.kakao],
   ] as const) {
     const a = el("a", buttonClass("tertiary", "sm"), label);
     a.href = href;
@@ -188,6 +249,8 @@ function card(r: Restaurant, onClose: () => void): HTMLElement {
   return root;
 }
 
+export type MapBounds = { south: number; west: number; north: number; east: number };
+
 type Props = {
   restaurants: Restaurant[];
   office?: Office;
@@ -195,6 +258,19 @@ type Props = {
   weekday?: Weekday | null;
   selectedSlug?: string | null;
   onSelect?: (slug: string) => void;
+  onOpenDetail?: (slug: string) => void;
+  onBoundsChange?: (bounds: MapBounds, level: number) => void;
+  /** Nationwide uses category colors; office uses open-hours colors. */
+  pinMode?: "hours" | "category";
+  className?: string;
+  heightClass?: string;
+};
+
+type MarkerEntry = {
+  marker: MarkerLike;
+  restaurant: Restaurant;
+  kind: OpenKind;
+  selected: boolean;
 };
 
 export function RestaurantMap({
@@ -204,20 +280,36 @@ export function RestaurantMap({
   weekday = null,
   selectedSlug,
   onSelect,
+  onOpenDetail,
+  onBoundsChange,
+  pinMode = office ? "hours" : "category",
+  className,
+  heightClass = "h-[420px]",
 }: Props) {
   const box = useRef<HTMLDivElement>(null);
   const mapRef = useRef<{ kakao: Kakao; map: KakaoMap } | null>(null);
-  const layers = useRef<Overlay[]>([]);
-  const clusterer = useRef<{ clear: () => void } | null>(null);
+  const markersRef = useRef<Map<string, MarkerEntry>>(new Map());
+  const officeOverlay = useRef<Overlay | null>(null);
+  const bubbleOverlays = useRef<Overlay[]>([]);
+  const nameLabels = useRef<Overlay[]>([]);
   const popupRef = useRef<Overlay | null>(null);
   const closePopupRef = useRef<() => void>(() => {});
   const onSelectRef = useRef(onSelect);
+  const onDetailRef = useRef(onOpenDetail);
+  const onBoundsRef = useRef(onBoundsChange);
   onSelectRef.current = onSelect;
+  onDetailRef.current = onOpenDetail;
+  onBoundsRef.current = onBoundsChange;
+  const selectedRef = useRef(selectedSlug);
+  selectedRef.current = selectedSlug;
   const boundsKey = useRef("");
+  const pinModeRef = useRef(pinMode);
+  pinModeRef.current = pinMode;
   const [error, setError] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
-  /** When office is set, start zoomed to DEFAULT_RADIUS_M; expand shows every pin. */
   const [expanded, setExpanded] = useState(false);
+  const [level, setLevel] = useState(4);
+  const [viewportCount, setViewportCount] = useState(0);
 
   const located = useMemo(() => restaurants.filter((r) => r.location), [restaurants]);
   const outside = useMemo(() => {
@@ -228,6 +320,29 @@ export function RestaurantMap({
     if (!office || expanded) return located;
     return located.filter((r) => distanceM(office, r.location!) <= DEFAULT_RADIUS_M);
   }, [located, office, expanded]);
+  const visibleKey = useMemo(() => visible.map((r) => r.slug).join(","), [visible]);
+
+  const closePopup = () => {
+    popupRef.current?.setMap(null);
+    popupRef.current = null;
+  };
+  closePopupRef.current = closePopup;
+
+  const openPopup = (r: Restaurant) => {
+    const current = mapRef.current;
+    if (!current || !r.location) return;
+    closePopup();
+    const pos = new current.kakao.maps.LatLng(r.location.lat, r.location.lng);
+    const o = new current.kakao.maps.CustomOverlay({
+      position: pos,
+      content: card(r, closePopup, (slug) => onDetailRef.current?.(slug)),
+      yAnchor: 1.35,
+      zIndex: 10,
+    });
+    o.setMap(current.map);
+    popupRef.current = o;
+    current.map.panTo(pos);
+  };
 
   useEffect(() => {
     if (!KAKAO_KEY || !box.current || mapRef.current) return;
@@ -241,52 +356,144 @@ export function RestaurantMap({
           level: 4,
         });
         mapRef.current = { kakao, map };
+        const emitBounds = () => {
+          const b = map.getBounds();
+          const sw = b.getSouthWest();
+          const ne = b.getNorthEast();
+          const lv = map.getLevel();
+          setLevel(lv);
+          onBoundsRef.current?.({
+            south: sw.getLat(),
+            west: sw.getLng(),
+            north: ne.getLat(),
+            east: ne.getLng(),
+          }, lv);
+        };
         kakao.maps.event.addListener(map, "click", () => closePopupRef.current());
+        kakao.maps.event.addListener(map, "idle", emitBounds);
         setReady(true);
+        emitBounds();
       })
       .catch((e: Error) => setError(e.message));
     return () => {
       cancelled = true;
     };
-    // The map is created once; markers follow `restaurants` below.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Sync marker set with visible restaurants (no wipe on select/clock).
   useEffect(() => {
     const current = mapRef.current;
     if (!ready || !current) return;
     const { kakao, map } = current;
-    for (const layer of layers.current) layer.setMap(null);
-    layers.current = [];
-    clusterer.current?.clear();
-    clusterer.current = null;
-    popupRef.current = null;
-    const cluster = visible.length > CLUSTER_FROM;
-    const markers: Overlay[] = [];
+    const nextSlugs = new Set(visible.map((r) => r.slug));
+    const showBubbles = !office && map.getLevel() >= BUBBLE_MAX_LEVEL;
 
-    const closePopup = () => {
-      popupRef.current?.setMap(null);
-      popupRef.current = null;
-    };
-    closePopupRef.current = closePopup;
+    for (const [slug, entry] of markersRef.current) {
+      if (!nextSlugs.has(slug)) {
+        entry.marker.setMap(null);
+        markersRef.current.delete(slug);
+      }
+    }
 
-    const openPopup = (r: Restaurant, pos: LatLng) => {
-      closePopup();
-      const o = new kakao.maps.CustomOverlay({
-        position: pos,
-        content: card(r, closePopup),
-        yAnchor: 1.35,
-        zIndex: 3,
-      });
-      o.setMap(map);
-      layers.current.push(o);
-      popupRef.current = o;
-      // Center on the pin, then shift the map down so the card above it stays in frame.
-      map.panTo(pos);
-      window.setTimeout(() => map.panBy(0, 100), 280);
-    };
+    for (const overlay of bubbleOverlays.current) overlay.setMap(null);
+    bubbleOverlays.current = [];
+    for (const overlay of nameLabels.current) overlay.setMap(null);
+    nameLabels.current = [];
+
+    if (showBubbles) {
+      for (const [, entry] of markersRef.current) entry.marker.setMap(null);
+      const byDistrict = new Map<string, { count: number; lat: number; lng: number }>();
+      for (const r of visible) {
+        const d = r.district || "기타";
+        const cur = byDistrict.get(d) ?? { count: 0, lat: 0, lng: 0 };
+        cur.count++;
+        cur.lat += r.location!.lat;
+        cur.lng += r.location!.lng;
+        byDistrict.set(d, cur);
+      }
+      for (const [name, agg] of byDistrict) {
+        const lat = agg.lat / agg.count;
+        const lng = agg.lng / agg.count;
+        const short = name.replace(/(특별시|광역시|특별자치시|시|군|구)$/, "") || name;
+        const label = el(
+          "button",
+          "cursor-pointer rounded-full border border-white bg-surface-brand-default px-inline-md py-stack-xs text-text-inverse shadow-brand-sm typography-body-sm-medium",
+          `${short} ${agg.count}`,
+        );
+        label.type = "button";
+        label.onclick = (e) => {
+          e.stopPropagation();
+          const pts = visible.filter((r) => (r.district || "기타") === name).map((r) => r.location!);
+          if (pts.length) map.setBounds(robustBounds(kakao, pts), 40);
+        };
+        const o = new kakao.maps.CustomOverlay({
+          position: new kakao.maps.LatLng(lat, lng),
+          content: label,
+          yAnchor: 0.5,
+          zIndex: 2,
+        });
+        o.setMap(map);
+        bubbleOverlays.current.push(o);
+      }
+    } else {
+      for (const r of visible) {
+        const kind = openStatus(r.hours, now, weekday).kind;
+        const selected = r.slug === selectedRef.current;
+        const color = pinColor(r, kind, selected, pinModeRef.current);
+        const emphasize = isEmphasized(r);
+        let entry = markersRef.current.get(r.slug);
+        if (!entry) {
+          const pos = new kakao.maps.LatLng(r.location!.lat, r.location!.lng);
+          const marker = new kakao.maps.Marker({
+            position: pos,
+            title: r.name,
+            image: pinImage(kakao, color, selected, emphasize),
+            zIndex: selected ? 4 : emphasize ? 2 : 1,
+          });
+          marker.setMap(map);
+          kakao.maps.event.addListener(marker, "click", () => {
+            onSelectRef.current?.(r.slug);
+          });
+          entry = { marker, restaurant: r, kind, selected };
+          markersRef.current.set(r.slug, entry);
+        } else {
+          entry.restaurant = r;
+          if (entry.kind !== kind || entry.selected !== selected) {
+            entry.marker.setImage(pinImage(kakao, color, selected, emphasize));
+            entry.marker.setZIndex(selected ? 4 : emphasize ? 2 : 1);
+            entry.kind = kind;
+            entry.selected = selected;
+          }
+          entry.marker.setMap(map);
+        }
+      }
+
+      if (map.getLevel() <= NAME_LABEL_MAX_LEVEL) {
+        const top = [...visible]
+          .filter(isEmphasized)
+          .sort((a, b) => (b.naverReviews ?? 0) - (a.naverReviews ?? 0))
+          .slice(0, 40);
+        for (const r of top) {
+          const label = el(
+            "div",
+            "rounded-sm bg-surface-default/90 px-inline-sm py-stack-xxs text-text-primary shadow-sm typography-caption",
+            r.name,
+          );
+          const o = new kakao.maps.CustomOverlay({
+            position: new kakao.maps.LatLng(r.location!.lat, r.location!.lng),
+            content: label,
+            yAnchor: -0.2,
+            zIndex: 1,
+          });
+          o.setMap(map);
+          nameLabels.current.push(o);
+        }
+      }
+    }
 
     if (office) {
+      officeOverlay.current?.setMap(null);
       const pos = new kakao.maps.LatLng(office.lat, office.lng);
       const label = el(
         "div",
@@ -294,87 +501,137 @@ export function RestaurantMap({
         "회사",
       );
       label.title = office.name;
-      const o = new kakao.maps.CustomOverlay({ position: pos, content: label, yAnchor: 1.4, zIndex: 2 });
+      const o = new kakao.maps.CustomOverlay({ position: pos, content: label, yAnchor: 1.4, zIndex: 5 });
       o.setMap(map);
-      layers.current.push(o);
+      officeOverlay.current = o;
     }
 
-    for (const r of visible) {
-      const pos = new kakao.maps.LatLng(r.location!.lat, r.location!.lng);
-      const selected = r.slug === selectedSlug;
-      const kind = openStatus(r.hours, now, weekday).kind;
-      const marker = new kakao.maps.Marker({
-        position: pos,
-        title: r.name,
-        image: pinImage(kakao, kind, selected),
-        zIndex: selected ? 4 : 1,
-      });
-      if (cluster) {
-        markers.push(marker);
-      } else {
-        marker.setMap(map);
-        layers.current.push(marker);
-      }
-      kakao.maps.event.addListener(marker, "click", () => {
-        onSelectRef.current?.(r.slug);
-        openPopup(r, pos);
-      });
-    }
-
-    if (cluster) {
-      const c = new kakao.maps.MarkerClusterer({ map, averageCenter: true, minLevel: 5 });
-      c.addMarkers(markers);
-      clusterer.current = c;
-    }
-
-    const nextBoundsKey = `${expanded}|${office?.lat ?? ""}|${visible.map((r) => r.slug).join(",")}`;
+    const nextBoundsKey = `${expanded}|${office?.lat ?? ""}|${visibleKey}|bubbles:${showBubbles}`;
     if (nextBoundsKey !== boundsKey.current) {
       boundsKey.current = nextBoundsKey;
       if (office && !expanded) {
         map.setBounds(radiusBounds(kakao, office, DEFAULT_RADIUS_M));
       } else if (visible.length > 0) {
-        const bounds = new kakao.maps.LatLngBounds();
-        if (office) bounds.extend(new kakao.maps.LatLng(office.lat, office.lng));
-        for (const r of visible) bounds.extend(new kakao.maps.LatLng(r.location!.lat, r.location!.lng));
-        map.setBounds(bounds);
+        map.setBounds(
+          robustBounds(
+            kakao,
+            visible.map((r) => r.location!),
+          ),
+          40,
+        );
       }
     }
-  }, [ready, visible, office, expanded, selectedSlug, now, weekday]);
+  }, [ready, visible, visibleKey, office, expanded, now, weekday, pinMode]);
 
-  // List→map: pan to the selected pin without resetting the whole viewport.
+  // Selection styling + popup without rebuilding markers.
   useEffect(() => {
     const current = mapRef.current;
-    if (!ready || !current || !selectedSlug) return;
-    const r = visible.find((x) => x.slug === selectedSlug);
-    if (!r?.location) return;
-    const pos = new current.kakao.maps.LatLng(r.location.lat, r.location.lng);
-    current.map.panTo(pos);
-  }, [ready, selectedSlug, visible]);
+    if (!ready || !current) return;
+    const { kakao } = current;
+    for (const [slug, entry] of markersRef.current) {
+      const selected = slug === selectedSlug;
+      if (entry.selected === selected) continue;
+      const kind = openStatus(entry.restaurant.hours, now, weekday).kind;
+      const color = pinColor(entry.restaurant, kind, selected, pinMode);
+      entry.marker.setImage(pinImage(kakao, color, selected, isEmphasized(entry.restaurant)));
+      entry.marker.setZIndex(selected ? 4 : 1);
+      entry.selected = selected;
+      entry.kind = kind;
+    }
+    if (selectedSlug) {
+      const r = visible.find((x) => x.slug === selectedSlug);
+      if (r) openPopup(r);
+    } else {
+      closePopup();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready, selectedSlug]);
+
+  useEffect(() => {
+    const current = mapRef.current;
+    if (!ready || !current || !onBoundsChange) return;
+    const map = current.map;
+    const b = map.getBounds();
+    const sw = b.getSouthWest();
+    const ne = b.getNorthEast();
+    let n = 0;
+    for (const r of visible) {
+      const { lat, lng } = r.location!;
+      if (lat >= sw.getLat() && lat <= ne.getLat() && lng >= sw.getLng() && lng <= ne.getLng()) n++;
+    }
+    setViewportCount(n);
+  }, [ready, visible, level, onBoundsChange]);
+
+  const fitAll = () => {
+    const current = mapRef.current;
+    if (!current || !visible.length) return;
+    boundsKey.current = "";
+    current.map.setBounds(
+      robustBounds(
+        current.kakao,
+        visible.map((r) => r.location!),
+      ),
+      40,
+    );
+  };
+
+  const goMyLocation = () => {
+    const current = mapRef.current;
+    if (!current || !navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition((pos) => {
+      current.map.setCenter(new current.kakao.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+      current.map.setLevel(5);
+    });
+  };
 
   if (!KAKAO_KEY) {
     return (
       <div className="rounded-sm bg-surface-default px-inline-xxl py-stack-xl text-center text-text-tertiary typography-body-md-regular">
-        카카오 지도 키(NEXT_PUBLIC_KAKAO_MAP_KEY)가 설정되지 않아 지도를 표시할 수 없습니다. 각 가게의
-        카카오맵·네이버지도 버튼을 이용해 주세요.
+        카카오 지도 키(NEXT_PUBLIC_KAKAO_MAP_KEY)가 설정되지 않아 지도를 표시할 수 없습니다.
       </div>
     );
   }
 
+  const legend =
+    pinMode === "category"
+      ? ([
+          ["한식", CATEGORY_COLOR.한식],
+          ["중식", CATEGORY_COLOR.중식],
+          ["일식", CATEGORY_COLOR.일식],
+          ["양식", CATEGORY_COLOR.양식],
+          ["선택", PIN_COLOR.selected],
+        ] as const)
+      : ([
+          ["영업 중", PIN_COLOR.open],
+          ["곧 마감·브레이크", PIN_COLOR.closingSoon],
+          ["영업 전·종료", PIN_COLOR.closed],
+          ["시간 미확인", PIN_COLOR.unknown],
+          ["선택", PIN_COLOR.selected],
+        ] as const);
+
   return (
-    <section aria-label="맛집 지도" className="flex flex-col gap-stack-sm">
-      <div
-        ref={box}
-        className="h-[420px] w-full overflow-hidden rounded-sm border border-border-default bg-surface-subtle"
-      />
+    <section aria-label="맛집 지도" className={`flex flex-col gap-stack-sm ${className ?? ""}`}>
+      <div className="relative">
+        <div
+          ref={box}
+          className={`${heightClass} w-full overflow-hidden rounded-sm border border-border-default bg-surface-subtle`}
+        />
+        <div className="pointer-events-none absolute right-2 top-2 flex flex-col gap-group-xs">
+          <button type="button" className={`pointer-events-auto ${buttonClass("tertiary", "sm")}`} onClick={goMyLocation}>
+            내 위치
+          </button>
+          <button type="button" className={`pointer-events-auto ${buttonClass("tertiary", "sm")}`} onClick={fitAll}>
+            전체 보기
+          </button>
+          {viewportCount > 0 ? (
+            <span className="pointer-events-none rounded-sm bg-surface-default/95 px-inline-sm py-stack-xxs text-text-secondary shadow-sm typography-caption">
+              이 지역 {viewportCount.toLocaleString("ko-KR")}곳
+            </span>
+          ) : null}
+        </div>
+      </div>
       <ul className="flex flex-wrap items-center gap-group-md text-text-tertiary typography-caption" aria-label="핀 색 안내">
-        {(
-          [
-            ["영업 중", PIN_COLOR.open],
-            ["곧 마감·브레이크", PIN_COLOR.closingSoon],
-            ["영업 전·종료", PIN_COLOR.closed],
-            ["선택", PIN_COLOR.selected],
-          ] as const
-        ).map(([label, color]) => (
+        {legend.map(([label, color]) => (
           <li key={label} className="inline-flex items-center gap-group-xs">
             <span
               aria-hidden
@@ -390,17 +647,11 @@ export function RestaurantMap({
           {error ??
             (visible.length === restaurants.length
               ? `${visible.length}곳 표시`
-              : `${visible.length}곳 표시 · 위치를 모르는 ${restaurants.length - located.length}곳은 아래 목록에서 확인하세요`)}
+              : `${visible.length}곳 표시 · 위치를 모르는 ${restaurants.length - located.length}곳은 목록에서 확인`)}
         </p>
         {office && outside.length > 0 ? (
-          <button
-            type="button"
-            className={buttonClass("tertiary", "sm")}
-            onClick={() => setExpanded((v) => !v)}
-          >
-            {expanded
-              ? `회사 ${DEFAULT_RADIUS_M}m 안으로`
-              : `더 먼 ${outside.length}곳 보기`}
+          <button type="button" className={buttonClass("tertiary", "sm")} onClick={() => setExpanded((v) => !v)}>
+            {expanded ? `회사 ${DEFAULT_RADIUS_M}m 안으로` : `더 먼 ${outside.length}곳 보기`}
           </button>
         ) : null}
       </div>

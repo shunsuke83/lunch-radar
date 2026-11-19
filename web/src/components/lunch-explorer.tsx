@@ -8,10 +8,11 @@ import {
 } from "@/components/restaurant-filters";
 import { RestaurantDetail } from "@/components/restaurant-detail";
 import { RestaurantList } from "@/components/restaurant-list";
-import { RestaurantMap } from "@/components/restaurant-map";
-import { Check, Dices, Link2, RotateCcw } from "lucide-react";
+import { RestaurantMap, type MapBounds } from "@/components/restaurant-map";
+import { Check, Dices, Heart, Link2, RotateCcw } from "lucide-react";
 import { Button, EmptyState, PageHeader, SegmentedControl } from "@/components/ds";
 import {
+  collectionSourceLabel,
   filterRestaurants,
   OFFICE_REGION,
   presentGroups,
@@ -41,6 +42,7 @@ import {
   setVisitMark,
   type VisitMark,
 } from "@/lib/visitor-store";
+import { getWishlist, toggleWishlist } from "@/lib/wishlist-store";
 import { fetchWeather } from "@/lib/weather";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -76,20 +78,56 @@ function useRegion(region: string, office: Restaurant[]): RegionState {
   useEffect(() => {
     if (region === OFFICE_REGION || loaded[region]) return;
     setLoaded((prev) => ({ ...prev, [region]: { status: "loading" } }));
-    fetch(`${BASE_PATH}/regions/${region}.json`)
+    const summaryUrl = `${BASE_PATH}/regions/${region}.summary.json`;
+    const fullUrl = `${BASE_PATH}/regions/${region}.json`;
+    fetch(summaryUrl)
+      .then((res) => (res.ok ? res.json() : Promise.reject(new Error("no summary"))))
+      .then((data: { restaurants: Restaurant[] }) => {
+        setLoaded((prev) => ({
+          ...prev,
+          [region]: { status: "ready", restaurants: data.restaurants },
+        }));
+        return fetch(fullUrl);
+      })
       .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        if (!res || !res.ok) return null;
         return res.json() as Promise<{ restaurants: Restaurant[] }>;
       })
-      .then((data) =>
-        setLoaded((prev) => ({ ...prev, [region]: { status: "ready", restaurants: data.restaurants } })),
-      )
-      .catch((e: Error) =>
-        setLoaded((prev) => ({ ...prev, [region]: { status: "error", message: e.message } })),
+      .then((data) => {
+        if (!data) return;
+        setLoaded((prev) => ({
+          ...prev,
+          [region]: { status: "ready", restaurants: data.restaurants },
+        }));
+      })
+      .catch(() =>
+        fetch(fullUrl)
+          .then((res) => {
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return res.json() as Promise<{ restaurants: Restaurant[] }>;
+          })
+          .then((data) =>
+            setLoaded((prev) => ({
+              ...prev,
+              [region]: { status: "ready", restaurants: data.restaurants },
+            })),
+          )
+          .catch((e: Error) =>
+            setLoaded((prev) => ({
+              ...prev,
+              [region]: { status: "error", message: e.message },
+            })),
+          ),
       );
   }, [region, loaded]);
   if (region === OFFICE_REGION) return { status: "ready", restaurants: office };
   return loaded[region] ?? { status: "loading" };
+}
+
+function inBounds(r: Restaurant, b: MapBounds | null): boolean {
+  if (!b || !r.location) return true;
+  const { lat, lng } = r.location;
+  return lat >= b.south && lat <= b.north && lng >= b.west && lng <= b.east;
 }
 
 function mergeExplorer(base: ExplorerState, patch: Partial<ExplorerState>): ExplorerState {
@@ -97,6 +135,8 @@ function mergeExplorer(base: ExplorerState, patch: Partial<ExplorerState>): Expl
     region: patch.region ?? base.region,
     view: patch.view ?? base.view,
     filters: patch.filters ? { ...EMPTY_FILTERS, ...patch.filters } : base.filters,
+    place: patch.place !== undefined ? patch.place : base.place,
+    map: patch.map !== undefined ? patch.map : base.map,
   };
 }
 
@@ -105,15 +145,21 @@ export function LunchExplorer({ catalog, regions }: Props) {
   const [filters, setFilters] = useState<FilterState>(EMPTY_FILTERS);
   const [view, setView] = useState<"list" | "map">("list");
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+  const [detailSlug, setDetailSlug] = useState<string | null>(null);
   const [hydrated, setHydrated] = useState(false);
   const [copied, setCopied] = useState(false);
   const [voteCopied, setVoteCopied] = useState(false);
   const [picks, setPicks] = useState<Restaurant[]>([]);
   const [visits, setVisits] = useState<Record<string, VisitMark>>({});
+  const [wishlist, setWishlist] = useState<string[]>([]);
   const [viewer, setViewer] = useState<GeoPoint | null>(null);
   const [geoError, setGeoError] = useState<string | null>(null);
   const [weatherRainy, setWeatherRainy] = useState(false);
+  const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
+  const [mapCenter, setMapCenter] = useState<{ lat: number; lng: number; z: number } | null>(null);
+  const [sheetOpen, setSheetOpen] = useState(true);
   const skipUrlWrite = useRef(true);
+  const detailHistory = useRef(false);
   const deferred = useDeferredValue(filters);
   const clock = useSeoulClock();
   const now = clock?.minutes ?? null;
@@ -144,7 +190,13 @@ export function LunchExplorer({ catalog, regions }: Props) {
       }
       setFilters(next);
     }
+    if (patch.place) {
+      setSelectedSlug(patch.place);
+      setDetailSlug(patch.place);
+    }
+    if (patch.map) setMapCenter(patch.map);
     setVisits(getVisitMarks());
+    setWishlist(getWishlist());
     setHydrated(true);
     queueMicrotask(() => {
       skipUrlWrite.current = false;
@@ -152,7 +204,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
   }, [knownRegions]);
 
   useEffect(() => {
-    if (!catalog.office) return;
+    if (!isOffice || !catalog.office) {
+      setWeatherRainy(false);
+      return;
+    }
     let cancelled = false;
     fetchWeather(catalog.office).then((w) => {
       if (!cancelled && w) setWeatherRainy(w.isRainy);
@@ -160,7 +215,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [catalog.office]);
+  }, [catalog.office, isOffice]);
 
   useEffect(() => {
     if (filters.sort !== "nearby" || isOffice) return;
@@ -180,8 +235,14 @@ export function LunchExplorer({ catalog, regions }: Props) {
   }, [filters.sort, isOffice, viewer]);
 
   const explorerState: ExplorerState = useMemo(
-    () => ({ region, view, filters }),
-    [region, view, filters],
+    () => ({
+      region,
+      view,
+      filters,
+      place: detailSlug ?? selectedSlug,
+      map: view === "map" ? mapCenter : null,
+    }),
+    [region, view, filters, detailSlug, selectedSlug, mapCenter],
   );
 
   useEffect(() => {
@@ -195,6 +256,11 @@ export function LunchExplorer({ catalog, regions }: Props) {
 
   useEffect(() => {
     const onPop = () => {
+      if (detailHistory.current && detailSlug) {
+        detailHistory.current = false;
+        setDetailSlug(null);
+        return;
+      }
       const patch = parseExplorerSearch(window.location.search);
       const next = mergeExplorer(
         { region: OFFICE_REGION, view: "list", filters: EMPTY_FILTERS },
@@ -205,13 +271,15 @@ export function LunchExplorer({ catalog, regions }: Props) {
       setRegion(next.region);
       setView(next.view);
       setFilters(next.filters);
+      setSelectedSlug(next.place ?? null);
+      setDetailSlug(next.place ?? null);
       queueMicrotask(() => {
         skipUrlWrite.current = false;
       });
     };
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
-  }, [knownRegions]);
+  }, [knownRegions, detailSlug]);
 
   const state = useRegion(region, catalog.restaurants);
   const source = useMemo(() => (state.status === "ready" ? state.restaurants : []), [state]);
@@ -255,6 +323,11 @@ export function LunchExplorer({ catalog, regions }: Props) {
     [source, deferred, now, weekday, isOffice, recorded, viewer, sort],
   );
 
+  const listRestaurants = useMemo(() => {
+    if (view !== "map" || !mapBounds) return restaurants;
+    return restaurants.filter((r) => inBounds(r, mapBounds));
+  }, [restaurants, view, mapBounds]);
+
   const hoursFilterOn = (deferred.openNow && now !== null) || deferred.noBreak;
   const openNowSkipped = useMemo(() => {
     if (!hoursFilterOn) return 0;
@@ -269,12 +342,21 @@ export function LunchExplorer({ catalog, regions }: Props) {
       : when.toLocaleString("ko-KR", { timeZone: "Asia/Seoul" });
   }, [updatedAt]);
 
+  const sourceLabel = useMemo(() => {
+    if (isOffice) {
+      return catalog.source === "sample" ? "샘플 데이터" : "팀 공유 목록";
+    }
+    return collectionSourceLabel(source);
+  }, [isOffice, catalog.source, source]);
+
   const reset = () => setFilters(EMPTY_FILTERS);
   const changeRegion = (next: string) => {
     setRegion(next);
     setFilters(EMPTY_FILTERS);
     setSelectedSlug(null);
+    setDetailSlug(null);
     setPicks([]);
+    setMapBounds(null);
   };
   const changeScope = (next: ScopeTab) => {
     if (next === "office") changeRegion(OFFICE_REGION);
@@ -282,6 +364,21 @@ export function LunchExplorer({ catalog, regions }: Props) {
   };
   const selectPlace = (slug: string) => {
     setSelectedSlug((prev) => (prev === slug ? null : slug));
+  };
+  const openDetail = (slug: string) => {
+    setSelectedSlug(slug);
+    setDetailSlug(slug);
+    if (!detailHistory.current) {
+      window.history.pushState({ detail: slug }, "");
+      detailHistory.current = true;
+    }
+  };
+  const closeDetail = () => {
+    if (detailHistory.current) {
+      detailHistory.current = false;
+      window.history.back();
+    }
+    setDetailSlug(null);
   };
 
   const copyLink = async () => {
@@ -295,11 +392,12 @@ export function LunchExplorer({ catalog, regions }: Props) {
     }
   };
 
-  const rollPicks = () => setPicks(sampleRestaurants(restaurants, 3));
+  const rollPool = view === "map" && listRestaurants.length ? listRestaurants : restaurants;
+  const rollPicks = () => setPicks(sampleRestaurants(rollPool, 3));
 
   const copyVote = async () => {
-    const text = slackVoteText(picks.length ? picks : sampleRestaurants(restaurants, 3));
-    if (!picks.length) setPicks(sampleRestaurants(restaurants, 3));
+    const text = slackVoteText(picks.length ? picks : sampleRestaurants(rollPool, 3));
+    if (!picks.length) setPicks(sampleRestaurants(rollPool, 3));
     try {
       await navigator.clipboard.writeText(text);
       setVoteCopied(true);
@@ -324,10 +422,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
       ]
     : [];
 
-  const selected = useMemo(
-    () => (selectedSlug ? restaurants.find((r) => r.slug === selectedSlug) ?? null : null),
-    [restaurants, selectedSlug],
-  );
+  const detail = useMemo(() => {
+    if (!detailSlug) return null;
+    return restaurants.find((r) => r.slug === detailSlug) ?? source.find((r) => r.slug === detailSlug) ?? null;
+  }, [detailSlug, restaurants, source]);
 
   useEffect(() => {
     if (selectedSlug && !restaurants.some((r) => r.slug === selectedSlug)) {
@@ -335,29 +433,51 @@ export function LunchExplorer({ catalog, regions }: Props) {
     }
   }, [restaurants, selectedSlug]);
 
+  if (!hydrated) {
+    return (
+      <main className="mx-auto flex w-full max-w-content flex-col gap-stack-xxxl px-inline-lg py-stack-xxl sm:px-inline-xxl">
+        <PageHeader title="점심맛집" description="불러오는 중…" meta={[]} />
+      </main>
+    );
+  }
+
+  const listBlock = (
+    <RestaurantList
+      restaurants={listRestaurants}
+      now={now}
+      weekday={weekday}
+      onReset={reset}
+      nearby={isOffice}
+      selectedSlug={selectedSlug}
+      onSelect={selectPlace}
+      onOpenDetail={openDetail}
+      scrollOnSelect={view === "list"}
+      showNew={isOffice}
+      compact={view === "map"}
+      className={view === "map" ? "lg:max-h-[calc(100dvh-12rem)]" : undefined}
+    />
+  );
+
   return (
     <main className="mx-auto flex w-full max-w-content flex-col gap-stack-xxxl px-inline-lg py-stack-xxl sm:px-inline-xxl">
       <PageHeader
         title="점심맛집"
-        description="회사 근처 점심 맛집과 지역별 저장 맛집을 종류·거리·영업시간·가격으로 골라 보세요."
+        description={
+          isOffice
+            ? "회사 근처 점심 맛집을 종류·거리·영업시간·가격으로 골라 보세요."
+            : "지역별 저장 맛집 지도에서 목록·거리·평판으로 골라 보세요."
+        }
         meta={[
           {
             label: "표시",
-            value: `${restaurants.length.toLocaleString("ko-KR")} / ${source.length.toLocaleString("ko-KR")}곳`,
+            value: `${listRestaurants.length.toLocaleString("ko-KR")} / ${source.length.toLocaleString("ko-KR")}곳`,
           },
-          {
-            label: "출처",
-            value: isOffice
-              ? catalog.source === "sample"
-                ? "샘플 데이터"
-                : "팀 공유 목록"
-              : "네이버지도 저장 목록",
-          },
+          { label: "출처", value: sourceLabel },
           { label: "갱신", value: stamp },
         ]}
       />
 
-      {weatherRainy ? (
+      {weatherRainy && isOffice ? (
         <p className="rounded-sm bg-surface-subtle px-inline-lg py-stack-sm text-text-secondary typography-body-sm-regular">
           오늘 비 소식이 있어요. 필터에서 「비 오는 날 추천」을 눌러 보세요.
         </p>
@@ -377,7 +497,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
           tags={facets.tags}
           themes={facets.themes}
           clockReady={clock !== null}
-          weatherRainy={weatherRainy}
+          weatherRainy={weatherRainy && isOffice}
           onChange={setFilters}
           actions={
             <>
@@ -390,9 +510,22 @@ export function LunchExplorer({ catalog, regions }: Props) {
                 ]}
                 onChange={setView}
               />
-              <Button size="md" onClick={rollPicks} disabled={restaurants.length === 0}>
+              <Button size="md" onClick={rollPicks} disabled={rollPool.length === 0}>
                 <Dices aria-hidden className="size-size-icon-sm" />
                 오늘 뭐 먹지
+              </Button>
+              <Button
+                size="md"
+                onClick={() => {
+                  if (!selectedSlug) return;
+                  setWishlist(toggleWishlist(selectedSlug));
+                }}
+                disabled={!selectedSlug}
+                aria-label="내 리스트에 담기"
+              >
+                <Heart aria-hidden className="size-size-icon-sm" />
+                {selectedSlug && wishlist.includes(selectedSlug) ? "담김" : "담기"}
+                {wishlist.length ? ` (${wishlist.length})` : ""}
               </Button>
               <Button size="md" onClick={copyLink} aria-label="필터 링크 복사">
                 {copied ? (
@@ -417,7 +550,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
         {picks.length ? (
           <div className="flex flex-col gap-stack-sm rounded-sm border border-border-default bg-surface-default px-inline-lg py-stack-md">
             <div className="flex flex-wrap items-center justify-between gap-group-sm">
-              <h2 className="text-text-primary typography-headline-sm">오늘 뭐 먹지</h2>
+              <h2 className="text-text-primary typography-headline-sm">
+                오늘 뭐 먹지
+                {view === "map" ? " · 지도에 보이는 곳" : ""}
+              </h2>
               <div className="flex gap-group-sm">
                 <Button size="md" onClick={rollPicks}>
                   다시 뽑기
@@ -433,7 +569,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
                   <button
                     type="button"
                     className="text-left hover:text-text-primary"
-                    onClick={() => selectPlace(r.slug)}
+                    onClick={() => {
+                      selectPlace(r.slug);
+                      openDetail(r.slug);
+                    }}
                   >
                     {i + 1}. {r.name}
                     {r.category ? ` · ${r.category}` : ""}
@@ -456,9 +595,35 @@ export function LunchExplorer({ catalog, regions }: Props) {
           </p>
         ) : state.status === "error" ? (
           <EmptyState type="error" title="지역 데이터를 불러오지 못했습니다." description={state.message} />
-        ) : (
+        ) : view === "map" ? (
           <>
-            {view === "map" ? (
+            {/* Desktop split: list | map */}
+            <div className="hidden gap-group-lg lg:grid lg:grid-cols-[minmax(280px,380px)_minmax(0,1fr)]">
+              <div className="min-h-0">{listBlock}</div>
+              <div className="sticky top-4 self-start">
+                <RestaurantMap
+                  restaurants={restaurants}
+                  office={isOffice ? catalog.office : undefined}
+                  now={now}
+                  weekday={weekday}
+                  selectedSlug={selectedSlug}
+                  onSelect={selectPlace}
+                  onOpenDetail={openDetail}
+                  pinMode={isOffice ? "hours" : "category"}
+                  heightClass="h-[calc(100dvh-8rem)]"
+                  onBoundsChange={(b, z) => {
+                    setMapBounds(b);
+                    setMapCenter({
+                      lat: (b.south + b.north) / 2,
+                      lng: (b.west + b.east) / 2,
+                      z,
+                    });
+                  }}
+                />
+              </div>
+            </div>
+            {/* Mobile: full map + bottom sheet list */}
+            <div className="relative lg:hidden">
               <RestaurantMap
                 restaurants={restaurants}
                 office={isOffice ? catalog.office : undefined}
@@ -466,18 +631,34 @@ export function LunchExplorer({ catalog, regions }: Props) {
                 weekday={weekday}
                 selectedSlug={selectedSlug}
                 onSelect={selectPlace}
+                onOpenDetail={openDetail}
+                pinMode={isOffice ? "hours" : "category"}
+                heightClass="h-[70dvh]"
+                onBoundsChange={(b, z) => {
+                  setMapBounds(b);
+                  setMapCenter({
+                    lat: (b.south + b.north) / 2,
+                    lng: (b.west + b.east) / 2,
+                    z,
+                  });
+                }}
               />
-            ) : null}
-            <RestaurantList
-              restaurants={restaurants}
-              now={now}
-              weekday={weekday}
-              onReset={reset}
-              nearby={isOffice}
-              selectedSlug={selectedSlug}
-              onSelect={selectPlace}
-            />
+              <div className="mt-stack-sm">
+                <button
+                  type="button"
+                  className="mb-stack-sm w-full rounded-sm border border-border-default bg-surface-default px-inline-lg py-stack-sm text-text-secondary typography-body-sm-medium"
+                  onClick={() => setSheetOpen((v) => !v)}
+                >
+                  {sheetOpen
+                    ? `목록 접기 · 이 지역 ${listRestaurants.length.toLocaleString("ko-KR")}곳`
+                    : `목록 펼치기 · 이 지역 ${listRestaurants.length.toLocaleString("ko-KR")}곳`}
+                </button>
+                {sheetOpen ? listBlock : null}
+              </div>
+            </div>
           </>
+        ) : (
+          listBlock
         )}
 
         {deferred !== filters ? (
@@ -485,15 +666,15 @@ export function LunchExplorer({ catalog, regions }: Props) {
         ) : null}
       </div>
 
-      {selected ? (
+      {detail ? (
         <RestaurantDetail
-          restaurant={selected}
+          restaurant={detail}
           now={now}
           weekday={weekday}
           nearby={isOffice}
-          visitMark={visits[selected.slug] ?? null}
-          onVisitMark={(mark) => markVisit(selected.slug, mark)}
-          onClose={() => setSelectedSlug(null)}
+          visitMark={visits[detail.slug] ?? null}
+          onVisitMark={(mark) => markVisit(detail.slug, mark)}
+          onClose={closeDetail}
         />
       ) : null}
     </main>

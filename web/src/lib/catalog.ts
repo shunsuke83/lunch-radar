@@ -115,7 +115,7 @@ export type RestaurantCatalog = {
   restaurants: Restaurant[];
 };
 
-export type SortKey = "reviews" | "distance" | "price" | "rating" | "nearby";
+export type SortKey = "reviews" | "distance" | "price" | "rating" | "nearby" | "overlap";
 
 /** Province files under public/regions/<id>.json, listed in data/regions.json. */
 export type RegionIndex = {
@@ -573,17 +573,36 @@ export function filterRestaurants(
         ? byKey((r) => (r.location ? haversineM(filters.viewer!, r.location) : undefined))
         : filters.sort === "price"
           ? byKey(minPrice)
-          : filters.sort === "rating"
-            ? byKey((r) =>
-                r.rating
-                  ? -(
-                      bayesianRating(r.rating.score, r.rating.count, priorMean) * 1e6 +
-                      r.rating.count
-                    )
-                  : undefined,
-              )
-            : byReviews;
+          : filters.sort === "overlap"
+            ? byKey((r) => -((r.collections?.length ?? 0) * 1e6 + (r.naverReviews ?? 0)))
+            : filters.sort === "rating"
+              ? byKey((r) =>
+                  r.rating
+                    ? -(
+                        bayesianRating(r.rating.score, r.rating.count, priorMean) * 1e6 +
+                        r.rating.count
+                      )
+                    : undefined,
+                )
+              : byReviews;
   return rows.sort(sort);
+}
+
+/** Short attribution line from collection names in the current result set. */
+export function collectionSourceLabel(restaurants: Restaurant[], max = 4): string {
+  const counts = new Map<string, number>();
+  for (const r of restaurants) {
+    for (const c of r.collections ?? []) counts.set(c, (counts.get(c) ?? 0) + 1);
+  }
+  if (!counts.size) return "저장 맛집";
+  const top = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+  const shown = top.slice(0, max).map(([name]) => name);
+  const rest = top.length - shown.length;
+  return rest > 0 ? `${shown.join(" · ")} 외 ${rest}` : shown.join(" · ");
+}
+
+export function isMultiListed(r: Restaurant): boolean {
+  return (r.collections?.length ?? 0) >= 2;
 }
 
 export function uniqueValues(

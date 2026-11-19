@@ -6,7 +6,7 @@
 // so an interrupted run resumes where it stopped. Kakao places and ratings from
 // `npm run catalog:kakao-regions` (.cache/kakao-places.json) are merged in.
 // Usage: npm run catalog:naver-folders [-- --concurrency 1 --delay 3000] [-- --offline]
-import { existsSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { KakaoCacheEntry } from "./lib/place-sources.js";
@@ -346,7 +346,16 @@ const kakao: Record<string, KakaoCacheEntry> = existsSync(kakaoFile)
   ? JSON.parse(await readFile(kakaoFile, "utf8"))
   : {};
 
-type Row = Record<string, unknown> & { district: string; collections?: string[] };
+type Row = Record<string, unknown> & { district: string; collections?: string[]; addedAt?: string; slug?: string };
+const existingAdded = new Map<string, string>();
+if (existsSync(outDir)) {
+  for (const file of readdirSync(outDir).filter((f) => f.endsWith(".json"))) {
+    try {
+      const rows = JSON.parse(await readFile(path.join(outDir, file), "utf8")).restaurants ?? [];
+      for (const r of rows) if (r.slug && r.addedAt) existingAdded.set(r.slug, r.addedAt);
+    } catch { /* ignore */ }
+  }
+}
 const byProvince = new Map<string, Row[]>();
 let unplaced = 0;
 const now = new Date().toISOString();
@@ -374,7 +383,7 @@ for (const p of todo) {
     ...(lo !== undefined ? { priceRange: lo === hi ? `${fmt(lo)}원` : `${fmt(lo)}~${fmt(hi!)}원` } : {}),
     ...(d?.closedDays?.length ? { notes: `${d.closedDays.join("·")} 휴무` } : {}),
     tags: [],
-    addedAt: now,
+    addedAt: existingAdded.get(`naver-${p.sid}`) ?? now,
     updatedAt: now,
     mentionCount: 0,
     address: d?.roadAddress ?? p.address,

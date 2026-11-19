@@ -56,6 +56,7 @@ const SORTS: { value: SortKey; label: string }[] = [
   { value: "distance", label: "가까운 순" },
   { value: "nearby", label: "내 주변 가까운 순" },
   { value: "price", label: "저렴한 순" },
+  { value: "overlap", label: "여러 목록이 꼽은 순" },
 ];
 
 const PINNED_TAGS = 8;
@@ -164,7 +165,7 @@ export function RestaurantFilters({
       value={scope}
       options={[
         { value: "office", label: "회사 근처" },
-        { value: "nationwide", label: "전국" },
+        { value: "nationwide", label: "저장 맛집 지도" },
       ]}
       onChange={onScopeChange}
     />
@@ -221,24 +222,38 @@ export function RestaurantFilters({
     items: themes.filter((t) => t.group === group),
   })).filter((g) => g.items.length > 0);
 
-  const themeBody = themeGroups.length ? (
-    <div className="flex flex-col gap-stack-sm">
-      {themeGroups.map(({ group, items }, i) => (
-        <ChipRow key={group} label={THEME_GROUP_LABELS[group]}>
-          {i === 0 ? (
-            <Chip selected={value.theme === "all"} onClick={() => set({ theme: "all" })}>
-              전체
-            </Chip>
-          ) : null}
-          {items.map((t) => (
-            <Chip key={t.value} selected={value.theme === t.value} onClick={() => set({ theme: t.value })}>
-              {t.label}
-            </Chip>
-          ))}
-        </ChipRow>
-      ))}
-    </div>
-  ) : null;
+  const collectionThemes = themes.filter((t) => t.group === "모음");
+  const chipThemeGroups = themeGroups.filter((g) => g.group !== "모음");
+  const themeBody =
+    chipThemeGroups.length || collectionThemes.length ? (
+      <div className="flex flex-col gap-stack-sm">
+        {chipThemeGroups.map(({ group, items }, i) => (
+          <ChipRow key={group} label={THEME_GROUP_LABELS[group]}>
+            {i === 0 ? (
+              <Chip selected={value.theme === "all"} onClick={() => set({ theme: "all" })}>
+                전체
+              </Chip>
+            ) : null}
+            {items.map((t) => (
+              <Chip key={t.value} selected={value.theme === t.value} onClick={() => set({ theme: t.value })}>
+                {t.label}
+              </Chip>
+            ))}
+          </ChipRow>
+        ))}
+        {collectionThemes.length ? (
+          <FilterSelect
+            label="저장 목록"
+            value={collectionThemes.some((t) => t.value === value.theme) ? value.theme : "all"}
+            options={[
+              { value: "all", label: "전체 목록" },
+              ...collectionThemes.map((t) => ({ value: t.value, label: t.label })),
+            ]}
+            onChange={(theme) => set({ theme })}
+          />
+        ) : null}
+      </div>
+    ) : null;
 
   const tagBody = tags.length ? (
     <ChipRow label="태그">
