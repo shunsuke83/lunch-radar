@@ -87,8 +87,12 @@ const CATEGORY_RULES: [string, RegExp][] = [
   ["중식", /중식|중국|마라|양꼬치|딤섬|짬뽕|짜장/],
   ["일식", /일식|일본|초밥|스시|라멘|돈가스|돈까스|우동|소바|오마카세|이자카야|덮밥|카레|사케|장어/],
   ["양식", /양식|이탈리|프랑스|스페인|스테이크|파스타|피자|햄버거|버거|브런치|멕시칸|그리스|유럽|아메리칸|패밀리레스토랑|뷔페/],
-  ["한식", /./],
+  ["한식", /한식|한정식|국밥|국수|냉면|감자탕|곱창|육회|삼겹|갈비|백반|찌개|전골|보쌈|족발|닭볶|찜닭|오리|막국수|칼국수|해장|한우|돼지|소고기|해물|생선|회$|횟집|분식|도시락|죽$|정식/],
 ];
+
+/** Categories that are not lunch food — skip or leave uncategorized. */
+const NON_FOOD_CATEGORY =
+  /동물원|워터파크|테마파크|놀이공원|서점|도서|사진|스튜디오|신발|의류|옷가게|미용|헤어|네일|병원|약국|호텔|리조트|펜션|캠핑|주차장|주유소|은행|부동산|학원|교회|성당|사찰|박물관|미술관|갤러리|공방|꽃집|화원|세탁|편의점|마트|슈퍼|마트\b|PC방|노래방|볼링|당구|스크린골프|골프장|헬스|피트니스|요가|필라테스|사우나|목욕|찜질(?!방)|온천(?!골)|스파(?!게티)|키즈카페|만화|오락|게임/;
 
 type MenuItem = { name: string; price?: number };
 type Weekday = "월" | "화" | "수" | "목" | "금" | "토" | "일";
@@ -256,9 +260,10 @@ function regionOf(address: string | undefined): { province: string; district: st
   return { province: head, district };
 }
 
-function groupOf(category: string | undefined): string {
+function groupOf(category: string | undefined): string | undefined {
   const text = category ?? "";
-  return CATEGORY_RULES.find(([, re]) => re.test(text))?.[0] ?? "한식";
+  if (NON_FOOD_CATEGORY.test(text)) return undefined;
+  return CATEGORY_RULES.find(([, re]) => re.test(text))?.[0];
 }
 
 const fmt = (n: number) => n.toLocaleString("ko-KR");
@@ -378,8 +383,15 @@ for (const p of todo) {
     name,
     area: region.district,
     district: region.district,
-    ...(d?.category ? { category: groupOf(d.category) } : {}),
-    ...(d?.category ? { subcategory: d.category.replace(/,/g, "·") } : {}),
+    ...(d?.category
+      ? (() => {
+          const group = groupOf(d.category);
+          return {
+            ...(group ? { category: group } : {}),
+            subcategory: d.category.replace(/,/g, "·"),
+          };
+        })()
+      : {}),
     ...(lo !== undefined ? { priceRange: lo === hi ? `${fmt(lo)}원` : `${fmt(lo)}~${fmt(hi!)}원` } : {}),
     ...(d?.closedDays?.length ? { notes: `${d.closedDays.join("·")} 휴무` } : {}),
     tags: [],

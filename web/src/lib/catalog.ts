@@ -602,7 +602,7 @@ export function collectionSourceLabel(restaurants: Restaurant[], max = 4): strin
 }
 
 export function isMultiListed(r: Restaurant): boolean {
-  return (r.collections?.length ?? 0) >= 2;
+  return new Set(r.collections ?? []).size >= 2;
 }
 
 export function uniqueValues(

@@ -87,11 +87,14 @@ export function parseExplorerSearch(search: string): Partial<ExplorerState> {
   if (touched) out.filters = migrateBudget(migrateLegacyTheme(filters));
   const place = q.get("place");
   if (place) out.place = place;
-  const lat = Number(q.get("lat"));
-  const lng = Number(q.get("lng"));
-  const z = Number(q.get("z"));
-  if (Number.isFinite(lat) && Number.isFinite(lng) && Number.isFinite(z)) {
-    out.map = { lat, lng, z };
+  // Number(null)===0, so only read map when all three params are present.
+  if (q.has("lat") && q.has("lng") && q.has("z")) {
+    const lat = Number(q.get("lat"));
+    const lng = Number(q.get("lng"));
+    const z = Number(q.get("z"));
+    if (Number.isFinite(lat) && Number.isFinite(lng) && Number.isFinite(z)) {
+      out.map = { lat, lng, z };
+    }
   }
   return out;
 }

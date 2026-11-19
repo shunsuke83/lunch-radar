@@ -298,7 +298,7 @@ export function RestaurantFilters({
           placeholder="가게·메뉴·메모 검색"
           value={value.q}
           onChange={(e) => set({ q: e.target.value })}
-          className="min-w-0 flex-1"
+          className="min-w-[160px] basis-full flex-1"
         />
         <Button
           size="md"

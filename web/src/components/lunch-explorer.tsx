@@ -14,6 +14,7 @@ import { Button, EmptyState, PageHeader, SegmentedControl } from "@/components/d
 import {
   collectionSourceLabel,
   filterRestaurants,
+  isOpenAt,
   OFFICE_REGION,
   presentGroups,
   seoulMinutes,
@@ -73,16 +74,20 @@ function useSeoulClock(): SeoulClock {
   return clock;
 }
 
-function useRegion(region: string, office: Restaurant[]): RegionState {
+function useRegion(region: string, office: Restaurant[]): RegionState & { retry: () => void } {
   const [loaded, setLoaded] = useState<Record<string, RegionState>>({});
+  const [retryKey, setRetryKey] = useState(0);
   useEffect(() => {
-    if (region === OFFICE_REGION || loaded[region]) return;
+    if (region === OFFICE_REGION) return;
+    if (loaded[region]?.status === "ready") return;
     setLoaded((prev) => ({ ...prev, [region]: { status: "loading" } }));
     const summaryUrl = `${BASE_PATH}/regions/${region}.summary.json`;
     const fullUrl = `${BASE_PATH}/regions/${region}.json`;
+    let cancelled = false;
     fetch(summaryUrl)
       .then((res) => (res.ok ? res.json() : Promise.reject(new Error("no summary"))))
       .then((data: { restaurants: Restaurant[] }) => {
+        if (cancelled) return null;
         setLoaded((prev) => ({
           ...prev,
           [region]: { status: "ready", restaurants: data.restaurants },
@@ -94,7 +99,7 @@ function useRegion(region: string, office: Restaurant[]): RegionState {
         return res.json() as Promise<{ restaurants: Restaurant[] }>;
       })
       .then((data) => {
-        if (!data) return;
+        if (!data || cancelled) return;
         setLoaded((prev) => ({
           ...prev,
           [region]: { status: "ready", restaurants: data.restaurants },
@@ -106,22 +111,49 @@ function useRegion(region: string, office: Restaurant[]): RegionState {
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             return res.json() as Promise<{ restaurants: Restaurant[] }>;
           })
-          .then((data) =>
+          .then((data) => {
+            if (cancelled) return;
             setLoaded((prev) => ({
               ...prev,
               [region]: { status: "ready", restaurants: data.restaurants },
-            })),
-          )
-          .catch((e: Error) =>
+            }));
+          })
+          .catch((e: Error) => {
+            if (cancelled) return;
             setLoaded((prev) => ({
               ...prev,
               [region]: { status: "error", message: e.message },
-            })),
-          ),
+            }));
+          }),
       );
-  }, [region, loaded]);
-  if (region === OFFICE_REGION) return { status: "ready", restaurants: office };
-  return loaded[region] ?? { status: "loading" };
+    return () => {
+      cancelled = true;
+    };
+    // retryKey forces refetch after clearing an error entry
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [region, retryKey]);
+  const retry = () => {
+    setLoaded((prev) => {
+      const next = { ...prev };
+      delete next[region];
+      return next;
+    });
+    setRetryKey((n) => n + 1);
+  };
+  if (region === OFFICE_REGION) return { status: "ready", restaurants: office, retry };
+  return { ...(loaded[region] ?? { status: "loading" }), retry };
+}
+
+function useIsLg(): boolean {
+  const [lg, setLg] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const apply = () => setLg(mq.matches);
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
+  return lg;
 }
 
 function inBounds(r: Restaurant, b: MapBounds | null): boolean {
@@ -256,7 +288,8 @@ export function LunchExplorer({ catalog, regions }: Props) {
 
   useEffect(() => {
     const onPop = () => {
-      if (detailHistory.current && detailSlug) {
+      // Detail drawer pushed its own history entry — close it and stop.
+      if (detailHistory.current) {
         detailHistory.current = false;
         setDetailSlug(null);
         return;
@@ -272,16 +305,18 @@ export function LunchExplorer({ catalog, regions }: Props) {
       setView(next.view);
       setFilters(next.filters);
       setSelectedSlug(next.place ?? null);
-      setDetailSlug(next.place ?? null);
+      // Never reopen the drawer from place= on browser back/forward.
+      setDetailSlug(null);
       queueMicrotask(() => {
         skipUrlWrite.current = false;
       });
     };
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
-  }, [knownRegions, detailSlug]);
+  }, [knownRegions]);
 
   const state = useRegion(region, catalog.restaurants);
+  const isLg = useIsLg();
   const source = useMemo(() => (state.status === "ready" ? state.restaurants : []), [state]);
   const regionInfo = regions.regions.find((r) => r.id === region);
   const recorded = useMemo(() => recordedSlugSet(visits), [visits]);
@@ -377,8 +412,9 @@ export function LunchExplorer({ catalog, regions }: Props) {
   };
   const closeDetail = () => {
     if (detailHistory.current) {
-      detailHistory.current = false;
+      // Leave the flag set so popstate closes the drawer (B1).
       window.history.back();
+      return;
     }
     setDetailSlug(null);
   };
@@ -399,11 +435,17 @@ export function LunchExplorer({ catalog, regions }: Props) {
       ? restaurants.filter((r) => inBounds(r, mapBounds))
       : restaurants;
   const rollPoolOrAll = rollPool.length ? rollPool : restaurants;
-  const rollPicks = () => setPicks(sampleRestaurants(rollPoolOrAll, 3));
+  const openAwarePool = () => {
+    if (now == null || !weekday) return rollPoolOrAll;
+    const open = rollPoolOrAll.filter((r) => !r.hours || isOpenAt(r.hours, now, weekday));
+    return open.length ? open : rollPoolOrAll;
+  };
+  const rollPicks = () => setPicks(sampleRestaurants(openAwarePool(), 3));
 
   const copyVote = async () => {
-    const text = slackVoteText(picks.length ? picks : sampleRestaurants(rollPoolOrAll, 3));
-    if (!picks.length) setPicks(sampleRestaurants(rollPoolOrAll, 3));
+    const pool = openAwarePool();
+    const text = slackVoteText(picks.length ? picks : sampleRestaurants(pool, 3));
+    if (!picks.length) setPicks(sampleRestaurants(pool, 3));
     try {
       await navigator.clipboard.writeText(text);
       setVoteCopied(true);
@@ -604,13 +646,47 @@ export function LunchExplorer({ catalog, regions }: Props) {
             {regionInfo?.label ?? ""} 맛집을 불러오는 중…
           </p>
         ) : state.status === "error" ? (
-          <EmptyState type="error" title="지역 데이터를 불러오지 못했습니다." description={state.message} />
+          <EmptyState
+            type="error"
+            title="지역 데이터를 불러오지 못했습니다."
+            description={state.message}
+            action={
+              <Button size="md" onClick={state.retry}>
+                <RotateCcw aria-hidden className="size-size-icon-sm" />
+                다시 시도
+              </Button>
+            }
+          />
         ) : view === "map" ? (
           <>
-            {/* Desktop split: list | map */}
-            <div className="hidden gap-group-lg lg:grid lg:grid-cols-[minmax(320px,400px)_minmax(0,1fr)]">
-              <div className="min-h-0 min-w-0 overflow-hidden">{listBlock}</div>
-              <div className="sticky top-4 min-w-0 self-start">
+            {isLg ? (
+              <div className="grid gap-group-lg grid-cols-[minmax(320px,400px)_minmax(0,1fr)]">
+                <div className="min-h-0 min-w-0 overflow-hidden">{listBlock}</div>
+                <div className="sticky top-4 min-w-0 self-start">
+                  <RestaurantMap
+                    restaurants={restaurants}
+                    office={isOffice ? catalog.office : undefined}
+                    now={now}
+                    weekday={weekday}
+                    selectedSlug={selectedSlug}
+                    onSelect={selectPlace}
+                    onOpenDetail={openDetail}
+                    initialCenter={mapCenter}
+                    pinMode={isOffice ? "hours" : "category"}
+                    heightClass="h-[calc(100dvh-8rem)]"
+                    onBoundsChange={(b, z) => {
+                      setMapBounds(b);
+                      setMapCenter({
+                        lat: (b.south + b.north) / 2,
+                        lng: (b.west + b.east) / 2,
+                        z,
+                      });
+                    }}
+                  />
+                </div>
+              </div>
+            ) : (
+              <div className="relative">
                 <RestaurantMap
                   restaurants={restaurants}
                   office={isOffice ? catalog.office : undefined}
@@ -619,8 +695,9 @@ export function LunchExplorer({ catalog, regions }: Props) {
                   selectedSlug={selectedSlug}
                   onSelect={selectPlace}
                   onOpenDetail={openDetail}
+                  initialCenter={mapCenter}
                   pinMode={isOffice ? "hours" : "category"}
-                  heightClass="h-[calc(100dvh-8rem)]"
+                  heightClass="h-[70dvh]"
                   onBoundsChange={(b, z) => {
                     setMapBounds(b);
                     setMapCenter({
@@ -630,42 +707,20 @@ export function LunchExplorer({ catalog, regions }: Props) {
                     });
                   }}
                 />
+                <div className="mt-stack-sm">
+                  <button
+                    type="button"
+                    className="mb-stack-sm w-full rounded-sm border border-border-default bg-surface-default px-inline-lg py-stack-sm text-text-secondary typography-body-sm-medium"
+                    onClick={() => setSheetOpen((v) => !v)}
+                  >
+                    {sheetOpen
+                      ? `목록 접기 · ${restaurants.length.toLocaleString("ko-KR")}곳`
+                      : `목록 펼치기 · ${restaurants.length.toLocaleString("ko-KR")}곳`}
+                  </button>
+                  {sheetOpen ? listBlock : null}
+                </div>
               </div>
-            </div>
-            {/* Mobile: full map + bottom sheet list */}
-            <div className="relative lg:hidden">
-              <RestaurantMap
-                restaurants={restaurants}
-                office={isOffice ? catalog.office : undefined}
-                now={now}
-                weekday={weekday}
-                selectedSlug={selectedSlug}
-                onSelect={selectPlace}
-                onOpenDetail={openDetail}
-                pinMode={isOffice ? "hours" : "category"}
-                heightClass="h-[70dvh]"
-                onBoundsChange={(b, z) => {
-                  setMapBounds(b);
-                  setMapCenter({
-                    lat: (b.south + b.north) / 2,
-                    lng: (b.west + b.east) / 2,
-                    z,
-                  });
-                }}
-              />
-              <div className="mt-stack-sm">
-                <button
-                  type="button"
-                  className="mb-stack-sm w-full rounded-sm border border-border-default bg-surface-default px-inline-lg py-stack-sm text-text-secondary typography-body-sm-medium"
-                  onClick={() => setSheetOpen((v) => !v)}
-                >
-                  {sheetOpen
-                    ? `목록 접기 · ${restaurants.length.toLocaleString("ko-KR")}곳`
-                    : `목록 펼치기 · ${restaurants.length.toLocaleString("ko-KR")}곳`}
-                </button>
-                {sheetOpen ? listBlock : null}
-              </div>
-            </div>
+            )}
           </>
         ) : (
           listBlock

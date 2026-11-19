@@ -270,6 +270,8 @@ function card(
 
 export type MapBounds = { south: number; west: number; north: number; east: number };
 
+type MapCenter = { lat: number; lng: number; z: number };
+
 type Props = {
   restaurants: Restaurant[];
   office?: Office;
@@ -279,6 +281,8 @@ type Props = {
   onSelect?: (slug: string) => void;
   onOpenDetail?: (slug: string) => void;
   onBoundsChange?: (bounds: MapBounds, level: number) => void;
+  /** Restore camera from URL / shared link (skips first auto-fit). */
+  initialCenter?: MapCenter | null;
   /** Nationwide uses category colors; office uses open-hours colors. */
   pinMode?: "hours" | "category";
   className?: string;
@@ -301,6 +305,7 @@ export function RestaurantMap({
   onSelect,
   onOpenDetail,
   onBoundsChange,
+  initialCenter = null,
   pinMode = office ? "hours" : "category",
   className,
   heightClass = "h-[420px]",
@@ -322,12 +327,14 @@ export function RestaurantMap({
   const selectedRef = useRef(selectedSlug);
   selectedRef.current = selectedSlug;
   const boundsKey = useRef("");
+  const skipFitOnce = useRef(Boolean(initialCenter));
   const pinModeRef = useRef(pinMode);
   pinModeRef.current = pinMode;
   const [error, setError] = useState<string | null>(null);
+  const [geoHint, setGeoHint] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
   const [expanded, setExpanded] = useState(false);
-  const [level, setLevel] = useState(4);
+  const [level, setLevel] = useState(initialCenter?.z ?? 4);
   const [viewportCount, setViewportCount] = useState(0);
 
   const located = useMemo(() => restaurants.filter((r) => r.location), [restaurants]);
@@ -370,11 +377,13 @@ export function RestaurantMap({
     loadKakao(KAKAO_KEY)
       .then((kakao) => {
         if (cancelled || !box.current) return;
-        const center = office ?? located[0]?.location ?? { lat: 37.4846, lng: 127.0347 };
+        const center = initialCenter ?? office ?? located[0]?.location ?? { lat: 37.4846, lng: 127.0347 };
+        const startLevel = initialCenter?.z ?? 4;
         const map = new kakao.maps.Map(box.current, {
           center: new kakao.maps.LatLng(center.lat, center.lng),
-          level: 4,
+          level: startLevel,
         });
+        setLevel(startLevel);
         mapRef.current = { kakao, map };
         const emitBounds = () => {
           const b = map.getBounds();
@@ -412,6 +421,10 @@ export function RestaurantMap({
     const nextBoundsKey = `${expanded}|${office?.lat ?? ""}|${visibleKey}`;
     if (nextBoundsKey === boundsKey.current) return;
     boundsKey.current = nextBoundsKey;
+    if (skipFitOnce.current) {
+      skipFitOnce.current = false;
+      return;
+    }
     if (office && !expanded) {
       map.setBounds(radiusBounds(kakao, office, DEFAULT_RADIUS_M));
     } else {
@@ -615,11 +628,20 @@ export function RestaurantMap({
 
   const goMyLocation = () => {
     const current = mapRef.current;
-    if (!current || !navigator.geolocation) return;
-    navigator.geolocation.getCurrentPosition((pos) => {
-      current.map.setCenter(new current.kakao.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-      current.map.setLevel(5);
-    });
+    if (!current) return;
+    if (!navigator.geolocation) {
+      setGeoHint("이 브라우저는 위치 정보를 지원하지 않습니다.");
+      return;
+    }
+    setGeoHint(null);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        current.map.setCenter(new current.kakao.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+        current.map.setLevel(5);
+      },
+      () => setGeoHint("위치 권한을 허용해 주세요."),
+      { enableHighAccuracy: true, timeout: 10_000 },
+    );
   };
 
   if (!KAKAO_KEY) {
@@ -654,7 +676,7 @@ export function RestaurantMap({
           ref={box}
           className={`${heightClass} w-full overflow-hidden rounded-sm border border-border-default bg-surface-subtle`}
         />
-        <div className="pointer-events-none absolute right-2 top-2 flex flex-col gap-group-xs">
+        <div className="pointer-events-none absolute right-2 top-2 z-10 flex flex-col gap-group-xs">
           <button type="button" className={`pointer-events-auto ${buttonClass("tertiary", "sm")}`} onClick={goMyLocation}>
             내 위치
           </button>
@@ -668,6 +690,7 @@ export function RestaurantMap({
           ) : null}
         </div>
       </div>
+      {geoHint ? <p className="text-text-danger-default typography-caption">{geoHint}</p> : null}
       <ul className="flex flex-wrap items-center gap-group-md text-text-tertiary typography-caption" aria-label="핀 색 안내">
         {legend.map(([label, color]) => (
           <li key={label} className="inline-flex items-center gap-group-xs">
