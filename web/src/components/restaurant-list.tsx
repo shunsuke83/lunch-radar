@@ -39,6 +39,8 @@ type Props = {
   showNew?: boolean;
   className?: string;
   compact?: boolean;
+  /** Map sidebar: card rows only (no wide desktop table). */
+  cardsOnly?: boolean;
 };
 
 const PAGE_SIZE = 100;
@@ -204,12 +206,12 @@ function MobileCard({
     : r.priceRange || null;
 
   return (
-    <li>
+    <li id={`place-${r.slug}`}>
       <button
         type="button"
         onClick={() => onSelect?.(r.slug)}
         className={cn(
-          "flex w-full items-start justify-between gap-group-sm border-b border-border-default px-inline-lg py-stack-md text-left transition-colors last:border-b-0",
+          "flex w-full min-w-0 items-start justify-between gap-group-sm border-b border-border-default px-inline-lg py-stack-md text-left transition-colors last:border-b-0",
           selected ? "bg-surface-brand-subtle" : "hover:bg-surface-subtlest",
         )}
       >
@@ -263,6 +265,7 @@ export function RestaurantList({
   showNew = true,
   className,
   compact = false,
+  cardsOnly = false,
 }: Props) {
   const [limit, setLimit] = useState(PAGE_SIZE);
   useEffect(() => setLimit(PAGE_SIZE), [restaurants]);
@@ -305,23 +308,48 @@ export function RestaurantList({
     );
   }
 
+  const cardList = (
+    <ul>
+      {visible.map((r) => (
+        <MobileCard
+          key={r.slug}
+          r={r}
+          now={now}
+          weekday={weekday}
+          nearby={nearby}
+          selected={selectedSlug === r.slug}
+          onSelect={onSelect}
+          onOpenDetail={onOpenDetail}
+          showNew={showNew}
+        />
+      ))}
+    </ul>
+  );
+
+  if (cardsOnly) {
+    return (
+      <div
+        className={cn(
+          "min-w-0 overflow-hidden rounded-sm bg-surface-default",
+          className,
+          compact && "max-h-full overflow-y-auto",
+        )}
+      >
+        {cardList}
+        {restaurants.length > limit ? (
+          <div className="flex justify-center border-t border-border-default px-inline-lg py-stack-lg">
+            <Button onClick={() => setLimit((n) => n + PAGE_SIZE)}>
+              더 보기 ({limit.toLocaleString("ko-KR")} / {restaurants.length.toLocaleString("ko-KR")})
+            </Button>
+          </div>
+        ) : null}
+      </div>
+    );
+  }
+
   return (
     <div className={cn("overflow-hidden rounded-sm bg-surface-default", className, compact && "max-h-full overflow-y-auto")}>
-      <ul className="lg:hidden">
-        {visible.map((r) => (
-          <MobileCard
-            key={r.slug}
-            r={r}
-            now={now}
-            weekday={weekday}
-            nearby={nearby}
-            selected={selectedSlug === r.slug}
-            onSelect={onSelect}
-            onOpenDetail={onOpenDetail}
-            showNew={showNew}
-          />
-        ))}
-      </ul>
+      <div className="lg:hidden">{cardList}</div>
 
       <div aria-hidden className={cn("hidden bg-surface-subtle lg:grid", COLUMNS)}>
         {heads.map((h) => (

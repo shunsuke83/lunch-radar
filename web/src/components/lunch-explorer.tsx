@@ -323,9 +323,11 @@ export function LunchExplorer({ catalog, regions }: Props) {
     [source, deferred, now, weekday, isOffice, recorded, viewer, sort],
   );
 
-  const listRestaurants = useMemo(() => {
-    if (view !== "map" || !mapBounds) return restaurants;
-    return restaurants.filter((r) => inBounds(r, mapBounds));
+  /** Map-side list shows all filter matches. Viewport count stays on the map chip. */
+  const listRestaurants = restaurants;
+  const viewportCount = useMemo(() => {
+    if (view !== "map" || !mapBounds) return restaurants.length;
+    return restaurants.filter((r) => inBounds(r, mapBounds)).length;
   }, [restaurants, view, mapBounds]);
 
   const hoursFilterOn = (deferred.openNow && now !== null) || deferred.noBreak;
@@ -392,12 +394,16 @@ export function LunchExplorer({ catalog, regions }: Props) {
     }
   };
 
-  const rollPool = view === "map" && listRestaurants.length ? listRestaurants : restaurants;
-  const rollPicks = () => setPicks(sampleRestaurants(rollPool, 3));
+  const rollPool =
+    view === "map" && mapBounds
+      ? restaurants.filter((r) => inBounds(r, mapBounds))
+      : restaurants;
+  const rollPoolOrAll = rollPool.length ? rollPool : restaurants;
+  const rollPicks = () => setPicks(sampleRestaurants(rollPoolOrAll, 3));
 
   const copyVote = async () => {
-    const text = slackVoteText(picks.length ? picks : sampleRestaurants(rollPool, 3));
-    if (!picks.length) setPicks(sampleRestaurants(rollPool, 3));
+    const text = slackVoteText(picks.length ? picks : sampleRestaurants(rollPoolOrAll, 3));
+    if (!picks.length) setPicks(sampleRestaurants(rollPoolOrAll, 3));
     try {
       await navigator.clipboard.writeText(text);
       setVoteCopied(true);
@@ -454,7 +460,8 @@ export function LunchExplorer({ catalog, regions }: Props) {
       scrollOnSelect={view === "list"}
       showNew={isOffice}
       compact={view === "map"}
-      className={view === "map" ? "lg:max-h-[calc(100dvh-12rem)]" : undefined}
+      cardsOnly={view === "map"}
+      className={view === "map" ? "min-w-0 lg:max-h-[calc(100dvh-12rem)]" : undefined}
     />
   );
 
@@ -470,7 +477,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
         meta={[
           {
             label: "표시",
-            value: `${listRestaurants.length.toLocaleString("ko-KR")} / ${source.length.toLocaleString("ko-KR")}곳`,
+            value:
+              view === "map" && mapBounds && viewportCount !== restaurants.length
+                ? `${restaurants.length.toLocaleString("ko-KR")}곳 · 지도 ${viewportCount.toLocaleString("ko-KR")}`
+                : `${restaurants.length.toLocaleString("ko-KR")} / ${source.length.toLocaleString("ko-KR")}곳`,
           },
           { label: "출처", value: sourceLabel },
           { label: "갱신", value: stamp },
@@ -598,9 +608,9 @@ export function LunchExplorer({ catalog, regions }: Props) {
         ) : view === "map" ? (
           <>
             {/* Desktop split: list | map */}
-            <div className="hidden gap-group-lg lg:grid lg:grid-cols-[minmax(280px,380px)_minmax(0,1fr)]">
-              <div className="min-h-0">{listBlock}</div>
-              <div className="sticky top-4 self-start">
+            <div className="hidden gap-group-lg lg:grid lg:grid-cols-[minmax(320px,400px)_minmax(0,1fr)]">
+              <div className="min-h-0 min-w-0 overflow-hidden">{listBlock}</div>
+              <div className="sticky top-4 min-w-0 self-start">
                 <RestaurantMap
                   restaurants={restaurants}
                   office={isOffice ? catalog.office : undefined}
@@ -650,8 +660,8 @@ export function LunchExplorer({ catalog, regions }: Props) {
                   onClick={() => setSheetOpen((v) => !v)}
                 >
                   {sheetOpen
-                    ? `목록 접기 · 이 지역 ${listRestaurants.length.toLocaleString("ko-KR")}곳`
-                    : `목록 펼치기 · 이 지역 ${listRestaurants.length.toLocaleString("ko-KR")}곳`}
+                    ? `목록 접기 · ${restaurants.length.toLocaleString("ko-KR")}곳`
+                    : `목록 펼치기 · ${restaurants.length.toLocaleString("ko-KR")}곳`}
                 </button>
                 {sheetOpen ? listBlock : null}
               </div>
