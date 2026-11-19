@@ -79,7 +79,7 @@ const PIN_COLOR: Record<OpenKind | "selected", string> = {
 };
 
 /** Prefer pins over district bubbles when the filtered set is small (B18). */
-const BUBBLE_MIN_COUNT = 40;
+const BUBBLE_MIN_COUNT = 120;
 
 const CATEGORY_COLOR: Record<string, string> = {
   한식: "#c2410c",
@@ -288,7 +288,7 @@ type Props = {
   selectedSlug?: string | null;
   onSelect?: (slug: string) => void;
   onOpenDetail?: (slug: string) => void;
-  onBoundsChange?: (bounds: MapBounds, level: number) => void;
+  onBoundsChange?: (bounds: MapBounds, level: number, visibleInBounds: number) => void;
   /** Restore camera from URL / shared link (skips first auto-fit). */
   initialCenter?: MapCenter | null;
   /** Nationwide uses category colors; office uses open-hours colors. */
@@ -355,6 +355,8 @@ export function RestaurantMap({
     return located.filter((r) => distanceM(office, r.location!) <= DEFAULT_RADIUS_M);
   }, [located, office, expanded]);
   const visibleKey = useMemo(() => visible.map((r) => r.slug).join(","), [visible]);
+  const visibleRef = useRef(visible);
+  visibleRef.current = visible;
 
   const closePopup = () => {
     popupRef.current?.setMap(null);
@@ -377,13 +379,10 @@ export function RestaurantMap({
     o.setMap(current.map);
     popupRef.current = o;
     current.map.panTo(pos);
-    // Keep popup clear of the top edge (B14).
+    // Keep popup clear of the top edge (B14) — popup is ~140px tall above the pin.
     window.setTimeout(() => {
-      const proj = current.map;
-      const level = proj.getLevel();
-      proj.panBy(0, -80);
-      if (proj.getLevel() !== level) proj.setLevel(level);
-    }, 0);
+      current.map.panBy(0, -160);
+    }, 50);
   };
 
   useEffect(() => {
@@ -406,12 +405,30 @@ export function RestaurantMap({
           const ne = b.getNorthEast();
           const lv = map.getLevel();
           setLevel(lv);
-          onBoundsRef.current?.({
-            south: sw.getLat(),
-            west: sw.getLng(),
-            north: ne.getLat(),
-            east: ne.getLng(),
-          }, lv);
+          let n = 0;
+          for (const r of visibleRef.current) {
+            const loc = r.location;
+            if (!loc) continue;
+            if (
+              loc.lat >= sw.getLat() &&
+              loc.lat <= ne.getLat() &&
+              loc.lng >= sw.getLng() &&
+              loc.lng <= ne.getLng()
+            ) {
+              n++;
+            }
+          }
+          setViewportCount(n);
+          onBoundsRef.current?.(
+            {
+              south: sw.getLat(),
+              west: sw.getLng(),
+              north: ne.getLat(),
+              east: ne.getLng(),
+            },
+            lv,
+            n,
+          );
         };
         kakao.maps.event.addListener(map, "click", () => closePopupRef.current());
         kakao.maps.event.addListener(map, "idle", emitBounds);
@@ -625,7 +642,7 @@ export function RestaurantMap({
       o.setMap(map);
       officeOverlay.current = o;
     }
-  }, [ready, visible, visibleKey, office, expanded, now, weekday, pinMode, level]);
+  }, [ready, visible, visibleKey, office, expanded, now, weekday, pinMode, level, selectedSlug]);
 
   // Selection styling + popup without rebuilding markers.
   useEffect(() => {
@@ -643,13 +660,13 @@ export function RestaurantMap({
       entry.kind = kind;
     }
     if (selectedSlug) {
-      const r = visible.find((x) => x.slug === selectedSlug);
+      const r = visible.find((x) => x.slug === selectedSlug) ?? markersRef.current.get(selectedSlug)?.restaurant;
       if (r) openPopup(r);
     } else {
       closePopup();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, selectedSlug]);
+  }, [ready, selectedSlug, visibleKey, level]);
 
   useEffect(() => {
     const current = mapRef.current;
@@ -664,6 +681,16 @@ export function RestaurantMap({
       if (lat >= sw.getLat() && lat <= ne.getLat() && lng >= sw.getLng() && lng <= ne.getLng()) n++;
     }
     setViewportCount(n);
+    onBoundsRef.current?.(
+      {
+        south: sw.getLat(),
+        west: sw.getLng(),
+        north: ne.getLat(),
+        east: ne.getLng(),
+      },
+      map.getLevel(),
+      n,
+    );
   }, [ready, visible, level, onBoundsChange]);
 
   const fitAll = () => {
@@ -732,14 +759,22 @@ export function RestaurantMap({
           className={`${heightClass} w-full overflow-hidden rounded-sm border border-border-default bg-surface-subtle`}
         />
         <div className="pointer-events-none absolute right-2 top-2 z-10 flex flex-col gap-group-xs">
-          <button type="button" className={`pointer-events-auto ${buttonClass("tertiary", "sm")}`} onClick={goMyLocation}>
+          <button
+            type="button"
+            className={`pointer-events-auto bg-surface-default shadow-sm ${buttonClass("tertiary", "sm")}`}
+            onClick={goMyLocation}
+          >
             내 위치
           </button>
-          <button type="button" className={`pointer-events-auto ${buttonClass("tertiary", "sm")}`} onClick={fitAll}>
+          <button
+            type="button"
+            className={`pointer-events-auto bg-surface-default shadow-sm ${buttonClass("tertiary", "sm")}`}
+            onClick={fitAll}
+          >
             전체 보기
           </button>
           {viewportCount > 0 ? (
-            <span className="pointer-events-none rounded-sm bg-surface-default/95 px-inline-sm py-stack-xxs text-text-secondary shadow-sm typography-caption">
+            <span className="pointer-events-none rounded-sm bg-surface-default px-inline-sm py-stack-xxs text-text-secondary shadow-sm typography-caption">
               이 지역 {viewportCount.toLocaleString("ko-KR")}곳
             </span>
           ) : null}

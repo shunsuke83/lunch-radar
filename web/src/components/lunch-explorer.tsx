@@ -192,8 +192,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
   const [sheetOpen, setSheetOpen] = useState(true);
   const skipUrlWrite = useRef(true);
   const detailHistory = useRef(false);
+  const closingDetail = useRef(false);
   const pushNav = useRef(false);
   const mapPanelRef = useRef<HTMLDivElement>(null);
+  const [mapViewportCount, setMapViewportCount] = useState<number | null>(null);
   const deferred = useDeferredValue(filters);
   const clock = useSeoulClock();
   const now = clock?.minutes ?? null;
@@ -306,12 +308,17 @@ export function LunchExplorer({ catalog, regions }: Props) {
     setPicks([]);
   }, [deferred, region]);
 
-  // Scroll map into view when switching to map mode (B14).
+  // Scroll map into view when switching to map mode or opening a map link (B14).
   useEffect(() => {
-    if (view !== "map") return;
-    queueMicrotask(() => {
-      mapPanelRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
-    });
+    if (!hydrated || view !== "map") return;
+    const scroll = () => mapPanelRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
+    queueMicrotask(scroll);
+    const t = window.setTimeout(scroll, 320);
+    return () => window.clearTimeout(t);
+  }, [hydrated, view, region]);
+
+  useEffect(() => {
+    if (view !== "map") setMapViewportCount(null);
   }, [view]);
 
   useEffect(() => {
@@ -319,6 +326,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
       // Detail drawer pushed its own history entry — close it and stop.
       if (detailHistory.current) {
         detailHistory.current = false;
+        closingDetail.current = false;
         setDetailSlug(null);
         return;
       }
@@ -359,7 +367,9 @@ export function LunchExplorer({ catalog, regions }: Props) {
   );
 
   // Drop filter values that do not exist in the current region (B17).
+  // Wait for hydrate so we do not validate a restored 시·군·구 against the default office region (N1).
   useEffect(() => {
+    if (!hydrated) return;
     if (state.status !== "ready") return;
     setFilters((prev) => {
       let next = prev;
@@ -369,11 +379,16 @@ export function LunchExplorer({ catalog, regions }: Props) {
       if (prev.tag !== "all" && !tags.has(prev.tag)) next = { ...next, tag: "all" };
       const themes = new Set(facets.themes.map((t) => t.value));
       if (prev.theme !== "all" && !themes.has(prev.theme)) next = { ...next, theme: "all" };
-      const districts = new Set(regionInfo?.districts.map((d) => d.name) ?? []);
-      if (prev.district !== "all" && !districts.has(prev.district)) next = { ...next, district: "all" };
+      // Districts only exist on nationwide regions; never clear using office facets.
+      if (!isOffice && regionInfo) {
+        const districts = new Set(regionInfo.districts.map((d) => d.name));
+        if (prev.district !== "all" && !districts.has(prev.district)) {
+          next = { ...next, district: "all" };
+        }
+      }
       return next === prev ? prev : next;
     });
-  }, [state.status, facets, regionInfo]);
+  }, [hydrated, state.status, facets, regionInfo, isOffice]);
 
   const sort =
     !isOffice && deferred.sort === "distance"
@@ -408,10 +423,13 @@ export function LunchExplorer({ catalog, regions }: Props) {
 
   /** Map-side list shows all filter matches. Viewport count stays on the map chip. */
   const listRestaurants = restaurants;
-  const viewportCount = useMemo(() => {
-    if (view !== "map" || !mapBounds) return restaurants.length;
-    return restaurants.filter((r) => inBounds(r, mapBounds)).length;
-  }, [restaurants, view, mapBounds]);
+  // Prefer the map's own visible-in-bounds count (office radius clip) over raw filter matches (B5).
+  const viewportCount =
+    view === "map" && mapViewportCount != null
+      ? mapViewportCount
+      : view === "map" && mapBounds
+        ? restaurants.filter((r) => inBounds(r, mapBounds)).length
+        : restaurants.length;
 
   const hoursFilterOn = (deferred.openNow && now !== null) || deferred.noBreak;
   const openNowSkipped = useMemo(() => {
@@ -465,8 +483,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
     }
   };
   const closeDetail = () => {
+    if (closingDetail.current) return;
     if (detailHistory.current) {
       // Leave the flag set so popstate closes the drawer (B1).
+      closingDetail.current = true;
       window.history.back();
       return;
     }
@@ -739,8 +759,9 @@ export function LunchExplorer({ catalog, regions }: Props) {
                     initialCenter={mapCenter}
                     pinMode={isOffice ? "hours" : "category"}
                     heightClass="h-[calc(100dvh-8rem)]"
-                    onBoundsChange={(b, z) => {
+                    onBoundsChange={(b, z, n) => {
                       setMapBounds(b);
+                      setMapViewportCount(n);
                       setMapCenter({
                         lat: (b.south + b.north) / 2,
                         lng: (b.west + b.east) / 2,
@@ -763,8 +784,9 @@ export function LunchExplorer({ catalog, regions }: Props) {
                   initialCenter={mapCenter}
                   pinMode={isOffice ? "hours" : "category"}
                   heightClass="h-[min(52dvh,420px)]"
-                  onBoundsChange={(b, z) => {
+                  onBoundsChange={(b, z, n) => {
                     setMapBounds(b);
+                    setMapViewportCount(n);
                     setMapCenter({
                       lat: (b.south + b.north) / 2,
                       lng: (b.west + b.east) / 2,
