@@ -2,6 +2,7 @@
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { parseRegion } from "./lib/region-parse.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const webDir = path.resolve(root, "..", "web");
@@ -68,20 +69,7 @@ async function kakaoKeyword(query) {
   }));
 }
 function regionOf(address) {
-  const parts = String(address ?? "").trim().split(/\s+/);
-  const aliases = {
-    서울특별시: "서울",
-    서울: "서울",
-    경기도: "경기",
-    경기: "경기",
-    인천광역시: "인천",
-    인천: "인천",
-  };
-  let head = aliases[parts[0]] ?? parts[0];
-  if (/구$/.test(parts[0] ?? "") && !LABEL_TO_ID[head]) return { province: "서울", district: parts[0] };
-  if (!LABEL_TO_ID[head]) return { province: "서울", district: parts[1] ?? "서울" };
-  if (head === "세종") return { province: head, district: "세종" };
-  return { province: head, district: parts[1] ?? head };
+  return parseRegion(address, "서울");
 }
 
 const byProvince = new Map();

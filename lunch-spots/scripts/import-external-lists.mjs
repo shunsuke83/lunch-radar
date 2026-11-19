@@ -3,6 +3,7 @@
 import { existsSync, readFileSync, writeFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { parseRegion } from "./lib/region-parse.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const webDir = path.resolve(root, "..", "web");
@@ -90,42 +91,11 @@ function haversineM(a, b) {
 }
 
 function regionOf(address, fallbackCity) {
-  const text = `${address ?? ""} ${fallbackCity ?? ""}`.trim();
-  const parts = text.split(/\s+/);
-  for (const p of parts) {
-    const head = PROVINCE_ALIASES[p] ?? (PROVINCES[p] ? p : undefined);
-    if (head && PROVINCES[head]) {
-      if (head === "세종") return { province: head, district: "세종" };
-      const idx = parts.indexOf(p);
-      const district = parts[idx + 1]?.replace(/,$/, "") ?? head;
-      return { province: head, district };
-    }
-  }
-  // English "Seocho-gu, Seoul"
-  if (/Seoul/i.test(text)) {
-    const gu = text.match(/([A-Za-z-]+)-gu/i)?.[1];
-    const district = gu ? `${gu[0].toUpperCase()}${gu.slice(1).toLowerCase()}구` : "서울";
-    // Prefer Korean district from address_ko when available upstream
-    return { province: "서울", district: /구$/.test(district) ? district : "서울" };
-  }
-  if (/Gyeonggi|경기/i.test(text)) return { province: "경기", district: parts[1] ?? "경기" };
-  return undefined;
+  return parseRegion(address, fallbackCity);
 }
 
 function regionOfKoAddress(addressKo, city) {
-  const parts = String(addressKo ?? "").trim().split(/\s+/);
-  let head = PROVINCE_ALIASES[parts[0]] ?? parts[0];
-  if (!PROVINCES[head] && city) {
-    const c = PROVINCE_ALIASES[city] ?? city;
-    if (PROVINCES[c]) head = c;
-  }
-  // "서초구 반포대로..." without 서울 prefix
-  if (!PROVINCES[head] && /구$/.test(parts[0] ?? "")) {
-    return { province: "서울", district: parts[0] };
-  }
-  if (!PROVINCES[head]) return regionOf(addressKo, city);
-  if (head === "세종") return { province: head, district: "세종" };
-  return { province: head, district: parts[1] ?? head };
+  return parseRegion(addressKo, city);
 }
 
 loadEnv();

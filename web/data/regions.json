@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T00:21:30.092Z",
+  "updatedAt": "2026-11-19T00:24:59.256Z",
   "regions": [
     {
       "id": "seoul",
@@ -8,7 +8,7 @@
       "districts": [
         {
           "name": "강남구",
-          "count": 538
+          "count": 565
         },
         {
           "name": "강동구",
@@ -27,10 +27,6 @@
           "count": 95
         },
         {
-          "name": "광나루로",
-          "count": 1
-        },
-        {
           "name": "광진구",
           "count": 135
         },
@@ -43,203 +39,75 @@
           "count": 26
         },
         {
-          "name": "남대문로",
-          "count": 1
-        },
-        {
           "name": "노원구",
           "count": 70
-        },
-        {
-          "name": "논현로",
-          "count": 4
         },
         {
           "name": "도봉구",
           "count": 30
         },
         {
-          "name": "도산대로",
-          "count": 9
-        },
-        {
-          "name": "동광로",
-          "count": 2
-        },
-        {
           "name": "동대문구",
           "count": 124
-        },
-        {
-          "name": "동소문로",
-          "count": 1
         },
         {
           "name": "동작구",
           "count": 99
         },
         {
-          "name": "동호로",
-          "count": 1
-        },
-        {
           "name": "마포구",
-          "count": 488
-        },
-        {
-          "name": "만리재로",
-          "count": 1
-        },
-        {
-          "name": "명동",
-          "count": 1
-        },
-        {
-          "name": "반포대로",
-          "count": 2
-        },
-        {
-          "name": "보광로",
-          "count": 1
-        },
-        {
-          "name": "삼성로",
-          "count": 1
-        },
-        {
-          "name": "삼청로",
-          "count": 1
+          "count": 493
         },
         {
           "name": "서대문구",
-          "count": 114
-        },
-        {
-          "name": "서빙고로",
-          "count": 1
-        },
-        {
-          "name": "서울",
-          "count": 18
+          "count": 115
         },
         {
           "name": "서초구",
-          "count": 222
-        },
-        {
-          "name": "서초대로",
-          "count": 1
-        },
-        {
-          "name": "선릉로",
-          "count": 3
+          "count": 228
         },
         {
           "name": "성동구",
-          "count": 210
+          "count": 215
         },
         {
           "name": "성북구",
-          "count": 98
-        },
-        {
-          "name": "소공로",
-          "count": 1
+          "count": 99
         },
         {
           "name": "송파구",
-          "count": 487
-        },
-        {
-          "name": "압구정로",
-          "count": 3
+          "count": 491
         },
         {
           "name": "양천구",
           "count": 58
         },
         {
-          "name": "언주로",
-          "count": 2
-        },
-        {
           "name": "영등포구",
-          "count": 200
+          "count": 201
         },
         {
           "name": "용산구",
-          "count": 276
-        },
-        {
-          "name": "원효로63길",
-          "count": 1
-        },
-        {
-          "name": "월드컵북로",
-          "count": 1
+          "count": 284
         },
         {
           "name": "은평구",
           "count": 68
         },
         {
-          "name": "을지로",
-          "count": 1
-        },
-        {
-          "name": "이태원로",
-          "count": 2
-        },
-        {
-          "name": "인사동",
-          "count": 1
-        },
-        {
           "name": "종로구",
-          "count": 337
+          "count": 341
         },
         {
           "name": "중구",
-          "count": 331
+          "count": 339
         },
         {
           "name": "중랑구",
           "count": 66
         },
         {
-          "name": "테헤란로",
-          "count": 1
-        },
-        {
-          "name": "퇴계로48길",
-          "count": 1
-        },
-        {
-          "name": "학동로",
-          "count": 1
-        },
-        {
-          "name": "한남대로",
-          "count": 2
-        },
-        {
-          "name": "회나무로",
-          "count": 1
-        },
-        {
-          "name": "Dosan-daero",
-          "count": 1
-        },
-        {
-          "name": "Jamsil-dong,",
-          "count": 1
-        },
-        {
-          "name": "Olympic-ro,",
-          "count": 1
-        },
-        {
-          "name": "Seongnam-si,",
+          "name": "Bundang구",
           "count": 1
         }
       ]

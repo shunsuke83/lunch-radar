@@ -231,14 +231,29 @@ async function placeDetail(sid: string): Promise<PlaceDetail> {
   };
 }
 
+function isDistrictToken(token: string | undefined): boolean {
+  const t = (token ?? "").replace(/,$/, "");
+  if (!t) return false;
+  if (t === "세종") return true;
+  if (/^(서울|부산|대구|인천|광주|대전|울산)(특별시|광역시)?$/.test(t)) return false;
+  if (/(특별시|광역시|특별자치시|특별자치도|도)$/.test(t)) return false;
+  return /(시|군|구)$/.test(t);
+}
+
 function regionOf(address: string | undefined): { province: string; district: string } | undefined {
   const parts = (address ?? "").trim().split(/\s+/);
   let head = PROVINCE_ALIASES[parts[0]] ?? parts[0];
   // Naver writes the merged province as "전남광주"; its 구 are the former Gwangju city.
   if (head.startsWith("전남광주")) head = parts[1]?.endsWith("구") ? "광주" : "전남";
+  // "강남구 테헤란로 …" without a province prefix → treat as Seoul.
+  if (!PROVINCES[head] && isDistrictToken(parts[0])) {
+    return { province: "서울", district: parts[0].replace(/,$/, "") };
+  }
   if (!PROVINCES[head]) return undefined;
   if (head === "세종") return { province: head, district: "세종" };
-  return { province: head, district: parts[1] ?? head };
+  const district = parts.find((p, i) => i > 0 && isDistrictToken(p))?.replace(/,$/, "");
+  if (!district) return undefined;
+  return { province: head, district };
 }
 
 function groupOf(category: string | undefined): string {

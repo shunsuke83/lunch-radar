@@ -11,6 +11,7 @@
     "catalog:external-lists": "tsx --env-file-if-exists=.env.local scripts/import-external-lists.mjs",
     "catalog:sikr-partial": "tsx --env-file-if-exists=.env.local scripts/import-sikr-partial.mjs",
     "catalog:purge-non-food": "tsx scripts/purge-non-food.mjs",
+    "catalog:fix-districts": "tsx --env-file-if-exists=.env.local scripts/fix-districts.mjs",
     "catalog:kakao-regions": "tsx --env-file-if-exists=.env.local scripts/kakao-regions.ts",
     "dev": "agent-sdk dev"
   },
