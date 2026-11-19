@@ -26,6 +26,17 @@ const MISMATCH_M = 1500;
 /** Prefer keyword hit if within this of address geocode. */
 const NAME_OK_M = 800;
 
+/** Skip vague admin-only addresses (N8) — geocode returns district centroid. */
+function isDetailedAddress(address) {
+  const a = String(address ?? "").trim();
+  if (!a) return false;
+  // Road name with number, or lot number (지번)
+  if (/\d/.test(a) && /(로|길|거리|번길)/.test(a)) return true;
+  if (/\d+-\d+|\d+번지/.test(a)) return true;
+  // Only province/city/dong without number → too vague
+  return false;
+}
+
 for (const line of readFileSync(envFile, "utf8").split(/\r?\n/)) {
   const m = line.match(/^([A-Z0-9_]+)=(.*)$/);
   if (m && !process.env[m[1]]) process.env[m[1]] = m[2].trim().replace(/^["']|["']$/g, "");
@@ -108,6 +119,10 @@ async function resolveTruth(r, provinceHint) {
   const address = (r.address || r.place?.address || "").trim();
   if (!address) {
     cache[key] = { ok: false, reason: "no-address" };
+    return null;
+  }
+  if (!isDetailedAddress(address)) {
+    cache[key] = { ok: false, reason: "vague-address", address };
     return null;
   }
 

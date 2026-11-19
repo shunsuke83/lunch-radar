@@ -18,6 +18,7 @@ const BUBBLE_MAX_LEVEL = 7;
 const NAME_LABEL_MAX_LEVEL = 4;
 
 type LatLng = { getLat?: () => number; getLng?: () => number };
+type MapPoint = { x: number; y: number };
 type KakaoMap = {
   setBounds: (b: object, padding?: number) => void;
   setCenter: (p: LatLng) => void;
@@ -31,6 +32,10 @@ type KakaoMap = {
     getNorthEast: () => { getLat: () => number; getLng: () => number };
   };
   getCenter: () => { getLat: () => number; getLng: () => number };
+  getProjection?: () => {
+    containerPointFromCoords: (latlng: LatLng) => MapPoint;
+    coordsFromContainerPoint: (point: MapPoint) => LatLng;
+  };
 };
 type MarkerLike = {
   setMap: (m: KakaoMap | null) => void;
@@ -90,7 +95,7 @@ const CATEGORY_COLOR: Record<string, string> = {
   분식: "#ca8a04",
   샐러드: "#15803d",
   "카페·디저트": "#9d174d",
-  주점: "#4b5563",
+  주점: "#9f1239",
 };
 
 function pinColor(
@@ -364,6 +369,27 @@ export function RestaurantMap({
   };
   closePopupRef.current = closePopup;
 
+  /** Clear selection when the user dismisses the popup (N6). */
+  const dismissPopup = () => {
+    closePopup();
+    const slug = selectedRef.current;
+    if (slug) onSelectRef.current?.(slug);
+  };
+
+  /** Pan once so the pin sits ~40% from the top — room for the popup, no panBy (N7). */
+  const panForPopup = (kakao: Kakao, map: KakaoMap, pos: LatLng) => {
+    const h = box.current?.clientHeight ?? 400;
+    const proj = map.getProjection?.();
+    if (proj?.containerPointFromCoords && proj?.coordsFromContainerPoint) {
+      const pinPt = proj.containerPointFromCoords(pos);
+      const desiredY = Math.min(Math.max(h * 0.4, 140), h - 48);
+      const centerPt = { x: pinPt.x, y: pinPt.y + (h / 2 - desiredY) };
+      map.panTo(proj.coordsFromContainerPoint(centerPt));
+      return;
+    }
+    map.panTo(pos);
+  };
+
   const openPopup = (r: Restaurant) => {
     const current = mapRef.current;
     if (!current || !r.location) return;
@@ -371,18 +397,14 @@ export function RestaurantMap({
     const pos = new current.kakao.maps.LatLng(r.location.lat, r.location.lng);
     const o = new current.kakao.maps.CustomOverlay({
       position: pos,
-      content: card(r, closePopup, (slug) => onDetailRef.current?.(slug)),
+      content: card(r, dismissPopup, (slug) => onDetailRef.current?.(slug)),
       yAnchor: 1.35,
       zIndex: 10,
       clickable: true,
     });
     o.setMap(current.map);
     popupRef.current = o;
-    current.map.panTo(pos);
-    // Keep popup clear of the top edge (B14) — popup is ~140px tall above the pin.
-    window.setTimeout(() => {
-      current.map.panBy(0, -160);
-    }, 50);
+    panForPopup(current.kakao, current.map, pos);
   };
 
   useEffect(() => {
@@ -430,7 +452,11 @@ export function RestaurantMap({
             n,
           );
         };
-        kakao.maps.event.addListener(map, "click", () => closePopupRef.current());
+        kakao.maps.event.addListener(map, "click", () => {
+          closePopupRef.current();
+          const slug = selectedRef.current;
+          if (slug) onSelectRef.current?.(slug);
+        });
         kakao.maps.event.addListener(map, "idle", emitBounds);
         kakao.maps.event.addListener(map, "zoom_changed", () => {
           setLevel(map.getLevel());
@@ -644,7 +670,7 @@ export function RestaurantMap({
     }
   }, [ready, visible, visibleKey, office, expanded, now, weekday, pinMode, level, selectedSlug]);
 
-  // Selection styling + popup without rebuilding markers.
+  // Selection styling + popup — only when the selection changes (N6).
   useEffect(() => {
     const current = mapRef.current;
     if (!ready || !current) return;
@@ -660,17 +686,20 @@ export function RestaurantMap({
       entry.kind = kind;
     }
     if (selectedSlug) {
-      const r = visible.find((x) => x.slug === selectedSlug) ?? markersRef.current.get(selectedSlug)?.restaurant;
+      const r =
+        visible.find((x) => x.slug === selectedSlug) ??
+        markersRef.current.get(selectedSlug)?.restaurant;
       if (r) openPopup(r);
     } else {
       closePopup();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, selectedSlug, visibleKey, level]);
+  }, [ready, selectedSlug]);
 
+  // Local chip count only — do not call onBoundsChange here (N5 infinite loop).
   useEffect(() => {
     const current = mapRef.current;
-    if (!ready || !current || !onBoundsChange) return;
+    if (!ready || !current) return;
     const map = current.map;
     const b = map.getBounds();
     const sw = b.getSouthWest();
@@ -681,17 +710,7 @@ export function RestaurantMap({
       if (lat >= sw.getLat() && lat <= ne.getLat() && lng >= sw.getLng() && lng <= ne.getLng()) n++;
     }
     setViewportCount(n);
-    onBoundsRef.current?.(
-      {
-        south: sw.getLat(),
-        west: sw.getLng(),
-        north: ne.getLat(),
-        east: ne.getLng(),
-      },
-      map.getLevel(),
-      n,
-    );
-  }, [ready, visible, level, onBoundsChange]);
+  }, [ready, visible, level]);
 
   const fitAll = () => {
     const current = mapRef.current;

@@ -308,15 +308,6 @@ export function LunchExplorer({ catalog, regions }: Props) {
     setPicks([]);
   }, [deferred, region]);
 
-  // Scroll map into view when switching to map mode or opening a map link (B14).
-  useEffect(() => {
-    if (!hydrated || view !== "map") return;
-    const scroll = () => mapPanelRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
-    queueMicrotask(scroll);
-    const t = window.setTimeout(scroll, 320);
-    return () => window.clearTimeout(t);
-  }, [hydrated, view, region]);
-
   useEffect(() => {
     if (view !== "map") setMapViewportCount(null);
   }, [view]);
@@ -356,6 +347,16 @@ export function LunchExplorer({ catalog, regions }: Props) {
   const source = useMemo(() => (state.status === "ready" ? state.restaurants : []), [state]);
   const regionInfo = regions.regions.find((r) => r.id === region);
   const recorded = useMemo(() => recordedSlugSet(visits), [visits]);
+
+  // Scroll map into view once the region data (and map panel) are ready (B14).
+  useEffect(() => {
+    if (!hydrated || view !== "map") return;
+    if (state.status !== "ready") return;
+    const scroll = () => mapPanelRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
+    queueMicrotask(scroll);
+    const t = window.setTimeout(scroll, 100);
+    return () => window.clearTimeout(t);
+  }, [hydrated, view, region, state.status]);
 
   const facets = useMemo(
     () => ({
@@ -511,8 +512,11 @@ export function LunchExplorer({ catalog, regions }: Props) {
   const rollPoolOrAll = rollPool.length ? rollPool : restaurants;
   const openAwarePool = () => {
     if (now == null || !weekday) return rollPoolOrAll;
-    const open = rollPoolOrAll.filter((r) => !r.hours || isOpenAt(r.hours, now, weekday));
-    return open.length ? open : rollPoolOrAll;
+    const open = rollPoolOrAll.filter((r) => r.hours && isOpenAt(r.hours, now, weekday));
+    if (open.length) return open;
+    // Prefer unknown hours over known-closed; never fall back to closed places (B11).
+    const unknown = rollPoolOrAll.filter((r) => !r.hours);
+    return unknown.length ? unknown : open;
   };
   const rollPicks = () => setPicks(sampleRestaurants(openAwarePool(), 3));
 
@@ -645,13 +649,10 @@ export function LunchExplorer({ catalog, regions }: Props) {
               <Button
                 size="md"
                 onClick={() => {
-                  if (selectedSlug) {
-                    setWishlist(toggleWishlist(selectedSlug));
-                    return;
-                  }
-                  if (wishlist.length) setFilters((f) => ({ ...f, wishlistOnly: !f.wishlistOnly }));
+                  if (!selectedSlug) return;
+                  setWishlist(toggleWishlist(selectedSlug));
                 }}
-                disabled={!selectedSlug && !wishlist.length}
+                disabled={!selectedSlug}
                 aria-label="내 리스트에 담기"
               >
                 <Heart aria-hidden className="size-size-icon-sm" />
@@ -760,13 +761,29 @@ export function LunchExplorer({ catalog, regions }: Props) {
                     pinMode={isOffice ? "hours" : "category"}
                     heightClass="h-[calc(100dvh-8rem)]"
                     onBoundsChange={(b, z, n) => {
-                      setMapBounds(b);
-                      setMapViewportCount(n);
-                      setMapCenter({
+                      setMapBounds((prev) =>
+                        prev &&
+                        Math.abs(prev.south - b.south) < 1e-7 &&
+                        Math.abs(prev.north - b.north) < 1e-7 &&
+                        Math.abs(prev.west - b.west) < 1e-7 &&
+                        Math.abs(prev.east - b.east) < 1e-7
+                          ? prev
+                          : b,
+                      );
+                      setMapViewportCount((prev) => (prev === n ? prev : n));
+                      const next = {
                         lat: (b.south + b.north) / 2,
                         lng: (b.west + b.east) / 2,
                         z,
-                      });
+                      };
+                      setMapCenter((prev) =>
+                        prev &&
+                        Math.abs(prev.lat - next.lat) < 1e-7 &&
+                        Math.abs(prev.lng - next.lng) < 1e-7 &&
+                        prev.z === next.z
+                          ? prev
+                          : next,
+                      );
                     }}
                   />
                 </div>
@@ -785,13 +802,29 @@ export function LunchExplorer({ catalog, regions }: Props) {
                   pinMode={isOffice ? "hours" : "category"}
                   heightClass="h-[min(52dvh,420px)]"
                   onBoundsChange={(b, z, n) => {
-                    setMapBounds(b);
-                    setMapViewportCount(n);
-                    setMapCenter({
+                    setMapBounds((prev) =>
+                      prev &&
+                      Math.abs(prev.south - b.south) < 1e-7 &&
+                      Math.abs(prev.north - b.north) < 1e-7 &&
+                      Math.abs(prev.west - b.west) < 1e-7 &&
+                      Math.abs(prev.east - b.east) < 1e-7
+                        ? prev
+                        : b,
+                    );
+                    setMapViewportCount((prev) => (prev === n ? prev : n));
+                    const next = {
                       lat: (b.south + b.north) / 2,
                       lng: (b.west + b.east) / 2,
                       z,
-                    });
+                    };
+                    setMapCenter((prev) =>
+                      prev &&
+                      Math.abs(prev.lat - next.lat) < 1e-7 &&
+                      Math.abs(prev.lng - next.lng) < 1e-7 &&
+                      prev.z === next.z
+                        ? prev
+                        : next,
+                    );
                   }}
                 />
                 <div className="mt-stack-sm">
