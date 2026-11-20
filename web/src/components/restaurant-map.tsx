@@ -95,7 +95,7 @@ const CATEGORY_COLOR: Record<string, string> = {
   분식: "#ca8a04",
   샐러드: "#15803d",
   "카페·디저트": "#9d174d",
-  주점: "#0e7490",
+  주점: "#a16207",
 };
 
 function pinColor(
@@ -355,19 +355,27 @@ export function RestaurantMap({
   const [viewportCount, setViewportCount] = useState(0);
 
   const located = useMemo(() => restaurants.filter((r) => r.location), [restaurants]);
+  const inRadius = useMemo(() => {
+    if (!office) return located;
+    return located.filter((r) => distanceM(office, r.location!) <= DEFAULT_RADIUS_M);
+  }, [located, office]);
   const outside = useMemo(() => {
     if (!office) return [];
     return located.filter((r) => distanceM(office, r.location!) > DEFAULT_RADIUS_M);
   }, [located, office]);
   const visible = useMemo(() => {
     if (!office || expanded) return located;
-    const inRadius = located.filter((r) => distanceM(office, r.location!) <= DEFAULT_RADIUS_M);
     // Keep a selected place on the map even when it is outside the office radius (R4).
     if (!selectedSlug) return inRadius;
     if (inRadius.some((r) => r.slug === selectedSlug)) return inRadius;
     const selected = located.find((r) => r.slug === selectedSlug);
     return selected ? [...inRadius, selected] : inRadius;
-  }, [located, office, expanded, selectedSlug]);
+  }, [located, office, expanded, selectedSlug, inRadius]);
+  /** Places still hidden outside the radius (excludes a selected outsider already drawn). */
+  const outsideHidden = useMemo(() => {
+    if (!office || expanded) return outside;
+    return outside.filter((r) => r.slug !== selectedSlug);
+  }, [office, expanded, outside, selectedSlug]);
   const visibleKey = useMemo(() => visible.map((r) => r.slug).join(","), [visible]);
   const visibleRef = useRef(visible);
   visibleRef.current = visible;
@@ -392,12 +400,8 @@ export function RestaurantMap({
       const proj = map.getProjection?.();
       if (proj?.containerPointFromCoords && proj?.coordsFromContainerPoint) {
         const pinPt = proj.containerPointFromCoords(pos);
-        // Leave ~300px above the pin so mobile popups (yAnchor 1.35) are not clipped.
-        // Short maps (≈320px phone) need the pin near the bottom so the popup fits.
-        const desiredY =
-          h < 360
-            ? Math.min(h - 16, Math.max(Math.floor(h * 0.72), h - 48))
-            : Math.min(h - 28, Math.max(h * 0.4, Math.min(300, h - 48)));
+        // yAnchor 1.15 → ~230px popup needs ~265px above the pin.
+        const desiredY = Math.min(h - 20, Math.max(h * 0.42, Math.min(265, h - 40)));
         const centerPt = new kakao.maps.Point(pinPt.x, pinPt.y + (h / 2 - desiredY)) as MapPoint;
         map.panTo(proj.coordsFromContainerPoint(centerPt));
         return;
@@ -416,7 +420,7 @@ export function RestaurantMap({
     const o = new current.kakao.maps.CustomOverlay({
       position: pos,
       content: card(r, dismissPopup, (slug) => onDetailRef.current?.(slug)),
-      yAnchor: 1.35,
+      yAnchor: 1.15,
       zIndex: 10,
       clickable: true,
     });
@@ -803,7 +807,7 @@ export function RestaurantMap({
           ref={box}
           className={`${heightClass} w-full overflow-hidden rounded-sm border border-border-default bg-surface-subtle`}
         />
-        <div className="pointer-events-none absolute right-2 top-2 z-10 flex flex-col gap-group-xs">
+        <div className="pointer-events-none absolute left-2 top-2 z-10 flex flex-col gap-group-xs">
           <button
             type="button"
             className={`pointer-events-auto bg-surface-default shadow-sm ${buttonClass("tertiary", "sm")}`}
@@ -857,13 +861,19 @@ export function RestaurantMap({
       <div className="flex flex-wrap items-center gap-group-sm">
         <p className="text-text-tertiary typography-caption">
           {error ??
-            (visible.length === restaurants.length
-              ? `${visible.length}곳 표시`
-              : `${visible.length}곳 표시 · 위치를 모르는 ${restaurants.length - located.length}곳은 목록에서 확인`)}
+            (() => {
+              const unknown = restaurants.length - located.length;
+              if (unknown > 0) {
+                return `${visible.length}곳 표시 · 위치를 모르는 ${unknown}곳은 목록에서 확인`;
+              }
+              return `${visible.length}곳 표시`;
+            })()}
         </p>
         {office && outside.length > 0 ? (
           <button type="button" className={buttonClass("tertiary", "sm")} onClick={() => setExpanded((v) => !v)}>
-            {expanded ? `회사 ${DEFAULT_RADIUS_M}m 안으로` : `더 먼 ${outside.length}곳 보기`}
+            {expanded
+              ? `회사 ${DEFAULT_RADIUS_M}m 안으로`
+              : `더 먼 ${outsideHidden.length}곳 보기`}
           </button>
         ) : null}
       </div>
