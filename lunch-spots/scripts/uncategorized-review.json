@@ -1,0 +1,5840 @@
+{
+  "generatedAt": "2026-11-20T07:09:59.172Z",
+  "categories": [
+    "한식",
+    "중식",
+    "일식",
+    "양식",
+    "아시안",
+    "분식",
+    "샐러드",
+    "카페·디저트",
+    "주점"
+  ],
+  "nonFoodMarker": "__nonfood__",
+  "count": 324,
+  "nonFoodCount": 54,
+  "foodishCount": 270,
+  "places": [
+    {
+      "key": "chungbuk/naver-13479825",
+      "name": "성충문구",
+      "region": "chungbuk",
+      "slug": "naver-13479825",
+      "subcategory": "종합사무용품",
+      "district": "충주시",
+      "address": "충북 충주시 금봉대로 429",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/13479825",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '종합사무용품'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungbuk/naver-13298947",
+      "name": "송호관광지",
+      "region": "chungbuk",
+      "slug": "naver-13298947",
+      "subcategory": "지역명소",
+      "district": "영동군",
+      "address": "충북 영동군 양산면 송호로 105",
+      "collections": [],
+      "naverUrl": "https://map.naver.com/p/entry/place/13298947",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (관광지·시설) / 종류 값 '지역명소'. 메뉴 칸에 야영장 요금이 들어 있음",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungbuk/naver-13020612",
+      "name": "신광주방",
+      "region": "chungbuk",
+      "slug": "naver-13020612",
+      "subcategory": "주방용품",
+      "district": "충주시",
+      "address": "충북 충주시 무학4길 15",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/13020612",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '주방용품'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungbuk/naver-11679902",
+      "name": "신화당",
+      "region": "chungbuk",
+      "slug": "naver-11679902",
+      "subcategory": "결혼예물",
+      "district": "보은군",
+      "address": "충북 보은군 보은읍 삼산로 27-1",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/11679902",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '결혼예물'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungbuk/naver-37868226",
+      "name": "신흥지업사",
+      "region": "chungbuk",
+      "slug": "naver-37868226",
+      "subcategory": "벽지·장판·마루",
+      "district": "음성군",
+      "address": "충북 음성군 금왕읍 무극로308번길 12-2",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/37868226",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '벽지·장판·마루'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungbuk/naver-20819860",
+      "name": "이건창호 통합 전시장 한우창호",
+      "region": "chungbuk",
+      "slug": "naver-20819860",
+      "subcategory": "건축·토목",
+      "district": "청주시",
+      "address": "충북 청주시 상당구 남사로84번길 29 한우건축자재",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/20819860",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '건축·토목'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungbuk/naver-17747261",
+      "name": "이재천바버샵",
+      "region": "chungbuk",
+      "slug": "naver-17747261",
+      "subcategory": "이용원",
+      "district": "증평군",
+      "address": "충북 증평군 증평읍 중앙로 220 2층",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/17747261",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '이용원'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungbuk/naver-13354956",
+      "name": "청주폐백",
+      "region": "chungbuk",
+      "slug": "naver-13354956",
+      "subcategory": "폐백·이바지음식",
+      "district": "청주시",
+      "address": "충북 청주시 흥덕구 흥덕로 88 1층",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/13354956",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (식품 판매·제조) / 종류 값 '폐백·이바지음식'. 백년가게 목록에서 온 가게. 폐백 음식을 만들어 파는 곳. 앉아서 먹는 식당이 아님",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungbuk/naver-11888432",
+      "name": "HSDI",
+      "region": "chungbuk",
+      "slug": "naver-11888432",
+      "subcategory": "옥외·전시광고",
+      "district": "충주시",
+      "address": "충북 충주시 목행초길 7",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/11888432",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '옥외·전시광고'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungnam/naver-1108740272",
+      "name": "보령자동차공업사",
+      "region": "chungnam",
+      "slug": "naver-1108740272",
+      "subcategory": "자동차정비·수리",
+      "district": "보령시",
+      "address": "충남 보령시 중앙로 33",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1108740272",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '자동차정비·수리'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungnam/naver-1674061794",
+      "name": "비전농장",
+      "region": "chungnam",
+      "slug": "naver-1674061794",
+      "subcategory": "농공시설",
+      "district": "홍성군",
+      "address": "충남 홍성군 광천읍 충서로400번길 221",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1674061794",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (식품 판매·제조) / 종류 값 '농공시설'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungnam/naver-1221015199",
+      "name": "정문농산",
+      "region": "chungnam",
+      "slug": "naver-1221015199",
+      "subcategory": "곡류",
+      "district": "아산시",
+      "address": "충남 아산시 번영로 149 정문농산",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1221015199",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (식품 판매·제조) / 종류 값 '곡류'. 백년가게 목록에서 온 가게. 메뉴 칸에 쌀·잡곡 품목이 들어 있음",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "chungnam/naver-1754354427",
+      "name": "청천영농조합법인",
+      "region": "chungnam",
+      "slug": "naver-1754354427",
+      "subcategory": "곡물가공·제조",
+      "district": "보령시",
+      "address": "충남 보령시 대천로 273 청천영농조합법인",
+      "collections": [
+        "세월을 담은 백년가게, 충청"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1754354427",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (식품 판매·제조) / 종류 값 '곡물가공·제조'. 백년가게 목록에서 온 가게. 메뉴 칸에 쌀 품목이 들어 있음",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-1157986663",
+      "name": "경신유통",
+      "region": "gyeongbuk",
+      "slug": "naver-1157986663",
+      "subcategory": "축산업용품",
+      "district": "경산시",
+      "address": "경북 경산시 경안로87길 33",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1157986663",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '축산업용품'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-1815506765",
+      "name": "대화뜨개방",
+      "region": "gyeongbuk",
+      "slug": "naver-1815506765",
+      "subcategory": "뜨개",
+      "district": "경주시",
+      "address": "경북 경주시 화랑로 139-48 대화뜨개방",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1815506765",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '뜨개'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-34417574",
+      "name": "동아의료보조기 보청기",
+      "region": "gyeongbuk",
+      "slug": "naver-34417574",
+      "subcategory": "보청기",
+      "district": "안동시",
+      "address": "경북 안동시 서동문로 68-1",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/34417574",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '보청기'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-15022718",
+      "name": "동양인삼사",
+      "region": "gyeongbuk",
+      "slug": "naver-15022718",
+      "subcategory": "건강기능보조식품",
+      "district": "영주시",
+      "address": "경북 영주시 풍기읍 인삼로 8 인삼시장 5호 동양인삼사",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/15022718",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (식품 판매·제조) / 종류 값 '건강기능보조식품'. 백년가게 목록에서 온 가게. 인삼을 파는 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-1227499935",
+      "name": "동양카정비",
+      "region": "gyeongbuk",
+      "slug": "naver-1227499935",
+      "subcategory": "자동차정비·수리",
+      "district": "포항시",
+      "address": "경북 포항시 북구 장량주택로4번길 2 양덕동 776-1",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1227499935",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '자동차정비·수리'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-12866819",
+      "name": "라망 앤 브라이덜k",
+      "region": "gyeongbuk",
+      "slug": "naver-12866819",
+      "subcategory": "웨딩드레스·예복",
+      "district": "구미시",
+      "address": "경북 구미시 금오산로 134 1층, 2층",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/12866819",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '웨딩드레스·예복'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-34333016",
+      "name": "류복순침구솜틀집",
+      "region": "gyeongbuk",
+      "slug": "naver-34333016",
+      "subcategory": "침구·커튼",
+      "district": "안동시",
+      "address": "경북 안동시 풍천면 전서로 186-10",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/34333016",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '침구·커튼'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-11695738",
+      "name": "영천목탁공예사",
+      "region": "gyeongbuk",
+      "slug": "naver-11695738",
+      "subcategory": "목공예품",
+      "district": "영천시",
+      "address": "경북 영천시 새미1길 13",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/11695738",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '목공예품'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-1944153351",
+      "name": "청림산업안전",
+      "region": "gyeongbuk",
+      "slug": "naver-1944153351",
+      "subcategory": "산업용품",
+      "district": "포항시",
+      "address": "경북 포항시 남구 동해안로 5936 청림산업안전",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1944153351",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '산업용품'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-1057658045",
+      "name": "청심축산물직판장",
+      "region": "gyeongbuk",
+      "slug": "naver-1057658045",
+      "subcategory": "육류가공·제조",
+      "district": "김천시",
+      "address": "경북 김천시 어모면 산업단지7로 212 주식회사 청심",
+      "collections": [],
+      "naverUrl": "https://map.naver.com/p/entry/place/1057658045",
+      "kakaoUrl": "https://place.map.kakao.com/580581710",
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (식품 판매·제조) / 종류 값 '육류가공·제조'. 축산물 직판장. 출처 목록 없음",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-19543269",
+      "name": "충주건축자재",
+      "region": "gyeongbuk",
+      "slug": "naver-19543269",
+      "subcategory": "건축자재·용품",
+      "district": "포항시",
+      "address": "경북 포항시 남구 포스코대로 420-1 1층",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/19543269",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '건축자재·용품'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-11554215",
+      "name": "퀼트하우스",
+      "region": "gyeongbuk",
+      "slug": "naver-11554215",
+      "subcategory": "퀼트",
+      "district": "문경시",
+      "address": "경북 문경시 점촌6길 2 점촌시민교회",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/11554215",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '퀼트'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-15370232",
+      "name": "현악기사",
+      "region": "gyeongbuk",
+      "slug": "naver-15370232",
+      "subcategory": "악기",
+      "district": "안동시",
+      "address": "경북 안동시 서동문로 107",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/15370232",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '악기'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongbuk/naver-34093046",
+      "name": "VIP 테일러",
+      "region": "gyeongbuk",
+      "slug": "naver-34093046",
+      "subcategory": "남성정장",
+      "district": "구미시",
+      "address": "경북 구미시 구미중앙로 133",
+      "collections": [
+        "세월을 담은 백년가게, 경북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/34093046",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '남성정장'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeonggi/naver-13418367",
+      "name": "대성리국민관광지",
+      "region": "gyeonggi",
+      "slug": "naver-13418367",
+      "subcategory": "유원지",
+      "district": "가평군",
+      "address": "경기도 가평군 청평면 대성리 601-1",
+      "collections": [],
+      "naverUrl": "https://map.naver.com/p/entry/place/13418367",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (관광지·시설) / 종류 값 '유원지'. 메뉴 칸에 입장 요금이 들어 있음",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeonggi/naver-12917377",
+      "name": "한탄강관광지 오토캠핑장",
+      "region": "gyeonggi",
+      "slug": "naver-12917377",
+      "subcategory": "자연명소",
+      "district": "연천군",
+      "address": "경기 연천군 전곡읍 선사로 76 한탄강관광지",
+      "collections": [],
+      "naverUrl": "https://map.naver.com/p/entry/place/12917377",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (관광지·시설) / 종류 값 '자연명소'. 메뉴 칸에 야영장·캐라반이 들어 있음",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongnam/naver-36444877",
+      "name": "보곡당",
+      "region": "gyeongnam",
+      "slug": "naver-36444877",
+      "subcategory": "귀금속·시계",
+      "district": "창원시",
+      "address": "경남 창원시 진해구 벚꽃로 70 보곡당",
+      "collections": [
+        "세월을 담은 백년가게, 경남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/36444877",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '귀금속·시계'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongnam/naver-31012987",
+      "name": "세이코알바 대경사",
+      "region": "gyeongnam",
+      "slug": "naver-31012987",
+      "subcategory": "시계",
+      "district": "창원시",
+      "address": "경남 창원시 마산합포구 3·15대로 426-2",
+      "collections": [
+        "세월을 담은 백년가게, 경남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/31012987",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '시계'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongnam/naver-20059735",
+      "name": "윤스캠퍼",
+      "region": "gyeongnam",
+      "slug": "naver-20059735",
+      "subcategory": "자동차용품·액세서리",
+      "district": "진주시",
+      "address": "경남 진주시 강남로 149 1층 윤스캠퍼",
+      "collections": [
+        "세월을 담은 백년가게, 경남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/20059735",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '자동차용품·액세서리'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongnam/naver-60512369",
+      "name": "창원푸드",
+      "region": "gyeongnam",
+      "slug": "naver-60512369",
+      "subcategory": "식료품",
+      "district": "창원시",
+      "address": "경남 창원시 마산합포구 어시장7길 126",
+      "collections": [
+        "세월을 담은 백년가게, 경남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/60512369",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (식품 판매·제조) / 종류 값 '식료품'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongnam/naver-1440043994",
+      "name": "학성실크",
+      "region": "gyeongnam",
+      "slug": "naver-1440043994",
+      "subcategory": "원단·섬유·직물",
+      "district": "진주시",
+      "address": "경남 진주시 동진로 298",
+      "collections": [
+        "세월을 담은 백년가게, 경남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1440043994",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '원단·섬유·직물'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "gyeongnam/naver-15627781",
+      "name": "황금당",
+      "region": "gyeongnam",
+      "slug": "naver-15627781",
+      "subcategory": "귀금속·시계",
+      "district": "양산시",
+      "address": "경남 양산시 중앙로 171",
+      "collections": [
+        "세월을 담은 백년가게, 경남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/15627781",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '귀금속·시계'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeju/naver-1443246875",
+      "name": "어쩌다가",
+      "region": "jeju",
+      "slug": "naver-1443246875",
+      "subcategory": "민박",
+      "district": "제주시",
+      "address": "제주 제주시 한경면 낙수로 94",
+      "collections": [
+        "도민이의 제주맛집"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1443246875",
+      "kakaoUrl": "https://place.map.kakao.com/1417762266",
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (관광지·시설) / 종류 값 '민박'. 맛집 목록('도민이의 제주맛집')에서 왔는데 네이버에는 민박으로 등록됨. 다른 장소와 잘못 연결됐을 수 있음",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeju/naver-17022827",
+      "name": "월령포구",
+      "region": "jeju",
+      "slug": "naver-17022827",
+      "subcategory": "페리·해운",
+      "district": "제주시",
+      "address": "제주특별자치도 제주시",
+      "collections": [
+        "도민이의 제주맛집"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/17022827",
+      "kakaoUrl": "https://place.map.kakao.com/1741547689",
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (관광지·시설) / 종류 값 '페리·해운'. 맛집 목록('도민이의 제주맛집')에서 왔는데 포구로 등록됨. 주소도 '제주시'까지만 있어 장소가 잘못 연결된 것으로 보임",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeju/naver-16936114",
+      "name": "중앙사진관",
+      "region": "jeju",
+      "slug": "naver-16936114",
+      "subcategory": "디지털인화",
+      "district": "서귀포시",
+      "address": "제주 서귀포시 대정읍 신영로 109 1층",
+      "collections": [
+        "세월을 담은 백년가게, 제주"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/16936114",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '디지털인화'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonbuk/naver-13530975",
+      "name": "국제금고사",
+      "region": "jeonbuk",
+      "slug": "naver-13530975",
+      "subcategory": "금고",
+      "district": "군산시",
+      "address": "전북 군산시 죽성로 23-1",
+      "collections": [
+        "세월을 담은 백년가게, 전북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/13530975",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '금고'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonbuk/naver-17149458",
+      "name": "대영장식지물총판",
+      "region": "jeonbuk",
+      "slug": "naver-17149458",
+      "subcategory": "도배공사",
+      "district": "군산시",
+      "address": "전북 군산시 구시장로 17-2",
+      "collections": [
+        "세월을 담은 백년가게, 전북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/17149458",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '도배공사'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonbuk/naver-11712324",
+      "name": "바이크나라",
+      "region": "jeonbuk",
+      "slug": "naver-11712324",
+      "subcategory": "오토바이",
+      "district": "전주시",
+      "address": "전북 전주시 덕진구 권삼득로 106 바이크나라",
+      "collections": [
+        "세월을 담은 백년가게, 전북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/11712324",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '오토바이'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonbuk/naver-11685665",
+      "name": "유림국기상패사",
+      "region": "jeonbuk",
+      "slug": "naver-11685665",
+      "subcategory": "트로피·상패",
+      "district": "전주시",
+      "address": "전북 전주시 덕진구 심방죽로 35",
+      "collections": [
+        "세월을 담은 백년가게, 전북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/11685665",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '트로피·상패'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonbuk/naver-32237054",
+      "name": "일도당",
+      "region": "jeonbuk",
+      "slug": "naver-32237054",
+      "subcategory": "도장",
+      "district": "군산시",
+      "address": "전북 군산시 중앙로 196-1 일도당",
+      "collections": [
+        "세월을 담은 백년가게, 전북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/32237054",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '도장'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonbuk/naver-19917725",
+      "name": "화산축산",
+      "region": "jeonbuk",
+      "slug": "naver-19917725",
+      "subcategory": "축산업",
+      "district": "전주시",
+      "address": "전북 전주시 완산구 마당재4길 24",
+      "collections": [
+        "세월을 담은 백년가게, 전북"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/19917725",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (식품 판매·제조) / 종류 값 '축산업'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonnam/naver-16959311",
+      "name": "삼성굴비",
+      "region": "jeonnam",
+      "slug": "naver-16959311",
+      "subcategory": "건어물",
+      "district": "영광군",
+      "address": "전남광주 영광군 법성면 굴비로1길 24",
+      "collections": [
+        "세월을 담은 백년가게, 전남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/16959311",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (식품 판매·제조) / 종류 값 '건어물'. 백년가게 목록에서 온 가게. 굴비를 파는 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonnam/naver-16913139",
+      "name": "아랑주한일침구한복",
+      "region": "jeonnam",
+      "slug": "naver-16913139",
+      "subcategory": "침구·커튼",
+      "district": "함평군",
+      "address": "전남광주 함평군 함평읍 중앙길 97",
+      "collections": [
+        "세월을 담은 백년가게, 전남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/16913139",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '침구·커튼'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonnam/naver-1581623220",
+      "name": "유진테일러",
+      "region": "jeonnam",
+      "slug": "naver-1581623220",
+      "subcategory": "남성정장",
+      "district": "목포시",
+      "address": "전남광주 목포시 영산로 78-1",
+      "collections": [
+        "세월을 담은 백년가게, 전남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1581623220",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '남성정장'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonnam/naver-13326728",
+      "name": "일성의류타운",
+      "region": "jeonnam",
+      "slug": "naver-13326728",
+      "subcategory": "종합패션",
+      "district": "순천시",
+      "address": "전남광주 순천시 풍덕주택길 27",
+      "collections": [
+        "세월을 담은 백년가게, 전남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/13326728",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '종합패션'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "jeonnam/naver-17170527",
+      "name": "진성공예",
+      "region": "jeonnam",
+      "slug": "naver-17170527",
+      "subcategory": "판촉·기념품",
+      "district": "담양군",
+      "address": "전남광주 담양군 담양읍 죽향문화로 35 403호",
+      "collections": [
+        "세월을 담은 백년가게, 전남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/17170527",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '판촉·기념품'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "sejong/naver-13272841",
+      "name": "뒤웅박고을",
+      "region": "sejong",
+      "slug": "naver-13272841",
+      "subcategory": "테마공원",
+      "district": "세종",
+      "address": "세종 전동면 배일길 90-43",
+      "collections": [],
+      "naverUrl": "https://map.naver.com/p/entry/place/13272841",
+      "kakaoUrl": "https://place.map.kakao.com/781272239",
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (관광지·시설) / 종류 값 '테마공원'. 공원 자체가 등록됨. 출처 목록 없음",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "seoul/naver-1534702143",
+      "name": "1101 뮤지엄",
+      "region": "seoul",
+      "slug": "naver-1534702143",
+      "subcategory": "전시관",
+      "district": "서초구",
+      "address": "서울 서초구 남부순환로 2406 예술의전당",
+      "collections": [],
+      "naverUrl": "https://map.naver.com/p/entry/place/1534702143",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (관광지·시설) / 종류 값 '전시관'. 예술의전당 안 전시 공간으로 등록됨. 출처 목록 없음",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "seoul/naver-1763776172",
+      "name": "온하루",
+      "region": "seoul",
+      "slug": "naver-1763776172",
+      "subcategory": "식료품",
+      "district": "종로구",
+      "address": "서울 종로구 효자로 17 지하1층",
+      "collections": [
+        "맛준 맛집"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1763776172",
+      "kakaoUrl": "https://place.map.kakao.com/710442387",
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (식품 판매·제조) / 종류 값 '식료품'. 맛집 목록('맛준 맛집')에서 왔지만 무엇을 파는 곳인지 확인하지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "ulsan/naver-37755162",
+      "name": "1번가양복점",
+      "region": "ulsan",
+      "slug": "naver-37755162",
+      "subcategory": "남성정장",
+      "district": "남구",
+      "address": "울산 남구 월평로 175",
+      "collections": [
+        "세월을 담은 백년가게, 경남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/37755162",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '남성정장'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "ulsan/naver-1074842972",
+      "name": "선경혼수전문백화점",
+      "region": "ulsan",
+      "slug": "naver-1074842972",
+      "subcategory": "이불·담요",
+      "district": "중구",
+      "address": "울산 중구 중앙시장1길 9",
+      "collections": [
+        "세월을 담은 백년가게, 경남"
+      ],
+      "naverUrl": "https://map.naver.com/p/entry/place/1074842972",
+      "kakaoUrl": null,
+      "priorLabel": "비식당",
+      "priorNote": "식당이 아님 (다른 업종) / 종류 값 '이불·담요'. 백년가게 목록에서 온 가게",
+      "suggestedCategory": null,
+      "nonFoodCandidate": true
+    },
+    {
+      "key": "busan/naver-1898130354",
+      "name": "고원",
+      "region": "busan",
+      "slug": "naver-1898130354",
+      "subcategory": null,
+      "district": "부산진구",
+      "address": "부산 부산진구 서전로58번길 64",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1898130354/home",
+      "kakaoUrl": "https://place.map.kakao.com/1187755310",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "busan/naver-2098790222",
+      "name": "만개",
+      "region": "busan",
+      "slug": "naver-2098790222",
+      "subcategory": null,
+      "district": "영도구",
+      "address": "부산 영도구 청학남로60번길 18-5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2098790222/home",
+      "kakaoUrl": "https://place.map.kakao.com/1589038368",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "busan/naver-1230485898",
+      "name": "시월",
+      "region": "busan",
+      "slug": "naver-1230485898",
+      "subcategory": null,
+      "district": "부산진구",
+      "address": "부산 부산진구 동천로108번길 9-7",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1230485898/home",
+      "kakaoUrl": "https://place.map.kakao.com/1960020887",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "busan/naver-2045309062",
+      "name": "지새우다 서면점",
+      "region": "busan",
+      "slug": "naver-2045309062",
+      "subcategory": null,
+      "district": "부산진구",
+      "address": "부산 부산진구 중앙대로680번가길 12-14 1,2층",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2045309062/home",
+      "kakaoUrl": "https://place.map.kakao.com/1570014138",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '새우'를 넣은 말장난 이름. 새우 요리집인지 술집인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "busan/naver-2027416077",
+      "name": "칠암만장 해운대",
+      "region": "busan",
+      "slug": "naver-2027416077",
+      "subcategory": null,
+      "district": "해운대구",
+      "address": "부산 해운대구 구남로12번길 16",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2027416077/home",
+      "kakaoUrl": "https://place.map.kakao.com/1444461553",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '칠암'(기장 칠암)으로 보아 붕장어·해산물(한식) 같지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "busan/naver-11622446",
+      "name": "토암",
+      "region": "busan",
+      "slug": "naver-11622446",
+      "subcategory": null,
+      "district": "기장군",
+      "address": "부산 기장군 기장읍 대변로 107-27",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/place/11622446/home",
+      "kakaoUrl": "https://place.map.kakao.com/8572537",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "busan/naver-2072972807",
+      "name": "해수",
+      "region": "busan",
+      "slug": "naver-2072972807",
+      "subcategory": null,
+      "district": "서구",
+      "address": "부산 서구 충무대로 134",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2072972807/home",
+      "kakaoUrl": "https://place.map.kakao.com/511099547",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungbuk/naver-2037966007",
+      "name": "미와담",
+      "region": "chungbuk",
+      "slug": "naver-2037966007",
+      "subcategory": null,
+      "district": "음성군",
+      "address": "충북 음성군 감곡면 상우안길 60",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2037966007/home",
+      "kakaoUrl": "https://place.map.kakao.com/15866039",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungbuk/naver-1061491128",
+      "name": "삼순이",
+      "region": "chungbuk",
+      "slug": "naver-1061491128",
+      "subcategory": null,
+      "district": "증평군",
+      "address": "충북 증평군 증평읍 삼보로7길 35",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1061491128/home",
+      "kakaoUrl": "https://place.map.kakao.com/9103604",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungbuk/naver-18106884",
+      "name": "삼우정 본점",
+      "region": "chungbuk",
+      "slug": "naver-18106884",
+      "subcategory": null,
+      "district": "청주시",
+      "address": "충북 청주시 서원구 산미로 19",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/18106884/home",
+      "kakaoUrl": "https://place.map.kakao.com/1409237770",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-2085552208",
+      "name": "나드리슈퍼",
+      "region": "chungnam",
+      "slug": "naver-2085552208",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 서북구 쌍용대로 275",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2085552208/home",
+      "kakaoUrl": "https://place.map.kakao.com/14659994",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-2095407872",
+      "name": "도모도모",
+      "region": "chungnam",
+      "slug": "naver-2095407872",
+      "subcategory": null,
+      "district": "아산시",
+      "address": "충남 아산시 신정로 576-5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2095407872/home",
+      "kakaoUrl": "https://place.map.kakao.com/2093210032",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1621337175",
+      "name": "메종초이",
+      "region": "chungnam",
+      "slug": "naver-1621337175",
+      "subcategory": null,
+      "district": "서산시",
+      "address": "충남 서산시 예천7로 22-2",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1621337175/home",
+      "kakaoUrl": "https://place.map.kakao.com/1746053819",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 유럽어풍 이름이라 양식·카페·와인바 중 하나로 보이지만 가르지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1331431705",
+      "name": "미미제면소",
+      "region": "chungnam",
+      "slug": "naver-1331431705",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 동남구 통정9로 6",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1331431705/home",
+      "kakaoUrl": "https://place.map.kakao.com/359100460",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '제면소'는 면을 직접 뽑는 집이라는 뜻뿐. 칼국수(한식)·우동/라멘(일식)·중식면 중 무엇인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1807681546",
+      "name": "베로",
+      "region": "chungnam",
+      "slug": "naver-1807681546",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 동남구 용곡5길 37-4",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1807681546/home",
+      "kakaoUrl": "https://place.map.kakao.com/806536018",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1816983607",
+      "name": "심도",
+      "region": "chungnam",
+      "slug": "naver-1816983607",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 서북구 불당30길 7-2 102호",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1816983607/home",
+      "kakaoUrl": "https://place.map.kakao.com/138926863",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-2089542396",
+      "name": "아띠",
+      "region": "chungnam",
+      "slug": "naver-2089542396",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 서북구 불당30길 23 1층",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2089542396/home",
+      "kakaoUrl": "https://place.map.kakao.com/1227814546",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-2043041660",
+      "name": "연무향",
+      "region": "chungnam",
+      "slug": "naver-2043041660",
+      "subcategory": null,
+      "district": "논산시",
+      "address": "충남 논산시 연무읍 안심로 143",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2043041660/home",
+      "kakaoUrl": "https://place.map.kakao.com/1266221646",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-12064600",
+      "name": "오엔",
+      "region": "chungnam",
+      "slug": "naver-12064600",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 서북구 불당4로 105",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/12064600/home",
+      "kakaoUrl": "https://place.map.kakao.com/27507738",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1176636711",
+      "name": "요무하치",
+      "region": "chungnam",
+      "slug": "naver-1176636711",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 동남구 대흥로 336-10",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1176636711/home",
+      "kakaoUrl": "https://place.map.kakao.com/778076400",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-17481169",
+      "name": "우미장 동대동",
+      "region": "chungnam",
+      "slug": "naver-17481169",
+      "subcategory": null,
+      "district": "보령시",
+      "address": "충남 보령시 작은오랏8길 35",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/17481169/home",
+      "kakaoUrl": "https://place.map.kakao.com/8029518",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1799111683",
+      "name": "우석정",
+      "region": "chungnam",
+      "slug": "naver-1799111683",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 서북구 불당25로 176",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1799111683/home",
+      "kakaoUrl": "https://place.map.kakao.com/123299789",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1246875708",
+      "name": "웬유바이트",
+      "region": "chungnam",
+      "slug": "naver-1246875708",
+      "subcategory": null,
+      "district": "아산시",
+      "address": "충남 아산시 탕정면 매곡한들8길 72",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1246875708/home",
+      "kakaoUrl": "https://place.map.kakao.com/612019340",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-2079739226",
+      "name": "위트",
+      "region": "chungnam",
+      "slug": "naver-2079739226",
+      "subcategory": null,
+      "district": "아산시",
+      "address": "충남 아산시 도고면 기곡로62번길 6-8",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2079739226/home",
+      "kakaoUrl": "https://place.map.kakao.com/26422941",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1417435666",
+      "name": "윤이식당",
+      "region": "chungnam",
+      "slug": "naver-1417435666",
+      "subcategory": null,
+      "district": "아산시",
+      "address": "충남 아산시 탕정면 매곡한들10길 11",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1417435666/home",
+      "kakaoUrl": "https://place.map.kakao.com/1520813287",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / '식당'은 음식 종류를 가리키지 않고, 나머지도 고유명사. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1015469914",
+      "name": "이창",
+      "region": "chungnam",
+      "slug": "naver-1015469914",
+      "subcategory": null,
+      "district": "논산시",
+      "address": "충남 논산시 연산면 계백로 2593",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1015469914/home",
+      "kakaoUrl": "https://place.map.kakao.com/11413126",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1285355722",
+      "name": "종로제면소",
+      "region": "chungnam",
+      "slug": "naver-1285355722",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 서북구 불당21로 67-12",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1285355722/home",
+      "kakaoUrl": "https://place.map.kakao.com/627639955",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '제면소'는 면을 직접 뽑는 집이라는 뜻뿐. 칼국수(한식)·우동/라멘(일식)·중식면 중 무엇인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1673137717",
+      "name": "쭈불리 천안신방점",
+      "region": "chungnam",
+      "slug": "naver-1673137717",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 동남구 통정5로 61",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1673137717/home",
+      "kakaoUrl": "https://place.map.kakao.com/802312791",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '쭈'(쭈꾸미)로 읽히면 한식이지만 확실하지 않음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1931756752",
+      "name": "초록온담 김사장 수청점",
+      "region": "chungnam",
+      "slug": "naver-1931756752",
+      "subcategory": null,
+      "district": "당진시",
+      "address": "충남 당진시 수청5길 36-5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1931756752/home",
+      "kakaoUrl": "https://place.map.kakao.com/1222714394",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1078770555",
+      "name": "카메식당",
+      "region": "chungnam",
+      "slug": "naver-1078770555",
+      "subcategory": null,
+      "district": "보령시",
+      "address": "충남 보령시 신설3길 29",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1078770555/home",
+      "kakaoUrl": "https://place.map.kakao.com/910633958",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '카메'는 일본어풍, '식당'은 종류를 가리키지 않음. 일본 가정식으로 보이지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1247709459",
+      "name": "컴히얼 청당점",
+      "region": "chungnam",
+      "slug": "naver-1247709459",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 동남구 청수11로 13-11",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1247709459/home",
+      "kakaoUrl": "https://place.map.kakao.com/213640032",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1763567934",
+      "name": "킨이로텐",
+      "region": "chungnam",
+      "slug": "naver-1763567934",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 서북구 불당21로 40",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1763567934/home",
+      "kakaoUrl": "https://place.map.kakao.com/2143068419",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '텐'(튀김)이 든 일본어풍 이름. 텐동·덴푸라(일식)로 보이지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1766550756",
+      "name": "테르니",
+      "region": "chungnam",
+      "slug": "naver-1766550756",
+      "subcategory": null,
+      "district": "아산시",
+      "address": "충남 아산시 신정호길 33-14",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1766550756/home",
+      "kakaoUrl": "https://place.map.kakao.com/931065538",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-2069151911",
+      "name": "해우 동학사 본점",
+      "region": "chungnam",
+      "slug": "naver-2069151911",
+      "subcategory": null,
+      "district": "공주시",
+      "address": "충남 공주시 반포면 동학사1로 150-1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2069151911/home",
+      "kakaoUrl": "https://place.map.kakao.com/2058211388",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-2065960284",
+      "name": "해탄 성성점",
+      "region": "chungnam",
+      "slug": "naver-2065960284",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 서북구 성성8로 2-33",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2065960284/home",
+      "kakaoUrl": "https://place.map.kakao.com/215470272",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1976170182",
+      "name": "화육우소 천안두정점",
+      "region": "chungnam",
+      "slug": "naver-1976170182",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 서북구 오성4길 3",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1976170182/home",
+      "kakaoUrl": "https://place.map.kakao.com/305362983",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '육·우'(고기·소)로 보아 소고기 구이(한식) 같지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-2042596062",
+      "name": "환희제면 서산점",
+      "region": "chungnam",
+      "slug": "naver-2042596062",
+      "subcategory": null,
+      "district": "서산시",
+      "address": "충남 서산시 고운로 251",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2042596062/home",
+      "kakaoUrl": "https://place.map.kakao.com/1865105778",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '제면소'는 면을 직접 뽑는 집이라는 뜻뿐. 칼국수(한식)·우동/라멘(일식)·중식면 중 무엇인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1160032125",
+      "name": "후미진",
+      "region": "chungnam",
+      "slug": "naver-1160032125",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 서북구 원두정10길 1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1160032125/home",
+      "kakaoUrl": "https://place.map.kakao.com/1545607075",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "chungnam/naver-1687844194",
+      "name": "히든테이블 신부점",
+      "region": "chungnam",
+      "slug": "naver-1687844194",
+      "subcategory": null,
+      "district": "천안시",
+      "address": "충남 천안시 동남구 먹거리10길 19",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1687844194/home",
+      "kakaoUrl": "https://place.map.kakao.com/1399598377",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / '테이블'은 음식 종류를 가리키지 않고, 나머지도 고유명사. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "daegu/naver-2091882564",
+      "name": "뉴요크",
+      "region": "daegu",
+      "slug": "naver-2091882564",
+      "subcategory": null,
+      "district": "남구",
+      "address": "대구 남구 두류공원로 16-1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2091882564/home",
+      "kakaoUrl": "https://place.map.kakao.com/1270853010",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "daegu/naver-1224154264",
+      "name": "레브 동명점",
+      "region": "daegu",
+      "slug": "naver-1224154264",
+      "subcategory": null,
+      "district": "북구",
+      "address": "대구 북구 학정로 551-42",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1224154264/home",
+      "kakaoUrl": "https://place.map.kakao.com/218169199",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 유럽어풍 이름이라 양식·카페·와인바 중 하나로 보이지만 가르지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "daegu/naver-35228395",
+      "name": "방짜",
+      "region": "daegu",
+      "slug": "naver-35228395",
+      "subcategory": null,
+      "district": "동구",
+      "address": "대구 동구 도장길 29",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/35228395/home",
+      "kakaoUrl": "https://place.map.kakao.com/10255561",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "daegu/naver-1227244952",
+      "name": "파르코",
+      "region": "daegu",
+      "slug": "naver-1227244952",
+      "subcategory": null,
+      "district": "수성구",
+      "address": "대구 수성구 상록로11길 97",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1227244952/home",
+      "kakaoUrl": "https://place.map.kakao.com/187894180",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 유럽어풍 이름이라 양식·카페·와인바 중 하나로 보이지만 가르지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "daegu/naver-2019608393",
+      "name": "푸르른",
+      "region": "daegu",
+      "slug": "naver-2019608393",
+      "subcategory": null,
+      "district": "중구",
+      "address": "대구 중구 동성로12길 83",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2019608393/home",
+      "kakaoUrl": "https://place.map.kakao.com/482193827",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "daejeon/naver-1251447969",
+      "name": "라쿠엔",
+      "region": "daejeon",
+      "slug": "naver-1251447969",
+      "subcategory": null,
+      "district": "유성구",
+      "address": "대전 유성구 엑스포로97번길 40",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1251447969/home",
+      "kakaoUrl": "https://place.map.kakao.com/962143862",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "daejeon/naver-1377746746",
+      "name": "주도",
+      "region": "daejeon",
+      "slug": "naver-1377746746",
+      "subcategory": null,
+      "district": "서구",
+      "address": "대전 서구 둔산로 32-22",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1377746746/home",
+      "kakaoUrl": "https://place.map.kakao.com/172374694",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '주'(酒)로 읽히면 술집(주점)이지만 확실하지 않음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gangwon/naver-2071052672",
+      "name": "올드페퍼",
+      "region": "gangwon",
+      "slug": "naver-2071052672",
+      "subcategory": null,
+      "district": "원주시",
+      "address": "강원특별자치도 원주시 단구로75번길 6",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2071052672/home",
+      "kakaoUrl": "https://place.map.kakao.com/27305473",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gangwon/naver-1426981340",
+      "name": "주인",
+      "region": "gangwon",
+      "slug": "naver-1426981340",
+      "subcategory": null,
+      "district": "강릉시",
+      "address": "강원특별자치도 강릉시 강릉대로 268-1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1426981340/home",
+      "kakaoUrl": "https://place.map.kakao.com/1596997213",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gangwon/naver-1807622300",
+      "name": "크림하우스",
+      "region": "gangwon",
+      "slug": "naver-1807622300",
+      "subcategory": null,
+      "district": "강릉시",
+      "address": "강원특별자치도 강릉시 사천면 해안로 1173",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1807622300/home",
+      "kakaoUrl": "https://place.map.kakao.com/1896428146",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '치즈·크림'은 디저트 카페일 수도, 양식당일 수도 있음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-38009666",
+      "name": "굽탄",
+      "region": "gwangju",
+      "slug": "naver-38009666",
+      "subcategory": null,
+      "district": "광산구",
+      "address": "전남광주통합특별시 광산구 소촌로 144",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/38009666/home",
+      "kakaoUrl": "https://place.map.kakao.com/27602071",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '굽'+'탄'(숯)으로 보아 숯불구이 같지만 무엇을 굽는지 확인하지 못함. 같은 가게 2곳이라 한 번 확인하면 같이 풀림. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-2048128300",
+      "name": "만선",
+      "region": "gwangju",
+      "slug": "naver-2048128300",
+      "subcategory": null,
+      "district": "북구",
+      "address": "전남광주통합특별시 북구 호동로 6",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2048128300/home",
+      "kakaoUrl": "https://place.map.kakao.com/537058265",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '만선'은 해산물집에도 호프집에도 쓰이는 이름. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-1969902590",
+      "name": "미옌",
+      "region": "gwangju",
+      "slug": "naver-1969902590",
+      "subcategory": null,
+      "district": "북구",
+      "address": "전남광주통합특별시 북구 저불로31번길 18-1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1969902590/home",
+      "kakaoUrl": "https://place.map.kakao.com/1459878793",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-1914501085",
+      "name": "버몬지",
+      "region": "gwangju",
+      "slug": "naver-1914501085",
+      "subcategory": null,
+      "district": "광산구",
+      "address": "전남광주통합특별시 광산구 수완로74번길 12-2",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1914501085/home",
+      "kakaoUrl": "https://place.map.kakao.com/772293564",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-1168667433",
+      "name": "산등무",
+      "region": "gwangju",
+      "slug": "naver-1168667433",
+      "subcategory": null,
+      "district": "동구",
+      "address": "전남광주통합특별시 동구 동명로 24",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1168667433/home",
+      "kakaoUrl": "https://place.map.kakao.com/1616260303",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-1504215821",
+      "name": "수완지구폼",
+      "region": "gwangju",
+      "slug": "naver-1504215821",
+      "subcategory": null,
+      "district": "광산구",
+      "address": "전남광주통합특별시 광산구 수완로10번길 94",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1504215821/home",
+      "kakaoUrl": "https://place.map.kakao.com/1852932274",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-1469831837",
+      "name": "오늘부터애간장",
+      "region": "gwangju",
+      "slug": "naver-1469831837",
+      "subcategory": null,
+      "district": "북구",
+      "address": "전남광주통합특별시 북구 일곡마을로 121",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1469831837/home",
+      "kakaoUrl": "https://place.map.kakao.com/1350097386",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-2080310949",
+      "name": "은주 광주 용봉직영점",
+      "region": "gwangju",
+      "slug": "naver-2080310949",
+      "subcategory": null,
+      "district": "북구",
+      "address": "전남광주통합특별시 북구 저불로 35",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2080310949/home",
+      "kakaoUrl": "https://place.map.kakao.com/219494922",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 이름이 음식 종류를 가리키지 않음. 같은 가게(은주) 2곳이라 한 번 확인하면 같이 풀림. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-2003958342",
+      "name": "이솝 용봉점",
+      "region": "gwangju",
+      "slug": "naver-2003958342",
+      "subcategory": null,
+      "district": "북구",
+      "address": "광주 북구 저불로39번길 7-1 1층",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2003958342/home",
+      "kakaoUrl": "https://place.map.kakao.com/406535991",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 이름이 음식 종류를 가리키지 않음. 같은 가게(이솝) 2곳이라 한 번 확인하면 같이 풀림. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-1659701073",
+      "name": "진미가람 주월점",
+      "region": "gwangju",
+      "slug": "naver-1659701073",
+      "subcategory": null,
+      "district": "서구",
+      "address": "전남광주통합특별시 서구 상무중앙로28번길 18",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1659701073/home",
+      "kakaoUrl": "https://place.map.kakao.com/10417509",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-2097797421",
+      "name": "최정담",
+      "region": "gwangju",
+      "slug": "naver-2097797421",
+      "subcategory": null,
+      "district": "북구",
+      "address": "전남광주통합특별시 북구 우치로 86-4",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2097797421/home",
+      "kakaoUrl": "https://place.map.kakao.com/1887545470",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-1124517292",
+      "name": "카키노키",
+      "region": "gwangju",
+      "slug": "naver-1124517292",
+      "subcategory": null,
+      "district": "동구",
+      "address": "전남광주통합특별시 동구 장동로 23-57",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1124517292/home",
+      "kakaoUrl": "https://place.map.kakao.com/1236025169",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-2003905126",
+      "name": "코안",
+      "region": "gwangju",
+      "slug": "naver-2003905126",
+      "subcategory": null,
+      "district": "동구",
+      "address": "전남광주통합특별시 동구 동명로14번길 11-5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2003905126/home",
+      "kakaoUrl": "https://place.map.kakao.com/1148934744",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-2070310198",
+      "name": "코엔",
+      "region": "gwangju",
+      "slug": "naver-2070310198",
+      "subcategory": null,
+      "district": "동구",
+      "address": "전남광주통합특별시 동구 동계천로 132",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2070310198/home",
+      "kakaoUrl": "https://place.map.kakao.com/731760780",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-2062392068",
+      "name": "쿠시 봉선",
+      "region": "gwangju",
+      "slug": "naver-2062392068",
+      "subcategory": null,
+      "district": "남구",
+      "address": "전남광주통합특별시 남구 봉선1로 19",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2062392068/home",
+      "kakaoUrl": "https://place.map.kakao.com/1250762242",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '쿠시'(꼬치)는 쿠시카츠(일식)일 수도, 꼬치구이 술집(주점)일 수도 있음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-1283239942",
+      "name": "크램드밀",
+      "region": "gwangju",
+      "slug": "naver-1283239942",
+      "subcategory": null,
+      "district": "동구",
+      "address": "전남광주통합특별시 동구 동명로26번길 17",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1283239942/home",
+      "kakaoUrl": "https://place.map.kakao.com/2069589963",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-16303120",
+      "name": "털보하우스",
+      "region": "gwangju",
+      "slug": "naver-16303120",
+      "subcategory": null,
+      "district": "북구",
+      "address": "전남광주통합특별시 북구 우치로126번길 7",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/16303120/home",
+      "kakaoUrl": "https://place.map.kakao.com/13559966",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-2093207740",
+      "name": "파파식당 첨단본점",
+      "region": "gwangju",
+      "slug": "naver-2093207740",
+      "subcategory": null,
+      "district": "광산구",
+      "address": "전남광주통합특별시 광산구 첨단중앙로 96",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2093207740/home",
+      "kakaoUrl": "https://place.map.kakao.com/1144092617",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / '식당'은 음식 종류를 가리키지 않고, 나머지도 고유명사. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-19892102",
+      "name": "해산 상무지구본점",
+      "region": "gwangju",
+      "slug": "naver-19892102",
+      "subcategory": null,
+      "district": "서구",
+      "address": "전남광주통합특별시 서구 상무번영로 14",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/19892102/home",
+      "kakaoUrl": "https://place.map.kakao.com/18396399",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '해산'으로 보아 해산물 같지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-1991624248",
+      "name": "화릇",
+      "region": "gwangju",
+      "slug": "naver-1991624248",
+      "subcategory": null,
+      "district": "서구",
+      "address": "전남광주통합특별시 서구 상무번영로 11",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1991624248/home",
+      "kakaoUrl": "https://place.map.kakao.com/1935369188",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gwangju/naver-1259825837",
+      "name": "훈613 쌍촌본점",
+      "region": "gwangju",
+      "slug": "naver-1259825837",
+      "subcategory": null,
+      "district": "서구",
+      "address": "전남광주통합특별시 서구 상무대로868번길 8-6",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1259825837/home",
+      "kakaoUrl": "https://place.map.kakao.com/1533625861",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeongbuk/naver-32239625",
+      "name": "동해안",
+      "region": "gyeongbuk",
+      "slug": "naver-32239625",
+      "subcategory": null,
+      "district": "영덕군",
+      "address": "경북 영덕군 남정면 동해대로 4198-5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/32239625/home",
+      "kakaoUrl": "https://place.map.kakao.com/7845841",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '동해안'으로 보아 해산물·횟집(한식) 같지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeongbuk/naver-1690979505",
+      "name": "마지막쉼터",
+      "region": "gyeongbuk",
+      "slug": "naver-1690979505",
+      "subcategory": "야식",
+      "district": "포항시",
+      "address": "경북 포항시 남구 오천읍 문덕로 63",
+      "collections": [],
+      "naverUrl": "https://map.naver.com/p/entry/place/1690979505",
+      "kakaoUrl": "https://place.map.kakao.com/182595392",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값이 너무 넓음 / 종류 값 '야식'은 무엇을 파는지 알려 주지 않음. 메뉴·출처 목록도 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeongbuk/naver-2031469918",
+      "name": "서원",
+      "region": "gyeongbuk",
+      "slug": "naver-2031469918",
+      "subcategory": null,
+      "district": "안동시",
+      "address": "경북 안동시 도산면 도산서원길 154",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2031469918/home",
+      "kakaoUrl": "https://place.map.kakao.com/7833000",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeongbuk/naver-2060786887",
+      "name": "황남",
+      "region": "gyeongbuk",
+      "slug": "naver-2060786887",
+      "subcategory": null,
+      "district": "경주시",
+      "address": "경북 경주시 포석로 1080",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2060786887/home",
+      "kakaoUrl": "https://place.map.kakao.com/1124130238",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeongbuk/naver-1693700489",
+      "name": "ChapChap",
+      "region": "gyeongbuk",
+      "slug": "naver-1693700489",
+      "subcategory": null,
+      "district": "경산시",
+      "address": "경북 경산시 백양로29길 15-19",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1693700489/home",
+      "kakaoUrl": "https://place.map.kakao.com/1630251595",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 영문·숫자 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1703643550",
+      "name": "감자꽃",
+      "region": "gyeonggi",
+      "slug": "naver-1703643550",
+      "subcategory": null,
+      "district": "화성시",
+      "address": "경기 화성시 동탄구 금곡로 251-7",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1703643550/home",
+      "kakaoUrl": "https://place.map.kakao.com/925658900",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-2003441501",
+      "name": "고고캠",
+      "region": "gyeonggi",
+      "slug": "naver-2003441501",
+      "subcategory": null,
+      "district": "용인시",
+      "address": "경기 용인시 처인구 모현읍 곡현로823번길 27-5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2003441501/home",
+      "kakaoUrl": "https://place.map.kakao.com/1809457999",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-12874368",
+      "name": "고기리열두화덕",
+      "region": "gyeonggi",
+      "slug": "naver-12874368",
+      "subcategory": null,
+      "district": "용인시",
+      "address": "경기 용인시 수지구 고기로 454",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/12874368/home",
+      "kakaoUrl": "https://place.map.kakao.com/7999063",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '화덕'은 화덕피자(양식)일 수도, 화덕구이(한식)일 수도 있음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1849367304",
+      "name": "고래아저씨 오산운암점",
+      "region": "gyeonggi",
+      "slug": "naver-1849367304",
+      "subcategory": null,
+      "district": "오산시",
+      "address": "경기 오산시 운천로 54-12",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1849367304/home",
+      "kakaoUrl": "https://place.map.kakao.com/759378940",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-31840670",
+      "name": "굿모닝",
+      "region": "gyeonggi",
+      "slug": "naver-31840670",
+      "subcategory": null,
+      "district": "평택시",
+      "address": "경기 평택시 중앙로 338",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/31840670/home",
+      "kakaoUrl": "https://place.map.kakao.com/21317224",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1377037254",
+      "name": "다정채",
+      "region": "gyeonggi",
+      "slug": "naver-1377037254",
+      "subcategory": null,
+      "district": "광명시",
+      "address": "경기 광명시 광명로857번길 12",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1377037254/home",
+      "kakaoUrl": "https://place.map.kakao.com/935582451",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-2008388043",
+      "name": "매쎄",
+      "region": "gyeonggi",
+      "slug": "naver-2008388043",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 권선구 세화로134번길 37",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2008388043/home",
+      "kakaoUrl": "https://place.map.kakao.com/1080043557",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1114922731",
+      "name": "바바바",
+      "region": "gyeonggi",
+      "slug": "naver-1114922731",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 팔달구 정조로 846",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1114922731/home",
+      "kakaoUrl": "https://place.map.kakao.com/1235606749",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1876356025",
+      "name": "범",
+      "region": "gyeonggi",
+      "slug": "naver-1876356025",
+      "subcategory": null,
+      "district": "화성시",
+      "address": "경기 화성시 효행구 매송면 매송고색로 387",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1876356025/home",
+      "kakaoUrl": "https://place.map.kakao.com/1565875336",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-19877394",
+      "name": "사카나",
+      "region": "gyeonggi",
+      "slug": "naver-19877394",
+      "subcategory": null,
+      "district": "성남시",
+      "address": "경기 성남시 분당구 백현로101번길 17",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/19877394/home",
+      "kakaoUrl": "https://place.map.kakao.com/349768717",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '사카나'(생선·안주)는 일식일 수도, 이자카야(주점)일 수도 있음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1263288357",
+      "name": "수원왕가리 북문점",
+      "region": "gyeonggi",
+      "slug": "naver-1263288357",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 장안구 팔달로247번길 16",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1263288357/home",
+      "kakaoUrl": "https://place.map.kakao.com/22578375",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-34573203",
+      "name": "쉐진 동탄점",
+      "region": "gyeonggi",
+      "slug": "naver-34573203",
+      "subcategory": null,
+      "district": "화성시",
+      "address": "경기 화성시 동탄구 노작로4길 37",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/34573203/home",
+      "kakaoUrl": "https://place.map.kakao.com/13008816",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1541244584",
+      "name": "심야호선",
+      "region": "gyeonggi",
+      "slug": "naver-1541244584",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 영통구 월드컵로179번길 36",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1541244584/home",
+      "kakaoUrl": "https://place.map.kakao.com/870183257",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1066313912",
+      "name": "씨에스타",
+      "region": "gyeonggi",
+      "slug": "naver-1066313912",
+      "subcategory": null,
+      "district": "안산시",
+      "address": "경기 안산시 단원구 나루개길 10-7",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1066313912/home",
+      "kakaoUrl": "https://place.map.kakao.com/25773718",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 유럽어풍 이름이라 양식·카페·와인바 중 하나로 보이지만 가르지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1267330619",
+      "name": "어비스",
+      "region": "gyeonggi",
+      "slug": "naver-1267330619",
+      "subcategory": null,
+      "district": "과천시",
+      "address": "경기 과천시 과천대로2길 48",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1267330619/home",
+      "kakaoUrl": "https://place.map.kakao.com/1039045463",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-2049748405",
+      "name": "에그하우스",
+      "region": "gyeonggi",
+      "slug": "naver-2049748405",
+      "subcategory": null,
+      "district": "가평군",
+      "address": "경기 가평군 가평읍 가화로 55-9",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2049748405/home",
+      "kakaoUrl": "https://place.map.kakao.com/26417223",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '브런(치)·에그'로 보아 브런치 같지만 양식인지 카페·디저트인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1805976617",
+      "name": "에이치이에이",
+      "region": "gyeonggi",
+      "slug": "naver-1805976617",
+      "subcategory": null,
+      "district": "성남시",
+      "address": "경기 성남시 분당구 판교공원로1길 67",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1805976617/home",
+      "kakaoUrl": "https://place.map.kakao.com/1793834083",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1077429363",
+      "name": "역북370",
+      "region": "gyeonggi",
+      "slug": "naver-1077429363",
+      "subcategory": null,
+      "district": "용인시",
+      "address": "경기 용인시 처인구 중부대로 1216",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1077429363/home",
+      "kakaoUrl": "https://place.map.kakao.com/827151850",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-34033715",
+      "name": "열날개 본점",
+      "region": "gyeonggi",
+      "slug": "naver-34033715",
+      "subcategory": null,
+      "district": "김포시",
+      "address": "경기 김포시 김포한강9로75번길 180",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/34033715/home",
+      "kakaoUrl": "https://place.map.kakao.com/360208596",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '날개'로 보아 닭날개 같지만 치킨집(한식)인지 술집(주점)인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1707465493",
+      "name": "오브제",
+      "region": "gyeonggi",
+      "slug": "naver-1707465493",
+      "subcategory": null,
+      "district": "광주시",
+      "address": "경기 광주시 고산별빛로 57",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1707465493/home",
+      "kakaoUrl": "https://place.map.kakao.com/1646309155",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1205626834",
+      "name": "이토",
+      "region": "gyeonggi",
+      "slug": "naver-1205626834",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 팔달구 권광로196번길 57",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1205626834/home",
+      "kakaoUrl": "https://place.map.kakao.com/1526437250",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1356864288",
+      "name": "일호선",
+      "region": "gyeonggi",
+      "slug": "naver-1356864288",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 영통구 중부대로271번길 19-6",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1356864288/home",
+      "kakaoUrl": "https://place.map.kakao.com/1879186093",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-37432719",
+      "name": "제이콥스",
+      "region": "gyeonggi",
+      "slug": "naver-37432719",
+      "subcategory": null,
+      "district": "용인시",
+      "address": "경기 용인시 처인구 금령로 99",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/37432719/home",
+      "kakaoUrl": "https://place.map.kakao.com/27460137",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-2005756586",
+      "name": "지속",
+      "region": "gyeonggi",
+      "slug": "naver-2005756586",
+      "subcategory": null,
+      "district": "파주시",
+      "address": "경기 파주시 맨드라미길 34",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2005756586/home",
+      "kakaoUrl": "https://place.map.kakao.com/1228469190",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1268205327",
+      "name": "팔달주택",
+      "region": "gyeonggi",
+      "slug": "naver-1268205327",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 팔달구 갓매산로56번길 5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1268205327/home",
+      "kakaoUrl": "https://place.map.kakao.com/1138224504",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-16779892",
+      "name": "포청천",
+      "region": "gyeonggi",
+      "slug": "naver-16779892",
+      "subcategory": null,
+      "district": "시흥시",
+      "address": "경기 시흥시 정왕대로 74",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/16779892/home",
+      "kakaoUrl": "https://place.map.kakao.com/9532833",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1293118602",
+      "name": "푸릴리 수원권선점",
+      "region": "gyeonggi",
+      "slug": "naver-1293118602",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 권선구 효원로 188",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1293118602/home",
+      "kakaoUrl": "https://place.map.kakao.com/587944775",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1818933986",
+      "name": "플랑문",
+      "region": "gyeonggi",
+      "slug": "naver-1818933986",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 팔달구 화서문로51번길 7",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1818933986/home",
+      "kakaoUrl": "https://place.map.kakao.com/1694471651",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-2019144449",
+      "name": "하시도",
+      "region": "gyeonggi",
+      "slug": "naver-2019144449",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 장안구 팔달로259번길 25",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2019144449/home",
+      "kakaoUrl": "https://place.map.kakao.com/1356090195",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-2085554202",
+      "name": "하쿠다이닝 매교역점",
+      "region": "gyeonggi",
+      "slug": "naver-2085554202",
+      "subcategory": null,
+      "district": "수원시",
+      "address": "경기 수원시 권선구 효원로 90",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2085554202/home",
+      "kakaoUrl": "https://place.map.kakao.com/438232027",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '하쿠'는 일본어풍, '다이닝'은 종류를 가리키지 않음. 일식 아니면 주점. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1453847451",
+      "name": "한소헌",
+      "region": "gyeonggi",
+      "slug": "naver-1453847451",
+      "subcategory": null,
+      "district": "성남시",
+      "address": "경기 성남시 분당구 성남대로331번길 3-3",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1453847451/home",
+      "kakaoUrl": "https://place.map.kakao.com/1712259768",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-18440909",
+      "name": "한울",
+      "region": "gyeonggi",
+      "slug": "naver-18440909",
+      "subcategory": null,
+      "district": "파주시",
+      "address": "경기 파주시 교하로 239",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/18440909/home",
+      "kakaoUrl": "https://place.map.kakao.com/1197154042",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-1393708583",
+      "name": "해밀리아 셀프바베큐장",
+      "region": "gyeonggi",
+      "slug": "naver-1393708583",
+      "subcategory": null,
+      "district": "용인시",
+      "address": "경기 용인시 처인구 이동읍 백자로 397",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1393708583/home",
+      "kakaoUrl": "https://place.map.kakao.com/1564018993",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '셀프바베큐장'은 고기를 직접 구워 먹는 시설. 식당(한식)으로 볼지 시설로 볼지 정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-2079047311",
+      "name": "효경재",
+      "region": "gyeonggi",
+      "slug": "naver-2079047311",
+      "subcategory": null,
+      "district": "용인시",
+      "address": "경기 용인시 처인구 명지로40번길 15-17",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2079047311/home",
+      "kakaoUrl": "https://place.map.kakao.com/1016085384",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-2031009094",
+      "name": "AMPM",
+      "region": "gyeonggi",
+      "slug": "naver-2031009094",
+      "subcategory": null,
+      "district": "남양주시",
+      "address": "경기 남양주시 두물로39번길 7",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2031009094/home",
+      "kakaoUrl": "https://place.map.kakao.com/929669120",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 영문·숫자 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeonggi/naver-2004544425",
+      "name": "LOW42",
+      "region": "gyeonggi",
+      "slug": "naver-2004544425",
+      "subcategory": null,
+      "district": "성남시",
+      "address": "경기 성남시 분당구 판교공원로5길 23",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2004544425/home",
+      "kakaoUrl": "https://place.map.kakao.com/2039982467",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 영문·숫자 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeongnam/naver-1013826140",
+      "name": "가호",
+      "region": "gyeongnam",
+      "slug": "naver-1013826140",
+      "subcategory": null,
+      "district": "진주시",
+      "address": "경남 진주시 가호로 64",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1013826140/home",
+      "kakaoUrl": "https://place.map.kakao.com/10116130",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeongnam/naver-37349717",
+      "name": "동피랑",
+      "region": "gyeongnam",
+      "slug": "naver-37349717",
+      "subcategory": null,
+      "district": "통영시",
+      "address": "경남 통영시 동피랑1길 6-18",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/37349717/home",
+      "kakaoUrl": "https://place.map.kakao.com/10290301",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeongnam/naver-2008173025",
+      "name": "월하동",
+      "region": "gyeongnam",
+      "slug": "naver-2008173025",
+      "subcategory": null,
+      "district": "진주시",
+      "address": "경남 진주시 일반성면 가선리",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2008173025/home",
+      "kakaoUrl": "https://place.map.kakao.com/25336423",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "gyeongnam/naver-1946827264",
+      "name": "자연농원",
+      "region": "gyeongnam",
+      "slug": "naver-1946827264",
+      "subcategory": null,
+      "district": "창원시",
+      "address": "경남 창원시 의창구 북면 천주로 201-12",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1946827264/home",
+      "kakaoUrl": "https://place.map.kakao.com/11160272",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '농원'은 고깃집(한식)일 수도, 농장 카페일 수도 있음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "incheon/naver-2054015933",
+      "name": "만나공원",
+      "region": "incheon",
+      "slug": "naver-2054015933",
+      "subcategory": null,
+      "district": "연수구",
+      "address": "인천 연수구 아트센터대로168번길 100",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2054015933/home",
+      "kakaoUrl": "https://place.map.kakao.com/1062079205",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "incheon/naver-1954881301",
+      "name": "치즈웨이브",
+      "region": "incheon",
+      "slug": "naver-1954881301",
+      "subcategory": null,
+      "district": "미추홀구",
+      "address": "인천 미추홀구 독배로 309",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1954881301/home",
+      "kakaoUrl": "https://place.map.kakao.com/141613321",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '치즈·크림'은 디저트 카페일 수도, 양식당일 수도 있음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "incheon/naver-1386102212",
+      "name": "쿠모",
+      "region": "incheon",
+      "slug": "naver-1386102212",
+      "subcategory": null,
+      "district": "영종구",
+      "address": "인천 영종구 영종대로196번길 26",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1386102212/home",
+      "kakaoUrl": "https://place.map.kakao.com/264979515",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "incheon/naver-21791484",
+      "name": "하나비",
+      "region": "incheon",
+      "slug": "naver-21791484",
+      "subcategory": null,
+      "district": "부평구",
+      "address": "인천 부평구 장제로 47",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/21791484/home",
+      "kakaoUrl": "https://place.map.kakao.com/1098818918",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeju/naver-19299856",
+      "name": "다린",
+      "region": "jeju",
+      "slug": "naver-19299856",
+      "subcategory": null,
+      "district": "서귀포시",
+      "address": "제주특별자치도 서귀포시 법환로 11",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/19299856/home",
+      "kakaoUrl": "https://place.map.kakao.com/1228219754",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeju/naver-1017616635",
+      "name": "바다이야기",
+      "region": "jeju",
+      "slug": "naver-1017616635",
+      "subcategory": null,
+      "district": "제주시",
+      "address": "제주특별자치도 제주시 한림읍 한림로 491",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1017616635/home",
+      "kakaoUrl": "https://place.map.kakao.com/9008686",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '바다'로 보아 해산물 같지만 횟집(한식)·일식·술집 중 무엇인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeju/naver-1470813244",
+      "name": "오로시",
+      "region": "jeju",
+      "slug": "naver-1470813244",
+      "subcategory": null,
+      "district": "제주시",
+      "address": "제주특별자치도 제주시 정존1길 19",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1470813244/home",
+      "kakaoUrl": "https://place.map.kakao.com/224842926",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeju/naver-1588676712",
+      "name": "우도",
+      "region": "jeju",
+      "slug": "naver-1588676712",
+      "subcategory": null,
+      "district": "제주시",
+      "address": "제주특별자치도 제주시 우도면 연평리",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1588676712/home",
+      "kakaoUrl": "https://place.map.kakao.com/8025182",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeju/naver-2084372107",
+      "name": "우디",
+      "region": "jeju",
+      "slug": "naver-2084372107",
+      "subcategory": null,
+      "district": "제주시",
+      "address": "제주특별자치도 제주시 북성로 31",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2084372107/home",
+      "kakaoUrl": "https://place.map.kakao.com/2038013988",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeju/naver-1222188712",
+      "name": "우주",
+      "region": "jeju",
+      "slug": "naver-1222188712",
+      "subcategory": null,
+      "district": "서귀포시",
+      "address": "제주특별자치도 서귀포시 안덕면 항공우주로 83",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1222188712/home",
+      "kakaoUrl": "https://place.map.kakao.com/19585161",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeju/naver-38648333",
+      "name": "제주바다",
+      "region": "jeju",
+      "slug": "naver-38648333",
+      "subcategory": null,
+      "district": "서귀포시",
+      "address": "제주특별자치도 서귀포시 대정읍 최남단해안로30번길 9",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/38648333/home",
+      "kakaoUrl": "https://place.map.kakao.com/1296112285",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '바다'로 보아 해산물 같지만 횟집(한식)·일식·술집 중 무엇인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-167342212",
+      "name": "거북이식탁",
+      "region": "jeonbuk",
+      "slug": "naver-167342212",
+      "subcategory": null,
+      "district": "군산시",
+      "address": "전북특별자치도 군산시 구영6길 124",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/167342212/home",
+      "kakaoUrl": "https://place.map.kakao.com/754770338",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / '식탁'은 음식 종류를 가리키지 않고, 나머지도 고유명사. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-33560267",
+      "name": "도싯골 도청점",
+      "region": "jeonbuk",
+      "slug": "naver-33560267",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 홍산북로 83-17",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/33560267/home",
+      "kakaoUrl": "https://place.map.kakao.com/22018313",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-2088841342",
+      "name": "뜨돈 전주혁신점",
+      "region": "jeonbuk",
+      "slug": "naver-2088841342",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 덕진구 기지로 78",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2088841342/home",
+      "kakaoUrl": "https://place.map.kakao.com/1207210328",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '돈'(돼지)으로 보이지만 구이(한식)인지 돈카츠(일식)인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-35084940",
+      "name": "마이담",
+      "region": "jeonbuk",
+      "slug": "naver-35084940",
+      "subcategory": null,
+      "district": "진안군",
+      "address": "전북특별자치도 진안군 부귀면 전진로 1947",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/35084940/home",
+      "kakaoUrl": "https://place.map.kakao.com/21290069",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-2005476330",
+      "name": "배치드롬 전주신시가지점",
+      "region": "jeonbuk",
+      "slug": "naver-2005476330",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 홍산남로 11-22",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2005476330/home",
+      "kakaoUrl": "https://place.map.kakao.com/857292224",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-2031245824",
+      "name": "봉동",
+      "region": "jeonbuk",
+      "slug": "naver-2031245824",
+      "subcategory": null,
+      "district": "완주군",
+      "address": "전북특별자치도 완주군 봉동읍 둔산리",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2031245824/home",
+      "kakaoUrl": "https://place.map.kakao.com/10368008",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-2071426157",
+      "name": "부들스",
+      "region": "jeonbuk",
+      "slug": "naver-2071426157",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 덕진구 만성북3길 25",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2071426157/home",
+      "kakaoUrl": "https://place.map.kakao.com/601114760",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1402135242",
+      "name": "비레레",
+      "region": "jeonbuk",
+      "slug": "naver-1402135242",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 전주객사3길 12-17",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1402135242/home",
+      "kakaoUrl": "https://place.map.kakao.com/1352809815",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-17350738",
+      "name": "서래헌",
+      "region": "jeonbuk",
+      "slug": "naver-17350738",
+      "subcategory": null,
+      "district": "남원시",
+      "address": "전북특별자치도 남원시 주천면 정령치로 209",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/17350738/home",
+      "kakaoUrl": "https://place.map.kakao.com/12280315",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1276248339",
+      "name": "송범준식당",
+      "region": "jeonbuk",
+      "slug": "naver-1276248339",
+      "subcategory": null,
+      "district": "군산시",
+      "address": "전북특별자치도 군산시 나운안1길 9-5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1276248339/home",
+      "kakaoUrl": "https://place.map.kakao.com/964433914",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / '식당'은 음식 종류를 가리키지 않고, 나머지도 고유명사. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1321643230",
+      "name": "송해정",
+      "region": "jeonbuk",
+      "slug": "naver-1321643230",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 꽃밭정로 37-2",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1321643230/home",
+      "kakaoUrl": "https://place.map.kakao.com/1765334282",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-11726653",
+      "name": "신사동인동",
+      "region": "jeonbuk",
+      "slug": "naver-11726653",
+      "subcategory": null,
+      "district": "군산시",
+      "address": "전북특별자치도 군산시 나운로 54",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/11726653/home",
+      "kakaoUrl": "https://place.map.kakao.com/1675998657",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1783607494",
+      "name": "씨즐리",
+      "region": "jeonbuk",
+      "slug": "naver-1783607494",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 전라감영2길 28-36",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1783607494/home",
+      "kakaoUrl": "https://place.map.kakao.com/1509001303",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '씨즐'로 보아 스테이크·철판(양식) 같지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1119515452",
+      "name": "양누리 신시가지점",
+      "region": "jeonbuk",
+      "slug": "naver-1119515452",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 마전들로 49",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1119515452/home",
+      "kakaoUrl": "https://place.map.kakao.com/971882197",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '양'이 양고기·양대창을 뜻하는지 확실하지 않음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1210338623",
+      "name": "오타마 전주에코시티점",
+      "region": "jeonbuk",
+      "slug": "naver-1210338623",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 덕진구 세병서로 41",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1210338623/home",
+      "kakaoUrl": "https://place.map.kakao.com/1721809999",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1972076667",
+      "name": "온담 전주본점",
+      "region": "jeonbuk",
+      "slug": "naver-1972076667",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 전주천동로 210",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1972076667/home",
+      "kakaoUrl": "https://place.map.kakao.com/265761785",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-2071554860",
+      "name": "올리빈 에코시티점",
+      "region": "jeonbuk",
+      "slug": "naver-2071554860",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 덕진구 백석로 12",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2071554860/home",
+      "kakaoUrl": "https://place.map.kakao.com/1243775664",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-2000080898",
+      "name": "은주 전주에코시티점",
+      "region": "jeonbuk",
+      "slug": "naver-2000080898",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 덕진구 세병1길 10",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2000080898/home",
+      "kakaoUrl": "https://place.map.kakao.com/361395131",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 이름이 음식 종류를 가리키지 않음. 같은 가게(은주) 2곳이라 한 번 확인하면 같이 풀림. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1044826172",
+      "name": "정원산책",
+      "region": "jeonbuk",
+      "slug": "naver-1044826172",
+      "subcategory": null,
+      "district": "무주군",
+      "address": "전북특별자치도 무주군 안성면 덕유산로 468-37",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1044826172/home",
+      "kakaoUrl": "https://place.map.kakao.com/105726147",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1986395691",
+      "name": "조선별관",
+      "region": "jeonbuk",
+      "slug": "naver-1986395691",
+      "subcategory": null,
+      "district": "정읍시",
+      "address": "전북특별자치도 정읍시 수성택지7길 16-13",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1986395691/home",
+      "kakaoUrl": "https://place.map.kakao.com/13307808",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1372638657",
+      "name": "츠쿠",
+      "region": "jeonbuk",
+      "slug": "naver-1372638657",
+      "subcategory": null,
+      "district": "군산시",
+      "address": "전북특별자치도 군산시 서수송1길 18",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1372638657/home",
+      "kakaoUrl": "https://place.map.kakao.com/1380818129",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1340584191",
+      "name": "파쿠야 전주점",
+      "region": "jeonbuk",
+      "slug": "naver-1340584191",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 덕진구 기린대로 456",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1340584191/home",
+      "kakaoUrl": "https://place.map.kakao.com/1217153732",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-2070188113",
+      "name": "평화주담",
+      "region": "jeonbuk",
+      "slug": "naver-2070188113",
+      "subcategory": null,
+      "district": "익산시",
+      "address": "전북특별자치도 익산시 하나로11길 18-2",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2070188113/home",
+      "kakaoUrl": "https://place.map.kakao.com/967971067",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '주'(酒)로 읽히면 술집(주점)이지만 확실하지 않음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-2024883774",
+      "name": "포포포",
+      "region": "jeonbuk",
+      "slug": "naver-2024883774",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 전주객사2길 59",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2024883774/home",
+      "kakaoUrl": "https://place.map.kakao.com/857866854",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '포'가 쌀국수를 뜻하는지 확실하지 않음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-2073193247",
+      "name": "풍요",
+      "region": "jeonbuk",
+      "slug": "naver-2073193247",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 서신로 16",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2073193247/home",
+      "kakaoUrl": "https://place.map.kakao.com/135220646",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1453928815",
+      "name": "플뢰르",
+      "region": "jeonbuk",
+      "slug": "naver-1453928815",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 현무2길 14-23",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1453928815/home",
+      "kakaoUrl": "https://place.map.kakao.com/480922241",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 유럽어풍 이름이라 양식·카페·와인바 중 하나로 보이지만 가르지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-1579003040",
+      "name": "호리",
+      "region": "jeonbuk",
+      "slug": "naver-1579003040",
+      "subcategory": null,
+      "district": "전주시",
+      "address": "전북특별자치도 전주시 완산구 전라감영3길 13-12",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1579003040/home",
+      "kakaoUrl": "https://place.map.kakao.com/886431218",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonbuk/naver-2025318584",
+      "name": "UNWIND",
+      "region": "jeonbuk",
+      "slug": "naver-2025318584",
+      "subcategory": null,
+      "district": "군산시",
+      "address": "전북특별자치도 군산시 삼수길 30",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2025318584/home",
+      "kakaoUrl": "https://place.map.kakao.com/450504133",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 영문·숫자 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1169234483",
+      "name": "구디츠",
+      "region": "jeonnam",
+      "slug": "naver-1169234483",
+      "subcategory": null,
+      "district": "순천시",
+      "address": "전남광주통합특별시 순천시 왕지1길 3-6",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1169234483/home",
+      "kakaoUrl": "https://place.map.kakao.com/44631536",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-16744300",
+      "name": "꼬미꼬미",
+      "region": "jeonnam",
+      "slug": "naver-16744300",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 원산중앙로 41-1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/16744300/home",
+      "kakaoUrl": "https://place.map.kakao.com/12128976",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1107022884",
+      "name": "누아",
+      "region": "jeonnam",
+      "slug": "naver-1107022884",
+      "subcategory": null,
+      "district": "완도군",
+      "address": "전남광주통합특별시 완도군 완도읍 군내21번길 33-36",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1107022884/home",
+      "kakaoUrl": "https://place.map.kakao.com/2110926596",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 유럽어풍 이름이라 양식·카페·와인바 중 하나로 보이지만 가르지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1766338959",
+      "name": "대원정",
+      "region": "jeonnam",
+      "slug": "naver-1766338959",
+      "subcategory": null,
+      "district": "보성군",
+      "address": "전남광주통합특별시 보성군 보성읍 녹차로 783",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1766338959/home",
+      "kakaoUrl": "https://place.map.kakao.com/27107712",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1586721091",
+      "name": "만끽",
+      "region": "jeonnam",
+      "slug": "naver-1586721091",
+      "subcategory": null,
+      "district": "여수시",
+      "address": "전남광주통합특별시 여수시 소호7길 17-5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1586721091/home",
+      "kakaoUrl": "https://place.map.kakao.com/423879521",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-2090793202",
+      "name": "만배식탁 순천점",
+      "region": "jeonnam",
+      "slug": "naver-2090793202",
+      "subcategory": null,
+      "district": "순천시",
+      "address": "전남광주통합특별시 순천시 해룡면 기적의도서관1길 71",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2090793202/home",
+      "kakaoUrl": "https://place.map.kakao.com/1756351345",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / '식탁'은 음식 종류를 가리키지 않고, 나머지도 고유명사. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-2038975396",
+      "name": "바닐라빌라",
+      "region": "jeonnam",
+      "slug": "naver-2038975396",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 유동로 45-1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2038975396/home",
+      "kakaoUrl": "https://place.map.kakao.com/1814356400",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-21568910",
+      "name": "바다맛",
+      "region": "jeonnam",
+      "slug": "naver-21568910",
+      "subcategory": null,
+      "district": "여수시",
+      "address": "전남광주통합특별시 여수시 돌산읍 강남로 72",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/21568910/home",
+      "kakaoUrl": "https://place.map.kakao.com/14644295",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '바다'로 보아 해산물 같지만 횟집(한식)·일식·술집 중 무엇인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1991997120",
+      "name": "버트",
+      "region": "jeonnam",
+      "slug": "naver-1991997120",
+      "subcategory": null,
+      "district": "담양군",
+      "address": "전남광주통합특별시 담양군 담양읍 추성로 1186",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1991997120/home",
+      "kakaoUrl": "https://place.map.kakao.com/1386213406",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1543297676",
+      "name": "새벽",
+      "region": "jeonnam",
+      "slug": "naver-1543297676",
+      "subcategory": null,
+      "district": "여수시",
+      "address": "전남광주통합특별시 여수시 미평로 74",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1543297676/home",
+      "kakaoUrl": "https://place.map.kakao.com/2042975355",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1945036149",
+      "name": "서식",
+      "region": "jeonnam",
+      "slug": "naver-1945036149",
+      "subcategory": null,
+      "district": "순천시",
+      "address": "전남광주통합특별시 순천시 남신월3길 5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1945036149/home",
+      "kakaoUrl": "https://place.map.kakao.com/1381546924",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-2030319605",
+      "name": "소미온",
+      "region": "jeonnam",
+      "slug": "naver-2030319605",
+      "subcategory": null,
+      "district": "여수시",
+      "address": "전남 여수시 돌산읍 돌산로 2912 주1동 1층",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2030319605/home",
+      "kakaoUrl": "https://place.map.kakao.com/2026042618",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1180349486",
+      "name": "씨펄",
+      "region": "jeonnam",
+      "slug": "naver-1180349486",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 하당남부로 65",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1180349486/home",
+      "kakaoUrl": "https://place.map.kakao.com/28278237",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-2017875990",
+      "name": "영영",
+      "region": "jeonnam",
+      "slug": "naver-2017875990",
+      "subcategory": null,
+      "district": "여수시",
+      "address": "전남광주통합특별시 여수시 신기남3길 24",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2017875990/home",
+      "kakaoUrl": "https://place.map.kakao.com/1804160760",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-2017170433",
+      "name": "오수돈생",
+      "region": "jeonnam",
+      "slug": "naver-2017170433",
+      "subcategory": null,
+      "district": "순천시",
+      "address": "전남광주통합특별시 순천시 옥천길 46",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2017170433/home",
+      "kakaoUrl": "https://place.map.kakao.com/1467227169",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '돈'(돼지)으로 보아 돼지고기(한식) 같지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1429211334",
+      "name": "오의 여수죽림점",
+      "region": "jeonnam",
+      "slug": "naver-1429211334",
+      "subcategory": null,
+      "district": "여수시",
+      "address": "전남광주통합특별시 여수시 소라면 죽림1길 6",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1429211334/home",
+      "kakaoUrl": "https://place.map.kakao.com/1183561632",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-36316787",
+      "name": "원조 갯내음",
+      "region": "jeonnam",
+      "slug": "naver-36316787",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 원형동로 43",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/36316787/home",
+      "kakaoUrl": "https://place.map.kakao.com/620841278",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '갯벌·갯내음'으로 보아 조개·해산물(한식) 같지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1342349148",
+      "name": "유달제면소",
+      "region": "jeonnam",
+      "slug": "naver-1342349148",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 평화로43번길 1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1342349148/home",
+      "kakaoUrl": "https://place.map.kakao.com/251088272",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '제면소'는 면을 직접 뽑는 집이라는 뜻뿐. 칼국수(한식)·우동/라멘(일식)·중식면 중 무엇인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-16080483",
+      "name": "유진정",
+      "region": "jeonnam",
+      "slug": "naver-16080483",
+      "subcategory": null,
+      "district": "담양군",
+      "address": "전남광주통합특별시 담양군 금성면 시암골로 17",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/16080483/home",
+      "kakaoUrl": "https://place.map.kakao.com/217801379",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1480963227",
+      "name": "육사심",
+      "region": "jeonnam",
+      "slug": "naver-1480963227",
+      "subcategory": null,
+      "district": "순천시",
+      "address": "전남광주통합특별시 순천시 기적의도서관길 44",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1480963227/home",
+      "kakaoUrl": "https://place.map.kakao.com/676882996",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '육'(고기)으로 보아 고깃집(한식) 같지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1157642817",
+      "name": "일일공오 1105",
+      "region": "jeonnam",
+      "slug": "naver-1157642817",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 비파로51번길 5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1157642817/home",
+      "kakaoUrl": "https://place.map.kakao.com/283220704",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1521834873",
+      "name": "정심",
+      "region": "jeonnam",
+      "slug": "naver-1521834873",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 원형로 37",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1521834873/home",
+      "kakaoUrl": "https://place.map.kakao.com/779051961",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1373493512",
+      "name": "정한",
+      "region": "jeonnam",
+      "slug": "naver-1373493512",
+      "subcategory": null,
+      "district": "순천시",
+      "address": "전남광주통합특별시 순천시 대석4길 4",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1373493512/home",
+      "kakaoUrl": "https://place.map.kakao.com/1503196759",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1208395538",
+      "name": "정희 순천점",
+      "region": "jeonnam",
+      "slug": "naver-1208395538",
+      "subcategory": null,
+      "district": "순천시",
+      "address": "전남광주통합특별시 순천시 왕지4길 29-6",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1208395538/home",
+      "kakaoUrl": "https://place.map.kakao.com/500782419",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 여수·순천 말고 서울(김포공항)에도 지점이 있는 가게로 보이지만 무엇을 파는지 확인하지 못함. 같은 가게 2곳. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1036731331",
+      "name": "정희 여수점",
+      "region": "jeonnam",
+      "slug": "naver-1036731331",
+      "subcategory": null,
+      "district": "여수시",
+      "address": "전남광주통합특별시 여수시 웅남4길 31",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1036731331/home",
+      "kakaoUrl": "https://place.map.kakao.com/497389774",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 여수·순천 말고 서울(김포공항)에도 지점이 있는 가게로 보이지만 무엇을 파는지 확인하지 못함. 같은 가게 2곳. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1444088650",
+      "name": "족자카야",
+      "region": "jeonnam",
+      "slug": "naver-1444088650",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 영산로59번길 1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1444088650/home",
+      "kakaoUrl": "https://place.map.kakao.com/1382630746",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '족'(족발)+'자카야'(이자카야)로 읽혀 한식과 주점에 걸침. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-2027987672",
+      "name": "진상",
+      "region": "jeonnam",
+      "slug": "naver-2027987672",
+      "subcategory": null,
+      "district": "광양시",
+      "address": "전남광주통합특별시 광양시 진상면 옥진로 1085",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2027987672/home",
+      "kakaoUrl": "https://place.map.kakao.com/8215861",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-2093297521",
+      "name": "짚",
+      "region": "jeonnam",
+      "slug": "naver-2093297521",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 해양대학로139번길 23-1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2093297521/home",
+      "kakaoUrl": "https://place.map.kakao.com/1151022592",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1983640525",
+      "name": "초루",
+      "region": "jeonnam",
+      "slug": "naver-1983640525",
+      "subcategory": null,
+      "district": "보성군",
+      "address": "전남광주통합특별시 보성군 득량면 기남길 142-130",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1983640525/home",
+      "kakaoUrl": "https://place.map.kakao.com/1711412641",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1620964854",
+      "name": "트라이팟",
+      "region": "jeonnam",
+      "slug": "naver-1620964854",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 당가두로14번길 28",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1620964854/home",
+      "kakaoUrl": "https://place.map.kakao.com/670031710",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1952419969",
+      "name": "팔미방",
+      "region": "jeonnam",
+      "slug": "naver-1952419969",
+      "subcategory": null,
+      "district": "순천시",
+      "address": "전남광주통합특별시 순천시 왕지2길 3-6",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1952419969/home",
+      "kakaoUrl": "https://place.map.kakao.com/1373465606",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1707024229",
+      "name": "피시테리안/피시테리",
+      "region": "jeonnam",
+      "slug": "naver-1707024229",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 수강로 11-2",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1707024229/home",
+      "kakaoUrl": "https://place.map.kakao.com/1110032587",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '피시'(생선)로 보이지만 양식·일식·한식 중 무엇인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-12867258",
+      "name": "하늘지기",
+      "region": "jeonnam",
+      "slug": "naver-12867258",
+      "subcategory": null,
+      "district": "순천시",
+      "address": "전남광주통합특별시 순천시 기적의도서관2길 18",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/12867258/home",
+      "kakaoUrl": "https://place.map.kakao.com/8644049",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-12884698",
+      "name": "하당일번지",
+      "region": "jeonnam",
+      "slug": "naver-12884698",
+      "subcategory": null,
+      "district": "목포시",
+      "address": "전남광주통합특별시 목포시 하당로30번길 8",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/12884698/home",
+      "kakaoUrl": "https://place.map.kakao.com/10860691",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1932387432",
+      "name": "하루한모",
+      "region": "jeonnam",
+      "slug": "naver-1932387432",
+      "subcategory": null,
+      "district": "순천시",
+      "address": "전남광주통합특별시 순천시 해룡면 향매로 126",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1932387432/home",
+      "kakaoUrl": "https://place.map.kakao.com/638655787",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '한모·콩두'로 보아 두부·콩 요리(한식) 같지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "jeonnam/naver-1915669393",
+      "name": "호시탐탐",
+      "region": "jeonnam",
+      "slug": "naver-1915669393",
+      "subcategory": null,
+      "district": "여수시",
+      "address": "전남광주통합특별시 여수시 장성3길 24",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1915669393/home",
+      "kakaoUrl": "https://place.map.kakao.com/1647525635",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "sejong/naver-1570571248",
+      "name": "뜰 세종해밀 본점",
+      "region": "sejong",
+      "slug": "naver-1570571248",
+      "subcategory": null,
+      "district": "세종",
+      "address": "세종특별자치시 해밀3로 85",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1570571248/home",
+      "kakaoUrl": "https://place.map.kakao.com/1218188617",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "sejong/naver-1500436808",
+      "name": "라쎄종",
+      "region": "sejong",
+      "slug": "naver-1500436808",
+      "subcategory": null,
+      "district": "세종",
+      "address": "세종특별자치시 나성로 96",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1500436808/home",
+      "kakaoUrl": "https://place.map.kakao.com/1838458013",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 유럽어풍 이름이라 양식·카페·와인바 중 하나로 보이지만 가르지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "sejong/naver-1956988849",
+      "name": "라운지46",
+      "region": "sejong",
+      "slug": "naver-1956988849",
+      "subcategory": null,
+      "district": "세종",
+      "address": "세종특별자치시 나성북1로 51",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1956988849/home",
+      "kakaoUrl": "https://place.map.kakao.com/695686940",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '라운지'는 바(주점)일 수도, 카페일 수도 있음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "sejong/naver-1819638410",
+      "name": "야호래",
+      "region": "sejong",
+      "slug": "naver-1819638410",
+      "subcategory": null,
+      "district": "세종",
+      "address": "세종특별자치시 전동면 고산길 71",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1819638410/home",
+      "kakaoUrl": "https://place.map.kakao.com/16962041",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "sejong/naver-1656042233",
+      "name": "연화섬",
+      "region": "sejong",
+      "slug": "naver-1656042233",
+      "subcategory": null,
+      "district": "세종",
+      "address": "세종특별자치시 갈매로 353",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1656042233/home",
+      "kakaoUrl": "https://place.map.kakao.com/1475809932",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "sejong/naver-1053411264",
+      "name": "요이텐",
+      "region": "sejong",
+      "slug": "naver-1053411264",
+      "subcategory": null,
+      "district": "세종",
+      "address": "세종특별자치시 한누리대로 2165",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1053411264/home",
+      "kakaoUrl": "https://place.map.kakao.com/809038175",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '텐'(튀김)이 든 일본어풍 이름. 텐동·덴푸라(일식)로 보이지만 확정하지 못함. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "sejong/naver-1177485965",
+      "name": "임대장 세종나성점",
+      "region": "sejong",
+      "slug": "naver-1177485965",
+      "subcategory": null,
+      "district": "세종",
+      "address": "세종특별자치시 나성북로 9",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1177485965/home",
+      "kakaoUrl": "https://place.map.kakao.com/1233161490",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "sejong/naver-2069388475",
+      "name": "타키 세종나성점",
+      "region": "sejong",
+      "slug": "naver-2069388475",
+      "subcategory": null,
+      "district": "세종",
+      "address": "세종특별자치시 나성북1로 22",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2069388475/home",
+      "kakaoUrl": "https://place.map.kakao.com/1784435621",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색은 아직 못 함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1557155795",
+      "name": "1808",
+      "region": "seoul",
+      "slug": "naver-1557155795",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 도산대로 216",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1557155795/home",
+      "kakaoUrl": "https://place.map.kakao.com/1146706900",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 영문·숫자 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드 · 폴레)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/kakao-1047245706",
+      "name": "갈대포",
+      "region": "seoul",
+      "slug": "kakao-1047245706",
+      "subcategory": null,
+      "district": "관악구",
+      "address": "서울 관악구 신림로11길 18-7",
+      "collections": [
+        "Sikr"
+      ],
+      "naverUrl": null,
+      "kakaoUrl": "https://place.map.kakao.com/1047245706",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드 · 폴레)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1366205207",
+      "name": "굽",
+      "region": "seoul",
+      "slug": "naver-1366205207",
+      "subcategory": null,
+      "district": "중구",
+      "address": "서울 중구 다산로42길 33",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1366205207/home",
+      "kakaoUrl": "https://place.map.kakao.com/1781786214",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '굽'은 구이를 떠올리게 하지만 무엇을 굽는지 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2098303895",
+      "name": "그루트",
+      "region": "seoul",
+      "slug": "naver-2098303895",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 강남대로110길 70",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2098303895/home",
+      "kakaoUrl": "https://place.map.kakao.com/722488533",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1048776964",
+      "name": "그룬트",
+      "region": "seoul",
+      "slug": "naver-1048776964",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 성수이로12길 13",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1048776964/home",
+      "kakaoUrl": "https://place.map.kakao.com/2135234063",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2040225659",
+      "name": "까사꼬네호",
+      "region": "seoul",
+      "slug": "naver-2040225659",
+      "subcategory": null,
+      "district": "중구",
+      "address": "서울 중구 다산로20길 3",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2040225659/home",
+      "kakaoUrl": "https://place.map.kakao.com/1627183009",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 유럽어풍 이름이라 양식·카페·와인바 중 하나로 보이지만 가르지 못함. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2092472020",
+      "name": "나린제",
+      "region": "seoul",
+      "slug": "naver-2092472020",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 성수일로12가길 12-13",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2092472020/home",
+      "kakaoUrl": "https://place.map.kakao.com/539672530",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2054341602",
+      "name": "넓은마당",
+      "region": "seoul",
+      "slug": "naver-2054341602",
+      "subcategory": null,
+      "district": "노원구",
+      "address": "서울 노원구 상계동",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2054341602/home",
+      "kakaoUrl": "https://place.map.kakao.com/19264986",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1386154822",
+      "name": "다팀",
+      "region": "seoul",
+      "slug": "naver-1386154822",
+      "subcategory": null,
+      "district": "서초구",
+      "address": "서울 서초구 언남길 35",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1386154822/home",
+      "kakaoUrl": "https://place.map.kakao.com/1968288855",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1074749296",
+      "name": "대양장",
+      "region": "seoul",
+      "slug": "naver-1074749296",
+      "subcategory": null,
+      "district": "서대문구",
+      "address": "서울 서대문구 연세로 23",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1074749296/home",
+      "kakaoUrl": "https://place.map.kakao.com/781032986",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1938018806",
+      "name": "동남방앗간 한남점",
+      "region": "seoul",
+      "slug": "naver-1938018806",
+      "subcategory": null,
+      "district": "용산구",
+      "address": "서울 용산구 유엔빌리지길 20",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1938018806/home",
+      "kakaoUrl": "https://place.map.kakao.com/2082780426",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2094093935",
+      "name": "둥우리",
+      "region": "seoul",
+      "slug": "naver-2094093935",
+      "subcategory": null,
+      "district": "중구",
+      "address": "서울 중구 다산로21길 14",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2094093935/home",
+      "kakaoUrl": "https://place.map.kakao.com/437902138",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1739638792",
+      "name": "랑게",
+      "region": "seoul",
+      "slug": "naver-1739638792",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 독막로31길 10",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1739638792/home",
+      "kakaoUrl": "https://place.map.kakao.com/413567097",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2091607037",
+      "name": "로그 성수",
+      "region": "seoul",
+      "slug": "naver-2091607037",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 서울숲2길 36",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2091607037/home",
+      "kakaoUrl": "https://place.map.kakao.com/1809908742",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2061812129",
+      "name": "맥그리코 혜화대학로점",
+      "region": "seoul",
+      "slug": "naver-2061812129",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 대학로 127-11",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2061812129/home",
+      "kakaoUrl": "https://place.map.kakao.com/1087177415",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2096559480",
+      "name": "멘쿠도 성수점",
+      "region": "seoul",
+      "slug": "naver-2096559480",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 성수일로8길 53",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2096559480/home",
+      "kakaoUrl": "https://place.map.kakao.com/1643913809",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '멘'(면)으로 보아 라멘·면 요리 같지만 일식인지 다른 면 요리인지 확정하지 못함. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1309585620",
+      "name": "밀라노식당",
+      "region": "seoul",
+      "slug": "naver-1309585620",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 연남로1길 6-9",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1309585620/home",
+      "kakaoUrl": "https://place.map.kakao.com/1639985680",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '밀라노'로 보아 이탈리안(양식) 같지만 '식당'이라 확정하지 못함. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1023957785",
+      "name": "바위드",
+      "region": "seoul",
+      "slug": "naver-1023957785",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 양화로8길 38",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1023957785/home",
+      "kakaoUrl": "https://place.map.kakao.com/1265684236",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2040091689",
+      "name": "반지하 선릉점",
+      "region": "seoul",
+      "slug": "naver-2040091689",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 삼성로61길 45",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2040091689/home",
+      "kakaoUrl": "https://place.map.kakao.com/66232959",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-36379024",
+      "name": "베리키친",
+      "region": "seoul",
+      "slug": "naver-36379024",
+      "subcategory": null,
+      "district": "중구",
+      "address": "서울 중구 만리재로 205",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/36379024/home",
+      "kakaoUrl": "https://place.map.kakao.com/26644530",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / '키친'은 음식 종류를 가리키지 않고, 나머지도 고유명사. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-37282209",
+      "name": "베이킹 도우",
+      "region": "seoul",
+      "slug": "naver-37282209",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 창덕궁길 29",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/37282209/home",
+      "kakaoUrl": "https://place.map.kakao.com/1174216011",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '도우·오븐'은 베이커리(카페·디저트)일 수도, 피자집(양식)일 수도 있음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1635873247",
+      "name": "보또비노",
+      "region": "seoul",
+      "slug": "naver-1635873247",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 광나루로4가길 2",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1635873247/home",
+      "kakaoUrl": "https://place.map.kakao.com/691956619",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '비노'(와인)로 보아 와인바(주점)나 이탈리안(양식) 중 하나로 보임. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-35545619",
+      "name": "브라운 에비뉴",
+      "region": "seoul",
+      "slug": "naver-35545619",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 혜화로3길 5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/35545619/home",
+      "kakaoUrl": "https://place.map.kakao.com/295738267",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2087485549",
+      "name": "비바",
+      "region": "seoul",
+      "slug": "naver-2087485549",
+      "subcategory": null,
+      "district": "서대문구",
+      "address": "서울 서대문구 동교로 296",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2087485549/home",
+      "kakaoUrl": "https://place.map.kakao.com/182374697",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2004379803",
+      "name": "비오",
+      "region": "seoul",
+      "slug": "naver-2004379803",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 돈화문로6가길 6",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2004379803/home",
+      "kakaoUrl": "https://place.map.kakao.com/16790031",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2066965601",
+      "name": "빅러브토마토",
+      "region": "seoul",
+      "slug": "naver-2066965601",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 우정국로 26",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2066965601/home",
+      "kakaoUrl": "https://place.map.kakao.com/1313538079",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1274948513",
+      "name": "빅테일 동묘",
+      "region": "seoul",
+      "slug": "naver-1274948513",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 종로52길 43-17",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1274948513/home",
+      "kakaoUrl": "https://place.map.kakao.com/1051704136",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1862358398",
+      "name": "빌라토",
+      "region": "seoul",
+      "slug": "naver-1862358398",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 독막로 277",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1862358398/home",
+      "kakaoUrl": "https://place.map.kakao.com/859722690",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/kakao-16818524",
+      "name": "산수 사당본점",
+      "region": "seoul",
+      "slug": "kakao-16818524",
+      "subcategory": null,
+      "district": "동작구",
+      "address": "서울 동작구 동작대로3길 17",
+      "collections": [
+        "Sikr"
+      ],
+      "naverUrl": null,
+      "kakaoUrl": "https://place.map.kakao.com/16818524",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-19878363",
+      "name": "섬소년자연주의",
+      "region": "seoul",
+      "slug": "naver-19878363",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 월드컵북로6길 12",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/19878363/home",
+      "kakaoUrl": "https://place.map.kakao.com/9177796",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2034786984",
+      "name": "실비무교",
+      "region": "seoul",
+      "slug": "naver-2034786984",
+      "subcategory": null,
+      "district": "중구",
+      "address": "서울 중구 세종대로22길 12",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2034786984/home",
+      "kakaoUrl": "https://place.map.kakao.com/2034865825",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '실비'(실비집)로 보아 술집(주점)이나 한식 백반 중 하나로 보임. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1334028812",
+      "name": "아웃오브오더",
+      "region": "seoul",
+      "slug": "naver-1334028812",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 아차산로13길 2",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1334028812/home",
+      "kakaoUrl": "https://place.map.kakao.com/341830706",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1912626916",
+      "name": "아후 Ahoo",
+      "region": "seoul",
+      "slug": "naver-1912626916",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 뚝섬로 341-18",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1912626916/home",
+      "kakaoUrl": "https://place.map.kakao.com/1984445511",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2092502028",
+      "name": "알렉스루카",
+      "region": "seoul",
+      "slug": "naver-2092502028",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 강남대로 338",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2092502028/home",
+      "kakaoUrl": "https://place.map.kakao.com/1648318295",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2022737326",
+      "name": "앵그리누들",
+      "region": "seoul",
+      "slug": "naver-2022737326",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 테헤란로4길 35",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2022737326/home",
+      "kakaoUrl": "https://place.map.kakao.com/1348542185",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 검색 결과가 '에그누들'라서 한 카테고리로 정하지 못함. '누들'만으로는 어떤 면 요리인지 알 수 없음 [다이닝코드](https://www.diningcode.com/profile.php?rid=n6LDr2LTpcb3)",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2092681070",
+      "name": "어구생",
+      "region": "seoul",
+      "slug": "naver-2092681070",
+      "subcategory": null,
+      "district": "서대문구",
+      "address": "서울 서대문구 연희로 188-1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2092681070/home",
+      "kakaoUrl": "https://place.map.kakao.com/1012476566",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1596684844",
+      "name": "어부이야기",
+      "region": "seoul",
+      "slug": "naver-1596684844",
+      "subcategory": null,
+      "district": "서초구",
+      "address": "서울 서초구 방배천로2길 29-2",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1596684844/home",
+      "kakaoUrl": "https://place.map.kakao.com/763843172",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '어부'로 보아 해산물집 같지만 횟집(한식)인지 술집(주점)인지 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1736738437",
+      "name": "에스메로",
+      "region": "seoul",
+      "slug": "naver-1736738437",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 뚝섬로13길 36",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1736738437/home",
+      "kakaoUrl": "https://place.map.kakao.com/935640631",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2032357843",
+      "name": "연희 바다",
+      "region": "seoul",
+      "slug": "naver-2032357843",
+      "subcategory": null,
+      "district": "서대문구",
+      "address": "서울 서대문구 연희로 81-5",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2032357843/home",
+      "kakaoUrl": "https://place.map.kakao.com/1148500584",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '바다'로 보아 해산물 같지만 횟집(한식)·일식·술집 중 무엇인지 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2012444424",
+      "name": "올리멘 강남 빗썸금융타워점",
+      "region": "seoul",
+      "slug": "naver-2012444424",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 테헤란로 129",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2012444424/home",
+      "kakaoUrl": "https://place.map.kakao.com/1673109103",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '멘'(면)으로 보아 라멘·면 요리 같지만 일식인지 다른 면 요리인지 확정하지 못함. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2029371902",
+      "name": "우치야",
+      "region": "seoul",
+      "slug": "naver-2029371902",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 사직로 105",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2029371902/home",
+      "kakaoUrl": "https://place.map.kakao.com/820131720",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1923586497",
+      "name": "움푹",
+      "region": "seoul",
+      "slug": "naver-1923586497",
+      "subcategory": null,
+      "district": "중구",
+      "address": "서울 중구 충무로4길 19-4",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1923586497/home",
+      "kakaoUrl": "https://place.map.kakao.com/487138785",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1974548944",
+      "name": "이와자루 성수",
+      "region": "seoul",
+      "slug": "naver-1974548944",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 연무장3길 9-14",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1974548944/home",
+      "kakaoUrl": "https://place.map.kakao.com/54225688",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1983944498",
+      "name": "이케",
+      "region": "seoul",
+      "slug": "naver-1983944498",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 봉은사로29길 7",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1983944498/home",
+      "kakaoUrl": "https://place.map.kakao.com/593647129",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1286056717",
+      "name": "제야",
+      "region": "seoul",
+      "slug": "naver-1286056717",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 우정국로2길 17",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1286056717/home",
+      "kakaoUrl": "https://place.map.kakao.com/1695561303",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2039056625",
+      "name": "종로클라쓰",
+      "region": "seoul",
+      "slug": "naver-2039056625",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 돈화문로11길 33",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2039056625/home",
+      "kakaoUrl": "https://place.map.kakao.com/990942830",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-36651713",
+      "name": "청춘식당미래소년",
+      "region": "seoul",
+      "slug": "naver-36651713",
+      "subcategory": null,
+      "district": "서초구",
+      "address": "서울 서초구 나루터로12길 30",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/36651713/home",
+      "kakaoUrl": "https://place.map.kakao.com/25633306",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / '식당'은 음식 종류를 가리키지 않고, 나머지도 고유명사. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-38264451",
+      "name": "카루",
+      "region": "seoul",
+      "slug": "naver-38264451",
+      "subcategory": null,
+      "district": "서초구",
+      "address": "서울 서초구 서초대로 275",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/38264451/home",
+      "kakaoUrl": "https://place.map.kakao.com/227441671",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2008465062",
+      "name": "칸트힐",
+      "region": "seoul",
+      "slug": "naver-2008465062",
+      "subcategory": null,
+      "district": "중구",
+      "address": "서울 중구 장충단로8길 45",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2008465062/home",
+      "kakaoUrl": "https://place.map.kakao.com/115363805",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1826026569",
+      "name": "쿠히치 압구정점",
+      "region": "seoul",
+      "slug": "naver-1826026569",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 도산대로51길 16",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1826026569/home",
+      "kakaoUrl": "https://place.map.kakao.com/370642730",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2094230942",
+      "name": "키노이에 파티",
+      "region": "seoul",
+      "slug": "naver-2094230942",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 도산대로72길 8",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2094230942/home",
+      "kakaoUrl": "https://place.map.kakao.com/527159312",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 키노이에(일식)의 자매점으로 보이지만 같은 메뉴인지 확인하지 못함. 일식 아니면 주점. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1074062899",
+      "name": "키슌",
+      "region": "seoul",
+      "slug": "naver-1074062899",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 논현로151길 19",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1074062899/home",
+      "kakaoUrl": "https://place.map.kakao.com/1113615076",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 일본어풍 이름이라 일식 아니면 주점(이자카야)으로 좁혀지지만 어느 쪽인지 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/kakao-1573253740",
+      "name": "키친봄날",
+      "region": "seoul",
+      "slug": "kakao-1573253740",
+      "subcategory": null,
+      "district": "서대문구",
+      "address": "서울 서대문구 신촌로11길 62",
+      "collections": [
+        "Sikr",
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1590626814/home",
+      "kakaoUrl": "https://place.map.kakao.com/1573253740",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / '키친'은 음식 종류를 가리키지 않고, 나머지도 고유명사. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1837437884",
+      "name": "토리비 합정점",
+      "region": "seoul",
+      "slug": "naver-1837437884",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 독막로 31-3",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1837437884/home",
+      "kakaoUrl": "https://place.map.kakao.com/545932119",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '토리'(닭)가 든 일본어풍 이름. 야키토리(주점)일 가능성이 높지만 일식 닭요리일 수도 있음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2039983018",
+      "name": "토파",
+      "region": "seoul",
+      "slug": "naver-2039983018",
+      "subcategory": null,
+      "district": "강남구",
+      "address": "서울 강남구 도산대로68길 11",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2039983018/home",
+      "kakaoUrl": "https://place.map.kakao.com/415888006",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2094972347",
+      "name": "토피",
+      "region": "seoul",
+      "slug": "naver-2094972347",
+      "subcategory": null,
+      "district": "서초구",
+      "address": "서울 서초구 서초대로26길 7",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2094972347/home",
+      "kakaoUrl": "https://place.map.kakao.com/1645888209",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1662708681",
+      "name": "팬톤 클래식",
+      "region": "seoul",
+      "slug": "naver-1662708681",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 뚝섬로9길 13-1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1662708681/home",
+      "kakaoUrl": "https://place.map.kakao.com/1045051140",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1732986089",
+      "name": "포도젝트",
+      "region": "seoul",
+      "slug": "naver-1732986089",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 뚝섬로7길 7-1",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1732986089/home",
+      "kakaoUrl": "https://place.map.kakao.com/80972708",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / '포도'로 보아 와인바(주점) 같지만 확정하지 못함. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2080385901",
+      "name": "프레스코",
+      "region": "seoul",
+      "slug": "naver-2080385901",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 월드컵로5길 53",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2080385901/home",
+      "kakaoUrl": "https://place.map.kakao.com/140903625",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름 단서가 갈림 / 유럽어풍 이름이라 양식·카페·와인바 중 하나로 보이지만 가르지 못함. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2003857763",
+      "name": "피엔에이 서촌",
+      "region": "seoul",
+      "slug": "naver-2003857763",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 효자로7길 9",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2003857763/home",
+      "kakaoUrl": "https://place.map.kakao.com/1361315797",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1098697502",
+      "name": "핑퐁서울",
+      "region": "seoul",
+      "slug": "naver-1098697502",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 동교로 282",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1098697502/home",
+      "kakaoUrl": "https://place.map.kakao.com/1307961934",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2016354571",
+      "name": "하이브 플레이그라운드",
+      "region": "seoul",
+      "slug": "naver-2016354571",
+      "subcategory": null,
+      "district": "용산구",
+      "address": "서울 용산구 한강대로15길 9-17 2~4층",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2016354571/home",
+      "kakaoUrl": "https://place.map.kakao.com/1715146142",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1705177116",
+      "name": "해누리",
+      "region": "seoul",
+      "slug": "naver-1705177116",
+      "subcategory": null,
+      "district": "강서구",
+      "address": "서울 강서구 공항대로59가길 17",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1705177116/home",
+      "kakaoUrl": "https://place.map.kakao.com/1173275063",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2095019461",
+      "name": "해방촌 이음",
+      "region": "seoul",
+      "slug": "naver-2095019461",
+      "subcategory": null,
+      "district": "용산구",
+      "address": "서울 용산구 소월로20길 22",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2095019461/home",
+      "kakaoUrl": "https://place.map.kakao.com/190932092",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-2000889807",
+      "name": "헨릭",
+      "region": "seoul",
+      "slug": "naver-2000889807",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 송정4길 10 1층",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/2000889807/home",
+      "kakaoUrl": "https://place.map.kakao.com/1763765181",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1856927545",
+      "name": "호랭이카노",
+      "region": "seoul",
+      "slug": "naver-1856927545",
+      "subcategory": null,
+      "district": "성동구",
+      "address": "서울 성동구 아차산로1길 10",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1856927545/home",
+      "kakaoUrl": "https://place.map.kakao.com/1216111405",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/kakao-803910728",
+      "name": "홍대 교도리",
+      "region": "seoul",
+      "slug": "kakao-803910728",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 와우산로 77",
+      "collections": [
+        "Sikr",
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1305041689/home",
+      "kakaoUrl": "https://place.map.kakao.com/803910728",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/kakao-1749957373",
+      "name": "화계장",
+      "region": "seoul",
+      "slug": "kakao-1749957373",
+      "subcategory": null,
+      "district": "노원구",
+      "address": "서울 노원구 동일로190길 49",
+      "collections": [
+        "Sikr"
+      ],
+      "naverUrl": null,
+      "kakaoUrl": "https://place.map.kakao.com/1749957373",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/kakao-967124721",
+      "name": "화락관 신촌 본점",
+      "region": "seoul",
+      "slug": "kakao-967124721",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 서강로 126-1",
+      "collections": [
+        "Sikr"
+      ],
+      "naverUrl": null,
+      "kakaoUrl": "https://place.map.kakao.com/967124721",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1011218680",
+      "name": "화류",
+      "region": "seoul",
+      "slug": "naver-1011218680",
+      "subcategory": null,
+      "district": "마포구",
+      "address": "서울 마포구 성지5길 19",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1011218680/home",
+      "kakaoUrl": "https://place.map.kakao.com/537483826",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 고유명사 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-19873255",
+      "name": "후스테이블",
+      "region": "seoul",
+      "slug": "naver-19873255",
+      "subcategory": null,
+      "district": "종로구",
+      "address": "서울 종로구 창덕궁1가길 8",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/19873255/home",
+      "kakaoUrl": "https://place.map.kakao.com/13082808",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / '테이블'은 음식 종류를 가리키지 않고, 나머지도 고유명사. 상호명 검색(다이닝코드)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    },
+    {
+      "key": "seoul/naver-1774444658",
+      "name": "FRAMER",
+      "region": "seoul",
+      "slug": "naver-1774444658",
+      "subcategory": null,
+      "district": "용산구",
+      "address": "서울 용산구 신흥로15길 18-8",
+      "collections": [
+        "맛지도 2026"
+      ],
+      "naverUrl": "https://m.place.naver.com/restaurant/1774444658/home",
+      "kakaoUrl": "https://place.map.kakao.com/1661424587",
+      "priorLabel": "미확정",
+      "priorNote": "종류 값 없음, 이름에 단서 없음 / 영문·숫자 이름이라 음식 종류를 알 수 없음. 상호명 검색(다이닝코드 · 폴레)에서도 찾지 못함",
+      "suggestedCategory": null,
+      "nonFoodCandidate": false
+    }
+  ]
+}
