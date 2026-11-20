@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T05:25:34.675Z",
+  "updatedAt": "2026-11-20T07:03:34.550Z",
   "source": "slack-export",
   "lastMessageTs": "1795053664.534799",
   "restaurants": [
@@ -6039,6 +6039,7 @@
       "name": "뀌쏭82",
       "area": "강남구",
       "district": "강남구",
+      "category": "양식",
       "tags": [],
       "addedAt": "2026-11-18T12:14:24.996Z",
       "updatedAt": "2026-11-18T12:14:30.288Z",
