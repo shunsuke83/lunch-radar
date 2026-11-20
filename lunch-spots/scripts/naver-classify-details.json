@@ -1,0 +1,217 @@
+{
+  "generatedAt": "2026-11-20T07:25:34.793Z",
+  "details": {
+    "chungbuk/naver-18106884": {
+      "sid": "18106884",
+      "naverName": "삼우정 본점",
+      "naverCategory": "한식",
+      "naverAddress": "서울 중구 서소문로 134-12",
+      "mapped": "한식"
+    },
+    "chungnam/naver-17481169": {
+      "sid": "17481169",
+      "naverName": "우미장 동대동",
+      "naverCategory": "한식",
+      "naverAddress": "충남 보령시 작은오랏8길 35 우미장",
+      "mapped": "한식"
+    },
+    "chungnam/naver-1976170182": {
+      "sid": "1976170182",
+      "naverName": "화육우소 천안두정점",
+      "naverCategory": "육류,고기요리",
+      "naverAddress": "충남 천안시 서북구 오성4길 3 101호",
+      "mapped": "한식"
+    },
+    "daegu/naver-2091882564": {
+      "sid": "2091882564",
+      "naverName": "뉴요크",
+      "naverCategory": "카페,디저트",
+      "naverAddress": "서울 성동구 성덕정15길 12 1층 남3호 뉴요크",
+      "mapped": "카페·디저트"
+    },
+    "daegu/naver-1224154264": {
+      "sid": "1224154264",
+      "naverName": "레브 동명점",
+      "naverCategory": "양식",
+      "naverAddress": "전남광주 동구 동명로14번길 29 레브",
+      "mapped": "양식"
+    },
+    "daegu/naver-35228395": {
+      "sid": "35228395",
+      "naverName": "방짜",
+      "naverCategory": "곱창,막창,양",
+      "naverAddress": "경기 성남시 분당구 황새울로 315 대현빌딩 103호 서현방짜",
+      "mapped": "한식"
+    },
+    "gwangju/naver-16303120": {
+      "sid": "16303120",
+      "naverName": "털보하우스",
+      "naverCategory": "한식",
+      "naverAddress": "전남광주 북구 우치로126번길 7",
+      "mapped": "한식"
+    },
+    "gyeongbuk/naver-2060786887": {
+      "sid": "2060786887",
+      "naverName": "황남",
+      "naverCategory": "한식",
+      "naverAddress": "서울 종로구 새문안로3길 36 지하1층 B112호, 113호",
+      "mapped": "한식"
+    },
+    "gyeonggi/naver-2008388043": {
+      "sid": "2008388043",
+      "naverName": "매쎄",
+      "naverCategory": "프랑스음식",
+      "naverAddress": "서울 강남구 논현로32길 5 1층 101호",
+      "mapped": "양식"
+    },
+    "gyeonggi/naver-1267330619": {
+      "sid": "1267330619",
+      "naverName": "어비스",
+      "naverCategory": "바(BAR)",
+      "naverAddress": "서울 종로구 사직로12길 19-17",
+      "mapped": "주점"
+    },
+    "gyeonggi/naver-34033715": {
+      "sid": "34033715",
+      "naverName": "열날개 본점",
+      "naverCategory": "닭요리",
+      "naverAddress": "충남 천안시 동남구 먹거리3길 14 1층 열날개",
+      "mapped": "한식"
+    },
+    "gyeonggi/naver-2004544425": {
+      "sid": "2004544425",
+      "naverName": "LOW42",
+      "naverCategory": "퓨전음식",
+      "naverAddress": "경기 성남시 분당구 판교공원로5길 23 1층",
+      "mapped": null
+    },
+    "incheon/naver-2054015933": {
+      "sid": "2054015933",
+      "naverName": "만나공원",
+      "naverCategory": "브런치카페",
+      "naverAddress": "전남광주 무안군 삼향읍 후광대로 292 2층 203호",
+      "mapped": "카페·디저트"
+    },
+    "jeju/naver-1222188712": {
+      "sid": "1222188712",
+      "naverName": "우주",
+      "naverCategory": "요리주점",
+      "naverAddress": "서울 중구 충무로5길 27 2층(을지로3가)",
+      "mapped": "주점"
+    },
+    "jeonbuk/naver-2000080898": {
+      "sid": "2000080898",
+      "naverName": "은주 전주에코시티점",
+      "naverCategory": "요리주점",
+      "naverAddress": "전북 전주시 덕진구 세병1길 10 1층 104, 105호",
+      "mapped": "주점"
+    },
+    "jeonbuk/naver-2025318584": {
+      "sid": "2025318584",
+      "naverName": "UNWIND",
+      "naverCategory": "양식",
+      "naverAddress": "전북 군산시 삼수길 30 2층",
+      "mapped": "양식"
+    },
+    "jeonnam/naver-2017170433": {
+      "sid": "2017170433",
+      "naverName": "오수돈생",
+      "naverCategory": "돈가스",
+      "naverAddress": "전남광주 순천시 옥천길 46 1호",
+      "mapped": "일식"
+    },
+    "jeonnam/naver-1157642817": {
+      "sid": "1157642817",
+      "naverName": "일일공오 1105",
+      "naverCategory": "돈가스",
+      "naverAddress": "전남광주 목포시 비파로51번길 5 1층",
+      "mapped": "일식"
+    },
+    "jeonnam/naver-1983640525": {
+      "sid": "1983640525",
+      "naverName": "초루",
+      "naverCategory": "일식당",
+      "naverAddress": "경기 성남시 분당구 서판교로44번길 3-19 1층 101호",
+      "mapped": "일식"
+    },
+    "jeonnam/naver-1707024229": {
+      "sid": "1707024229",
+      "naverName": "피시테리안/피시테리",
+      "naverCategory": "양식",
+      "naverAddress": "전남광주 목포시 수강로 11-2",
+      "mapped": "양식"
+    },
+    "seoul/naver-2098303895": {
+      "sid": "2098303895",
+      "naverName": "그루트",
+      "naverCategory": "요리주점",
+      "naverAddress": "전북 전주시 덕진구 명륜5길 17-1 1층",
+      "mapped": "주점"
+    },
+    "seoul/naver-2040091689": {
+      "sid": "2040091689",
+      "naverName": "반지하 선릉점",
+      "naverCategory": "돼지고기구이",
+      "naverAddress": "서울 강남구 선릉로86길 28 소풍김밥 내리막길, 뽕족 맞은편입니다",
+      "mapped": "한식"
+    },
+    "seoul/naver-36379024": {
+      "sid": "36379024",
+      "naverName": "베리키친",
+      "naverCategory": "퓨전음식",
+      "naverAddress": "서울 중구 만리재로 205",
+      "mapped": null
+    },
+    "seoul/naver-1274948513": {
+      "sid": "1274948513",
+      "naverName": "빅테일 동묘",
+      "naverCategory": "카페,디저트",
+      "naverAddress": "서울 종로구 종로52길 43-17 1층",
+      "mapped": "카페·디저트"
+    },
+    "seoul/naver-36651713": {
+      "sid": "36651713",
+      "naverName": "청춘식당미래소년",
+      "naverCategory": "아시아음식",
+      "naverAddress": "서울 서초구 나루터로12길 30 청춘식당미래소년",
+      "mapped": "아시안"
+    },
+    "seoul/kakao-803910728": {
+      "reason": "no-naver-id",
+      "name": "홍대 교도리"
+    },
+    "seoul/naver-1774444658": {
+      "sid": "1774444658",
+      "naverName": "FRAMER",
+      "naverCategory": "와인",
+      "naverAddress": "서울 용산구 신흥로15길 18-8 4층",
+      "mapped": "주점"
+    }
+  },
+  "classifications": {
+    "chungbuk/naver-18106884": "한식",
+    "chungnam/naver-17481169": "한식",
+    "chungnam/naver-1976170182": "한식",
+    "daegu/naver-2091882564": "카페·디저트",
+    "daegu/naver-1224154264": "양식",
+    "daegu/naver-35228395": "한식",
+    "gwangju/naver-16303120": "한식",
+    "gyeongbuk/naver-2060786887": "한식",
+    "gyeonggi/naver-2008388043": "양식",
+    "gyeonggi/naver-1267330619": "주점",
+    "gyeonggi/naver-34033715": "한식",
+    "incheon/naver-2054015933": "카페·디저트",
+    "jeju/naver-1222188712": "주점",
+    "jeonbuk/naver-2000080898": "주점",
+    "jeonbuk/naver-2025318584": "양식",
+    "jeonnam/naver-2017170433": "일식",
+    "jeonnam/naver-1157642817": "일식",
+    "jeonnam/naver-1983640525": "일식",
+    "jeonnam/naver-1707024229": "양식",
+    "seoul/naver-2098303895": "주점",
+    "seoul/naver-2040091689": "한식",
+    "seoul/naver-1274948513": "카페·디저트",
+    "seoul/naver-36651713": "아시안",
+    "seoul/naver-1774444658": "주점"
+  }
+}
