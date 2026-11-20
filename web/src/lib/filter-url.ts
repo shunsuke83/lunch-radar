@@ -94,7 +94,16 @@ export function parseExplorerSearch(search: string): Partial<ExplorerState> {
     const lat = Number(q.get("lat"));
     const lng = Number(q.get("lng"));
     const z = Number(q.get("z"));
-    if (Number.isFinite(lat) && Number.isFinite(lng) && Number.isFinite(z)) {
+    // Ignore coordinates far outside Korea (empty-map deep links).
+    if (
+      Number.isFinite(lat) &&
+      Number.isFinite(lng) &&
+      Number.isFinite(z) &&
+      lat >= 33 &&
+      lat <= 39.5 &&
+      lng >= 124 &&
+      lng <= 132
+    ) {
       out.map = { lat, lng, z };
     }
   }

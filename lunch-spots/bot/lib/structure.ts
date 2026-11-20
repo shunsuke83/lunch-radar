@@ -7,36 +7,48 @@ import {
   type Weekday,
 } from "./restaurants.js";
 
-// Checked per "·" segment of the subcategory, in order; the first segment
-// that matches decides, so "파스타·샐러드" is 양식 and "샐러드·스테이크" is 샐러드.
+// Same order/rules as web fix-categories / import-naver (first match wins).
 const GROUP_RULES: [CategoryGroup, RegExp][] = [
-  ["샐러드", /샐러드/],
-  ["분식", /분식|김밥|떡볶이|김말이|후토마키/],
-  ["아시안", /태국|베트남|쌀국수|팟타이|반미|인도|커리|아시안/],
-  ["중식", /중식|짬뽕|짜장|마라|딤섬|탕수육|유산슬|양꼬치/],
-  ["일식", /일식|라멘|우동|초밥|스시|돈카츠|돈까스|텐동|사케동|장어|참치|모밀/],
-  ["양식", /양식|파스타|스파게티|피자|버거|스테이크|샌드위치|브런치/],
+  ["한식", /사찰요리|사찰음식|발우공양/],
+  ["주점", /술집|주점|바\(BAR\)|^바$|호프|맥주|이자카야|포차|포장마차|와인|칵테일|요리주점|전통주|치맥|오뎅·꼬치|오뎅\/꼬치/],
+  ["카페·디저트", /카페|디저트|베이커리|빵|케이크|도넛|아이스크림|빙수|와플|초콜릿|전통찻집|커피|베이글/],
+  ["분식", /분식|김밥|떡볶이|김말이|후토마키|순대$|라면|만두/],
+  ["샐러드", /샐러드|포케|비건카페|비건베이/],
+  ["아시안", /태국|베트남|쌀국수|팟타이|반미|인도|커리|아시안|중동|멕시코|동남아|대만|네팔|터키/],
+  ["중식", /중식|중국|짬뽕|짜장|마라|딤섬|탕수육|유산슬|양꼬치/],
+  ["일식", /일식|일본|라멘|우동|초밥|스시|돈카츠|돈까스|돈가스|텐동|사케동|장어|참치|모밀|소바|오마카세|덮밥|카레|사케|쿠시아게|쿠시가츠|가라아게/],
+  [
+    "양식",
+    /양식|파스타|스파게티|피자|버거|햄버거|스테이크|샌드위치|브런치|이탈리|프랑스|스페인|멕시칸|그리스|유럽|아메리칸|패밀리레스토랑|뷔페|프렌치|(?<!한식\s*)컨템포러리/,
+  ],
+  [
+    "한식",
+    /한식|한정식|국밥|국수|냉면|밀면|감자탕|곱창|막창|육회|삼겹|갈비|백반|찌개|전골|보쌈|족발|닭볶|찜닭|오리|막국수|칼국수|해장|한우|돼지|소고기|해물|생선|회$|횟집|도시락|죽$|정식|순대|순댓국|육류|고기요리|고기집|고기$|치킨|닭강정|닭요리|닭갈비|닭발|곰탕|설렁탕|도가니|뼈해장|부대찌개|된장|김치찌개|순두부|비빔밥|돌솥|콩국|수제비|빈대떡|파전|추어|매운탕|아구|백숙|삼계|불고기|제육|두루치기|쌈밥|주먹밥|컵밥|샤브|육개장|설렁|감자옹심|보리밥|산채|비빔|기사식당|두부|쭈꾸미|주꾸미|낙지|복어|정육식당|조개|향토음식|게요리|굴요리|오징어|전복|이북음식/,
+  ],
 ];
+
+/** Import-only memos — never treat as menu (aligned with web INTERNAL_NOTES). */
+const INTERNAL_NOTE =
+  /Eat my Seoul|RIBBON_|Neon Vetted|Neon Heart|\bSelected\b|MATJIDO|Sikr|내부|import|scrape|^※/i;
 
 export function isGroup(value: string | undefined): value is CategoryGroup {
   return CATEGORY_GROUPS.includes(value as CategoryGroup);
 }
 
 function classify(text: string): CategoryGroup | undefined {
+  if (!text?.trim()) return undefined;
   if (/경양식/.test(text)) return "양식";
-  for (const segment of text.split(/[·,/]/)) {
-    for (const [group, rule] of GROUP_RULES) {
-      if (rule.test(segment)) return group;
-    }
+  // First-match on the full hint (same as web fix-categories), so a name
+  // signal like 짬뽕 wins over a weak subcategory like 쭈꾸미.
+  for (const [group, rule] of GROUP_RULES) {
+    if (rule.test(text)) return group;
   }
   return undefined;
 }
 
 /**
  * Split a category into a group (one of CATEGORY_GROUPS) and the detail.
- * A non-group category is treated as the detail. With a detail but no rule
- * match the group is 한식; with no detail, name/tags are tried and the group
- * stays empty when nothing matches.
+ * Prefer subcategory signals; never invent 한식 when nothing matches.
  */
 export function normalizeCategory(r: {
   category?: string;
@@ -44,14 +56,21 @@ export function normalizeCategory(r: {
   name: string;
   tags?: string[];
 }): { category?: CategoryGroup; subcategory?: string } {
-  const category = r.category?.trim() || undefined;
-  if (isGroup(category)) {
-    return { category, subcategory: r.subcategory?.trim() || undefined };
-  }
-  const subcategory = r.subcategory?.trim() || category;
+  const rawCategory = r.category?.trim() || undefined;
+  const subcategory =
+    r.subcategory?.trim() || (rawCategory && !isGroup(rawCategory) ? rawCategory : undefined) || undefined;
+
   if (subcategory) {
-    return { category: classify(subcategory) ?? "한식", subcategory };
+    const fromHint = classify(`${subcategory} ${r.name}`);
+    if (fromHint) return { category: fromHint, subcategory };
+    if (isGroup(rawCategory)) return { category: rawCategory, subcategory };
+    return { category: undefined, subcategory };
   }
+
+  if (isGroup(rawCategory)) {
+    return { category: rawCategory, subcategory: undefined };
+  }
+
   return {
     category: classify([r.name, ...(r.tags ?? [])].join("·")),
     subcategory: undefined,
@@ -83,13 +102,22 @@ function parseClosedDays(segment: string): Weekday[] | undefined {
 }
 
 function parseMenu(segment: string, allowPriceless: boolean): MenuItem[] {
+  if (INTERNAL_NOTE.test(segment)) return [];
   const items: MenuItem[] = [];
   let lastBase = "";
   for (const raw of segment.split(/\s+\/\s+/)) {
     const text = raw.trim();
+    if (INTERNAL_NOTE.test(text)) continue;
     const m = ITEM.exec(text);
     if (!m) {
-      if (allowPriceless && text && !/\d/.test(text) && text.length <= 30) {
+      // Skip Latin-only priceless text (often a romanized shop name, not a dish).
+      if (
+        allowPriceless &&
+        text &&
+        !/\d/.test(text) &&
+        text.length <= 30 &&
+        /[가-힣]/.test(text)
+      ) {
         items.push({ name: text });
       }
       continue;
@@ -106,7 +134,7 @@ function parseMenu(segment: string, allowPriceless: boolean): MenuItem[] {
     } else {
       lastBase = name;
     }
-    if (name) items.push({ name, price });
+    if (name && !INTERNAL_NOTE.test(name)) items.push({ name, price });
   }
   return items;
 }
@@ -129,6 +157,7 @@ export function parseNotes(notes: string | undefined): {
     .split(/\s+·\s+/)
     .map((s) => s.trim())
     .forEach((segment, i) => {
+      if (INTERNAL_NOTE.test(segment)) return;
       const walk = WALK.exec(segment);
       if (walk) {
         out.walkMeters = toWon(walk[1]);
@@ -171,7 +200,9 @@ export function structureRestaurant<T extends Restaurant>(r: T): T {
   const parsed = parseNotes(r.notes);
   const { category, subcategory } = normalizeCategory(r);
   const next: T = { ...r, category, subcategory };
-  const menu = r.menu?.length ? r.menu : parsed.menu;
+  // Drop internal-memo menu rows that may already be on the record.
+  const cleanedMenu = (r.menu ?? []).filter((m) => m.name && !INTERNAL_NOTE.test(m.name));
+  const menu = cleanedMenu.length ? cleanedMenu : parsed.menu;
   let hours = r.hours ?? parsed.hours;
   // A break time added to the notes later still reaches an explicit hours value.
   if (
@@ -188,9 +219,19 @@ export function structureRestaurant<T extends Restaurant>(r: T): T {
     hours = { ...hours, closedDays };
   }
   const walkMeters = r.walkMeters ?? parsed.walkMeters;
-  if (menu) next.menu = menu;
+  if (menu?.length) next.menu = menu;
+  else delete (next as { menu?: MenuItem[] }).menu;
   if (hours) next.hours = hours;
   if (walkMeters !== undefined) next.walkMeters = walkMeters;
+  // Strip notes that are only internal memos so re-export cannot revive them as menu.
+  if (r.notes?.trim()) {
+    const kept = r.notes
+      .split(/\s+·\s+/)
+      .map((s) => s.trim())
+      .filter((s) => s && !INTERNAL_NOTE.test(s));
+    if (kept.length) next.notes = kept.join(" · ");
+    else delete (next as { notes?: string }).notes;
+  }
   for (const key of ["category", "subcategory"] as const) {
     if (next[key] === undefined) delete next[key];
   }

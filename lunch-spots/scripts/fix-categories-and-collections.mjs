@@ -1,22 +1,23 @@
-// Reclassify mis-tagged categories from subcategory text; dedupe collections.
-// Does not invent 한식 from a catch-all — only upgrades/clears when subcategory speaks.
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+// Reclassify mis-tagged categories from subcategory+name; dedupe collections.
+// Does not invent 한식 from a catch-all — only upgrades/clears when text speaks.
+import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const webDir = path.resolve(root, "..", "web");
 const outDir = path.join(webDir, "public", "regions");
+const officeFile = path.join(webDir, "data", "restaurants.json");
 
 const CATEGORY_RULES = [
   ["한식", /사찰요리|사찰음식|발우공양/],
-  ["카페·디저트", /카페|디저트|베이커리|빵|케이크|도넛|아이스크림|빙수|떡|와플|초콜릿|차$|전통찻집|커피|베이글/],
-  ["주점", /술집|주점|바\(BAR\)|^바$|호프|맥주|이자카야|포차|와인|칵테일|요리주점|전통주|치맥|오뎅·꼬치|오뎅\/꼬치/],
+  ["주점", /술집|주점|바\(BAR\)|^바$|호프|맥주|이자카야|포차|포장마차|와인|칵테일|요리주점|전통주|치맥|오뎅·꼬치|오뎅\/꼬치/],
+  ["카페·디저트", /카페|디저트|베이커리|빵|케이크|도넛|아이스크림|빙수|와플|초콜릿|전통찻집|커피|베이글/],
   ["분식", /분식|김밥|떡볶이|순대$|라면|만두/],
   ["샐러드", /샐러드|포케|비건카페|비건베이/],
   ["아시안", /베트남|태국|인도|아시아|쌀국수|중동|멕시코|동남아|대만|네팔|터키/],
   ["중식", /중식|중국|마라|양꼬치|딤섬|짬뽕|짜장/],
-  ["일식", /일식|일본|초밥|스시|라멘|돈가스|돈까스|우동|소바|오마카세|이자카야|덮밥|카레|사케|장어/],
+  ["일식", /일식|일본|초밥|스시|라멘|돈가스|돈까스|우동|소바|오마카세|덮밥|카레|사케|장어|쿠시아게|쿠시가츠|가라아게/],
   ["양식", /양식|이탈리|프랑스|스페인|스테이크|파스타|피자|햄버거|버거|브런치|멕시칸|그리스|유럽|아메리칸|패밀리레스토랑|뷔페|프렌치|(?<!한식\s*)컨템포러리/],
   [
     "한식",
@@ -24,22 +25,65 @@ const CATEGORY_RULES = [
   ],
 ];
 
+const INTERNAL_NOTE =
+  /Eat my Seoul|RIBBON_|Neon Vetted|Neon Heart|\bSelected\b|MATJIDO|Sikr|내부|import|scrape|^※/i;
+
 function groupOf(text) {
   if (!text) return undefined;
   return CATEGORY_RULES.find(([, re]) => re.test(text))?.[0];
+}
+
+function scrubRestaurant(r) {
+  let changed = false;
+  if (r.notes?.trim()) {
+    const kept = r.notes
+      .split(/\s+·\s+/)
+      .map((s) => s.trim())
+      .filter((s) => {
+        if (!s || INTERNAL_NOTE.test(s)) return false;
+        // Romanized shop name alone is not a useful note.
+        if (!/[가-힣]/.test(s) && /^[A-Za-z]/.test(s)) return false;
+        return true;
+      });
+    const before = r.notes.split(/\s+·\s+/).filter((s) => s.trim()).length;
+    if (kept.length !== before) {
+      if (kept.length) r.notes = kept.join(" · ");
+      else delete r.notes;
+      changed = true;
+    }
+  }
+  if (Array.isArray(r.menu) && r.menu.length) {
+    const next = r.menu.filter((m) => {
+      const name = m?.name?.trim();
+      if (!name || INTERNAL_NOTE.test(name)) return false;
+      // Latin-only priceless row is usually a romanized shop name.
+      if (m.price === undefined && !/[가-힣]/.test(name) && /^[A-Za-z]/.test(name)) return false;
+      return true;
+    });
+    if (next.length !== r.menu.length) {
+      if (next.length) r.menu = next;
+      else delete r.menu;
+      changed = true;
+    }
+  }
+  return changed;
 }
 
 const now = new Date().toISOString();
 let reclassed = 0;
 let cleared = 0;
 let deduped = 0;
+let scrubbed = 0;
 
-for (const file of readdirSync(outDir).filter((f) => f.endsWith(".json") && !f.includes(".summary"))) {
-  const fp = path.join(outDir, file);
+function processFile(fp) {
   const j = JSON.parse(readFileSync(fp, "utf8"));
   let changed = false;
   for (const r of j.restaurants ?? []) {
-    const hint = String(r.subcategory ?? "").trim();
+    if (scrubRestaurant(r)) {
+      scrubbed++;
+      changed = true;
+    }
+    const hint = [r.subcategory, r.name].filter(Boolean).join(" ").trim();
     if (hint) {
       const next = groupOf(hint);
       if (next) {
@@ -49,7 +93,7 @@ for (const file of readdirSync(outDir).filter((f) => f.endsWith(".json") && !f.i
           changed = true;
         }
       } else if (r.category === "한식") {
-        // Subcategory present but no food signal — drop false catch-all 한식.
+        // Subcategory/name present but no food signal — drop false catch-all 한식.
         delete r.category;
         cleared++;
         changed = true;
@@ -68,6 +112,16 @@ for (const file of readdirSync(outDir).filter((f) => f.endsWith(".json") && !f.i
     j.updatedAt = now;
     writeFileSync(fp, `${JSON.stringify(j)}\n`);
   }
+  return changed;
 }
 
-console.log(`reclassed ${reclassed}, cleared false 한식 ${cleared}, deduped collections ${deduped}`);
+const files = readdirSync(outDir)
+  .filter((f) => f.endsWith(".json") && !f.includes(".summary"))
+  .map((f) => path.join(outDir, f));
+if (existsSync(officeFile)) files.push(officeFile);
+
+for (const fp of files) processFile(fp);
+
+console.log(
+  JSON.stringify({ reclassed, cleared, deduped, scrubbed, files: files.length }, null, 2),
+);

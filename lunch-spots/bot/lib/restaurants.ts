@@ -15,6 +15,8 @@ export const CATEGORY_GROUPS = [
   "아시안",
   "분식",
   "샐러드",
+  "카페·디저트",
+  "주점",
 ] as const;
 
 export type CategoryGroup = (typeof CATEGORY_GROUPS)[number];

@@ -12,6 +12,7 @@ import {
   mapLinks,
   needsHoursCheck,
   openStatus,
+  publicMenu,
   publicNotes,
   type OpeningHours,
   type OpenKind,
@@ -219,10 +220,11 @@ function MobileCard({
   const walk = displayWalkMinutes(r);
   const place =
     nearby && walk !== undefined ? `도보 ${walk}분` : r.area || r.district || null;
-  const dish = r.menu?.[0]
-    ? r.menu[0].price !== undefined
-      ? `${r.menu[0].name} ${won(r.menu[0].price)}`
-      : r.menu[0].name
+  const menu = publicMenu(r);
+  const dish = menu[0]
+    ? menu[0].price !== undefined
+      ? `${menu[0].name} ${won(menu[0].price)}`
+      : menu[0].name
     : r.priceRange || null;
 
   return (
@@ -405,12 +407,20 @@ export function RestaurantList({
             <li
               key={r.slug}
               id={`place-${r.slug}`}
+              role="button"
+              tabIndex={0}
               className={cn(
                 "grid cursor-pointer grid-cols-2 gap-x-group-lg gap-y-group-md border-b border-border-default px-inline-lg py-stack-lg transition-colors last:border-b-0 lg:items-center lg:gap-0 lg:p-0",
                 COLUMNS,
                 selected ? "bg-surface-brand-subtle" : "hover:bg-surface-subtlest",
               )}
               onClick={() => onSelect?.(r.slug)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  onSelect?.(r.slug);
+                }
+              }}
             >
               <div className="col-span-2 flex min-w-0 flex-col gap-group-xs lg:col-span-1 lg:px-inline-md lg:py-stack-md">
                 <div className="flex flex-wrap items-center gap-x-group-sm gap-y-group-xxs">
@@ -437,26 +447,34 @@ export function RestaurantList({
                     </button>
                   ) : null}
                 </div>
-                {r.menu?.length ? (
-                  <ul className="flex flex-wrap gap-x-group-md gap-y-group-xxs text-text-secondary typography-body-sm-regular">
-                    {r.menu.slice(0, 2).map((m) => (
-                      <li key={m.name}>
-                        {m.name}
-                        {m.price !== undefined ? (
-                          <span className="text-text-tertiary"> {won(m.price)}</span>
-                        ) : null}
-                      </li>
-                    ))}
-                  </ul>
-                ) : publicNotes(r) ? (
-                  <p className="line-clamp-1 text-text-secondary typography-body-sm-regular">{publicNotes(r)}</p>
-                ) : null}
+                {(() => {
+                  const menu = publicMenu(r);
+                  if (menu.length) {
+                    return (
+                      <ul className="flex flex-wrap gap-x-group-md gap-y-group-xxs text-text-secondary typography-body-sm-regular">
+                        {menu.slice(0, 2).map((m) => (
+                          <li key={m.name}>
+                            {m.name}
+                            {m.price !== undefined ? (
+                              <span className="text-text-tertiary"> {won(m.price)}</span>
+                            ) : null}
+                          </li>
+                        ))}
+                      </ul>
+                    );
+                  }
+                  const notes = publicNotes(r);
+                  return notes ? (
+                    <p className="line-clamp-1 text-text-secondary typography-body-sm-regular">{notes}</p>
+                  ) : null;
+                })()}
                 {(() => {
                   const tags = displayTags(r);
-                  if (!tags.length && !r.collections?.length) return null;
+                  const collections = [...new Set(r.collections ?? [])];
+                  if (!tags.length && !collections.length) return null;
                   return (
                     <div className="flex flex-wrap gap-group-xs pt-stack-xxs">
-                      {r.collections?.map((c) => (
+                      {collections.map((c) => (
                         <Tag key={c} color="purple" size="xsmall">
                           {c}
                         </Tag>

@@ -333,7 +333,7 @@ export const BUDGET_OPTIONS = [8_000, 10_000, 12_000, 15_000] as const;
 /** Bayesian prior strength for rating sort. */
 const RATING_PRIOR_N = 10;
 /** Places added within this many days show a "새로 추가" badge. */
-export const NEW_DAYS = 7;
+export const NEW_DAYS = 2;
 
 export function walkMinutes(meters: number): number {
   return Math.max(1, Math.ceil(meters / METERS_PER_MINUTE));
@@ -418,6 +418,7 @@ export function isOpenAt(
   if (isClosedOn(hours, weekday)) return false;
   const open = toMinutes(hours.open);
   const close = toMinutes(hours.close);
+  // close===24:00 alone is not all-day — only when open is midnight too.
   const allDay = open === close || (open === 0 && close === 24 * 60);
   if (!allDay && !within(now, open, close)) return false;
   if (hours.breakStart && hours.breakEnd) {
@@ -459,8 +460,9 @@ export function openStatus(
     }
   }
   if (!isOpenAt(hours, now, weekday)) return { kind: "closed", label: "영업 전·종료", lunchOk };
+  const open = toMinutes(hours.open);
   const close = toMinutes(hours.close);
-  const allDay = toMinutes(hours.open) === close || close === 24 * 60;
+  const allDay = open === close || (open === 0 && close === 24 * 60);
   if (!allDay) {
     const minsLeft = close >= now ? close - now : close + 24 * 60 - now;
     if (minsLeft <= CLOSING_SOON_MIN) {
@@ -636,9 +638,9 @@ export function presentGroups(restaurants: Restaurant[]): string[] {
   return groups;
 }
 
-/** Drop import-only memos that should not appear in the UI (B15). */
+/** Drop import-only memos that should not appear in the UI (B15/Q1). */
 const INTERNAL_NOTES =
-  /^(Eat my Seoul|RIBBON_|Neon Vetted|MATJIDO|Sikr|내부|import|scrape)/i;
+  /Eat my Seoul|RIBBON_|Neon Vetted|Neon Heart|\bSelected\b|MATJIDO|Sikr|내부|import|scrape|^※/i;
 
 export function publicNotes(r: Restaurant): string | null {
   const notes = r.notes?.trim();
@@ -656,6 +658,16 @@ export function publicNotes(r: Restaurant): string | null {
       return true;
     });
   return parts.length ? parts.join(" · ") : null;
+}
+
+/** Menu rows safe to show (drops internal memos / romanized names mistaken for dishes). */
+export function publicMenu(r: Restaurant): MenuItem[] {
+  return (r.menu ?? []).filter((m) => {
+    const name = m.name?.trim();
+    if (!name || INTERNAL_NOTES.test(name)) return false;
+    if (m.price === undefined && !/[가-힣]/.test(name) && /^[A-Za-z]/.test(name)) return false;
+    return true;
+  });
 }
 
 /** Scraped/meta tags that should not appear on the public site. */

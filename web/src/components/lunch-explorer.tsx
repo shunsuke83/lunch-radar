@@ -454,7 +454,14 @@ export function LunchExplorer({ catalog, regions }: Props) {
     return collectionSourceLabel(source);
   }, [isOffice, catalog.source, source]);
 
-  const reset = () => setFilters(EMPTY_FILTERS);
+  const updateFilters = (next: FilterState) => {
+    setPickHint(null);
+    setFilters(next);
+  };
+  const reset = () => {
+    setPickHint(null);
+    setFilters(EMPTY_FILTERS);
+  };
   const changeRegion = (next: string) => {
     pushNav.current = true;
     setRegion(next);
@@ -462,6 +469,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
     setSelectedSlug(null);
     setDetailSlug(null);
     setPicks([]);
+    setPickHint(null);
     setMapBounds(null);
     setMapCenter(null);
   };
@@ -474,7 +482,15 @@ export function LunchExplorer({ catalog, regions }: Props) {
     setView(next);
   };
   const selectPlace = (slug: string) => {
-    setSelectedSlug((prev) => (prev === slug ? null : slug));
+    setSelectedSlug((prev) => {
+      const next = prev === slug ? null : slug;
+      if (next && view === "map" && !isLg) {
+        queueMicrotask(() =>
+          mapPanelRef.current?.scrollIntoView({ block: "start", behavior: "smooth" }),
+        );
+      }
+      return next;
+    });
   };
   const openDetail = (slug: string) => {
     setSelectedSlug(slug);
@@ -640,7 +656,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
           themes={facets.themes}
           clockReady={clock !== null}
           weatherRainy={weatherRainy && isOffice}
-          onChange={setFilters}
+          onChange={updateFilters}
           actions={
             <>
               <SegmentedControl
@@ -814,7 +830,7 @@ export function LunchExplorer({ catalog, regions }: Props) {
                   onOpenDetail={openDetail}
                   initialCenter={mapCenter}
                   pinMode={isOffice ? "hours" : "category"}
-                  heightClass="h-[min(52dvh,420px)]"
+                  heightClass="h-[max(320px,min(52dvh,420px))]"
                   onBoundsChange={(b, z, n) => {
                     setMapBounds((prev) =>
                       prev &&

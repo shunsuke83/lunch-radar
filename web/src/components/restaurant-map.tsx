@@ -95,7 +95,7 @@ const CATEGORY_COLOR: Record<string, string> = {
   분식: "#ca8a04",
   샐러드: "#15803d",
   "카페·디저트": "#9d174d",
-  주점: "#b45309",
+  주점: "#5b21b6",
 };
 
 function pinColor(
@@ -218,7 +218,11 @@ function card(
   root.addEventListener("touchstart", stop, { passive: true });
   const head = el("div", "flex items-start justify-between gap-group-sm");
   head.append(el("p", "text-text-primary typography-headline-sm", r.name));
-  const close = el("button", "text-icon-tertiary hover:text-icon-primary typography-body-md-regular", "✕");
+  const close = el(
+    "button",
+    "flex min-h-11 min-w-11 shrink-0 items-center justify-center text-icon-tertiary hover:text-icon-primary typography-body-md-regular",
+    "✕",
+  );
   close.type = "button";
   close.setAttribute("aria-label", "닫기");
   close.addEventListener("click", (e) => {

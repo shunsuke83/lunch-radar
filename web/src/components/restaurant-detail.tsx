@@ -10,6 +10,7 @@ import {
   mapLinks,
   needsHoursCheck,
   openStatus,
+  publicMenu,
   publicNotes,
   type OpeningHours,
   type Restaurant,
@@ -159,11 +160,11 @@ export function RestaurantDetail({
             </div>
           )}
 
-          {r.menu?.length ? (
+          {publicMenu(r).length ? (
             <div>
               <h3 className="mb-group-sm text-text-tertiary typography-label-sm-medium">메뉴</h3>
               <ul className="flex flex-col gap-group-xs">
-                {r.menu.map((m) => (
+                {publicMenu(r).map((m) => (
                   <li
                     key={m.name}
                     className="flex justify-between gap-group-md text-text-primary typography-body-md-regular"
