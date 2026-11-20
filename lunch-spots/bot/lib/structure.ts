@@ -10,16 +10,17 @@ import {
 // Same order/rules as web fix-categories / import-naver (first match wins).
 const GROUP_RULES: [CategoryGroup, RegExp][] = [
   ["한식", /사찰요리|사찰음식|발우공양/],
-  ["주점", /술집|주점|바\(BAR\)|^바$|호프|맥주|이자카야|포차|포장마차|와인|칵테일|요리주점|전통주|치맥|오뎅·꼬치|오뎅\/꼬치/],
+  // Avoid matching branch suffixes like 공주점·제주점 (…주점 as substring).
+  ["주점", /술집|요리주점|전통주|(?<![가-힣])주점(?![가-힣])|바\(BAR\)|^바$|호프|맥주|이자카야|포차|포장마차|와인|칵테일|치맥|오뎅·꼬치|오뎅\/꼬치/],
   ["카페·디저트", /카페|디저트|베이커리|빵|케이크|도넛|아이스크림|빙수|와플|초콜릿|전통찻집|커피|베이글/],
   ["분식", /분식|김밥|떡볶이|김말이|후토마키|순대$|라면|만두/],
   ["샐러드", /샐러드|포케|비건카페|비건베이/],
   ["아시안", /태국|베트남|쌀국수|팟타이|반미|인도|커리|아시안|중동|멕시코|동남아|대만|네팔|터키/],
-  ["중식", /중식|중국|짬뽕|짜장|마라|딤섬|탕수육|유산슬|양꼬치/],
+  ["중식", /중식|중국|짬뽕|짜장|마라(?!도)|딤섬|탕수육|유산슬|양꼬치/],
   ["일식", /일식|일본|라멘|우동|초밥|스시|돈카츠|돈까스|돈가스|텐동|사케동|장어|참치|모밀|소바|오마카세|덮밥|카레|사케|쿠시아게|쿠시가츠|가라아게/],
   [
     "양식",
-    /양식|파스타|스파게티|피자|버거|햄버거|스테이크|샌드위치|브런치|이탈리|프랑스|스페인|멕시칸|그리스|유럽|아메리칸|패밀리레스토랑|뷔페|프렌치|(?<!한식\s*)컨템포러리/,
+    /양식|파스타|스파게티|피자|버거|햄버거|스테이크|샌드위치|브런치|이탈리|프랑스|스페인|멕시칸|그리스|유럽|아메리칸|패밀리레스토랑|(?<!한식\s*)뷔페|프렌치|(?<!한식\s*)컨템포러리/,
   ],
   [
     "한식",
@@ -29,7 +30,7 @@ const GROUP_RULES: [CategoryGroup, RegExp][] = [
 
 /** Import-only memos — never treat as menu (aligned with web INTERNAL_NOTES). */
 const INTERNAL_NOTE =
-  /Eat my Seoul|RIBBON_|Neon Vetted|Neon Heart|\bSelected\b|MATJIDO|Sikr|내부|import|scrape|^※/i;
+  /Eat my Seoul|RIBBON_|Neon Vetted|Neon Heart|\bSelected\b|MATJIDO|Sikr|내부\s*메모|내부메모|\bimport\b|scrape|^※/i;
 
 export function isGroup(value: string | undefined): value is CategoryGroup {
   return CATEGORY_GROUPS.includes(value as CategoryGroup);
@@ -48,7 +49,8 @@ function classify(text: string): CategoryGroup | undefined {
 
 /**
  * Split a category into a group (one of CATEGORY_GROUPS) and the detail.
- * Prefer subcategory signals; never invent 한식 when nothing matches.
+ * Classify from subcategory only when present — never from shop-name fragments (R3).
+ * Keep an existing group when the subcategory does not match; never invent 한식.
  */
 export function normalizeCategory(r: {
   category?: string;
@@ -61,8 +63,8 @@ export function normalizeCategory(r: {
     r.subcategory?.trim() || (rawCategory && !isGroup(rawCategory) ? rawCategory : undefined) || undefined;
 
   if (subcategory) {
-    const fromHint = classify(`${subcategory} ${r.name}`);
-    if (fromHint) return { category: fromHint, subcategory };
+    const fromSub = classify(subcategory);
+    if (fromSub) return { category: fromSub, subcategory };
     if (isGroup(rawCategory)) return { category: rawCategory, subcategory };
     return { category: undefined, subcategory };
   }
@@ -71,6 +73,7 @@ export function normalizeCategory(r: {
     return { category: rawCategory, subcategory: undefined };
   }
 
+  // Name/tags only when there is no subcategory and no group yet.
   return {
     category: classify([r.name, ...(r.tags ?? [])].join("·")),
     subcategory: undefined,

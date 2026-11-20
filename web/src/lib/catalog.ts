@@ -640,7 +640,7 @@ export function presentGroups(restaurants: Restaurant[]): string[] {
 
 /** Drop import-only memos that should not appear in the UI (B15/Q1). */
 const INTERNAL_NOTES =
-  /Eat my Seoul|RIBBON_|Neon Vetted|Neon Heart|\bSelected\b|MATJIDO|Sikr|내부|import|scrape|^※/i;
+  /Eat my Seoul|RIBBON_|Neon Vetted|Neon Heart|\bSelected\b|MATJIDO|Sikr|내부\s*메모|내부메모|\bimport\b|scrape|^※/i;
 
 export function publicNotes(r: Restaurant): string | null {
   const notes = r.notes?.trim();

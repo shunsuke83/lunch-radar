@@ -95,7 +95,7 @@ const CATEGORY_COLOR: Record<string, string> = {
   분식: "#ca8a04",
   샐러드: "#15803d",
   "카페·디저트": "#9d174d",
-  주점: "#5b21b6",
+  주점: "#0e7490",
 };
 
 function pinColor(
@@ -361,8 +361,13 @@ export function RestaurantMap({
   }, [located, office]);
   const visible = useMemo(() => {
     if (!office || expanded) return located;
-    return located.filter((r) => distanceM(office, r.location!) <= DEFAULT_RADIUS_M);
-  }, [located, office, expanded]);
+    const inRadius = located.filter((r) => distanceM(office, r.location!) <= DEFAULT_RADIUS_M);
+    // Keep a selected place on the map even when it is outside the office radius (R4).
+    if (!selectedSlug) return inRadius;
+    if (inRadius.some((r) => r.slug === selectedSlug)) return inRadius;
+    const selected = located.find((r) => r.slug === selectedSlug);
+    return selected ? [...inRadius, selected] : inRadius;
+  }, [located, office, expanded, selectedSlug]);
   const visibleKey = useMemo(() => visible.map((r) => r.slug).join(","), [visible]);
   const visibleRef = useRef(visible);
   visibleRef.current = visible;
@@ -388,7 +393,11 @@ export function RestaurantMap({
       if (proj?.containerPointFromCoords && proj?.coordsFromContainerPoint) {
         const pinPt = proj.containerPointFromCoords(pos);
         // Leave ~300px above the pin so mobile popups (yAnchor 1.35) are not clipped.
-        const desiredY = Math.min(h - 28, Math.max(h * 0.4, Math.min(300, h - 48)));
+        // Short maps (≈320px phone) need the pin near the bottom so the popup fits.
+        const desiredY =
+          h < 360
+            ? Math.min(h - 16, Math.max(Math.floor(h * 0.72), h - 48))
+            : Math.min(h - 28, Math.max(h * 0.4, Math.min(300, h - 48)));
         const centerPt = new kakao.maps.Point(pinPt.x, pinPt.y + (h / 2 - desiredY)) as MapPoint;
         map.panTo(proj.coordsFromContainerPoint(centerPt));
         return;
@@ -776,6 +785,8 @@ export function RestaurantMap({
           ["아시안", CATEGORY_COLOR.아시안],
           ["카페·디저트", CATEGORY_COLOR["카페·디저트"]],
           ["분식", CATEGORY_COLOR.분식],
+          ["샐러드", CATEGORY_COLOR.샐러드],
+          ["주점", CATEGORY_COLOR.주점],
           ["미분류", "#64748b"],
         ] as const)
       : ([

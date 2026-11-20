@@ -234,6 +234,7 @@ function MobileCard({
         tabIndex={0}
         onClick={() => onSelect?.(r.slug)}
         onKeyDown={(e) => {
+          if (e.target !== e.currentTarget) return;
           if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
             onSelect?.(r.slug);
@@ -416,6 +417,7 @@ export function RestaurantList({
               )}
               onClick={() => onSelect?.(r.slug)}
               onKeyDown={(e) => {
+                if (e.target !== e.currentTarget) return;
                 if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault();
                   onSelect?.(r.slug);
