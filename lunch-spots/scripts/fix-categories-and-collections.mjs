@@ -10,6 +10,10 @@ const webDir = path.resolve(root, "..", "web");
 const outDir = path.join(webDir, "public", "regions");
 const officeFile = path.join(webDir, "data", "restaurants.json");
 
+// Per-place categories decided by hand (see apply-category-overrides.mjs). Rules never touch these.
+const overridesFile = path.join(root, "scripts", "category-overrides.json");
+const overrides = existsSync(overridesFile) ? JSON.parse(readFileSync(overridesFile, "utf8")).places : {};
+
 const INTERNAL_NOTE =
   /Eat my Seoul|RIBBON_|Neon Vetted|Neon Heart|\bSelected\b|MATJIDO|Sikr|내부\s*메모|내부메모|\bimport\b|scrape|^※/i;
 
@@ -68,14 +72,17 @@ let scrubbed = 0;
 
 function processFile(fp) {
   const j = JSON.parse(readFileSync(fp, "utf8"));
+  const regionId = fp === officeFile ? "office" : path.basename(fp, ".json");
   let changed = false;
   for (const r of j.restaurants ?? []) {
+    const locked = `${regionId}/${r.slug}` in overrides;
     if (scrubRestaurant(r)) {
       scrubbed++;
       changed = true;
     }
     // One-shot undo for name-fragment mis-tags (공주점→주점, 한식뷔페→양식).
     if (
+      !locked &&
       CLEAR_CATEGORY_SLUGS.has(r.slug) &&
       !String(r.subcategory ?? "").trim() &&
       (r.category === "주점" || r.category === "양식")
@@ -85,7 +92,9 @@ function processFile(fp) {
       changed = true;
     }
     const sub = String(r.subcategory ?? "").trim();
-    if (sub) {
+    if (locked) {
+      // Listed in category-overrides.json — leave the category alone.
+    } else if (sub) {
       const next = groupOf(sub);
       if (next && r.category !== next) {
         r.category = next;
