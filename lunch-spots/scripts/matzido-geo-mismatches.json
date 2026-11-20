@@ -1,0 +1,3084 @@
+{
+  "generatedAt": "2026-11-20T10:18:05.013Z",
+  "count": 162,
+  "mismatches": [
+    {
+      "key": "busan/naver-1898130354",
+      "name": "고원",
+      "from": {
+        "regionId": "busan",
+        "address": "부산 부산진구 서전로58번길 64",
+        "district": "부산진구"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "남원시",
+        "address": "전북 남원시 큰들4길 24",
+        "lat": 35.4152243,
+        "lng": 127.3975209
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "busan/naver-11697545",
+      "name": "만리향",
+      "from": {
+        "regionId": "busan",
+        "address": "부산 중구 충장대로9번길 9-1",
+        "district": "중구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 장선배기길 10 1층만리향",
+        "lat": 34.9526999,
+        "lng": 127.5233236
+      },
+      "naverCategory": "중식당",
+      "reason": "province"
+    },
+    {
+      "key": "busan/naver-1784872593",
+      "name": "송정국밥 본점",
+      "from": {
+        "regionId": "busan",
+        "address": "부산 해운대구 송정광어골로 72",
+        "district": "해운대구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 내상로 50-1 1층",
+        "lat": 35.1376693,
+        "lng": 126.7978659
+      },
+      "naverCategory": "국밥",
+      "reason": "province"
+    },
+    {
+      "key": "busan/naver-1230485898",
+      "name": "시월",
+      "from": {
+        "regionId": "busan",
+        "address": "부산 부산진구 동천로108번길 9-7",
+        "district": "부산진구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 독막로3길 33 2층",
+        "lat": 37.5497695,
+        "lng": 126.9172654
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "busan/naver-2072972807",
+      "name": "해수",
+      "from": {
+        "regionId": "busan",
+        "address": "부산 서구 충무대로 134",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 장동로 37 1층",
+        "lat": 35.1477168,
+        "lng": 126.9259782
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-21230589",
+      "name": "갈비가좋아 조치원점",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 청주시 흥덕구 오송읍 오송생명7로 183",
+        "district": "청주시"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 조치원읍 행복4길 35 갈비가좋아 유림빌1층",
+        "lat": 36.6047692,
+        "lng": 127.2936576
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-1365285191",
+      "name": "대한양꼬치훠궈무한리필",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 증평군 증평읍 초중로 56",
+        "district": "증평군"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 도산로9번길 12 1층",
+        "lat": 35.1289122,
+        "lng": 126.7911091
+      },
+      "naverCategory": "양꼬치",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-20819236",
+      "name": "락빈칼국수",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 충주시 용산천변길 56",
+        "district": "충주시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 판교공원로2길 68",
+        "lat": 37.390358,
+        "lng": 127.090986
+      },
+      "naverCategory": "칼국수,만두",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-1112306548",
+      "name": "마작골",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 옥천군 군북면 지오리",
+        "district": "옥천군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 퇴계로88길 21",
+        "lat": 37.5646104,
+        "lng": 127.0210752
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-2037966007",
+      "name": "미와담",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 음성군 감곡면 상우안길 60",
+        "district": "음성군"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 쇳골로47번길 5 1층",
+        "lat": 37.3631382,
+        "lng": 127.0959012
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-1061491128",
+      "name": "삼순이",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 증평군 증평읍 삼보로7길 35",
+        "district": "증평군"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "북구",
+        "address": "전남광주 북구 양산택지로 18 2층 삼순이",
+        "lat": 35.2080978,
+        "lng": 126.8791757
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-18106884",
+      "name": "삼우정 본점",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 청주시 서원구 산미로 19",
+        "district": "청주시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 서소문로 134-12",
+        "lat": 37.5631714,
+        "lng": 126.9756475
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-1770203924",
+      "name": "조선삼합",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 진천군 덕산읍 석장로 227",
+        "district": "진천군"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "여수시",
+        "address": "전남광주 여수시 중앙1길 15-1 조선삼합",
+        "lat": 34.7401273,
+        "lng": 127.7370102
+      },
+      "naverCategory": "해물,생선요리",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-2050574109",
+      "name": "황톳길",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 보은군 속리산면 사내리",
+        "district": "보은군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 마포대로11길 15-7 1층",
+        "lat": 37.5485769,
+        "lng": 126.9531878
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "chungnam/naver-1929335824",
+      "name": "데이원",
+      "from": {
+        "regionId": "chungnam",
+        "address": "충남 천안시 서북구 불당33길 47",
+        "district": "천안시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 황새울로359번길 11 1층",
+        "lat": 37.3881906,
+        "lng": 127.1232469
+      },
+      "naverCategory": "브런치",
+      "reason": "province"
+    },
+    {
+      "key": "chungnam/naver-1807681546",
+      "name": "베로",
+      "from": {
+        "regionId": "chungnam",
+        "address": "충남 천안시 동남구 용곡5길 37-4",
+        "district": "천안시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 서울숲4길 20-1 2층",
+        "lat": 37.5471444,
+        "lng": 127.0431617
+      },
+      "naverCategory": "이탈리아음식",
+      "reason": "province"
+    },
+    {
+      "key": "chungnam/naver-19356907",
+      "name": "소담골 본점",
+      "from": {
+        "regionId": "chungnam",
+        "address": "충남 천안시 서북구 봉서산로 69-10",
+        "district": "천안시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 영통구 인계로291번길 10 경기 수원시 영통구 매탄동815-1번지",
+        "lat": 37.2636252,
+        "lng": 127.0498652
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "chungnam/naver-1034494104",
+      "name": "한미옥",
+      "from": {
+        "regionId": "chungnam",
+        "address": "충남 서천군 한산면 한산모시길 42-7",
+        "district": "서천군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "강남구",
+        "address": "서울 강남구 선릉로 822 지하 1층",
+        "lat": 37.5252817,
+        "lng": 127.0401264
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "daegu/naver-2091882564",
+      "name": "뉴요크",
+      "from": {
+        "regionId": "daegu",
+        "address": "대구 남구 두류공원로 16-1",
+        "district": "남구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 성덕정15길 12 1층 남3호 뉴요크",
+        "lat": 37.5384503,
+        "lng": 127.0537924
+      },
+      "naverCategory": "카페,디저트",
+      "reason": "province"
+    },
+    {
+      "key": "daegu/naver-1224154264",
+      "name": "레브 동명점",
+      "from": {
+        "regionId": "daegu",
+        "address": "대구 북구 학정로 551-42",
+        "district": "북구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 동명로14번길 29 레브",
+        "lat": 35.1498589,
+        "lng": 126.9265079
+      },
+      "naverCategory": "양식",
+      "reason": "province"
+    },
+    {
+      "key": "daegu/naver-35228395",
+      "name": "방짜",
+      "from": {
+        "regionId": "daegu",
+        "address": "대구 동구 도장길 29",
+        "district": "동구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 황새울로 315 대현빌딩 103호 서현방짜",
+        "lat": 37.3851289,
+        "lng": 127.1207758
+      },
+      "naverCategory": "곱창,막창,양",
+      "reason": "province"
+    },
+    {
+      "key": "daegu/naver-1227244952",
+      "name": "파르코",
+      "from": {
+        "regionId": "daegu",
+        "address": "대구 수성구 상록로11길 97",
+        "district": "수성구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 서울숲2길 44",
+        "lat": 37.5463404,
+        "lng": 127.0433395
+      },
+      "naverCategory": "이탈리아음식",
+      "reason": "province"
+    },
+    {
+      "key": "daegu/naver-2019608393",
+      "name": "푸르른",
+      "from": {
+        "regionId": "daegu",
+        "address": "대구 중구 동성로12길 83",
+        "district": "중구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 남신월4길 3-3 1층",
+        "lat": 34.9564507,
+        "lng": 127.5189758
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-2043060330",
+      "name": "굴뚝막창",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 서구 갈마중로 37",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 팔달구 향교로 30 1층 103호",
+        "lat": 37.2682832,
+        "lng": 127.0042983
+      },
+      "naverCategory": "곱창,막창,양",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-2021030127",
+      "name": "돈돌집",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 유성구 은구비서로3번길 8-14",
+        "district": "유성구"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 서북구 원두정8길 25 1층",
+        "lat": 36.8326431,
+        "lng": 127.136348
+      },
+      "naverCategory": "돼지고기구이",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-1251447969",
+      "name": "라쿠엔",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 유성구 엑스포로97번길 40",
+        "district": "유성구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 삼일대로 440 1층",
+        "lat": 37.573965,
+        "lng": 126.9877604
+      },
+      "naverCategory": "이자카야",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-115135662",
+      "name": "상상낙지",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 동구 백룡로11번길 156",
+        "district": "동구"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 나성로 133-15 애플타워 2층",
+        "lat": 36.4903832,
+        "lng": 127.2575273
+      },
+      "naverCategory": "낙지요리",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-2061384201",
+      "name": "아구찜사랑",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 유성구 상대동로36번길 61-17",
+        "district": "유성구"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 완산구 신촌3길 19 2층",
+        "lat": 35.8169996,
+        "lng": 127.115985
+      },
+      "naverCategory": "아귀찜,해물찜",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-1377746746",
+      "name": "주도",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 서구 둔산로 32-22",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 상원1길 35-22 지하1층",
+        "lat": 37.5461925,
+        "lng": 127.0470531
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-37178870",
+      "name": "고향보리밥",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 원주시 흥업면 남원로 69-1",
+        "district": "원주시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 처인구 유림로 173 고향보리밥",
+        "lat": 37.2611486,
+        "lng": 127.1953133
+      },
+      "naverCategory": "보리밥",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-1836298981",
+      "name": "낙원숯불갈비",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 영월군 영월읍 제방안길 4",
+        "district": "영월군"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "예산군",
+        "address": "충남 예산군 삽교읍 청사로192번길 20 208호",
+        "lat": 36.661805,
+        "lng": 126.6804656
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-1000309544",
+      "name": "맛집생선구이",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 속초시 대포항1길 60",
+        "district": "속초시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "오산시",
+        "address": "경기 오산시 눕새로 13",
+        "lat": 37.1404322,
+        "lng": 127.0542069
+      },
+      "naverCategory": "생선구이",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-1298851101",
+      "name": "육해집",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 철원군 갈말읍 삼부연로18번길 8-14",
+        "district": "철원군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 마포대로12길 24 1층",
+        "lat": 37.547902,
+        "lng": 126.9547635
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-1426981340",
+      "name": "주인",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 강릉시 강릉대로 268-1",
+        "district": "강릉시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 서북구 불당26로 50 근린생활시설 8동 1층 G109호",
+        "lat": 36.8111234,
+        "lng": 127.106192
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-1807622300",
+      "name": "크림하우스",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 강릉시 사천면 해안로 1173",
+        "district": "강릉시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "홍성군",
+        "address": "충남 홍성군 홍북읍 청사로174번길 21 110호 1층 공원방향 크림하우스카페",
+        "lat": 36.6603335,
+        "lng": 126.6805155
+      },
+      "naverCategory": "카페,디저트",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-20619413",
+      "name": "혼마참치",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 원주시 금불1길 38-2",
+        "district": "원주시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "강남구",
+        "address": "서울 강남구 개포로 210 충의빌딩 1층 103호",
+        "lat": 37.4783785,
+        "lng": 127.0457662
+      },
+      "naverCategory": "일식당",
+      "reason": "province"
+    },
+    {
+      "key": "gwangju/naver-16838838",
+      "name": "88포장마차",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 서구 상무민주로76번길 6-1",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "목포시",
+        "address": "전남광주 목포시 영산로329번길 3-1 88포장마차",
+        "lat": 34.8062428,
+        "lng": 126.4012278
+      },
+      "naverCategory": "포장마차",
+      "reason": "province"
+    },
+    {
+      "key": "gwangju/naver-2071246489",
+      "name": "급한마음탕수육 운암점",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 서구 상무평화로 106",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "북구",
+        "address": "전남광주 북구 대자로 48-1 1층",
+        "lat": 35.1732217,
+        "lng": 126.8778712
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeongbuk/naver-1769818339",
+      "name": "시골집 동명점",
+      "from": {
+        "regionId": "gyeongbuk",
+        "address": "경북 칠곡군 지천면 신동로 135-1",
+        "district": "칠곡군"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 제봉로110번길 21 시골집",
+        "lat": 35.1493867,
+        "lng": 126.9238806
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2070641769",
+      "name": "스르르",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 의정부시 용민로182번길 26-3",
+        "district": "의정부시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 장동로 5-3 1층",
+        "lat": 35.149278,
+        "lng": 126.9230148
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-1498265556",
+      "name": "대평리 맛있는집",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 김제시 검산택지5길 21-10",
+        "district": "김제시"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 금남면 용포로 84 1층, 대평리 맛있는집.",
+        "lat": 36.4660517,
+        "lng": 127.2814936
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1991997120",
+      "name": "버트",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 담양군 담양읍 추성로 1186",
+        "district": "담양군"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 팔달구 정조로900번길 13 1층",
+        "lat": 37.2879102,
+        "lng": 127.0153056
+      },
+      "naverCategory": "카페,디저트",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-2027987672",
+      "name": "진상",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 광양시 진상면 옥진로 1085",
+        "district": "광양시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "광진구",
+        "address": "서울 광진구 아차산로33길 22",
+        "lat": 37.5412375,
+        "lng": 127.0703705
+      },
+      "naverCategory": "와인",
+      "reason": "province"
+    },
+    {
+      "key": "ulsan/naver-11598345",
+      "name": "용암골",
+      "from": {
+        "regionId": "ulsan",
+        "address": "울산 울주군 청량읍 문죽리",
+        "district": "울주군"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 연서면 도신고복로 613-2 용암골",
+        "lat": 36.6026303,
+        "lng": 127.2280071
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "gwangju/naver-1262175480",
+      "name": "동산회관",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 북구 우치로90번길 12-1",
+        "district": "북구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 송정로52번길 5 1층 동산회관",
+        "lat": 35.1349888,
+        "lng": 126.7963942
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "district"
+    },
+    {
+      "key": "gwangju/naver-2048128300",
+      "name": "만선",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 북구 호동로 6",
+        "district": "북구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 토정로 275 1층 만선",
+        "lat": 37.5422128,
+        "lng": 126.9405467
+      },
+      "naverCategory": "해물,생선요리",
+      "reason": "province"
+    },
+    {
+      "key": "gwangju/naver-2090894605",
+      "name": "바다회포차",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 북구 저불로 34",
+        "district": "북구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 수완로 54 1층",
+        "lat": 35.1898923,
+        "lng": 126.8289574
+      },
+      "naverCategory": "생선회",
+      "reason": "district"
+    },
+    {
+      "key": "gwangju/naver-1659701073",
+      "name": "진미가람 주월점",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 서구 상무중앙로28번길 18",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "남구",
+        "address": "전남광주 남구 서문대로824번길 12 1층",
+        "lat": 35.1319475,
+        "lng": 126.9018689
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "district"
+    },
+    {
+      "key": "gwangju/naver-2070310198",
+      "name": "코엔",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 동구 동계천로 132",
+        "district": "동구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 월드컵북로4길 30 101호",
+        "lat": 37.5575488,
+        "lng": 126.9212508
+      },
+      "naverCategory": "돈가스",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongbuk/naver-32239625",
+      "name": "동해안",
+      "from": {
+        "regionId": "gyeongbuk",
+        "address": "경북 영덕군 남정면 동해대로 4198-5",
+        "district": "영덕군"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "익산시",
+        "address": "전북 익산시 배산로 71-4 동해빌딩",
+        "lat": 35.9444256,
+        "lng": 126.938206
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongbuk/naver-2031469918",
+      "name": "서원",
+      "from": {
+        "regionId": "gyeongbuk",
+        "address": "경북 안동시 도산면 도산서원길 154",
+        "district": "안동시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 장동로 9-1 1층",
+        "lat": 35.1490692,
+        "lng": 126.9232915
+      },
+      "naverCategory": "술집",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongbuk/naver-1677875090",
+      "name": "열정짬뽕",
+      "from": {
+        "regionId": "gyeongbuk",
+        "address": "경북 안동시 어가골윗길 10-4",
+        "district": "안동시"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 장선배기길 7",
+        "lat": 34.9529623,
+        "lng": 127.5229966
+      },
+      "naverCategory": "중식당",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongbuk/naver-2060786887",
+      "name": "황남",
+      "from": {
+        "regionId": "gyeongbuk",
+        "address": "경북 경주시 포석로 1080",
+        "district": "경주시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 새문안로3길 36 지하1층 B112호, 113호",
+        "lat": 37.5734105,
+        "lng": 126.9732813
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1703643550",
+      "name": "감자꽃",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 화성시 동탄구 금곡로 251-7",
+        "district": "화성시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "오산시",
+        "address": "경기 오산시 오산로272번길 8 1층",
+        "lat": 37.1509633,
+        "lng": 127.0695349
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-38704556",
+      "name": "구포국수",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 안양시 동안구 시민대로 161",
+        "district": "안양시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 권선구 금호로 83-1 1층",
+        "lat": 37.2713896,
+        "lng": 126.9594943
+      },
+      "naverCategory": "국수",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-31840670",
+      "name": "굿모닝",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 중앙로 338",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 우정국로 48 S&S 빌딩 지하1층",
+        "lat": 37.573251,
+        "lng": 126.9831775
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-11723442",
+      "name": "꽃피는산골",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 안성시 고삼면 쌍지길 11-148",
+        "district": "안성시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 종로11길 17",
+        "lat": 37.5710793,
+        "lng": 126.9856054
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-37895912",
+      "name": "달빛한잔",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 부천시 원미구 부흥로315번길 67",
+        "district": "부천시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 황새울로360번길 12 대명프라자 3층 320호 달빛한잔",
+        "lat": 37.3866265,
+        "lng": 127.1248958
+      },
+      "naverCategory": "요리주점",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-1705969669",
+      "name": "대패상회",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 의정부시 호국로1298번길 43",
+        "district": "의정부시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 망원로 96 1층 대패상회",
+        "lat": 37.5577328,
+        "lng": 126.9073724
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1098405799",
+      "name": "만원수산",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 고양시 일산서구 강성로 147",
+        "district": "고양시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 서초대로77길 37 3층",
+        "lat": 37.5009917,
+        "lng": 127.0251242
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2008388043",
+      "name": "매쎄",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 수원시 권선구 세화로134번길 37",
+        "district": "수원시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "강남구",
+        "address": "서울 강남구 논현로32길 5 1층 101호",
+        "lat": 37.4839592,
+        "lng": 127.0425974
+      },
+      "naverCategory": "프랑스음식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2059607910",
+      "name": "메트로삼겹살",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 탄현로 84",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 퇴계로 409 흥화브라운 B1층",
+        "lat": 37.5657682,
+        "lng": 127.0170216
+      },
+      "naverCategory": "돼지고기구이",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1065125060",
+      "name": "부자곱",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 화성시 동탄구 동탄역로 102",
+        "district": "화성시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 서북구 원두정3길 26",
+        "lat": 36.8325874,
+        "lng": 127.1377909
+      },
+      "naverCategory": "곱창,막창,양",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-19877394",
+      "name": "사카나",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 성남시 분당구 백현로101번길 17",
+        "district": "성남시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 남문로 690 사카나",
+        "lat": 35.1320469,
+        "lng": 126.928986
+      },
+      "naverCategory": "일식당",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1853419513",
+      "name": "산골추어매운탕",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 안성시 양성면 만세로 705",
+        "district": "안성시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 장안구 장안로378번길 30 산골",
+        "lat": 37.3152847,
+        "lng": 126.9861502
+      },
+      "naverCategory": "추어탕",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-20125417",
+      "name": "삼대째손두부",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 용인시 기흥구 신갈로 25",
+        "district": "용인시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "당진시",
+        "address": "충남 당진시 천변1길 224-10 삼대째손두부",
+        "lat": 36.885895,
+        "lng": 126.6382837
+      },
+      "naverCategory": "두부요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1687334576",
+      "name": "상하이",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 부천시 원미구 부흥로315번길 14",
+        "district": "부천시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 권선구 호매실로104번길 24-61 금호프라자 1동 2층",
+        "lat": 37.2587514,
+        "lng": 126.9627144
+      },
+      "naverCategory": "중식당",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-2055401843",
+      "name": "석호네솥뚜껑닭볶음탕",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 시흥시 서울대학로264번길 26-11",
+        "district": "시흥시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 강남대로65길 12 2층 203, 205, 206호",
+        "lat": 37.5005224,
+        "lng": 127.0247457
+      },
+      "naverCategory": "닭볶음탕",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1675654056",
+      "name": "소문난모듬조개칼국수",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 오산시 북삼미로 183-6",
+        "district": "오산시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 동남구 서부대로 129 신방동 1층",
+        "lat": 36.7799151,
+        "lng": 127.1277121
+      },
+      "naverCategory": "칼국수,만두",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-20346730",
+      "name": "신라갈비",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 수원시 영통구 동수원로 538",
+        "district": "수원시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 종로35길 4",
+        "lat": 37.5713836,
+        "lng": 127.0039961
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-36900466",
+      "name": "어락",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 연천군 전곡읍 평화로861번길 49",
+        "district": "연천군"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "목포시",
+        "address": "전남광주 목포시 평화로 45",
+        "lat": 34.7953938,
+        "lng": 126.4301471
+      },
+      "naverCategory": "해물,생선요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1267330619",
+      "name": "어비스",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 과천시 과천대로2길 48",
+        "district": "과천시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 사직로12길 19-17",
+        "lat": 37.5753521,
+        "lng": 126.9712617
+      },
+      "naverCategory": "바(BAR)",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2036341845",
+      "name": "연우",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 비전2로 200",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "계룡시",
+        "address": "충남 계룡시 엄사면 번영로 58-1 1층 연우",
+        "lat": 36.2890561,
+        "lng": 127.2389634
+      },
+      "naverCategory": "소고기구이",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-34033715",
+      "name": "열날개 본점",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 김포시 김포한강9로75번길 180",
+        "district": "김포시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 동남구 먹거리3길 14 1층 열날개",
+        "lat": 36.817629,
+        "lng": 127.15501
+      },
+      "naverCategory": "닭요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1094543499",
+      "name": "오산 장수촌",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 경기대로 1610",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "오산시",
+        "address": "경기 오산시 오산대역로132번길 50 1층",
+        "lat": 37.1699288,
+        "lng": 127.0600274
+      },
+      "naverCategory": "백숙,삼계탕",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-1534876212",
+      "name": "오초오늘의초밥",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 과천시 과천대로7길 46",
+        "district": "과천시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 영통구 광교중앙로266번길 30 123호",
+        "lat": 37.2923436,
+        "lng": 127.0683228
+      },
+      "naverCategory": "일식당",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-1185402464",
+      "name": "옥순식당",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 김포시 월곶면 용강로250번길 180",
+        "district": "김포시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 황새울로342번길 11 금호리빙스텔 2층 205호",
+        "lat": 37.3862047,
+        "lng": 127.1237076
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-17239436",
+      "name": "유장춘닭개장",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 포승읍 포승공단순환로 464",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 서북구 백석3로 35 유장춘닭개장",
+        "lat": 36.8221017,
+        "lng": 127.1151033
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-37035931",
+      "name": "일산칼국수",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 고양시 일산동구 백석로108번길 6-16",
+        "district": "고양시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 삼일대로15길 6 1층",
+        "lat": 37.568891,
+        "lng": 126.987182
+      },
+      "naverCategory": "칼국수,만두",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-11386100",
+      "name": "장수촌",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 의왕시 청계로 183-1",
+        "district": "의왕시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 수지구 동천로 631",
+        "lat": 37.3586905,
+        "lng": 127.0546468
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-1609687800",
+      "name": "장인족발608",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 특구로19번길 24",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 장신로20번안길 48 장인족발608",
+        "lat": 35.1904698,
+        "lng": 126.8125257
+      },
+      "naverCategory": "족발,보쌈",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-37749841",
+      "name": "죽해수산",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 성남시 중원구 금상로 39",
+        "district": "성남시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서대문구",
+        "address": "서울 서대문구 연세로5길 30 신촌죽해수산(62-6)",
+        "lat": 37.5565255,
+        "lng": 126.9353167
+      },
+      "naverCategory": "대게요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2005756586",
+      "name": "지속",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 파주시 맨드라미길 34",
+        "district": "파주시"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 완산구 현무1길 35 지속",
+        "lat": 35.821919,
+        "lng": 127.1475037
+      },
+      "naverCategory": "돈가스",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1025162062",
+      "name": "칼뽕",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 포천시 호국로 910",
+        "district": "포천시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "홍성군",
+        "address": "충남 홍성군 홍성읍 충서로 1573 1층",
+        "lat": 36.6052634,
+        "lng": 126.6666089
+      },
+      "naverCategory": "중식당",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2000605317",
+      "name": "토오리",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 하남시 천호대로1358번길 7",
+        "district": "하남시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 동교로38안길 7 1층",
+        "lat": 37.5621841,
+        "lng": 126.9246741
+      },
+      "naverCategory": "일식당",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-16779892",
+      "name": "포청천",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 시흥시 정왕대로 74",
+        "district": "시흥시"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "목포시",
+        "address": "전남광주 목포시 하당로 243",
+        "lat": 34.8097759,
+        "lng": 126.4226982
+      },
+      "naverCategory": "중식당",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-13578169",
+      "name": "풍천장어직판장",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 안양시 동안구 관악대로 72-1",
+        "district": "안양시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 동남구 화령길 4-1 풍천장어직판장",
+        "lat": 36.810677,
+        "lng": 127.167797
+      },
+      "naverCategory": "장어,먹장어요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-18440909",
+      "name": "한울",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 파주시 교하로 239",
+        "district": "파주시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 정자일로 15 1층 한울",
+        "lat": 37.3518891,
+        "lng": 127.1052089
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-2045700159",
+      "name": "홍닭",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 성남시 분당구 판교대장로8길 10",
+        "district": "성남시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 처인구 명지로40번길 10 106호",
+        "lat": 37.2327794,
+        "lng": 127.1874202
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-2031009094",
+      "name": "AMPM",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 남양주시 두물로39번길 7",
+        "district": "남양주시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 수완로52번길 46-5 1층",
+        "lat": 35.1897134,
+        "lng": 126.8314409
+      },
+      "naverCategory": "바(BAR)",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-1013826140",
+      "name": "가호",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 진주시 가호로 64",
+        "district": "진주시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 동명로25번길 7-4",
+        "lat": 35.1513875,
+        "lng": 126.9228206
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-37349717",
+      "name": "동피랑",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 통영시 동피랑1길 6-18",
+        "district": "통영시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 와우산로3길 29",
+        "lat": 37.5458266,
+        "lng": 126.9214087
+      },
+      "naverCategory": "해물,생선요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-1564468602",
+      "name": "알찬밥상",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 김해시 번화1로 177",
+        "district": "김해시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 영통구 도청로 10 광교 롯데몰 3층",
+        "lat": 37.286504,
+        "lng": 127.055358
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-1946827264",
+      "name": "자연농원",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 창원시 의창구 북면 천주로 201-12",
+        "district": "창원시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 동남구 개목4길 16 1층",
+        "lat": 36.8154687,
+        "lng": 127.1330181
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-34521207",
+      "name": "청정횟집",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 남해군 설천면 노량로183번길 18",
+        "district": "남해군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 남부순환로350길 75",
+        "lat": 37.4819622,
+        "lng": 127.0380211
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-2071542667",
+      "name": "하노이진영",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 밀양시 하남읍 수산중앙로 67-13",
+        "district": "밀양시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 판교공원로3길 36 102호",
+        "lat": 37.3907624,
+        "lng": 127.0901331
+      },
+      "naverCategory": "베트남음식",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-2054015933",
+      "name": "만나공원",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 연수구 아트센터대로168번길 100",
+        "district": "연수구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "무안군",
+        "address": "전남광주 무안군 삼향읍 후광대로 292 2층 203호",
+        "lat": 34.8140009,
+        "lng": 126.4637666
+      },
+      "naverCategory": "브런치카페",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-13496702",
+      "name": "보스포차",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 계양구 계산새로87번길 6",
+        "district": "계양구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서대문구",
+        "address": "서울 서대문구 연세로7길 25 2층",
+        "lat": 37.5575618,
+        "lng": 126.9354008
+      },
+      "naverCategory": "맥주,호프",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-1760293072",
+      "name": "새벽회",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 남동구 인하로507번길 21",
+        "district": "남동구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 대석2길 8 1층",
+        "lat": 34.9449842,
+        "lng": 127.5238914
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-1954881301",
+      "name": "치즈웨이브",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 미추홀구 독배로 309",
+        "district": "미추홀구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서대문구",
+        "address": "서울 서대문구 연세로7안길 34-6 1,2층 치즈웨이브",
+        "lat": 37.5583559,
+        "lng": 126.9350365
+      },
+      "naverCategory": "피자",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-1386102212",
+      "name": "쿠모",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 영종구 영종대로196번길 26",
+        "district": "영종구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "화성시",
+        "address": "경기 화성시 동탄구 노작로2길 28 101호",
+        "lat": 37.196427,
+        "lng": 127.0784817
+      },
+      "naverCategory": "일식당",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-34581140",
+      "name": "포항물회 본점",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 연수구 용담로 44",
+        "district": "연수구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 목련로397번안길 7",
+        "lat": 35.183657,
+        "lng": 126.8322193
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-21791484",
+      "name": "하나비",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 부평구 장제로 47",
+        "district": "부평구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "서구",
+        "address": "전남광주 서구 상무번영로 52",
+        "lat": 35.1545113,
+        "lng": 126.8532196
+      },
+      "naverCategory": "소고기구이",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-19299856",
+      "name": "다린",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 서귀포시 법환로 11",
+        "district": "서귀포시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 수지구 죽전로168번길 39",
+        "lat": 37.324423,
+        "lng": 127.127125
+      },
+      "naverCategory": "이탈리아음식",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-1017616635",
+      "name": "바다이야기",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 제주시 한림읍 한림로 491",
+        "district": "제주시"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 조치원읍 행복12길 9-10 1층",
+        "lat": 36.6044105,
+        "lng": 127.2934963
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-2024717572",
+      "name": "버들집",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 서귀포시 중정로73번길 10-1",
+        "district": "서귀포시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "서구",
+        "address": "전남광주 서구 상무버들로 35 1층 101호",
+        "lat": 35.1641451,
+        "lng": 126.8595355
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-1470813244",
+      "name": "오로시",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 제주시 정존1길 19",
+        "district": "제주시"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 봉화2길 21 오로시",
+        "lat": 34.9557926,
+        "lng": 127.5180667
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-1588676712",
+      "name": "우도",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 제주시 우도면 연평리",
+        "district": "제주시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "오산시",
+        "address": "경기 오산시 외삼미로 160 1층",
+        "lat": 37.1990825,
+        "lng": 127.0619515
+      },
+      "naverCategory": "소고기구이",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-1222188712",
+      "name": "우주",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 서귀포시 안덕면 항공우주로 83",
+        "district": "서귀포시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 충무로5길 27 2층(을지로3가)",
+        "lat": 37.5654391,
+        "lng": 126.9912343
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-38648333",
+      "name": "제주바다",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 서귀포시 대정읍 최남단해안로30번길 9",
+        "district": "서귀포시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 종로35길 18 1층",
+        "lat": 37.5719582,
+        "lng": 127.0039656
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-20311673",
+      "name": "종가집",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 서귀포시 표선면 표선리",
+        "district": "서귀포시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 인사동길 15-5 1층",
+        "lat": 37.5721493,
+        "lng": 126.9863982
+      },
+      "naverCategory": "곱창,막창,양",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-1255678902",
+      "name": "남산칼국수",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 정읍시 행정길 108",
+        "district": "정읍시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 퇴계로 235 B동 1층 125호 남산칼국수",
+        "lat": 37.5625703,
+        "lng": 126.9982599
+      },
+      "naverCategory": "칼국수,만두",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-1916763306",
+      "name": "돔베초밥",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 전주시 덕진구 아중로 231",
+        "district": "전주시"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 갈매로 353 에비뉴힐 A동 2층 돔베초밥",
+        "lat": 36.4956091,
+        "lng": 127.2627019
+      },
+      "naverCategory": "초밥,롤",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-2031245824",
+      "name": "봉동",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 완주군 봉동읍 둔산리",
+        "district": "완주군"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 장동로 23-22 1층",
+        "lat": 35.1490168,
+        "lng": 126.9246424
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-11726653",
+      "name": "신사동인동",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 군산시 나운로 54",
+        "district": "군산시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "강남구",
+        "address": "서울 강남구 강남대로156길 14 정금빌딩 1층 신사동인동",
+        "lat": 37.5181314,
+        "lng": 127.0203875
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-2062263673",
+      "name": "정통쌈밥",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 고창군 고창읍 남정6길 7",
+        "district": "고창군"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 완산구 우전2길 58",
+        "lat": 35.8091176,
+        "lng": 127.1070207
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "jeonbuk/naver-1986395691",
+      "name": "조선별관",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 정읍시 수성택지7길 16-13",
+        "district": "정읍시"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 완산구 신촌4길 10-9 1층",
+        "lat": 35.8186639,
+        "lng": 127.1169319
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "jeonbuk/naver-2058044682",
+      "name": "조점례남문피순대 금암점",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 군산시 공단대로 89",
+        "district": "군산시"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 덕진구 기린대로 400-14 1층 101호",
+        "lat": 35.8383651,
+        "lng": 127.1333257
+      },
+      "naverCategory": "순대,순댓국",
+      "reason": "district"
+    },
+    {
+      "key": "jeonbuk/naver-2073193247",
+      "name": "풍요",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 전주시 완산구 서신로 16",
+        "district": "전주시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 첨단강변로87번길 5 야스텍타워 2동, 113호",
+        "lat": 35.2144334,
+        "lng": 126.8516935
+      },
+      "naverCategory": "덮밥",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-1903662124",
+      "name": "풍천장어마을",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 익산시 무왕로 1377-1",
+        "district": "익산시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 처인구 성산로 297",
+        "lat": 37.2620043,
+        "lng": 127.1912387
+      },
+      "naverCategory": "장어,먹장어요리",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1766338959",
+      "name": "대원정",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 보성군 보성읍 녹차로 783",
+        "district": "보성군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 돈화문로4길 33 대원정",
+        "lat": 37.5701368,
+        "lng": 126.9941418
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1586721091",
+      "name": "만끽",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 여수시 소호7길 17-5",
+        "district": "여수시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 동교로 272-8 1층",
+        "lat": 37.5635469,
+        "lng": 126.9261827
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1543297676",
+      "name": "새벽",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 여수시 미평로 74",
+        "district": "여수시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 어울마당로 123 ,1층 새벽",
+        "lat": 37.5556124,
+        "lng": 126.9236325
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1797233279",
+      "name": "서울곰탕",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 목포시 백년대로307번길 9-4",
+        "district": "목포시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 장충단로7길 28 서울곰탕",
+        "lat": 37.5625851,
+        "lng": 127.0049231
+      },
+      "naverCategory": "곰탕,설렁탕",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1854279699",
+      "name": "송정골",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 나주시 노안면 도산리",
+        "district": "나주시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 광산로19번길 20 1층송정골",
+        "lat": 35.1390369,
+        "lng": 126.7934945
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-16080483",
+      "name": "유진정",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 담양군 금성면 시암골로 17",
+        "district": "담양군"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "서구",
+        "address": "전남광주 서구 운천로31번길 15 유진정",
+        "lat": 35.1353701,
+        "lng": 126.8573899
+      },
+      "naverCategory": "오리요리",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1983640525",
+      "name": "초루",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 보성군 득량면 기남길 142-130",
+        "district": "보성군"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 서판교로44번길 3-19 1층 101호",
+        "lat": 37.3910576,
+        "lng": 127.0993504
+      },
+      "naverCategory": "일식당",
+      "reason": "province"
+    },
+    {
+      "key": "sejong/naver-1920359663",
+      "name": "바다향수산",
+      "from": {
+        "regionId": "sejong",
+        "address": "세종특별자치시 조치원읍 행복1길 11-1",
+        "district": "세종"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 기흥구 기흥로 14 . 1층 바다향수산",
+        "lat": 37.2773646,
+        "lng": 127.116243
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "sejong/naver-21252160",
+      "name": "밥상차려주는집",
+      "from": {
+        "regionId": "sejong",
+        "address": "세종특별자치시 가름로 232",
+        "district": "세종"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 동남구 풍세로 702",
+        "lat": 36.772966,
+        "lng": 127.1390279
+      },
+      "naverCategory": "한정식",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1289052276",
+      "name": "경양식당 본점",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 영등포구 경인로72길 4",
+        "district": "영등포구"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 시청대로 127 강남프라자 1층 114호",
+        "lat": 36.4796408,
+        "lng": 127.2860626
+      },
+      "naverCategory": "돈가스",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-17986930",
+      "name": "고궁",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 종로구 사직로 161",
+        "district": "종로구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 장안구 정조로 1094-3 2층",
+        "lat": 37.3028411,
+        "lng": 127.0024544
+      },
+      "naverCategory": "닭요리",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1625529373",
+      "name": "궁가",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 서대문구 증가로10길 60-4",
+        "district": "서대문구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 마방로10길 18-4 2층",
+        "lat": 37.4765598,
+        "lng": 127.0435535
+      },
+      "naverCategory": "중식당",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-2098303895",
+      "name": "그루트",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 강남대로110길 70",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 덕진구 명륜5길 17-1 1층",
+        "lat": 35.8442223,
+        "lng": 127.1257985
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1043556271",
+      "name": "노량진어시장",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 동작구 노들로 674",
+        "district": "동작구"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "논산시",
+        "address": "충남 논산시 관촉로 104 2동",
+        "lat": 36.1988565,
+        "lng": 127.1100381
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1602466277",
+      "name": "농부쌈밥",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 동작구 사당로30길 19",
+        "district": "동작구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 영통구 광교중앙로266번길 30",
+        "lat": 37.292379,
+        "lng": 127.0684895
+      },
+      "naverCategory": "쌈밥",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1574560244",
+      "name": "더 씨",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 성북구 개운사길 8",
+        "district": "성북구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 독막로3길 26 1층",
+        "lat": 37.5494173,
+        "lng": 126.9171391
+      },
+      "naverCategory": "일식당",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1046631053",
+      "name": "라포레스타",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 마포구 신촌로6길 23",
+        "district": "마포구"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 연서면 대첩로 130",
+        "lat": 36.5954224,
+        "lng": 127.281388
+      },
+      "naverCategory": "카페",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1102973917",
+      "name": "로투스",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 중구 삼일대로9길 6",
+        "district": "중구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "서구",
+        "address": "전남광주 서구 상무대로868번길 17-8 1층",
+        "lat": 35.1485552,
+        "lng": 126.8579852
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1886465835",
+      "name": "목탄장",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 선릉로157길 23-4",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 분당내곡로 155 Kcc웰츠타워 102호",
+        "lat": 37.3975763,
+        "lng": 127.1126468
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-2094095596",
+      "name": "백무동",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 광진구 아차산로 441",
+        "district": "광진구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 세종대로20길 23 1층 102호",
+        "lat": 37.567111,
+        "lng": 126.9787416
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1222430825",
+      "name": "본가장어 신사 본점",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 압구정동 429",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 신반포로47길 87 1, 2층",
+        "lat": 37.5143252,
+        "lng": 127.0185913
+      },
+      "naverCategory": "장어,먹장어요리",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-35482992",
+      "name": "브루클린 피자",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 강남대로118길 21",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 대왕판교로 670 유스페이스2 A동 106,107호",
+        "lat": 37.4020288,
+        "lng": 127.1066516
+      },
+      "naverCategory": "피자",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-2087485549",
+      "name": "비바",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 서대문구 동교로 296",
+        "district": "서대문구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 처인구 금령로71번길 6-8 1층 102호",
+        "lat": 37.2356902,
+        "lng": 127.2048911
+      },
+      "naverCategory": "이탈리아음식",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-2020171432",
+      "name": "비어도",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 송파구 가락동 67",
+        "district": "송파구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 성덕정길 103 2층",
+        "lat": 37.5375068,
+        "lng": 127.0549734
+      },
+      "naverCategory": "맥주,호프",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1768646220",
+      "name": "서울집",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 언주로93길 22-3",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 서운로 220 대지프라자 1층 5호, 6호",
+        "lat": 37.5025714,
+        "lng": 127.02175
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-2085657169",
+      "name": "스시온기",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 은평구 응암로 277",
+        "district": "은평구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 신촌로 160 101호 스시온기",
+        "lat": 37.5563936,
+        "lng": 126.9434625
+      },
+      "naverCategory": "일식당",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1036879498",
+      "name": "아라타",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 영등포구 국제금융로8길 16",
+        "district": "영등포구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 동명로25번길 9-9",
+        "lat": 35.1512847,
+        "lng": 126.9224166
+      },
+      "naverCategory": "돈가스",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1283604243",
+      "name": "아리랑고개 닭꼬치",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 성북구 길음로 11",
+        "district": "성북구"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "예산군",
+        "address": "충남 예산군 예산읍 예산시장길 2 139호 예산시장 아리랑고개닭꼬치",
+        "lat": 36.6766794,
+        "lng": 126.8493801
+      },
+      "naverCategory": "일식튀김,꼬치",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-34268638",
+      "name": "영광밥상",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강서구 남부순환로19길 48-14",
+        "district": "강서구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 사평대로56길 7 지하1층",
+        "lat": 37.5032281,
+        "lng": 127.0235782
+      },
+      "naverCategory": "한정식",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-13427243",
+      "name": "원진노기순청국장숯불갈비",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 성북구 안암로9가길 94",
+        "district": "성북구"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "공주시",
+        "address": "충남 공주시 백미고을길 6 1층",
+        "lat": 36.4656185,
+        "lng": 127.1228588
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1279278264",
+      "name": "저저",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 마포구 잔다리로 65",
+        "district": "마포구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 퇴계로41길 31 1층 101호",
+        "lat": 37.5631923,
+        "lng": 126.9955378
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1156068661",
+      "name": "짬뽕전문점",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 종로구 종로40길 6",
+        "district": "종로구"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 서북구 오성로 42 1층",
+        "lat": 36.8302706,
+        "lng": 127.131879
+      },
+      "naverCategory": "중식당",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-2072676359",
+      "name": "천향",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 논현로 166",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 종로5길 32-3 2,3층",
+        "lat": 37.5718671,
+        "lng": 126.9807512
+      },
+      "naverCategory": "중식당",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-2081745645",
+      "name": "파스타디쉬",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 선릉로129길 20",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 오천2길 30 1층 파스타디쉬",
+        "lat": 34.9305774,
+        "lng": 127.4952015
+      },
+      "naverCategory": "스파게티,파스타전문",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1104324042",
+      "name": "포썸",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 성북구 동소문로 125",
+        "district": "성북구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 희우정로 77 상가동 106호 마포한강 아이파크",
+        "lat": 37.5528604,
+        "lng": 126.9034688
+      },
+      "naverCategory": "베트남음식",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1018883356",
+      "name": "플디 케이크하우스 성수점",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 선릉로153길 11",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 왕십리로14길 28-15 1층",
+        "lat": 37.5481675,
+        "lng": 127.046726
+      },
+      "naverCategory": "케이크전문",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1524742527",
+      "name": "한성양꼬치,양갈비",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 강남대로78길 25",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 나성북1로 12 메가타워2 2층 207호",
+        "lat": 36.4909482,
+        "lng": 127.2576923
+      },
+      "naverCategory": "양꼬치",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1705177116",
+      "name": "해누리",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강서구 공항대로59가길 17",
+        "district": "강서구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서대문구",
+        "address": "서울 서대문구 연세로5다길 28-4 1층",
+        "lat": 37.5568408,
+        "lng": 126.9341885
+      },
+      "naverCategory": "생선회",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-2016408542",
+      "name": "희희",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 종로구 대학로 42-7",
+        "district": "종로구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 독막로 46 103호 희희",
+        "lat": 37.5477522,
+        "lng": 126.9185139
+      },
+      "naverCategory": "이자카야",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-2055206907",
+      "name": "KOTA",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 동대문구 회기로21길 7",
+        "district": "동대문구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 마른내로 62-1 2층 201호",
+        "lat": 37.5641533,
+        "lng": 126.994725
+      },
+      "naverCategory": "퓨전음식",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1218512724",
+      "name": "Verde",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 영등포구 국회대로 612",
+        "district": "영등포구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "북구",
+        "address": "전남광주 북구 우치로100번길 61 1층 verde",
+        "lat": 35.1766873,
+        "lng": 126.915826
+      },
+      "naverCategory": "멕시코,남미음식",
+      "reason": "province"
+    },
+    {
+      "key": "ulsan/naver-2080789780",
+      "name": "명품대패",
+      "from": {
+        "regionId": "ulsan",
+        "address": "울산 남구 삼산로93번길 41-1",
+        "district": "남구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 팔달구 효원로265번길 23 101호",
+        "lat": 37.2631127,
+        "lng": 127.0309919
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    }
+  ]
+}

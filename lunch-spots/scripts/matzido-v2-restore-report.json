@@ -1,0 +1,166 @@
+{
+  "mode": "apply",
+  "restored": [
+    {
+      "key": "busan/naver-2098790222",
+      "status": "restored",
+      "to": "gwangju/naver-2098790222",
+      "category": "한식",
+      "address": "전남광주 동구 동계천로85번길 6-13 1층 만개",
+      "naverCategory": "한식"
+    },
+    {
+      "key": "chungnam/naver-2085552208",
+      "status": "restored",
+      "to": "seoul/naver-2085552208",
+      "category": "한식",
+      "address": "서울 마포구 와우산로21길 20-6 1층",
+      "naverCategory": "한식"
+    },
+    {
+      "key": "chungnam/naver-12064600",
+      "status": "restored",
+      "to": "seoul/naver-12064600",
+      "category": "양식",
+      "address": "서울 강남구 압구정로11길 37-30",
+      "naverCategory": "양식"
+    },
+    {
+      "key": "chungnam/naver-2079739226",
+      "status": "restored",
+      "to": "seoul/naver-2079739226",
+      "category": "카페·디저트",
+      "address": "서울 강남구 압구정로34길 36 102호",
+      "naverCategory": "브런치카페"
+    },
+    {
+      "key": "chungnam/naver-1015469914",
+      "status": "restored",
+      "to": "gyeonggi/naver-1015469914",
+      "category": "주점",
+      "address": "경기 성남시 분당구 장미로100번길 11-1 1층",
+      "naverCategory": "이자카야"
+    },
+    {
+      "key": "gangwon/naver-2071052672",
+      "status": "restored",
+      "to": "seoul/naver-2071052672",
+      "category": "양식",
+      "address": "서울 마포구 백범로 42 101호, 102호",
+      "naverCategory": "양식"
+    },
+    {
+      "key": "gyeongbuk/naver-1693700489",
+      "status": "restored",
+      "to": "gyeonggi/naver-1693700489",
+      "category": "양식",
+      "address": "경기 수원시 팔달구 수원천로 353 2층",
+      "naverCategory": "이탈리아음식"
+    },
+    {
+      "key": "gyeonggi/naver-2003441501",
+      "status": "restored",
+      "to": "gyeonggi/naver-2003441501",
+      "category": "한식",
+      "address": "경기 용인시 처인구 모현읍 곡현로823번길 27-5 1층",
+      "naverCategory": "육류,고기요리"
+    },
+    {
+      "key": "gyeonggi/naver-1377037254",
+      "status": "restored",
+      "to": "gyeonggi/naver-1377037254",
+      "category": "한식",
+      "address": "경기 성남시 분당구 야탑로111번길 19 1층 다정채",
+      "naverCategory": "한식"
+    },
+    {
+      "key": "gyeonggi/naver-1876356025",
+      "status": "restored",
+      "to": "sejong/naver-1876356025",
+      "category": "주점",
+      "address": "세종 나성북로 21 103호",
+      "naverCategory": "요리주점"
+    },
+    {
+      "key": "gyeonggi/naver-1066313912",
+      "status": "restored",
+      "to": "jeonbuk/naver-1066313912",
+      "category": "양식",
+      "address": "전북 전주시 완산구 태평1길 32 1층",
+      "naverCategory": "스페인음식"
+    },
+    {
+      "key": "gyeonggi/naver-2049748405",
+      "status": "restored",
+      "to": "jeonbuk/naver-2049748405",
+      "category": "한식",
+      "address": "전북 전주시 덕진구 권삼득로 319-1 1층",
+      "naverCategory": "오므라이스"
+    },
+    {
+      "key": "gyeonggi/naver-1707465493",
+      "status": "restored",
+      "to": "gyeonggi/naver-1707465493",
+      "category": "주점",
+      "address": "경기 수원시 팔달구 화서문로 20 2층",
+      "naverCategory": "와인"
+    },
+    {
+      "key": "gyeongnam/naver-2008173025",
+      "status": "restored",
+      "to": "seoul/naver-2008173025",
+      "category": "한식",
+      "address": "서울 종로구 인사동8길 16-1 1층",
+      "naverCategory": "한식"
+    },
+    {
+      "key": "jeju/naver-2084372107",
+      "status": "restored",
+      "to": "chungnam/naver-2084372107",
+      "category": "카페·디저트",
+      "address": "충남 홍성군 홍성읍 월산리 72-1",
+      "naverCategory": "브런치카페"
+    },
+    {
+      "key": "jeonnam/naver-1107022884",
+      "status": "restored",
+      "to": "gyeonggi/naver-1107022884",
+      "category": "양식",
+      "address": "경기 성남시 분당구 정자일로 146 1층 에이127호",
+      "naverCategory": "프랑스음식"
+    },
+    {
+      "key": "jeonnam/naver-1932387432",
+      "status": "restored",
+      "to": "jeonnam/naver-1932387432",
+      "category": "한식",
+      "address": "전남광주 순천시 해룡면 향매로 126 1층 하루한모",
+      "naverCategory": "두부요리"
+    },
+    {
+      "key": "seoul/naver-2054341602",
+      "status": "restored",
+      "to": "seoul/naver-2054341602",
+      "category": "주점",
+      "address": "서울 종로구 수표로26길 28 1층",
+      "naverCategory": "술집"
+    },
+    {
+      "key": "seoul/naver-2004379803",
+      "status": "restored",
+      "to": "gwangju/naver-2004379803",
+      "category": "양식",
+      "address": "전남광주 광산구 수완로74번길 38 1층",
+      "naverCategory": "퓨전음식"
+    },
+    {
+      "key": "seoul/naver-1983944498",
+      "status": "restored",
+      "to": "gwangju/naver-1983944498",
+      "category": "주점",
+      "address": "전남광주 광산구 수완로74번길 50-1 1층",
+      "naverCategory": "이자카야"
+    }
+  ],
+  "failed": []
+}

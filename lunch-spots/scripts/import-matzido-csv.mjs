@@ -185,19 +185,31 @@ for (const row of csv) {
   let kakaoId;
   let kakaoUrl;
   let resolvedAddress = address;
-  // Prefer short name query; "name + full address" often returns empty.
+  // Prefer address-scoped queries so short names ("우주", "범") do not bind
+  // to a same-named place in another city. Bare name is last resort only.
   const districtHint = address.split(/\s+/).find((t) => /(시|군|구)$/.test(t));
-  let hits = await kakaoKeyword(name);
+  let hits = [];
+  if (address) hits = await kakaoKeyword(`${name} ${address}`);
   if (!hits.length && districtHint) hits = await kakaoKeyword(`${name} ${districtHint}`);
   if (!hits.length && address) hits = await kakaoKeyword(address);
+  if (!hits.length) hits = await kakaoKeyword(name);
   await sleep(120);
-  const hit = hits[0];
+  const wantRegion = resolvedAddress ? parseRegion(resolvedAddress) : undefined;
+  const hit =
+    (wantRegion &&
+      hits.find((h) => {
+        const hr = parseRegion(h.address);
+        return hr && hr.province === wantRegion.province && hr.district === wantRegion.district;
+      })) ||
+    hits[0];
   if (hit) {
     lat = hit.lat;
     lng = hit.lng;
     kakaoId = hit.kakaoId;
     kakaoUrl = hit.kakaoUrl;
-    if (!resolvedAddress) resolvedAddress = hit.address;
+    // Never fill a missing CSV address from an unscoped Kakao hit — that is how
+    // short names landed in the wrong 시·도.
+    if (!resolvedAddress && wantRegion) resolvedAddress = hit.address;
   }
 
   existing = findDup(name, lat, lng, naverId, kakaoId);

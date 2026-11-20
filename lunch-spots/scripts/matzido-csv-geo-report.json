@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-11-20T07:52:19.383Z",
+  "stats": {
+    "scanned": 1610,
+    "noCsv": 1546,
+    "ok": 64,
+    "mismatch": 0,
+    "moved": 0,
+    "refreshed": 0,
+    "geocodeFail": 0,
+    "shortAddr": 0
+  },
+  "mismatches": []
+}

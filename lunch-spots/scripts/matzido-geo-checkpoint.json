@@ -1,0 +1,8466 @@
+{
+  "done": {
+    "busan/naver-1898130354": {
+      "status": "mismatch",
+      "to": "jeonbuk"
+    },
+    "busan/naver-11697545": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "busan/naver-2058612685": {
+      "status": "ok"
+    },
+    "busan/naver-2041877717": {
+      "status": "ok"
+    },
+    "busan/naver-1784872593": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "busan/naver-16547341": {
+      "status": "ok"
+    },
+    "busan/naver-1230485898": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "busan/naver-1015594898": {
+      "status": "ok"
+    },
+    "busan/naver-2045309062": {
+      "status": "ok"
+    },
+    "busan/naver-1417059494": {
+      "status": "ok"
+    },
+    "busan/naver-2027416077": {
+      "status": "ok"
+    },
+    "busan/naver-11622446": {
+      "status": "ok"
+    },
+    "busan/naver-2027453544": {
+      "status": "ok"
+    },
+    "busan/naver-1699998277": {
+      "status": "ok"
+    },
+    "busan/naver-2072972807": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "chungbuk/naver-21230589": {
+      "status": "mismatch",
+      "to": "sejong"
+    },
+    "chungbuk/naver-1365285191": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "chungbuk/naver-20819236": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "chungbuk/naver-1112306548": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "chungbuk/naver-2037966007": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "chungbuk/naver-1061491128": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "chungbuk/naver-18106884": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "chungbuk/naver-1770203924": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "chungbuk/naver-2050574109": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "chungnam/naver-1863703980": {
+      "status": "ok"
+    },
+    "chungnam/naver-1573449230": {
+      "status": "ok"
+    },
+    "chungnam/naver-1678020194": {
+      "status": "ok"
+    },
+    "chungnam/naver-1123725281": {
+      "status": "ok"
+    },
+    "chungnam/naver-1083658644": {
+      "status": "ok"
+    },
+    "chungnam/naver-2059973122": {
+      "status": "ok"
+    },
+    "chungnam/naver-33213612": {
+      "status": "ok"
+    },
+    "chungnam/naver-2097032057": {
+      "status": "ok"
+    },
+    "chungnam/naver-38712396": {
+      "status": "ok"
+    },
+    "chungnam/naver-2094507360": {
+      "status": "ok"
+    },
+    "chungnam/naver-1027947709": {
+      "status": "ok"
+    },
+    "chungnam/naver-20753546": {
+      "status": "ok"
+    },
+    "chungnam/naver-1137225672": {
+      "status": "ok"
+    },
+    "chungnam/naver-2099122064": {
+      "status": "ok"
+    },
+    "chungnam/naver-2061357168": {
+      "status": "ok"
+    },
+    "chungnam/naver-21054543": {
+      "status": "ok"
+    },
+    "chungnam/naver-1337999188": {
+      "status": "ok"
+    },
+    "chungnam/naver-1929335824": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "chungnam/naver-2095407872": {
+      "status": "ok"
+    },
+    "chungnam/naver-13115958": {
+      "status": "ok"
+    },
+    "chungnam/naver-2062689862": {
+      "status": "ok"
+    },
+    "chungnam/naver-1706121072": {
+      "status": "ok"
+    },
+    "chungnam/naver-2041612291": {
+      "status": "ok"
+    },
+    "chungnam/naver-1708098172": {
+      "status": "ok"
+    },
+    "chungnam/naver-2034674296": {
+      "status": "ok"
+    },
+    "chungnam/naver-1021883256": {
+      "status": "ok"
+    },
+    "chungnam/naver-2051816244": {
+      "status": "ok"
+    },
+    "chungnam/naver-32548412": {
+      "status": "ok"
+    },
+    "chungnam/naver-1621337175": {
+      "status": "ok"
+    },
+    "chungnam/naver-1177512076": {
+      "status": "ok"
+    },
+    "chungnam/naver-17422412": {
+      "status": "ok"
+    },
+    "chungnam/naver-1283199507": {
+      "status": "ok"
+    },
+    "chungnam/naver-2041139752": {
+      "status": "ok"
+    },
+    "chungnam/naver-1331431705": {
+      "status": "ok"
+    },
+    "chungnam/naver-2003417872": {
+      "status": "ok"
+    },
+    "chungnam/naver-1115013364": {
+      "status": "ok"
+    },
+    "chungnam/naver-1807681546": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "chungnam/naver-1465560020": {
+      "status": "ok"
+    },
+    "chungnam/naver-1652641328": {
+      "status": "ok"
+    },
+    "chungnam/naver-1098692828": {
+      "status": "ok"
+    },
+    "chungnam/naver-2056730759": {
+      "status": "ok"
+    },
+    "chungnam/naver-1925010624": {
+      "status": "ok"
+    },
+    "chungnam/naver-1460110648": {
+      "status": "ok"
+    },
+    "chungnam/naver-2079634439": {
+      "status": "ok"
+    },
+    "chungnam/naver-1621273398": {
+      "status": "ok"
+    },
+    "chungnam/naver-2018774023": {
+      "status": "ok"
+    },
+    "chungnam/naver-1244168001": {
+      "status": "ok"
+    },
+    "chungnam/naver-2025393224": {
+      "status": "ok"
+    },
+    "chungnam/naver-1505225563": {
+      "status": "ok"
+    },
+    "chungnam/naver-1539529055": {
+      "status": "ok"
+    },
+    "chungnam/naver-2037607809": {
+      "status": "ok"
+    },
+    "chungnam/naver-1315759460": {
+      "status": "ok"
+    },
+    "chungnam/naver-2010662724": {
+      "status": "ok"
+    },
+    "chungnam/naver-2054756354": {
+      "status": "ok"
+    },
+    "chungnam/naver-2001968046": {
+      "status": "ok"
+    },
+    "chungnam/naver-2098348212": {
+      "status": "ok"
+    },
+    "chungnam/naver-2059050978": {
+      "status": "ok"
+    },
+    "chungnam/naver-19356907": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "chungnam/naver-1506492189": {
+      "status": "ok"
+    },
+    "chungnam/naver-1191197606": {
+      "status": "ok"
+    },
+    "chungnam/naver-2071802499": {
+      "status": "ok"
+    },
+    "chungnam/naver-2005781276": {
+      "status": "ok"
+    },
+    "chungnam/naver-2057057695": {
+      "status": "ok"
+    },
+    "chungnam/naver-1059149712": {
+      "status": "ok"
+    },
+    "chungnam/naver-1468897045": {
+      "status": "ok"
+    },
+    "chungnam/naver-13086380": {
+      "status": "ok"
+    },
+    "chungnam/naver-1228778413": {
+      "status": "ok"
+    },
+    "chungnam/naver-1233139434": {
+      "status": "ok"
+    },
+    "chungnam/naver-1919885580": {
+      "status": "ok"
+    },
+    "chungnam/naver-1216614070": {
+      "status": "ok"
+    },
+    "chungnam/naver-1816983607": {
+      "status": "ok"
+    },
+    "chungnam/naver-32323466": {
+      "status": "ok"
+    },
+    "chungnam/naver-1100344328": {
+      "status": "ok"
+    },
+    "chungnam/naver-2089542396": {
+      "status": "ok"
+    },
+    "chungnam/naver-2090913547": {
+      "status": "ok"
+    },
+    "chungnam/naver-1059478806": {
+      "status": "ok"
+    },
+    "chungnam/naver-1920827686": {
+      "status": "ok"
+    },
+    "chungnam/naver-1775473889": {
+      "status": "ok"
+    },
+    "chungnam/naver-2046410774": {
+      "status": "ok"
+    },
+    "chungnam/naver-2051871220": {
+      "status": "ok"
+    },
+    "chungnam/naver-2051360592": {
+      "status": "ok"
+    },
+    "chungnam/naver-2004205901": {
+      "status": "ok"
+    },
+    "chungnam/naver-2025908565": {
+      "status": "ok"
+    },
+    "chungnam/naver-2024259992": {
+      "status": "ok"
+    },
+    "chungnam/naver-2043041660": {
+      "status": "ok"
+    },
+    "chungnam/naver-702197912": {
+      "status": "ok"
+    },
+    "chungnam/naver-1316082222": {
+      "status": "ok"
+    },
+    "chungnam/naver-2058052619": {
+      "status": "ok"
+    },
+    "chungnam/naver-1851516606": {
+      "status": "ok"
+    },
+    "chungnam/naver-2068527347": {
+      "status": "ok"
+    },
+    "chungnam/naver-1561433029": {
+      "status": "ok"
+    },
+    "chungnam/naver-2057265033": {
+      "status": "ok"
+    },
+    "chungnam/naver-1746746101": {
+      "status": "ok"
+    },
+    "chungnam/naver-1401971178": {
+      "status": "ok"
+    },
+    "chungnam/naver-1935340599": {
+      "status": "ok"
+    },
+    "chungnam/naver-1176636711": {
+      "status": "ok"
+    },
+    "chungnam/naver-1271751462": {
+      "status": "ok"
+    },
+    "chungnam/naver-17481169": {
+      "status": "ok"
+    },
+    "chungnam/naver-1799111683": {
+      "status": "ok"
+    },
+    "chungnam/naver-1246875708": {
+      "status": "ok"
+    },
+    "chungnam/naver-1347852270": {
+      "status": "ok"
+    },
+    "chungnam/naver-33875227": {
+      "status": "ok"
+    },
+    "chungnam/naver-1417435666": {
+      "status": "ok"
+    },
+    "chungnam/naver-1300171256": {
+      "status": "ok"
+    },
+    "chungnam/naver-2031878960": {
+      "status": "ok"
+    },
+    "chungnam/naver-1800472634": {
+      "status": "ok"
+    },
+    "chungnam/naver-2004405014": {
+      "status": "ok"
+    },
+    "chungnam/naver-2080870318": {
+      "status": "ok"
+    },
+    "chungnam/naver-1803250879": {
+      "status": "ok"
+    },
+    "chungnam/naver-2026165192": {
+      "status": "ok"
+    },
+    "chungnam/naver-2037927662": {
+      "status": "ok"
+    },
+    "chungnam/naver-2064687515": {
+      "status": "ok"
+    },
+    "chungnam/naver-2012445350": {
+      "status": "ok"
+    },
+    "chungnam/naver-1206419908": {
+      "status": "ok"
+    },
+    "chungnam/naver-1539725382": {
+      "status": "ok"
+    },
+    "chungnam/naver-1285355722": {
+      "status": "ok"
+    },
+    "chungnam/naver-2088842116": {
+      "status": "ok"
+    },
+    "chungnam/naver-1086187664": {
+      "status": "ok"
+    },
+    "chungnam/naver-1673137717": {
+      "status": "ok"
+    },
+    "chungnam/naver-1704903468": {
+      "status": "ok"
+    },
+    "chungnam/naver-1424786042": {
+      "status": "ok"
+    },
+    "chungnam/naver-1486969893": {
+      "status": "ok"
+    },
+    "chungnam/naver-1353045708": {
+      "status": "ok"
+    },
+    "chungnam/naver-1931756752": {
+      "status": "ok"
+    },
+    "chungnam/naver-1712932308": {
+      "status": "ok"
+    },
+    "chungnam/naver-1078770555": {
+      "status": "ok"
+    },
+    "chungnam/naver-1909177663": {
+      "status": "ok"
+    },
+    "chungnam/naver-1657114545": {
+      "status": "ok"
+    },
+    "chungnam/naver-1247709459": {
+      "status": "ok"
+    },
+    "chungnam/naver-2090285538": {
+      "status": "ok"
+    },
+    "chungnam/naver-30921834": {
+      "status": "ok"
+    },
+    "chungnam/naver-1420335760": {
+      "status": "ok"
+    },
+    "chungnam/naver-1441178694": {
+      "status": "ok"
+    },
+    "chungnam/naver-1763567934": {
+      "status": "ok"
+    },
+    "chungnam/naver-1643622115": {
+      "status": "ok"
+    },
+    "chungnam/naver-2099985455": {
+      "status": "ok"
+    },
+    "chungnam/naver-1766550756": {
+      "status": "ok"
+    },
+    "chungnam/naver-1041429815": {
+      "status": "ok"
+    },
+    "chungnam/naver-1001569817": {
+      "status": "ok"
+    },
+    "chungnam/naver-1113169179": {
+      "status": "ok"
+    },
+    "chungnam/naver-1034494104": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "chungnam/naver-2069151911": {
+      "status": "ok"
+    },
+    "chungnam/naver-2065960284": {
+      "status": "ok"
+    },
+    "chungnam/naver-2048160472": {
+      "status": "ok"
+    },
+    "chungnam/naver-1743746885": {
+      "status": "ok"
+    },
+    "chungnam/naver-2064654495": {
+      "status": "ok"
+    },
+    "chungnam/naver-1193539587": {
+      "status": "ok"
+    },
+    "chungnam/naver-1909633827": {
+      "status": "ok"
+    },
+    "chungnam/naver-1976170182": {
+      "status": "ok"
+    },
+    "chungnam/naver-2042596062": {
+      "status": "ok"
+    },
+    "chungnam/naver-1546709033": {
+      "status": "ok"
+    },
+    "chungnam/naver-17663372": {
+      "status": "ok"
+    },
+    "chungnam/naver-1160032125": {
+      "status": "ok"
+    },
+    "chungnam/naver-2080272600": {
+      "status": "ok"
+    },
+    "chungnam/naver-1687844194": {
+      "status": "ok"
+    },
+    "chungnam/naver-2084372107": {
+      "status": "ok"
+    },
+    "daegu/naver-2091882564": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "daegu/naver-1224154264": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "daegu/naver-35228395": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "daegu/naver-1227244952": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "daegu/naver-2019608393": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "daejeon/naver-2043060330": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "daejeon/naver-2021030127": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "daejeon/naver-1251447969": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "daejeon/naver-115135662": {
+      "status": "mismatch",
+      "to": "sejong"
+    },
+    "daejeon/naver-2061384201": {
+      "status": "mismatch",
+      "to": "jeonbuk"
+    },
+    "daejeon/naver-1377746746": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gangwon/naver-37178870": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gangwon/naver-1836298981": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gangwon/naver-1000309544": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gangwon/naver-1298851101": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gangwon/naver-1426981340": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gangwon/naver-1807622300": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gangwon/naver-20619413": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gwangju/naver-1106521824": {
+      "status": "ok"
+    },
+    "gwangju/naver-16247697": {
+      "status": "ok"
+    },
+    "gwangju/naver-16838838": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "gwangju/naver-1205857107": {
+      "status": "ok"
+    },
+    "gwangju/naver-32573301": {
+      "status": "ok"
+    },
+    "gwangju/naver-34490827": {
+      "status": "ok"
+    },
+    "gwangju/naver-2018763870": {
+      "status": "ok"
+    },
+    "gwangju/naver-1927755426": {
+      "status": "ok"
+    },
+    "gwangju/naver-38009666": {
+      "status": "ok"
+    },
+    "gwangju/naver-2094355975": {
+      "status": "ok"
+    },
+    "gwangju/naver-1285239778": {
+      "status": "ok"
+    },
+    "gwangju/naver-1544672346": {
+      "status": "ok"
+    },
+    "gwangju/naver-2067435052": {
+      "status": "ok"
+    },
+    "gwangju/naver-2025130530": {
+      "status": "ok"
+    },
+    "gwangju/naver-2071246489": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gwangju/naver-1120268753": {
+      "status": "ok"
+    },
+    "gyeongbuk/naver-1769818339": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gyeonggi/naver-33874471": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-36097690": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-435161466": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2070641769": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gyeonggi/naver-1849171999": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2030421883": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2016659513": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1266611739": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1162047998": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1015469914": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1340180969": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1498265556": {
+      "status": "mismatch",
+      "to": "sejong"
+    },
+    "jeonbuk/naver-1635032775": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2071554860": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1214767941": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1991997120": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "jeonnam/naver-1342349148": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2027987672": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "jeonnam/naver-1707024229": {
+      "status": "ok"
+    },
+    "sejong/naver-1407446661": {
+      "status": "ok"
+    },
+    "seoul/naver-31514532": {
+      "status": "ok"
+    },
+    "seoul/naver-1302809851": {
+      "status": "ok"
+    },
+    "seoul/naver-1106172226": {
+      "status": "ok"
+    },
+    "seoul/naver-1300821715": {
+      "status": "ok"
+    },
+    "seoul/naver-1574927616": {
+      "status": "ok"
+    },
+    "seoul/naver-2076283807": {
+      "status": "ok"
+    },
+    "seoul/naver-2068372032": {
+      "status": "ok"
+    },
+    "seoul/naver-1398812219": {
+      "status": "ok"
+    },
+    "seoul/naver-2070883690": {
+      "status": "ok"
+    },
+    "seoul/naver-2079739226": {
+      "status": "ok"
+    },
+    "ulsan/naver-11598345": {
+      "status": "mismatch",
+      "to": "sejong"
+    },
+    "chungnam/naver-1836298981": {
+      "status": "ok"
+    },
+    "chungnam/naver-2021030127": {
+      "status": "ok"
+    },
+    "chungnam/naver-1426981340": {
+      "status": "ok"
+    },
+    "chungnam/naver-1807622300": {
+      "status": "ok"
+    },
+    "gwangju/naver-2034856558": {
+      "status": "ok"
+    },
+    "gwangju/naver-1683541979": {
+      "status": "ok"
+    },
+    "gwangju/naver-15947312": {
+      "status": "ok"
+    },
+    "gwangju/naver-1080611018": {
+      "status": "ok"
+    },
+    "gwangju/naver-1583621262": {
+      "status": "ok"
+    },
+    "gwangju/naver-2049336600": {
+      "status": "ok"
+    },
+    "gwangju/naver-1088201259": {
+      "status": "ok"
+    },
+    "gwangju/naver-2037053586": {
+      "status": "ok"
+    },
+    "gwangju/naver-2046160490": {
+      "status": "ok"
+    },
+    "gwangju/naver-1879169604": {
+      "status": "ok"
+    },
+    "gwangju/naver-510488081": {
+      "status": "ok"
+    },
+    "gwangju/naver-1987052247": {
+      "status": "ok"
+    },
+    "gwangju/naver-2019763178": {
+      "status": "ok"
+    },
+    "gwangju/naver-1592597559": {
+      "status": "ok"
+    },
+    "gwangju/naver-1365285191": {
+      "status": "ok"
+    },
+    "gwangju/naver-1512499289": {
+      "status": "ok"
+    },
+    "gwangju/naver-2055007743": {
+      "status": "ok"
+    },
+    "gwangju/naver-2011386676": {
+      "status": "ok"
+    },
+    "gwangju/naver-1253470801": {
+      "status": "ok"
+    },
+    "gwangju/naver-2035137365": {
+      "status": "ok"
+    },
+    "gwangju/naver-38339090": {
+      "status": "ok"
+    },
+    "gwangju/naver-1051015781": {
+      "status": "ok"
+    },
+    "gwangju/naver-1014982688": {
+      "status": "ok"
+    },
+    "gwangju/naver-1953671403": {
+      "status": "ok"
+    },
+    "gwangju/naver-1262175480": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gwangju/naver-1804331545": {
+      "status": "ok"
+    },
+    "gwangju/naver-1004548198": {
+      "status": "ok"
+    },
+    "gwangju/naver-21526180": {
+      "status": "ok"
+    },
+    "gwangju/naver-1448671199": {
+      "status": "ok"
+    },
+    "gwangju/naver-1606777585": {
+      "status": "ok"
+    },
+    "gwangju/naver-2027042109": {
+      "status": "ok"
+    },
+    "gwangju/naver-1224154264": {
+      "status": "ok"
+    },
+    "gwangju/naver-2085278953": {
+      "status": "ok"
+    },
+    "gwangju/naver-2068694809": {
+      "status": "ok"
+    },
+    "gwangju/naver-36820150": {
+      "status": "ok"
+    },
+    "gwangju/naver-11886877": {
+      "status": "ok"
+    },
+    "gwangju/naver-2088241696": {
+      "status": "ok"
+    },
+    "gwangju/naver-2098790222": {
+      "status": "ok"
+    },
+    "gwangju/naver-1768627695": {
+      "status": "ok"
+    },
+    "gwangju/naver-2048128300": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gwangju/naver-20348689": {
+      "status": "ok"
+    },
+    "gwangju/naver-1921857874": {
+      "status": "ok"
+    },
+    "gwangju/naver-1183975890": {
+      "status": "ok"
+    },
+    "gwangju/naver-1279686253": {
+      "status": "ok"
+    },
+    "gwangju/naver-1045390256": {
+      "status": "ok"
+    },
+    "gwangju/naver-1271835777": {
+      "status": "ok"
+    },
+    "gwangju/naver-1156852443": {
+      "status": "ok"
+    },
+    "gwangju/naver-1948442743": {
+      "status": "ok"
+    },
+    "gwangju/naver-1815067028": {
+      "status": "ok"
+    },
+    "gwangju/naver-1450618589": {
+      "status": "ok"
+    },
+    "gwangju/naver-1850472657": {
+      "status": "ok"
+    },
+    "gwangju/naver-1744162867": {
+      "status": "ok"
+    },
+    "gwangju/naver-1189787105": {
+      "status": "ok"
+    },
+    "gwangju/naver-15958826": {
+      "status": "ok"
+    },
+    "gwangju/naver-1921739665": {
+      "status": "ok"
+    },
+    "gwangju/naver-1944820905": {
+      "status": "ok"
+    },
+    "gwangju/naver-1225934385": {
+      "status": "ok"
+    },
+    "gwangju/naver-1969902590": {
+      "status": "ok"
+    },
+    "gwangju/naver-1800465392": {
+      "status": "ok"
+    },
+    "gwangju/naver-1661444419": {
+      "status": "ok"
+    },
+    "gwangju/naver-2090894605": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gwangju/naver-1636880015": {
+      "status": "ok"
+    },
+    "gwangju/naver-15958681": {
+      "status": "ok"
+    },
+    "gwangju/naver-1801459945": {
+      "status": "ok"
+    },
+    "gwangju/naver-2089588682": {
+      "status": "ok"
+    },
+    "gwangju/naver-1914501085": {
+      "status": "ok"
+    },
+    "gwangju/naver-2064609000": {
+      "status": "ok"
+    },
+    "gwangju/naver-1237118974": {
+      "status": "ok"
+    },
+    "gwangju/naver-2004379803": {
+      "status": "ok"
+    },
+    "gwangju/naver-2090062658": {
+      "status": "ok"
+    },
+    "gwangju/naver-1536621944": {
+      "status": "ok"
+    },
+    "gwangju/naver-1168667433": {
+      "status": "ok"
+    },
+    "gwangju/naver-1061491128": {
+      "status": "ok"
+    },
+    "gwangju/naver-2085642831": {
+      "status": "ok"
+    },
+    "gwangju/naver-1878806060": {
+      "status": "ok"
+    },
+    "gwangju/naver-2010895298": {
+      "status": "ok"
+    },
+    "gwangju/naver-1491715272": {
+      "status": "ok"
+    },
+    "gwangju/naver-1041719492": {
+      "status": "ok"
+    },
+    "gwangju/naver-2033302822": {
+      "status": "ok"
+    },
+    "gwangju/naver-16170640": {
+      "status": "ok"
+    },
+    "gwangju/naver-1784872593": {
+      "status": "ok"
+    },
+    "gwangju/naver-33928192": {
+      "status": "ok"
+    },
+    "gwangju/naver-1141847239": {
+      "status": "ok"
+    },
+    "gwangju/naver-1504215821": {
+      "status": "ok"
+    },
+    "gwangju/naver-2057971663": {
+      "status": "ok"
+    },
+    "gwangju/naver-1448616008": {
+      "status": "ok"
+    },
+    "gwangju/naver-1916473280": {
+      "status": "ok"
+    },
+    "gwangju/naver-2070641769": {
+      "status": "ok"
+    },
+    "gwangju/naver-1769818339": {
+      "status": "ok"
+    },
+    "gwangju/naver-15941559": {
+      "status": "ok"
+    },
+    "gwangju/naver-2006350961": {
+      "status": "ok"
+    },
+    "gwangju/naver-13468027": {
+      "status": "ok"
+    },
+    "gwangju/naver-1192659624": {
+      "status": "ok"
+    },
+    "gwangju/naver-1605369306": {
+      "status": "ok"
+    },
+    "gwangju/naver-1777345541": {
+      "status": "ok"
+    },
+    "gwangju/naver-16058129": {
+      "status": "ok"
+    },
+    "gwangju/naver-1738192531": {
+      "status": "ok"
+    },
+    "gwangju/naver-1469831837": {
+      "status": "ok"
+    },
+    "gwangju/naver-2044494934": {
+      "status": "ok"
+    },
+    "gwangju/naver-2032920050": {
+      "status": "ok"
+    },
+    "gwangju/naver-1888524125": {
+      "status": "ok"
+    },
+    "gwangju/naver-1681524541": {
+      "status": "ok"
+    },
+    "gwangju/naver-1972250553": {
+      "status": "ok"
+    },
+    "gwangju/naver-1064212037": {
+      "status": "ok"
+    },
+    "gwangju/naver-1814060946": {
+      "status": "ok"
+    },
+    "gwangju/naver-2002247860": {
+      "status": "ok"
+    },
+    "gwangju/naver-2064374257": {
+      "status": "ok"
+    },
+    "gwangju/naver-1462156600": {
+      "status": "ok"
+    },
+    "gwangju/naver-11387744": {
+      "status": "ok"
+    },
+    "gwangju/naver-1522934198": {
+      "status": "ok"
+    },
+    "gwangju/naver-2006434328": {
+      "status": "ok"
+    },
+    "gwangju/naver-1768975209": {
+      "status": "ok"
+    },
+    "gwangju/naver-2087314056": {
+      "status": "ok"
+    },
+    "gwangju/naver-2091238951": {
+      "status": "ok"
+    },
+    "gwangju/naver-2080310949": {
+      "status": "ok"
+    },
+    "gwangju/naver-2082789768": {
+      "status": "ok"
+    },
+    "gwangju/naver-2003958342": {
+      "status": "ok"
+    },
+    "gwangju/naver-1894962894": {
+      "status": "ok"
+    },
+    "gwangju/naver-1560377150": {
+      "status": "ok"
+    },
+    "gwangju/naver-940362236": {
+      "status": "ok"
+    },
+    "gwangju/naver-2077920323": {
+      "status": "ok"
+    },
+    "gwangju/naver-2037356851": {
+      "status": "ok"
+    },
+    "gwangju/naver-1983944498": {
+      "status": "ok"
+    },
+    "gwangju/naver-37014238": {
+      "status": "ok"
+    },
+    "gwangju/naver-37274646": {
+      "status": "ok"
+    },
+    "gwangju/naver-1941363668": {
+      "status": "ok"
+    },
+    "gwangju/naver-2094272262": {
+      "status": "ok"
+    },
+    "gwangju/naver-31979248": {
+      "status": "ok"
+    },
+    "gwangju/naver-1300485258": {
+      "status": "ok"
+    },
+    "gwangju/naver-15967193": {
+      "status": "ok"
+    },
+    "gwangju/naver-20450879": {
+      "status": "ok"
+    },
+    "gwangju/naver-1565170017": {
+      "status": "ok"
+    },
+    "gwangju/naver-1255916237": {
+      "status": "ok"
+    },
+    "gwangju/naver-1659701073": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gwangju/naver-2015224684": {
+      "status": "ok"
+    },
+    "gwangju/naver-1934962287": {
+      "status": "ok"
+    },
+    "gwangju/naver-2096615336": {
+      "status": "ok"
+    },
+    "gwangju/naver-1093878635": {
+      "status": "ok"
+    },
+    "gwangju/naver-16154651": {
+      "status": "ok"
+    },
+    "gwangju/naver-2057298438": {
+      "status": "ok"
+    },
+    "gwangju/naver-1797441699": {
+      "status": "ok"
+    },
+    "gwangju/naver-1146337568": {
+      "status": "ok"
+    },
+    "gwangju/naver-1018955070": {
+      "status": "ok"
+    },
+    "gwangju/naver-2045344687": {
+      "status": "ok"
+    },
+    "gwangju/naver-12001959": {
+      "status": "ok"
+    },
+    "gwangju/naver-2097797421": {
+      "status": "ok"
+    },
+    "gwangju/naver-1472593445": {
+      "status": "ok"
+    },
+    "gwangju/naver-1195548866": {
+      "status": "ok"
+    },
+    "gwangju/naver-1898215410": {
+      "status": "ok"
+    },
+    "gwangju/naver-1124517292": {
+      "status": "ok"
+    },
+    "gwangju/naver-1219567623": {
+      "status": "ok"
+    },
+    "gwangju/naver-2003905126": {
+      "status": "ok"
+    },
+    "gwangju/naver-2070310198": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gwangju/naver-2062392068": {
+      "status": "ok"
+    },
+    "gwangju/naver-1283239942": {
+      "status": "ok"
+    },
+    "gwangju/naver-37553516": {
+      "status": "ok"
+    },
+    "gwangju/naver-1820116600": {
+      "status": "ok"
+    },
+    "gwangju/naver-917365998": {
+      "status": "ok"
+    },
+    "gwangju/naver-11603178": {
+      "status": "ok"
+    },
+    "gwangju/naver-16303120": {
+      "status": "ok"
+    },
+    "gwangju/naver-2093207740": {
+      "status": "ok"
+    },
+    "gwangju/naver-1048225251": {
+      "status": "ok"
+    },
+    "gwangju/naver-2029174750": {
+      "status": "ok"
+    },
+    "gwangju/naver-15971712": {
+      "status": "ok"
+    },
+    "gwangju/naver-37879227": {
+      "status": "ok"
+    },
+    "gwangju/naver-15936914": {
+      "status": "ok"
+    },
+    "gwangju/naver-38501799": {
+      "status": "ok"
+    },
+    "gwangju/naver-2036211210": {
+      "status": "ok"
+    },
+    "gwangju/naver-1438944292": {
+      "status": "ok"
+    },
+    "gwangju/naver-13570697": {
+      "status": "ok"
+    },
+    "gwangju/naver-21598337": {
+      "status": "ok"
+    },
+    "gwangju/naver-19892102": {
+      "status": "ok"
+    },
+    "gwangju/naver-2072972807": {
+      "status": "ok"
+    },
+    "gwangju/naver-1780263050": {
+      "status": "ok"
+    },
+    "gwangju/naver-2083946282": {
+      "status": "ok"
+    },
+    "gwangju/naver-1834004455": {
+      "status": "ok"
+    },
+    "gwangju/naver-1991624248": {
+      "status": "ok"
+    },
+    "gwangju/naver-1166876359": {
+      "status": "ok"
+    },
+    "gwangju/naver-1099142653": {
+      "status": "ok"
+    },
+    "gwangju/naver-20260674": {
+      "status": "ok"
+    },
+    "gwangju/naver-15979517": {
+      "status": "ok"
+    },
+    "gwangju/naver-1286748040": {
+      "status": "ok"
+    },
+    "gwangju/naver-12865098": {
+      "status": "ok"
+    },
+    "gwangju/naver-1486675339": {
+      "status": "ok"
+    },
+    "gwangju/naver-1259825837": {
+      "status": "ok"
+    },
+    "gwangju/naver-1071257821": {
+      "status": "ok"
+    },
+    "gyeongbuk/naver-32239625": {
+      "status": "mismatch",
+      "to": "jeonbuk"
+    },
+    "gyeongbuk/naver-2031469918": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gyeongbuk/naver-1677875090": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "gyeongbuk/naver-2060786887": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-1294486919": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-12886693": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1200240522": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1262886268": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-13090387": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-18440843": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2039416827": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1703643550": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-1545257996": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1170646135": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-18260694": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1419567807": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2003441501": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-12874368": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1891807153": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1849367304": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1317910269": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37178870": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37463733": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1133013799": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1677169469": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2040292863": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1007768635": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2098981697": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-17879734": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2027735946": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-38704556": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-1862267150": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2043060330": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-31840670": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-37365975": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1174510941": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19294488": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1089031180": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1521706761": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1650528284": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1562765638": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1231895932": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1393043368": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1179598448": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1407375029": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2011847538": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1979215039": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1445857162": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-11723442": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-1545168092": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-13508261": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-36196233": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1294351409": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1266528247": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1482090380": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1542645900": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2021436327": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1122414804": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1107022884": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1621391041": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2091409888": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1865560900": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2041251551": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1377037254": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2036857032": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-195691892": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2013256173": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37895912": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-2004291019": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2075550042": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2036811806": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-12041010": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2008511261": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1705969669": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-1203294409": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-31509929": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2063657425": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2092048591": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2046937147": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1606818337": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1929335824": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1965189602": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2091153014": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37257503": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-21679739": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2045673321": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2088631005": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1403371344": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37472775": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2095581999": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1314457981": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1821626745": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-32281455": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1650001871": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2072650993": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2054296600": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-20819236": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1240832908": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1630960658": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2080721377": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-13575019": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1275175572": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1818131211": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1864051228": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2065107188": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2052890559": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2032641975": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1098405799": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-1343328973": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1000309544": {
+      "status": "ok"
+    },
+    "gwangju/naver-2031469918": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1690656210": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2008388043": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-31469650": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1001020835": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-20601148": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2059607910": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-1733636874": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2027890023": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2070919576": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1326273574": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1682993888": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1767368159": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1376084488": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1576568833": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1947848631": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1325124749": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1400447956": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1207752782": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1028778576": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2060540344": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1490403598": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1196660951": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1233979760": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1211160661": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-33535441": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1405246340": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1424835754": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2059130396": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2073439485": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-961318374": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-376139422": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2037966007": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1305634979": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1114922731": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1422775069": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1854672908": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-34449605": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2059557276": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-35228395": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1855019545": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1487380504": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-18437082": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1160946863": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1352205297": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2069240134": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1991997120": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1875361220": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1767995477": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2052404229": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1819291371": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1626853581": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2081645955": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1725049317": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2061010656": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2086496681": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1052555272": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1458846122": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1646096025": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-17873905": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1065125060": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gyeonggi/naver-1020174956": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-12892838": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1833537271": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1943165528": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1792429425": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1084848230": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2009487017": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1845252818": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1629073854": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-13095241": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19877394": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gyeonggi/naver-2028496367": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1853419513": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-2026069748": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1136075849": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19989155": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-13566069": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-36177915": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-20125417": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gyeonggi/naver-1749305152": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1762205822": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1232557242": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1977878398": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2029358911": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1959284003": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1669995203": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2006823440": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1680423019": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1290832891": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1687334576": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-2095827574": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37391687": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2066206956": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2007726212": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2013995369": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37546659": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1083276369": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2027877266": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2055401843": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-1142521317": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37874150": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2015661832": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1047276392": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1265317185": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1643331560": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-18065444": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19356907": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1222386087": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1675654056": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gyeonggi/naver-2008671193": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1819007633": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-18718304": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1262966923": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1571403265": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2005954262": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2004876469": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2014908093": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1543376922": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19107809": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2091797778": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1321879398": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2099191823": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2038432405": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1263288357": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1159240671": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1790302895": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1853513129": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-34573203": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2097429873": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1642045834": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2056874967": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-20346730": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-1276660156": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1443833587": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-20601324": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1541244584": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1688484322": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1216066235": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1889221282": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1509643671": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2065441732": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1176853942": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1602046013": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2041358539": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1150520944": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2048545949": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2047877280": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1223455252": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2098673405": {
+      "status": "ok"
+    },
+    "chungnam/naver-1065125060": {
+      "status": "ok"
+    },
+    "chungnam/naver-20125417": {
+      "status": "ok"
+    },
+    "chungnam/naver-1675654056": {
+      "status": "ok"
+    },
+    "gwangju/naver-19877394": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-36900466": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "gyeonggi/naver-1267330619": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-1746087586": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1805976617": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1077429363": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2004372610": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2062615294": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2016447733": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1170548055": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2036341845": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gyeonggi/naver-2024016691": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1721553430": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1927405941": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-34033715": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gyeonggi/naver-1836052844": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1286502074": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2027884241": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1267430479": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1256174136": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2010135522": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-11889002": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1500534413": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1707465493": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1094543499": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-1297035196": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1108016922": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1245772395": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1534876212": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-35507575": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1949051912": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2061652810": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1185402464": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-32582238": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1586942619": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-63352153": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19204506": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1032557765": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1853937903": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1784247533": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-36317128": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1389033208": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1055622077": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19900076": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1233798547": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1578978669": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-36424455": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1611851503": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2060824768": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2094219134": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2007134128": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2087909640": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1056844034": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2089675319": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2098534730": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2086767807": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-17239436": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gyeonggi/naver-1511582919": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1881241356": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-13108546": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2032897189": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1608161011": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1915201544": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2076320997": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2036537021": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1344896539": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1973391704": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2021667791": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19866762": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1274984856": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2092613072": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2018818150": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1764406740": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1613852704": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1205626834": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2032729230": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1963436401": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2037242271": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37035931": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-1698866140": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-13453115": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1991089423": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1356864288": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2096108122": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-11386100": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-2074752539": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1609687800": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gyeonggi/naver-1260011695": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1038963428": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-13297289": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2075236802": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-331713058": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37432719": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1404969938": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2022123121": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1039493077": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1660305026": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2078740923": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1645550712": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1509955356": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1236309282": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37749841": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-2093323649": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2055410079": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2005756586": {
+      "status": "mismatch",
+      "to": "jeonbuk"
+    },
+    "gyeonggi/naver-33876757": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2019433351": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2008809941": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1984929634": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1872612967": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37687495": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1307153335": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2086545195": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1017006923": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1071711527": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2035049557": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-35057956": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1573208819": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1193605551": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1767475793": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2049364181": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-18457084": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1243111691": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1519678191": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2087238549": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-18129499": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1248633847": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2068625088": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1926560785": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37703354": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1025162062": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gyeonggi/naver-2089632143": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1009557056": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2038207234": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2086623855": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1376376661": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2016537988": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2064107861": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1484471758": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-36690685": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-36859695": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1095485680": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1236473153": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-38642965": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1977555772": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-13351601": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2044790204": {
+      "status": "ok"
+    },
+    "chungnam/naver-2036341845": {
+      "status": "ok"
+    },
+    "chungnam/naver-34033715": {
+      "status": "ok"
+    },
+    "chungnam/naver-17239436": {
+      "status": "ok"
+    },
+    "chungnam/naver-1025162062": {
+      "status": "ok"
+    },
+    "gwangju/naver-1609687800": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1150408407": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1674901553": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1825059820": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1110745440": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19550652": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1604892342": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1197914450": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2000605317": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeonggi/naver-2096203089": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1932951259": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1128155220": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1684477018": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1268205327": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1963187405": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2082739314": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1864746372": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2080087110": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2060134623": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1929464805": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1766992813": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2030002841": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2077867816": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-16779892": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "gyeonggi/naver-1752662465": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2079919607": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1293118602": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-13578169": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gyeonggi/naver-1818933986": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-463176428": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2003560621": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1711937724": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2019144449": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2085554202": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19137207": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2093191677": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1453847451": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1067748623": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2042360789": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-18440909": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-2086516778": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1741365727": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2020148354": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2009877307": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2051847378": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2077730656": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1058802310": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1393708583": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1742352186": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1981738953": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1236089283": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1140686820": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2021806723": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2045700159": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeonggi/naver-32448378": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1928903122": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-37350401": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-38420108": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-12054078": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1736375485": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1593577547": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1145575879": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-48317398": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1262771564": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1123987152": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1752867252": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2079047311": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1846611199": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1002446167": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1622369130": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2017850649": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2031009094": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gyeonggi/naver-1693700489": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2034519299": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2004544425": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1921242347": {
+      "status": "ok"
+    },
+    "gyeongnam/naver-1013826140": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "gyeongnam/naver-37349717": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeongnam/naver-1564468602": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "gyeongnam/naver-1946827264": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "gyeongnam/naver-34521207": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "gyeongnam/naver-2071542667": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "incheon/naver-2054015933": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "incheon/naver-13496702": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "incheon/naver-1760293072": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "incheon/naver-1954881301": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "incheon/naver-1386102212": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "incheon/naver-34581140": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "incheon/naver-21791484": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "jeju/naver-19299856": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "jeju/naver-1017616635": {
+      "status": "mismatch",
+      "to": "sejong"
+    },
+    "jeju/naver-2024717572": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "jeju/naver-1470813244": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "jeju/naver-1588676712": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "jeju/naver-1222188712": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "jeju/naver-38648333": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "jeju/naver-20311673": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "jeonbuk/naver-1817290317": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1451292174": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-37561533": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1645451222": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1682642014": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-167342212": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-365573704": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1077163219": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1898130354": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-17192345": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2082175079": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1108405809": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1043984166": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1559288355": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1554501900": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-17122300": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-19749675": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2060977058": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-34836869": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1255678902": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "jeonbuk/naver-886587216": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-394705492": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1463453753": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1658338250": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-33560267": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1906783556": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1559037357": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1916763306": {
+      "status": "mismatch",
+      "to": "sejong"
+    },
+    "jeonbuk/naver-32239625": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-20056156": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1735354428": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1602763760": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2088841342": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-35084940": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2016578165": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1794591760": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1009837212": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1792014737": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2099880711": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1105192334": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1174378506": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-117645337": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2005476330": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-36816396": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1975689855": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2031245824": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "jeonbuk/naver-2071426157": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1402135242": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2087966003": {
+      "status": "ok"
+    },
+    "chungnam/naver-1946827264": {
+      "status": "ok"
+    },
+    "chungnam/naver-13578169": {
+      "status": "ok"
+    },
+    "gwangju/naver-1013826140": {
+      "status": "ok"
+    },
+    "gwangju/naver-2024717572": {
+      "status": "ok"
+    },
+    "gwangju/naver-2031245824": {
+      "status": "ok"
+    },
+    "gwangju/naver-34581140": {
+      "status": "ok"
+    },
+    "gwangju/naver-21791484": {
+      "status": "ok"
+    },
+    "gwangju/naver-2031009094": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-19299856": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1564468602": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1588676712": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1386102212": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2071542667": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1447080915": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1282027386": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1888007530": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1516593551": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-17350738": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-36791025": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1276248339": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1321643230": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1816340669": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1173057630": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2023828187": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1214054969": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-17069157": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-11726653": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "jeonbuk/naver-1066313912": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1783607494": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2061384201": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1056963321": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1119515452": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2039488100": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-30909241": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2049748405": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1125199834": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-17237784": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-11886663": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1679070493": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1934955582": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1210338623": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1009032530": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1972076667": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1375592209": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-17078183": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1228230236": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-16958555": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1807937007": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1990862599": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2000080898": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2013173292": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-20587395": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1414005185": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-21037897": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1044826172": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2062263673": {
+      "status": "mismatch",
+      "to": "jeonbuk"
+    },
+    "jeonbuk/naver-1986395691": {
+      "status": "mismatch",
+      "to": "jeonbuk"
+    },
+    "jeonbuk/naver-2058044682": {
+      "status": "mismatch",
+      "to": "jeonbuk"
+    },
+    "jeonbuk/naver-2061507817": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2005756586": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2046224573": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-760428116": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1372638657": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1253889935": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1340584191": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2070188113": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1270117665": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2024883774": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2099344523": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2018648527": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2073193247": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "jeonbuk/naver-1903662124": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "jeonbuk/naver-1694148969": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1609272260": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1453928815": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2013565055": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1077019501": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-11522746": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1579003040": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1086075820": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1975009050": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-1701158098": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2025318584": {
+      "status": "ok"
+    },
+    "jeonnam/naver-16838838": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1431155892": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1852954460": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2082308364": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1169234483": {
+      "status": "ok"
+    },
+    "jeonnam/naver-35489024": {
+      "status": "ok"
+    },
+    "jeonnam/naver-16764048": {
+      "status": "ok"
+    },
+    "jeonnam/naver-16744300": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1258279167": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1929376555": {
+      "status": "ok"
+    },
+    "jeonnam/naver-11887267": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1818304950": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1159467540": {
+      "status": "ok"
+    },
+    "jeonnam/naver-37854739": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1027316291": {
+      "status": "ok"
+    },
+    "jeonnam/naver-36923729": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1034140993": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2035933449": {
+      "status": "ok"
+    },
+    "jeonnam/naver-38427429": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2048224917": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1766338959": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "jeonnam/naver-1244219506": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1506939181": {
+      "status": "ok"
+    },
+    "jeonnam/naver-37921588": {
+      "status": "ok"
+    },
+    "jeonnam/naver-16727646": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1586721091": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "jeonnam/naver-2054015933": {
+      "status": "ok"
+    },
+    "jeonnam/naver-11697545": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2090793202": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1446522682": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1024315493": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1405329596": {
+      "status": "ok"
+    },
+    "jeonnam/naver-13187598": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1340361576": {
+      "status": "ok"
+    },
+    "jeonnam/naver-16798560": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1302152486": {
+      "status": "ok"
+    },
+    "jeonnam/naver-33694631": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1282009522": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2067319986": {
+      "status": "ok"
+    },
+    "jeonnam/naver-33736389": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2038975396": {
+      "status": "ok"
+    },
+    "jeonnam/naver-21568910": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1365272022": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1246434043": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1675842413": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1216398855": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1990433364": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1543297676": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "jeonnam/naver-1760293072": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2066490925": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1945036149": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1797233279": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "jeonnam/naver-1354141436": {
+      "status": "ok"
+    },
+    "jeonnam/naver-17282952": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2019860154": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2030319605": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2058849298": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1854279699": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "jeonnam/naver-36690666": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1572495190": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2031244769": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1180349486": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2099865150": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2000450187": {
+      "status": "ok"
+    },
+    "jeonnam/naver-36900466": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1503053174": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1033577258": {
+      "status": "ok"
+    },
+    "gwangju/naver-1854279699": {
+      "status": "ok"
+    },
+    "gwangju/naver-2073193247": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1903662124": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1251395571": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1780636823": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1677875090": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2017875990": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1922092055": {
+      "status": "ok"
+    },
+    "jeonnam/naver-16790545": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2034735827": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1470813244": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1297793333": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2017170433": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1429211334": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1289491616": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1954502450": {
+      "status": "ok"
+    },
+    "jeonnam/naver-36316787": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1222914089": {
+      "status": "ok"
+    },
+    "jeonnam/naver-16080483": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "jeonnam/naver-1480963227": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1157642817": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2094610959": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2041423569": {
+      "status": "ok"
+    },
+    "jeonnam/naver-31590580": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1521834873": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1373493512": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1208395538": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1036731331": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1870268305": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1770203924": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1444088650": {
+      "status": "ok"
+    },
+    "jeonnam/naver-17174623": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1501886647": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2093297521": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2052266387": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1278254875": {
+      "status": "ok"
+    },
+    "jeonnam/naver-31248801": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1983640525": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "jeonnam/naver-1501147878": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1620964854": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1952419969": {
+      "status": "ok"
+    },
+    "jeonnam/naver-16779892": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2019608393": {
+      "status": "ok"
+    },
+    "jeonnam/naver-38710399": {
+      "status": "ok"
+    },
+    "jeonnam/naver-12867258": {
+      "status": "ok"
+    },
+    "jeonnam/naver-12884698": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1932387432": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1715618295": {
+      "status": "ok"
+    },
+    "jeonnam/naver-16862043": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2033242061": {
+      "status": "ok"
+    },
+    "jeonnam/naver-15017664": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1915669393": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1727221349": {
+      "status": "ok"
+    },
+    "jeonnam/naver-1518611930": {
+      "status": "ok"
+    },
+    "sejong/naver-1599470154": {
+      "status": "ok"
+    },
+    "sejong/naver-21230589": {
+      "status": "ok"
+    },
+    "sejong/naver-1243368240": {
+      "status": "ok"
+    },
+    "sejong/naver-1191721286": {
+      "status": "ok"
+    },
+    "sejong/naver-1249149088": {
+      "status": "ok"
+    },
+    "sejong/naver-1885411411": {
+      "status": "ok"
+    },
+    "sejong/naver-1497115974": {
+      "status": "ok"
+    },
+    "sejong/naver-1801918817": {
+      "status": "ok"
+    },
+    "sejong/naver-1206309118": {
+      "status": "ok"
+    },
+    "sejong/naver-1164240726": {
+      "status": "ok"
+    },
+    "sejong/naver-1498265556": {
+      "status": "ok"
+    },
+    "sejong/naver-1504204735": {
+      "status": "ok"
+    },
+    "sejong/naver-1916763306": {
+      "status": "ok"
+    },
+    "sejong/naver-1951732212": {
+      "status": "ok"
+    },
+    "sejong/naver-1192675096": {
+      "status": "ok"
+    },
+    "sejong/naver-1570571248": {
+      "status": "ok"
+    },
+    "sejong/naver-1500436808": {
+      "status": "ok"
+    },
+    "sejong/naver-1956988849": {
+      "status": "ok"
+    },
+    "sejong/naver-1930743840": {
+      "status": "ok"
+    },
+    "sejong/naver-1017616635": {
+      "status": "ok"
+    },
+    "sejong/naver-1920359663": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "sejong/naver-21252160": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "sejong/naver-1876356025": {
+      "status": "ok"
+    },
+    "sejong/naver-2046128870": {
+      "status": "ok"
+    },
+    "sejong/naver-115135662": {
+      "status": "ok"
+    },
+    "sejong/naver-1931670473": {
+      "status": "ok"
+    },
+    "sejong/naver-2015610453": {
+      "status": "ok"
+    },
+    "sejong/naver-1213537057": {
+      "status": "ok"
+    },
+    "sejong/naver-2090369372": {
+      "status": "ok"
+    },
+    "sejong/naver-1785273862": {
+      "status": "ok"
+    },
+    "sejong/naver-2096770066": {
+      "status": "ok"
+    },
+    "sejong/naver-1646982981": {
+      "status": "ok"
+    },
+    "sejong/naver-1819638410": {
+      "status": "ok"
+    },
+    "sejong/naver-2011803477": {
+      "status": "ok"
+    },
+    "sejong/naver-1643503150": {
+      "status": "ok"
+    },
+    "sejong/naver-1532478022": {
+      "status": "ok"
+    },
+    "sejong/naver-1656042233": {
+      "status": "ok"
+    },
+    "sejong/naver-2029288287": {
+      "status": "ok"
+    },
+    "sejong/naver-1053411264": {
+      "status": "ok"
+    },
+    "sejong/naver-11598345": {
+      "status": "ok"
+    },
+    "sejong/naver-17550208": {
+      "status": "ok"
+    },
+    "sejong/naver-21057061": {
+      "status": "ok"
+    },
+    "sejong/naver-1177485965": {
+      "status": "ok"
+    },
+    "sejong/naver-1298661194": {
+      "status": "ok"
+    },
+    "sejong/naver-1637998564": {
+      "status": "ok"
+    },
+    "sejong/naver-1590519069": {
+      "status": "ok"
+    },
+    "sejong/naver-2099638253": {
+      "status": "ok"
+    },
+    "sejong/naver-2069388475": {
+      "status": "ok"
+    },
+    "sejong/naver-1168400047": {
+      "status": "ok"
+    },
+    "sejong/naver-1960620427": {
+      "status": "ok"
+    },
+    "sejong/naver-1892029615": {
+      "status": "ok"
+    },
+    "sejong/naver-38002715": {
+      "status": "ok"
+    },
+    "seoul/naver-1557155795": {
+      "status": "ok"
+    },
+    "seoul/naver-1078358576": {
+      "status": "ok"
+    },
+    "seoul/naver-1908410135": {
+      "status": "ok"
+    },
+    "seoul/naver-1871966656": {
+      "status": "ok"
+    },
+    "seoul/naver-2031022209": {
+      "status": "ok"
+    },
+    "seoul/naver-1274584896": {
+      "status": "ok"
+    },
+    "seoul/naver-2002414735": {
+      "status": "ok"
+    },
+    "seoul/naver-1099123355": {
+      "status": "ok"
+    },
+    "seoul/naver-1690354455": {
+      "status": "ok"
+    },
+    "seoul/naver-37554375": {
+      "status": "ok"
+    },
+    "seoul/naver-1872266023": {
+      "status": "ok"
+    },
+    "seoul/naver-20797883": {
+      "status": "ok"
+    },
+    "seoul/naver-2035472632": {
+      "status": "ok"
+    },
+    "seoul/naver-1289052276": {
+      "status": "mismatch",
+      "to": "sejong"
+    },
+    "seoul/naver-17986930": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "seoul/naver-1288321916": {
+      "status": "ok"
+    },
+    "seoul/naver-1838211811": {
+      "status": "ok"
+    },
+    "seoul/naver-2007654666": {
+      "status": "ok"
+    },
+    "seoul/naver-2069947761": {
+      "status": "ok"
+    },
+    "seoul/naver-1366205207": {
+      "status": "ok"
+    },
+    "seoul/naver-31840670": {
+      "status": "ok"
+    },
+    "seoul/naver-1625529373": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-2055279455": {
+      "status": "ok"
+    },
+    "seoul/naver-1369753821": {
+      "status": "ok"
+    },
+    "seoul/naver-1766099387": {
+      "status": "ok"
+    },
+    "seoul/naver-2098303895": {
+      "status": "mismatch",
+      "to": "jeonbuk"
+    },
+    "seoul/naver-1048776964": {
+      "status": "ok"
+    },
+    "seoul/naver-1102257065": {
+      "status": "ok"
+    },
+    "seoul/naver-1966599047": {
+      "status": "ok"
+    },
+    "seoul/naver-1106798624": {
+      "status": "ok"
+    },
+    "seoul/naver-2051542825": {
+      "status": "ok"
+    },
+    "seoul/naver-18256591": {
+      "status": "ok"
+    },
+    "seoul/naver-1930972958": {
+      "status": "ok"
+    },
+    "seoul/naver-2040225659": {
+      "status": "ok"
+    },
+    "seoul/naver-593588180": {
+      "status": "ok"
+    },
+    "seoul/naver-2074913844": {
+      "status": "ok"
+    },
+    "seoul/naver-1407456940": {
+      "status": "ok"
+    },
+    "seoul/naver-11723442": {
+      "status": "ok"
+    },
+    "seoul/naver-2069799651": {
+      "status": "ok"
+    },
+    "seoul/naver-2085552208": {
+      "status": "ok"
+    },
+    "seoul/naver-2092472020": {
+      "status": "ok"
+    },
+    "seoul/naver-2020635339": {
+      "status": "ok"
+    },
+    "seoul/naver-1646889228": {
+      "status": "ok"
+    },
+    "seoul/naver-1081643350": {
+      "status": "ok"
+    },
+    "chungnam/naver-21252160": {
+      "status": "ok"
+    },
+    "gwangju/naver-16080483": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-17986930": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1920359663": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1983640525": {
+      "status": "ok"
+    },
+    "jeonbuk/naver-2098303895": {
+      "status": "ok"
+    },
+    "sejong/naver-1289052276": {
+      "status": "ok"
+    },
+    "seoul/naver-13277118": {
+      "status": "ok"
+    },
+    "seoul/naver-1835052467": {
+      "status": "ok"
+    },
+    "seoul/naver-1102983230": {
+      "status": "ok"
+    },
+    "seoul/naver-1255678902": {
+      "status": "ok"
+    },
+    "seoul/naver-1411713405": {
+      "status": "ok"
+    },
+    "seoul/naver-1889006720": {
+      "status": "ok"
+    },
+    "seoul/naver-2054341602": {
+      "status": "ok"
+    },
+    "seoul/naver-1043556271": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "seoul/naver-1150647225": {
+      "status": "ok"
+    },
+    "seoul/naver-18557409": {
+      "status": "ok"
+    },
+    "seoul/naver-1602466277": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "seoul/naver-1025499869": {
+      "status": "ok"
+    },
+    "seoul/naver-1704794766": {
+      "status": "ok"
+    },
+    "seoul/naver-2091882564": {
+      "status": "ok"
+    },
+    "seoul/naver-20225689": {
+      "status": "ok"
+    },
+    "seoul/naver-1386154822": {
+      "status": "ok"
+    },
+    "seoul/naver-20131928": {
+      "status": "ok"
+    },
+    "seoul/naver-2059245149": {
+      "status": "ok"
+    },
+    "seoul/naver-1507790493": {
+      "status": "ok"
+    },
+    "seoul/naver-2017548961": {
+      "status": "ok"
+    },
+    "seoul/naver-1074749296": {
+      "status": "ok"
+    },
+    "seoul/naver-1766338959": {
+      "status": "ok"
+    },
+    "seoul/naver-38275143": {
+      "status": "ok"
+    },
+    "seoul/naver-2033999938": {
+      "status": "ok"
+    },
+    "seoul/naver-1705969669": {
+      "status": "ok"
+    },
+    "seoul/naver-1574560244": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-2056383447": {
+      "status": "ok"
+    },
+    "seoul/naver-2030628967": {
+      "status": "ok"
+    },
+    "seoul/naver-2035572498": {
+      "status": "ok"
+    },
+    "seoul/naver-35408316": {
+      "status": "ok"
+    },
+    "seoul/naver-30955062": {
+      "status": "ok"
+    },
+    "seoul/naver-36022164": {
+      "status": "ok"
+    },
+    "seoul/naver-11673307": {
+      "status": "ok"
+    },
+    "seoul/naver-1642594575": {
+      "status": "ok"
+    },
+    "seoul/naver-1655142962": {
+      "status": "ok"
+    },
+    "seoul/naver-1938018806": {
+      "status": "ok"
+    },
+    "seoul/naver-17980631": {
+      "status": "ok"
+    },
+    "seoul/naver-37349717": {
+      "status": "ok"
+    },
+    "seoul/naver-1441592124": {
+      "status": "ok"
+    },
+    "seoul/naver-11678680": {
+      "status": "ok"
+    },
+    "seoul/naver-13149894": {
+      "status": "ok"
+    },
+    "seoul/naver-1851924218": {
+      "status": "ok"
+    },
+    "seoul/naver-1969852730": {
+      "status": "ok"
+    },
+    "seoul/naver-2094093935": {
+      "status": "ok"
+    },
+    "seoul/naver-1679925397": {
+      "status": "ok"
+    },
+    "seoul/naver-1746690077": {
+      "status": "ok"
+    },
+    "seoul/naver-35271642": {
+      "status": "ok"
+    },
+    "seoul/naver-1567447822": {
+      "status": "ok"
+    },
+    "seoul/naver-1199055314": {
+      "status": "ok"
+    },
+    "seoul/naver-1251447969": {
+      "status": "ok"
+    },
+    "seoul/naver-1046631053": {
+      "status": "mismatch",
+      "to": "sejong"
+    },
+    "seoul/naver-1739638792": {
+      "status": "ok"
+    },
+    "seoul/naver-1154955342": {
+      "status": "ok"
+    },
+    "seoul/naver-2091607037": {
+      "status": "ok"
+    },
+    "seoul/naver-1079833320": {
+      "status": "ok"
+    },
+    "seoul/naver-1102973917": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "seoul/naver-1094748661": {
+      "status": "ok"
+    },
+    "seoul/naver-1744097298": {
+      "status": "ok"
+    },
+    "seoul/naver-1649349828": {
+      "status": "ok"
+    },
+    "seoul/naver-1318829354": {
+      "status": "ok"
+    },
+    "seoul/naver-1905535817": {
+      "status": "ok"
+    },
+    "seoul/naver-1628372535": {
+      "status": "ok"
+    },
+    "seoul/naver-658897525": {
+      "status": "ok"
+    },
+    "seoul/naver-1112306548": {
+      "status": "ok"
+    },
+    "seoul/naver-1981347065": {
+      "status": "ok"
+    },
+    "seoul/naver-2050327269": {
+      "status": "ok"
+    },
+    "seoul/naver-1586721091": {
+      "status": "ok"
+    },
+    "seoul/naver-18219589": {
+      "status": "ok"
+    },
+    "seoul/naver-2048128300": {
+      "status": "ok"
+    },
+    "seoul/naver-1098405799": {
+      "status": "ok"
+    },
+    "seoul/naver-2008388043": {
+      "status": "ok"
+    },
+    "seoul/naver-11881502": {
+      "status": "ok"
+    },
+    "seoul/naver-2061812129": {
+      "status": "ok"
+    },
+    "seoul/naver-1946473141": {
+      "status": "ok"
+    },
+    "seoul/naver-2059607910": {
+      "status": "ok"
+    },
+    "seoul/naver-2005778862": {
+      "status": "ok"
+    },
+    "seoul/naver-2096559480": {
+      "status": "ok"
+    },
+    "seoul/naver-1818105757": {
+      "status": "ok"
+    },
+    "seoul/naver-1233726670": {
+      "status": "ok"
+    },
+    "seoul/naver-33585987": {
+      "status": "ok"
+    },
+    "seoul/naver-1532792687": {
+      "status": "ok"
+    },
+    "seoul/naver-18435384": {
+      "status": "ok"
+    },
+    "seoul/naver-1542291051": {
+      "status": "ok"
+    },
+    "seoul/naver-2095203722": {
+      "status": "ok"
+    },
+    "seoul/naver-1506252365": {
+      "status": "ok"
+    },
+    "seoul/naver-1875624361": {
+      "status": "ok"
+    },
+    "seoul/naver-2031118418": {
+      "status": "ok"
+    },
+    "seoul/naver-1798986142": {
+      "status": "ok"
+    },
+    "seoul/naver-1130184843": {
+      "status": "ok"
+    },
+    "seoul/naver-1886465835": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "seoul/naver-2002303807": {
+      "status": "ok"
+    },
+    "seoul/naver-1201961994": {
+      "status": "ok"
+    },
+    "seoul/naver-2028057619": {
+      "status": "ok"
+    },
+    "seoul/naver-991858885": {
+      "status": "ok"
+    },
+    "seoul/naver-1499649038": {
+      "status": "ok"
+    },
+    "seoul/naver-20955570": {
+      "status": "ok"
+    },
+    "seoul/naver-1070245072": {
+      "status": "ok"
+    },
+    "seoul/naver-32308275": {
+      "status": "ok"
+    },
+    "seoul/naver-2098034686": {
+      "status": "ok"
+    },
+    "seoul/naver-2098198316": {
+      "status": "ok"
+    },
+    "seoul/naver-1309585620": {
+      "status": "ok"
+    },
+    "seoul/naver-1141686731": {
+      "status": "ok"
+    },
+    "seoul/naver-2005819536": {
+      "status": "ok"
+    },
+    "seoul/naver-1755010029": {
+      "status": "ok"
+    },
+    "seoul/naver-1023957785": {
+      "status": "ok"
+    },
+    "seoul/naver-1282693601": {
+      "status": "ok"
+    },
+    "seoul/naver-1820042497": {
+      "status": "ok"
+    },
+    "seoul/naver-2040091689": {
+      "status": "ok"
+    },
+    "seoul/naver-417452260": {
+      "status": "ok"
+    },
+    "seoul/naver-1452239516": {
+      "status": "ok"
+    },
+    "seoul/naver-1266322046": {
+      "status": "ok"
+    },
+    "seoul/naver-78071229": {
+      "status": "ok"
+    },
+    "seoul/naver-2094095596": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-1807681546": {
+      "status": "ok"
+    },
+    "seoul/naver-36379024": {
+      "status": "ok"
+    },
+    "seoul/naver-37282209": {
+      "status": "ok"
+    },
+    "seoul/naver-2019624142": {
+      "status": "ok"
+    },
+    "seoul/naver-1635873247": {
+      "status": "ok"
+    },
+    "seoul/naver-13496702": {
+      "status": "ok"
+    },
+    "seoul/naver-1538911146": {
+      "status": "ok"
+    },
+    "seoul/naver-1222430825": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-1771016332": {
+      "status": "ok"
+    },
+    "seoul/naver-1755908543": {
+      "status": "ok"
+    },
+    "seoul/naver-35545619": {
+      "status": "ok"
+    },
+    "seoul/naver-35482992": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "seoul/naver-38274859": {
+      "status": "ok"
+    },
+    "seoul/naver-2087485549": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "seoul/naver-1716567646": {
+      "status": "ok"
+    },
+    "seoul/naver-1607969391": {
+      "status": "ok"
+    },
+    "seoul/naver-2020171432": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-450731592": {
+      "status": "ok"
+    },
+    "seoul/naver-1242730767": {
+      "status": "ok"
+    },
+    "seoul/naver-2031639370": {
+      "status": "ok"
+    },
+    "seoul/naver-2066965601": {
+      "status": "ok"
+    },
+    "seoul/naver-1274948513": {
+      "status": "ok"
+    },
+    "seoul/naver-1862358398": {
+      "status": "ok"
+    },
+    "seoul/naver-12780345": {
+      "status": "ok"
+    },
+    "seoul/naver-1338747321": {
+      "status": "ok"
+    },
+    "seoul/naver-1266673496": {
+      "status": "ok"
+    },
+    "seoul/naver-18106884": {
+      "status": "ok"
+    },
+    "seoul/naver-35559765": {
+      "status": "ok"
+    },
+    "seoul/naver-2032955037": {
+      "status": "ok"
+    },
+    "seoul/naver-1021725079": {
+      "status": "ok"
+    },
+    "chungnam/naver-1043556271": {
+      "status": "ok"
+    },
+    "gwangju/naver-1102973917": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1602466277": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-1886465835": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-35482992": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2087485549": {
+      "status": "ok"
+    },
+    "sejong/naver-1046631053": {
+      "status": "ok"
+    },
+    "seoul/naver-1419740088": {
+      "status": "ok"
+    },
+    "seoul/naver-2025617410": {
+      "status": "ok"
+    },
+    "seoul/naver-1543297676": {
+      "status": "ok"
+    },
+    "seoul/naver-2077892018": {
+      "status": "ok"
+    },
+    "seoul/naver-33210008": {
+      "status": "ok"
+    },
+    "seoul/naver-2002347096": {
+      "status": "ok"
+    },
+    "seoul/naver-36046241": {
+      "status": "ok"
+    },
+    "seoul/naver-2006356014": {
+      "status": "ok"
+    },
+    "seoul/naver-2067155747": {
+      "status": "ok"
+    },
+    "seoul/naver-1506181867": {
+      "status": "ok"
+    },
+    "seoul/naver-36282951": {
+      "status": "ok"
+    },
+    "seoul/naver-1806817632": {
+      "status": "ok"
+    },
+    "seoul/naver-1797233279": {
+      "status": "ok"
+    },
+    "seoul/naver-1768646220": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-1842589087": {
+      "status": "ok"
+    },
+    "seoul/naver-2055401843": {
+      "status": "ok"
+    },
+    "seoul/naver-11582422": {
+      "status": "ok"
+    },
+    "seoul/naver-1614979428": {
+      "status": "ok"
+    },
+    "seoul/naver-19878363": {
+      "status": "ok"
+    },
+    "seoul/naver-1342127360": {
+      "status": "ok"
+    },
+    "seoul/naver-1177779385": {
+      "status": "ok"
+    },
+    "seoul/naver-1524659305": {
+      "status": "ok"
+    },
+    "seoul/naver-1560212094": {
+      "status": "ok"
+    },
+    "seoul/naver-2036713782": {
+      "status": "ok"
+    },
+    "seoul/naver-2082064418": {
+      "status": "ok"
+    },
+    "seoul/naver-1241528957": {
+      "status": "ok"
+    },
+    "seoul/naver-2062353872": {
+      "status": "ok"
+    },
+    "seoul/naver-1447196594": {
+      "status": "ok"
+    },
+    "seoul/naver-1819522030": {
+      "status": "ok"
+    },
+    "seoul/naver-1123934065": {
+      "status": "ok"
+    },
+    "seoul/naver-2004028049": {
+      "status": "ok"
+    },
+    "seoul/naver-38278847": {
+      "status": "ok"
+    },
+    "seoul/naver-1428172092": {
+      "status": "ok"
+    },
+    "seoul/naver-1766640434": {
+      "status": "ok"
+    },
+    "seoul/naver-2085657169": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-2083020191": {
+      "status": "ok"
+    },
+    "seoul/naver-2072529489": {
+      "status": "ok"
+    },
+    "seoul/naver-37057346": {
+      "status": "ok"
+    },
+    "seoul/naver-1230485898": {
+      "status": "ok"
+    },
+    "seoul/naver-1099670238": {
+      "status": "ok"
+    },
+    "seoul/naver-1340899330": {
+      "status": "ok"
+    },
+    "seoul/naver-1152019426": {
+      "status": "ok"
+    },
+    "seoul/naver-1041655574": {
+      "status": "ok"
+    },
+    "seoul/naver-1182352265": {
+      "status": "ok"
+    },
+    "seoul/naver-20346730": {
+      "status": "ok"
+    },
+    "seoul/naver-1017550639": {
+      "status": "ok"
+    },
+    "seoul/naver-11726653": {
+      "status": "ok"
+    },
+    "seoul/naver-262362736": {
+      "status": "ok"
+    },
+    "seoul/naver-2034786984": {
+      "status": "ok"
+    },
+    "seoul/naver-1571820138": {
+      "status": "ok"
+    },
+    "seoul/naver-1802761649": {
+      "status": "ok"
+    },
+    "seoul/naver-1753842258": {
+      "status": "ok"
+    },
+    "seoul/naver-784830705": {
+      "status": "ok"
+    },
+    "seoul/naver-1036879498": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "seoul/naver-1283604243": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "seoul/naver-1369310264": {
+      "status": "ok"
+    },
+    "seoul/naver-1775967927": {
+      "status": "ok"
+    },
+    "seoul/naver-1334028812": {
+      "status": "ok"
+    },
+    "seoul/naver-37748060": {
+      "status": "ok"
+    },
+    "seoul/naver-1912745227": {
+      "status": "ok"
+    },
+    "seoul/naver-1912626916": {
+      "status": "ok"
+    },
+    "seoul/naver-1316571027": {
+      "status": "ok"
+    },
+    "seoul/naver-2092502028": {
+      "status": "ok"
+    },
+    "seoul/naver-2022737326": {
+      "status": "ok"
+    },
+    "seoul/naver-1458330684": {
+      "status": "ok"
+    },
+    "seoul/naver-1923366031": {
+      "status": "ok"
+    },
+    "seoul/naver-1266361030": {
+      "status": "ok"
+    },
+    "seoul/naver-1144692070": {
+      "status": "ok"
+    },
+    "seoul/naver-2017282855": {
+      "status": "ok"
+    },
+    "seoul/naver-2092681070": {
+      "status": "ok"
+    },
+    "seoul/naver-1596684844": {
+      "status": "ok"
+    },
+    "seoul/naver-1267330619": {
+      "status": "ok"
+    },
+    "seoul/naver-1796427688": {
+      "status": "ok"
+    },
+    "seoul/naver-1736738437": {
+      "status": "ok"
+    },
+    "seoul/naver-1237443583": {
+      "status": "ok"
+    },
+    "seoul/naver-1978161435": {
+      "status": "ok"
+    },
+    "seoul/naver-65090515": {
+      "status": "ok"
+    },
+    "seoul/naver-2032357843": {
+      "status": "ok"
+    },
+    "seoul/naver-1377369014": {
+      "status": "ok"
+    },
+    "seoul/naver-34268638": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-38229839": {
+      "status": "ok"
+    },
+    "seoul/naver-1689555137": {
+      "status": "ok"
+    },
+    "seoul/naver-1859572081": {
+      "status": "ok"
+    },
+    "seoul/naver-2054594850": {
+      "status": "ok"
+    },
+    "seoul/naver-2028574533": {
+      "status": "ok"
+    },
+    "seoul/naver-2036003921": {
+      "status": "ok"
+    },
+    "seoul/naver-1770624597": {
+      "status": "ok"
+    },
+    "seoul/naver-1442263918": {
+      "status": "ok"
+    },
+    "seoul/naver-1154437933": {
+      "status": "ok"
+    },
+    "seoul/naver-1622574095": {
+      "status": "ok"
+    },
+    "seoul/naver-1124198034": {
+      "status": "ok"
+    },
+    "seoul/naver-2062314314": {
+      "status": "ok"
+    },
+    "seoul/naver-1000765619": {
+      "status": "ok"
+    },
+    "seoul/naver-12064600": {
+      "status": "ok"
+    },
+    "seoul/naver-35831307": {
+      "status": "ok"
+    },
+    "seoul/naver-1788087862": {
+      "status": "ok"
+    },
+    "seoul/naver-1167065844": {
+      "status": "ok"
+    },
+    "seoul/naver-1975463492": {
+      "status": "ok"
+    },
+    "seoul/naver-1733830869": {
+      "status": "ok"
+    },
+    "seoul/naver-1724563569": {
+      "status": "ok"
+    },
+    "seoul/naver-2092110685": {
+      "status": "ok"
+    },
+    "seoul/naver-2071052672": {
+      "status": "ok"
+    },
+    "seoul/naver-2012444424": {
+      "status": "ok"
+    },
+    "seoul/naver-1943698416": {
+      "status": "ok"
+    },
+    "seoul/naver-1312777804": {
+      "status": "ok"
+    },
+    "seoul/naver-1982767346": {
+      "status": "ok"
+    },
+    "seoul/naver-1826450002": {
+      "status": "ok"
+    },
+    "seoul/naver-1945001807": {
+      "status": "ok"
+    },
+    "seoul/naver-2030029983": {
+      "status": "ok"
+    },
+    "seoul/naver-11864797": {
+      "status": "ok"
+    },
+    "seoul/naver-2000807877": {
+      "status": "ok"
+    },
+    "seoul/naver-1625580734": {
+      "status": "ok"
+    },
+    "seoul/naver-1260243947": {
+      "status": "ok"
+    },
+    "seoul/naver-1222188712": {
+      "status": "ok"
+    },
+    "seoul/naver-2029371902": {
+      "status": "ok"
+    },
+    "seoul/naver-2090901807": {
+      "status": "ok"
+    },
+    "seoul/naver-1923586497": {
+      "status": "ok"
+    },
+    "seoul/naver-13427243": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "seoul/naver-36183735": {
+      "status": "ok"
+    },
+    "seoul/naver-2008173025": {
+      "status": "ok"
+    },
+    "seoul/naver-1749919144": {
+      "status": "ok"
+    },
+    "seoul/naver-1479918531": {
+      "status": "ok"
+    },
+    "seoul/naver-2061220282": {
+      "status": "ok"
+    },
+    "seoul/naver-1672141709": {
+      "status": "ok"
+    },
+    "seoul/naver-1298851101": {
+      "status": "ok"
+    },
+    "seoul/naver-1989931026": {
+      "status": "ok"
+    },
+    "seoul/naver-2045186304": {
+      "status": "ok"
+    },
+    "seoul/naver-1444910504": {
+      "status": "ok"
+    },
+    "seoul/naver-1673246835": {
+      "status": "ok"
+    },
+    "seoul/naver-36785945": {
+      "status": "ok"
+    },
+    "seoul/naver-1755586163": {
+      "status": "ok"
+    },
+    "seoul/naver-1181396869": {
+      "status": "ok"
+    },
+    "seoul/naver-1974548944": {
+      "status": "ok"
+    },
+    "seoul/naver-35222006": {
+      "status": "ok"
+    },
+    "seoul/naver-37725304": {
+      "status": "ok"
+    },
+    "seoul/naver-1020483410": {
+      "status": "ok"
+    },
+    "seoul/naver-1436899576": {
+      "status": "ok"
+    },
+    "seoul/naver-1156003131": {
+      "status": "ok"
+    },
+    "seoul/naver-1204687706": {
+      "status": "ok"
+    },
+    "seoul/naver-17924373": {
+      "status": "ok"
+    },
+    "seoul/naver-32489691": {
+      "status": "ok"
+    },
+    "seoul/naver-37035931": {
+      "status": "ok"
+    },
+    "seoul/naver-1942269081": {
+      "status": "ok"
+    },
+    "chungnam/naver-1283604243": {
+      "status": "ok"
+    },
+    "chungnam/naver-13427243": {
+      "status": "ok"
+    },
+    "gwangju/naver-1036879498": {
+      "status": "ok"
+    },
+    "seoul/naver-1276574358": {
+      "status": "ok"
+    },
+    "seoul/naver-2042402968": {
+      "status": "ok"
+    },
+    "seoul/naver-1344661821": {
+      "status": "ok"
+    },
+    "seoul/naver-1418628816": {
+      "status": "ok"
+    },
+    "seoul/naver-1728665773": {
+      "status": "ok"
+    },
+    "seoul/naver-2008358127": {
+      "status": "ok"
+    },
+    "seoul/naver-1279278264": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-2032433763": {
+      "status": "ok"
+    },
+    "seoul/naver-1100003815": {
+      "status": "ok"
+    },
+    "seoul/naver-1935500931": {
+      "status": "ok"
+    },
+    "seoul/naver-2060060309": {
+      "status": "ok"
+    },
+    "seoul/naver-1286056717": {
+      "status": "ok"
+    },
+    "seoul/naver-2081486409": {
+      "status": "ok"
+    },
+    "seoul/naver-38648333": {
+      "status": "ok"
+    },
+    "seoul/naver-11710562": {
+      "status": "ok"
+    },
+    "seoul/naver-12042070": {
+      "status": "ok"
+    },
+    "seoul/naver-20311673": {
+      "status": "ok"
+    },
+    "seoul/naver-1340150413": {
+      "status": "ok"
+    },
+    "seoul/naver-2039056625": {
+      "status": "ok"
+    },
+    "seoul/naver-1377746746": {
+      "status": "ok"
+    },
+    "seoul/naver-37749841": {
+      "status": "ok"
+    },
+    "seoul/naver-2024182853": {
+      "status": "ok"
+    },
+    "seoul/naver-1038777225": {
+      "status": "ok"
+    },
+    "seoul/naver-1883905907": {
+      "status": "ok"
+    },
+    "seoul/naver-12958807": {
+      "status": "ok"
+    },
+    "seoul/naver-12958800": {
+      "status": "ok"
+    },
+    "seoul/naver-2089310300": {
+      "status": "ok"
+    },
+    "seoul/naver-2027987672": {
+      "status": "ok"
+    },
+    "seoul/naver-2050266796": {
+      "status": "ok"
+    },
+    "seoul/naver-1156068661": {
+      "status": "mismatch",
+      "to": "chungnam"
+    },
+    "seoul/naver-1433741819": {
+      "status": "ok"
+    },
+    "seoul/naver-2031148543": {
+      "status": "ok"
+    },
+    "seoul/naver-1897099229": {
+      "status": "ok"
+    },
+    "seoul/naver-1707328193": {
+      "status": "ok"
+    },
+    "seoul/naver-1246265068": {
+      "status": "ok"
+    },
+    "seoul/naver-1184011870": {
+      "status": "ok"
+    },
+    "seoul/naver-2072676359": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-1581362267": {
+      "status": "ok"
+    },
+    "seoul/naver-1141709009": {
+      "status": "ok"
+    },
+    "seoul/naver-1006524862": {
+      "status": "ok"
+    },
+    "seoul/naver-34521207": {
+      "status": "ok"
+    },
+    "seoul/naver-36651713": {
+      "status": "ok"
+    },
+    "seoul/naver-1958901710": {
+      "status": "ok"
+    },
+    "seoul/naver-13149692": {
+      "status": "ok"
+    },
+    "seoul/naver-1057578328": {
+      "status": "ok"
+    },
+    "seoul/naver-38391956": {
+      "status": "ok"
+    },
+    "seoul/naver-11572705": {
+      "status": "ok"
+    },
+    "seoul/naver-1954881301": {
+      "status": "ok"
+    },
+    "seoul/naver-2035912052": {
+      "status": "ok"
+    },
+    "seoul/naver-38264451": {
+      "status": "ok"
+    },
+    "seoul/naver-2070284578": {
+      "status": "ok"
+    },
+    "seoul/naver-38548042": {
+      "status": "ok"
+    },
+    "seoul/naver-2008465062": {
+      "status": "ok"
+    },
+    "seoul/naver-1688205316": {
+      "status": "ok"
+    },
+    "seoul/naver-1763662575": {
+      "status": "ok"
+    },
+    "seoul/naver-2070310198": {
+      "status": "ok"
+    },
+    "seoul/naver-2086497125": {
+      "status": "ok"
+    },
+    "seoul/naver-1230882641": {
+      "status": "ok"
+    },
+    "seoul/naver-1826026569": {
+      "status": "ok"
+    },
+    "seoul/naver-1085935559": {
+      "status": "ok"
+    },
+    "seoul/naver-1229099097": {
+      "status": "ok"
+    },
+    "seoul/naver-1245684734": {
+      "status": "ok"
+    },
+    "seoul/naver-2094230942": {
+      "status": "ok"
+    },
+    "seoul/naver-2040179619": {
+      "status": "ok"
+    },
+    "seoul/naver-1074062899": {
+      "status": "ok"
+    },
+    "seoul/naver-1528692931": {
+      "status": "ok"
+    },
+    "seoul/naver-1153321158": {
+      "status": "ok"
+    },
+    "seoul/naver-2098007244": {
+      "status": "ok"
+    },
+    "seoul/naver-1808733495": {
+      "status": "ok"
+    },
+    "seoul/naver-1837437884": {
+      "status": "ok"
+    },
+    "seoul/naver-1661967766": {
+      "status": "ok"
+    },
+    "seoul/naver-2000605317": {
+      "status": "ok"
+    },
+    "seoul/naver-2039983018": {
+      "status": "ok"
+    },
+    "seoul/naver-2094972347": {
+      "status": "ok"
+    },
+    "seoul/naver-1227244952": {
+      "status": "ok"
+    },
+    "seoul/naver-2081745645": {
+      "status": "mismatch",
+      "to": "jeonnam"
+    },
+    "seoul/naver-1244479891": {
+      "status": "ok"
+    },
+    "seoul/naver-1414693656": {
+      "status": "ok"
+    },
+    "seoul/naver-2009315258": {
+      "status": "ok"
+    },
+    "seoul/naver-1662708681": {
+      "status": "ok"
+    },
+    "seoul/naver-1095083089": {
+      "status": "ok"
+    },
+    "seoul/naver-2087524275": {
+      "status": "ok"
+    },
+    "seoul/naver-18674490": {
+      "status": "ok"
+    },
+    "seoul/naver-1732986089": {
+      "status": "ok"
+    },
+    "seoul/naver-1104324042": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-1038148108": {
+      "status": "ok"
+    },
+    "seoul/naver-1754340217": {
+      "status": "ok"
+    },
+    "seoul/naver-1791268631": {
+      "status": "ok"
+    },
+    "seoul/naver-2080385901": {
+      "status": "ok"
+    },
+    "seoul/naver-1018883356": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-2082041542": {
+      "status": "ok"
+    },
+    "seoul/naver-38515145": {
+      "status": "ok"
+    },
+    "seoul/naver-2003857763": {
+      "status": "ok"
+    },
+    "seoul/naver-2057453017": {
+      "status": "ok"
+    },
+    "seoul/naver-1528035920": {
+      "status": "ok"
+    },
+    "seoul/naver-1825152608": {
+      "status": "ok"
+    },
+    "seoul/naver-1608779429": {
+      "status": "ok"
+    },
+    "seoul/naver-1006649433": {
+      "status": "ok"
+    },
+    "seoul/naver-1098697502": {
+      "status": "ok"
+    },
+    "seoul/naver-2016354571": {
+      "status": "ok"
+    },
+    "seoul/naver-2004006602": {
+      "status": "ok"
+    },
+    "seoul/naver-1519103024": {
+      "status": "ok"
+    },
+    "seoul/naver-1034494104": {
+      "status": "ok"
+    },
+    "seoul/naver-1919983141": {
+      "status": "ok"
+    },
+    "seoul/naver-1524742527": {
+      "status": "mismatch",
+      "to": "sejong"
+    },
+    "seoul/naver-1316783794": {
+      "status": "ok"
+    },
+    "seoul/naver-1779214109": {
+      "status": "ok"
+    },
+    "seoul/naver-1705177116": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-2095019461": {
+      "status": "ok"
+    },
+    "seoul/naver-1017545810": {
+      "status": "ok"
+    },
+    "seoul/naver-1021786852": {
+      "status": "ok"
+    },
+    "seoul/naver-1121688867": {
+      "status": "ok"
+    },
+    "seoul/naver-1011293106": {
+      "status": "ok"
+    },
+    "seoul/naver-2000889807": {
+      "status": "ok"
+    },
+    "seoul/naver-1856927545": {
+      "status": "ok"
+    },
+    "seoul/naver-37910087": {
+      "status": "ok"
+    },
+    "seoul/naver-20619413": {
+      "status": "ok"
+    },
+    "seoul/naver-1820361832": {
+      "status": "ok"
+    },
+    "seoul/naver-1979117769": {
+      "status": "ok"
+    },
+    "seoul/naver-1654577204": {
+      "status": "ok"
+    },
+    "seoul/naver-19866308": {
+      "status": "ok"
+    },
+    "seoul/naver-1011218680": {
+      "status": "ok"
+    },
+    "seoul/naver-2060786887": {
+      "status": "ok"
+    },
+    "seoul/naver-2050574109": {
+      "status": "ok"
+    },
+    "seoul/naver-2095018615": {
+      "status": "ok"
+    },
+    "seoul/naver-19873255": {
+      "status": "ok"
+    },
+    "seoul/naver-1560785276": {
+      "status": "ok"
+    },
+    "seoul/naver-2016408542": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-2046667794": {
+      "status": "ok"
+    },
+    "seoul/naver-2021928711": {
+      "status": "ok"
+    },
+    "seoul/naver-1774444658": {
+      "status": "ok"
+    },
+    "seoul/naver-1375307120": {
+      "status": "ok"
+    },
+    "seoul/naver-2055206907": {
+      "status": "mismatch",
+      "to": "seoul"
+    },
+    "seoul/naver-1218512724": {
+      "status": "mismatch",
+      "to": "gwangju"
+    },
+    "ulsan/naver-2080789780": {
+      "status": "mismatch",
+      "to": "gyeonggi"
+    },
+    "chungnam/naver-1156068661": {
+      "status": "ok"
+    },
+    "gwangju/naver-1218512724": {
+      "status": "ok"
+    },
+    "gyeonggi/naver-2080789780": {
+      "status": "ok"
+    },
+    "jeonnam/naver-2081745645": {
+      "status": "ok"
+    },
+    "sejong/naver-1524742527": {
+      "status": "ok"
+    }
+  },
+  "mismatches": [
+    {
+      "key": "busan/naver-1898130354",
+      "name": "고원",
+      "from": {
+        "regionId": "busan",
+        "address": "부산 부산진구 서전로58번길 64",
+        "district": "부산진구"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "남원시",
+        "address": "전북 남원시 큰들4길 24",
+        "lat": 35.4152243,
+        "lng": 127.3975209
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "busan/naver-11697545",
+      "name": "만리향",
+      "from": {
+        "regionId": "busan",
+        "address": "부산 중구 충장대로9번길 9-1",
+        "district": "중구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 장선배기길 10 1층만리향",
+        "lat": 34.9526999,
+        "lng": 127.5233236
+      },
+      "naverCategory": "중식당",
+      "reason": "province"
+    },
+    {
+      "key": "busan/naver-1784872593",
+      "name": "송정국밥 본점",
+      "from": {
+        "regionId": "busan",
+        "address": "부산 해운대구 송정광어골로 72",
+        "district": "해운대구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 내상로 50-1 1층",
+        "lat": 35.1376693,
+        "lng": 126.7978659
+      },
+      "naverCategory": "국밥",
+      "reason": "province"
+    },
+    {
+      "key": "busan/naver-1230485898",
+      "name": "시월",
+      "from": {
+        "regionId": "busan",
+        "address": "부산 부산진구 동천로108번길 9-7",
+        "district": "부산진구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 독막로3길 33 2층",
+        "lat": 37.5497695,
+        "lng": 126.9172654
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "busan/naver-2072972807",
+      "name": "해수",
+      "from": {
+        "regionId": "busan",
+        "address": "부산 서구 충무대로 134",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 장동로 37 1층",
+        "lat": 35.1477168,
+        "lng": 126.9259782
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-21230589",
+      "name": "갈비가좋아 조치원점",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 청주시 흥덕구 오송읍 오송생명7로 183",
+        "district": "청주시"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 조치원읍 행복4길 35 갈비가좋아 유림빌1층",
+        "lat": 36.6047692,
+        "lng": 127.2936576
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-1365285191",
+      "name": "대한양꼬치훠궈무한리필",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 증평군 증평읍 초중로 56",
+        "district": "증평군"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 도산로9번길 12 1층",
+        "lat": 35.1289122,
+        "lng": 126.7911091
+      },
+      "naverCategory": "양꼬치",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-20819236",
+      "name": "락빈칼국수",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 충주시 용산천변길 56",
+        "district": "충주시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 판교공원로2길 68",
+        "lat": 37.390358,
+        "lng": 127.090986
+      },
+      "naverCategory": "칼국수,만두",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-1112306548",
+      "name": "마작골",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 옥천군 군북면 지오리",
+        "district": "옥천군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 퇴계로88길 21",
+        "lat": 37.5646104,
+        "lng": 127.0210752
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-2037966007",
+      "name": "미와담",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 음성군 감곡면 상우안길 60",
+        "district": "음성군"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 쇳골로47번길 5 1층",
+        "lat": 37.3631382,
+        "lng": 127.0959012
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-1061491128",
+      "name": "삼순이",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 증평군 증평읍 삼보로7길 35",
+        "district": "증평군"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "북구",
+        "address": "전남광주 북구 양산택지로 18 2층 삼순이",
+        "lat": 35.2080978,
+        "lng": 126.8791757
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-18106884",
+      "name": "삼우정 본점",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 청주시 서원구 산미로 19",
+        "district": "청주시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 서소문로 134-12",
+        "lat": 37.5631714,
+        "lng": 126.9756475
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-1770203924",
+      "name": "조선삼합",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 진천군 덕산읍 석장로 227",
+        "district": "진천군"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "여수시",
+        "address": "전남광주 여수시 중앙1길 15-1 조선삼합",
+        "lat": 34.7401273,
+        "lng": 127.7370102
+      },
+      "naverCategory": "해물,생선요리",
+      "reason": "province"
+    },
+    {
+      "key": "chungbuk/naver-2050574109",
+      "name": "황톳길",
+      "from": {
+        "regionId": "chungbuk",
+        "address": "충북 보은군 속리산면 사내리",
+        "district": "보은군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 마포대로11길 15-7 1층",
+        "lat": 37.5485769,
+        "lng": 126.9531878
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "chungnam/naver-1929335824",
+      "name": "데이원",
+      "from": {
+        "regionId": "chungnam",
+        "address": "충남 천안시 서북구 불당33길 47",
+        "district": "천안시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 황새울로359번길 11 1층",
+        "lat": 37.3881906,
+        "lng": 127.1232469
+      },
+      "naverCategory": "브런치",
+      "reason": "province"
+    },
+    {
+      "key": "chungnam/naver-1807681546",
+      "name": "베로",
+      "from": {
+        "regionId": "chungnam",
+        "address": "충남 천안시 동남구 용곡5길 37-4",
+        "district": "천안시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 서울숲4길 20-1 2층",
+        "lat": 37.5471444,
+        "lng": 127.0431617
+      },
+      "naverCategory": "이탈리아음식",
+      "reason": "province"
+    },
+    {
+      "key": "chungnam/naver-19356907",
+      "name": "소담골 본점",
+      "from": {
+        "regionId": "chungnam",
+        "address": "충남 천안시 서북구 봉서산로 69-10",
+        "district": "천안시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 영통구 인계로291번길 10 경기 수원시 영통구 매탄동815-1번지",
+        "lat": 37.2636252,
+        "lng": 127.0498652
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "chungnam/naver-1034494104",
+      "name": "한미옥",
+      "from": {
+        "regionId": "chungnam",
+        "address": "충남 서천군 한산면 한산모시길 42-7",
+        "district": "서천군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "강남구",
+        "address": "서울 강남구 선릉로 822 지하 1층",
+        "lat": 37.5252817,
+        "lng": 127.0401264
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "daegu/naver-2091882564",
+      "name": "뉴요크",
+      "from": {
+        "regionId": "daegu",
+        "address": "대구 남구 두류공원로 16-1",
+        "district": "남구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 성덕정15길 12 1층 남3호 뉴요크",
+        "lat": 37.5384503,
+        "lng": 127.0537924
+      },
+      "naverCategory": "카페,디저트",
+      "reason": "province"
+    },
+    {
+      "key": "daegu/naver-1224154264",
+      "name": "레브 동명점",
+      "from": {
+        "regionId": "daegu",
+        "address": "대구 북구 학정로 551-42",
+        "district": "북구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 동명로14번길 29 레브",
+        "lat": 35.1498589,
+        "lng": 126.9265079
+      },
+      "naverCategory": "양식",
+      "reason": "province"
+    },
+    {
+      "key": "daegu/naver-35228395",
+      "name": "방짜",
+      "from": {
+        "regionId": "daegu",
+        "address": "대구 동구 도장길 29",
+        "district": "동구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 황새울로 315 대현빌딩 103호 서현방짜",
+        "lat": 37.3851289,
+        "lng": 127.1207758
+      },
+      "naverCategory": "곱창,막창,양",
+      "reason": "province"
+    },
+    {
+      "key": "daegu/naver-1227244952",
+      "name": "파르코",
+      "from": {
+        "regionId": "daegu",
+        "address": "대구 수성구 상록로11길 97",
+        "district": "수성구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 서울숲2길 44",
+        "lat": 37.5463404,
+        "lng": 127.0433395
+      },
+      "naverCategory": "이탈리아음식",
+      "reason": "province"
+    },
+    {
+      "key": "daegu/naver-2019608393",
+      "name": "푸르른",
+      "from": {
+        "regionId": "daegu",
+        "address": "대구 중구 동성로12길 83",
+        "district": "중구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 남신월4길 3-3 1층",
+        "lat": 34.9564507,
+        "lng": 127.5189758
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-2043060330",
+      "name": "굴뚝막창",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 서구 갈마중로 37",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 팔달구 향교로 30 1층 103호",
+        "lat": 37.2682832,
+        "lng": 127.0042983
+      },
+      "naverCategory": "곱창,막창,양",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-2021030127",
+      "name": "돈돌집",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 유성구 은구비서로3번길 8-14",
+        "district": "유성구"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 서북구 원두정8길 25 1층",
+        "lat": 36.8326431,
+        "lng": 127.136348
+      },
+      "naverCategory": "돼지고기구이",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-1251447969",
+      "name": "라쿠엔",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 유성구 엑스포로97번길 40",
+        "district": "유성구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 삼일대로 440 1층",
+        "lat": 37.573965,
+        "lng": 126.9877604
+      },
+      "naverCategory": "이자카야",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-115135662",
+      "name": "상상낙지",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 동구 백룡로11번길 156",
+        "district": "동구"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 나성로 133-15 애플타워 2층",
+        "lat": 36.4903832,
+        "lng": 127.2575273
+      },
+      "naverCategory": "낙지요리",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-2061384201",
+      "name": "아구찜사랑",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 유성구 상대동로36번길 61-17",
+        "district": "유성구"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 완산구 신촌3길 19 2층",
+        "lat": 35.8169996,
+        "lng": 127.115985
+      },
+      "naverCategory": "아귀찜,해물찜",
+      "reason": "province"
+    },
+    {
+      "key": "daejeon/naver-1377746746",
+      "name": "주도",
+      "from": {
+        "regionId": "daejeon",
+        "address": "대전 서구 둔산로 32-22",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 상원1길 35-22 지하1층",
+        "lat": 37.5461925,
+        "lng": 127.0470531
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-37178870",
+      "name": "고향보리밥",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 원주시 흥업면 남원로 69-1",
+        "district": "원주시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 처인구 유림로 173 고향보리밥",
+        "lat": 37.2611486,
+        "lng": 127.1953133
+      },
+      "naverCategory": "보리밥",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-1836298981",
+      "name": "낙원숯불갈비",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 영월군 영월읍 제방안길 4",
+        "district": "영월군"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "예산군",
+        "address": "충남 예산군 삽교읍 청사로192번길 20 208호",
+        "lat": 36.661805,
+        "lng": 126.6804656
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-1000309544",
+      "name": "맛집생선구이",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 속초시 대포항1길 60",
+        "district": "속초시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "오산시",
+        "address": "경기 오산시 눕새로 13",
+        "lat": 37.1404322,
+        "lng": 127.0542069
+      },
+      "naverCategory": "생선구이",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-1298851101",
+      "name": "육해집",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 철원군 갈말읍 삼부연로18번길 8-14",
+        "district": "철원군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 마포대로12길 24 1층",
+        "lat": 37.547902,
+        "lng": 126.9547635
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-1426981340",
+      "name": "주인",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 강릉시 강릉대로 268-1",
+        "district": "강릉시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 서북구 불당26로 50 근린생활시설 8동 1층 G109호",
+        "lat": 36.8111234,
+        "lng": 127.106192
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-1807622300",
+      "name": "크림하우스",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 강릉시 사천면 해안로 1173",
+        "district": "강릉시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "홍성군",
+        "address": "충남 홍성군 홍북읍 청사로174번길 21 110호 1층 공원방향 크림하우스카페",
+        "lat": 36.6603335,
+        "lng": 126.6805155
+      },
+      "naverCategory": "카페,디저트",
+      "reason": "province"
+    },
+    {
+      "key": "gangwon/naver-20619413",
+      "name": "혼마참치",
+      "from": {
+        "regionId": "gangwon",
+        "address": "강원특별자치도 원주시 금불1길 38-2",
+        "district": "원주시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "강남구",
+        "address": "서울 강남구 개포로 210 충의빌딩 1층 103호",
+        "lat": 37.4783785,
+        "lng": 127.0457662
+      },
+      "naverCategory": "일식당",
+      "reason": "province"
+    },
+    {
+      "key": "gwangju/naver-16838838",
+      "name": "88포장마차",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 서구 상무민주로76번길 6-1",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "목포시",
+        "address": "전남광주 목포시 영산로329번길 3-1 88포장마차",
+        "lat": 34.8062428,
+        "lng": 126.4012278
+      },
+      "naverCategory": "포장마차",
+      "reason": "province"
+    },
+    {
+      "key": "gwangju/naver-2071246489",
+      "name": "급한마음탕수육 운암점",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 서구 상무평화로 106",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "북구",
+        "address": "전남광주 북구 대자로 48-1 1층",
+        "lat": 35.1732217,
+        "lng": 126.8778712
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeongbuk/naver-1769818339",
+      "name": "시골집 동명점",
+      "from": {
+        "regionId": "gyeongbuk",
+        "address": "경북 칠곡군 지천면 신동로 135-1",
+        "district": "칠곡군"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 제봉로110번길 21 시골집",
+        "lat": 35.1493867,
+        "lng": 126.9238806
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2070641769",
+      "name": "스르르",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 의정부시 용민로182번길 26-3",
+        "district": "의정부시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 장동로 5-3 1층",
+        "lat": 35.149278,
+        "lng": 126.9230148
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-1498265556",
+      "name": "대평리 맛있는집",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 김제시 검산택지5길 21-10",
+        "district": "김제시"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 금남면 용포로 84 1층, 대평리 맛있는집.",
+        "lat": 36.4660517,
+        "lng": 127.2814936
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1991997120",
+      "name": "버트",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 담양군 담양읍 추성로 1186",
+        "district": "담양군"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 팔달구 정조로900번길 13 1층",
+        "lat": 37.2879102,
+        "lng": 127.0153056
+      },
+      "naverCategory": "카페,디저트",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-2027987672",
+      "name": "진상",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 광양시 진상면 옥진로 1085",
+        "district": "광양시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "광진구",
+        "address": "서울 광진구 아차산로33길 22",
+        "lat": 37.5412375,
+        "lng": 127.0703705
+      },
+      "naverCategory": "와인",
+      "reason": "province"
+    },
+    {
+      "key": "ulsan/naver-11598345",
+      "name": "용암골",
+      "from": {
+        "regionId": "ulsan",
+        "address": "울산 울주군 청량읍 문죽리",
+        "district": "울주군"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 연서면 도신고복로 613-2 용암골",
+        "lat": 36.6026303,
+        "lng": 127.2280071
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "gwangju/naver-1262175480",
+      "name": "동산회관",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 북구 우치로90번길 12-1",
+        "district": "북구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 송정로52번길 5 1층 동산회관",
+        "lat": 35.1349888,
+        "lng": 126.7963942
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "district"
+    },
+    {
+      "key": "gwangju/naver-2048128300",
+      "name": "만선",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 북구 호동로 6",
+        "district": "북구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 토정로 275 1층 만선",
+        "lat": 37.5422128,
+        "lng": 126.9405467
+      },
+      "naverCategory": "해물,생선요리",
+      "reason": "province"
+    },
+    {
+      "key": "gwangju/naver-2090894605",
+      "name": "바다회포차",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 북구 저불로 34",
+        "district": "북구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 수완로 54 1층",
+        "lat": 35.1898923,
+        "lng": 126.8289574
+      },
+      "naverCategory": "생선회",
+      "reason": "district"
+    },
+    {
+      "key": "gwangju/naver-1659701073",
+      "name": "진미가람 주월점",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 서구 상무중앙로28번길 18",
+        "district": "서구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "남구",
+        "address": "전남광주 남구 서문대로824번길 12 1층",
+        "lat": 35.1319475,
+        "lng": 126.9018689
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "district"
+    },
+    {
+      "key": "gwangju/naver-2070310198",
+      "name": "코엔",
+      "from": {
+        "regionId": "gwangju",
+        "address": "전남광주통합특별시 동구 동계천로 132",
+        "district": "동구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 월드컵북로4길 30 101호",
+        "lat": 37.5575488,
+        "lng": 126.9212508
+      },
+      "naverCategory": "돈가스",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongbuk/naver-32239625",
+      "name": "동해안",
+      "from": {
+        "regionId": "gyeongbuk",
+        "address": "경북 영덕군 남정면 동해대로 4198-5",
+        "district": "영덕군"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "익산시",
+        "address": "전북 익산시 배산로 71-4 동해빌딩",
+        "lat": 35.9444256,
+        "lng": 126.938206
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongbuk/naver-2031469918",
+      "name": "서원",
+      "from": {
+        "regionId": "gyeongbuk",
+        "address": "경북 안동시 도산면 도산서원길 154",
+        "district": "안동시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 장동로 9-1 1층",
+        "lat": 35.1490692,
+        "lng": 126.9232915
+      },
+      "naverCategory": "술집",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongbuk/naver-1677875090",
+      "name": "열정짬뽕",
+      "from": {
+        "regionId": "gyeongbuk",
+        "address": "경북 안동시 어가골윗길 10-4",
+        "district": "안동시"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 장선배기길 7",
+        "lat": 34.9529623,
+        "lng": 127.5229966
+      },
+      "naverCategory": "중식당",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongbuk/naver-2060786887",
+      "name": "황남",
+      "from": {
+        "regionId": "gyeongbuk",
+        "address": "경북 경주시 포석로 1080",
+        "district": "경주시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 새문안로3길 36 지하1층 B112호, 113호",
+        "lat": 37.5734105,
+        "lng": 126.9732813
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1703643550",
+      "name": "감자꽃",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 화성시 동탄구 금곡로 251-7",
+        "district": "화성시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "오산시",
+        "address": "경기 오산시 오산로272번길 8 1층",
+        "lat": 37.1509633,
+        "lng": 127.0695349
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-38704556",
+      "name": "구포국수",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 안양시 동안구 시민대로 161",
+        "district": "안양시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 권선구 금호로 83-1 1층",
+        "lat": 37.2713896,
+        "lng": 126.9594943
+      },
+      "naverCategory": "국수",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-31840670",
+      "name": "굿모닝",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 중앙로 338",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 우정국로 48 S&S 빌딩 지하1층",
+        "lat": 37.573251,
+        "lng": 126.9831775
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-11723442",
+      "name": "꽃피는산골",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 안성시 고삼면 쌍지길 11-148",
+        "district": "안성시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 종로11길 17",
+        "lat": 37.5710793,
+        "lng": 126.9856054
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-37895912",
+      "name": "달빛한잔",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 부천시 원미구 부흥로315번길 67",
+        "district": "부천시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 황새울로360번길 12 대명프라자 3층 320호 달빛한잔",
+        "lat": 37.3866265,
+        "lng": 127.1248958
+      },
+      "naverCategory": "요리주점",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-1705969669",
+      "name": "대패상회",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 의정부시 호국로1298번길 43",
+        "district": "의정부시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 망원로 96 1층 대패상회",
+        "lat": 37.5577328,
+        "lng": 126.9073724
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1098405799",
+      "name": "만원수산",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 고양시 일산서구 강성로 147",
+        "district": "고양시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 서초대로77길 37 3층",
+        "lat": 37.5009917,
+        "lng": 127.0251242
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2008388043",
+      "name": "매쎄",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 수원시 권선구 세화로134번길 37",
+        "district": "수원시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "강남구",
+        "address": "서울 강남구 논현로32길 5 1층 101호",
+        "lat": 37.4839592,
+        "lng": 127.0425974
+      },
+      "naverCategory": "프랑스음식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2059607910",
+      "name": "메트로삼겹살",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 탄현로 84",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 퇴계로 409 흥화브라운 B1층",
+        "lat": 37.5657682,
+        "lng": 127.0170216
+      },
+      "naverCategory": "돼지고기구이",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1065125060",
+      "name": "부자곱",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 화성시 동탄구 동탄역로 102",
+        "district": "화성시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 서북구 원두정3길 26",
+        "lat": 36.8325874,
+        "lng": 127.1377909
+      },
+      "naverCategory": "곱창,막창,양",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-19877394",
+      "name": "사카나",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 성남시 분당구 백현로101번길 17",
+        "district": "성남시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 남문로 690 사카나",
+        "lat": 35.1320469,
+        "lng": 126.928986
+      },
+      "naverCategory": "일식당",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1853419513",
+      "name": "산골추어매운탕",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 안성시 양성면 만세로 705",
+        "district": "안성시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 장안구 장안로378번길 30 산골",
+        "lat": 37.3152847,
+        "lng": 126.9861502
+      },
+      "naverCategory": "추어탕",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-20125417",
+      "name": "삼대째손두부",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 용인시 기흥구 신갈로 25",
+        "district": "용인시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "당진시",
+        "address": "충남 당진시 천변1길 224-10 삼대째손두부",
+        "lat": 36.885895,
+        "lng": 126.6382837
+      },
+      "naverCategory": "두부요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1687334576",
+      "name": "상하이",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 부천시 원미구 부흥로315번길 14",
+        "district": "부천시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 권선구 호매실로104번길 24-61 금호프라자 1동 2층",
+        "lat": 37.2587514,
+        "lng": 126.9627144
+      },
+      "naverCategory": "중식당",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-2055401843",
+      "name": "석호네솥뚜껑닭볶음탕",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 시흥시 서울대학로264번길 26-11",
+        "district": "시흥시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 강남대로65길 12 2층 203, 205, 206호",
+        "lat": 37.5005224,
+        "lng": 127.0247457
+      },
+      "naverCategory": "닭볶음탕",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1675654056",
+      "name": "소문난모듬조개칼국수",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 오산시 북삼미로 183-6",
+        "district": "오산시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 동남구 서부대로 129 신방동 1층",
+        "lat": 36.7799151,
+        "lng": 127.1277121
+      },
+      "naverCategory": "칼국수,만두",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-20346730",
+      "name": "신라갈비",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 수원시 영통구 동수원로 538",
+        "district": "수원시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 종로35길 4",
+        "lat": 37.5713836,
+        "lng": 127.0039961
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-36900466",
+      "name": "어락",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 연천군 전곡읍 평화로861번길 49",
+        "district": "연천군"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "목포시",
+        "address": "전남광주 목포시 평화로 45",
+        "lat": 34.7953938,
+        "lng": 126.4301471
+      },
+      "naverCategory": "해물,생선요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1267330619",
+      "name": "어비스",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 과천시 과천대로2길 48",
+        "district": "과천시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 사직로12길 19-17",
+        "lat": 37.5753521,
+        "lng": 126.9712617
+      },
+      "naverCategory": "바(BAR)",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2036341845",
+      "name": "연우",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 비전2로 200",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "계룡시",
+        "address": "충남 계룡시 엄사면 번영로 58-1 1층 연우",
+        "lat": 36.2890561,
+        "lng": 127.2389634
+      },
+      "naverCategory": "소고기구이",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-34033715",
+      "name": "열날개 본점",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 김포시 김포한강9로75번길 180",
+        "district": "김포시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 동남구 먹거리3길 14 1층 열날개",
+        "lat": 36.817629,
+        "lng": 127.15501
+      },
+      "naverCategory": "닭요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1094543499",
+      "name": "오산 장수촌",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 경기대로 1610",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "오산시",
+        "address": "경기 오산시 오산대역로132번길 50 1층",
+        "lat": 37.1699288,
+        "lng": 127.0600274
+      },
+      "naverCategory": "백숙,삼계탕",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-1534876212",
+      "name": "오초오늘의초밥",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 과천시 과천대로7길 46",
+        "district": "과천시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 영통구 광교중앙로266번길 30 123호",
+        "lat": 37.2923436,
+        "lng": 127.0683228
+      },
+      "naverCategory": "일식당",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-1185402464",
+      "name": "옥순식당",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 김포시 월곶면 용강로250번길 180",
+        "district": "김포시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 황새울로342번길 11 금호리빙스텔 2층 205호",
+        "lat": 37.3862047,
+        "lng": 127.1237076
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-17239436",
+      "name": "유장춘닭개장",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 포승읍 포승공단순환로 464",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 서북구 백석3로 35 유장춘닭개장",
+        "lat": 36.8221017,
+        "lng": 127.1151033
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-37035931",
+      "name": "일산칼국수",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 고양시 일산동구 백석로108번길 6-16",
+        "district": "고양시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 삼일대로15길 6 1층",
+        "lat": 37.568891,
+        "lng": 126.987182
+      },
+      "naverCategory": "칼국수,만두",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-11386100",
+      "name": "장수촌",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 의왕시 청계로 183-1",
+        "district": "의왕시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 수지구 동천로 631",
+        "lat": 37.3586905,
+        "lng": 127.0546468
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-1609687800",
+      "name": "장인족발608",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 평택시 특구로19번길 24",
+        "district": "평택시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 장신로20번안길 48 장인족발608",
+        "lat": 35.1904698,
+        "lng": 126.8125257
+      },
+      "naverCategory": "족발,보쌈",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-37749841",
+      "name": "죽해수산",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 성남시 중원구 금상로 39",
+        "district": "성남시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서대문구",
+        "address": "서울 서대문구 연세로5길 30 신촌죽해수산(62-6)",
+        "lat": 37.5565255,
+        "lng": 126.9353167
+      },
+      "naverCategory": "대게요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2005756586",
+      "name": "지속",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 파주시 맨드라미길 34",
+        "district": "파주시"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 완산구 현무1길 35 지속",
+        "lat": 35.821919,
+        "lng": 127.1475037
+      },
+      "naverCategory": "돈가스",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-1025162062",
+      "name": "칼뽕",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 포천시 호국로 910",
+        "district": "포천시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "홍성군",
+        "address": "충남 홍성군 홍성읍 충서로 1573 1층",
+        "lat": 36.6052634,
+        "lng": 126.6666089
+      },
+      "naverCategory": "중식당",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-2000605317",
+      "name": "토오리",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 하남시 천호대로1358번길 7",
+        "district": "하남시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 동교로38안길 7 1층",
+        "lat": 37.5621841,
+        "lng": 126.9246741
+      },
+      "naverCategory": "일식당",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-16779892",
+      "name": "포청천",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 시흥시 정왕대로 74",
+        "district": "시흥시"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "목포시",
+        "address": "전남광주 목포시 하당로 243",
+        "lat": 34.8097759,
+        "lng": 126.4226982
+      },
+      "naverCategory": "중식당",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-13578169",
+      "name": "풍천장어직판장",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 안양시 동안구 관악대로 72-1",
+        "district": "안양시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 동남구 화령길 4-1 풍천장어직판장",
+        "lat": 36.810677,
+        "lng": 127.167797
+      },
+      "naverCategory": "장어,먹장어요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeonggi/naver-18440909",
+      "name": "한울",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 파주시 교하로 239",
+        "district": "파주시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 정자일로 15 1층 한울",
+        "lat": 37.3518891,
+        "lng": 127.1052089
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-2045700159",
+      "name": "홍닭",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 성남시 분당구 판교대장로8길 10",
+        "district": "성남시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 처인구 명지로40번길 10 106호",
+        "lat": 37.2327794,
+        "lng": 127.1874202
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "gyeonggi/naver-2031009094",
+      "name": "AMPM",
+      "from": {
+        "regionId": "gyeonggi",
+        "address": "경기 남양주시 두물로39번길 7",
+        "district": "남양주시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 수완로52번길 46-5 1층",
+        "lat": 35.1897134,
+        "lng": 126.8314409
+      },
+      "naverCategory": "바(BAR)",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-1013826140",
+      "name": "가호",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 진주시 가호로 64",
+        "district": "진주시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 동명로25번길 7-4",
+        "lat": 35.1513875,
+        "lng": 126.9228206
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-37349717",
+      "name": "동피랑",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 통영시 동피랑1길 6-18",
+        "district": "통영시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 와우산로3길 29",
+        "lat": 37.5458266,
+        "lng": 126.9214087
+      },
+      "naverCategory": "해물,생선요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-1564468602",
+      "name": "알찬밥상",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 김해시 번화1로 177",
+        "district": "김해시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 영통구 도청로 10 광교 롯데몰 3층",
+        "lat": 37.286504,
+        "lng": 127.055358
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-1946827264",
+      "name": "자연농원",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 창원시 의창구 북면 천주로 201-12",
+        "district": "창원시"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 동남구 개목4길 16 1층",
+        "lat": 36.8154687,
+        "lng": 127.1330181
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-34521207",
+      "name": "청정횟집",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 남해군 설천면 노량로183번길 18",
+        "district": "남해군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 남부순환로350길 75",
+        "lat": 37.4819622,
+        "lng": 127.0380211
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "gyeongnam/naver-2071542667",
+      "name": "하노이진영",
+      "from": {
+        "regionId": "gyeongnam",
+        "address": "경남 밀양시 하남읍 수산중앙로 67-13",
+        "district": "밀양시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 판교공원로3길 36 102호",
+        "lat": 37.3907624,
+        "lng": 127.0901331
+      },
+      "naverCategory": "베트남음식",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-2054015933",
+      "name": "만나공원",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 연수구 아트센터대로168번길 100",
+        "district": "연수구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "무안군",
+        "address": "전남광주 무안군 삼향읍 후광대로 292 2층 203호",
+        "lat": 34.8140009,
+        "lng": 126.4637666
+      },
+      "naverCategory": "브런치카페",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-13496702",
+      "name": "보스포차",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 계양구 계산새로87번길 6",
+        "district": "계양구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서대문구",
+        "address": "서울 서대문구 연세로7길 25 2층",
+        "lat": 37.5575618,
+        "lng": 126.9354008
+      },
+      "naverCategory": "맥주,호프",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-1760293072",
+      "name": "새벽회",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 남동구 인하로507번길 21",
+        "district": "남동구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 대석2길 8 1층",
+        "lat": 34.9449842,
+        "lng": 127.5238914
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-1954881301",
+      "name": "치즈웨이브",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 미추홀구 독배로 309",
+        "district": "미추홀구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서대문구",
+        "address": "서울 서대문구 연세로7안길 34-6 1,2층 치즈웨이브",
+        "lat": 37.5583559,
+        "lng": 126.9350365
+      },
+      "naverCategory": "피자",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-1386102212",
+      "name": "쿠모",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 영종구 영종대로196번길 26",
+        "district": "영종구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "화성시",
+        "address": "경기 화성시 동탄구 노작로2길 28 101호",
+        "lat": 37.196427,
+        "lng": 127.0784817
+      },
+      "naverCategory": "일식당",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-34581140",
+      "name": "포항물회 본점",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 연수구 용담로 44",
+        "district": "연수구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 목련로397번안길 7",
+        "lat": 35.183657,
+        "lng": 126.8322193
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "incheon/naver-21791484",
+      "name": "하나비",
+      "from": {
+        "regionId": "incheon",
+        "address": "인천 부평구 장제로 47",
+        "district": "부평구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "서구",
+        "address": "전남광주 서구 상무번영로 52",
+        "lat": 35.1545113,
+        "lng": 126.8532196
+      },
+      "naverCategory": "소고기구이",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-19299856",
+      "name": "다린",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 서귀포시 법환로 11",
+        "district": "서귀포시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 수지구 죽전로168번길 39",
+        "lat": 37.324423,
+        "lng": 127.127125
+      },
+      "naverCategory": "이탈리아음식",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-1017616635",
+      "name": "바다이야기",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 제주시 한림읍 한림로 491",
+        "district": "제주시"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 조치원읍 행복12길 9-10 1층",
+        "lat": 36.6044105,
+        "lng": 127.2934963
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-2024717572",
+      "name": "버들집",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 서귀포시 중정로73번길 10-1",
+        "district": "서귀포시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "서구",
+        "address": "전남광주 서구 상무버들로 35 1층 101호",
+        "lat": 35.1641451,
+        "lng": 126.8595355
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-1470813244",
+      "name": "오로시",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 제주시 정존1길 19",
+        "district": "제주시"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 봉화2길 21 오로시",
+        "lat": 34.9557926,
+        "lng": 127.5180667
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-1588676712",
+      "name": "우도",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 제주시 우도면 연평리",
+        "district": "제주시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "오산시",
+        "address": "경기 오산시 외삼미로 160 1층",
+        "lat": 37.1990825,
+        "lng": 127.0619515
+      },
+      "naverCategory": "소고기구이",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-1222188712",
+      "name": "우주",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 서귀포시 안덕면 항공우주로 83",
+        "district": "서귀포시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 충무로5길 27 2층(을지로3가)",
+        "lat": 37.5654391,
+        "lng": 126.9912343
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-38648333",
+      "name": "제주바다",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 서귀포시 대정읍 최남단해안로30번길 9",
+        "district": "서귀포시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 종로35길 18 1층",
+        "lat": 37.5719582,
+        "lng": 127.0039656
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "jeju/naver-20311673",
+      "name": "종가집",
+      "from": {
+        "regionId": "jeju",
+        "address": "제주특별자치도 서귀포시 표선면 표선리",
+        "district": "서귀포시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 인사동길 15-5 1층",
+        "lat": 37.5721493,
+        "lng": 126.9863982
+      },
+      "naverCategory": "곱창,막창,양",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-1255678902",
+      "name": "남산칼국수",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 정읍시 행정길 108",
+        "district": "정읍시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 퇴계로 235 B동 1층 125호 남산칼국수",
+        "lat": 37.5625703,
+        "lng": 126.9982599
+      },
+      "naverCategory": "칼국수,만두",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-1916763306",
+      "name": "돔베초밥",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 전주시 덕진구 아중로 231",
+        "district": "전주시"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 갈매로 353 에비뉴힐 A동 2층 돔베초밥",
+        "lat": 36.4956091,
+        "lng": 127.2627019
+      },
+      "naverCategory": "초밥,롤",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-2031245824",
+      "name": "봉동",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 완주군 봉동읍 둔산리",
+        "district": "완주군"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 장동로 23-22 1층",
+        "lat": 35.1490168,
+        "lng": 126.9246424
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-11726653",
+      "name": "신사동인동",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 군산시 나운로 54",
+        "district": "군산시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "강남구",
+        "address": "서울 강남구 강남대로156길 14 정금빌딩 1층 신사동인동",
+        "lat": 37.5181314,
+        "lng": 127.0203875
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-2062263673",
+      "name": "정통쌈밥",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 고창군 고창읍 남정6길 7",
+        "district": "고창군"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 완산구 우전2길 58",
+        "lat": 35.8091176,
+        "lng": 127.1070207
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "jeonbuk/naver-1986395691",
+      "name": "조선별관",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 정읍시 수성택지7길 16-13",
+        "district": "정읍시"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 완산구 신촌4길 10-9 1층",
+        "lat": 35.8186639,
+        "lng": 127.1169319
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "jeonbuk/naver-2058044682",
+      "name": "조점례남문피순대 금암점",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 군산시 공단대로 89",
+        "district": "군산시"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 덕진구 기린대로 400-14 1층 101호",
+        "lat": 35.8383651,
+        "lng": 127.1333257
+      },
+      "naverCategory": "순대,순댓국",
+      "reason": "district"
+    },
+    {
+      "key": "jeonbuk/naver-2073193247",
+      "name": "풍요",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 전주시 완산구 서신로 16",
+        "district": "전주시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 첨단강변로87번길 5 야스텍타워 2동, 113호",
+        "lat": 35.2144334,
+        "lng": 126.8516935
+      },
+      "naverCategory": "덮밥",
+      "reason": "province"
+    },
+    {
+      "key": "jeonbuk/naver-1903662124",
+      "name": "풍천장어마을",
+      "from": {
+        "regionId": "jeonbuk",
+        "address": "전북특별자치도 익산시 무왕로 1377-1",
+        "district": "익산시"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 처인구 성산로 297",
+        "lat": 37.2620043,
+        "lng": 127.1912387
+      },
+      "naverCategory": "장어,먹장어요리",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1766338959",
+      "name": "대원정",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 보성군 보성읍 녹차로 783",
+        "district": "보성군"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 돈화문로4길 33 대원정",
+        "lat": 37.5701368,
+        "lng": 126.9941418
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1586721091",
+      "name": "만끽",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 여수시 소호7길 17-5",
+        "district": "여수시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 동교로 272-8 1층",
+        "lat": 37.5635469,
+        "lng": 126.9261827
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1543297676",
+      "name": "새벽",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 여수시 미평로 74",
+        "district": "여수시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 어울마당로 123 ,1층 새벽",
+        "lat": 37.5556124,
+        "lng": 126.9236325
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1797233279",
+      "name": "서울곰탕",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 목포시 백년대로307번길 9-4",
+        "district": "목포시"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 장충단로7길 28 서울곰탕",
+        "lat": 37.5625851,
+        "lng": 127.0049231
+      },
+      "naverCategory": "곰탕,설렁탕",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1854279699",
+      "name": "송정골",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 나주시 노안면 도산리",
+        "district": "나주시"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "광산구",
+        "address": "전남광주 광산구 광산로19번길 20 1층송정골",
+        "lat": 35.1390369,
+        "lng": 126.7934945
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-16080483",
+      "name": "유진정",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 담양군 금성면 시암골로 17",
+        "district": "담양군"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "서구",
+        "address": "전남광주 서구 운천로31번길 15 유진정",
+        "lat": 35.1353701,
+        "lng": 126.8573899
+      },
+      "naverCategory": "오리요리",
+      "reason": "province"
+    },
+    {
+      "key": "jeonnam/naver-1983640525",
+      "name": "초루",
+      "from": {
+        "regionId": "jeonnam",
+        "address": "전남광주통합특별시 보성군 득량면 기남길 142-130",
+        "district": "보성군"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 서판교로44번길 3-19 1층 101호",
+        "lat": 37.3910576,
+        "lng": 127.0993504
+      },
+      "naverCategory": "일식당",
+      "reason": "province"
+    },
+    {
+      "key": "sejong/naver-1920359663",
+      "name": "바다향수산",
+      "from": {
+        "regionId": "sejong",
+        "address": "세종특별자치시 조치원읍 행복1길 11-1",
+        "district": "세종"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 기흥구 기흥로 14 . 1층 바다향수산",
+        "lat": 37.2773646,
+        "lng": 127.116243
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "sejong/naver-21252160",
+      "name": "밥상차려주는집",
+      "from": {
+        "regionId": "sejong",
+        "address": "세종특별자치시 가름로 232",
+        "district": "세종"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 동남구 풍세로 702",
+        "lat": 36.772966,
+        "lng": 127.1390279
+      },
+      "naverCategory": "한정식",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1289052276",
+      "name": "경양식당 본점",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 영등포구 경인로72길 4",
+        "district": "영등포구"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 시청대로 127 강남프라자 1층 114호",
+        "lat": 36.4796408,
+        "lng": 127.2860626
+      },
+      "naverCategory": "돈가스",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-17986930",
+      "name": "고궁",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 종로구 사직로 161",
+        "district": "종로구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 장안구 정조로 1094-3 2층",
+        "lat": 37.3028411,
+        "lng": 127.0024544
+      },
+      "naverCategory": "닭요리",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1625529373",
+      "name": "궁가",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 서대문구 증가로10길 60-4",
+        "district": "서대문구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 마방로10길 18-4 2층",
+        "lat": 37.4765598,
+        "lng": 127.0435535
+      },
+      "naverCategory": "중식당",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-2098303895",
+      "name": "그루트",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 강남대로110길 70",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "jeonbuk",
+        "province": "전북",
+        "district": "전주시",
+        "address": "전북 전주시 덕진구 명륜5길 17-1 1층",
+        "lat": 35.8442223,
+        "lng": 127.1257985
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1043556271",
+      "name": "노량진어시장",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 동작구 노들로 674",
+        "district": "동작구"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "논산시",
+        "address": "충남 논산시 관촉로 104 2동",
+        "lat": 36.1988565,
+        "lng": 127.1100381
+      },
+      "naverCategory": "생선회",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1602466277",
+      "name": "농부쌈밥",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 동작구 사당로30길 19",
+        "district": "동작구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 영통구 광교중앙로266번길 30",
+        "lat": 37.292379,
+        "lng": 127.0684895
+      },
+      "naverCategory": "쌈밥",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1574560244",
+      "name": "더 씨",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 성북구 개운사길 8",
+        "district": "성북구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 독막로3길 26 1층",
+        "lat": 37.5494173,
+        "lng": 126.9171391
+      },
+      "naverCategory": "일식당",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1046631053",
+      "name": "라포레스타",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 마포구 신촌로6길 23",
+        "district": "마포구"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 연서면 대첩로 130",
+        "lat": 36.5954224,
+        "lng": 127.281388
+      },
+      "naverCategory": "카페",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1102973917",
+      "name": "로투스",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 중구 삼일대로9길 6",
+        "district": "중구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "서구",
+        "address": "전남광주 서구 상무대로868번길 17-8 1층",
+        "lat": 35.1485552,
+        "lng": 126.8579852
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1886465835",
+      "name": "목탄장",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 선릉로157길 23-4",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 분당내곡로 155 Kcc웰츠타워 102호",
+        "lat": 37.3975763,
+        "lng": 127.1126468
+      },
+      "naverCategory": "요리주점",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-2094095596",
+      "name": "백무동",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 광진구 아차산로 441",
+        "district": "광진구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 세종대로20길 23 1층 102호",
+        "lat": 37.567111,
+        "lng": 126.9787416
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1222430825",
+      "name": "본가장어 신사 본점",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 압구정동 429",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 신반포로47길 87 1, 2층",
+        "lat": 37.5143252,
+        "lng": 127.0185913
+      },
+      "naverCategory": "장어,먹장어요리",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-35482992",
+      "name": "브루클린 피자",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 강남대로118길 21",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "성남시",
+        "address": "경기 성남시 분당구 대왕판교로 670 유스페이스2 A동 106,107호",
+        "lat": 37.4020288,
+        "lng": 127.1066516
+      },
+      "naverCategory": "피자",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-2087485549",
+      "name": "비바",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 서대문구 동교로 296",
+        "district": "서대문구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "용인시",
+        "address": "경기 용인시 처인구 금령로71번길 6-8 1층 102호",
+        "lat": 37.2356902,
+        "lng": 127.2048911
+      },
+      "naverCategory": "이탈리아음식",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-2020171432",
+      "name": "비어도",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 송파구 가락동 67",
+        "district": "송파구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 성덕정길 103 2층",
+        "lat": 37.5375068,
+        "lng": 127.0549734
+      },
+      "naverCategory": "맥주,호프",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1768646220",
+      "name": "서울집",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 언주로93길 22-3",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 서운로 220 대지프라자 1층 5호, 6호",
+        "lat": 37.5025714,
+        "lng": 127.02175
+      },
+      "naverCategory": "육류,고기요리",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-2085657169",
+      "name": "스시온기",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 은평구 응암로 277",
+        "district": "은평구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 신촌로 160 101호 스시온기",
+        "lat": 37.5563936,
+        "lng": 126.9434625
+      },
+      "naverCategory": "일식당",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1036879498",
+      "name": "아라타",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 영등포구 국제금융로8길 16",
+        "district": "영등포구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "동구",
+        "address": "전남광주 동구 동명로25번길 9-9",
+        "lat": 35.1512847,
+        "lng": 126.9224166
+      },
+      "naverCategory": "돈가스",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1283604243",
+      "name": "아리랑고개 닭꼬치",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 성북구 길음로 11",
+        "district": "성북구"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "예산군",
+        "address": "충남 예산군 예산읍 예산시장길 2 139호 예산시장 아리랑고개닭꼬치",
+        "lat": 36.6766794,
+        "lng": 126.8493801
+      },
+      "naverCategory": "일식튀김,꼬치",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-34268638",
+      "name": "영광밥상",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강서구 남부순환로19길 48-14",
+        "district": "강서구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서초구",
+        "address": "서울 서초구 사평대로56길 7 지하1층",
+        "lat": 37.5032281,
+        "lng": 127.0235782
+      },
+      "naverCategory": "한정식",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-13427243",
+      "name": "원진노기순청국장숯불갈비",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 성북구 안암로9가길 94",
+        "district": "성북구"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "공주시",
+        "address": "충남 공주시 백미고을길 6 1층",
+        "lat": 36.4656185,
+        "lng": 127.1228588
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1279278264",
+      "name": "저저",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 마포구 잔다리로 65",
+        "district": "마포구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 퇴계로41길 31 1층 101호",
+        "lat": 37.5631923,
+        "lng": 126.9955378
+      },
+      "naverCategory": "한식",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1156068661",
+      "name": "짬뽕전문점",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 종로구 종로40길 6",
+        "district": "종로구"
+      },
+      "to": {
+        "regionId": "chungnam",
+        "province": "충남",
+        "district": "천안시",
+        "address": "충남 천안시 서북구 오성로 42 1층",
+        "lat": 36.8302706,
+        "lng": 127.131879
+      },
+      "naverCategory": "중식당",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-2072676359",
+      "name": "천향",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 논현로 166",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "종로구",
+        "address": "서울 종로구 종로5길 32-3 2,3층",
+        "lat": 37.5718671,
+        "lng": 126.9807512
+      },
+      "naverCategory": "중식당",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-2081745645",
+      "name": "파스타디쉬",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 선릉로129길 20",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "jeonnam",
+        "province": "전남",
+        "district": "순천시",
+        "address": "전남광주 순천시 오천2길 30 1층 파스타디쉬",
+        "lat": 34.9305774,
+        "lng": 127.4952015
+      },
+      "naverCategory": "스파게티,파스타전문",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1104324042",
+      "name": "포썸",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 성북구 동소문로 125",
+        "district": "성북구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 희우정로 77 상가동 106호 마포한강 아이파크",
+        "lat": 37.5528604,
+        "lng": 126.9034688
+      },
+      "naverCategory": "베트남음식",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1018883356",
+      "name": "플디 케이크하우스 성수점",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 선릉로153길 11",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "성동구",
+        "address": "서울 성동구 왕십리로14길 28-15 1층",
+        "lat": 37.5481675,
+        "lng": 127.046726
+      },
+      "naverCategory": "케이크전문",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1524742527",
+      "name": "한성양꼬치,양갈비",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강남구 강남대로78길 25",
+        "district": "강남구"
+      },
+      "to": {
+        "regionId": "sejong",
+        "province": "세종",
+        "district": "세종",
+        "address": "세종 나성북1로 12 메가타워2 2층 207호",
+        "lat": 36.4909482,
+        "lng": 127.2576923
+      },
+      "naverCategory": "양꼬치",
+      "reason": "province"
+    },
+    {
+      "key": "seoul/naver-1705177116",
+      "name": "해누리",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 강서구 공항대로59가길 17",
+        "district": "강서구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "서대문구",
+        "address": "서울 서대문구 연세로5다길 28-4 1층",
+        "lat": 37.5568408,
+        "lng": 126.9341885
+      },
+      "naverCategory": "생선회",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-2016408542",
+      "name": "희희",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 종로구 대학로 42-7",
+        "district": "종로구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "마포구",
+        "address": "서울 마포구 독막로 46 103호 희희",
+        "lat": 37.5477522,
+        "lng": 126.9185139
+      },
+      "naverCategory": "이자카야",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-2055206907",
+      "name": "KOTA",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 동대문구 회기로21길 7",
+        "district": "동대문구"
+      },
+      "to": {
+        "regionId": "seoul",
+        "province": "서울",
+        "district": "중구",
+        "address": "서울 중구 마른내로 62-1 2층 201호",
+        "lat": 37.5641533,
+        "lng": 126.994725
+      },
+      "naverCategory": "퓨전음식",
+      "reason": "district"
+    },
+    {
+      "key": "seoul/naver-1218512724",
+      "name": "Verde",
+      "from": {
+        "regionId": "seoul",
+        "address": "서울 영등포구 국회대로 612",
+        "district": "영등포구"
+      },
+      "to": {
+        "regionId": "gwangju",
+        "province": "광주",
+        "district": "북구",
+        "address": "전남광주 북구 우치로100번길 61 1층 verde",
+        "lat": 35.1766873,
+        "lng": 126.915826
+      },
+      "naverCategory": "멕시코,남미음식",
+      "reason": "province"
+    },
+    {
+      "key": "ulsan/naver-2080789780",
+      "name": "명품대패",
+      "from": {
+        "regionId": "ulsan",
+        "address": "울산 남구 삼산로93번길 41-1",
+        "district": "남구"
+      },
+      "to": {
+        "regionId": "gyeonggi",
+        "province": "경기",
+        "district": "수원시",
+        "address": "경기 수원시 팔달구 효원로265번길 23 101호",
+        "lat": 37.2631127,
+        "lng": 127.0309919
+      },
+      "naverCategory": "한식",
+      "reason": "province"
+    }
+  ],
+  "ok": 1577,
+  "miss": 0,
+  "errors": 0
+}

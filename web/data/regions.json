@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-20T07:31:52.939Z",
+  "updatedAt": "2026-11-20T10:18:45.055Z",
   "regions": [
     {
       "id": "seoul",
       "label": "서울",
-      "count": 5006,
+      "count": 5036,
       "districts": [
         {
           "name": "강남구",
-          "count": 646
+          "count": 643
         },
         {
           "name": "강동구",
@@ -20,7 +20,7 @@
         },
         {
           "name": "강서구",
-          "count": 98
+          "count": 96
         },
         {
           "name": "관악구",
@@ -48,35 +48,35 @@
         },
         {
           "name": "동대문구",
-          "count": 125
+          "count": 124
         },
         {
           "name": "동작구",
-          "count": 115
+          "count": 113
         },
         {
           "name": "마포구",
-          "count": 573
+          "count": 587
         },
         {
           "name": "서대문구",
-          "count": 133
+          "count": 135
         },
         {
           "name": "서초구",
-          "count": 276
+          "count": 283
         },
         {
           "name": "성동구",
-          "count": 276
+          "count": 282
         },
         {
           "name": "성북구",
-          "count": 104
+          "count": 100
         },
         {
           "name": "송파구",
-          "count": 493
+          "count": 492
         },
         {
           "name": "양천구",
@@ -84,7 +84,7 @@
         },
         {
           "name": "영등포구",
-          "count": 210
+          "count": 207
         },
         {
           "name": "용산구",
@@ -92,15 +92,15 @@
         },
         {
           "name": "은평구",
-          "count": 68
+          "count": 67
         },
         {
           "name": "종로구",
-          "count": 421
+          "count": 431
         },
         {
           "name": "중구",
-          "count": 388
+          "count": 396
         },
         {
           "name": "중랑구",
@@ -111,7 +111,7 @@
     {
       "id": "gyeonggi",
       "label": "경기",
-      "count": 1028,
+      "count": 1030,
       "districts": [
         {
           "name": "가평군",
@@ -119,11 +119,11 @@
         },
         {
           "name": "고양시",
-          "count": 126
+          "count": 124
         },
         {
           "name": "과천시",
-          "count": 3
+          "count": 1
         },
         {
           "name": "광명시",
@@ -143,11 +143,11 @@
         },
         {
           "name": "김포시",
-          "count": 11
+          "count": 9
         },
         {
           "name": "남양주시",
-          "count": 13
+          "count": 12
         },
         {
           "name": "동두천시",
@@ -155,7 +155,7 @@
         },
         {
           "name": "부천시",
-          "count": 36
+          "count": 34
         },
         {
           "name": "분당구",
@@ -163,15 +163,15 @@
         },
         {
           "name": "성남시",
-          "count": 158
+          "count": 169
         },
         {
           "name": "수원시",
-          "count": 219
+          "count": 230
         },
         {
           "name": "시흥시",
-          "count": 20
+          "count": 18
         },
         {
           "name": "안산시",
@@ -179,11 +179,11 @@
         },
         {
           "name": "안성시",
-          "count": 9
+          "count": 7
         },
         {
           "name": "안양시",
-          "count": 16
+          "count": 14
         },
         {
           "name": "양주시",
@@ -199,23 +199,23 @@
         },
         {
           "name": "연천군",
-          "count": 3
+          "count": 2
         },
         {
           "name": "오산시",
-          "count": 37
+          "count": 40
         },
         {
           "name": "용인시",
-          "count": 100
+          "count": 107
         },
         {
           "name": "의왕시",
-          "count": 8
+          "count": 7
         },
         {
           "name": "의정부시",
-          "count": 20
+          "count": 18
         },
         {
           "name": "이천시",
@@ -223,38 +223,38 @@
         },
         {
           "name": "파주시",
-          "count": 31
+          "count": 29
         },
         {
           "name": "평택시",
-          "count": 24
+          "count": 18
         },
         {
           "name": "포천시",
-          "count": 8
+          "count": 7
         },
         {
           "name": "하남시",
-          "count": 13
+          "count": 12
         },
         {
           "name": "화성시",
-          "count": 55
+          "count": 54
         }
       ]
     },
     {
       "id": "jeju",
       "label": "제주",
-      "count": 994,
+      "count": 986,
       "districts": [
         {
           "name": "서귀포시",
-          "count": 355
+          "count": 350
         },
         {
           "name": "제주시",
-          "count": 639
+          "count": 636
         }
       ]
     },
@@ -265,19 +265,19 @@
       "districts": [
         {
           "name": "고창군",
-          "count": 4
+          "count": 3
         },
         {
           "name": "군산시",
-          "count": 60
+          "count": 58
         },
         {
           "name": "김제시",
-          "count": 4
+          "count": 3
         },
         {
           "name": "남원시",
-          "count": 17
+          "count": 18
         },
         {
           "name": "무주군",
@@ -289,7 +289,7 @@
         },
         {
           "name": "완주군",
-          "count": 8
+          "count": 7
         },
         {
           "name": "익산시",
@@ -305,11 +305,11 @@
         },
         {
           "name": "전주시",
-          "count": 184
+          "count": 190
         },
         {
           "name": "정읍시",
-          "count": 11
+          "count": 9
         },
         {
           "name": "진안군",
@@ -318,9 +318,76 @@
       ]
     },
     {
+      "id": "chungnam",
+      "label": "충남",
+      "count": 328,
+      "districts": [
+        {
+          "name": "계룡시",
+          "count": 4
+        },
+        {
+          "name": "공주시",
+          "count": 37
+        },
+        {
+          "name": "금산군",
+          "count": 6
+        },
+        {
+          "name": "논산시",
+          "count": 14
+        },
+        {
+          "name": "당진시",
+          "count": 17
+        },
+        {
+          "name": "보령시",
+          "count": 18
+        },
+        {
+          "name": "부여군",
+          "count": 6
+        },
+        {
+          "name": "서산시",
+          "count": 22
+        },
+        {
+          "name": "서천군",
+          "count": 5
+        },
+        {
+          "name": "아산시",
+          "count": 48
+        },
+        {
+          "name": "예산군",
+          "count": 10
+        },
+        {
+          "name": "천안시",
+          "count": 114
+        },
+        {
+          "name": "청양군",
+          "count": 3
+        },
+        {
+          "name": "태안군",
+          "count": 10
+        },
+        {
+          "name": "홍성군",
+          "count": 14
+        }
+      ]
+    },
+    {
       "id": "busan",
       "label": "부산",
-      "count": 325,
+      "count": 320,
       "districts": [
         {
           "name": "강서구",
@@ -348,7 +415,7 @@
         },
         {
           "name": "부산진구",
-          "count": 41
+          "count": 39
         },
         {
           "name": "북구",
@@ -364,7 +431,7 @@
         },
         {
           "name": "서구",
-          "count": 3
+          "count": 2
         },
         {
           "name": "수영구",
@@ -380,85 +447,18 @@
         },
         {
           "name": "중구",
-          "count": 25
+          "count": 24
         },
         {
           "name": "해운대구",
-          "count": 55
-        }
-      ]
-    },
-    {
-      "id": "chungnam",
-      "label": "충남",
-      "count": 313,
-      "districts": [
-        {
-          "name": "계룡시",
-          "count": 3
-        },
-        {
-          "name": "공주시",
-          "count": 36
-        },
-        {
-          "name": "금산군",
-          "count": 6
-        },
-        {
-          "name": "논산시",
-          "count": 13
-        },
-        {
-          "name": "당진시",
-          "count": 16
-        },
-        {
-          "name": "보령시",
-          "count": 18
-        },
-        {
-          "name": "부여군",
-          "count": 6
-        },
-        {
-          "name": "서산시",
-          "count": 22
-        },
-        {
-          "name": "서천군",
-          "count": 6
-        },
-        {
-          "name": "아산시",
-          "count": 48
-        },
-        {
-          "name": "예산군",
-          "count": 8
-        },
-        {
-          "name": "천안시",
-          "count": 107
-        },
-        {
-          "name": "청양군",
-          "count": 3
-        },
-        {
-          "name": "태안군",
-          "count": 10
-        },
-        {
-          "name": "홍성군",
-          "count": 11
+          "count": 54
         }
       ]
     },
     {
       "id": "jeonnam",
       "label": "전남",
-      "count": 257,
+      "count": 260,
       "districts": [
         {
           "name": "강진군",
@@ -470,7 +470,7 @@
         },
         {
           "name": "광양시",
-          "count": 12
+          "count": 11
         },
         {
           "name": "구례군",
@@ -478,31 +478,31 @@
         },
         {
           "name": "나주시",
-          "count": 5
-        },
-        {
-          "name": "담양군",
-          "count": 17
-        },
-        {
-          "name": "목포시",
-          "count": 54
-        },
-        {
-          "name": "무안군",
           "count": 4
         },
         {
+          "name": "담양군",
+          "count": 15
+        },
+        {
+          "name": "목포시",
+          "count": 56
+        },
+        {
+          "name": "무안군",
+          "count": 5
+        },
+        {
           "name": "보성군",
-          "count": 3
+          "count": 1
         },
         {
           "name": "순천시",
-          "count": 76
+          "count": 83
         },
         {
           "name": "여수시",
-          "count": 58
+          "count": 57
         },
         {
           "name": "영암군",
@@ -529,11 +529,11 @@
     {
       "id": "gangwon",
       "label": "강원",
-      "count": 250,
+      "count": 243,
       "districts": [
         {
           "name": "강릉시",
-          "count": 68
+          "count": 66
         },
         {
           "name": "고성군",
@@ -549,7 +549,7 @@
         },
         {
           "name": "속초시",
-          "count": 39
+          "count": 38
         },
         {
           "name": "양구군",
@@ -561,11 +561,11 @@
         },
         {
           "name": "영월군",
-          "count": 7
+          "count": 6
         },
         {
           "name": "원주시",
-          "count": 21
+          "count": 19
         },
         {
           "name": "인제군",
@@ -577,7 +577,7 @@
         },
         {
           "name": "철원군",
-          "count": 4
+          "count": 3
         },
         {
           "name": "춘천시",
@@ -606,9 +606,36 @@
       ]
     },
     {
+      "id": "gwangju",
+      "label": "광주",
+      "count": 241,
+      "districts": [
+        {
+          "name": "광산구",
+          "count": 70
+        },
+        {
+          "name": "남구",
+          "count": 14
+        },
+        {
+          "name": "동구",
+          "count": 57
+        },
+        {
+          "name": "북구",
+          "count": 47
+        },
+        {
+          "name": "서구",
+          "count": 53
+        }
+      ]
+    },
+    {
       "id": "gyeongbuk",
       "label": "경북",
-      "count": 226,
+      "count": 221,
       "districts": [
         {
           "name": "경산시",
@@ -616,7 +643,7 @@
         },
         {
           "name": "경주시",
-          "count": 48
+          "count": 47
         },
         {
           "name": "고령군",
@@ -648,11 +675,11 @@
         },
         {
           "name": "안동시",
-          "count": 22
+          "count": 20
         },
         {
           "name": "영덕군",
-          "count": 3
+          "count": 2
         },
         {
           "name": "영주시",
@@ -684,7 +711,7 @@
         },
         {
           "name": "칠곡군",
-          "count": 7
+          "count": 6
         },
         {
           "name": "포항시",
@@ -693,36 +720,9 @@
       ]
     },
     {
-      "id": "gwangju",
-      "label": "광주",
-      "count": 219,
-      "districts": [
-        {
-          "name": "광산구",
-          "count": 59
-        },
-        {
-          "name": "남구",
-          "count": 13
-        },
-        {
-          "name": "동구",
-          "count": 48
-        },
-        {
-          "name": "북구",
-          "count": 47
-        },
-        {
-          "name": "서구",
-          "count": 52
-        }
-      ]
-    },
-    {
       "id": "gyeongnam",
       "label": "경남",
-      "count": 209,
+      "count": 203,
       "districts": [
         {
           "name": "거제시",
@@ -734,15 +734,15 @@
         },
         {
           "name": "김해시",
-          "count": 17
+          "count": 16
         },
         {
           "name": "남해군",
-          "count": 12
+          "count": 11
         },
         {
           "name": "밀양시",
-          "count": 8
+          "count": 7
         },
         {
           "name": "사천시",
@@ -762,7 +762,7 @@
         },
         {
           "name": "진주시",
-          "count": 47
+          "count": 46
         },
         {
           "name": "창녕군",
@@ -770,11 +770,11 @@
         },
         {
           "name": "창원시",
-          "count": 41
+          "count": 40
         },
         {
           "name": "통영시",
-          "count": 29
+          "count": 28
         },
         {
           "name": "하동군",
@@ -797,7 +797,7 @@
     {
       "id": "daegu",
       "label": "대구",
-      "count": 140,
+      "count": 135,
       "districts": [
         {
           "name": "군위군",
@@ -805,7 +805,7 @@
         },
         {
           "name": "남구",
-          "count": 16
+          "count": 15
         },
         {
           "name": "달서구",
@@ -817,11 +817,11 @@
         },
         {
           "name": "동구",
-          "count": 13
+          "count": 12
         },
         {
           "name": "북구",
-          "count": 12
+          "count": 11
         },
         {
           "name": "서구",
@@ -829,18 +829,18 @@
         },
         {
           "name": "수성구",
-          "count": 38
+          "count": 37
         },
         {
           "name": "중구",
-          "count": 38
+          "count": 37
         }
       ]
     },
     {
       "id": "chungbuk",
       "label": "충북",
-      "count": 140,
+      "count": 131,
       "districts": [
         {
           "name": "괴산군",
@@ -852,7 +852,7 @@
         },
         {
           "name": "보은군",
-          "count": 7
+          "count": 6
         },
         {
           "name": "영동군",
@@ -860,38 +860,34 @@
         },
         {
           "name": "옥천군",
-          "count": 10
+          "count": 9
         },
         {
           "name": "음성군",
-          "count": 3
+          "count": 2
         },
         {
           "name": "제천시",
           "count": 20
         },
         {
-          "name": "증평군",
-          "count": 2
-        },
-        {
           "name": "진천군",
-          "count": 11
+          "count": 10
         },
         {
           "name": "청주시",
-          "count": 52
+          "count": 50
         },
         {
           "name": "충주시",
-          "count": 20
+          "count": 19
         }
       ]
     },
     {
       "id": "daejeon",
       "label": "대전",
-      "count": 130,
+      "count": 124,
       "districts": [
         {
           "name": "대덕구",
@@ -899,15 +895,15 @@
         },
         {
           "name": "동구",
-          "count": 16
+          "count": 15
         },
         {
           "name": "서구",
-          "count": 42
+          "count": 40
         },
         {
           "name": "유성구",
-          "count": 37
+          "count": 34
         },
         {
           "name": "중구",
@@ -918,7 +914,7 @@
     {
       "id": "incheon",
       "label": "인천",
-      "count": 127,
+      "count": 120,
       "districts": [
         {
           "name": "강화군",
@@ -930,19 +926,19 @@
         },
         {
           "name": "계양구",
-          "count": 5
+          "count": 4
         },
         {
           "name": "남동구",
-          "count": 10
+          "count": 9
         },
         {
           "name": "미추홀구",
-          "count": 10
+          "count": 9
         },
         {
           "name": "부평구",
-          "count": 22
+          "count": 21
         },
         {
           "name": "서해구",
@@ -950,11 +946,11 @@
         },
         {
           "name": "연수구",
-          "count": 30
+          "count": 28
         },
         {
           "name": "영종구",
-          "count": 11
+          "count": 10
         },
         {
           "name": "제물포구",
@@ -963,13 +959,24 @@
       ]
     },
     {
+      "id": "sejong",
+      "label": "세종",
+      "count": 69,
+      "districts": [
+        {
+          "name": "세종",
+          "count": 69
+        }
+      ]
+    },
+    {
       "id": "ulsan",
       "label": "울산",
-      "count": 63,
+      "count": 61,
       "districts": [
         {
           "name": "남구",
-          "count": 40
+          "count": 39
         },
         {
           "name": "동구",
@@ -977,22 +984,11 @@
         },
         {
           "name": "울주군",
-          "count": 9
+          "count": 8
         },
         {
           "name": "중구",
           "count": 10
-        }
-      ]
-    },
-    {
-      "id": "sejong",
-      "label": "세종",
-      "count": 61,
-      "districts": [
-        {
-          "name": "세종",
-          "count": 61
         }
       ]
     }
