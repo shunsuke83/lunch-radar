@@ -1,0 +1,2308 @@
+{
+  "generatedAt": "2026-11-23T06:34:06.936Z",
+  "stats": {
+    "places": 9991,
+    "inOffice": 191,
+    "inRegion": 9847,
+    "both": 47,
+    "overlapsDetected": 47,
+    "yangjaeMerges": 1
+  },
+  "overlapCount": 47,
+  "overlaps": [
+    {
+      "slug": "naver-20366622",
+      "name": "가마솥감자탕",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-16328281"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1691633569",
+      "name": "감동곱창",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-1212385345"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-2055279455",
+      "name": "그 남자의 파스타 도곡",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1087115109",
+      "name": "김영모과자점",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-16992549"
+      ],
+      "category": "카페·디저트",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1154400830",
+      "name": "깐부치킨 양재역점",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-14503487"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "kakao-17382395",
+      "name": "뀌쏭82",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": false,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1631246639",
+      "name": "노랑통닭 역삼점",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-1725027508"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1987901281",
+      "name": "니꾸바키라 도곡본점",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": false
+    },
+    {
+      "slug": "naver-2030628967",
+      "name": "더바냐",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-2035572498",
+      "name": "더블디",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "kakao-26573079",
+      "name": "라망드셰프",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": false,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1528536629",
+      "name": "마누테라스",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-507268251"
+      ],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-19882458",
+      "name": "마포집",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1780112044",
+      "name": "백년교동짬뽕 강남본점",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-2069139051"
+      ],
+      "category": "중식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-33964233",
+      "name": "뱅뱅막국수",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-1391619096"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1262599736",
+      "name": "비놀릭",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1177779385",
+      "name": "센티맷",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1810726526",
+      "name": "소뭉집 본점",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-1499378367"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1429930181",
+      "name": "소신",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "주점",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-11728489",
+      "name": "신가예촌",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-2144615451"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-37657812",
+      "name": "심야식당",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "주점",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-37653934",
+      "name": "아후닭발 양재동점",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-35136252",
+      "name": "양재닭집",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-31564605",
+      "name": "언노운다이너",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-11957716"
+      ],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1927651208",
+      "name": "와따가",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "주점",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1844287681",
+      "name": "우오보",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-965790489"
+      ],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1425076943",
+      "name": "육연타 역삼점",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-1125532774"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1672141709",
+      "name": "육즙관리소 양재역점",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1064965916",
+      "name": "음이터리",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-1701193614"
+      ],
+      "category": "샐러드",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "kakao-13293236",
+      "name": "의정부부대찌개 된장삼겹살 양재점",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": false,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-36836424",
+      "name": "이수부",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-895068966"
+      ],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1941002384",
+      "name": "자맛풍",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-1141880063"
+      ],
+      "category": "주점",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-31600260",
+      "name": "잰부닥",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-2094934063",
+      "name": "전주콩뿌리콩나물국밥 서초점",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-176494232"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1184011870",
+      "name": "천수냉면 강남점",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-2072676359",
+      "name": "천향",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "중식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1444094897",
+      "name": "청계숲양대창 강남직영점",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-714973826"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1517334297",
+      "name": "카츠이음",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "일식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1147649890",
+      "name": "쿠시카와",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-974101487"
+      ],
+      "category": "일식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-19872942",
+      "name": "크로스비",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "주점",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1275748606",
+      "name": "토종한우뭉티기정육식당",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-357638639"
+      ],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "kakao-1139858709",
+      "name": "한냉정국 뱅뱅사거리점",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": false,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-36459324",
+      "name": "해우름",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1017545810",
+      "name": "해품장팔팔장어 도곡점",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1021786852",
+      "name": "핸드크라프트 HANDCRAFT",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-20874669",
+      "name": "황재벌 본점",
+      "region": "seoul",
+      "legacy_slugs": [],
+      "category": "한식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    },
+    {
+      "slug": "naver-1091992458",
+      "name": "후제",
+      "region": "seoul",
+      "legacy_slugs": [
+        "kakao-1625504597"
+      ],
+      "category": "양식",
+      "category_source": "rule",
+      "hasNaver": true,
+      "hasKakao": true
+    }
+  ],
+  "yangjaeMerges": [
+    {
+      "naver": "1751873950",
+      "from": [
+        "양재순대",
+        "양재순대국"
+      ],
+      "to": "naver-1751873950"
+    }
+  ],
+  "officeOnly": 144,
+  "legacySlugRows": [
+    {
+      "slug": "naver-1295907888",
+      "legacy_slugs": [
+        "ext-이가네양갈비판교직영점-3739362"
+      ]
+    },
+    {
+      "slug": "naver-2049984238",
+      "legacy_slugs": [
+        "kakao-1621627981"
+      ]
+    },
+    {
+      "slug": "naver-1015472036",
+      "legacy_slugs": [
+        "kakao-1171843207"
+      ]
+    },
+    {
+      "slug": "naver-2017470541",
+      "legacy_slugs": [
+        "kakao-1190139624"
+      ]
+    },
+    {
+      "slug": "naver-2092144522",
+      "legacy_slugs": [
+        "kakao-2116325698"
+      ]
+    },
+    {
+      "slug": "naver-1290279848",
+      "legacy_slugs": [
+        "kakao-416744882"
+      ]
+    },
+    {
+      "slug": "naver-20366622",
+      "legacy_slugs": [
+        "kakao-16328281"
+      ]
+    },
+    {
+      "slug": "naver-1523614588",
+      "legacy_slugs": [
+        "kakao-784973026"
+      ]
+    },
+    {
+      "slug": "naver-1691633569",
+      "legacy_slugs": [
+        "kakao-1212385345"
+      ]
+    },
+    {
+      "slug": "naver-2047937497",
+      "legacy_slugs": [
+        "kakao-1200683079"
+      ]
+    },
+    {
+      "slug": "naver-1573758400",
+      "legacy_slugs": [
+        "kakao-263830255"
+      ]
+    },
+    {
+      "slug": "naver-18485191",
+      "legacy_slugs": [
+        "kakao-8149785"
+      ]
+    },
+    {
+      "slug": "naver-793407871",
+      "legacy_slugs": [
+        "kakao-499958291"
+      ]
+    },
+    {
+      "slug": "naver-38233690",
+      "legacy_slugs": [
+        "kakao-8652100"
+      ]
+    },
+    {
+      "slug": "naver-1281140539",
+      "legacy_slugs": [
+        "kakao-1327345377"
+      ]
+    },
+    {
+      "slug": "naver-1581231694",
+      "legacy_slugs": [
+        "kakao-24010315"
+      ]
+    },
+    {
+      "slug": "naver-1352674026",
+      "legacy_slugs": [
+        "kakao-17894166"
+      ]
+    },
+    {
+      "slug": "naver-1907146760",
+      "legacy_slugs": [
+        "kakao-136250898"
+      ]
+    },
+    {
+      "slug": "naver-1770967295",
+      "legacy_slugs": [
+        "ext-구테로이테-3751770"
+      ]
+    },
+    {
+      "slug": "naver-1423158855",
+      "legacy_slugs": [
+        "kakao-1525467817"
+      ]
+    },
+    {
+      "slug": "naver-2063685809",
+      "legacy_slugs": [
+        "kakao-2010432832"
+      ]
+    },
+    {
+      "slug": "naver-1039629174",
+      "legacy_slugs": [
+        "kakao-2135670348"
+      ]
+    },
+    {
+      "slug": "naver-11568670",
+      "legacy_slugs": [
+        "kakao-27024299"
+      ]
+    },
+    {
+      "slug": "naver-1508169967",
+      "legacy_slugs": [
+        "kakao-174870783"
+      ]
+    },
+    {
+      "slug": "naver-2036618312",
+      "legacy_slugs": [
+        "ext-기욤-3752405"
+      ]
+    },
+    {
+      "slug": "naver-1087115109",
+      "legacy_slugs": [
+        "kakao-16992549"
+      ]
+    },
+    {
+      "slug": "naver-35554133",
+      "legacy_slugs": [
+        "kakao-1708119130"
+      ]
+    },
+    {
+      "slug": "naver-1307530256",
+      "legacy_slugs": [
+        "kakao-445319473"
+      ]
+    },
+    {
+      "slug": "naver-2063291106",
+      "legacy_slugs": [
+        "kakao-16879694"
+      ]
+    },
+    {
+      "slug": "naver-1154400830",
+      "legacy_slugs": [
+        "kakao-14503487"
+      ]
+    },
+    {
+      "slug": "naver-36233324",
+      "legacy_slugs": [
+        "kakao-27365827"
+      ]
+    },
+    {
+      "slug": "naver-2028441918",
+      "legacy_slugs": [
+        "kakao-1757399379"
+      ]
+    },
+    {
+      "slug": "naver-19873434",
+      "legacy_slugs": [
+        "kakao-27373320"
+      ]
+    },
+    {
+      "slug": "naver-1842595916",
+      "legacy_slugs": [
+        "kakao-1489893761"
+      ]
+    },
+    {
+      "slug": "naver-1933700256",
+      "legacy_slugs": [
+        "kakao-7984002"
+      ]
+    },
+    {
+      "slug": "naver-1631246639",
+      "legacy_slugs": [
+        "kakao-1725027508"
+      ]
+    },
+    {
+      "slug": "naver-458160662",
+      "legacy_slugs": [
+        "kakao-1561911293"
+      ]
+    },
+    {
+      "slug": "naver-1149863370",
+      "legacy_slugs": [
+        "kakao-10279722"
+      ]
+    },
+    {
+      "slug": "naver-1052762484",
+      "legacy_slugs": [
+        "kakao-456923820"
+      ]
+    },
+    {
+      "slug": "naver-1799022210",
+      "legacy_slugs": [
+        "kakao-129517930"
+      ]
+    },
+    {
+      "slug": "naver-1392526471",
+      "legacy_slugs": [
+        "ext-당옥-3752007"
+      ]
+    },
+    {
+      "slug": "naver-2058120770",
+      "legacy_slugs": [
+        "ext-더리터신사점-3752482"
+      ]
+    },
+    {
+      "slug": "naver-37928561",
+      "legacy_slugs": [
+        "kakao-1822313986"
+      ]
+    },
+    {
+      "slug": "naver-1404221424",
+      "legacy_slugs": [
+        "kakao-17448771"
+      ]
+    },
+    {
+      "slug": "naver-37411506",
+      "legacy_slugs": [
+        "kakao-1519745263"
+      ]
+    },
+    {
+      "slug": "naver-1106713288",
+      "legacy_slugs": [
+        "ext-듀자미-3751933"
+      ]
+    },
+    {
+      "slug": "naver-1690484049",
+      "legacy_slugs": [
+        "kakao-188922946"
+      ]
+    },
+    {
+      "slug": "naver-1706557816",
+      "legacy_slugs": [
+        "kakao-1783472748"
+      ]
+    },
+    {
+      "slug": "naver-1730142956",
+      "legacy_slugs": [
+        "ext-딥스파티세리-3756559"
+      ]
+    },
+    {
+      "slug": "naver-1414264972",
+      "legacy_slugs": [
+        "kakao-1302186412"
+      ]
+    },
+    {
+      "slug": "naver-1290987162",
+      "legacy_slugs": [
+        "ext-롱브르378-3752454"
+      ]
+    },
+    {
+      "slug": "naver-1528536629",
+      "legacy_slugs": [
+        "kakao-507268251"
+      ]
+    },
+    {
+      "slug": "naver-1264462595",
+      "legacy_slugs": [
+        "kakao-24943998"
+      ]
+    },
+    {
+      "slug": "naver-2012527100",
+      "legacy_slugs": [
+        "kakao-14615423"
+      ]
+    },
+    {
+      "slug": "naver-32799794",
+      "legacy_slugs": [
+        "kakao-26870206"
+      ]
+    },
+    {
+      "slug": "naver-106592706",
+      "legacy_slugs": [
+        "kakao-2002668188"
+      ]
+    },
+    {
+      "slug": "naver-1883493304",
+      "legacy_slugs": [
+        "kakao-1085748817"
+      ]
+    },
+    {
+      "slug": "naver-1044096368",
+      "legacy_slugs": [
+        "kakao-1696571508"
+      ]
+    },
+    {
+      "slug": "naver-2050030820",
+      "legacy_slugs": [
+        "kakao-1545572249"
+      ]
+    },
+    {
+      "slug": "naver-1868232962",
+      "legacy_slugs": [
+        "kakao-1660282421"
+      ]
+    },
+    {
+      "slug": "naver-37891352",
+      "legacy_slugs": [
+        "kakao-18253256"
+      ]
+    },
+    {
+      "slug": "naver-1927557936",
+      "legacy_slugs": [
+        "kakao-15994312"
+      ]
+    },
+    {
+      "slug": "naver-1720804300",
+      "legacy_slugs": [
+        "kakao-1753032256"
+      ]
+    },
+    {
+      "slug": "naver-1740701242",
+      "legacy_slugs": [
+        "kakao-1793286778"
+      ]
+    },
+    {
+      "slug": "naver-1710960810",
+      "legacy_slugs": [
+        "kakao-21959342"
+      ]
+    },
+    {
+      "slug": "naver-1780112044",
+      "legacy_slugs": [
+        "kakao-2069139051"
+      ]
+    },
+    {
+      "slug": "naver-2021291336",
+      "legacy_slugs": [
+        "kakao-1417966805"
+      ]
+    },
+    {
+      "slug": "naver-33964233",
+      "legacy_slugs": [
+        "kakao-1391619096"
+      ]
+    },
+    {
+      "slug": "naver-1867435170",
+      "legacy_slugs": [
+        "kakao-1780275517"
+      ]
+    },
+    {
+      "slug": "naver-1299706278",
+      "legacy_slugs": [
+        "kakao-299523540"
+      ]
+    },
+    {
+      "slug": "naver-1309781106",
+      "legacy_slugs": [
+        "kakao-811749695"
+      ]
+    },
+    {
+      "slug": "naver-18361446",
+      "legacy_slugs": [
+        "kakao-170118016"
+      ]
+    },
+    {
+      "slug": "naver-1415273606",
+      "legacy_slugs": [
+        "kakao-24909032"
+      ]
+    },
+    {
+      "slug": "naver-1684042890",
+      "legacy_slugs": [
+        "kakao-1943358190"
+      ]
+    },
+    {
+      "slug": "naver-1347515975",
+      "legacy_slugs": [
+        "kakao-13091009"
+      ]
+    },
+    {
+      "slug": "naver-13558350",
+      "legacy_slugs": [
+        "kakao-1917515220"
+      ]
+    },
+    {
+      "slug": "naver-1112409535",
+      "legacy_slugs": [
+        "kakao-20233508"
+      ]
+    },
+    {
+      "slug": "naver-1729721060",
+      "legacy_slugs": [
+        "ext-붓처스컷도산점-3752526"
+      ]
+    },
+    {
+      "slug": "naver-1470323187",
+      "legacy_slugs": [
+        "kakao-587549371"
+      ]
+    },
+    {
+      "slug": "naver-1755369410",
+      "legacy_slugs": [
+        "kakao-1574621309"
+      ]
+    },
+    {
+      "slug": "naver-2066601389",
+      "legacy_slugs": [
+        "kakao-2144108112"
+      ]
+    },
+    {
+      "slug": "naver-1122228634",
+      "legacy_slugs": [
+        "kakao-20246194"
+      ]
+    },
+    {
+      "slug": "naver-1177532179",
+      "legacy_slugs": [
+        "kakao-660133146"
+      ]
+    },
+    {
+      "slug": "naver-11820259",
+      "legacy_slugs": [
+        "kakao-16650740"
+      ]
+    },
+    {
+      "slug": "naver-1797761688",
+      "legacy_slugs": [
+        "kakao-1862834341"
+      ]
+    },
+    {
+      "slug": "naver-1138363160",
+      "legacy_slugs": [
+        "kakao-21025569"
+      ]
+    },
+    {
+      "slug": "naver-1891067989",
+      "legacy_slugs": [
+        "kakao-367340712"
+      ]
+    },
+    {
+      "slug": "naver-36877577",
+      "legacy_slugs": [
+        "ext-세컨드커피-3757678"
+      ]
+    },
+    {
+      "slug": "naver-1208605190",
+      "legacy_slugs": [
+        "ext-센터커피-3754649"
+      ]
+    },
+    {
+      "slug": "naver-1810726526",
+      "legacy_slugs": [
+        "kakao-1499378367"
+      ]
+    },
+    {
+      "slug": "naver-1125925962",
+      "legacy_slugs": [
+        "kakao-22961938"
+      ]
+    },
+    {
+      "slug": "naver-11678751",
+      "legacy_slugs": [
+        "kakao-13087295"
+      ]
+    },
+    {
+      "slug": "naver-1284848210",
+      "legacy_slugs": [
+        "kakao-27074145"
+      ]
+    },
+    {
+      "slug": "naver-1896487329",
+      "legacy_slugs": [
+        "kakao-1277534745"
+      ]
+    },
+    {
+      "slug": "naver-687685028",
+      "legacy_slugs": [
+        "kakao-715200096"
+      ]
+    },
+    {
+      "slug": "naver-2076513484",
+      "legacy_slugs": [
+        "kakao-26609912"
+      ]
+    },
+    {
+      "slug": "naver-11728489",
+      "legacy_slugs": [
+        "kakao-2144615451"
+      ]
+    },
+    {
+      "slug": "naver-2073498600",
+      "legacy_slugs": [
+        "kakao-13571132"
+      ]
+    },
+    {
+      "slug": "naver-18349169",
+      "legacy_slugs": [
+        "kakao-1684978197"
+      ]
+    },
+    {
+      "slug": "naver-1723589238",
+      "legacy_slugs": [
+        "kakao-290725470"
+      ]
+    },
+    {
+      "slug": "naver-1966162758",
+      "legacy_slugs": [
+        "kakao-779352240"
+      ]
+    },
+    {
+      "slug": "naver-1454032530",
+      "legacy_slugs": [
+        "kakao-1515862568"
+      ]
+    },
+    {
+      "slug": "naver-1792411728",
+      "legacy_slugs": [
+        "kakao-22353150"
+      ]
+    },
+    {
+      "slug": "naver-1050019380",
+      "legacy_slugs": [
+        "kakao-1599567374"
+      ]
+    },
+    {
+      "slug": "naver-31564605",
+      "legacy_slugs": [
+        "kakao-11957716"
+      ]
+    },
+    {
+      "slug": "naver-1849787817",
+      "legacy_slugs": [
+        "kakao-21442076"
+      ]
+    },
+    {
+      "slug": "naver-83612604",
+      "legacy_slugs": [
+        "kakao-19808159"
+      ]
+    },
+    {
+      "slug": "naver-35734492",
+      "legacy_slugs": [
+        "kakao-24949293"
+      ]
+    },
+    {
+      "slug": "naver-1064788181",
+      "legacy_slugs": [
+        "kakao-1992711041"
+      ]
+    },
+    {
+      "slug": "naver-1672120714",
+      "legacy_slugs": [
+        "kakao-592277697"
+      ]
+    },
+    {
+      "slug": "naver-1170207029",
+      "legacy_slugs": [
+        "kakao-1100367410"
+      ]
+    },
+    {
+      "slug": "naver-1516567349",
+      "legacy_slugs": [
+        "kakao-2008119393"
+      ]
+    },
+    {
+      "slug": "naver-1844287681",
+      "legacy_slugs": [
+        "kakao-965790489"
+      ]
+    },
+    {
+      "slug": "naver-11678576",
+      "legacy_slugs": [
+        "kakao-27273657"
+      ]
+    },
+    {
+      "slug": "naver-1258858558",
+      "legacy_slugs": [
+        "kakao-589394116"
+      ]
+    },
+    {
+      "slug": "naver-1273211996",
+      "legacy_slugs": [
+        "kakao-1475195676"
+      ]
+    },
+    {
+      "slug": "naver-1425076943",
+      "legacy_slugs": [
+        "kakao-1125532774"
+      ]
+    },
+    {
+      "slug": "naver-1064965916",
+      "legacy_slugs": [
+        "kakao-1701193614"
+      ]
+    },
+    {
+      "slug": "naver-2031291605",
+      "legacy_slugs": [
+        "kakao-12602260"
+      ]
+    },
+    {
+      "slug": "naver-36836424",
+      "legacy_slugs": [
+        "kakao-895068966"
+      ]
+    },
+    {
+      "slug": "naver-1433153629",
+      "legacy_slugs": [
+        "kakao-770326605"
+      ]
+    },
+    {
+      "slug": "naver-2054537317",
+      "legacy_slugs": [
+        "kakao-388726086"
+      ]
+    },
+    {
+      "slug": "naver-18555629",
+      "legacy_slugs": [
+        "kakao-896322696"
+      ]
+    },
+    {
+      "slug": "naver-1869427228",
+      "legacy_slugs": [
+        "kakao-1983466285"
+      ]
+    },
+    {
+      "slug": "naver-1314147026",
+      "legacy_slugs": [
+        "kakao-856059564"
+      ]
+    },
+    {
+      "slug": "naver-1941002384",
+      "legacy_slugs": [
+        "kakao-1141880063"
+      ]
+    },
+    {
+      "slug": "naver-2044913797",
+      "legacy_slugs": [
+        "ext-자연도소금빵성수점-3754230"
+      ]
+    },
+    {
+      "slug": "naver-1053438074",
+      "legacy_slugs": [
+        "kakao-8056582"
+      ]
+    },
+    {
+      "slug": "naver-2094934063",
+      "legacy_slugs": [
+        "kakao-176494232"
+      ]
+    },
+    {
+      "slug": "naver-1069889344",
+      "legacy_slugs": [
+        "kakao-364156992"
+      ]
+    },
+    {
+      "slug": "naver-1784269711",
+      "legacy_slugs": [
+        "kakao-13627376"
+      ]
+    },
+    {
+      "slug": "naver-32538122",
+      "legacy_slugs": [
+        "kakao-23436155"
+      ]
+    },
+    {
+      "slug": "naver-2099596460",
+      "legacy_slugs": [
+        "kakao-558925853"
+      ]
+    },
+    {
+      "slug": "naver-1136906451",
+      "legacy_slugs": [
+        "kakao-583126136"
+      ]
+    },
+    {
+      "slug": "naver-11714464",
+      "legacy_slugs": [
+        "kakao-8082008"
+      ]
+    },
+    {
+      "slug": "naver-1444094897",
+      "legacy_slugs": [
+        "kakao-714973826"
+      ]
+    },
+    {
+      "slug": "naver-37882361",
+      "legacy_slugs": [
+        "kakao-14491510"
+      ]
+    },
+    {
+      "slug": "naver-2098082027",
+      "legacy_slugs": [
+        "ext-코리야koriya-3754554"
+      ]
+    },
+    {
+      "slug": "naver-1147649890",
+      "legacy_slugs": [
+        "kakao-974101487"
+      ]
+    },
+    {
+      "slug": "naver-1612556063",
+      "legacy_slugs": [
+        "kakao-1380602278"
+      ]
+    },
+    {
+      "slug": "naver-2049699880",
+      "legacy_slugs": [
+        "kakao-243854995"
+      ]
+    },
+    {
+      "slug": "naver-1590626814",
+      "legacy_slugs": [
+        "kakao-1573253740"
+      ]
+    },
+    {
+      "slug": "naver-1833732228",
+      "legacy_slugs": [
+        "kakao-42222494"
+      ]
+    },
+    {
+      "slug": "naver-1363731639",
+      "legacy_slugs": [
+        "kakao-1911975019"
+      ]
+    },
+    {
+      "slug": "naver-20322561",
+      "legacy_slugs": [
+        "kakao-27549051"
+      ]
+    },
+    {
+      "slug": "naver-1275748606",
+      "legacy_slugs": [
+        "kakao-357638639"
+      ]
+    },
+    {
+      "slug": "naver-1190375718",
+      "legacy_slugs": [
+        "kakao-401805607"
+      ]
+    },
+    {
+      "slug": "naver-1921230228",
+      "legacy_slugs": [
+        "ext-파스텔커피웍스-3754627"
+      ]
+    },
+    {
+      "slug": "naver-2032233538",
+      "legacy_slugs": [
+        "kakao-902838245"
+      ]
+    },
+    {
+      "slug": "naver-1015483942",
+      "legacy_slugs": [
+        "kakao-1723583888"
+      ]
+    },
+    {
+      "slug": "naver-2081247353",
+      "legacy_slugs": [
+        "kakao-1777021403"
+      ]
+    },
+    {
+      "slug": "naver-1674068339",
+      "legacy_slugs": [
+        "kakao-13265761"
+      ]
+    },
+    {
+      "slug": "naver-20713591",
+      "legacy_slugs": [
+        "kakao-26810260"
+      ]
+    },
+    {
+      "slug": "naver-2038569572",
+      "legacy_slugs": [
+        "kakao-1820870263"
+      ]
+    },
+    {
+      "slug": "naver-1305041689",
+      "legacy_slugs": [
+        "kakao-803910728"
+      ]
+    },
+    {
+      "slug": "naver-1736301435",
+      "legacy_slugs": [
+        "kakao-1882074751"
+      ]
+    },
+    {
+      "slug": "naver-1091992458",
+      "legacy_slugs": [
+        "kakao-1625504597"
+      ]
+    },
+    {
+      "slug": "naver-1623136992",
+      "legacy_slugs": [
+        "kakao-16445173"
+      ]
+    },
+    {
+      "slug": "naver-1548659099",
+      "legacy_slugs": [
+        "kakao-26201192"
+      ]
+    },
+    {
+      "slug": "naver-2071508112",
+      "legacy_slugs": [
+        "ext-thirstymonk-3752291"
+      ]
+    },
+    {
+      "slug": "naver-35155951",
+      "legacy_slugs": [
+        "국미당-양재역"
+      ]
+    },
+    {
+      "slug": "naver-1698302178",
+      "legacy_slugs": [
+        "도화"
+      ]
+    },
+    {
+      "slug": "naver-1255806748",
+      "legacy_slugs": [
+        "마차이짬뽕-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-2070764434",
+      "legacy_slugs": [
+        "샌드워커-양재역"
+      ]
+    },
+    {
+      "slug": "naver-1925656389",
+      "legacy_slugs": [
+        "피넘타이-양재"
+      ]
+    },
+    {
+      "slug": "naver-2024175810",
+      "legacy_slugs": [
+        "호앙비엣-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-1544329925",
+      "legacy_slugs": [
+        "강남쌀국수-양재점"
+      ]
+    },
+    {
+      "slug": "naver-38591616",
+      "legacy_slugs": [
+        "고양이부엌-양재"
+      ]
+    },
+    {
+      "slug": "naver-2060460329",
+      "legacy_slugs": [
+        "꼬김빱-서초구청점"
+      ]
+    },
+    {
+      "slug": "naver-1583880509",
+      "legacy_slugs": [
+        "명정루-양재"
+      ]
+    },
+    {
+      "slug": "naver-11761360",
+      "legacy_slugs": [
+        "미소야-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1006858200",
+      "legacy_slugs": [
+        "미트앤샐러드"
+      ]
+    },
+    {
+      "slug": "naver-20878708",
+      "legacy_slugs": [
+        "서초청국장"
+      ]
+    },
+    {
+      "slug": "naver-964119437",
+      "legacy_slugs": [
+        "스시썸"
+      ]
+    },
+    {
+      "slug": "naver-2054325366",
+      "legacy_slugs": [
+        "양산도-양재점"
+      ]
+    },
+    {
+      "slug": "naver-18246195",
+      "legacy_slugs": [
+        "우사기"
+      ]
+    },
+    {
+      "slug": "naver-20897027",
+      "legacy_slugs": [
+        "작은공간-양재역"
+      ]
+    },
+    {
+      "slug": "naver-35307516",
+      "legacy_slugs": [
+        "제레미버거-양재역"
+      ]
+    },
+    {
+      "slug": "naver-1463499369",
+      "legacy_slugs": [
+        "팔향-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1037966057",
+      "legacy_slugs": [
+        "피끄니크"
+      ]
+    },
+    {
+      "slug": "naver-193891932",
+      "legacy_slugs": [
+        "화차이"
+      ]
+    },
+    {
+      "slug": "naver-1257299870",
+      "legacy_slugs": [
+        "곰작골나주곰탕-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1798445957",
+      "legacy_slugs": [
+        "누룩목-양재본점"
+      ]
+    },
+    {
+      "slug": "naver-1765708831",
+      "legacy_slugs": [
+        "다돈식당"
+      ]
+    },
+    {
+      "slug": "naver-1252440472",
+      "legacy_slugs": [
+        "돈까스하우스"
+      ]
+    },
+    {
+      "slug": "naver-1889974700",
+      "legacy_slugs": [
+        "마라홀릭-마라탕-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-1614448879",
+      "legacy_slugs": [
+        "말죽거리-해장국"
+      ]
+    },
+    {
+      "slug": "naver-1702897215",
+      "legacy_slugs": [
+        "석문어-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1906380511",
+      "legacy_slugs": [
+        "손수동-양재"
+      ]
+    },
+    {
+      "slug": "naver-1081029406",
+      "legacy_slugs": [
+        "쇼쿠지-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1236248474",
+      "legacy_slugs": [
+        "수정골한상"
+      ]
+    },
+    {
+      "slug": "naver-30922907",
+      "legacy_slugs": [
+        "스파게티스토리"
+      ]
+    },
+    {
+      "slug": "naver-34098856",
+      "legacy_slugs": [
+        "얌얌"
+      ]
+    },
+    {
+      "slug": "naver-18855701",
+      "legacy_slugs": [
+        "예당"
+      ]
+    },
+    {
+      "slug": "naver-38474259",
+      "legacy_slugs": [
+        "오향절면"
+      ]
+    },
+    {
+      "slug": "naver-1868413328",
+      "legacy_slugs": [
+        "유라노스-강남-양재역"
+      ]
+    },
+    {
+      "slug": "naver-13588839",
+      "legacy_slugs": [
+        "이올로화덕피자"
+      ]
+    },
+    {
+      "slug": "naver-11861500",
+      "legacy_slugs": [
+        "전주옛날집"
+      ]
+    },
+    {
+      "slug": "naver-18771333",
+      "legacy_slugs": [
+        "진스시-양재역"
+      ]
+    },
+    {
+      "slug": "naver-2096530100",
+      "legacy_slugs": [
+        "찌개집1979-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-1361137881",
+      "legacy_slugs": [
+        "채석강-양재"
+      ]
+    },
+    {
+      "slug": "naver-1417896057",
+      "legacy_slugs": [
+        "카츠공방-양재점"
+      ]
+    },
+    {
+      "slug": "naver-46696494",
+      "legacy_slugs": [
+        "태국식당356-양재역"
+      ]
+    },
+    {
+      "slug": "naver-1671426312",
+      "legacy_slugs": [
+        "하쿠라멘-양재역"
+      ]
+    },
+    {
+      "slug": "naver-1347202430",
+      "legacy_slugs": [
+        "후토루-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1793575614",
+      "legacy_slugs": [
+        "히노카츠"
+      ]
+    },
+    {
+      "slug": "naver-36406497",
+      "legacy_slugs": [
+        "강창구찹쌀진순대-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-32708325",
+      "legacy_slugs": [
+        "강촌원조쭈꾸미-양재역"
+      ]
+    },
+    {
+      "slug": "naver-505375149",
+      "legacy_slugs": [
+        "구스아일랜드-브루하우스"
+      ]
+    },
+    {
+      "slug": "naver-20652838",
+      "legacy_slugs": [
+        "금강수림"
+      ]
+    },
+    {
+      "slug": "naver-11692888",
+      "legacy_slugs": [
+        "남순남순대국-본점"
+      ]
+    },
+    {
+      "slug": "naver-12008857",
+      "legacy_slugs": [
+        "대려도"
+      ]
+    },
+    {
+      "slug": "naver-1297421035",
+      "legacy_slugs": [
+        "덴키-도곡본점"
+      ]
+    },
+    {
+      "slug": "naver-36339164",
+      "legacy_slugs": [
+        "돈스라"
+      ]
+    },
+    {
+      "slug": "naver-1910073147",
+      "legacy_slugs": [
+        "뚝배기양평해장국-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1012489746",
+      "legacy_slugs": [
+        "레코드196"
+      ]
+    },
+    {
+      "slug": "naver-12802904",
+      "legacy_slugs": [
+        "린참치"
+      ]
+    },
+    {
+      "slug": "naver-11716299",
+      "legacy_slugs": [
+        "마포갈비"
+      ]
+    },
+    {
+      "slug": "naver-2033878266",
+      "legacy_slugs": [
+        "맛나돈얼큰돼지찌개-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-38251615",
+      "legacy_slugs": [
+        "문어세상해천탕-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1017653627",
+      "legacy_slugs": [
+        "미면정-양재칼국수-샤브샤브"
+      ]
+    },
+    {
+      "slug": "naver-11627634",
+      "legacy_slugs": [
+        "버드나무집-서초동본점"
+      ]
+    },
+    {
+      "slug": "naver-1932467805",
+      "legacy_slugs": [
+        "보글이-생태탕왕코다리-양재역"
+      ]
+    },
+    {
+      "slug": "naver-1776021604",
+      "legacy_slugs": [
+        "브라운돈까스-뱅뱅사거리점"
+      ]
+    },
+    {
+      "slug": "naver-33510707",
+      "legacy_slugs": [
+        "소노야-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-1977075600",
+      "legacy_slugs": [
+        "시래정-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1788599337",
+      "legacy_slugs": [
+        "식감이야기-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-2065009878",
+      "legacy_slugs": [
+        "신사골감자탕-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1508052350",
+      "legacy_slugs": [
+        "양재골"
+      ]
+    },
+    {
+      "slug": "naver-1751873950",
+      "legacy_slugs": [
+        "양재순대",
+        "양재순대국"
+      ]
+    },
+    {
+      "slug": "naver-1809378769",
+      "legacy_slugs": [
+        "양재옥"
+      ]
+    },
+    {
+      "slug": "naver-18384714",
+      "legacy_slugs": [
+        "양재해장국"
+      ]
+    },
+    {
+      "slug": "naver-31535630",
+      "legacy_slugs": [
+        "어머니집"
+      ]
+    },
+    {
+      "slug": "naver-1355826619",
+      "legacy_slugs": [
+        "연탄불생선구이"
+      ]
+    },
+    {
+      "slug": "naver-35125605",
+      "legacy_slugs": [
+        "영동소금구이-양재점"
+      ]
+    },
+    {
+      "slug": "naver-12917286",
+      "legacy_slugs": [
+        "영동족발-본점"
+      ]
+    },
+    {
+      "slug": "naver-19699783",
+      "legacy_slugs": [
+        "오대산산채전문점"
+      ]
+    },
+    {
+      "slug": "naver-1192671730",
+      "legacy_slugs": [
+        "오부찌-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1137666363",
+      "legacy_slugs": [
+        "옥된장-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1635037172",
+      "legacy_slugs": [
+        "원스타-올드패션드-햄버거-도곡점"
+      ]
+    },
+    {
+      "slug": "naver-38325046",
+      "legacy_slugs": [
+        "원할매이모네닭한마리"
+      ]
+    },
+    {
+      "slug": "naver-1889387567",
+      "legacy_slugs": [
+        "유월의-보리-양재점"
+      ]
+    },
+    {
+      "slug": "naver-2011667416",
+      "legacy_slugs": [
+        "이가원항아리수제비-도곡점"
+      ]
+    },
+    {
+      "slug": "naver-1420055829",
+      "legacy_slugs": [
+        "임병주산동칼국수"
+      ]
+    },
+    {
+      "slug": "naver-13157784",
+      "legacy_slugs": [
+        "자연사랑-생태찌개"
+      ]
+    },
+    {
+      "slug": "naver-19882315",
+      "legacy_slugs": [
+        "자인뭉티기-본점"
+      ]
+    },
+    {
+      "slug": "naver-11819292",
+      "legacy_slugs": [
+        "장꼬방묵은김치찌개전문"
+      ]
+    },
+    {
+      "slug": "naver-1835295363",
+      "legacy_slugs": [
+        "정고기"
+      ]
+    },
+    {
+      "slug": "naver-1278613093",
+      "legacy_slugs": [
+        "지세포세꼬시"
+      ]
+    },
+    {
+      "slug": "naver-1879800911",
+      "legacy_slugs": [
+        "쿠니라멘"
+      ]
+    },
+    {
+      "slug": "naver-1320179295",
+      "legacy_slugs": [
+        "크라이치즈버거-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-1113983640",
+      "legacy_slugs": [
+        "탐라순대국감자탕-양재역직영점"
+      ]
+    },
+    {
+      "slug": "naver-18583473",
+      "legacy_slugs": [
+        "풍년집"
+      ]
+    },
+    {
+      "slug": "naver-1779839683",
+      "legacy_slugs": [
+        "한일생선구이"
+      ]
+    },
+    {
+      "slug": "naver-1427943416",
+      "legacy_slugs": [
+        "고려향"
+      ]
+    },
+    {
+      "slug": "naver-1034622849",
+      "legacy_slugs": [
+        "국고집"
+      ]
+    },
+    {
+      "slug": "naver-1733030490",
+      "legacy_slugs": [
+        "김밥천국-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1190140734",
+      "legacy_slugs": [
+        "더대박칼국수"
+      ]
+    },
+    {
+      "slug": "naver-1008560025",
+      "legacy_slugs": [
+        "도하정-서초양재점"
+      ]
+    },
+    {
+      "slug": "naver-1343695234",
+      "legacy_slugs": [
+        "두부1번지"
+      ]
+    },
+    {
+      "slug": "naver-12950069",
+      "legacy_slugs": [
+        "디오디아"
+      ]
+    },
+    {
+      "slug": "naver-12962167",
+      "legacy_slugs": [
+        "라그릴리아-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1786476142",
+      "legacy_slugs": [
+        "로마옥-도곡"
+      ]
+    },
+    {
+      "slug": "naver-2054594883",
+      "legacy_slugs": [
+        "멘츠루-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1588460554",
+      "legacy_slugs": [
+        "명갈비곰탕"
+      ]
+    },
+    {
+      "slug": "naver-1933502323",
+      "legacy_slugs": [
+        "백소정-도곡매봉점"
+      ]
+    },
+    {
+      "slug": "naver-694130133",
+      "legacy_slugs": [
+        "버거킹-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1913109921",
+      "legacy_slugs": [
+        "별난횟집"
+      ]
+    },
+    {
+      "slug": "naver-18246142",
+      "legacy_slugs": [
+        "산들해-양재점"
+      ]
+    },
+    {
+      "slug": "naver-1248467129",
+      "legacy_slugs": [
+        "샐러디-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-940333588",
+      "legacy_slugs": [
+        "서울김밥-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-36122875",
+      "legacy_slugs": [
+        "설마중"
+      ]
+    },
+    {
+      "slug": "naver-2026037512",
+      "legacy_slugs": [
+        "순대일번지-양재점"
+      ]
+    },
+    {
+      "slug": "naver-11680229",
+      "legacy_slugs": [
+        "신선설농탕-도곡점"
+      ]
+    },
+    {
+      "slug": "naver-1932155766",
+      "legacy_slugs": [
+        "싸다김밥-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-1682848718",
+      "legacy_slugs": [
+        "양계옥"
+      ]
+    },
+    {
+      "slug": "naver-37307613",
+      "legacy_slugs": [
+        "양재-오제섞어-양재본점"
+      ]
+    },
+    {
+      "slug": "naver-1662252522",
+      "legacy_slugs": [
+        "양재-초밥"
+      ]
+    },
+    {
+      "slug": "naver-1361599856",
+      "legacy_slugs": [
+        "양재카츠"
+      ]
+    },
+    {
+      "slug": "naver-573699969",
+      "legacy_slugs": [
+        "오선채"
+      ]
+    },
+    {
+      "slug": "naver-1664070278",
+      "legacy_slugs": [
+        "용짜장"
+      ]
+    },
+    {
+      "slug": "naver-1144486302",
+      "legacy_slugs": [
+        "장모사랑"
+      ]
+    },
+    {
+      "slug": "naver-2005400128",
+      "legacy_slugs": [
+        "정성순대-양재역점"
+      ]
+    },
+    {
+      "slug": "naver-18239739",
+      "legacy_slugs": [
+        "청정해참치"
+      ]
+    },
+    {
+      "slug": "naver-20071008",
+      "legacy_slugs": [
+        "춘업-순댓국"
+      ]
+    },
+    {
+      "slug": "naver-1003690665",
+      "legacy_slugs": [
+        "카츠오우-도곡점"
+      ]
+    },
+    {
+      "slug": "naver-1382004181",
+      "legacy_slugs": [
+        "코시"
+      ]
+    },
+    {
+      "slug": "naver-21732929",
+      "legacy_slugs": [
+        "포-브라더스-도곡점"
+      ]
+    },
+    {
+      "slug": "naver-1264706146",
+      "legacy_slugs": [
+        "포히아-베트남쌀국수"
+      ]
+    },
+    {
+      "slug": "naver-10985460",
+      "legacy_slugs": [
+        "하영호-신촌설렁탕-본점"
+      ]
+    },
+    {
+      "slug": "naver-32254662",
+      "legacy_slugs": [
+        "한국순대-본점"
+      ]
+    },
+    {
+      "slug": "naver-38264349",
+      "legacy_slugs": [
+        "한양돈까스"
+      ]
+    },
+    {
+      "slug": "naver-1044144861",
+      "legacy_slugs": [
+        "해남미가"
+      ]
+    },
+    {
+      "slug": "naver-1123021012",
+      "legacy_slugs": [
+        "호랑이초밥-양재점"
+      ]
+    }
+  ],
+  "metaRequired": {
+    "last_message_ts": "required on pull — collector aborts if empty after pull",
+    "office": "required — map center blob"
+  }
+}

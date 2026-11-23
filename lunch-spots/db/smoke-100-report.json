@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-11-23T06:35:00.000Z",
+  "local": {
+    "pattern": "json_each INSERT",
+    "requested": 100,
+    "inserted": 100,
+    "ok": true
+  },
+  "remote": {
+    "database": "lunch-radar",
+    "database_id": "b39ab49f-2eb4-4c10-8a76-c059f1739d1a",
+    "account_id": "cb5fd8f2bd7d6aef3fd6042aa374e8b3",
+    "pattern": "batched INSERT VALUES (100 rows)",
+    "json_each_proof": "2-row json_each INSERT succeeded on remote",
+    "rows_written_metered": 302,
+    "ok": true
+  }
+}

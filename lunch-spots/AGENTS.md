@@ -38,3 +38,4 @@ Run the CLI under Node, never Bun.
 - Skills: `node_modules/@grok/agent-sdk/skills/` (`create-agent`, `deploy`, `evals`, `hillclimb`, `debug`)
 - Docs: `npx @grok/agent-sdk docs`
 - LLM docs index: `node_modules/@grok/agent-sdk/dist/docs/llms.txt`
+- D1 catalog store (Stage 0): `db/README.md`, decisions in `db/DECISIONS.md`, gates in `db/STAGE0.md`. Prefer `npm run db:pull` / `db:push` around catalog scripts; do not `--write-web` unless replacing repo JSON on purpose.

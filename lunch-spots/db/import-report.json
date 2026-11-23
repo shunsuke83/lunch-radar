@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-11-23T06:34:22.196Z",
+  "places": 9991,
+  "inOffice": 191,
+  "inRegion": 9847,
+  "both": 47,
+  "overlapsDetected": 47,
+  "yangjaeMerges": [
+    {
+      "naver": "1751873950",
+      "from": [
+        "양재순대",
+        "양재순대국"
+      ],
+      "to": "naver-1751873950"
+    }
+  ],
+  "overlapSample": [
+    {
+      "officeSlug": "kakao-16328281",
+      "regionSlug": "kakao-16328281",
+      "canonical": "naver-20366622",
+      "regionId": "seoul"
+    },
+    {
+      "officeSlug": "kakao-1212385345",
+      "regionSlug": "kakao-1212385345",
+      "canonical": "naver-1691633569",
+      "regionId": "seoul"
+    },
+    {
+      "officeSlug": "naver-2055279455",
+      "regionSlug": "naver-2055279455",
+      "canonical": "naver-2055279455",
+      "regionId": "seoul"
+    },
+    {
+      "officeSlug": "kakao-16992549",
+      "regionSlug": "kakao-16992549",
+      "canonical": "naver-1087115109",
+      "regionId": "seoul"
+    },
+    {
+      "officeSlug": "kakao-14503487",
+      "regionSlug": "kakao-14503487",
+      "canonical": "naver-1154400830",
+      "regionId": "seoul"
+    },
+    {
+      "officeSlug": "kakao-17382395",
+      "regionSlug": "kakao-17382395",
+      "canonical": "kakao-17382395",
+      "regionId": "seoul"
+    },
+    {
+      "officeSlug": "kakao-1725027508",
+      "regionSlug": "kakao-1725027508",
+      "canonical": "naver-1631246639",
+      "regionId": "seoul"
+    },
+    {
+      "officeSlug": "naver-1987901281",
+      "regionSlug": "naver-1987901281",
+      "canonical": "naver-1987901281",
+      "regionId": "seoul"
+    },
+    {
+      "officeSlug": "naver-2030628967",
+      "regionSlug": "naver-2030628967",
+      "canonical": "naver-2030628967",
+      "regionId": "seoul"
+    },
+    {
+      "officeSlug": "naver-2035572498",
+      "regionSlug": "naver-2035572498",
+      "canonical": "naver-2035572498",
+      "regionId": "seoul"
+    }
+  ]
+}

@@ -17,7 +17,15 @@
     "dev": "agent-sdk dev",
     "catalog:fix-geo": "tsx --env-file-if-exists=.env.local scripts/fix-region-geo.mjs",
     "catalog:summaries": "tsx scripts/export-region-summaries.mjs",
-    "catalog:validate": "tsx scripts/validate-regions.mjs"
+    "catalog:validate": "tsx scripts/validate-regions.mjs",
+    "db:smoke-100": "node db/smoke-100.mjs",
+    "db:merge-dry-run": "node db/merge-dry-run.mjs",
+    "db:import": "node db/import-catalog.mjs",
+    "db:export": "node db/export-catalog.mjs",
+    "db:verify": "node db/verify-catalog.mjs",
+    "db:pull": "node db/pull.mjs",
+    "db:push": "node db/push.mjs",
+    "db:shadow": "node db/shadow.mjs"
   },
   "dependencies": {
     "@grok/agent-sdk": "^0.6.0",

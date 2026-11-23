@@ -1,0 +1,44 @@
+# Stage 1 shadow: keep a local SQLite mirror of catalogs (CI artifact).
+# Remote D1 sync activates when Cloudflare secrets are present.
+name: D1 shadow mirror
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 15 * * *" # 00:30 KST
+
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: lunch-spots
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: lunch-spots/package-lock.json
+      - name: Install
+        run: npm ci
+      - name: Shadow import + verify
+        env:
+          LUNCH_RADAR_D1_BACKEND: local
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_D1_DATABASE_ID: ${{ secrets.CLOUDFLARE_D1_DATABASE_ID }}
+        run: |
+          npm run db:smoke-100
+          npm run db:merge-dry-run
+          npm run db:shadow
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: d1-shadow-reports
+          path: |
+            lunch-spots/db/*-report.json
+            lunch-spots/db/smoke-100-report.json
+            lunch-spots/db/merge-dry-run-report.json
+            lunch-spots/db/shadow-report.json
+          if-no-files-found: warn

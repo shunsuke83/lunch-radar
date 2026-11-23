@@ -6,3 +6,5 @@ node_modules
 .agent-serve
 memory
 .smoke
+db/.tmp
+db/.cache-smoke-remote.sql

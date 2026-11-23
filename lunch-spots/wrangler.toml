@@ -1,0 +1,15 @@
+# Cloudflare D1 for lunch-radar (Stage 0+).
+# Create once, then paste database_id:
+#   npx wrangler d1 create lunch-radar
+#
+# Local Stage 0 uses node:sqlite at lunch-spots/.cache/lunch-radar.d1.sqlite
+# until CLOUDFLARE_* env vars are set.
+name = "lunch-radar"
+compatibility_date = "2025-11-01"
+main = "db/worker-stub.js"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lunch-radar"
+database_id = "b39ab49f-2eb4-4c10-8a76-c059f1739d1a"
+migrations_dir = "db/migrations"

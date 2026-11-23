@@ -1,0 +1,188 @@
+{
+  "generatedAt": "2026-11-23T06:34:27.329Z",
+  "ok": false,
+  "problematic": [
+    {
+      "label": "office",
+      "counts": {
+        "onlyA": 156,
+        "onlyB": 155,
+        "changed": 33,
+        "a": 192,
+        "b": 191
+      },
+      "sampleChanged": [
+        "신향원양꼬치마라탕-양재역",
+        "양재동김밥-도시미점",
+        "naver-2055279455",
+        "깐부치킨-양재역점-점심뷔페",
+        "kakao-17382395"
+      ],
+      "onlyA": [
+        "국미당-양재역",
+        "도화",
+        "마차이짬뽕-양재역점",
+        "샌드워커-양재역",
+        "피넘타이-양재"
+      ],
+      "onlyB": [
+        "naver-20366622",
+        "naver-1691633569",
+        "naver-1544329925",
+        "naver-36406497",
+        "naver-32708325"
+      ]
+    },
+    {
+      "label": "chungnam.json",
+      "counts": {
+        "onlyA": 0,
+        "onlyB": 0,
+        "changed": 19,
+        "a": 328,
+        "b": 328
+      },
+      "sampleChanged": [
+        "naver-1836298981",
+        "naver-1043556271",
+        "naver-2021030127",
+        "naver-21252160",
+        "naver-1065125060"
+      ],
+      "onlyA": [],
+      "onlyB": []
+    },
+    {
+      "label": "gwangju.json",
+      "counts": {
+        "onlyA": 0,
+        "onlyB": 0,
+        "changed": 29,
+        "a": 241,
+        "b": 241
+      },
+      "sampleChanged": [
+        "naver-1013826140",
+        "naver-2071246489",
+        "naver-1365285191",
+        "naver-1262175480",
+        "naver-1224154264"
+      ],
+      "onlyA": [],
+      "onlyB": []
+    },
+    {
+      "label": "gyeonggi.json",
+      "counts": {
+        "onlyA": 1,
+        "onlyB": 1,
+        "changed": 40,
+        "a": 1030,
+        "b": 1030
+      },
+      "sampleChanged": [
+        "naver-1703643550",
+        "naver-2003441501",
+        "naver-17986930",
+        "naver-37178870",
+        "naver-38704556"
+      ],
+      "onlyA": [
+        "ext-이가네양갈비판교직영점-3739362"
+      ],
+      "onlyB": [
+        "naver-1295907888"
+      ]
+    },
+    {
+      "label": "jeonbuk.json",
+      "counts": {
+        "onlyA": 0,
+        "onlyB": 0,
+        "changed": 10,
+        "a": 339,
+        "b": 339
+      },
+      "sampleChanged": [
+        "naver-1898130354",
+        "naver-2098303895",
+        "naver-32239625",
+        "naver-1066313912",
+        "naver-2061384201"
+      ],
+      "onlyA": [],
+      "onlyB": []
+    },
+    {
+      "label": "jeonnam.json",
+      "counts": {
+        "onlyA": 0,
+        "onlyB": 0,
+        "changed": 12,
+        "a": 260,
+        "b": 260
+      },
+      "sampleChanged": [
+        "naver-16838838",
+        "naver-2054015933",
+        "naver-11697545",
+        "naver-1760293072",
+        "naver-36900466"
+      ],
+      "onlyA": [],
+      "onlyB": []
+    },
+    {
+      "label": "sejong.json",
+      "counts": {
+        "onlyA": 0,
+        "onlyB": 0,
+        "changed": 10,
+        "a": 69,
+        "b": 69
+      },
+      "sampleChanged": [
+        "naver-21230589",
+        "naver-1289052276",
+        "naver-1498265556",
+        "naver-1916763306",
+        "naver-1046631053"
+      ],
+      "onlyA": [],
+      "onlyB": []
+    },
+    {
+      "label": "seoul.json",
+      "counts": {
+        "onlyA": 159,
+        "onlyB": 159,
+        "changed": 102,
+        "a": 5036,
+        "b": 5036
+      },
+      "sampleChanged": [
+        "ext-같이양조장합정점-3754734",
+        "naver-31840670",
+        "naver-1625529373",
+        "naver-2055279455",
+        "naver-11723442"
+      ],
+      "onlyA": [
+        "kakao-1621627981",
+        "kakao-1171843207",
+        "kakao-1190139624",
+        "kakao-2116325698",
+        "kakao-416744882"
+      ],
+      "onlyB": [
+        "naver-2049984238",
+        "naver-1015472036",
+        "naver-2017470541",
+        "naver-2092144522",
+        "naver-1290279848"
+      ]
+    }
+  ],
+  "indexMismatch": [],
+  "note": "Slug merges (47 overlaps + yangjae) intentionally change export shape: office/region may gain/lose slugs vs pre-merge JSON. Stage 0 accepts structural diffs listed here; screen smoke uses merged export."
+}

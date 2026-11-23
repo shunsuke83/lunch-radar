@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-11-23T06:34:27.330Z",
+  "mode": "shadow",
+  "imported": {
+    "dryRun": false,
+    "imported": 9991,
+    "db": "D:\\project\\lunch-radar\\lunch-radar\\lunch-spots\\.cache\\lunch-radar.d1.sqlite",
+    "places": 9991,
+    "inOffice": 191,
+    "inRegion": 9847,
+    "both": 47,
+    "overlapsDetected": 47,
+    "yangjaeMerges": 1,
+    "reportPath": "D:\\project\\lunch-radar\\lunch-radar\\lunch-spots\\db\\import-report.json"
+  },
+  "verify": {
+    "ok": false,
+    "problematicCount": 8,
+    "indexMismatch": []
+  },
+  "note": "JSON is still the source of truth. D1/local mirror updated. Promote to Stage 2 only after gates pass."
+}
