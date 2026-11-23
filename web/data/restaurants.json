@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-20T14:22:51.776Z",
+  "updatedAt": "2026-11-23T10:51:38.139Z",
   "source": "slack-export",
-  "lastMessageTs": "1795140010.883789",
+  "lastMessageTs": "1795399219.141189",
   "restaurants": [
     {
       "slug": "국미당-양재역",
@@ -176,6 +176,56 @@
       "walkFromMap": true
     },
     {
+      "slug": "명정루-양재",
+      "name": "명정루 양재",
+      "area": "양재",
+      "category": "중식",
+      "priceRange": "10,000~13,000원",
+      "notes": "짬뽕 10,000 / 차돌짬뽕 13,000 · 11:00-21:30 · 도보 약 298m",
+      "tags": [
+        "중식",
+        "탕수육"
+      ],
+      "addedAt": "2026-11-06T04:19:05.876Z",
+      "updatedAt": "2026-11-23T10:51:36.800Z",
+      "mentionCount": 4,
+      "subcategory": "중식·탕수육",
+      "menu": [
+        {
+          "name": "짬뽕",
+          "price": 10000
+        },
+        {
+          "name": "차돌짬뽕",
+          "price": 13000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:30"
+      },
+      "walkMeters": 382,
+      "location": {
+        "lat": 37.4854209347542,
+        "lng": 127.031354787404
+      },
+      "place": {
+        "kakaoId": "420171715",
+        "kakaoUrl": "https://place.map.kakao.com/420171715",
+        "address": "서울 서초구 남부순환로347길 23"
+      },
+      "ratingCheckedAt": "2026-11-23T10:51:51.813Z",
+      "naverCheckedAt": "2026-11-20T14:24:33.118Z",
+      "naver": {
+        "placeId": "1583880509",
+        "url": "https://map.naver.com/p/entry/place/1583880509"
+      },
+      "naverReviews": 909,
+      "naverScore": 4.81,
+      "walkMinutes": 6,
+      "walkFromMap": true
+    },
+    {
       "slug": "샌드워커-양재역",
       "name": "샌드워커 양재역",
       "area": "양재",
@@ -327,7 +377,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1842885713",
         "address": "서울 서초구 남부순환로347길 53"
       },
-      "ratingCheckedAt": "2026-11-22T13:36:03.742Z",
+      "ratingCheckedAt": "2026-11-23T10:51:54.408Z",
       "naverCheckedAt": "2026-11-20T14:23:55.553Z",
       "naver": {
         "placeId": "1925656389",
@@ -552,56 +602,6 @@
       "walkFromMap": true
     },
     {
-      "slug": "명정루-양재",
-      "name": "명정루 양재",
-      "area": "양재",
-      "category": "중식",
-      "priceRange": "10,000~13,000원",
-      "notes": "짬뽕 10,000 / 차돌짬뽕 13,000 · 11:00-21:30 · 도보 약 298m",
-      "tags": [
-        "중식",
-        "탕수육"
-      ],
-      "addedAt": "2026-11-06T04:19:05.876Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 3,
-      "subcategory": "중식·탕수육",
-      "menu": [
-        {
-          "name": "짬뽕",
-          "price": 10000
-        },
-        {
-          "name": "차돌짬뽕",
-          "price": 13000
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "21:30"
-      },
-      "walkMeters": 382,
-      "location": {
-        "lat": 37.4854209347542,
-        "lng": 127.031354787404
-      },
-      "place": {
-        "kakaoId": "420171715",
-        "kakaoUrl": "https://place.map.kakao.com/420171715",
-        "address": "서울 서초구 남부순환로347길 23"
-      },
-      "ratingCheckedAt": "2026-11-22T13:36:07.904Z",
-      "naverCheckedAt": "2026-11-20T14:24:33.118Z",
-      "naver": {
-        "placeId": "1583880509",
-        "url": "https://map.naver.com/p/entry/place/1583880509"
-      },
-      "naverReviews": 909,
-      "naverScore": 4.81,
-      "walkMinutes": 6,
-      "walkFromMap": true
-    },
-    {
       "slug": "미소야-양재점",
       "name": "미소야 양재점",
       "area": "양재",
@@ -810,7 +810,7 @@
         "kakaoUrl": "https://place.map.kakao.com/873475210",
         "address": "서울 서초구 강남대로 222-4"
       },
-      "ratingCheckedAt": "2026-11-22T13:36:10.697Z",
+      "ratingCheckedAt": "2026-11-23T10:52:01.718Z",
       "naverCheckedAt": "2026-11-20T14:25:04.022Z",
       "naver": {
         "placeId": "964119437",
@@ -1282,6 +1282,58 @@
       "walkMinutes": 7
     },
     {
+      "slug": "금강수림",
+      "name": "금강수림",
+      "area": "양재",
+      "category": "한식",
+      "priceRange": "12,000~13,000원",
+      "notes": "육개장 12,000 / 육칼(육개장+칼국수) 13,000 · 11:00-22:00 (16:00-17:00 브레이크) · 도보 약 38m",
+      "tags": [
+        "육개장",
+        "한식"
+      ],
+      "addedAt": "2026-11-06T04:19:39.998Z",
+      "updatedAt": "2026-11-23T10:51:35.743Z",
+      "mentionCount": 2,
+      "subcategory": "육개장·집밥",
+      "menu": [
+        {
+          "name": "육개장",
+          "price": 12000
+        },
+        {
+          "name": "육칼(육개장+칼국수)",
+          "price": 13000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "22:00",
+        "breakStart": "16:00",
+        "breakEnd": "17:00"
+      },
+      "walkMeters": 122,
+      "location": {
+        "lat": 37.485259699086775,
+        "lng": 127.03443015314183
+      },
+      "place": {
+        "kakaoId": "14659473",
+        "kakaoUrl": "https://place.map.kakao.com/14659473",
+        "address": "서울 강남구 강남대로 240"
+      },
+      "ratingCheckedAt": "2026-11-23T10:52:08.128Z",
+      "naverCheckedAt": "2026-11-20T14:29:58.536Z",
+      "naver": {
+        "placeId": "20652838",
+        "url": "https://map.naver.com/p/entry/place/20652838"
+      },
+      "naverReviews": 843,
+      "naverScore": 4.41,
+      "walkMinutes": 2,
+      "walkFromMap": true
+    },
+    {
       "slug": "누룩목-양재본점",
       "name": "누룩목 양재본점",
       "area": "양재",
@@ -1322,7 +1374,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1311036367",
         "address": "서울 서초구 강남대로43길 11"
       },
-      "ratingCheckedAt": "2026-11-22T13:36:15.951Z",
+      "ratingCheckedAt": "2026-11-23T10:52:10.015Z",
       "naverCheckedAt": "2026-11-20T14:26:12.632Z",
       "naver": {
         "placeId": "1798445957",
@@ -1628,6 +1680,65 @@
       "naverReviews": 2023,
       "naverScore": 4.95,
       "walkMinutes": 7,
+      "walkFromMap": true
+    },
+    {
+      "slug": "소노야-양재역점",
+      "name": "소노야 양재역점",
+      "area": "양재",
+      "category": "일식",
+      "priceRange": "9,000~10,000원",
+      "notes": "돈코츠라멘 10,000 / 냉모밀·비빔모밀 9,000 · 07:30-22:00 (15:00-16:00 브레이크) · 도보 약 108m",
+      "tags": [
+        "우동",
+        "라멘"
+      ],
+      "addedAt": "2026-11-06T04:20:36.341Z",
+      "updatedAt": "2026-11-23T10:51:36.458Z",
+      "mentionCount": 2,
+      "subcategory": "우동·덮밥",
+      "menu": [
+        {
+          "name": "돈코츠라멘",
+          "price": 10000
+        },
+        {
+          "name": "냉모밀·비빔모밀",
+          "price": 9000
+        }
+      ],
+      "hours": {
+        "open": "07:30",
+        "close": "22:00",
+        "breakStart": "15:00",
+        "breakEnd": "16:00"
+      },
+      "walkMeters": 365,
+      "location": {
+        "lat": 37.48279784526058,
+        "lng": 127.03543981277616
+      },
+      "place": {
+        "kakaoId": "22221836",
+        "kakaoUrl": "https://place.map.kakao.com/22221836",
+        "address": "서울 서초구 남부순환로 지하 2585"
+      },
+      "ratingCheckedAt": "2026-11-20T14:31:55.456Z",
+      "rating": {
+        "score": 3.1,
+        "count": 17,
+        "source": "kakao",
+        "url": "https://place.map.kakao.com/22221836",
+        "fetchedAt": "2026-11-20T14:31:55.456Z"
+      },
+      "naverCheckedAt": "2026-11-20T14:31:59.832Z",
+      "naver": {
+        "placeId": "33510707",
+        "url": "https://map.naver.com/p/entry/place/33510707"
+      },
+      "naverReviews": 1416,
+      "naverScore": 4.27,
+      "walkMinutes": 6,
       "walkFromMap": true
     },
     {
@@ -2863,58 +2974,6 @@
       "walkMinutes": 18
     },
     {
-      "slug": "금강수림",
-      "name": "금강수림",
-      "area": "양재",
-      "category": "한식",
-      "priceRange": "12,000~13,000원",
-      "notes": "육개장 12,000 / 육칼(육개장+칼국수) 13,000 · 11:00-22:00 (16:00-17:00 브레이크) · 도보 약 38m",
-      "tags": [
-        "육개장",
-        "한식"
-      ],
-      "addedAt": "2026-11-06T04:19:39.998Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 1,
-      "subcategory": "육개장·집밥",
-      "menu": [
-        {
-          "name": "육개장",
-          "price": 12000
-        },
-        {
-          "name": "육칼(육개장+칼국수)",
-          "price": 13000
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "22:00",
-        "breakStart": "16:00",
-        "breakEnd": "17:00"
-      },
-      "walkMeters": 122,
-      "location": {
-        "lat": 37.485259699086775,
-        "lng": 127.03443015314183
-      },
-      "place": {
-        "kakaoId": "14659473",
-        "kakaoUrl": "https://place.map.kakao.com/14659473",
-        "address": "서울 강남구 강남대로 240"
-      },
-      "ratingCheckedAt": "2026-11-22T13:36:29.920Z",
-      "naverCheckedAt": "2026-11-20T14:29:58.536Z",
-      "naver": {
-        "placeId": "20652838",
-        "url": "https://map.naver.com/p/entry/place/20652838"
-      },
-      "naverReviews": 843,
-      "naverScore": 4.41,
-      "walkMinutes": 2,
-      "walkFromMap": true
-    },
-    {
       "slug": "남순남순대국-본점",
       "name": "남순남순대국 본점",
       "area": "양재",
@@ -3197,7 +3256,7 @@
       },
       "walkMeters": 835,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-22T13:36:34.005Z",
+      "ratingCheckedAt": "2026-11-23T10:52:29.589Z",
       "naverCheckedAt": "2026-11-20T14:30:35.599Z",
       "naver": {
         "placeId": "1910073147",
@@ -3553,7 +3612,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1868934600",
         "address": "서울 강남구 남부순환로365길 22"
       },
-      "ratingCheckedAt": "2026-11-22T13:36:37.596Z",
+      "ratingCheckedAt": "2026-11-23T10:52:33.578Z",
       "naverCheckedAt": "2026-11-20T14:31:22.895Z",
       "naver": {
         "placeId": "1017653627",
@@ -3760,65 +3819,6 @@
       "walkFromMap": true
     },
     {
-      "slug": "소노야-양재역점",
-      "name": "소노야 양재역점",
-      "area": "양재",
-      "category": "일식",
-      "priceRange": "9,000~10,000원",
-      "notes": "돈코츠라멘 10,000 / 냉모밀·비빔모밀 9,000 · 07:30-22:00 (15:00-16:00 브레이크) · 도보 약 108m",
-      "tags": [
-        "우동",
-        "라멘"
-      ],
-      "addedAt": "2026-11-06T04:20:36.341Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 1,
-      "subcategory": "우동·덮밥",
-      "menu": [
-        {
-          "name": "돈코츠라멘",
-          "price": 10000
-        },
-        {
-          "name": "냉모밀·비빔모밀",
-          "price": 9000
-        }
-      ],
-      "hours": {
-        "open": "07:30",
-        "close": "22:00",
-        "breakStart": "15:00",
-        "breakEnd": "16:00"
-      },
-      "walkMeters": 365,
-      "location": {
-        "lat": 37.48279784526058,
-        "lng": 127.03543981277616
-      },
-      "place": {
-        "kakaoId": "22221836",
-        "kakaoUrl": "https://place.map.kakao.com/22221836",
-        "address": "서울 서초구 남부순환로 지하 2585"
-      },
-      "ratingCheckedAt": "2026-11-20T14:31:55.456Z",
-      "rating": {
-        "score": 3.1,
-        "count": 17,
-        "source": "kakao",
-        "url": "https://place.map.kakao.com/22221836",
-        "fetchedAt": "2026-11-20T14:31:55.456Z"
-      },
-      "naverCheckedAt": "2026-11-20T14:31:59.832Z",
-      "naver": {
-        "placeId": "33510707",
-        "url": "https://map.naver.com/p/entry/place/33510707"
-      },
-      "naverReviews": 1416,
-      "naverScore": 4.27,
-      "walkMinutes": 6,
-      "walkFromMap": true
-    },
-    {
       "slug": "시래정-양재점",
       "name": "시래정 양재점",
       "area": "양재",
@@ -3901,7 +3901,7 @@
         "kakaoUrl": "https://place.map.kakao.com/96772273",
         "address": "서울 서초구 남부순환로350길 19-26"
       },
-      "ratingCheckedAt": "2026-11-22T13:36:42.790Z",
+      "ratingCheckedAt": "2026-11-23T10:52:39.239Z",
       "naver": {
         "placeId": "1788599337",
         "url": "https://map.naver.com/p/entry/place/1788599337"
@@ -4043,20 +4043,20 @@
       },
       "walkMeters": 128,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:33:15.245Z",
+      "ratingCheckedAt": "2026-11-23T10:52:41.773Z",
       "rating": {
         "score": 3.9,
         "count": 29,
         "source": "kakao",
         "url": "https://place.map.kakao.com/427153962",
-        "fetchedAt": "2026-11-16T01:33:15.245Z"
+        "fetchedAt": "2026-11-23T10:52:41.773Z"
       },
-      "naverCheckedAt": "2026-11-16T01:33:18.677Z",
+      "naverCheckedAt": "2026-11-23T10:52:46.808Z",
       "naver": {
         "placeId": "1682848718",
         "url": "https://map.naver.com/p/entry/place/1682848718"
       },
-      "naverReviews": 345,
+      "naverReviews": 346,
       "naverScore": 4.9,
       "walkMinutes": 2
     },
@@ -4588,7 +4588,7 @@
           "일"
         ]
       },
-      "ratingCheckedAt": "2026-11-22T13:36:58.869Z",
+      "ratingCheckedAt": "2026-11-23T10:53:04.436Z",
       "place": {
         "kakaoId": "23985599",
         "kakaoUrl": "https://place.map.kakao.com/23985599",
@@ -4639,7 +4639,7 @@
         "kakaoUrl": "https://place.map.kakao.com/10630917",
         "address": "서울 서초구 남부순환로 2640-11"
       },
-      "ratingCheckedAt": "2026-11-22T13:37:00.749Z",
+      "ratingCheckedAt": "2026-11-23T10:53:06.390Z",
       "naverCheckedAt": "2026-11-20T14:33:46.096Z",
       "naver": {
         "placeId": "19699783",
@@ -4918,7 +4918,7 @@
         "placeId": "1889387567",
         "url": "https://map.naver.com/p/entry/place/1889387567"
       },
-      "ratingCheckedAt": "2026-11-22T13:37:04.013Z",
+      "ratingCheckedAt": "2026-11-23T10:53:09.855Z",
       "walkMeters": 678,
       "walkFromMap": true,
       "area": "양재",
@@ -5324,7 +5324,7 @@
         "kakaoUrl": "https://place.map.kakao.com/332296816",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-22T13:37:10.139Z",
+      "ratingCheckedAt": "2026-11-23T10:53:17.079Z",
       "naverCheckedAt": "2026-11-20T14:35:09.726Z",
       "naver": {
         "placeId": "1278613093",
@@ -5861,21 +5861,21 @@
       },
       "walkMeters": 259,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:32:18.314Z",
+      "ratingCheckedAt": "2026-11-23T10:53:30.838Z",
       "rating": {
         "score": 3.5,
         "count": 42,
         "source": "kakao",
         "url": "https://place.map.kakao.com/293690686",
-        "fetchedAt": "2026-11-16T01:32:18.314Z"
+        "fetchedAt": "2026-11-23T10:53:30.838Z"
       },
-      "naverCheckedAt": "2026-11-16T01:32:21.745Z",
+      "naverCheckedAt": "2026-11-23T10:53:35.340Z",
       "naver": {
         "placeId": "1034622849",
         "url": "https://map.naver.com/p/entry/place/1034622849"
       },
-      "naverReviews": 1218,
-      "naverScore": 4.58,
+      "naverReviews": 1217,
+      "naverScore": 4.57,
       "walkMinutes": 4
     },
     {
@@ -5974,8 +5974,8 @@
       },
       "walkMeters": 289,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-22T13:37:23.032Z",
-      "naverCheckedAt": "2026-11-16T01:32:28.144Z",
+      "ratingCheckedAt": "2026-11-23T10:53:38.264Z",
+      "naverCheckedAt": "2026-11-23T10:53:42.793Z",
       "naver": {
         "placeId": "1733030490",
         "url": "https://map.naver.com/p/entry/place/1733030490"
@@ -6161,7 +6161,7 @@
       },
       "walkMeters": 822,
       "walkMinutes": 10,
-      "ratingCheckedAt": "2026-11-22T13:37:34.260Z",
+      "ratingCheckedAt": "2026-11-23T10:53:55.144Z",
       "naverCheckedAt": "2026-11-19T14:44:28.215Z"
     },
     {
@@ -6303,20 +6303,20 @@
       },
       "walkMeters": 1081,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:32:36.751Z",
+      "ratingCheckedAt": "2026-11-23T10:53:57.548Z",
       "rating": {
         "score": 3.8,
         "count": 28,
         "source": "kakao",
         "url": "https://place.map.kakao.com/424606603",
-        "fetchedAt": "2026-11-16T01:32:36.751Z"
+        "fetchedAt": "2026-11-23T10:53:57.548Z"
       },
-      "naverCheckedAt": "2026-11-16T01:32:40.141Z",
+      "naverCheckedAt": "2026-11-23T10:54:01.842Z",
       "naver": {
         "placeId": "1190140734",
         "url": "https://map.naver.com/p/entry/place/1190140734"
       },
-      "naverReviews": 245,
+      "naverReviews": 246,
       "walkMinutes": 17
     },
     {
@@ -6492,21 +6492,21 @@
       },
       "walkMeters": 1127,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:32:41.921Z",
+      "ratingCheckedAt": "2026-11-23T10:54:05.255Z",
       "rating": {
         "score": 5,
-        "count": 62,
+        "count": 63,
         "source": "kakao",
         "url": "https://place.map.kakao.com/2044777817",
-        "fetchedAt": "2026-11-16T01:32:41.921Z"
+        "fetchedAt": "2026-11-23T10:54:05.255Z"
       },
-      "naverCheckedAt": "2026-11-16T01:32:45.306Z",
+      "naverCheckedAt": "2026-11-23T10:54:09.908Z",
       "naver": {
         "placeId": "1008560025",
         "url": "https://map.naver.com/p/entry/place/1008560025"
       },
-      "naverReviews": 1652,
-      "naverScore": 4.84,
+      "naverReviews": 1681,
+      "naverScore": 4.85,
       "walkMinutes": 19
     },
     {
@@ -6830,7 +6830,7 @@
       "walkMeters": 859,
       "walkMinutes": 11,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-22T13:37:38.443Z",
+      "ratingCheckedAt": "2026-11-23T10:54:14.967Z",
       "naverCheckedAt": "2026-11-19T14:45:34.006Z",
       "naver": {
         "placeId": "1528536629",
@@ -7006,15 +7006,15 @@
       },
       "walkMeters": 461,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:32:48.028Z",
+      "ratingCheckedAt": "2026-11-23T10:54:16.903Z",
       "rating": {
         "score": 4.1,
-        "count": 19,
+        "count": 20,
         "source": "kakao",
         "url": "https://place.map.kakao.com/1886399664",
-        "fetchedAt": "2026-11-16T01:32:48.028Z"
+        "fetchedAt": "2026-11-23T10:54:16.903Z"
       },
-      "naverCheckedAt": "2026-11-16T01:32:51.566Z",
+      "naverCheckedAt": "2026-11-23T10:54:21.450Z",
       "naver": {
         "placeId": "1588460554",
         "url": "https://map.naver.com/p/entry/place/1588460554"
@@ -7061,7 +7061,7 @@
       },
       "walkMeters": 490,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-22T13:37:40.570Z",
+      "ratingCheckedAt": "2026-11-23T10:54:24.683Z",
       "naverCheckedAt": "2026-11-20T14:37:13.214Z",
       "walkMinutes": 8
     },
@@ -7324,20 +7324,20 @@
       },
       "walkMeters": 213,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:32:57.159Z",
+      "ratingCheckedAt": "2026-11-23T10:54:27.406Z",
       "rating": {
         "score": 3.9,
         "count": 25,
         "source": "kakao",
         "url": "https://place.map.kakao.com/10386341",
-        "fetchedAt": "2026-11-16T01:32:57.159Z"
+        "fetchedAt": "2026-11-23T10:54:27.406Z"
       },
-      "naverCheckedAt": "2026-11-16T01:33:00.637Z",
+      "naverCheckedAt": "2026-11-23T10:54:31.764Z",
       "naver": {
         "placeId": "1913109921",
         "url": "https://map.naver.com/p/entry/place/1913109921"
       },
-      "naverReviews": 91,
+      "naverReviews": 92,
       "menu": [
         {
           "name": "환승주차장 인근 회·탕 후보"
@@ -7708,7 +7708,7 @@
       },
       "walkMeters": 857,
       "walkMinutes": 11,
-      "ratingCheckedAt": "2026-11-22T13:37:44.854Z",
+      "ratingCheckedAt": "2026-11-23T10:54:36.845Z",
       "naverCheckedAt": "2026-11-19T14:46:38.833Z",
       "naverReviews": 1533,
       "naverScore": 4.95,
@@ -7887,20 +7887,20 @@
       },
       "walkMeters": 235,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:33:02.419Z",
+      "ratingCheckedAt": "2026-11-23T10:54:38.606Z",
       "rating": {
-        "score": 2.3,
-        "count": 11,
+        "score": 2.2,
+        "count": 12,
         "source": "kakao",
         "url": "https://place.map.kakao.com/788681423",
-        "fetchedAt": "2026-11-16T01:33:02.419Z"
+        "fetchedAt": "2026-11-23T10:54:38.606Z"
       },
-      "naverCheckedAt": "2026-11-16T01:33:05.940Z",
+      "naverCheckedAt": "2026-11-23T10:54:43.213Z",
       "naver": {
         "placeId": "2026037512",
         "url": "https://map.naver.com/p/entry/place/2026037512"
       },
-      "naverReviews": 1442,
+      "naverReviews": 1465,
       "naverScore": 4.89,
       "menu": [
         {
@@ -8008,20 +8008,20 @@
       },
       "walkMeters": 792,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:33:10.160Z",
+      "ratingCheckedAt": "2026-11-23T10:54:46.706Z",
       "rating": {
         "score": 3.2,
         "count": 27,
         "source": "kakao",
         "url": "https://place.map.kakao.com/16054933",
-        "fetchedAt": "2026-11-16T01:33:10.160Z"
+        "fetchedAt": "2026-11-23T10:54:46.706Z"
       },
-      "naverCheckedAt": "2026-11-16T01:33:13.491Z",
+      "naverCheckedAt": "2026-11-23T10:54:51.216Z",
       "naver": {
         "placeId": "11680229",
         "url": "https://map.naver.com/p/entry/place/11680229"
       },
-      "naverReviews": 1518,
+      "naverReviews": 1519,
       "naverScore": 4.29,
       "walkMinutes": 13
     },
@@ -8459,21 +8459,21 @@
       },
       "walkMeters": 968,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:33:20.595Z",
+      "ratingCheckedAt": "2026-11-23T10:54:55.759Z",
       "rating": {
         "score": 3.1,
         "count": 17,
         "source": "kakao",
         "url": "https://place.map.kakao.com/934243899",
-        "fetchedAt": "2026-11-16T01:33:20.595Z"
+        "fetchedAt": "2026-11-23T10:54:55.759Z"
       },
-      "naverCheckedAt": "2026-11-16T01:33:24.058Z",
+      "naverCheckedAt": "2026-11-23T10:55:00.348Z",
       "naver": {
         "placeId": "1361599856",
         "url": "https://map.naver.com/p/entry/place/1361599856"
       },
-      "naverReviews": 3883,
-      "naverScore": 4.87,
+      "naverReviews": 3908,
+      "naverScore": 4.88,
       "hours": {
         "open": "11:00",
         "close": "21:00"
@@ -8573,15 +8573,15 @@
       },
       "walkMeters": 443,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:33:28.399Z",
+      "ratingCheckedAt": "2026-11-23T10:55:03.727Z",
       "rating": {
         "score": 3.2,
-        "count": 36,
+        "count": 37,
         "source": "kakao",
         "url": "https://place.map.kakao.com/96268218",
-        "fetchedAt": "2026-11-16T01:33:28.399Z"
+        "fetchedAt": "2026-11-23T10:55:03.727Z"
       },
-      "naverCheckedAt": "2026-11-16T01:33:31.981Z",
+      "naverCheckedAt": "2026-11-23T10:55:08.177Z",
       "naver": {
         "placeId": "573699969",
         "url": "https://map.naver.com/p/entry/place/573699969"
@@ -8681,15 +8681,15 @@
       },
       "walkMeters": 287,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:33:33.505Z",
+      "ratingCheckedAt": "2026-11-23T10:55:11.795Z",
       "rating": {
         "score": 2.6,
         "count": 14,
         "source": "kakao",
         "url": "https://place.map.kakao.com/17144475",
-        "fetchedAt": "2026-11-16T01:33:33.505Z"
+        "fetchedAt": "2026-11-23T10:55:11.795Z"
       },
-      "naverCheckedAt": "2026-11-16T01:33:36.918Z",
+      "naverCheckedAt": "2026-11-23T10:55:16.301Z",
       "naver": {
         "placeId": "1664070278",
         "url": "https://map.naver.com/p/entry/place/1664070278"
@@ -8700,8 +8700,8 @@
           "name": "간짜장 후보·가까운 점심"
         }
       ],
-      "naverScore": 4.08,
-      "walkMinutes": 5
+      "walkMinutes": 5,
+      "naverScore": 4.08
     },
     {
       "slug": "kakao-965790489",
@@ -9091,15 +9091,15 @@
       },
       "walkMeters": 345,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:33:40.302Z",
+      "ratingCheckedAt": "2026-11-23T10:55:26.663Z",
       "rating": {
         "score": 4.2,
         "count": 6,
         "source": "kakao",
         "url": "https://place.map.kakao.com/27322618",
-        "fetchedAt": "2026-11-16T01:33:40.302Z"
+        "fetchedAt": "2026-11-23T10:55:26.663Z"
       },
-      "naverCheckedAt": "2026-11-16T01:33:43.704Z",
+      "naverCheckedAt": "2026-11-23T10:55:31.136Z",
       "naver": {
         "placeId": "1144486302",
         "url": "https://map.naver.com/p/entry/place/1144486302"
@@ -9329,21 +9329,21 @@
       },
       "walkMeters": 236,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:33:45.501Z",
+      "ratingCheckedAt": "2026-11-23T10:55:42.074Z",
       "rating": {
         "score": 4.1,
         "count": 12,
         "source": "kakao",
         "url": "https://place.map.kakao.com/1057981586",
-        "fetchedAt": "2026-11-16T01:33:45.501Z"
+        "fetchedAt": "2026-11-23T10:55:42.074Z"
       },
-      "naverCheckedAt": "2026-11-16T01:33:48.874Z",
+      "naverCheckedAt": "2026-11-23T10:55:46.518Z",
       "naver": {
         "placeId": "2005400128",
         "url": "https://map.naver.com/p/entry/place/2005400128"
       },
-      "naverReviews": 1844,
-      "naverScore": 4.94,
+      "naverReviews": 1963,
+      "naverScore": 4.95,
       "walkMinutes": 4
     },
     {
@@ -9558,21 +9558,21 @@
       },
       "walkMeters": 282,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:33:51.705Z",
+      "ratingCheckedAt": "2026-11-23T10:55:49.893Z",
       "rating": {
         "score": 4.2,
         "count": 11,
         "source": "kakao",
         "url": "https://place.map.kakao.com/10848243",
-        "fetchedAt": "2026-11-16T01:33:51.705Z"
+        "fetchedAt": "2026-11-23T10:55:49.893Z"
       },
-      "naverCheckedAt": "2026-11-16T01:33:55.119Z",
+      "naverCheckedAt": "2026-11-23T10:55:54.806Z",
       "naver": {
         "placeId": "18239739",
         "url": "https://map.naver.com/p/entry/place/18239739"
       },
-      "naverReviews": 104,
-      "naverScore": 4.59,
+      "naverReviews": 105,
+      "naverScore": 4.6,
       "menu": [
         {
           "name": "점심 특식/소규모 모임"
@@ -10227,20 +10227,20 @@
       },
       "walkMeters": 867,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-16T01:33:56.979Z",
+      "ratingCheckedAt": "2026-11-23T10:56:02.045Z",
       "rating": {
         "score": 4.8,
         "count": 186,
         "source": "kakao",
         "url": "https://place.map.kakao.com/556100036",
-        "fetchedAt": "2026-11-16T01:33:56.979Z"
+        "fetchedAt": "2026-11-23T10:56:02.045Z"
       },
-      "naverCheckedAt": "2026-11-16T01:34:00.456Z",
+      "naverCheckedAt": "2026-11-23T10:56:06.328Z",
       "naver": {
         "placeId": "1264706146",
         "url": "https://map.naver.com/p/entry/place/1264706146"
       },
-      "naverReviews": 5579,
+      "naverReviews": 5664,
       "naverScore": 4.9,
       "walkMinutes": 13
     },
@@ -10516,8 +10516,8 @@
       },
       "walkMeters": 214,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-22T13:38:11.022Z",
-      "naverCheckedAt": "2026-11-16T01:34:06.734Z",
+      "ratingCheckedAt": "2026-11-23T10:56:10.444Z",
+      "naverCheckedAt": "2026-11-23T10:56:14.768Z",
       "naver": {
         "placeId": "1044144861",
         "url": "https://map.naver.com/p/entry/place/1044144861"
@@ -10758,13 +10758,13 @@
       },
       "walkMeters": 780,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-22T13:38:21.575Z",
-      "naverCheckedAt": "2026-11-16T01:34:12.341Z",
+      "ratingCheckedAt": "2026-11-23T10:56:25.237Z",
+      "naverCheckedAt": "2026-11-23T10:56:29.759Z",
       "naver": {
         "placeId": "1123021012",
         "url": "https://map.naver.com/p/entry/place/1123021012"
       },
-      "naverReviews": 2609,
+      "naverReviews": 2622,
       "naverScore": 4.84,
       "hours": {
         "open": "11:00",
