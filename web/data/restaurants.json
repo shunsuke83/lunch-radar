@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-23T10:51:38.139Z",
+  "updatedAt": "2026-11-24T12:34:49.170Z",
   "source": "slack-export",
-  "lastMessageTs": "1795399219.141189",
+  "lastMessageTs": "1795485606.842739",
   "restaurants": [
     {
       "slug": "국미당-양재역",
@@ -214,7 +214,7 @@
         "kakaoUrl": "https://place.map.kakao.com/420171715",
         "address": "서울 서초구 남부순환로347길 23"
       },
-      "ratingCheckedAt": "2026-11-23T16:28:26.540Z",
+      "ratingCheckedAt": "2026-11-24T12:35:02.625Z",
       "naverCheckedAt": "2026-11-20T14:24:33.118Z",
       "naver": {
         "placeId": "1583880509",
@@ -377,7 +377,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1842885713",
         "address": "서울 서초구 남부순환로347길 53"
       },
-      "ratingCheckedAt": "2026-11-23T16:28:29.108Z",
+      "ratingCheckedAt": "2026-11-24T12:35:05.119Z",
       "naverCheckedAt": "2026-11-20T14:23:55.553Z",
       "naver": {
         "placeId": "1925656389",
@@ -810,7 +810,7 @@
         "kakaoUrl": "https://place.map.kakao.com/873475210",
         "address": "서울 서초구 강남대로 222-4"
       },
-      "ratingCheckedAt": "2026-11-23T16:28:36.073Z",
+      "ratingCheckedAt": "2026-11-24T12:35:11.705Z",
       "naverCheckedAt": "2026-11-20T14:25:04.022Z",
       "naver": {
         "placeId": "964119437",
@@ -818,6 +818,95 @@
       },
       "naverReviews": 1243,
       "naverScore": 4.53,
+      "walkMinutes": 5,
+      "walkFromMap": true
+    },
+    {
+      "slug": "신향원양꼬치마라탕-양재역",
+      "name": "신향원양꼬치마라탕 양재역",
+      "area": "양재",
+      "category": "중식",
+      "priceRange": "11,000~15,000원",
+      "notes": "차돌짬뽕 11,000 / 꿔보러우 15,000 · 11:00-23:00 · 도보 약 259m",
+      "tags": [
+        "마라탕",
+        "중식"
+      ],
+      "addedAt": "2026-11-06T04:20:27.975Z",
+      "updatedAt": "2026-11-24T12:34:46.265Z",
+      "mentionCount": 3,
+      "subcategory": "마라탕·중식",
+      "menu": [
+        {
+          "name": "차돌짬뽕",
+          "price": 11000
+        },
+        {
+          "name": "꿔보러우",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "23:00"
+      },
+      "walkMeters": 259,
+      "ratingCheckedAt": "2026-11-06T06:08:26.490Z",
+      "naverCheckedAt": "2026-11-20T14:27:36.285Z"
+    },
+    {
+      "slug": "얌얌",
+      "name": "얌얌",
+      "area": "양재",
+      "category": "분식",
+      "priceRange": "5,500~6,000원",
+      "notes": "돈까스김밥 5,500 / 꼬마김밥 5줄 6,000 · 08:00-21:00 · 도보 약 294m",
+      "tags": [
+        "김밥",
+        "분식"
+      ],
+      "addedAt": "2026-11-06T04:20:16.051Z",
+      "updatedAt": "2026-11-24T12:34:47.662Z",
+      "mentionCount": 3,
+      "subcategory": "김밥·분식",
+      "menu": [
+        {
+          "name": "돈까스김밥",
+          "price": 5500
+        },
+        {
+          "name": "꼬마김밥 5줄",
+          "price": 6000
+        }
+      ],
+      "hours": {
+        "open": "08:00",
+        "close": "21:00"
+      },
+      "walkMeters": 333,
+      "location": {
+        "lat": 37.485810983893366,
+        "lng": 127.03781001534973
+      },
+      "place": {
+        "kakaoId": "22837365",
+        "kakaoUrl": "https://place.map.kakao.com/22837365",
+        "address": "서울 강남구 남부순환로363길 9-4"
+      },
+      "ratingCheckedAt": "2026-11-20T14:27:38.882Z",
+      "rating": {
+        "score": 4.5,
+        "count": 64,
+        "source": "kakao",
+        "url": "https://place.map.kakao.com/22837365",
+        "fetchedAt": "2026-11-20T14:27:38.882Z"
+      },
+      "naverCheckedAt": "2026-11-20T14:27:43.517Z",
+      "naver": {
+        "placeId": "34098856",
+        "url": "https://map.naver.com/p/entry/place/34098856"
+      },
+      "naverReviews": 2955,
       "walkMinutes": 5,
       "walkFromMap": true
     },
@@ -1322,7 +1411,7 @@
         "kakaoUrl": "https://place.map.kakao.com/14659473",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-23T16:28:41.899Z",
+      "ratingCheckedAt": "2026-11-24T12:35:19.236Z",
       "naverCheckedAt": "2026-11-20T14:29:58.536Z",
       "naver": {
         "placeId": "20652838",
@@ -1374,7 +1463,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1311036367",
         "address": "서울 서초구 강남대로43길 11"
       },
-      "ratingCheckedAt": "2026-11-23T16:28:43.744Z",
+      "ratingCheckedAt": "2026-11-24T12:35:21.112Z",
       "naverCheckedAt": "2026-11-20T14:26:12.632Z",
       "naver": {
         "placeId": "1798445957",
@@ -1966,95 +2055,6 @@
         "url": "https://map.naver.com/p/entry/place/30922907"
       },
       "naverReviews": 685,
-      "walkMinutes": 5,
-      "walkFromMap": true
-    },
-    {
-      "slug": "신향원양꼬치마라탕-양재역",
-      "name": "신향원양꼬치마라탕 양재역",
-      "area": "양재",
-      "category": "중식",
-      "priceRange": "11,000~15,000원",
-      "notes": "차돌짬뽕 11,000 / 꿔보러우 15,000 · 11:00-23:00 · 도보 약 259m",
-      "tags": [
-        "마라탕",
-        "중식"
-      ],
-      "addedAt": "2026-11-06T04:20:27.975Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 2,
-      "subcategory": "마라탕·중식",
-      "menu": [
-        {
-          "name": "차돌짬뽕",
-          "price": 11000
-        },
-        {
-          "name": "꿔보러우",
-          "price": 15000
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "23:00"
-      },
-      "walkMeters": 259,
-      "ratingCheckedAt": "2026-11-06T06:08:26.490Z",
-      "naverCheckedAt": "2026-11-20T14:27:36.285Z"
-    },
-    {
-      "slug": "얌얌",
-      "name": "얌얌",
-      "area": "양재",
-      "category": "분식",
-      "priceRange": "5,500~6,000원",
-      "notes": "돈까스김밥 5,500 / 꼬마김밥 5줄 6,000 · 08:00-21:00 · 도보 약 294m",
-      "tags": [
-        "김밥",
-        "분식"
-      ],
-      "addedAt": "2026-11-06T04:20:16.051Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 2,
-      "subcategory": "김밥·분식",
-      "menu": [
-        {
-          "name": "돈까스김밥",
-          "price": 5500
-        },
-        {
-          "name": "꼬마김밥 5줄",
-          "price": 6000
-        }
-      ],
-      "hours": {
-        "open": "08:00",
-        "close": "21:00"
-      },
-      "walkMeters": 333,
-      "location": {
-        "lat": 37.485810983893366,
-        "lng": 127.03781001534973
-      },
-      "place": {
-        "kakaoId": "22837365",
-        "kakaoUrl": "https://place.map.kakao.com/22837365",
-        "address": "서울 강남구 남부순환로363길 9-4"
-      },
-      "ratingCheckedAt": "2026-11-20T14:27:38.882Z",
-      "rating": {
-        "score": 4.5,
-        "count": 64,
-        "source": "kakao",
-        "url": "https://place.map.kakao.com/22837365",
-        "fetchedAt": "2026-11-20T14:27:38.882Z"
-      },
-      "naverCheckedAt": "2026-11-20T14:27:43.517Z",
-      "naver": {
-        "placeId": "34098856",
-        "url": "https://map.naver.com/p/entry/place/34098856"
-      },
-      "naverReviews": 2955,
       "walkMinutes": 5,
       "walkFromMap": true
     },
@@ -3256,7 +3256,7 @@
       },
       "walkMeters": 835,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-23T16:29:02.469Z",
+      "ratingCheckedAt": "2026-11-24T12:35:38.370Z",
       "naverCheckedAt": "2026-11-20T14:30:35.599Z",
       "naver": {
         "placeId": "1910073147",
@@ -3572,6 +3572,65 @@
       "walkMinutes": 9
     },
     {
+      "slug": "미담재-양재역점",
+      "name": "미담재 양재역점",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "낙지볶음",
+      "priceRange": "12,000~15,000원",
+      "notes": "시래기밥 정식 15,000 / 김치전 12,000 · 11:00-21:30 · 도보 약 446m",
+      "menu": [
+        {
+          "name": "시래기밥 정식",
+          "price": 15000
+        },
+        {
+          "name": "김치전",
+          "price": 12000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:30",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMeters": 545,
+      "tags": [
+        "낙지볶음",
+        "한식"
+      ],
+      "addedAt": "2026-11-24T12:34:45.155Z",
+      "updatedAt": "2026-11-24T12:34:45.155Z",
+      "mentionCount": 1,
+      "location": {
+        "lat": 37.4850444817521,
+        "lng": 127.039774734705
+      },
+      "place": {
+        "kakaoId": "618034854",
+        "kakaoUrl": "https://place.map.kakao.com/618034854",
+        "address": "서울 서초구 남부순환로 2644"
+      },
+      "naver": {
+        "placeId": "1419339898",
+        "url": "https://map.naver.com/p/entry/place/1419339898"
+      },
+      "ratingCheckedAt": "2026-11-24T12:35:42.442Z",
+      "rating": {
+        "score": 3.5,
+        "count": 15,
+        "source": "kakao",
+        "url": "https://place.map.kakao.com/618034854",
+        "fetchedAt": "2026-11-24T12:35:42.442Z"
+      },
+      "naverCheckedAt": "2026-11-24T12:35:47.165Z",
+      "naverReviews": 1546,
+      "naverScore": 4.76,
+      "walkMinutes": 9,
+      "walkFromMap": true
+    },
+    {
       "slug": "미면정-양재칼국수-샤브샤브",
       "name": "미면정 양재칼국수 샤브샤브",
       "area": "양재",
@@ -3612,7 +3671,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1868934600",
         "address": "서울 강남구 남부순환로365길 22"
       },
-      "ratingCheckedAt": "2026-11-23T16:29:06.251Z",
+      "ratingCheckedAt": "2026-11-24T12:35:50.361Z",
       "naverCheckedAt": "2026-11-20T14:31:22.895Z",
       "naver": {
         "placeId": "1017653627",
@@ -3901,7 +3960,7 @@
         "kakaoUrl": "https://place.map.kakao.com/96772273",
         "address": "서울 서초구 남부순환로350길 19-26"
       },
-      "ratingCheckedAt": "2026-11-23T16:29:11.634Z",
+      "ratingCheckedAt": "2026-11-24T12:35:54.605Z",
       "naver": {
         "placeId": "1788599337",
         "url": "https://map.naver.com/p/entry/place/1788599337"
@@ -4588,7 +4647,7 @@
           "일"
         ]
       },
-      "ratingCheckedAt": "2026-11-23T16:29:29.148Z",
+      "ratingCheckedAt": "2026-11-24T12:36:11.635Z",
       "place": {
         "kakaoId": "23985599",
         "kakaoUrl": "https://place.map.kakao.com/23985599",
@@ -4639,7 +4698,7 @@
         "kakaoUrl": "https://place.map.kakao.com/10630917",
         "address": "서울 서초구 남부순환로 2640-11"
       },
-      "ratingCheckedAt": "2026-11-23T16:29:31.090Z",
+      "ratingCheckedAt": "2026-11-24T12:36:13.533Z",
       "naverCheckedAt": "2026-11-20T14:33:46.096Z",
       "naver": {
         "placeId": "19699783",
@@ -4918,7 +4977,7 @@
         "placeId": "1889387567",
         "url": "https://map.naver.com/p/entry/place/1889387567"
       },
-      "ratingCheckedAt": "2026-11-23T16:29:34.462Z",
+      "ratingCheckedAt": "2026-11-24T12:36:16.848Z",
       "walkMeters": 678,
       "walkFromMap": true,
       "area": "양재",
@@ -5324,7 +5383,7 @@
         "kakaoUrl": "https://place.map.kakao.com/332296816",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-23T16:29:41.097Z",
+      "ratingCheckedAt": "2026-11-24T12:36:23.541Z",
       "naverCheckedAt": "2026-11-20T14:35:09.726Z",
       "naver": {
         "placeId": "1278613093",
@@ -5974,7 +6033,7 @@
       },
       "walkMeters": 289,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-23T16:29:54.525Z",
+      "ratingCheckedAt": "2026-11-24T12:36:36.780Z",
       "naverCheckedAt": "2026-11-23T10:53:42.793Z",
       "naver": {
         "placeId": "1733030490",
@@ -6161,7 +6220,7 @@
       },
       "walkMeters": 822,
       "walkMinutes": 10,
-      "ratingCheckedAt": "2026-11-23T16:30:06.466Z",
+      "ratingCheckedAt": "2026-11-24T12:36:48.533Z",
       "naverCheckedAt": "2026-11-19T14:44:28.215Z"
     },
     {
@@ -6830,7 +6889,7 @@
       "walkMeters": 859,
       "walkMinutes": 11,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-23T16:30:11.020Z",
+      "ratingCheckedAt": "2026-11-24T12:36:53.058Z",
       "naverCheckedAt": "2026-11-19T14:45:34.006Z",
       "naver": {
         "placeId": "1528536629",
@@ -7061,7 +7120,7 @@
       },
       "walkMeters": 490,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-23T16:30:13.199Z",
+      "ratingCheckedAt": "2026-11-24T12:36:55.280Z",
       "naverCheckedAt": "2026-11-20T14:37:13.214Z",
       "walkMinutes": 8
     },
@@ -7708,7 +7767,7 @@
       },
       "walkMeters": 857,
       "walkMinutes": 11,
-      "ratingCheckedAt": "2026-11-23T16:30:18.624Z",
+      "ratingCheckedAt": "2026-11-24T12:37:00.769Z",
       "naverCheckedAt": "2026-11-19T14:46:38.833Z",
       "naverReviews": 1533,
       "naverScore": 4.95,
@@ -10516,7 +10575,7 @@
       },
       "walkMeters": 214,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-23T16:30:45.812Z",
+      "ratingCheckedAt": "2026-11-24T12:37:27.955Z",
       "naverCheckedAt": "2026-11-23T10:56:14.768Z",
       "naver": {
         "placeId": "1044144861",
@@ -10758,7 +10817,7 @@
       },
       "walkMeters": 780,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-23T16:30:56.680Z",
+      "ratingCheckedAt": "2026-11-24T12:37:38.958Z",
       "naverCheckedAt": "2026-11-23T10:56:29.759Z",
       "naver": {
         "placeId": "1123021012",
