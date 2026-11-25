@@ -15,7 +15,8 @@ const GROUP_RULES: [CategoryGroup, RegExp][] = [
     "주점",
     /술집|요리주점|전통주|한식주점|(?<![가-힣])주점(?![가-힣])|바\(BAR\)|^바$|호프|맥주|이자카야|야키토리|포차|포장마차|와인|칵테일|양조장|오뎅·꼬치|오뎅\/꼬치/,
   ],
-  ["일식", /일식|일본|일본식라면|초밥|스시|라멘|돈카츠|돈까스|돈가스|텐동|사케동|참치|모밀|소바|오마카세|카레|사케|쿠시아게|쿠시가츠|가라아게|우동/],
+  // Japanese cutlet as 돈카츠/카츠 — bare 돈까스 is often 경양식 (see classify()).
+  ["일식", /일식|일본|일본식라면|초밥|스시|라멘|돈카츠|카츠|텐동|사케동|참치|모밀|소바|오마카세|카레|사케|쿠시아게|쿠시가츠|가라아게|우동/],
   ["분식", /분식|김밥|떡볶이|김말이|후토마키|찐빵|토스트/],
   ["카페·디저트", /카페|디저트|베이커리|빵|케이크|도넛|아이스크림|빙수|(?<!빈대)떡(?!볶이)|호떡|호두과자|와플|초콜릿|전통찻집|커피|베이글/],
   ["샐러드", /샐러드|포케|비건|비건카페|비건베이/],
@@ -23,7 +24,7 @@ const GROUP_RULES: [CategoryGroup, RegExp][] = [
   ["중식", /중식|중국|짬뽕|짜장|마라(?!도)|딤섬|탕수육|유산슬|양꼬치/],
   [
     "양식",
-    /양식|퓨전|파스타|스파게티|피자|버거|햄버거|스테이크|샌드위치|브런치|이탈리|프랑스|스페인|멕시칸|그리스|유럽|아메리칸|패밀리레스토랑|경양식|(?<!밥)(?<!한식\s*)뷔페|프렌치|(?<!한식\s*)컨템포러리/,
+    /양식|퓨전|파스타|스파게티|피자|버거|햄버거|스테이크|샌드위치|브런치|이탈리|프랑스|스페인|멕시칸|그리스|유럽|아메리칸|패밀리레스토랑|경양식|경양식당|옛날돈[까가]스|남산돈까스|남산돈가스|(?<!밥)(?<!한식\s*)뷔페|프렌치|(?<!한식\s*)컨템포러리/,
   ],
   [
     "한식",
@@ -41,7 +42,8 @@ export function isGroup(value: string | undefined): value is CategoryGroup {
 
 function classify(text: string): CategoryGroup | undefined {
   if (!text?.trim()) return undefined;
-  if (/경양식/.test(text)) return "양식";
+  // 경양식 돈까스 vs 일식 돈카츠 — Korean-Western cues win before 일식 rules.
+  if (/경양식|경양식당|옛날돈[까가]스|남산돈까스|남산돈가스/.test(text)) return "양식";
   // First-match on the full hint (same as web fix-categories), so a name
   // signal like 짬뽕 wins over a weak subcategory like 쭈꾸미.
   for (const [group, rule] of GROUP_RULES) {

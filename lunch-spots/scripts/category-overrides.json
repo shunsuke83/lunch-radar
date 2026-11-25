@@ -193,7 +193,7 @@
     "office/하쿠라멘-양재역": "일식",
     "office/한국순대-본점": "한식",
     "office/kakao-1139858709": "한식",
-    "office/한양돈까스": "일식",
+    "office/한양돈까스": "양식",
     "office/한일생선구이": "한식",
     "office/해남미가": "한식",
     "office/naver-36459324": "한식",
@@ -671,7 +671,7 @@
     "chungbuk/naver-32949888": "한식",
     "chungbuk/naver-2050574109": "한식",
     "chungbuk/naver-17580048": "한식",
-    "chungnam/naver-1863703980": "일식",
+    "chungnam/naver-1863703980": "양식",
     "chungnam/naver-1480454794": "한식",
     "chungnam/naver-1573449230": "한식",
     "chungnam/naver-17460710": "중식",
@@ -4974,7 +4974,7 @@
     "seoul/naver-1101064446": "카페·디저트",
     "seoul/naver-98764571": "주점",
     "seoul/naver-1769095765": "카페·디저트",
-    "seoul/naver-37452296": "일식",
+    "seoul/naver-37452296": "양식",
     "seoul/naver-13152926": "한식",
     "seoul/naver-37556077": "한식",
     "seoul/kakao-1968587309": "분식",
@@ -10032,7 +10032,9 @@
     "ulsan/naver-13571256": "한식",
     "ulsan/naver-16406047": "한식",
     "ulsan/naver-1315168969": "양식",
-    "ulsan/naver-19654158": "분식"
+    "ulsan/naver-19654158": "분식",
+    "sejong/naver-1289052276": "양식",
+    "office/윤하-수제옛날돈가스": "양식"
   },
   "updatedAt": "2026-11-20T07:26:49.464Z"
 }

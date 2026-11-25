@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T04:51:05.188Z",
+  "updatedAt": "2026-11-25T05:04:34.971Z",
   "source": "slack-export",
   "lastMessageTs": "1795485606.842739",
   "restaurants": [
@@ -10482,7 +10482,7 @@
       "slug": "한양돈까스",
       "name": "한양돈까스",
       "area": "양재",
-      "category": "일식",
+      "category": "양식",
       "priceRange": "12,500원",
       "notes": "등심돈까스 12,500 / 치킨까스 13,000 / 치즈돈까스 16,000",
       "tags": [
@@ -10491,14 +10491,14 @@
         "경양식"
       ],
       "addedAt": "2026-11-06T09:00:00.000Z",
-      "updatedAt": "2026-11-06T09:00:00.000Z",
+      "updatedAt": "2026-11-25T05:04:34.971Z",
       "mentionCount": 0,
       "address": "서울 서초구 양재천로 107-19 선도빌딩 1층",
       "curated": {
         "by": "Claude 웹조사 (2026-11-06)",
         "url": "https://polle.com/place/3K8N7Q"
       },
-      "subcategory": "돈까스",
+      "subcategory": "돈까스·경양식",
       "menu": [
         {
           "name": "등심돈까스",

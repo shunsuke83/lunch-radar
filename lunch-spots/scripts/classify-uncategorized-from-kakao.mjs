@@ -44,8 +44,9 @@ function fromKakaoCategory(categoryName) {
   if (/술집|호프|요리주점|이자카야|바$|와인|칵테일/.test(joined)) return "주점";
   if (/카페|디저트|베이커리|커피|차\b|도넛|아이스크림/.test(joined)) return "카페·디저트";
   if (/중식|중국요리|중국음식/.test(joined)) return "중식";
-  if (/일식|일본식|초밥|스시|라멘|돈가스|돈까스/.test(joined)) return "일식";
-  if (/양식|이탈리|프렌치|스테이크|패밀리레스토랑|햄버거|피자|파스타/.test(joined)) return "양식";
+  if (/경양식|경양식당|옛날돈|남산돈까스|남산돈가스/.test(joined)) return "양식";
+  if (/일식|일본식|초밥|스시|라멘|돈카츠|카츠/.test(joined)) return "일식";
+  if (/양식|이탈리|프렌치|스테이크|패밀리레스토랑|햄버거|피자|파스타|경양식/.test(joined)) return "양식";
   if (/아시아음식|베트남|태국|인도|멕시코|중동/.test(joined)) return "아시안";
   if (/분식|김밥|떡볶이|만두/.test(joined)) return "분식";
   if (/샐러드|샌드위치|도시락/.test(joined) && /샐러드/.test(joined)) return "샐러드";

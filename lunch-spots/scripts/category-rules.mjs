@@ -1,15 +1,25 @@
 /** Shared category rules for fix-categories + import-naver (first match wins).
  *  Keep in sync with bot/lib/structure.ts GROUP_RULES.
  *  Hand overrides in category-overrides.json win over these for listed places.
+ *
+ *  Tonkatsu split:
+ *  - 경양식 / 옛날돈까스 / 남산돈까스 → 양식 (돈까스·경양식)
+ *  - 돈카츠 / 카츠 (일본식) → 일식
+ *  - bare 돈까스·돈가스 alone stays ambiguous; prefer overrides or 경양식/카츠 cues
  */
+/** Korean-Western cutlet signals — checked before GROUP_RULES. */
+export const GYEONGYANG_TONKATSU =
+  /경양식|경양식당|옛날돈[까가]스|남산돈까스|남산돈가스/;
+
 export const CATEGORY_RULES = [
   ["한식", /사찰요리|사찰음식|발우공양|한식뷔페|보리밥뷔페/],
   [
     "주점",
     /술집|요리주점|전통주|한식주점|(?<![가-힣])주점(?![가-힣])|바\(BAR\)|^바$|호프|맥주|이자카야|야키토리|포차|포장마차|와인|칵테일|양조장|오뎅·꼬치|오뎅\/꼬치/,
   ],
+  // Japanese cutlet as 돈카츠/카츠 — not bare 돈까스 (that is often 경양식).
   // 일식 before 분식 so 일본식라면 / 라멘 are not tagged 분식.
-  ["일식", /일식|일본|일본식라면|초밥|스시|라멘|돈가스|돈까스|우동|소바|오마카세|카레|사케|쿠시아게|쿠시가츠|가라아게|참치/],
+  ["일식", /일식|일본|일본식라면|초밥|스시|라멘|돈카츠|카츠|우동|소바|오마카세|카레|사케|쿠시아게|쿠시가츠|가라아게|참치/],
   // 분식 before 카페 so 떡볶이 is not swallowed by a bare 떡 rule (U2).
   ["분식", /분식|김밥|떡볶이|찐빵|토스트/],
   ["카페·디저트", /카페|디저트|베이커리|빵|케이크|도넛|아이스크림|빙수|(?<!빈대)떡(?!볶이)|호떡|호두과자|와플|초콜릿|전통찻집|커피|베이글/],
@@ -18,7 +28,7 @@ export const CATEGORY_RULES = [
   ["중식", /중식|중국|마라(?!도)|양꼬치|딤섬|짬뽕|짜장/],
   [
     "양식",
-    /양식|퓨전|이탈리|프랑스|스페인|스테이크|파스타|피자|햄버거|버거|브런치|멕시칸|그리스|유럽|아메리칸|패밀리레스토랑|샌드위치|경양식|(?<!밥)(?<!한식\s*)뷔페|프렌치|(?<!한식\s*)컨템포러리/,
+    /양식|퓨전|이탈리|프랑스|스페인|스테이크|파스타|피자|햄버거|버거|브런치|멕시칸|그리스|유럽|아메리칸|패밀리레스토랑|샌드위치|경양식|경양식당|옛날돈[까가]스|남산돈까스|남산돈가스|(?<!밥)(?<!한식\s*)뷔페|프렌치|(?<!한식\s*)컨템포러리/,
   ],
   [
     "한식",
@@ -28,5 +38,6 @@ export const CATEGORY_RULES = [
 
 export function groupOf(text) {
   if (!text) return undefined;
+  if (GYEONGYANG_TONKATSU.test(text)) return "양식";
   return CATEGORY_RULES.find(([, re]) => re.test(text))?.[0];
 }
