@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T04:45:58.821Z",
+  "updatedAt": "2026-11-25T04:51:05.188Z",
   "source": "slack-export",
   "lastMessageTs": "1795485606.842739",
   "restaurants": [
@@ -10954,14 +10954,15 @@
       "slug": "윤하-수제옛날돈가스",
       "name": "윤하 수제옛날돈가스",
       "area": "양재",
-      "category": "일식",
-      "subcategory": "돈가스",
+      "category": "양식",
+      "subcategory": "돈까스·경양식",
       "notes": "",
       "tags": [
-        "돈가스"
+        "돈까스",
+        "경양식"
       ],
       "addedAt": "2026-11-25T04:31:47.000Z",
-      "updatedAt": "2026-11-25T04:45:58.821Z",
+      "updatedAt": "2026-11-25T04:51:05.188Z",
       "mentionCount": 1,
       "location": {
         "lat": 37.4898316677221,
