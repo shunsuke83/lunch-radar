@@ -2,7 +2,7 @@
 
 사내 Slack 점심 채널의 맛집 추천과 네이버지도 저장 목록을 모아, 웹에서 필터·지도로 고르는 프로젝트입니다. 대상 채널 ID는 환경 변수 `LUNCH_SPOTS_CHANNEL_ID`로만 두고 저장소에는 넣지 않습니다.
 
-**배포:** https://shunsuke83.github.io/lunch-radar/
+**배포:** [GitHub Pages](https://shunsuke83.github.io/lunch-radar/) · [Cloudflare Pages](https://lunch-radar.pages.dev/)
 
 | 폴더 | 역할 | 실행에 필요한 것 |
 | --- | --- | --- |
@@ -109,13 +109,24 @@ npx @grok/agent-sdk dev
 | `npm run catalog:naver-folders` | 네이버 공유 폴더 → `web/public/regions/*.json` (`--offline`은 캐시만) |
 | `npm run catalog:kakao-regions` | region용 카카오 장소·평점 캐시 |
 
-## GitHub Pages 배포
+## 정적 사이트 배포
 
 | 워크플로 | 트리거 | 하는 일 |
 | --- | --- | --- |
 | [`collect-lunch.yml`](.github/workflows/collect-lunch.yml) | 매일 11:17·14:43 (Asia/Seoul, 지연 가능), 수동 | Slack 수집 → enrich → `restaurants.json` 커밋 → Pages 배포 |
-| [`deploy-pages.yml`](.github/workflows/deploy-pages.yml) | `main`의 `web/**` 푸시, 수동 | `build:pages` → GitHub Pages |
+| [`deploy-pages.yml`](.github/workflows/deploy-pages.yml) | `main`의 `web/**` 푸시, 수동 | `build:pages` → GitHub Pages (`/lunch-radar` base path) |
+| [`deploy-cf-pages.yml`](.github/workflows/deploy-cf-pages.yml) | `main`의 `web/**` 푸시, 수동 | `build:pages` → Cloudflare Pages (`https://lunch-radar.pages.dev/`, root path) |
 | [`ci.yml`](.github/workflows/ci.yml) | PR, `main` 푸시 | 웹 빌드·타입체크, 봇 `npm run check`, 민감정보 검사 |
+
+로컬에서 CF에만 다시 올릴 때:
+
+```bash
+cd web
+# Windows에서 api rename EPERM이면 api를 잠깐 옮긴 뒤 STATIC_EXPORT=true npx next build
+npm run build:pages
+cd ..
+npx wrangler pages deploy web/out --project-name=lunch-radar --branch=main
+```
 
 ### 네이버지도 저장 목록 (지역 데이터)
 
@@ -142,12 +153,14 @@ npx @grok/agent-sdk dev
 | `LUNCH_SPOTS_SLACK_USER_TOKEN` | Slack User OAuth `xoxp-...` (`channels:history`, `groups:history`) |
 | `LUNCH_SPOTS_CHANNEL_ID` | 채널 ID (`C…`) |
 | `KAKAO_REST_API_KEY` | (선택) Kakao REST 키. 좌표·지도 링크·**도보 길찾기**. 앱에서 **카카오맵** 제품 ON |
+| `CLOUDFLARE_API_TOKEN` | (CF Pages 배포) Account → Cloudflare Pages Edit 권한 토큰 |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare 계정 ID (D1과 동일 계정) |
 
 **Variable** (Variables 탭, Secret 아님):
 
 | Variable | 값 |
 | --- | --- |
-| `KAKAO_MAP_JS_KEY` | JavaScript 키. Web 도메인에 `https://<user>.github.io`, `http://127.0.0.1:3847` 등록 |
+| `KAKAO_MAP_JS_KEY` | JavaScript 키. Web 도메인에 `https://<user>.github.io`, `https://lunch-radar.pages.dev`, `http://127.0.0.1:3847` 등록 |
 
 회사 기본 주소는 `서울 강남구 남부순환로 2621`(플래그원). `LUNCH_OFFICE_ADDRESS` / `LUNCH_OFFICE_NAME`으로 변경. 지도 JS 키가 없으면 지도 대신 안내 문구, 가게별 네이버·카카오 버튼은 키 없이 동작합니다.
 

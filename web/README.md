@@ -1,6 +1,6 @@
 # 점심맛집 웹
 
-사내 Slack 점심 채널·네이버지도 저장 목록에서 모은 맛집을 브라우저에서 검색·필터하는 Next.js 앱입니다. 배포본: https://shunsuke83.github.io/lunch-radar/
+사내 Slack 점심 채널·네이버지도 저장 목록에서 모은 맛집을 브라우저에서 검색·필터하는 Next.js 앱입니다. 배포본: [GitHub Pages](https://shunsuke83.github.io/lunch-radar/) · [Cloudflare Pages](https://lunch-radar.pages.dev/)
 
 ## 실행
 
@@ -16,14 +16,14 @@ http://127.0.0.1:3847 에서 목록과 필터를 확인합니다.
 
 프로덕션 실행: `npm run build` 후 `npm run start` (같은 포트 3847). 프로덕션에서 import를 쓰려면 `.env.local`에 `IMPORT_TOKEN`을 설정하고 `x-import-token` 헤더로 보냅니다.
 
-## GitHub Pages (정적 빌드)
+## 정적 빌드 (GitHub Pages / Cloudflare Pages)
 
 ```bash
-npm run build:pages                                   # web/out/ 생성
-NEXT_PUBLIC_BASE_PATH=/lunch-radar npm run build:pages  # 하위 경로 배포용 (bash)
+npm run build:pages                                   # web/out/ 생성 (CF Pages는 root path)
+NEXT_PUBLIC_BASE_PATH=/lunch-radar npm run build:pages  # GitHub Pages 하위 경로용 (bash)
 ```
 
-배포는 루트의 `.github/workflows/deploy-pages.yml`이 담당합니다 ([루트 README](../README.md#github-pages-배포)).
+배포: [`.github/workflows/deploy-pages.yml`](../.github/workflows/deploy-pages.yml) · [`.github/workflows/deploy-cf-pages.yml`](../.github/workflows/deploy-cf-pages.yml). 상세는 [루트 README](../README.md#정적-사이트-배포).
 
 ## 화면·필터
 

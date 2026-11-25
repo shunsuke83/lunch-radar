@@ -5,9 +5,9 @@ These are the defaults Stage 0+ implement against.
 
 | # | Topic | Decision |
 | --- | --- | --- |
-| 1 | Scope | **A**: D1 is source of truth; site stays static GitHub Pages. Scope B (query API) / C (team share) only when needed. |
+| 1 | Scope | **A**: D1 is source of truth; site stays static (GitHub Pages + Cloudflare Pages mirror). Scope B (query API) / C (team share) only when needed. |
 | 2 | DB location | Same Cloudflare account as AI-MARKET; **separate** database named `lunch-radar`. |
-| 3 | Site URL | Keep GitHub Pages. Deploy workflow exports JSON from D1 then builds. |
+| 3 | Site URL | Keep GitHub Pages (`…/lunch-radar/`). Cloudflare Pages mirror at `https://lunch-radar.pages.dev/` (root `BASE_PATH`). Deploy workflows export/build static `web/out`. |
 | 4 | Script workflow | `db:pull` → script/bot → `db:push` (row_version conflict aborts). Frequent scripts may later call the store module directly. |
 | 5 | Office ∩ Seoul (47) | One `places` row; `in_office` + `in_region`. Prefer office for map/naver/walk/rating fields; **union** `collections`; earliest `added_at`. Keep `legacy_slugs` JSON for wishlist/deeplink. |
 | 6 | Menu / themes | Store as **JSON columns** on `places` (normalize only if Scope B needs server search). |

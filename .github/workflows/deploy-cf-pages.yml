@@ -1,0 +1,49 @@
+name: Deploy web to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "scripts/check-sensitive.mjs"
+      - ".github/workflows/deploy-cf-pages.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: cf-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Block Slack ids and secrets
+        working-directory: .
+        run: node scripts/check-sensitive.mjs
+
+      - run: npm ci
+
+      # Cloudflare Pages serves at domain root (no /lunch-radar prefix).
+      - run: npm run build:pages
+        env:
+          NEXT_PUBLIC_BASE_PATH: ""
+          NEXT_PUBLIC_KAKAO_MAP_KEY: ${{ vars.KAKAO_MAP_JS_KEY }}
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy web/out --project-name=lunch-radar --branch=main
+          workingDirectory: .
