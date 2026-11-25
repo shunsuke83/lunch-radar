@@ -214,7 +214,7 @@
         "kakaoUrl": "https://place.map.kakao.com/420171715",
         "address": "서울 서초구 남부순환로347길 23"
       },
-      "ratingCheckedAt": "2026-11-25T11:25:12.300Z",
+      "ratingCheckedAt": "2026-11-25T16:02:29.571Z",
       "naverCheckedAt": "2026-11-20T14:24:33.118Z",
       "naver": {
         "placeId": "1583880509",
@@ -436,7 +436,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1842885713",
         "address": "서울 서초구 남부순환로347길 53"
       },
-      "ratingCheckedAt": "2026-11-25T11:25:15.104Z",
+      "ratingCheckedAt": "2026-11-25T16:02:32.493Z",
       "naverCheckedAt": "2026-11-20T14:23:55.553Z",
       "naver": {
         "placeId": "1925656389",
@@ -869,7 +869,7 @@
         "kakaoUrl": "https://place.map.kakao.com/873475210",
         "address": "서울 서초구 강남대로 222-4"
       },
-      "ratingCheckedAt": "2026-11-25T11:25:20.874Z",
+      "ratingCheckedAt": "2026-11-25T16:02:38.837Z",
       "naverCheckedAt": "2026-11-20T14:25:04.022Z",
       "naver": {
         "placeId": "964119437",
@@ -1411,7 +1411,7 @@
         "kakaoUrl": "https://place.map.kakao.com/14659473",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-25T11:25:26.624Z",
+      "ratingCheckedAt": "2026-11-25T16:02:46.473Z",
       "naverCheckedAt": "2026-11-20T14:29:58.536Z",
       "naver": {
         "placeId": "20652838",
@@ -1463,7 +1463,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1311036367",
         "address": "서울 서초구 강남대로43길 11"
       },
-      "ratingCheckedAt": "2026-11-25T11:25:28.371Z",
+      "ratingCheckedAt": "2026-11-25T16:02:48.368Z",
       "naverCheckedAt": "2026-11-20T14:26:12.632Z",
       "naver": {
         "placeId": "1798445957",
@@ -3256,7 +3256,7 @@
       },
       "walkMeters": 835,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-25T11:25:43.970Z",
+      "ratingCheckedAt": "2026-11-25T16:03:05.529Z",
       "naverCheckedAt": "2026-11-20T14:30:35.599Z",
       "naver": {
         "placeId": "1910073147",
@@ -3731,7 +3731,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1868934600",
         "address": "서울 강남구 남부순환로365길 22"
       },
-      "ratingCheckedAt": "2026-11-25T11:25:48.193Z",
+      "ratingCheckedAt": "2026-11-25T16:03:10.974Z",
       "naverCheckedAt": "2026-11-20T14:31:22.895Z",
       "naver": {
         "placeId": "1017653627",
@@ -4020,7 +4020,7 @@
         "kakaoUrl": "https://place.map.kakao.com/96772273",
         "address": "서울 서초구 남부순환로350길 19-26"
       },
-      "ratingCheckedAt": "2026-11-25T11:25:52.215Z",
+      "ratingCheckedAt": "2026-11-25T16:03:15.343Z",
       "naver": {
         "placeId": "1788599337",
         "url": "https://map.naver.com/p/entry/place/1788599337"
@@ -4542,7 +4542,7 @@
         "placeId": "31535630",
         "url": "https://map.naver.com/p/entry/place/31535630"
       },
-      "naverReviews": 144,
+      "naverReviews": 143,
       "walkMinutes": 9
     },
     {
@@ -4707,7 +4707,7 @@
           "일"
         ]
       },
-      "ratingCheckedAt": "2026-11-25T11:26:08.080Z",
+      "ratingCheckedAt": "2026-11-25T16:03:32.647Z",
       "place": {
         "kakaoId": "23985599",
         "kakaoUrl": "https://place.map.kakao.com/23985599",
@@ -4758,7 +4758,7 @@
         "kakaoUrl": "https://place.map.kakao.com/10630917",
         "address": "서울 서초구 남부순환로 2640-11"
       },
-      "ratingCheckedAt": "2026-11-25T11:26:09.909Z",
+      "ratingCheckedAt": "2026-11-25T16:03:34.556Z",
       "naverCheckedAt": "2026-11-20T14:33:46.096Z",
       "naver": {
         "placeId": "19699783",
@@ -5037,7 +5037,7 @@
         "placeId": "1889387567",
         "url": "https://map.naver.com/p/entry/place/1889387567"
       },
-      "ratingCheckedAt": "2026-11-25T11:26:13.002Z",
+      "ratingCheckedAt": "2026-11-25T16:03:37.948Z",
       "walkMeters": 678,
       "walkFromMap": true,
       "area": "양재",
@@ -5493,7 +5493,7 @@
         "kakaoUrl": "https://place.map.kakao.com/332296816",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-25T11:26:19.452Z",
+      "ratingCheckedAt": "2026-11-25T16:03:45.021Z",
       "naverCheckedAt": "2026-11-20T14:35:09.726Z",
       "naver": {
         "placeId": "1278613093",
@@ -6143,7 +6143,7 @@
       },
       "walkMeters": 289,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-25T11:26:32.079Z",
+      "ratingCheckedAt": "2026-11-25T16:03:58.425Z",
       "naverCheckedAt": "2026-11-23T10:53:42.793Z",
       "naver": {
         "placeId": "1733030490",
@@ -6330,7 +6330,7 @@
       },
       "walkMeters": 822,
       "walkMinutes": 10,
-      "ratingCheckedAt": "2026-11-25T11:26:43.253Z",
+      "ratingCheckedAt": "2026-11-25T16:04:10.632Z",
       "naverCheckedAt": "2026-11-19T14:44:28.215Z"
     },
     {
@@ -6999,7 +6999,7 @@
       "walkMeters": 859,
       "walkMinutes": 11,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-25T11:26:47.452Z",
+      "ratingCheckedAt": "2026-11-25T16:04:15.093Z",
       "naverCheckedAt": "2026-11-19T14:45:34.006Z",
       "naver": {
         "placeId": "1528536629",
@@ -7174,7 +7174,7 @@
       },
       "walkMeters": 490,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-25T11:26:49.189Z",
+      "ratingCheckedAt": "2026-11-25T16:04:16.910Z",
       "naverCheckedAt": "2026-11-20T14:37:13.214Z",
       "walkMinutes": 8
     },
@@ -7821,7 +7821,7 @@
       },
       "walkMeters": 857,
       "walkMinutes": 11,
-      "ratingCheckedAt": "2026-11-25T11:26:53.470Z",
+      "ratingCheckedAt": "2026-11-25T16:04:22.353Z",
       "naverCheckedAt": "2026-11-19T14:46:38.833Z",
       "naverReviews": 1533,
       "naverScore": 4.95,
@@ -10629,7 +10629,7 @@
       },
       "walkMeters": 214,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-25T11:27:19.027Z",
+      "ratingCheckedAt": "2026-11-25T16:04:49.743Z",
       "naverCheckedAt": "2026-11-23T10:56:14.768Z",
       "naver": {
         "placeId": "1044144861",
@@ -10871,7 +10871,7 @@
       },
       "walkMeters": 780,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-25T11:27:29.368Z",
+      "ratingCheckedAt": "2026-11-25T16:05:00.358Z",
       "naverCheckedAt": "2026-11-23T10:56:29.759Z",
       "naver": {
         "placeId": "1123021012",
