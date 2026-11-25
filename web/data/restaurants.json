@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T04:33:36.722Z",
+  "updatedAt": "2026-11-25T04:45:58.821Z",
   "source": "slack-export",
   "lastMessageTs": "1795485606.842739",
   "restaurants": [
@@ -10961,7 +10961,7 @@
         "돈가스"
       ],
       "addedAt": "2026-11-25T04:31:47.000Z",
-      "updatedAt": "2026-11-25T04:33:36.722Z",
+      "updatedAt": "2026-11-25T04:45:58.821Z",
       "mentionCount": 1,
       "location": {
         "lat": 37.4898316677221,
@@ -10988,7 +10988,16 @@
       "ratingCheckedAt": "2026-11-25T04:33:36.722Z",
       "walkMeters": 761,
       "walkMinutes": 11,
-      "walkFromMap": true
+      "walkFromMap": true,
+      "hours": {
+        "open": "10:00",
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00",
+        "closedDays": [
+          "일"
+        ]
+      }
     }
   ],
   "office": {
