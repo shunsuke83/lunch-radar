@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-25T05:04:34.971Z",
+  "updatedAt": "2026-11-25T11:24:56.969Z",
   "source": "slack-export",
-  "lastMessageTs": "1795485606.842739",
+  "lastMessageTs": "1795572027.464709",
   "restaurants": [
     {
       "slug": "국미당-양재역",
@@ -214,7 +214,7 @@
         "kakaoUrl": "https://place.map.kakao.com/420171715",
         "address": "서울 서초구 남부순환로347길 23"
       },
-      "ratingCheckedAt": "2026-11-24T12:35:02.625Z",
+      "ratingCheckedAt": "2026-11-25T11:25:12.300Z",
       "naverCheckedAt": "2026-11-20T14:24:33.118Z",
       "naver": {
         "placeId": "1583880509",
@@ -279,6 +279,65 @@
       },
       "naverReviews": 320,
       "naverScore": 4.75,
+      "walkMinutes": 6,
+      "walkFromMap": true
+    },
+    {
+      "slug": "양산도-양재점",
+      "name": "양산도 양재점",
+      "area": "양재",
+      "category": "일식",
+      "priceRange": "7,000~12,000원",
+      "notes": "연어사시미 12,000 / 장새고 만두 7,000 · 11:00-21:00 (15:00-17:00 브레이크) · 도보 약 306m",
+      "tags": [
+        "장어덮밥",
+        "초밥"
+      ],
+      "addedAt": "2026-11-06T04:19:38.680Z",
+      "updatedAt": "2026-11-25T11:24:55.165Z",
+      "mentionCount": 4,
+      "subcategory": "장어덮밥·초밥",
+      "menu": [
+        {
+          "name": "연어사시미",
+          "price": 12000
+        },
+        {
+          "name": "장새고 만두",
+          "price": 7000
+        }
+      ],
+      "hours": {
+        "open": "11:00",
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00"
+      },
+      "walkMeters": 357,
+      "location": {
+        "lat": 37.484392948539764,
+        "lng": 127.03111126570808
+      },
+      "place": {
+        "kakaoId": "1798631130",
+        "kakaoUrl": "https://place.map.kakao.com/1798631130",
+        "address": "서울 서초구 남부순환로 2567"
+      },
+      "ratingCheckedAt": "2026-11-20T14:25:07.120Z",
+      "rating": {
+        "score": 3,
+        "count": 2,
+        "source": "kakao",
+        "url": "https://place.map.kakao.com/1798631130",
+        "fetchedAt": "2026-11-20T14:25:07.120Z"
+      },
+      "naverCheckedAt": "2026-11-20T14:25:11.514Z",
+      "naver": {
+        "placeId": "2054325366",
+        "url": "https://map.naver.com/p/entry/place/2054325366"
+      },
+      "naverReviews": 296,
+      "naverScore": 4.88,
       "walkMinutes": 6,
       "walkFromMap": true
     },
@@ -377,7 +436,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1842885713",
         "address": "서울 서초구 남부순환로347길 53"
       },
-      "ratingCheckedAt": "2026-11-24T12:35:05.119Z",
+      "ratingCheckedAt": "2026-11-25T11:25:15.104Z",
       "naverCheckedAt": "2026-11-20T14:23:55.553Z",
       "naver": {
         "placeId": "1925656389",
@@ -810,7 +869,7 @@
         "kakaoUrl": "https://place.map.kakao.com/873475210",
         "address": "서울 서초구 강남대로 222-4"
       },
-      "ratingCheckedAt": "2026-11-24T12:35:11.705Z",
+      "ratingCheckedAt": "2026-11-25T11:25:20.874Z",
       "naverCheckedAt": "2026-11-20T14:25:04.022Z",
       "naver": {
         "placeId": "964119437",
@@ -908,65 +967,6 @@
       },
       "naverReviews": 2955,
       "walkMinutes": 5,
-      "walkFromMap": true
-    },
-    {
-      "slug": "양산도-양재점",
-      "name": "양산도 양재점",
-      "area": "양재",
-      "category": "일식",
-      "priceRange": "7,000~12,000원",
-      "notes": "연어사시미 12,000 / 장새고 만두 7,000 · 11:00-21:00 (15:00-17:00 브레이크) · 도보 약 306m",
-      "tags": [
-        "장어덮밥",
-        "초밥"
-      ],
-      "addedAt": "2026-11-06T04:19:38.680Z",
-      "updatedAt": "2026-11-09T08:25:51.900Z",
-      "mentionCount": 3,
-      "subcategory": "장어덮밥·초밥",
-      "menu": [
-        {
-          "name": "연어사시미",
-          "price": 12000
-        },
-        {
-          "name": "장새고 만두",
-          "price": 7000
-        }
-      ],
-      "hours": {
-        "open": "11:00",
-        "close": "21:00",
-        "breakStart": "15:00",
-        "breakEnd": "17:00"
-      },
-      "walkMeters": 357,
-      "location": {
-        "lat": 37.484392948539764,
-        "lng": 127.03111126570808
-      },
-      "place": {
-        "kakaoId": "1798631130",
-        "kakaoUrl": "https://place.map.kakao.com/1798631130",
-        "address": "서울 서초구 남부순환로 2567"
-      },
-      "ratingCheckedAt": "2026-11-20T14:25:07.120Z",
-      "rating": {
-        "score": 3,
-        "count": 2,
-        "source": "kakao",
-        "url": "https://place.map.kakao.com/1798631130",
-        "fetchedAt": "2026-11-20T14:25:07.120Z"
-      },
-      "naverCheckedAt": "2026-11-20T14:25:11.514Z",
-      "naver": {
-        "placeId": "2054325366",
-        "url": "https://map.naver.com/p/entry/place/2054325366"
-      },
-      "naverReviews": 296,
-      "naverScore": 4.88,
-      "walkMinutes": 6,
       "walkFromMap": true
     },
     {
@@ -1411,7 +1411,7 @@
         "kakaoUrl": "https://place.map.kakao.com/14659473",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-24T12:35:19.236Z",
+      "ratingCheckedAt": "2026-11-25T11:25:26.624Z",
       "naverCheckedAt": "2026-11-20T14:29:58.536Z",
       "naver": {
         "placeId": "20652838",
@@ -1463,7 +1463,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1311036367",
         "address": "서울 서초구 강남대로43길 11"
       },
-      "ratingCheckedAt": "2026-11-24T12:35:21.112Z",
+      "ratingCheckedAt": "2026-11-25T11:25:28.371Z",
       "naverCheckedAt": "2026-11-20T14:26:12.632Z",
       "naver": {
         "placeId": "1798445957",
@@ -1585,6 +1585,65 @@
       },
       "naverReviews": 139,
       "walkMinutes": 4,
+      "walkFromMap": true
+    },
+    {
+      "slug": "돈스라",
+      "name": "돈스라",
+      "area": "양재",
+      "category": "양식",
+      "priceRange": "11,500~12,500원",
+      "notes": "에그후라이돈까스 11,500 / 매운에그후라이돈까스 12,500 · 10:00-20:00 (15:00-17:30 브레이크) · 도보 약 258m",
+      "tags": [
+        "돈까스",
+        "경양식"
+      ],
+      "addedAt": "2026-11-06T04:19:10.469Z",
+      "updatedAt": "2026-11-25T11:24:54.703Z",
+      "mentionCount": 2,
+      "subcategory": "돈까스·경양식",
+      "menu": [
+        {
+          "name": "에그후라이돈까스",
+          "price": 11500
+        },
+        {
+          "name": "매운에그후라이돈까스",
+          "price": 12500
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "20:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:30"
+      },
+      "walkMeters": 350,
+      "location": {
+        "lat": 37.4856829286614,
+        "lng": 127.03209775387
+      },
+      "place": {
+        "kakaoId": "25412320",
+        "kakaoUrl": "https://place.map.kakao.com/25412320",
+        "address": "서울 서초구 강남대로39길 15-10"
+      },
+      "ratingCheckedAt": "2026-11-20T14:30:24.087Z",
+      "rating": {
+        "score": 3.8,
+        "count": 21,
+        "source": "kakao",
+        "url": "https://place.map.kakao.com/25412320",
+        "fetchedAt": "2026-11-20T14:30:24.087Z"
+      },
+      "naverCheckedAt": "2026-11-20T14:30:28.482Z",
+      "naver": {
+        "placeId": "36339164",
+        "url": "https://map.naver.com/p/entry/place/36339164"
+      },
+      "naverReviews": 619,
+      "naverScore": 4.34,
+      "walkMinutes": 6,
       "walkFromMap": true
     },
     {
@@ -3163,65 +3222,6 @@
       "walkMinutes": 18
     },
     {
-      "slug": "돈스라",
-      "name": "돈스라",
-      "area": "양재",
-      "category": "양식",
-      "priceRange": "11,500~12,500원",
-      "notes": "에그후라이돈까스 11,500 / 매운에그후라이돈까스 12,500 · 10:00-20:00 (15:00-17:30 브레이크) · 도보 약 258m",
-      "tags": [
-        "돈까스",
-        "경양식"
-      ],
-      "addedAt": "2026-11-06T04:19:10.469Z",
-      "updatedAt": "2026-11-09T08:25:23.585Z",
-      "mentionCount": 1,
-      "subcategory": "돈까스·경양식",
-      "menu": [
-        {
-          "name": "에그후라이돈까스",
-          "price": 11500
-        },
-        {
-          "name": "매운에그후라이돈까스",
-          "price": 12500
-        }
-      ],
-      "hours": {
-        "open": "10:00",
-        "close": "20:00",
-        "breakStart": "15:00",
-        "breakEnd": "17:30"
-      },
-      "walkMeters": 350,
-      "location": {
-        "lat": 37.4856829286614,
-        "lng": 127.03209775387
-      },
-      "place": {
-        "kakaoId": "25412320",
-        "kakaoUrl": "https://place.map.kakao.com/25412320",
-        "address": "서울 서초구 강남대로39길 15-10"
-      },
-      "ratingCheckedAt": "2026-11-20T14:30:24.087Z",
-      "rating": {
-        "score": 3.8,
-        "count": 21,
-        "source": "kakao",
-        "url": "https://place.map.kakao.com/25412320",
-        "fetchedAt": "2026-11-20T14:30:24.087Z"
-      },
-      "naverCheckedAt": "2026-11-20T14:30:28.482Z",
-      "naver": {
-        "placeId": "36339164",
-        "url": "https://map.naver.com/p/entry/place/36339164"
-      },
-      "naverReviews": 619,
-      "naverScore": 4.34,
-      "walkMinutes": 6,
-      "walkFromMap": true
-    },
-    {
       "slug": "뚝배기양평해장국-양재점",
       "name": "뚝배기양평해장국 양재점",
       "area": "양재",
@@ -3256,7 +3256,7 @@
       },
       "walkMeters": 835,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-24T12:35:38.370Z",
+      "ratingCheckedAt": "2026-11-25T11:25:43.970Z",
       "naverCheckedAt": "2026-11-20T14:30:35.599Z",
       "naver": {
         "placeId": "1910073147",
@@ -3511,6 +3511,66 @@
       "walkFromMap": true
     },
     {
+      "slug": "명갈비곰탕",
+      "name": "명갈비곰탕",
+      "area": "양재",
+      "category": "한식",
+      "subcategory": "갈비탕·곰탕",
+      "priceRange": "12,000~15,000원",
+      "notes": "한우 양지·사태 맑은 곰탕",
+      "tags": [
+        "곰탕"
+      ],
+      "addedAt": "2026-11-16T01:31:39.000Z",
+      "updatedAt": "2026-11-25T11:24:53.940Z",
+      "mentionCount": 1,
+      "address": "서울 서초구 서운로6길 26",
+      "curated": {
+        "by": "D&O 양재 점심 TOP50 (2026-11-16)",
+        "url": "https://www.diningcode.com/profile.php?rid=hDnCMtrIAJe4"
+      },
+      "menu": [
+        {
+          "name": "명곰탕",
+          "price": 12000
+        },
+        {
+          "name": "특곰탕",
+          "price": 15000
+        }
+      ],
+      "hours": {
+        "open": "10:00",
+        "close": "22:00"
+      },
+      "location": {
+        "lat": 37.48553640305052,
+        "lng": 127.03082567830215
+      },
+      "place": {
+        "kakaoId": "1886399664",
+        "kakaoUrl": "https://place.map.kakao.com/1886399664",
+        "address": "서울 서초구 서운로6길 26"
+      },
+      "walkMeters": 461,
+      "walkFromMap": true,
+      "ratingCheckedAt": "2026-11-23T10:54:16.903Z",
+      "rating": {
+        "score": 4.1,
+        "count": 20,
+        "source": "kakao",
+        "url": "https://place.map.kakao.com/1886399664",
+        "fetchedAt": "2026-11-23T10:54:16.903Z"
+      },
+      "naverCheckedAt": "2026-11-23T10:54:21.450Z",
+      "naver": {
+        "placeId": "1588460554",
+        "url": "https://map.naver.com/p/entry/place/1588460554"
+      },
+      "naverReviews": 338,
+      "walkMinutes": 7
+    },
+    {
       "slug": "문어세상해천탕-양재점",
       "name": "문어세상해천탕 양재점",
       "area": "양재",
@@ -3671,7 +3731,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1868934600",
         "address": "서울 강남구 남부순환로365길 22"
       },
-      "ratingCheckedAt": "2026-11-24T12:35:50.361Z",
+      "ratingCheckedAt": "2026-11-25T11:25:48.193Z",
       "naverCheckedAt": "2026-11-20T14:31:22.895Z",
       "naver": {
         "placeId": "1017653627",
@@ -3960,7 +4020,7 @@
         "kakaoUrl": "https://place.map.kakao.com/96772273",
         "address": "서울 서초구 남부순환로350길 19-26"
       },
-      "ratingCheckedAt": "2026-11-24T12:35:54.605Z",
+      "ratingCheckedAt": "2026-11-25T11:25:52.215Z",
       "naver": {
         "placeId": "1788599337",
         "url": "https://map.naver.com/p/entry/place/1788599337"
@@ -4647,7 +4707,7 @@
           "일"
         ]
       },
-      "ratingCheckedAt": "2026-11-24T12:36:11.635Z",
+      "ratingCheckedAt": "2026-11-25T11:26:08.080Z",
       "place": {
         "kakaoId": "23985599",
         "kakaoUrl": "https://place.map.kakao.com/23985599",
@@ -4698,7 +4758,7 @@
         "kakaoUrl": "https://place.map.kakao.com/10630917",
         "address": "서울 서초구 남부순환로 2640-11"
       },
-      "ratingCheckedAt": "2026-11-24T12:36:13.533Z",
+      "ratingCheckedAt": "2026-11-25T11:26:09.909Z",
       "naverCheckedAt": "2026-11-20T14:33:46.096Z",
       "naver": {
         "placeId": "19699783",
@@ -4977,7 +5037,7 @@
         "placeId": "1889387567",
         "url": "https://map.naver.com/p/entry/place/1889387567"
       },
-      "ratingCheckedAt": "2026-11-24T12:36:16.848Z",
+      "ratingCheckedAt": "2026-11-25T11:26:13.002Z",
       "walkMeters": 678,
       "walkFromMap": true,
       "area": "양재",
@@ -4991,6 +5051,56 @@
         "breakEnd": "17:00"
       },
       "walkMinutes": 11
+    },
+    {
+      "slug": "윤하-수제옛날돈가스",
+      "name": "윤하 수제옛날돈가스",
+      "area": "양재",
+      "category": "양식",
+      "subcategory": "돈까스·경양식",
+      "notes": "",
+      "tags": [
+        "돈까스",
+        "경양식"
+      ],
+      "addedAt": "2026-11-25T04:31:47.000Z",
+      "updatedAt": "2026-11-25T04:51:05.188Z",
+      "mentionCount": 1,
+      "location": {
+        "lat": 37.4898316677221,
+        "lng": 127.033546879847
+      },
+      "place": {
+        "kakaoId": "1322790386",
+        "kakaoUrl": "https://place.map.kakao.com/1322790386",
+        "address": "서울 강남구 도곡로 120"
+      },
+      "naver": {
+        "placeId": "2015639999",
+        "url": "https://map.naver.com/p/entry/place/2015639999"
+      },
+      "naverReviews": 24,
+      "naverCheckedAt": "2026-11-25T04:31:47.000Z",
+      "rating": {
+        "score": 3.7,
+        "count": 3,
+        "source": "kakao",
+        "url": "https://place.map.kakao.com/1322790386",
+        "fetchedAt": "2026-11-25T04:33:36.722Z"
+      },
+      "ratingCheckedAt": "2026-11-25T04:33:36.722Z",
+      "walkMeters": 761,
+      "walkMinutes": 12,
+      "walkFromMap": true,
+      "hours": {
+        "open": "10:00",
+        "close": "21:00",
+        "breakStart": "15:00",
+        "breakEnd": "17:00",
+        "closedDays": [
+          "일"
+        ]
+      }
     },
     {
       "slug": "이가원항아리수제비-도곡점",
@@ -5383,7 +5493,7 @@
         "kakaoUrl": "https://place.map.kakao.com/332296816",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-24T12:36:23.541Z",
+      "ratingCheckedAt": "2026-11-25T11:26:19.452Z",
       "naverCheckedAt": "2026-11-20T14:35:09.726Z",
       "naver": {
         "placeId": "1278613093",
@@ -6033,7 +6143,7 @@
       },
       "walkMeters": 289,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-24T12:36:36.780Z",
+      "ratingCheckedAt": "2026-11-25T11:26:32.079Z",
       "naverCheckedAt": "2026-11-23T10:53:42.793Z",
       "naver": {
         "placeId": "1733030490",
@@ -6220,7 +6330,7 @@
       },
       "walkMeters": 822,
       "walkMinutes": 10,
-      "ratingCheckedAt": "2026-11-24T12:36:48.533Z",
+      "ratingCheckedAt": "2026-11-25T11:26:43.253Z",
       "naverCheckedAt": "2026-11-19T14:44:28.215Z"
     },
     {
@@ -6889,7 +6999,7 @@
       "walkMeters": 859,
       "walkMinutes": 11,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-24T12:36:53.058Z",
+      "ratingCheckedAt": "2026-11-25T11:26:47.452Z",
       "naverCheckedAt": "2026-11-19T14:45:34.006Z",
       "naver": {
         "placeId": "1528536629",
@@ -7026,62 +7136,6 @@
       "walkMinutes": 6
     },
     {
-      "slug": "명갈비곰탕",
-      "name": "명갈비곰탕",
-      "area": "양재",
-      "category": "한식",
-      "subcategory": "곰탕",
-      "priceRange": "12,000원",
-      "notes": "한우 양지·사태 맑은 곰탕",
-      "tags": [
-        "곰탕"
-      ],
-      "addedAt": "2026-11-16T01:31:39.000Z",
-      "updatedAt": "2026-11-16T01:31:39.000Z",
-      "mentionCount": 0,
-      "address": "서울 서초구 서운로6길 26",
-      "curated": {
-        "by": "D&O 양재 점심 TOP50 (2026-11-16)",
-        "url": "https://www.diningcode.com/profile.php?rid=hDnCMtrIAJe4"
-      },
-      "menu": [
-        {
-          "name": "명곰탕",
-          "price": 12000
-        }
-      ],
-      "hours": {
-        "open": "10:00",
-        "close": "22:00"
-      },
-      "location": {
-        "lat": 37.48553640305052,
-        "lng": 127.03082567830215
-      },
-      "place": {
-        "kakaoId": "1886399664",
-        "kakaoUrl": "https://place.map.kakao.com/1886399664",
-        "address": "서울 서초구 서운로6길 26"
-      },
-      "walkMeters": 461,
-      "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-23T10:54:16.903Z",
-      "rating": {
-        "score": 4.1,
-        "count": 20,
-        "source": "kakao",
-        "url": "https://place.map.kakao.com/1886399664",
-        "fetchedAt": "2026-11-23T10:54:16.903Z"
-      },
-      "naverCheckedAt": "2026-11-23T10:54:21.450Z",
-      "naver": {
-        "placeId": "1588460554",
-        "url": "https://map.naver.com/p/entry/place/1588460554"
-      },
-      "naverReviews": 338,
-      "walkMinutes": 7
-    },
-    {
       "slug": "미몽-양재역점",
       "name": "미몽 양재역점",
       "area": "양재",
@@ -7120,7 +7174,7 @@
       },
       "walkMeters": 490,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-24T12:36:55.280Z",
+      "ratingCheckedAt": "2026-11-25T11:26:49.189Z",
       "naverCheckedAt": "2026-11-20T14:37:13.214Z",
       "walkMinutes": 8
     },
@@ -7767,7 +7821,7 @@
       },
       "walkMeters": 857,
       "walkMinutes": 11,
-      "ratingCheckedAt": "2026-11-24T12:37:00.769Z",
+      "ratingCheckedAt": "2026-11-25T11:26:53.470Z",
       "naverCheckedAt": "2026-11-19T14:46:38.833Z",
       "naverReviews": 1533,
       "naverScore": 4.95,
@@ -10575,7 +10629,7 @@
       },
       "walkMeters": 214,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-24T12:37:27.955Z",
+      "ratingCheckedAt": "2026-11-25T11:27:19.027Z",
       "naverCheckedAt": "2026-11-23T10:56:14.768Z",
       "naver": {
         "placeId": "1044144861",
@@ -10817,7 +10871,7 @@
       },
       "walkMeters": 780,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-24T12:37:38.958Z",
+      "ratingCheckedAt": "2026-11-25T11:27:29.368Z",
       "naverCheckedAt": "2026-11-23T10:56:29.759Z",
       "naver": {
         "placeId": "1123021012",
@@ -10947,56 +11001,6 @@
           "월",
           "화",
           "수"
-        ]
-      }
-    },
-    {
-      "slug": "윤하-수제옛날돈가스",
-      "name": "윤하 수제옛날돈가스",
-      "area": "양재",
-      "category": "양식",
-      "subcategory": "돈까스·경양식",
-      "notes": "",
-      "tags": [
-        "돈까스",
-        "경양식"
-      ],
-      "addedAt": "2026-11-25T04:31:47.000Z",
-      "updatedAt": "2026-11-25T04:51:05.188Z",
-      "mentionCount": 1,
-      "location": {
-        "lat": 37.4898316677221,
-        "lng": 127.033546879847
-      },
-      "place": {
-        "kakaoId": "1322790386",
-        "kakaoUrl": "https://place.map.kakao.com/1322790386",
-        "address": "서울 강남구 도곡로 120"
-      },
-      "naver": {
-        "placeId": "2015639999",
-        "url": "https://map.naver.com/p/entry/place/2015639999"
-      },
-      "naverReviews": 24,
-      "naverCheckedAt": "2026-11-25T04:31:47.000Z",
-      "rating": {
-        "score": 3.7,
-        "count": 3,
-        "source": "kakao",
-        "url": "https://place.map.kakao.com/1322790386",
-        "fetchedAt": "2026-11-25T04:33:36.722Z"
-      },
-      "ratingCheckedAt": "2026-11-25T04:33:36.722Z",
-      "walkMeters": 761,
-      "walkMinutes": 11,
-      "walkFromMap": true,
-      "hours": {
-        "open": "10:00",
-        "close": "21:00",
-        "breakStart": "15:00",
-        "breakEnd": "17:00",
-        "closedDays": [
-          "일"
         ]
       }
     }
