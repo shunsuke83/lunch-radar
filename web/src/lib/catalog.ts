@@ -498,8 +498,17 @@ export function seoulWeekday(date: Date): Weekday {
   return map[day] ?? WEEKDAYS[date.getDay()];
 }
 
-const byReviews = (a: Restaurant, b: Restaurant) =>
-  (b.naverReviews ?? 0) - (a.naverReviews ?? 0) || a.name.localeCompare(b.name, "ko");
+const byReviews = (a: Restaurant, b: Restaurant) => {
+  // Newly added places float to the top for NEW_DAYS so a just-imported spot
+  // is not buried under the default "리뷰 많은 순" ranking (PAGE_SIZE is 100).
+  const aNew = isRecentlyAdded(a) ? 1 : 0;
+  const bNew = isRecentlyAdded(b) ? 1 : 0;
+  return (
+    bNew - aNew ||
+    (b.naverReviews ?? 0) - (a.naverReviews ?? 0) ||
+    a.name.localeCompare(b.name, "ko")
+  );
+};
 
 /** Ascending by a numeric key; rows without a value go last. */
 function byKey(key: (r: Restaurant) => number | undefined) {
