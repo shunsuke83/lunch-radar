@@ -258,7 +258,7 @@
         "kakaoUrl": "https://place.map.kakao.com/420171715",
         "address": "서울 서초구 남부순환로347길 23"
       },
-      "ratingCheckedAt": "2026-11-26T11:01:16.014Z",
+      "ratingCheckedAt": "2026-11-26T15:46:40.405Z",
       "naverCheckedAt": "2026-11-20T14:24:33.118Z",
       "naver": {
         "placeId": "1583880509",
@@ -594,7 +594,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1842885713",
         "address": "서울 서초구 남부순환로347길 53"
       },
-      "ratingCheckedAt": "2026-11-26T11:01:19.799Z",
+      "ratingCheckedAt": "2026-11-26T15:46:44.161Z",
       "naverCheckedAt": "2026-11-20T14:23:55.553Z",
       "naver": {
         "placeId": "1925656389",
@@ -927,7 +927,7 @@
         "kakaoUrl": "https://place.map.kakao.com/873475210",
         "address": "서울 서초구 강남대로 222-4"
       },
-      "ratingCheckedAt": "2026-11-26T11:01:23.597Z",
+      "ratingCheckedAt": "2026-11-26T15:46:47.909Z",
       "naverCheckedAt": "2026-11-20T14:25:04.022Z",
       "naver": {
         "placeId": "964119437",
@@ -1411,7 +1411,7 @@
         "kakaoUrl": "https://place.map.kakao.com/14659473",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-26T11:01:30.287Z",
+      "ratingCheckedAt": "2026-11-26T15:46:55.038Z",
       "naverCheckedAt": "2026-11-20T14:29:58.536Z",
       "naver": {
         "placeId": "20652838",
@@ -1463,7 +1463,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1311036367",
         "address": "서울 서초구 강남대로43길 11"
       },
-      "ratingCheckedAt": "2026-11-26T11:01:32.108Z",
+      "ratingCheckedAt": "2026-11-26T15:46:56.913Z",
       "naverCheckedAt": "2026-11-20T14:26:12.632Z",
       "naver": {
         "placeId": "1798445957",
@@ -3256,7 +3256,7 @@
       },
       "walkMeters": 835,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-26T11:01:49.828Z",
+      "ratingCheckedAt": "2026-11-26T15:47:15.629Z",
       "naverCheckedAt": "2026-11-20T14:30:35.599Z",
       "naver": {
         "placeId": "1910073147",
@@ -3731,7 +3731,7 @@
         "kakaoUrl": "https://place.map.kakao.com/1868934600",
         "address": "서울 강남구 남부순환로365길 22"
       },
-      "ratingCheckedAt": "2026-11-26T11:01:55.197Z",
+      "ratingCheckedAt": "2026-11-26T15:47:21.310Z",
       "naverCheckedAt": "2026-11-20T14:31:22.895Z",
       "naver": {
         "placeId": "1017653627",
@@ -4020,7 +4020,7 @@
         "kakaoUrl": "https://place.map.kakao.com/96772273",
         "address": "서울 서초구 남부순환로350길 19-26"
       },
-      "ratingCheckedAt": "2026-11-26T11:02:00.660Z",
+      "ratingCheckedAt": "2026-11-26T15:47:26.884Z",
       "naver": {
         "placeId": "1788599337",
         "url": "https://map.naver.com/p/entry/place/1788599337"
@@ -4707,7 +4707,7 @@
           "일"
         ]
       },
-      "ratingCheckedAt": "2026-11-26T11:02:18.112Z",
+      "ratingCheckedAt": "2026-11-26T15:47:44.735Z",
       "place": {
         "kakaoId": "23985599",
         "kakaoUrl": "https://place.map.kakao.com/23985599",
@@ -4758,7 +4758,7 @@
         "kakaoUrl": "https://place.map.kakao.com/10630917",
         "address": "서울 서초구 남부순환로 2640-11"
       },
-      "ratingCheckedAt": "2026-11-26T11:02:20.090Z",
+      "ratingCheckedAt": "2026-11-26T15:47:46.735Z",
       "naverCheckedAt": "2026-11-20T14:33:46.096Z",
       "naver": {
         "placeId": "19699783",
@@ -5037,7 +5037,7 @@
         "placeId": "1889387567",
         "url": "https://map.naver.com/p/entry/place/1889387567"
       },
-      "ratingCheckedAt": "2026-11-26T11:02:23.530Z",
+      "ratingCheckedAt": "2026-11-26T15:47:50.193Z",
       "walkMeters": 678,
       "walkFromMap": true,
       "area": "양재",
@@ -5434,20 +5434,20 @@
         "kakaoUrl": "https://place.map.kakao.com/1391868748",
         "address": "서울 서초구 강남대로34길 43"
       },
-      "ratingCheckedAt": "2026-11-19T14:42:56.844Z",
+      "ratingCheckedAt": "2026-11-26T15:47:57.446Z",
       "rating": {
         "score": 4.8,
         "count": 128,
         "source": "kakao",
         "url": "https://place.map.kakao.com/1391868748",
-        "fetchedAt": "2026-11-19T14:42:56.844Z"
+        "fetchedAt": "2026-11-26T15:47:57.446Z"
       },
-      "naverCheckedAt": "2026-11-19T14:43:01.412Z",
+      "naverCheckedAt": "2026-11-26T15:48:01.847Z",
       "naver": {
         "placeId": "1835295363",
         "url": "https://map.naver.com/p/entry/place/1835295363"
       },
-      "naverReviews": 1629,
+      "naverReviews": 1643,
       "naverScore": 4.91,
       "walkMinutes": 9,
       "walkFromMap": true
@@ -5493,7 +5493,7 @@
         "kakaoUrl": "https://place.map.kakao.com/332296816",
         "address": "서울 강남구 강남대로 240"
       },
-      "ratingCheckedAt": "2026-11-26T11:02:30.815Z",
+      "ratingCheckedAt": "2026-11-26T15:48:05.199Z",
       "naverCheckedAt": "2026-11-20T14:35:09.726Z",
       "naver": {
         "placeId": "1278613093",
@@ -5839,15 +5839,15 @@
       "walkMeters": 839,
       "walkMinutes": 10,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:43:08.340Z",
+      "ratingCheckedAt": "2026-11-26T15:48:09.221Z",
       "rating": {
         "score": 4.5,
         "count": 2,
         "source": "kakao",
         "url": "http://place.map.kakao.com/16328281",
-        "fetchedAt": "2026-11-19T14:43:08.340Z"
+        "fetchedAt": "2026-11-26T15:48:09.221Z"
       },
-      "naverCheckedAt": "2026-11-19T14:43:12.874Z",
+      "naverCheckedAt": "2026-11-26T15:48:13.640Z",
       "naver": {
         "placeId": "20366622",
         "url": "https://map.naver.com/p/entry/place/20366622"
@@ -5900,20 +5900,20 @@
       "walkMeters": 545,
       "walkMinutes": 7,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:43:22.391Z",
+      "ratingCheckedAt": "2026-11-26T15:48:23.172Z",
       "rating": {
         "score": 3.8,
         "count": 16,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1212385345",
-        "fetchedAt": "2026-11-19T14:43:22.391Z"
+        "fetchedAt": "2026-11-26T15:48:23.172Z"
       },
-      "naverCheckedAt": "2026-11-19T14:43:26.915Z",
+      "naverCheckedAt": "2026-11-26T15:48:27.663Z",
       "naver": {
         "placeId": "1691633569",
         "url": "https://map.naver.com/p/entry/place/1691633569"
       },
-      "naverReviews": 146,
+      "naverReviews": 147,
       "hours": {
         "open": "17:00",
         "close": "23:00",
@@ -6078,16 +6078,16 @@
       "walkMeters": 700,
       "walkMinutes": 9,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-19T14:43:37.852Z",
+      "ratingCheckedAt": "2026-11-26T15:48:31.614Z",
       "rating": {
         "score": 3.7,
         "count": 9,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1934460560",
-        "fetchedAt": "2026-11-19T14:43:37.852Z"
+        "fetchedAt": "2026-11-26T15:48:31.614Z"
       },
-      "naverCheckedAt": "2026-11-19T14:43:42.313Z",
-      "naverReviews": 1325,
+      "naverCheckedAt": "2026-11-26T15:48:35.890Z",
+      "naverReviews": 1330,
       "hours": {
         "open": "10:30",
         "close": "22:00",
@@ -6143,7 +6143,7 @@
       },
       "walkMeters": 289,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-26T11:02:44.530Z",
+      "ratingCheckedAt": "2026-11-26T15:48:38.036Z",
       "naverCheckedAt": "2026-11-23T10:53:42.793Z",
       "naver": {
         "placeId": "1733030490",
@@ -6189,15 +6189,15 @@
       },
       "walkMeters": 882,
       "walkMinutes": 11,
-      "ratingCheckedAt": "2026-11-19T14:43:54.134Z",
+      "ratingCheckedAt": "2026-11-26T15:48:40.726Z",
       "rating": {
         "score": 4,
         "count": 56,
         "source": "kakao",
         "url": "http://place.map.kakao.com/16992549",
-        "fetchedAt": "2026-11-19T14:43:54.134Z"
+        "fetchedAt": "2026-11-26T15:48:40.726Z"
       },
-      "naverCheckedAt": "2026-11-19T14:43:58.386Z",
+      "naverCheckedAt": "2026-11-26T15:48:45.090Z",
       "naver": {
         "placeId": "1087115109",
         "url": "https://map.naver.com/p/entry/place/1087115109"
@@ -6236,15 +6236,15 @@
       "walkMeters": 291,
       "walkMinutes": 4,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:44:07.759Z",
+      "ratingCheckedAt": "2026-11-26T15:48:47.271Z",
       "rating": {
-        "score": 2.2,
-        "count": 19,
+        "score": 2.1,
+        "count": 20,
         "source": "kakao",
         "url": "http://place.map.kakao.com/14503487",
-        "fetchedAt": "2026-11-19T14:44:07.759Z"
+        "fetchedAt": "2026-11-26T15:48:47.271Z"
       },
-      "naverCheckedAt": "2026-11-19T14:44:12.308Z",
+      "naverCheckedAt": "2026-11-26T15:48:51.614Z",
       "naver": {
         "placeId": "1154400830",
         "url": "https://map.naver.com/p/entry/place/1154400830"
@@ -6330,8 +6330,8 @@
       },
       "walkMeters": 822,
       "walkMinutes": 10,
-      "ratingCheckedAt": "2026-11-26T11:02:56.805Z",
-      "naverCheckedAt": "2026-11-19T14:44:28.215Z"
+      "ratingCheckedAt": "2026-11-26T15:49:02.711Z",
+      "naverCheckedAt": "2026-11-26T15:49:07.127Z"
     },
     {
       "slug": "kakao-1725027508",
@@ -6361,15 +6361,15 @@
       "walkMeters": 974,
       "walkMinutes": 12,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:44:30.578Z",
+      "ratingCheckedAt": "2026-11-26T15:49:09.588Z",
       "rating": {
         "score": 2,
         "count": 5,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1725027508",
-        "fetchedAt": "2026-11-19T14:44:30.578Z"
+        "fetchedAt": "2026-11-26T15:49:09.588Z"
       },
-      "naverCheckedAt": "2026-11-19T14:44:35.080Z",
+      "naverCheckedAt": "2026-11-26T15:49:14.106Z",
       "naver": {
         "placeId": "1631246639",
         "url": "https://map.naver.com/p/entry/place/1631246639"
@@ -6432,7 +6432,7 @@
       ],
       "walkMeters": 646,
       "walkMinutes": 8,
-      "naverCheckedAt": "2026-11-19T14:44:48.309Z"
+      "naverCheckedAt": "2026-11-26T15:49:20.094Z"
     },
     {
       "slug": "더대박칼국수",
@@ -6519,16 +6519,16 @@
       },
       "walkMeters": 998,
       "walkMinutes": 12,
-      "ratingCheckedAt": "2026-11-19T14:44:51.707Z",
+      "ratingCheckedAt": "2026-11-26T15:49:23.488Z",
       "rating": {
         "score": 3.1,
         "count": 21,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1690597150",
-        "fetchedAt": "2026-11-19T14:44:51.707Z"
+        "fetchedAt": "2026-11-26T15:49:23.488Z"
       },
-      "naverCheckedAt": "2026-11-19T14:44:56.145Z",
-      "naverReviews": 1156,
+      "naverCheckedAt": "2026-11-26T15:49:27.709Z",
+      "naverReviews": 1166,
       "hours": {
         "open": "11:30",
         "close": "22:00",
@@ -6585,15 +6585,15 @@
       },
       "walkMeters": 911,
       "walkMinutes": 11,
-      "ratingCheckedAt": "2026-11-19T14:45:05.491Z",
+      "ratingCheckedAt": "2026-11-26T15:49:29.849Z",
       "rating": {
-        "score": 3.3,
-        "count": 13,
+        "score": 3.1,
+        "count": 14,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1444073007",
-        "fetchedAt": "2026-11-19T14:45:05.491Z"
+        "fetchedAt": "2026-11-26T15:49:29.849Z"
       },
-      "naverCheckedAt": "2026-11-19T14:45:10.038Z",
+      "naverCheckedAt": "2026-11-26T15:49:34.112Z",
       "naverReviews": 102,
       "hours": {
         "open": "11:30",
@@ -6898,15 +6898,15 @@
       "walkMeters": 652,
       "walkMinutes": 8,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-19T14:45:21.834Z",
+      "ratingCheckedAt": "2026-11-26T15:49:38.826Z",
       "rating": {
         "score": 3.7,
         "count": 15,
         "source": "kakao",
         "url": "http://place.map.kakao.com/26573079",
-        "fetchedAt": "2026-11-19T14:45:21.834Z"
+        "fetchedAt": "2026-11-26T15:49:38.826Z"
       },
-      "naverCheckedAt": "2026-11-19T14:45:26.283Z"
+      "naverCheckedAt": "2026-11-26T15:49:43.290Z"
     },
     {
       "slug": "로마옥-도곡",
@@ -6999,8 +6999,8 @@
       "walkMeters": 859,
       "walkMinutes": 11,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-26T11:03:02.110Z",
-      "naverCheckedAt": "2026-11-19T14:45:34.006Z",
+      "ratingCheckedAt": "2026-11-26T15:49:46.275Z",
+      "naverCheckedAt": "2026-11-26T15:49:50.677Z",
       "naver": {
         "placeId": "1528536629",
         "url": "https://map.naver.com/p/entry/place/1528536629"
@@ -7059,15 +7059,15 @@
         "kakaoUrl": "https://place.map.kakao.com/1041362072",
         "address": "서울 강남구 남부순환로 2726"
       },
-      "ratingCheckedAt": "2026-11-19T14:45:44.176Z",
+      "ratingCheckedAt": "2026-11-26T15:49:53.121Z",
       "rating": {
         "score": 3,
         "count": 54,
         "source": "kakao",
         "url": "https://place.map.kakao.com/1041362072",
-        "fetchedAt": "2026-11-19T14:45:44.176Z"
+        "fetchedAt": "2026-11-26T15:49:53.121Z"
       },
-      "naverCheckedAt": "2026-11-19T14:45:49.172Z"
+      "naverCheckedAt": "2026-11-26T15:49:57.555Z"
     },
     {
       "slug": "멘츠루-양재점",
@@ -7174,7 +7174,7 @@
       },
       "walkMeters": 490,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-26T11:03:03.937Z",
+      "ratingCheckedAt": "2026-11-26T15:50:00.625Z",
       "naverCheckedAt": "2026-11-20T14:37:13.214Z",
       "walkMinutes": 8
     },
@@ -7320,20 +7320,20 @@
       },
       "walkMeters": 591,
       "walkMinutes": 7,
-      "ratingCheckedAt": "2026-11-19T14:46:09.621Z",
+      "ratingCheckedAt": "2026-11-26T15:50:04.653Z",
       "rating": {
         "score": 4.5,
-        "count": 430,
+        "count": 431,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1391619096",
-        "fetchedAt": "2026-11-19T14:46:09.621Z"
+        "fetchedAt": "2026-11-26T15:50:04.653Z"
       },
-      "naverCheckedAt": "2026-11-19T14:46:13.864Z",
+      "naverCheckedAt": "2026-11-26T15:50:09.070Z",
       "naver": {
         "placeId": "33964233",
         "url": "https://map.naver.com/p/entry/place/33964233"
       },
-      "naverReviews": 6070,
+      "naverReviews": 6071,
       "naverScore": 4.7,
       "hours": {
         "open": "11:00",
@@ -7498,7 +7498,7 @@
         "placeId": "1262599736",
         "url": "https://map.naver.com/p/entry/place/1262599736"
       },
-      "naverReviews": 1350,
+      "naverReviews": 1351,
       "naverScore": 4.81,
       "collections": [
         "저장 많은 재즈바 50선"
@@ -7510,15 +7510,15 @@
         "kakaoUrl": "https://place.map.kakao.com/1101448385",
         "address": "서울 강남구 논현로63길 69"
       },
-      "ratingCheckedAt": "2026-11-19T14:46:26.239Z",
+      "ratingCheckedAt": "2026-11-26T15:50:13.190Z",
       "rating": {
         "score": 4.8,
-        "count": 872,
+        "count": 878,
         "source": "kakao",
         "url": "https://place.map.kakao.com/1101448385",
-        "fetchedAt": "2026-11-19T14:46:26.239Z"
+        "fetchedAt": "2026-11-26T15:50:13.190Z"
       },
-      "naverCheckedAt": "2026-11-19T14:46:30.568Z"
+      "naverCheckedAt": "2026-11-26T15:50:17.589Z"
     },
     {
       "slug": "산들해-양재점",
@@ -7821,9 +7821,9 @@
       },
       "walkMeters": 857,
       "walkMinutes": 11,
-      "ratingCheckedAt": "2026-11-26T11:03:09.470Z",
-      "naverCheckedAt": "2026-11-19T14:46:38.833Z",
-      "naverReviews": 1533,
+      "ratingCheckedAt": "2026-11-26T15:50:21.872Z",
+      "naverCheckedAt": "2026-11-26T15:50:26.281Z",
+      "naverReviews": 1571,
       "naverScore": 4.95,
       "hours": {
         "open": "09:00",
@@ -7876,20 +7876,20 @@
       "walkMeters": 691,
       "walkMinutes": 9,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:46:48.312Z",
+      "ratingCheckedAt": "2026-11-26T15:50:28.732Z",
       "rating": {
         "score": 4.7,
         "count": 15,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1499378367",
-        "fetchedAt": "2026-11-19T14:46:48.312Z"
+        "fetchedAt": "2026-11-26T15:50:28.732Z"
       },
-      "naverCheckedAt": "2026-11-19T14:46:52.561Z",
+      "naverCheckedAt": "2026-11-26T15:50:32.997Z",
       "naver": {
         "placeId": "1810726526",
         "url": "https://map.naver.com/p/entry/place/1810726526"
       },
-      "naverReviews": 2020,
+      "naverReviews": 2045,
       "naverScore": 4.92,
       "hours": {
         "open": "11:00",
@@ -7948,7 +7948,7 @@
         "placeId": "1429930181",
         "url": "https://map.naver.com/p/entry/place/1429930181"
       },
-      "naverReviews": 261,
+      "naverReviews": 260,
       "naverScore": 4.64,
       "collections": [
         "저장 많은 숙성회 파는 집 50선"
@@ -7960,15 +7960,15 @@
         "kakaoUrl": "https://place.map.kakao.com/1521608712",
         "address": "서울 서초구 강남대로30길 65"
       },
-      "ratingCheckedAt": "2026-11-19T14:47:02.736Z",
+      "ratingCheckedAt": "2026-11-26T15:50:35.495Z",
       "rating": {
         "score": 4.2,
         "count": 49,
         "source": "kakao",
         "url": "https://place.map.kakao.com/1521608712",
-        "fetchedAt": "2026-11-19T14:47:02.736Z"
+        "fetchedAt": "2026-11-26T15:50:35.495Z"
       },
-      "naverCheckedAt": "2026-11-19T14:47:07.158Z"
+      "naverCheckedAt": "2026-11-26T15:50:39.903Z"
     },
     {
       "slug": "순대일번지-양재점",
@@ -8059,21 +8059,21 @@
       "walkMeters": 663,
       "walkMinutes": 8,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:47:10.613Z",
+      "ratingCheckedAt": "2026-11-26T15:50:43.231Z",
       "rating": {
         "score": 3.6,
         "count": 22,
         "source": "kakao",
         "url": "http://place.map.kakao.com/2144615451",
-        "fetchedAt": "2026-11-19T14:47:10.613Z"
+        "fetchedAt": "2026-11-26T15:50:43.231Z"
       },
-      "naverCheckedAt": "2026-11-19T14:47:15.139Z",
+      "naverCheckedAt": "2026-11-26T15:50:47.445Z",
       "naver": {
         "placeId": "11728489",
         "url": "https://map.naver.com/p/entry/place/11728489"
       },
-      "naverReviews": 545,
-      "naverScore": 4.4,
+      "naverReviews": 544,
+      "naverScore": 4.41,
       "hours": {
         "open": "11:00",
         "close": "22:00",
@@ -8186,9 +8186,9 @@
         "count": 25,
         "source": "kakao",
         "url": "https://place.map.kakao.com/24374990",
-        "fetchedAt": "2026-11-19T14:47:25.625Z"
+        "fetchedAt": "2026-11-26T15:50:50.648Z"
       },
-      "naverReviews": 1555,
+      "naverReviews": 1556,
       "naverScore": 4.69,
       "collections": [
         "Sikr",
@@ -8196,8 +8196,8 @@
       ],
       "walkMeters": 350,
       "walkMinutes": 4,
-      "ratingCheckedAt": "2026-11-19T14:47:25.625Z",
-      "naverCheckedAt": "2026-11-19T14:47:30.017Z",
+      "ratingCheckedAt": "2026-11-26T15:50:50.648Z",
+      "naverCheckedAt": "2026-11-26T15:50:54.890Z",
       "hours": {
         "open": "17:00",
         "close": "02:00"
@@ -8321,20 +8321,20 @@
         "kakaoUrl": "https://place.map.kakao.com/25548284"
       },
       "rating": {
-        "score": 4.2,
-        "count": 29,
+        "score": 4.1,
+        "count": 30,
         "source": "kakao",
         "url": "https://place.map.kakao.com/25548284",
-        "fetchedAt": "2026-11-19T14:47:40.330Z"
+        "fetchedAt": "2026-11-26T15:50:58.271Z"
       },
-      "naverReviews": 406,
+      "naverReviews": 407,
       "collections": [
         "맛준 맛집"
       ],
       "walkMeters": 244,
       "walkMinutes": 3,
-      "ratingCheckedAt": "2026-11-19T14:47:40.330Z",
-      "naverCheckedAt": "2026-11-19T14:47:44.743Z"
+      "ratingCheckedAt": "2026-11-26T15:50:58.271Z",
+      "naverCheckedAt": "2026-11-26T15:51:02.539Z"
     },
     {
       "slug": "양재-오제섞어-양재본점",
@@ -8524,7 +8524,7 @@
         "count": 8,
         "source": "kakao",
         "url": "https://place.map.kakao.com/2091770834",
-        "fetchedAt": "2026-11-19T14:47:48.673Z"
+        "fetchedAt": "2026-11-26T15:51:05.962Z"
       },
       "naverReviews": 901,
       "collections": [
@@ -8533,8 +8533,8 @@
       ],
       "walkMeters": 144,
       "walkMinutes": 2,
-      "ratingCheckedAt": "2026-11-19T14:47:48.673Z",
-      "naverCheckedAt": "2026-11-19T14:47:53.006Z"
+      "ratingCheckedAt": "2026-11-26T15:51:05.962Z",
+      "naverCheckedAt": "2026-11-26T15:51:10.281Z"
     },
     {
       "slug": "양재카츠",
@@ -8621,15 +8621,15 @@
       "walkMeters": 793,
       "walkMinutes": 10,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-19T14:47:56.396Z",
+      "ratingCheckedAt": "2026-11-26T15:51:13.651Z",
       "rating": {
         "score": 3.9,
         "count": 19,
         "source": "kakao",
         "url": "http://place.map.kakao.com/11957716",
-        "fetchedAt": "2026-11-19T14:47:56.396Z"
+        "fetchedAt": "2026-11-26T15:51:13.651Z"
       },
-      "naverCheckedAt": "2026-11-19T14:48:00.824Z",
+      "naverCheckedAt": "2026-11-26T15:51:18.053Z",
       "naver": {
         "placeId": "31564605",
         "url": "https://map.naver.com/p/entry/place/31564605"
@@ -8754,7 +8754,7 @@
         "count": 26,
         "source": "kakao",
         "url": "https://place.map.kakao.com/16764761",
-        "fetchedAt": "2026-11-19T14:48:11.075Z"
+        "fetchedAt": "2026-11-26T15:51:21.370Z"
       },
       "naverReviews": 211,
       "naverScore": 4.49,
@@ -8763,8 +8763,8 @@
       ],
       "walkMeters": 232,
       "walkMinutes": 3,
-      "ratingCheckedAt": "2026-11-19T14:48:11.075Z",
-      "naverCheckedAt": "2026-11-19T14:48:15.259Z"
+      "ratingCheckedAt": "2026-11-26T15:51:21.370Z",
+      "naverCheckedAt": "2026-11-26T15:51:25.730Z"
     },
     {
       "slug": "용짜장",
@@ -8844,20 +8844,20 @@
       "walkMeters": 734,
       "walkMinutes": 9,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-19T14:48:25.595Z",
+      "ratingCheckedAt": "2026-11-26T15:51:36.118Z",
       "rating": {
         "score": 3.9,
         "count": 58,
         "source": "kakao",
         "url": "http://place.map.kakao.com/965790489",
-        "fetchedAt": "2026-11-19T14:48:25.595Z"
+        "fetchedAt": "2026-11-26T15:51:36.118Z"
       },
-      "naverCheckedAt": "2026-11-19T14:48:30.153Z",
+      "naverCheckedAt": "2026-11-26T15:51:40.544Z",
       "naver": {
         "placeId": "1844287681",
         "url": "https://map.naver.com/p/entry/place/1844287681"
       },
-      "naverReviews": 289,
+      "naverReviews": 290,
       "hours": {
         "open": "11:30",
         "close": "22:00",
@@ -8893,15 +8893,15 @@
       "walkMeters": 686,
       "walkMinutes": 9,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:48:39.690Z",
+      "ratingCheckedAt": "2026-11-26T15:51:42.840Z",
       "rating": {
         "score": 4.5,
         "count": 16,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1125532774",
-        "fetchedAt": "2026-11-19T14:48:39.690Z"
+        "fetchedAt": "2026-11-26T15:51:42.840Z"
       },
-      "naverCheckedAt": "2026-11-19T14:48:44.128Z",
+      "naverCheckedAt": "2026-11-26T15:51:47.291Z",
       "naver": {
         "placeId": "1425076943",
         "url": "https://map.naver.com/p/entry/place/1425076943"
@@ -8944,16 +8944,16 @@
       },
       "walkMeters": 215,
       "walkMinutes": 3,
-      "ratingCheckedAt": "2026-11-19T14:48:53.641Z",
+      "ratingCheckedAt": "2026-11-26T15:51:49.864Z",
       "rating": {
         "score": 3.2,
         "count": 53,
         "source": "kakao",
         "url": "http://place.map.kakao.com/715200927",
-        "fetchedAt": "2026-11-19T14:48:53.641Z"
+        "fetchedAt": "2026-11-26T15:51:49.864Z"
       },
-      "naverCheckedAt": "2026-11-19T14:48:58.435Z",
-      "naverReviews": 3668,
+      "naverCheckedAt": "2026-11-26T15:51:54.301Z",
+      "naverReviews": 3720,
       "naverScore": 4.84,
       "hours": {
         "open": "11:30",
@@ -9008,21 +9008,21 @@
       "walkMeters": 784,
       "walkMinutes": 10,
       "category": "샐러드",
-      "ratingCheckedAt": "2026-11-19T14:49:07.965Z",
+      "ratingCheckedAt": "2026-11-26T15:51:56.823Z",
       "rating": {
         "score": 3.7,
         "count": 31,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1701193614",
-        "fetchedAt": "2026-11-19T14:49:07.965Z"
+        "fetchedAt": "2026-11-26T15:51:56.823Z"
       },
-      "naverCheckedAt": "2026-11-19T14:49:12.379Z",
+      "naverCheckedAt": "2026-11-26T15:52:01.033Z",
       "naver": {
         "placeId": "1064965916",
         "url": "https://map.naver.com/p/entry/place/1064965916"
       },
-      "naverReviews": 1624,
-      "naverScore": 4.84,
+      "naverReviews": 1638,
+      "naverScore": 4.85,
       "hours": {
         "open": "11:30",
         "close": "21:00",
@@ -9061,15 +9061,15 @@
       "walkMeters": 558,
       "walkMinutes": 7,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:49:21.927Z",
+      "ratingCheckedAt": "2026-11-26T15:52:03.454Z",
       "rating": {
         "score": 4.6,
         "count": 10,
         "source": "kakao",
         "url": "http://place.map.kakao.com/13293236",
-        "fetchedAt": "2026-11-19T14:49:21.927Z"
+        "fetchedAt": "2026-11-26T15:52:03.454Z"
       },
-      "naverCheckedAt": "2026-11-19T14:49:26.115Z"
+      "naverCheckedAt": "2026-11-26T15:52:07.798Z"
     },
     {
       "slug": "kakao-895068966",
@@ -9099,15 +9099,15 @@
       "walkMeters": 640,
       "walkMinutes": 8,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-19T14:49:28.316Z",
+      "ratingCheckedAt": "2026-11-26T15:52:10.203Z",
       "rating": {
         "score": 5,
         "count": 3,
         "source": "kakao",
         "url": "http://place.map.kakao.com/895068966",
-        "fetchedAt": "2026-11-19T14:49:28.316Z"
+        "fetchedAt": "2026-11-26T15:52:10.203Z"
       },
-      "naverCheckedAt": "2026-11-19T14:49:32.681Z",
+      "naverCheckedAt": "2026-11-26T15:52:14.421Z",
       "naver": {
         "placeId": "36836424",
         "url": "https://map.naver.com/p/entry/place/36836424"
@@ -9148,15 +9148,15 @@
       "walkMeters": 160,
       "walkMinutes": 2,
       "category": "주점",
-      "ratingCheckedAt": "2026-11-19T14:49:41.807Z",
+      "ratingCheckedAt": "2026-11-26T15:52:16.684Z",
       "rating": {
         "score": 5,
         "count": 1,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1141880063",
-        "fetchedAt": "2026-11-19T14:49:41.807Z"
+        "fetchedAt": "2026-11-26T15:52:16.684Z"
       },
-      "naverCheckedAt": "2026-11-19T14:49:46.246Z",
+      "naverCheckedAt": "2026-11-26T15:52:21.120Z",
       "naver": {
         "placeId": "1941002384",
         "url": "https://map.naver.com/p/entry/place/1941002384"
@@ -9280,15 +9280,15 @@
         "kakaoUrl": "https://place.map.kakao.com/19215962",
         "address": "서울 강남구 강남대로42길 13"
       },
-      "ratingCheckedAt": "2026-11-19T14:50:03.856Z",
+      "ratingCheckedAt": "2026-11-26T15:52:31.432Z",
       "rating": {
-        "score": 3.3,
-        "count": 56,
+        "score": 3.2,
+        "count": 57,
         "source": "kakao",
         "url": "https://place.map.kakao.com/19215962",
-        "fetchedAt": "2026-11-19T14:50:03.856Z"
+        "fetchedAt": "2026-11-26T15:52:31.432Z"
       },
-      "naverCheckedAt": "2026-11-19T14:50:08.253Z"
+      "naverCheckedAt": "2026-11-26T15:52:35.816Z"
     },
     {
       "slug": "전주-콩뿌리-콩나물국밥-도곡점",
@@ -9384,15 +9384,15 @@
       "walkMeters": 916,
       "walkMinutes": 11,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:50:11.625Z",
+      "ratingCheckedAt": "2026-11-26T15:52:38.916Z",
       "rating": {
         "score": 2.9,
         "count": 34,
         "source": "kakao",
         "url": "http://place.map.kakao.com/176494232",
-        "fetchedAt": "2026-11-19T14:50:11.625Z"
+        "fetchedAt": "2026-11-26T15:52:38.916Z"
       },
-      "naverCheckedAt": "2026-11-19T14:50:15.786Z",
+      "naverCheckedAt": "2026-11-26T15:52:43.616Z",
       "hours": {
         "open": "11:00",
         "close": "21:00",
@@ -9489,15 +9489,15 @@
       },
       "walkMeters": 953,
       "walkMinutes": 12,
-      "ratingCheckedAt": "2026-11-19T14:50:26.236Z",
+      "ratingCheckedAt": "2026-11-26T15:52:46.979Z",
       "rating": {
         "score": 2.3,
         "count": 3,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1871520041",
-        "fetchedAt": "2026-11-19T14:50:26.236Z"
+        "fetchedAt": "2026-11-26T15:52:46.979Z"
       },
-      "naverCheckedAt": "2026-11-19T14:50:30.675Z",
+      "naverCheckedAt": "2026-11-26T15:52:51.211Z",
       "naverReviews": 682,
       "hours": {
         "open": "10:30",
@@ -9554,15 +9554,15 @@
       },
       "walkMeters": 506,
       "walkMinutes": 6,
-      "ratingCheckedAt": "2026-11-19T14:50:40.163Z",
+      "ratingCheckedAt": "2026-11-26T15:52:53.670Z",
       "rating": {
-        "score": 4.2,
-        "count": 49,
+        "score": 4.3,
+        "count": 50,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1535590826",
-        "fetchedAt": "2026-11-19T14:50:40.163Z"
+        "fetchedAt": "2026-11-26T15:52:53.670Z"
       },
-      "naverCheckedAt": "2026-11-19T14:50:44.414Z",
+      "naverCheckedAt": "2026-11-26T15:52:58.092Z",
       "hours": {
         "open": "11:00",
         "close": "23:00",
@@ -9623,15 +9623,15 @@
       "walkMeters": 914,
       "walkMinutes": 11,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:50:54.020Z",
+      "ratingCheckedAt": "2026-11-26T15:53:00.681Z",
       "rating": {
-        "score": 4.6,
-        "count": 24,
+        "score": 4.7,
+        "count": 26,
         "source": "kakao",
         "url": "http://place.map.kakao.com/714973826",
-        "fetchedAt": "2026-11-19T14:50:54.020Z"
+        "fetchedAt": "2026-11-26T15:53:00.681Z"
       },
-      "naverCheckedAt": "2026-11-19T14:50:58.554Z",
+      "naverCheckedAt": "2026-11-26T15:53:04.996Z",
       "hours": {
         "open": "11:00",
         "close": "23:00",
@@ -9934,7 +9934,7 @@
         "placeId": "1517334297",
         "url": "https://map.naver.com/p/entry/place/1517334297"
       },
-      "naverReviews": 1487,
+      "naverReviews": 1489,
       "naverScore": 4.49,
       "walkMeters": 827,
       "walkMinutes": 10,
@@ -9943,15 +9943,15 @@
         "kakaoUrl": "https://place.map.kakao.com/224156084",
         "address": "서울 강남구 도곡로3길 26"
       },
-      "ratingCheckedAt": "2026-11-19T14:51:11.569Z",
+      "ratingCheckedAt": "2026-11-26T15:53:10.485Z",
       "rating": {
         "score": 4.3,
         "count": 11,
         "source": "kakao",
         "url": "https://place.map.kakao.com/224156084",
-        "fetchedAt": "2026-11-19T14:51:11.569Z"
+        "fetchedAt": "2026-11-26T15:53:10.485Z"
       },
-      "naverCheckedAt": "2026-11-19T14:51:15.989Z"
+      "naverCheckedAt": "2026-11-26T15:53:14.738Z"
     },
     {
       "slug": "코시",
@@ -10097,15 +10097,15 @@
       "walkMeters": 848,
       "walkMinutes": 11,
       "category": "일식",
-      "ratingCheckedAt": "2026-11-19T14:51:19.492Z",
+      "ratingCheckedAt": "2026-11-26T15:53:18.620Z",
       "rating": {
         "score": 4.5,
         "count": 17,
         "source": "kakao",
         "url": "http://place.map.kakao.com/974101487",
-        "fetchedAt": "2026-11-19T14:51:19.492Z"
+        "fetchedAt": "2026-11-26T15:53:18.620Z"
       },
-      "naverCheckedAt": "2026-11-19T14:51:23.926Z",
+      "naverCheckedAt": "2026-11-26T15:53:23.043Z",
       "naver": {
         "placeId": "1147649890",
         "url": "https://map.naver.com/p/entry/place/1147649890"
@@ -10177,15 +10177,15 @@
         "kakaoUrl": "https://place.map.kakao.com/15615201",
         "address": "서울 서초구 양재천로 115"
       },
-      "ratingCheckedAt": "2026-11-19T14:51:34.176Z",
+      "ratingCheckedAt": "2026-11-26T15:53:25.376Z",
       "rating": {
         "score": 4.3,
         "count": 48,
         "source": "kakao",
         "url": "https://place.map.kakao.com/15615201",
-        "fetchedAt": "2026-11-19T14:51:34.176Z"
+        "fetchedAt": "2026-11-26T15:53:25.376Z"
       },
-      "naverCheckedAt": "2026-11-19T14:51:38.488Z"
+      "naverCheckedAt": "2026-11-26T15:53:29.795Z"
     },
     {
       "slug": "kakao-357638639",
@@ -10215,20 +10215,20 @@
       "walkMeters": 402,
       "walkMinutes": 5,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:51:40.635Z",
+      "ratingCheckedAt": "2026-11-26T15:53:32.261Z",
       "rating": {
         "score": 4.8,
         "count": 6,
         "source": "kakao",
         "url": "http://place.map.kakao.com/357638639",
-        "fetchedAt": "2026-11-19T14:51:40.635Z"
+        "fetchedAt": "2026-11-26T15:53:32.261Z"
       },
-      "naverCheckedAt": "2026-11-19T14:51:44.895Z",
+      "naverCheckedAt": "2026-11-26T15:53:36.513Z",
       "naver": {
         "placeId": "1275748606",
         "url": "https://map.naver.com/p/entry/place/1275748606"
       },
-      "naverReviews": 420,
+      "naverReviews": 444,
       "naverScore": 4.98,
       "hours": {
         "open": "11:00",
@@ -10522,15 +10522,15 @@
       "walkMeters": 657,
       "walkMinutes": 8,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:51:56.680Z",
+      "ratingCheckedAt": "2026-11-26T15:53:40.928Z",
       "rating": {
         "score": 4.2,
         "count": 6,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1139858709",
-        "fetchedAt": "2026-11-19T14:51:56.680Z"
+        "fetchedAt": "2026-11-26T15:53:40.928Z"
       },
-      "naverCheckedAt": "2026-11-19T14:52:01.121Z"
+      "naverCheckedAt": "2026-11-26T15:53:45.091Z"
     },
     {
       "slug": "한양돈까스",
@@ -10629,7 +10629,7 @@
       },
       "walkMeters": 214,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-26T11:03:37.131Z",
+      "ratingCheckedAt": "2026-11-26T15:53:48.182Z",
       "naverCheckedAt": "2026-11-23T10:56:14.768Z",
       "naver": {
         "placeId": "1044144861",
@@ -10698,7 +10698,7 @@
         "count": 22,
         "source": "kakao",
         "url": "https://place.map.kakao.com/26895379",
-        "fetchedAt": "2026-11-19T14:52:15.509Z"
+        "fetchedAt": "2026-11-26T15:53:59.178Z"
       },
       "naverReviews": 115,
       "collections": [
@@ -10706,8 +10706,8 @@
       ],
       "walkMeters": 573,
       "walkMinutes": 7,
-      "ratingCheckedAt": "2026-11-19T14:52:15.509Z",
-      "naverCheckedAt": "2026-11-19T14:52:19.913Z"
+      "ratingCheckedAt": "2026-11-26T15:53:59.178Z",
+      "naverCheckedAt": "2026-11-26T15:54:03.565Z"
     },
     {
       "slug": "naver-1017545810",
@@ -10740,16 +10740,16 @@
       "walkMeters": 995,
       "walkMinutes": 12,
       "category": "한식",
-      "ratingCheckedAt": "2026-11-19T14:52:22.185Z",
+      "ratingCheckedAt": "2026-11-26T15:54:05.885Z",
       "rating": {
         "score": 4.8,
         "count": 17,
         "source": "kakao",
         "url": "http://place.map.kakao.com/992744154",
-        "fetchedAt": "2026-11-19T14:52:22.185Z"
+        "fetchedAt": "2026-11-26T15:54:05.885Z"
       },
-      "naverCheckedAt": "2026-11-19T14:52:26.475Z",
-      "naverReviews": 968,
+      "naverCheckedAt": "2026-11-26T15:54:10.350Z",
+      "naverReviews": 978,
       "naverScore": 4.79,
       "hours": {
         "open": "11:30",
@@ -10801,16 +10801,16 @@
       },
       "walkMeters": 723,
       "walkMinutes": 9,
-      "ratingCheckedAt": "2026-11-19T14:52:36.332Z",
+      "ratingCheckedAt": "2026-11-26T15:54:12.955Z",
       "rating": {
         "score": 3.6,
         "count": 18,
         "source": "kakao",
         "url": "http://place.map.kakao.com/700049434",
-        "fetchedAt": "2026-11-19T14:52:36.332Z"
+        "fetchedAt": "2026-11-26T15:54:12.955Z"
       },
-      "naverCheckedAt": "2026-11-19T14:52:40.810Z",
-      "naverReviews": 5529,
+      "naverCheckedAt": "2026-11-26T15:54:17.171Z",
+      "naverReviews": 5583,
       "naverScore": 4.89,
       "hours": {
         "open": "10:00",
@@ -10871,7 +10871,7 @@
       },
       "walkMeters": 780,
       "walkFromMap": true,
-      "ratingCheckedAt": "2026-11-26T11:03:47.819Z",
+      "ratingCheckedAt": "2026-11-26T15:54:19.471Z",
       "naverCheckedAt": "2026-11-23T10:56:29.759Z",
       "naver": {
         "placeId": "1123021012",
@@ -10936,12 +10936,12 @@
       },
       "rating": {
         "score": 3.2,
-        "count": 128,
+        "count": 129,
         "source": "kakao",
         "url": "https://place.map.kakao.com/15862367",
-        "fetchedAt": "2026-11-19T14:52:53.534Z"
+        "fetchedAt": "2026-11-26T15:54:22.186Z"
       },
-      "naverReviews": 890,
+      "naverReviews": 891,
       "naverScore": 4.39,
       "collections": [
         "Eat my Seoul",
@@ -10949,8 +10949,8 @@
       ],
       "walkMeters": 471,
       "walkMinutes": 6,
-      "ratingCheckedAt": "2026-11-19T14:52:53.534Z",
-      "naverCheckedAt": "2026-11-19T14:52:57.970Z"
+      "ratingCheckedAt": "2026-11-26T15:54:22.186Z",
+      "naverCheckedAt": "2026-11-26T15:54:26.575Z"
     },
     {
       "slug": "kakao-1625504597",
@@ -10980,15 +10980,15 @@
       "walkMeters": 799,
       "walkMinutes": 10,
       "category": "양식",
-      "ratingCheckedAt": "2026-11-19T14:53:00.366Z",
+      "ratingCheckedAt": "2026-11-26T15:54:29.095Z",
       "rating": {
         "score": 5,
         "count": 23,
         "source": "kakao",
         "url": "http://place.map.kakao.com/1625504597",
-        "fetchedAt": "2026-11-19T14:53:00.366Z"
+        "fetchedAt": "2026-11-26T15:54:29.095Z"
       },
-      "naverCheckedAt": "2026-11-19T14:53:04.922Z",
+      "naverCheckedAt": "2026-11-26T15:54:33.333Z",
       "naver": {
         "placeId": "1091992458",
         "url": "https://map.naver.com/p/entry/place/1091992458"
